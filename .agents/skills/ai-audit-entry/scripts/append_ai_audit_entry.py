@@ -43,6 +43,7 @@ class AuditEntry:
     reasoning: str = MANUAL_PLACEHOLDER
     student_fix: str = MANUAL_PLACEHOLDER
     original_index: int | None = None
+    full_output: bool = False
 
 
 def table_cell(value: str) -> str:
@@ -62,6 +63,50 @@ def table_cell(value: str) -> str:
 def detail_value(value: str) -> str:
     """Keep detail fields readable and single-line for predictable parsing."""
     return table_cell(summarize_cell(value)).strip()
+
+
+def detail_block(value: str) -> str:
+    """Preserve a contiguous generated artifact exactly in the detail log."""
+    return value.strip()
+
+
+def fenced_block(value: str, language: str = "markdown") -> str:
+    """Fence full artifact output so its headings do not affect audit sections."""
+    stripped = value.strip()
+    longest_backticks = max((len(match) for match in re.findall(r"`+", stripped)), default=0)
+    fence = "`" * max(3, longest_backticks + 1)
+    return f"{fence}{language}\n{stripped}\n{fence}"
+
+
+def unfence_block(value: str) -> tuple[str, bool]:
+    """Return the content inside a full-output fence if present."""
+    stripped = value.strip()
+    match = re.match(
+        r"^(?P<fence>`{3,})[A-Za-z0-9_-]*\n(?P<body>.*)\n(?P=fence)$",
+        stripped,
+        flags=re.DOTALL,
+    )
+    if not match:
+        return stripped, False
+    return match.group("body").strip(), True
+
+
+def detail_field(label: str, value: str) -> list[str]:
+    stripped = value.strip()
+    if "\n" in stripped:
+        return [f"**{label}:**", "", stripped]
+    return [f"**{label}:** {stripped}"]
+
+
+def ai_output_field(entry: AuditEntry) -> list[str]:
+    if entry.full_output:
+        return ["**AI Output:**", "", fenced_block(entry.ai_output)]
+    return detail_field("AI Output", entry.ai_output)
+
+
+def prompt_tool_value(timestamp: str, tool_model: str, prompt: str) -> str:
+    """Keep the user's prompt complete for audit traceability."""
+    return f"Time: `{timestamp}`\nTool: `{tool_model}`\nPrompt:\n{prompt.strip()}"
 
 
 def summarize_cell(value: str, max_chars: int = 220) -> str:
@@ -122,15 +167,15 @@ def build_audit_section(entries: list[AuditEntry]) -> str:
                 "",
                 f"### 2.2.{index} Entry {index}",
                 "",
-                f"**Prompt + Tool:** {entry.prompt_tool}",
+                *detail_field("Prompt + Tool", entry.prompt_tool),
                 "",
-                f"**AI Output:** {entry.ai_output}",
+                *ai_output_field(entry),
                 "",
-                f"**Verdict:** {entry.verdict}",
+                *detail_field("Verdict", entry.verdict),
                 "",
-                f"**Reasoning:** {entry.reasoning}",
+                *detail_field("Reasoning", entry.reasoning),
                 "",
-                f"**Student Fix:** {entry.student_fix}",
+                *detail_field("Student Fix", entry.student_fix),
             ]
         )
 
@@ -143,6 +188,7 @@ def append_entry(
     prompt: str,
     output: str,
     tool_model: str,
+    full_output: bool = False,
 ) -> None:
     del purpose
     audit_file.parent.mkdir(parents=True, exist_ok=True)
@@ -151,13 +197,12 @@ def append_entry(
     entries = extract_audit_entries(text)
 
     now = datetime.now(ZoneInfo("Asia/Ho_Chi_Minh")).strftime("%Y-%m-%d %H:%M %Z")
-    prompt_tool = detail_value(
-        f"Time: `{now}`\nTool: `{tool_model}`\nPrompt: {summarize_cell(prompt)}"
-    )
+    prompt_tool = prompt_tool_value(now, tool_model, prompt)
     entries.append(
         AuditEntry(
             prompt_tool=prompt_tool,
-            ai_output=detail_value(output),
+            ai_output=detail_block(output) if full_output else detail_value(output),
+            full_output=full_output,
         )
     )
 
@@ -283,24 +328,26 @@ def extract_detail_entries(text: str) -> list[AuditEntry]:
 
     pattern = re.compile(
         r"^### 2\.2\.(?P<index>\d+) Entry \d+\n"
-        r"\n\*\*Prompt \+ Tool:\*\* (?P<prompt>.+?)\n"
-        r"\n\*\*AI Output:\*\* (?P<output>.+?)\n"
-        r"\n\*\*Verdict:\*\* (?P<verdict>.+?)\n"
-        r"\n\*\*Reasoning:\*\* (?P<reasoning>.+?)\n"
-        r"\n\*\*Student Fix:\*\* (?P<student_fix>.+?)"
+        r"\n\*\*Prompt \+ Tool:\*\*\s*(?P<prompt>.+?)\n"
+        r"\n\*\*AI Output:\*\*\s*(?P<output>.+?)\n"
+        r"\n\*\*Verdict:\*\*\s*(?P<verdict>.+?)\n"
+        r"\n\*\*Reasoning:\*\*\s*(?P<reasoning>.+?)\n"
+        r"\n\*\*Student Fix:\*\*\s*(?P<student_fix>.+?)"
         r"(?=\n### 2\.2\.|\n## |\Z)",
         flags=re.MULTILINE | re.DOTALL,
     )
     entries: list[AuditEntry] = []
     for match in pattern.finditer(detail_text):
+        output, output_was_fenced = unfence_block(match.group("output"))
         entries.append(
             AuditEntry(
                 prompt_tool=match.group("prompt").strip(),
-                ai_output=match.group("output").strip(),
+                ai_output=output,
                 verdict=match.group("verdict").strip(),
                 reasoning=match.group("reasoning").strip(),
                 student_fix=match.group("student_fix").strip(),
                 original_index=int(match.group("index")),
+                full_output=output_was_fenced or "\n" in output,
             )
         )
     return entries
@@ -372,7 +419,7 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         help=(
             "Path to a single AI-created artifact. The file content is used "
-            "as source text for the concise AI Output summary."
+            "verbatim as the detailed AI Output when the artifact is contiguous."
         ),
     )
     output_group.add_argument(
@@ -404,6 +451,7 @@ def main() -> None:
         prompt=args.prompt,
         output=output,
         tool_model=args.tool_model,
+        full_output=args.output_file is not None,
     )
 
 

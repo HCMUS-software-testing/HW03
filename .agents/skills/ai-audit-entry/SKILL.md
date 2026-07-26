@@ -20,7 +20,9 @@ rtk python3 .agents/skills/ai-audit-entry/scripts/append_ai_audit_entry.py \
   --tool-model "Codex / GPT-5"
 ```
 
-When the AI output is a single generated file, report, template, code file, Markdown artifact, or other contiguous artifact, use `--output-file path/to/artifact` only when that file is the clearest source for a concise summary. The audit table is a short summary, not a full transcript. The script condenses long prompt/output text before writing.
+When the AI output is a single generated file, report, template, code file, Markdown artifact, or other contiguous artifact, use `--output-file path/to/artifact` instead of `--output`. In this case, the script must copy the artifact content verbatim into `2.2` `AI Output` because the AI-created result is continuous and can be fully quoted without reconstructing it from scattered conversation turns. The full output must be wrapped in a fenced code block so headings, tables, and lists inside the generated artifact do not become audit report sections. Keep using `--output` for fragmented outputs, multi-file work, command results, conclusions, or cases where a concise factual summary is clearer than a full artifact.
+
+The `2.1` summary table stays short. Full generated artifacts belong only in `2.2` detail entries, inside fenced code blocks.
 
 Follow the teacher-provided report sections exactly and number every top-level audit section:
 
@@ -56,7 +58,7 @@ Under each `2.2.x` entry, write these fields in order:
 - `Reasoning`
 - `Student Fix`
 
-Fill `STT` with the next sequential number. Before appending a new entry, renumber all surviving summary rows and detailed entries from `1` in their current order because the user may manually delete any entry in the middle. Fill `Prompt + Tool` with a short prompt summary, timestamp, and AI tool/model. Fill `AI Output` with a concise summary of the AI-produced result. Keep these fields as manual placeholders because the student will complete them:
+Fill `STT` with the next sequential number. Before appending a new entry, renumber all surviving summary rows and detailed entries from `1` in their current order because the user may manually delete any entry in the middle. Fill `Prompt + Tool` with the timestamp, AI tool/model, and the user's full prompt exactly as provided; never summarize, truncate, paraphrase, or correct the prompt text. Fill `AI Output` with a concise summary for ordinary sessions; for a single contiguous generated artifact supplied through `--output-file`, fill `AI Output` with the full artifact content fenced as Markdown/code. Keep these fields as manual placeholders because the student will complete them:
 
 - `Verdict`: `[Manual by user]`
 - `Reasoning`: `[Manual by user]`
@@ -68,7 +70,7 @@ Do not create or maintain legacy sections such as `AI Tool Usage Summary`, `Prom
 
 Use Vietnamese with full accents for new audit metadata that the AI writes itself, such as `Purpose`, brief factual notes, or non-verbatim summaries, unless the user explicitly requests another language.
 
-For each audit entry, keep prompt/output summaries in their original language. Do not remove accents, add accents, or correct character encoding. The script only escapes Markdown table pipes, converts line breaks to `<br>`, and shortens long text so the table remains concise.
+For each audit entry, keep prompts and output summaries in their original language. Do not remove accents, add accents, or correct character encoding. The prompt is always copied in full. For `--output`, the script escapes Markdown table pipes, converts line breaks to `<br>`, and shortens long output text so ordinary entries remain concise. For `--output-file`, the script preserves the UTF-8 file content verbatim in the `2.2` detail entry and wraps it in a fenced code block.
 
 Write and read the audit report as UTF-8. If using `--output-file`, the script copies that file as UTF-8 verbatim into the `Output` field.
 
@@ -76,9 +78,9 @@ Write and read the audit report as UTF-8. If using `--output-file`, the script c
 
 Use concise, factual text. Do not include private chain-of-thought, hidden policy, or long command outputs. Mention files changed or artifacts created when relevant.
 
-`Prompt + Tool` should briefly identify the user's prompt for that session. Do not translate, normalize spelling, add missing accents, or correct typos.
+`Prompt + Tool` must include the user's full prompt for that session. Do not translate, summarize, truncate, normalize spelling, add missing accents, or correct typos.
 
-`AI Output` must be short and factual. Mention the changed files, generated artifacts, or conclusion rather than pasting a full report/code block into the report.
+`AI Output` should be short and factual for ordinary sessions. Mention the changed files, generated artifacts, or conclusion rather than pasting a full report/code block into the report unless the AI output is one contiguous generated artifact. If the artifact is continuous and available as a single file, include the full content with `--output-file`.
 
 Always record the clearest available tool and model/version in `Tool/Model`. Use `--tool-model` when known, for example `GPT-5.4`, `GPT-5.5`, or `Claude Sonnet`. If the exact version is not visible, use the tool family plus the most specific known model name instead of a generic value.
 
