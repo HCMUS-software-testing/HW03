@@ -1,4 +1,4 @@
-# GUI Usability Checklist Processing
+# Quá trình xử lý checklist tính khả dụng GUI
 
 Tài liệu này ghi lại quá trình dùng AI để tạo bản nháp checklist GUI usability cho EMS và quá trình nhóm review, chỉnh sửa checklist trước khi tạo bản cuối cùng.
 

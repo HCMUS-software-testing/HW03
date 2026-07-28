@@ -1,8 +1,8 @@
-# Task 1A - GUI Usability Checklist for Event Management System
+# Task 1A - Checklist tính khả dụng GUI cho Event Management System
 
-Checklist này dùng để kiểm thử tính khả dụng GUI của ứng dụng web Event Management System. Các mục được xây dựng dựa trên Nielsen's 10 Usability Heuristics, Norman's design principles, và Shneiderman's Eight Golden Rules.
+Checklist này dùng để kiểm thử tính khả dụng GUI của ứng dụng web Event Management System. Các mục được xây dựng dựa trên 10 heuristic usability của Nielsen, các nguyên lý thiết kế của Norman và 8 quy tắc vàng của Shneiderman.
 
-| ID | Khía cạnh giao diện (Interface Aspect) | Mục kiểm tra (Checklist Item) | Tiêu chuẩn đối chiếu (Reference) | Lý do (Rationale) |
+| ID | Khía cạnh giao diện | Mục kiểm tra | Tiêu chuẩn đối chiếu | Lý do |
 | --- | --- | --- | --- | --- |
 | IA-01-01 | IA-01 Các tiêu chuẩn UI chung | Các trang chính như dashboard, danh sách sự kiện, chi tiết sự kiện và hồ sơ người dùng có bố cục nhất quán về header, sidebar, font, màu, icon và khoảng cách. | Nielsen: Consistency and standards; Shneiderman: Strive for consistency; Norman: Consistency | Tính nhất quán giúp người dùng không phải học lại cách dùng ở từng trang và giảm lỗi thao tác. |
 | IA-01-02 | IA-01 Các tiêu chuẩn UI chung | Thuật ngữ hiển thị nhất quán trên toàn hệ thống, ví dụ không dùng lẫn lộn `Event`, `Program`, `Activity` nếu cùng chỉ một loại dữ liệu. | Nielsen: Match between system and real world; Shneiderman: Consistency | Thuật ngữ ổn định giúp người dùng hiểu đúng đối tượng đang thao tác và tránh nhầm lẫn khi tìm kiếm hoặc đăng ký sự kiện. |

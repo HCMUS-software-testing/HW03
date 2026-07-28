@@ -1,6 +1,6 @@
-# Task 1A - GUI Usability Checklist for Event Management System
+# Task 1A - Checklist tính khả dụng GUI cho Event Management System
 
-Checklist này dùng để kiểm thử tính khả dụng GUI của ứng dụng web Event Management System. Các mục được xây dựng dựa trên Nielsen's 10 Usability Heuristics, Norman's design principles, và Shneiderman's Eight Golden Rules.
+Checklist này dùng để kiểm thử tính khả dụng GUI của ứng dụng web Event Management System. Các mục được xây dựng dựa trên 10 heuristic usability của Nielsen, các nguyên lý thiết kế của Norman và 8 quy tắc vàng của Shneiderman.
 
 | ID       | Khía cạnh giao diện (Interface Aspect)    | Mục kiểm tra (Checklist Item)                                                                                                                                                         | Tiêu chuẩn đối chiếu (Reference)                                                           | Lý do (Rationale)                                                                                                                                     | Review                                                            |
 | -------- | -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
