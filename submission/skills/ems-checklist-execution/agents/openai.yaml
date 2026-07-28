@@ -1,0 +1,4 @@
+interface:
+  display_name: "EMS Checklist Execution"
+  short_description: "Hỗ trợ chạy GUI checklist HW03 EMS"
+  default_prompt: "Dùng $ems-checklist-execution để chuẩn bị bảng Task 1B cho Scenario A và hướng dẫn tôi ghi kết quả Passed/Failed/N/A."

@@ -66,3 +66,27 @@ Tóm tắt: AI đọc lại docs/2026.HW03.GUI Usability EMS_En.md, đối chi�
 - **Lý do đánh giá:** Các sửa đổi bám sát Required Contents trong đề: main report Markdown/PDF, user-testing evidence, findings log, cross-platform screenshots/matrix, AI Audit/Critique, git commit log, agent skills/demo và README self-assessment. Nội dung vẫn là khung điền; AI không tạo bằng chứng thật.
 - **Phần sinh viên sửa hoặc kiểm chứng:** Sinh viên cần chạy EMS thật, điền kết quả checklist, submit Google Form, bổ sung screenshot thật, participant thật, raw SUS/UEQ-S, cross-platform screenshot có email overlay, export PDF và cập nhật self-assessed grade.
 - **Artefact liên quan:** `submission/main_report.md`, `submission/checklist_execution.md`, `submission/usability_report.md`, `submission/user_testing_evidence.md`, `submission/cross_platform_matrix.md`, `submission/bug_usability_findings_log.md`, `submission/README.md`, `submission/HW03_step_by_step_guide.md`
+
+
+## Entry 4
+
+- **Ngày giờ:** 2026-07-28 15:33 +0700
+- **Công cụ AI / model:** Codex / GPT-5
+- **Tác vụ:** Tạo Agent Skill hỗ trợ Task 1B EMS checklist execution
+- **Prompt của sinh viên:**
+
+```text
+PLEASE IMPLEMENT THIS PLAN:
+# Kế hoạch tạo Agent Skill cho Task 1B EMS
+
+Tạo Agent Skill mới tên ems-checklist-execution trong submission/skills/ems-checklist-execution/, có SKILL.md, script build_execution_table.py, agents/openai.yaml, cập nhật agent_skills_demo.md và AI Audit Report, rồi validate theo Test Plan.
+```
+
+- **Output của AI:**
+
+Tóm tắt: AI tạo skill ems-checklist-execution để hỗ trợ chạy GUI checklist HW03 EMS Task 1B cho Scenario A; tạo script build_execution_table.py đọc 51 item từ gui_usability_checklist_final.md và sinh bảng Markdown với cột A1/A2/A3; cập nhật agent_skills_demo.md; chạy quick_validate.py thành công sau khi cài PyYAML tạm vào /tmp; kiểm tra script sinh đủ 51 dòng và đủ IA-01, IA-02, IA-03, IA-04.
+
+- **Nhận xét của sinh viên:** Chấp nhận sau khi sinh viên kiểm tra nội dung skill và dùng trong demo video.
+- **Lý do đánh giá:** Skill bám đúng Section 8 vì hỗ trợ checklist execution có thể tái sử dụng và có kịch bản demo end-to-end. Skill không tự tạo bằng chứng EMS, không tự điền kết quả test, screenshot, severity hay Google Form timestamp.
+- **Phần sinh viên sửa hoặc kiểm chứng:** Sinh viên cần dùng skill khi làm Task 1B thật, điền Passed/Failed/N/A dựa trên EMS thật, chụp screenshot failed item, submit Google Form và quay demo video thể hiện quá trình dùng skill.
+- **Artefact liên quan:** `submission/skills/ems-checklist-execution/SKILL.md`, `submission/skills/ems-checklist-execution/scripts/build_execution_table.py`, `submission/skills/ems-checklist-execution/agents/openai.yaml`, `submission/agent_skills_demo.md`
