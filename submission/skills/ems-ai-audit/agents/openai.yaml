@@ -1,0 +1,4 @@
+interface:
+  display_name: "EMS AI Audit"
+  short_description: "Ghi AI Audit HW03 bằng tiếng Việt"
+  default_prompt: "Dùng $ems-ai-audit để ghi lại tất cả prompt trong session HW03 này vào AI Audit Report."
