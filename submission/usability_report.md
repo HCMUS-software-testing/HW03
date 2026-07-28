@@ -1,96 +1,62 @@
-# Usability Report
+# Usability Report - Scenario A
 
 ## 1. Thông tin chung
 
 | Trường | Nội dung |
 | --- | --- |
-| Sinh viên | [MSSV - Họ tên] |
-| Scenario | [A/B/C/D] |
-| Màn hình liên quan | [Liệt kê >= 3 màn hình] |
+| Sinh viên | Lê Mai Hoài Bảo |
+| MSSV | 23127326 |
+| Scenario | A - Admin creates and manages events |
+| Màn hình liên quan | A1 Events list, A2 Add/Edit Event, A3 Registration & Roles |
 | Ngày thực hiện | [YYYY-MM-DD đến YYYY-MM-DD] |
 | Phương pháp điểm số | [SUS hoặc UEQ-S] |
+| Evidence thô | `submission/user_testing_evidence.md` |
 
-## 2. Task scenario cho người dùng
+## 2. Task scenario
 
-### 2.1 Mục tiêu đưa cho participant
+[Viết goal-based task scenario đã đưa cho participant. Task phải bao phủ A1, A2 và A3, ví dụ tạo/chỉnh sửa một sự kiện và cấu hình đăng ký.]
 
-[Viết mục tiêu theo ngôn ngữ tự nhiên, không liệt kê từng click. Ví dụ: “Hãy đăng ký tham gia một workshop sắp diễn ra và cho tôi xem vé/QR check-in của bạn.”]
+## 3. Participant summary
 
-### 2.2 Điều kiện bắt đầu
+| ID | Hồ sơ phù hợp | Liên hệ đã che | Result | Time on task | Errors | Hesitations | SUS/UEQ-S |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: |
+| P1 | [ ] | [ ] | [Completed/Partial/Failed] | [mm:ss] | [ ] | [ ] | [ ] |
+| P2 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| P3 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| P4 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| P5 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
 
-- Tài khoản: [Đã đăng nhập/Chưa đăng nhập/Vai trò]
-- Dữ liệu EMS cần có trước phiên: [Event/request/user...]
-- Thiết bị/trình duyệt: [Mô tả]
+## 4. Metrics summary
 
-### 2.3 Tiêu chí hoàn thành
+| Metric | Kết quả |
+| --- | ---: |
+| Success rate | [ ]% |
+| Mean time on task | [ ] |
+| Mean error count | [ ] |
+| Mean hesitation count | [ ] |
+| Mean SUS/UEQ-S score | [ ] |
 
-| Mức | Tiêu chí |
-| --- | --- |
-| Completed | [Người dùng đạt mục tiêu chính không cần trợ giúp nghiêm trọng] |
-| Partial | [Đạt một phần mục tiêu hoặc cần trợ giúp] |
-| Failed | [Không đạt mục tiêu] |
+## 5. Ranked findings
 
-## 3. Participant
+Severity: 0 = cosmetic, 1 = minor, 2 = moderate, 3 = major, 4 = blocker.
 
-> Người tham gia phải là người thật ngoài lớp. Che giữa số điện thoại hoặc thông tin liên hệ theo yêu cầu đề.
+| ID | Screen | Finding | Evidence | Severity | Screenshot ref | Recommendation | Form timestamp |
+| --- | --- | --- | --- | ---: | --- | --- | --- |
+| UX-001 | [A1/A2/A3] | [Mô tả vấn đề usability] | [Participant/metric/probe quote] | [0-4] | [screenshots/...] | [Đề xuất sửa cụ thể] | [YYYY-MM-DD HH:mm] |
 
-| ID | Hồ sơ phù hợp | Liên hệ đã che | Ngày giờ test | Thiết bị | Consent ghi màn hình |
-| --- | --- | --- | --- | --- | --- |
-| P1 | [Sinh viên/giảng viên/khách] | [Zalo/email/phone che giữa] | [ ] | [ ] | [Có/Không] |
-| P2 | [ ] | [ ] | [ ] | [ ] | [Có/Không] |
-| P3 | [ ] | [ ] | [ ] | [ ] | [Có/Không] |
-| P4 | [ ] | [ ] | [ ] | [ ] | [Có/Không] |
-| P5 | [ ] | [ ] | [ ] | [ ] | [Có/Không] |
+## 6. Phân tích
 
-## 4. Pilot session
+### 6.1 Pain points theo nhóm
 
-| Nội dung | Ghi chú |
-| --- | --- |
-| Người pilot | [Không tính vào 5 participant chính] |
-| Vấn đề phát hiện | [Task wording khó hiểu, data thiếu, flow bị gãy...] |
-| Điều chỉnh sau pilot | [Cách sửa trước khi chạy 5 phiên chính] |
+[Nhóm các vấn đề tương tự nhau. Tách bug riêng lẻ khỏi vấn đề thiết kế có tính hệ thống.]
 
-## 5. Metrics
+### 6.2 Ảnh hưởng tới trải nghiệm
 
-| Participant | Success | Time on task | Error count | Hesitation count | SUS/UEQ-S | Ghi chú chính |
-| --- | --- | ---: | ---: | ---: | ---: | --- |
-| P1 | [Completed/Partial/Failed] | [mm:ss] | [ ] | [ ] | [ ] | [ ] |
-| P2 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| P3 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| P4 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| P5 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| **Trung bình/Tổng** | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+[Phân tích ảnh hưởng tới clarity, error recovery, speed và trust.]
 
-## 6. Probe questions
+### 6.3 Prioritised recommendations
 
-| Câu hỏi | P1 | P2 | P3 | P4 | P5 | Chủ đề rút ra |
-| --- | --- | --- | --- | --- | --- | --- |
-| Phần nào khó hiểu nhất? | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| Khi gặp lỗi, bạn có biết cách sửa không? | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| Tốc độ và phản hồi của hệ thống có đủ rõ không? | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| Bạn có tin kết quả thao tác đã được lưu/xử lý không? | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-
-## 7. Findings theo severity
-
-Severity gợi ý: 0 = cosmetic, 1 = minor, 2 = moderate, 3 = major, 4 = blocker.
-
-| ID | Màn hình | Finding | Bằng chứng | Severity | Ảnh | Khuyến nghị |
-| --- | --- | --- | --- | ---: | --- | --- |
-| UX-001 | [ ] | [Mô tả vấn đề] | [P nào gặp, metric nào bị ảnh hưởng] | [0-4] | [screenshots/...] | [Đề xuất sửa cụ thể] |
-
-## 8. Phân tích
-
-### 8.1 Pattern vấn đề lặp lại
-
-[Nhóm các pain point giống nhau, phân biệt bug riêng lẻ với vấn đề thiết kế hệ thống.]
-
-### 8.2 Mức độ ảnh hưởng tới người dùng
-
-[Nêu ảnh hưởng tới clarity, error recovery, speed, trust.]
-
-### 8.3 Ưu tiên khuyến nghị
-
-| Ưu tiên | Đề xuất | Lý do | Finding liên quan |
+| Priority | Recommendation | Lý do | Finding liên quan |
 | --- | --- | --- | --- |
 | P0 | [Sửa ngay] | [Ảnh hưởng nghiêm trọng] | [UX-...] |
 | P1 | [Sửa sớm] | [Ảnh hưởng vừa] | [UX-...] |

@@ -10,8 +10,8 @@ Tài liệu này tổng hợp từ các file Markdown trong `docs/`, ngoại tr�
 | Task 1B | Chạy checklist trên ít nhất `3` màn hình của scenario cá nhân, ghi Pass/Fail/Notes, screenshot lỗi, bug report | 15 | Cá nhân |
 | Task 2 | User testing với `5` người thật, có pilot, metrics, SUS hoặc UEQ-S, Usability Report | 25 | Cá nhân |
 | Task 3 | Cross-browser/cross-platform matrix cho từng màn hình cá nhân | 25 | Cá nhân |
-| Task 4 | Submit findings vào Google Form và tổng hợp vào Bug & Usability Findings Log | 10 | Cá nhân |
-| Task 5 | Agent Skills và demo video | 10 | Cá nhân |
+| Criteria 4 | Submit findings vào Google Form và tổng hợp vào Bug & Usability Findings Log | 10 | Cá nhân |
+| Criteria 5 | Agent Skills và demo video | 10 | Cá nhân |
 
 SUT: `https://promoter-starboard-prude.ngrok-free.dev/`
 
@@ -29,28 +29,24 @@ Tạo cấu trúc nộp bài ngay từ đầu để tránh thất lạc bằng c
 submission/
   README.md
   main_report.md
+  checklist_execution.md
+  usability_report.md
+  user_testing_evidence.md
+  cross_platform_matrix.md
   bug_usability_findings_log.md
-  git_commit_log.txt
+  git_commit_log.md
   ai-audit/
     ai_audit_report.md
   ai_critique.md
   group/
-    shared_gui_checklist.md
-    references.md
-    ai_prompts.md
-  user-testing/
-    pilot_notes.md
-    participant_table.md
-    session_notes/
-    raw_scores/
-  cross-platform/
-    matrix.md
-    screenshots/
+    gui_usability_checklist_final.md
+    reference_sources_and_ai_prompts.md
   screenshots/
     checklist-failures/
     usability-findings/
-  agent-skills/
-  demo-videos.md
+    cross-platform/
+  skills/
+  agent_skills_demo.md
 ```
 
 Sau mỗi giai đoạn lớn, commit một lần. Đề yêu cầu có Git commit log theo từng bước testing procedure, ví dụ checklist design, checklist execution, bug logging, usability evaluation, và từng cross-platform run.
@@ -97,9 +93,9 @@ Quy trình làm:
 3. Review thủ công từng item. Xóa item mơ hồ, trùng lặp, hoặc không test được bằng quan sát.
 4. Bổ sung các item AI hay bỏ sót: accessibility, keyboard navigation, EN/VI i18n, mobile layout, upload preview, rich-text validation, dark mode nếu có, empty/loading/error states.
 5. Với mỗi item nhóm tự thêm ngoài AI output, ghi lý do AI bỏ sót.
-6. Lưu `submission/group/shared_gui_checklist.md`, `submission/group/references.md`, và `submission/group/ai_prompts.md`.
+6. Lưu checklist nhóm ở `submission/group/gui_usability_checklist_final.md` và nguồn tham khảo + AI prompts ở `submission/group/reference_sources_and_ai_prompts.md`.
 
-Template checklist nên dùng:
+Mẫu checklist nên dùng:
 
 ```markdown
 | ID | IA | Checklist item | Source | AI/Human | Why added or adjusted |
@@ -124,7 +120,7 @@ Quy trình thực hiện:
 7. Chụp screenshot cho từng failed item. Không cần screenshot cho item pass.
 8. Nếu fail là bug hoặc usability issue, thêm vào Bug & Usability Findings Log và submit Google Form.
 
-Template execution table:
+Mẫu execution table:
 
 ```markdown
 | Screen | Checklist ID | Result | Notes | Screenshot ref | Finding ID |
@@ -213,7 +209,7 @@ Quy trình:
 9. Cho participant điền SUS hoặc UEQ-S.
 10. Tính metrics và viết Usability Report.
 
-Template participant table:
+Mẫu participant table:
 
 ```markdown
 | ID | Profile | Contact masked | Session date/time | Consent | Notes |
@@ -221,7 +217,7 @@ Template participant table:
 | P01 | Student, event participant | Zalo 09****1234 | 2026-..-.. ..:.. | Yes | Completed without hints |
 ```
 
-Template metrics:
+Mẫu metrics:
 
 ```markdown
 | Participant | Success | Time on task | Errors | Hesitations | SUS/UEQ-S | Key friction |
@@ -258,7 +254,7 @@ Nên dùng BrowserStack hoặc LambdaTest trial. Nếu không có trial, dùng c
 3. Overlay email sinh viên dạng `MSSV@....edu.vn`.
 4. Màn hình đang test.
 
-Template matrix:
+Mẫu matrix:
 
 ```markdown
 | Screen | OS | Browser | Device class | Device/profile | Result | Screenshot ref | Notes |
@@ -287,7 +283,7 @@ Mọi defect và usability improvement từ Task 1, Task 2, Task 3 phải đư�
 1. Google Form: `https://forms.gle/CJQFQCAXcsDbXDMM9`.
 2. File tổng hợp: `submission/bug_usability_findings_log.md`.
 
-Template log:
+Mẫu log:
 
 ```markdown
 | ID | Scenario/Screen | Type | Description | Steps/Heuristic | Severity | Suggested fix | Screenshot ref | Form-submission timestamp |
@@ -397,7 +393,7 @@ Nếu làm phần này, cần nộp skill files và video demo end-to-end. Video
 
 ZIP phải có `README.md` với self-assessment table và test summary.
 
-Template:
+Mẫu:
 
 ```markdown
 # HW03 Submission README
