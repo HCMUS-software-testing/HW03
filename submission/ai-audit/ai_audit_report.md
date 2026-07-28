@@ -90,3 +90,24 @@ Tóm tắt: AI tạo skill ems-checklist-execution để hỗ trợ chạy GUI c
 - **Lý do đánh giá:** Skill bám đúng Section 8 vì hỗ trợ checklist execution có thể tái sử dụng và có kịch bản demo end-to-end. Skill không tự tạo bằng chứng EMS, không tự điền kết quả test, screenshot, severity hay Google Form timestamp.
 - **Phần sinh viên sửa hoặc kiểm chứng:** Sinh viên cần dùng skill khi làm Task 1B thật, điền Passed/Failed/N/A dựa trên EMS thật, chụp screenshot failed item, submit Google Form và quay demo video thể hiện quá trình dùng skill.
 - **Artefact liên quan:** `submission/skills/ems-checklist-execution/SKILL.md`, `submission/skills/ems-checklist-execution/scripts/build_execution_table.py`, `submission/skills/ems-checklist-execution/agents/openai.yaml`, `submission/agent_skills_demo.md`
+
+
+## Entry 5
+
+- **Ngày giờ:** 2026-07-28 15:49 +0700
+- **Công cụ AI / model:** Codex / GPT-5
+- **Tác vụ:** Dùng ems-checklist-execution để chuẩn bị bảng Task 1B cho Scenario A
+- **Prompt của sinh viên:**
+
+```text
+Dùng $ems-checklist-execution để chuẩn bị bảng Task 1B cho Scenario A và hướng dẫn tôi ghi kết quả Passed/Failed/N/A.
+```
+
+- **Output của AI:**
+
+Tóm tắt: AI đọc skill ems-checklist-execution và các file liên quan, chạy script build_execution_table.py để sinh bảng từ checklist nhóm, sau đó cập nhật submission/checklist_execution.md bằng bảng Task 1B gồm 51 checklist item cho ba màn hình A1 Events list, A2 Add/Edit Event và A3 Registration & Roles. AI cũng thêm hướng dẫn cách đánh dấu Passed/Failed/N/A, yêu cầu mỗi Failed phải có notes và screenshot thật, và không tự điền kết quả kiểm thử khi chưa có bằng chứng EMS thật.
+
+- **Nhận xét của sinh viên:** Chấp nhận để dùng làm khung Task 1B; kết quả từng item cần sinh viên tự kiểm chứng trên EMS thật.
+- **Lý do đánh giá:** Output đúng phạm vi hỗ trợ chuẩn bị bảng và hướng dẫn ghi kết quả. AI không tự tạo Passed, Failed, N/A, screenshot, bug count hoặc bằng chứng live EMS.
+- **Phần sinh viên sửa hoặc kiểm chứng:** Sinh viên cần mở EMS bằng vai trò Admin, kiểm từng item trên A1/A2/A3, thay placeholder bằng Passed/Failed/N/A dựa trên quan sát thật, chụp screenshot cho từng Failed và ghi bug tương ứng vào findings log nếu có.
+- **Artefact liên quan:** `submission/checklist_execution.md`, `submission/group/gui_usability_checklist_final.md`, `submission/skills/ems-checklist-execution/SKILL.md`
