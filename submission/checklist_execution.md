@@ -9,8 +9,6 @@
 | Scenario | A - Admin creates and manages events |
 | Function pool | Event administration |
 | Checklist nguồn | `submission/group/gui_usability_checklist_final.md` |
-| Ngày chạy checklist | [YYYY-MM-DD] |
-| Trình duyệt/thiết bị chính | [VD: Chrome, macOS, Desktop] |
 
 ## 2. Màn hình Pool A được kiểm thử
 
