@@ -1,0 +1,15 @@
+58d0731 (HEAD -> khanh) test:add-hw03-artifact-validator
+8617d7c docs:add-ai-audit-artifacts
+bc58c1c feat:add-hw03-agent-skills
+2f41d0d docs:add-scenario-c-testing-templates
+c3d18fe docs:update-shared-checklist-evidence
+5fdc93d (origin/main, origin/HEAD) Merge pull request #2 from HCMUS-software-testing/kien
+93c1e3c fixed: gui usability checklist
+c1189ed docs: update Scenario A task details and test checklist in README.md
+59da4dd Merge pull request #1 from HCMUS-software-testing/kien
+607265f Merge branch 'main' of https://github.com/HCMUS-software-testing/HW03 into kien
+d5bfe7d added gui usability checklist and fixed ai-audit-entry skill
+af1c50a chores: change template for README.md
+69f74fc added ai audit skill
+a43f874 (origin/khanh, main) init project
+36550e4 first commit
