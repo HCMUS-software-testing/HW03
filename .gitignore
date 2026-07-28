@@ -2,5 +2,11 @@
 !.agents/skills/
 .agents/skills/*
 !.agents/skills/ai-audit-entry/
+!.agents/skills/ems-gui-checklist-runner/
+!.agents/skills/ems-gui-checklist-runner/**
+!.agents/skills/ems-usability-report-writer/
+!.agents/skills/ems-usability-report-writer/**
+!.agents/skills/ems-compatibility-matrix-builder/
+!.agents/skills/ems-compatibility-matrix-builder/**
 
 AGENTS.md

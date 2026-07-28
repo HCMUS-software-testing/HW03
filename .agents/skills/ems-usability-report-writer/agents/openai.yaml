@@ -1,0 +1,4 @@
+interface:
+  display_name: "EMS Usability Report Writer"
+  short_description: "Tổng hợp bằng chứng user testing EMS"
+  default_prompt: "Dùng $ems-usability-report-writer để tính SUS, tổng hợp quan sát người tham gia, xếp hạng findings và soạn recommendation."
