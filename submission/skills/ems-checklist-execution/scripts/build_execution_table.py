@@ -75,8 +75,8 @@ def build_table(items: list[ChecklistItem], screens: list[str]) -> str:
         "Interface Aspect",
         "Nội dung kiểm tra",
         *screens,
-        "Notes cho Failed",
-        "Screenshot ref",
+        "Notes cho Failed theo màn hình",
+        "Screenshot ref theo màn hình",
     ]
     lines = [
         "| " + " | ".join(headers) + " |",
@@ -89,8 +89,8 @@ def build_table(items: list[ChecklistItem], screens: list[str]) -> str:
             item.aspect,
             escape_table_cell(item.text),
             *("[Passed/Failed/N/A]" for _ in screens),
-            "[Chỉ ghi khi Failed]",
-            "[screenshots/...]",
+            "[A1/A2/A3: lý do fail]",
+            "[A1/A2/A3: screenshots/...]",
         ]
         lines.append("| " + " | ".join(row) + " |")
 

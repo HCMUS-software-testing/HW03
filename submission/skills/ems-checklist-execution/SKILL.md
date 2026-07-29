@@ -14,6 +14,7 @@ Hỗ trợ sinh viên chạy Task 1B của HW03 EMS: áp dụng checklist nhóm 
 - Không tự tạo kết quả kiểm thử. Chỉ ghi `Passed`, `Failed`, `N/A`, notes, screenshot ref, bug, severity hoặc Google Form timestamp khi sinh viên cung cấp hoặc khi nhìn thấy bằng chứng thật trong session.
 - Không tạo giả screenshot, trạng thái EMS, bug count, Form timestamp, BrowserStack/LambdaTest result hoặc participant data.
 - Với mỗi item `Failed`, phải có lý do fail trong notes và screenshot thật từ EMS.
+- Vì mỗi item được kiểm trên nhiều màn hình, notes và screenshot ref phải ghi rõ tiền tố màn hình, ví dụ `A1: screenshots/A1_icon_tooltip.png`.
 - Mọi bug hoặc usability issue phát hiện từ Task 1B phải được ghi ở cả report và `submission/bug_usability_findings_log.md`; sau khi sinh viên submit Google Form, mới điền `Form-submission timestamp`.
 - Nội dung hỗ trợ và output dùng tiếng Việt, giữ nguyên các nhãn bắt buộc như `Passed`, `Failed`, `N/A`.
 
