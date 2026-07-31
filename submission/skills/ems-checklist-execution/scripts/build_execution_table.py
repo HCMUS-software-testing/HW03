@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a blank HW03 EMS Task 1B checklist execution table."""
+"""Build blank HW03 EMS Task 1B checklist execution tables."""
 
 from __future__ import annotations
 
@@ -11,9 +11,9 @@ from pathlib import Path
 
 DEFAULT_CHECKLIST = Path("submission/group/gui_usability_checklist_final.md")
 DEFAULT_SCREENS = [
-    "A1 Events list",
-    "A2 Add/Edit Event",
-    "A3 Registration & Roles",
+    ("A1", "Events list with status filters and notification dots"),
+    ("A2", "Add/Edit Event form - image upload + Rich-Text + date/time validation"),
+    ("A3", "Registration & Roles configuration panel - Max Slots / Waitlist / additional role"),
 ]
 
 
@@ -69,14 +69,14 @@ def escape_table_cell(value: str) -> str:
     return value.replace("|", r"\|").replace("\n", " ").strip()
 
 
-def build_table(items: list[ChecklistItem], screens: list[str]) -> str:
+def build_table(items: list[ChecklistItem]) -> str:
     headers = [
         "Checklist ID",
         "Interface Aspect",
         "Nội dung kiểm tra",
-        *screens,
-        "Notes cho Failed theo màn hình",
-        "Screenshot ref theo màn hình",
+        "Result",
+        "Notes cho Failed",
+        "Screenshot ref",
     ]
     lines = [
         "| " + " | ".join(headers) + " |",
@@ -88,20 +88,30 @@ def build_table(items: list[ChecklistItem], screens: list[str]) -> str:
             item.item_id,
             item.aspect,
             escape_table_cell(item.text),
-            *("[Passed/Failed/N/A]" for _ in screens),
-            "[A1/A2/A3: lý do fail]",
-            "[A1/A2/A3: screenshots/...]",
+            "[Passed/Failed/N/A]",
+            "[Chỉ ghi khi Failed]",
+            "[screenshots/...]",
         ]
         lines.append("| " + " | ".join(row) + " |")
 
     return "\n".join(lines) + "\n"
 
 
+def build_tables(items: list[ChecklistItem], screens: list[tuple[str, str]]) -> str:
+    sections: list[str] = []
+    for index, (screen_id, screen_name) in enumerate(screens, start=1):
+        sections.append(
+            f"### 4.{index} Checklist execution - {screen_id} {screen_name}\n\n"
+            + build_table(items)
+        )
+    return "\n".join(sections)
+
+
 def main() -> int:
     args = parse_args()
     checklist_path = Path(args.checklist)
     items = parse_checklist(checklist_path)
-    table = build_table(items, DEFAULT_SCREENS)
+    table = build_tables(items, DEFAULT_SCREENS)
 
     if args.output:
         Path(args.output).write_text(table, encoding="utf-8")

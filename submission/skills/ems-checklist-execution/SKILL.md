@@ -14,7 +14,8 @@ Hỗ trợ sinh viên chạy Task 1B của HW03 EMS: áp dụng checklist nhóm 
 - Không tự tạo kết quả kiểm thử. Chỉ ghi `Passed`, `Failed`, `N/A`, notes, screenshot ref, bug, severity hoặc Google Form timestamp khi sinh viên cung cấp hoặc khi nhìn thấy bằng chứng thật trong session.
 - Không tạo giả screenshot, trạng thái EMS, bug count, Form timestamp, BrowserStack/LambdaTest result hoặc participant data.
 - Với mỗi item `Failed`, phải có lý do fail trong notes và screenshot thật từ EMS.
-- Vì mỗi item được kiểm trên nhiều màn hình, notes và screenshot ref phải ghi rõ tiền tố màn hình, ví dụ `A1: screenshots/A1_icon_tooltip.png`.
+- Với Task 1B, mỗi màn hình phải có một bảng checklist execution riêng. Không dùng một bảng có 3 cột kết quả A1/A2/A3 vì khó đọc và khó ghi evidence.
+- Trong từng bảng theo màn hình, mỗi item chỉ có một cột `Result`, một cột `Notes cho Failed`, và một cột `Screenshot ref`. Không cần ghi tiền tố màn hình trong từng cell vì tiêu đề bảng đã xác định màn hình.
 - Mọi bug hoặc usability issue phát hiện từ Task 1B phải được ghi ở cả report và `submission/bug_usability_findings_log.md`; sau khi sinh viên submit Google Form, mới điền `Form-submission timestamp`.
 - Nội dung hỗ trợ và output dùng tiếng Việt, giữ nguyên các nhãn bắt buộc như `Passed`, `Failed`, `N/A`.
 
@@ -25,7 +26,7 @@ Hỗ trợ sinh viên chạy Task 1B của HW03 EMS: áp dụng checklist nhóm 
    - `A1` Events list with status filters and notification dots.
    - `A2` Add/Edit Event form - image upload + Rich-Text + date/time validation.
    - `A3` Registration & Roles configuration panel - Max Slots / Waitlist / additional role.
-3. Nếu bảng Task 1B chưa có đủ item, chạy script:
+3. Nếu bảng Task 1B chưa có đủ item hoặc đang dùng format gộp 3 màn hình trong một bảng, chạy script:
 
 ```bash
 python3 submission/skills/ems-checklist-execution/scripts/build_execution_table.py
@@ -39,7 +40,11 @@ python3 submission/skills/ems-checklist-execution/scripts/build_execution_table.
 ```
 
 4. Hướng dẫn sinh viên mở EMS bằng tài khoản phù hợp và kiểm từng item trên từng màn hình.
-5. Điền bảng chi tiết trong `submission/checklist_execution.md`.
+5. Điền bảng chi tiết trong `submission/checklist_execution.md` theo format:
+   - `4.1 Checklist execution - A1 ...`
+   - `4.2 Checklist execution - A2 ...`
+   - `4.3 Checklist execution - A3 ...`
+   Mỗi bảng lặp lại toàn bộ checklist item và chỉ chứa kết quả của màn hình đó.
 6. Tóm tắt số item áp dụng, Passed, Failed, N/A theo màn hình trong `submission/main_report.md`.
 7. Với mỗi bug/usability issue thật, thêm dòng vào `submission/bug_usability_findings_log.md` và nhắc sinh viên submit Google Form.
 
@@ -50,6 +55,21 @@ python3 submission/skills/ems-checklist-execution/scripts/build_execution_table.
 | `Passed` | Màn hình đạt item checklist khi quan sát hoặc thao tác thật. | Không bắt buộc screenshot riêng. |
 | `Failed` | Màn hình vi phạm item checklist. | Notes nêu lý do fail và screenshot ref thật. |
 | `N/A` | Item không áp dụng hợp lý cho màn hình đó. | Notes ngắn nếu dễ gây tranh cãi. |
+
+## Format bảng bắt buộc
+
+Mỗi màn hình dùng một bảng riêng:
+
+| Checklist ID | Interface Aspect | Nội dung kiểm tra | Result | Notes cho Failed | Screenshot ref |
+| --- | --- | --- | --- | --- | --- |
+| IA-01-01 | IA-01 | [Copy item từ checklist nhóm] | [Passed/Failed/N/A] | [Chỉ ghi khi Failed] | [screenshots/...] |
+
+Không tạo bảng dạng:
+
+| Checklist ID | ... | A1 Events list | A2 Add/Edit Event | A3 Registration & Roles | ... |
+| --- | --- | --- | --- | --- | --- |
+
+Lý do: một checklist item áp dụng cho 3 màn hình thì phải sinh ra 3 checklist execution record độc lập, giúp grader đọc từng màn hình và evidence tương ứng rõ hơn.
 
 ## Cách ghi bug từ failed item
 
@@ -85,3 +105,4 @@ Một demo end-to-end đủ rõ cho Section 8 nên thể hiện:
 | Đánh dấu `N/A` quá rộng | Chỉ dùng khi item thật sự không áp dụng cho màn hình. |
 | Bug trong report nhưng thiếu findings log | Thêm cùng bug vào `submission/bug_usability_findings_log.md`. |
 | Có timestamp nhưng chưa submit form | Xóa timestamp cho đến khi sinh viên submit thật. |
+| Dùng một bảng có 3 cột A1/A2/A3 | Tách thành 3 bảng checklist execution riêng, mỗi bảng có cột `Result`, `Notes cho Failed`, `Screenshot ref`. |
