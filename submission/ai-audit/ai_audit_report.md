@@ -113,22 +113,22 @@ Tóm tắt: AI đọc skill ems-checklist-execution và các file liên quan, ch
 - **Artefact liên quan:** `submission/checklist_execution.md`, `submission/group/gui_usability_checklist_final.md`, `submission/skills/ems-checklist-execution/SKILL.md`
 
 
-## Entry 6
+## Mục 6
 
 - **Ngày giờ:** 2026-08-02 18:35 +0700
-- **Công cụ AI / model:** Codex / GPT-5; Computer Use; Browser skill connectivity check
-- **Tác vụ:** AI-assisted rebuild Task 1B Scenario A trên EMS production-development deployment, gồm targeted semantic audit và interaction retests
+- **Công cụ AI / mô hình:** Codex / GPT-5; Computer Use; kiểm tra kết nối bằng kỹ năng Browser
+- **Tác vụ:** Xây dựng lại Task 1B Kịch bản A với hỗ trợ AI trên môi trường phát triển-sản xuất EMS, gồm rà soát ngữ nghĩa có mục tiêu và kiểm thử lại bằng tương tác
 - **Prompt của sinh viên:**
 
 ```text
 Rebuild Task 1B — Scenario A: giữ A1 Events list, A2 Add/Edit Event và A3 Registration & Roles; chạy lại toàn bộ 51 checklist item trên từng màn hình bằng live prod-dev.ems-fitus.cloud; tạo evidence mới; đồng bộ checklist, report, findings, README, AI Audit, Google-Form-ready entries và commit log; không submit Google Form nếu chưa được phê duyệt.
 ```
 
-- **Output của AI:**
+- **Kết quả của AI:**
 
-AI kiểm tra Browser skill nhưng không có browser endpoint khả dụng, sau đó dùng Computer Use trên trình duyệt cục bộ để đăng nhập Admin và kiểm thử tương tác. Targeted semantic audit và interaction retests được chạy thêm cho icon hover/focus trên A2 và unsaved nested Registration & Roles state trên A3. AI chạy 153 checklist rows (51 × A1/A2/A3), tạo evidence mới trong `submission/screenshots/task1b/`, giữ draft `23127326_TASK1B_20260802_163308` (event ID 80) ở trạng thái chưa publish. Kết quả: A1 18 Passed/7 Failed/26 Not applicable trên 25 tiêu chí áp dụng (72.0%); A2 34/4/13 trên 38 (89.5%); A3 30/3/18 trên 33 (90.9%); aggregate 82 Passed, 14 Failed, 57 Not applicable trên 96 tiêu chí áp dụng (85.4%). Có 11 finding được tương tác xác nhận trong log; Google Form không được submit.
+AI kiểm tra kỹ năng Browser nhưng không có điểm kết nối trình duyệt khả dụng, sau đó dùng Computer Use trên trình duyệt cục bộ để đăng nhập tài khoản Quản trị viên và kiểm thử tương tác. Việc rà soát ngữ nghĩa có mục tiêu và kiểm thử lại được bổ sung cho trạng thái di chuột/tiêu điểm của biểu tượng trên A2 và trạng thái lồng nhau chưa lưu trong `Registration & Roles` trên A3. AI thực thi 153 dòng checklist (51 × A1/A2/A3), tạo minh chứng mới trong `submission/screenshots/task1b/`, giữ bản nháp `23127326_TASK1B_20260802_163308` (mã sự kiện 80) ở trạng thái chưa xuất bản. Kết quả: A1 có 18 Đạt/7 Không đạt/26 Không áp dụng trên 25 tiêu chí áp dụng (72.0%); A2 có 34/4/13 trên 38 (89.5%); A3 có 30/3/18 trên 33 (90.9%); tổng cộng 82 Đạt, 14 Không đạt, 57 Không áp dụng trên 96 tiêu chí áp dụng (85.4%). Có 11 phát hiện được xác nhận bằng tương tác trong nhật ký; Google Form chưa được gửi.
 
-- **Nhận xét của sinh viên:** Chờ Bảo kiểm tra evidence, xác nhận email sinh viên thật và tự submit các entry đã chuẩn bị lên Google Form.
-- **Lý do đánh giá:** Việc dùng AI có audit trail, kết quả Failed đều gắn evidence mới, các tiêu chí không phù hợp có rationale riêng theo màn hình, và không suy diễn finding chỉ từ ảnh tĩnh. Endpoint ngrok trong đề trả về 404 nên live test dùng `https://prod-dev.ems-fitus.cloud/`.
-- **Phần sinh viên sửa hoặc kiểm chứng:** Bảo cần đối chiếu 153 rows với checklist nhóm, xem từng ảnh Failed, nhập email sinh viên thật, submit 11 finding, rồi đồng bộ timestamp nhận từ Google Form. Task 2, Task 3 và PDF tổng hợp được giữ nguyên/chưa hoàn tất.
-- **Artefact liên quan:** `submission/checklist_execution.md`, `submission/main_report.md`, `submission/bug_usability_findings_log.md`, `submission/task1b_google_form_entries.md`, `submission/screenshots/task1b/`
+- **Nhận xét của sinh viên:** Chờ Bảo kiểm tra minh chứng, xác nhận email sinh viên thật và tự gửi các mục đã chuẩn bị lên Google Form.
+- **Lý do đánh giá:** Việc dùng AI có nhật ký kiểm toán; mọi kết quả `Không đạt` đều gắn minh chứng mới; các tiêu chí không phù hợp có lý do riêng theo màn hình; không suy diễn phát hiện chỉ từ ảnh tĩnh. Đường dẫn ngrok trong đề trả về 404 nên kiểm thử trực tiếp dùng `https://prod-dev.ems-fitus.cloud/`.
+- **Phần sinh viên sửa hoặc kiểm chứng:** Bảo cần đối chiếu 153 dòng với checklist nhóm, xem từng ảnh `Không đạt`, nhập email sinh viên thật, gửi 11 phát hiện, rồi đồng bộ thời điểm nhận từ Google Form. Task 2, Task 3 và PDF tổng hợp được giữ nguyên/chưa hoàn tất.
+- **Tài liệu liên quan:** `submission/checklist_execution.md`, `submission/main_report.md`, `submission/bug_usability_findings_log.md`, `submission/task1b_google_form_entries.md`, `submission/screenshots/task1b/`

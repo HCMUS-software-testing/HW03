@@ -1,7 +1,7 @@
-# HW03 – GUI & Usability Testing on EMS (Event Management System)
+# HW03 – Kiểm thử giao diện và tính khả dụng trên EMS (Hệ thống quản lý sự kiện)
 
-> **Môn học:** CS423 / CSC15003 – Software Testing (AI-augmented edition)  
-> **Hệ thống kiểm thử (SUT):** EMS (`https://prod-dev.ems-fitus.cloud/`; endpoint ngrok trong đề trả về 404 khi Task 1B được chạy lại ngày 2026-08-02)
+> **Môn học:** CS423 / CSC15003 – Kiểm thử phần mềm (phiên bản có hỗ trợ AI)
+> **Hệ thống kiểm thử (SUT):** EMS (`https://prod-dev.ems-fitus.cloud/`; đường dẫn ngrok trong đề trả về 404 khi Task 1B được chạy lại ngày 2026-08-02)
 
 ---
 
@@ -104,11 +104,11 @@
 - **Cross-Platform:** _____ / 45 cells covered
 - **Agent Skill & YouTube Video:** `https://youtu.be/...`
 
-### 3.4 Lê Mai Hoài Bảo (23127326) - Scenario A
+### 3.4 Lê Mai Hoài Bảo (23127326) - Kịch bản A
 - **Màn hình đã test:** A1, A2, A3
-- **GUI Checklist:** Designed: 51 | Executed: 153 (51 × 3 màn hình) | Applicable: 96 | Passed: 82 | Failed: 14 | Not applicable: 57 | Pass rate: 85.4%
-- **Task 1B theo màn hình:** A1: 25 applicable, 18 passed, 7 failed, 26 not applicable (72.0%); A2: 38, 34, 4, 13 (89.5%); A3: 33, 30, 3, 18 (90.9%).
-- **Số lượng Bug & Usability Issues:** 11 findings tương tác được xác nhận trong Task 1B
-- **User Testing:** 5 người dùng | Điểm SUS/UEQ-S: _____ / 100
-- **Cross-Platform:** _____ / 45 cells covered
-- **Agent Skill & YouTube Video:** `https://youtu.be/...`
+- **Checklist giao diện:** Thiết kế: 51 | Thực thi: 153 (51 × 3 màn hình) | Áp dụng: 96 | Đạt: 82 | Không đạt: 14 | Không áp dụng: 57 | Tỷ lệ đạt: 85.4%
+- **Task 1B theo màn hình:** A1: 25 áp dụng, 18 đạt, 7 không đạt, 26 không áp dụng (72.0%); A2: 38, 34, 4, 13 (89.5%); A3: 33, 30, 3, 18 (90.9%).
+- **Số lượng lỗi và vấn đề tính khả dụng:** 11 phát hiện được xác nhận bằng tương tác trong Task 1B
+- **Kiểm thử người dùng:** 5 người dùng | Điểm SUS/UEQ-S: _____ / 100
+- **Đa nền tảng:** _____ / 45 ô đã kiểm tra
+- **Kỹ năng tác tử và video YouTube:** `https://youtu.be/...`

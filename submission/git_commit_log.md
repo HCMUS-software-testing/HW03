@@ -1,13 +1,14 @@
-# Git Commit Log — Task 1B Scenario A rebuild
+# Nhật ký commit Git — Xây dựng lại Task 1B Kịch bản A
 
-| Order | Commit | Message | Scope |
+| Thứ tự | Commit | Thông điệp | Phạm vi |
 | ---: | --- | --- | --- |
-| 1 | `0a227f43de19e31fcabc77cc2cc451eeb056b399` | `docs: capture Task 1B A1 live evidence` | A1 overview plus interaction-confirmed empty-state, language, tooltip, and filter-retention evidence. |
-| 2 | `e900e7781848f9c336c112de5262abd849f066fc` | `docs: capture Task 1B A2 live evidence` | A2 overview, validation, upload, unsaved-change, rich-text, and persistence evidence plus invalid-upload fixture. |
-| 3 | `83a0f42d17fd1908a0c41b64b9f3d4e1ea0d5df4` | `docs: capture Task 1B A3 live evidence` | A3 overview, validation, toggle-dependency, and saved-configuration persistence evidence. |
-| 4 | `7ac052489a581253a5d73af10ce2fd40ed201809` | `docs: capture Task 1B A1 targeted retest evidence` | Delete-confirmation/cancel safety, hover/focus/active/disabled states, and compact navigation evidence. |
-| 5 | `b7b14a6eb4bb492a665d59a85f12fc4b949aaf9b` | `docs: capture Task 1B A2 targeted retest evidence` | Icon-label/tooltip interactions plus compact form and navigation evidence. |
-| 6 | `d9d95f5b189072c4ee7d072ad283a8aec91c9e72` | `docs: capture Task 1B A3 targeted retest evidence` | Compact Registration & Roles evidence plus unsaved-change loss and saved-state verification. |
-| 7 | `(this commit)` | `docs: synchronize Task 1B findings and totals` | Final 153-row checklist, report/findings synchronization, README totals, Google-Form-ready entries, AI audit, and this log. |
+| 1 | `0a227f43de19e31fcabc77cc2cc451eeb056b399` | `docs: capture Task 1B A1 live evidence` | Ảnh tổng quan A1 cùng minh chứng được xác nhận bằng tương tác cho trạng thái rỗng, ngôn ngữ, chú giải và khả năng giữ bộ lọc. |
+| 2 | `e900e7781848f9c336c112de5262abd849f066fc` | `docs: capture Task 1B A2 live evidence` | Ảnh tổng quan A2; minh chứng kiểm tra hợp lệ, tải tệp, thay đổi chưa lưu, văn bản định dạng và tính lưu giữ; kèm tệp tải lên không hợp lệ. |
+| 3 | `83a0f42d17fd1908a0c41b64b9f3d4e1ea0d5df4` | `docs: capture Task 1B A3 live evidence` | Ảnh tổng quan A3; minh chứng kiểm tra hợp lệ, quan hệ phụ thuộc công tắc và tính lưu giữ cấu hình đã lưu. |
+| 4 | `7ac052489a581253a5d73af10ce2fd40ed201809` | `docs: capture Task 1B A1 targeted retest evidence` | Minh chứng xác nhận/hủy xóa an toàn, trạng thái di chuột/tiêu điểm/hoạt động/vô hiệu hóa và điều hướng gọn. |
+| 5 | `b7b14a6eb4bb492a665d59a85f12fc4b949aaf9b` | `docs: capture Task 1B A2 targeted retest evidence` | Tương tác với nhãn/chú giải biểu tượng cùng minh chứng biểu mẫu và điều hướng gọn. |
+| 6 | `d9d95f5b189072c4ee7d072ad283a8aec91c9e72` | `docs: capture Task 1B A3 targeted retest evidence` | Minh chứng `Registration & Roles` ở giao diện gọn, mất thay đổi chưa lưu và xác minh trạng thái đã lưu. |
+| 7 | `d237fd48650cec9fb327369a6db16c86166e3341` | `docs: synchronize Task 1B findings and totals` | Checklist 153 dòng cuối, đồng bộ báo cáo/phát hiện, tổng số trong README, mục sẵn sàng nhập Google Form, nhật ký AI và nhật ký này. |
+| 8 | `(commit này)` | `docs: localize Task 1B artifacts in Vietnamese` | Việt hóa nội dung Task 1B, giữ nguyên cấu trúc bảng, ID/câu chữ checklist dùng chung, số liệu và liên kết minh chứng. |
 
-The seventh row uses `(this commit)` because a commit cannot contain its own SHA. Resolve it after checkout with `git log -1 --format=%H`.
+Dòng thứ tám dùng `(commit này)` vì một commit không thể chứa chính mã SHA của nó. Có thể xác định sau khi checkout bằng `git log -1 --format=%H`.

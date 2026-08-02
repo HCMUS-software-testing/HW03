@@ -7,8 +7,8 @@
 | MSSV | 23127326 |
 | Họ và tên | Lê Mai Hoài Bảo |
 | Nhóm | [Điền tên/mã nhóm] |
-| Scenario | A - Admin creates and manages events |
-| Function pool | Event administration |
+| Kịch bản | A - Quản trị viên tạo và quản lý sự kiện |
+| Nhóm chức năng | Quản trị sự kiện |
 | Self-Assessed Grade | [000-100] |
 | Tên file ZIP | `23127326_HW03_AI_GUIUsability_EMS_[grade].zip` |
 
@@ -24,18 +24,18 @@
 | 5 | Agent Skills | 10 | [ ] | `submission/skills/`, `submission/agent_skills_demo.md` |
 | | **Total** | **100** | **[ ]** | |
 
-## 3. Test summary
+## 3. Tóm tắt kiểm thử
 
 | Nội dung | Kết quả |
 | --- | --- |
-| Scenario chosen | A - Admin creates and manages events |
-| Screens tested | A1 Events list; A2 Add/Edit Event; A3 Registration & Roles |
-| Checklist items designed | 51 shared checklist items |
-| Checklist items executed | 153 rows (51 per screen) |
-| Applicable / Not applicable | 96 / 57 |
-| Passed / Failed | 82 / 14 (85.4% pass rate over applicable rows) |
-| Per-screen Task 1B totals | A1: 51 / 25 / 18 / 7 / 26 / 72.0%; A2: 51 / 38 / 34 / 4 / 13 / 89.5%; A3: 51 / 33 / 30 / 3 / 18 / 90.9% (`rows / applicable / passed / failed / not applicable / pass rate`) |
-| Bugs found | 11 interaction-confirmed Task 1B findings |
+| Kịch bản đã chọn | A - Quản trị viên tạo và quản lý sự kiện |
+| Màn hình đã kiểm thử | A1 Danh sách sự kiện; A2 Thêm/Sửa sự kiện; A3 Đăng ký và vai trò |
+| Số tiêu chí checklist đã thiết kế | 51 tiêu chí checklist dùng chung |
+| Số tiêu chí checklist đã thực thi | 153 dòng (51 dòng cho mỗi màn hình) |
+| Áp dụng / Không áp dụng | 96 / 57 |
+| Đạt / Không đạt | 82 / 14 (tỷ lệ đạt 85.4% trên các dòng áp dụng) |
+| Tổng Task 1B theo màn hình | A1: 51 / 25 / 18 / 7 / 26 / 72.0%; A2: 51 / 38 / 34 / 4 / 13 / 89.5%; A3: 51 / 33 / 30 / 3 / 18 / 90.9% (`tổng dòng / áp dụng / đạt / không đạt / không áp dụng / tỷ lệ đạt`) |
+| Số lỗi/phát hiện | 11 phát hiện Task 1B được xác nhận bằng tương tác |
 | User-testing participants | 5 |
 | Usability issues by severity | S0: [ ], S1: [ ], S2: [ ], S3: [ ], S4: [ ] |
 | Compatibility cells covered | [ ] |
