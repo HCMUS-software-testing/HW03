@@ -17,6 +17,7 @@
 | 3   | Thời gian:`2026-07-28 23:55 +07`; Công cụ: `Codex / GPT-5`; Mục đích: Ghi nhận phiên chỉnh format AI audit theo phản hồi của sinh viên; Prompt: Dùng $ai-audit-entry để thêm audit entry cho phiên làm việc này.                                                                            | Đạt yêu cầu format audit sau phản hồi                        |
 | 4   | Thời gian:`2026-08-02 00:35 +07`; Công cụ: `Codex / GPT-5`; Mục đích: AI-assisted audit cho C1 Users Management list; Prompt: Hãy dùng skill EMS GUI Checklist Runner để audit C1 Users Management list, ghi checklist execution, findings, screenshots và phần cần sinh viên validate lại. | Hữu ích cho draft C1, cần sinh viên verify lại bằng EMS thật |
 | 5 | Thời gian: `2026-08-02 14:32 +07`; Công cụ: `Codex / GPT-5`; Mục đích: Ghi nhận phiên AI hỗ trợ kiểm thử C2, cập nhật finding log và tạo/cập nhật skill EMS finding log; Prompt: Hãy thực hiện dùng skill EMS GUI Checklist Runner để thực hiện cho màn hình C2; cập nhật domain https://prod-dev.ems-fitus.cloud/dashboard; dùng Playwright đã có sẵn để check sc... | Hữu ích cho việc chuẩn hóa artifact C2, cần sinh viên kiểm chứng và submit form |
+| 6 | Thời gian: `2026-08-02 15:45 +07`; Công cụ: `Codex / GPT-5`; Mục đích: AI-assisted audit cho C3 Block-Unblock va Reset Password dialogs; Prompt: Ok hãy tiếp tục thực thi kiểm thử cho screen c3 admin manage user Block-Unblock and Reset-Password dialogs — confirmation + audit; Sau đó sinh viên phản biện: C-F014 không có bằ... | Hữu ích cho draft C3, cần sinh viên đối chiếu lại ảnh và submit form |
 
 ### 2.2. Chi tiết audit
 
@@ -179,6 +180,37 @@ Hãy thực hiện dùng skill EMS GUI Checklist Runner để thực hiện cho 
 **Lý do:** AI hỗ trợ tổng hợp các lỗi đã quan sát/thảo luận, cập nhật checklist execution, finding log, ảnh minh chứng và skill tái sử dụng theo format nộp bài. Output phù hợp ở mức tổ chức artifact và diễn đạt finding, nhưng timestamp Google Form, quyết định cuối về severity và tính đúng của từng lỗi vẫn phụ thuộc vào kiểm chứng của sinh viên.
 
 **Sinh viên chỉnh sửa:** Sinh viên đã phản biện và chỉnh hướng nhiều điểm trong phiên: yêu cầu không bịa audit, phân biệt bug và usability finding, quyết định tách/ghép finding cho password/phone/role/member code, yêu cầu bỏ bảng chi tiết finding, tách bước tái hiện xuống dòng từng bước, hiển thị ảnh trực tiếp và giữ ảnh ở kích thước bình thường. Sinh viên vẫn cần tự submit Google Form và điền timestamp tương ứng.
+
+### 2.2.6 Entry 6
+
+**Prompt + công cụ:**
+
+**Thời gian:** `2026-08-02 15:45 +07`
+
+**Công cụ:** `Codex / GPT-5`
+
+**Mục đích:** AI-assisted audit cho C3 Block-Unblock va Reset Password dialogs
+
+**Prompt đầy đủ:**
+
+```text
+Ok hãy tiếp tục thực thi kiểm thử cho screen c3 admin manage user Block-Unblock and Reset-Password dialogs — confirmation + audit; Sau đó sinh viên phản biện: C-F014 không có bằng chứng đủ rõ nên gỡ; câu Active mặc định chỉ đúng với user đang Active nên chỉnh lại chưa kết luận user Inactive; Block/Unblock hiện tại có thể là Active/Inactive nên cần chỉnh C-F012 từ thiếu hoàn toàn thành wording/entry point mơ hồ và thiếu Reset Password action; hỏi ảnh C-F012/C-F013 nên chụp gì.
+```
+
+**Kết quả AI:** Tóm tắt artifact hiện hành:
+
+- `submission/checklist_execution_scenario_c.md`: cập nhật phần C3 từ `Chờ kiểm thử` sang `Pass`/`Fail`, nối các checklist item fail tới finding hợp lệ trong `bug_usability_findings_log.md`.
+- `submission/bug_usability_findings_log.md`: giữ lại `C-F012` và `C-F013` cho C3; chỉnh `C-F012` thành usability finding về Block/Unblock mơ hồ qua Active/Inactive và thiếu Reset Password action; giữ `C-F013` cho vấn đề Active checkbox thiếu giải thích/confirmation riêng.
+- `submission/bug_usability_findings_log.md`: gỡ `C-F014` vì sinh viên phản biện rằng chưa có bằng chứng đủ độc lập để tạo finding riêng.
+- `submission/screenshots/checklist-failures/`: thêm ảnh minh chứng C3 cho `C-F012-01.png` và `C-F013.png`; ảnh `C-F014.png` không còn được reference trong finding log sau khi gỡ finding.
+- `submission/screenshots/`: thêm ảnh quan sát Playwright cho C3 như `c3-users-actions-overview.png`, `c3-edit-dialog-actions.png`, `c3-delete-confirmation.png`.
+- `submission/validate_hw03_artifacts.py`: được chạy lại sau các lần chỉnh; validator báo `Kiểm tra artifact HW03 đã đạt`.
+
+**Đánh giá:** Hữu ích cho việc tạo draft C3 và chuẩn hóa finding, nhưng cần sinh viên đối chiếu lại trên EMS thật, chụp đúng ảnh cuối cho C-F012/C-F013 và submit Google Form trước khi xem là kết quả cuối.
+
+**Lý do:** AI hỗ trợ chạy Playwright để quan sát Users Management, mở Edit/Delete dialog, chuyển C3 từ trạng thái chờ sang bảng Pass/Fail và viết finding theo format hiện hành. Tuy nhiên ban đầu AI đã suy rộng một finding audit/ngôn ngữ `C-F014` chưa đủ bằng chứng và khẳng định hơi rộng về Active cho cả user Active/Inactive; các điểm này cần sinh viên phản biện để kết quả chính xác hơn.
+
+**Sinh viên chỉnh sửa:** Sinh viên đã kiểm tra lại và yêu cầu gỡ `C-F014` vì không có lỗi/bằng chứng độc lập; chỉnh câu Active mặc định để chỉ kết luận trên user Active đã quan sát, chưa kết luận user Inactive; làm rõ khả năng Active/Inactive chính là Block/Unblock hiện tại; yêu cầu chỉnh `C-F012` từ bug thiếu chức năng hoàn toàn thành usability finding về wording/entry point mơ hồ và thiếu Reset Password action. Sinh viên cũng xác định ảnh tốt nhất cho `C-F012` là list/Edit dialog thể hiện không có Reset Password và Block/Unblock không gọi tên rõ, còn `C-F013` là Edit dialog khi bỏ tick Active nhưng chưa có warning/confirmation.
 
 ## 3. Tổng kết độ chính xác AI
 

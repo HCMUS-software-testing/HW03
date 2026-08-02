@@ -10,19 +10,21 @@ Mọi defect hoặc đề xuất cải thiện tính khả dụng từ checklist
 
 ## Bảng tổng hợp finding
 
-| ID     | Màn hình                              | Loại      | Mức độ | Tóm tắt                                                                      | Timestamp form       |
-| ------ | ------------------------------------- | --------- | ------ | ---------------------------------------------------------------------------- | -------------------- |
-| C-F001 | C1 Danh sách người dùng               | Usability | 3      | Layout Users Management không responsive tốt trên mobile/tablet.             | Chờ sinh viên submit |
-| C-F002 | C1 Danh sách người dùng               | Usability | 2      | Empty state search thiếu hành động phục hồi.                                 | Chờ sinh viên submit |
-| C-F003 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 3      | Dialog Edit User/admin layout không responsive tốt trên mobile/tablet.       | Chờ sinh viên submit |
-| C-F004 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Add User form đảo placeholder/thông báo lỗi First Name và Last Name.         | Chờ sinh viên submit |
-| C-F005 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Password validation không nhất quán và lỗi tiếng Anh khi đang ở VI.          | Chờ sinh viên submit |
-| C-F006 | C2 Gán vai trò / chỉnh sửa người dùng | Bug       | 3      | Email validation cho phép submit email không hợp lệ dạng`@g`.                | Chờ sinh viên submit |
-| C-F007 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Phone Number thiếu gợi ý quy tắc 10 số bắt đầu bằng 0.                       | Chờ sinh viên submit |
-| C-F008 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Phone Number cho nhập chữ, chỉ báo lỗi sau submit.                           | Chờ sinh viên submit |
-| C-F009 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Role dropdown cho chọn placeholder như option thật rồi mới báo lỗi.          | Chờ sinh viên submit |
-| C-F010 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 3      | Xóa user rồi tạo lại email cũ báo`email already use` bằng tiếng Anh.         | Chờ sinh viên submit |
-| C-F011 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Member Code trùng được chặn đúng nhưng lỗi hiển thị tiếng Anh khi đang ở VI. | Chờ sinh viên submit |
+| ID     | Màn hình                              | Loại      | Mức độ | Tóm tắt                                                                                   | Timestamp form       |
+| ------ | ------------------------------------- | --------- | ------ | ----------------------------------------------------------------------------------------- | -------------------- |
+| C-F001 | C1 Danh sách người dùng               | Usability | 3      | Layout Users Management không responsive tốt trên mobile/tablet.                          | Chờ sinh viên submit |
+| C-F002 | C1 Danh sách người dùng               | Usability | 2      | Empty state search thiếu hành động phục hồi.                                              | Chờ sinh viên submit |
+| C-F003 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 3      | Dialog Edit User/admin layout không responsive tốt trên mobile/tablet.                    | Chờ sinh viên submit |
+| C-F004 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Add User form đảo placeholder/thông báo lỗi First Name và Last Name.                      | Chờ sinh viên submit |
+| C-F005 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Password validation không nhất quán và lỗi tiếng Anh khi đang ở VI.                       | Chờ sinh viên submit |
+| C-F006 | C2 Gán vai trò / chỉnh sửa người dùng | Bug       | 3      | Email validation cho phép submit email không hợp lệ dạng`@g`.                             | Chờ sinh viên submit |
+| C-F007 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Phone Number thiếu gợi ý quy tắc 10 số bắt đầu bằng 0.                                    | Chờ sinh viên submit |
+| C-F008 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Phone Number cho nhập chữ, chỉ báo lỗi sau submit.                                        | Chờ sinh viên submit |
+| C-F009 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Role dropdown cho chọn placeholder như option thật rồi mới báo lỗi.                       | Chờ sinh viên submit |
+| C-F010 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 3      | Xóa user rồi tạo lại email cũ báo`email already use` bằng tiếng Anh.                      | Chờ sinh viên submit |
+| C-F011 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Member Code trùng được chặn đúng nhưng lỗi hiển thị tiếng Anh khi đang ở VI.              | Chờ sinh viên submit |
+| C-F012 | C3 Block/Unblock và Reset Password    | Usability | 3      | Block/Unblock bị biểu diễn mơ hồ qua Active/Inactive và không thấy Reset Password action. | Chờ sinh viên submit |
+| C-F013 | C3 Block/Unblock và Reset Password    | Usability | 3      | Active checkbox có thể đại diện Block/Unblock nhưng không có xác nhận nguy hiểm riêng.    | Chờ sinh viên submit |
 
 ## Chi tiết finding
 
@@ -434,6 +436,83 @@ Dịch validation message Member Code sang tiếng Việt khi giao diện ở VI
 
 **Timestamp form:** Chờ sinh viên submit
 
+### C-F012 - Block/Unblock mơ hồ qua Active và thiếu Reset Password action
+
+**Nguồn:** Checklist execution C3
+
+**Màn hình:** C3 Hộp thoại chặn/bỏ chặn và đặt lại mật khẩu
+
+**Loại:** Usability
+
+**Mức độ:** 3
+
+**Mô tả:** Theo phạm vi Scenario C, màn hình Users Management cần hỗ trợ Block/Unblock và Reset Password dialogs. Trong lượt kiểm Playwright, UI có trạng thái Active/Inactive và checkbox Active trong Edit User, có thể là cơ chế Block/Unblock hiện tại, nhưng wording không nói rõ điều đó; đồng thời không thấy action Reset Password riêng.
+
+**Bước tái hiện / minh chứng:**
+
+1. Đăng nhập EMS bằng tài khoản admin.
+2. Vào `https://prod-dev.ems-fitus.cloud/dashboard/admin/users`.
+3. Quan sát cột Actions của các dòng user.
+4. Bấm Edit user ở dòng đầu tiên.
+5. Quan sát các control trong dialog Edit User.
+
+**Kết quả mong đợi:**
+
+Admin phải thấy action/label rõ ràng cho Block/Unblock và Reset Password, hoặc UI phải giải thích trực tiếp rằng Active/Inactive tương ứng với trạng thái unblock/block.
+
+**Kết quả thực tế:**
+
+Cột Actions chỉ có Edit/Delete; Edit User có checkbox Active nhưng không giải thích Active/Inactive là Block/Unblock hay hậu quả khi đổi trạng thái. Không thấy Reset Password action.
+
+**Đề xuất sửa:**
+
+Thêm action riêng `Block`/`Unblock` và `Reset Password`, hoặc đổi wording/helper text để Active/Inactive được hiểu rõ là trạng thái block/unblock; Reset Password cần có entry point và confirmation dialog riêng.
+
+**Ảnh minh chứng:**
+
+<img src="screenshots/checklist-failures/C-F012-01.png" alt="C-F012 evidence-1">
+<img src="screenshots/checklist-failures/C-F012-02.png" alt="C-F012 evidence-2">
+
+**Timestamp form:** Chờ sinh viên submit
+
+### C-F013 - Active checkbox thiếu xác nhận Block/Unblock riêng
+
+**Nguồn:** Checklist execution C3
+
+**Màn hình:** C3 Hộp thoại chặn/bỏ chặn và đặt lại mật khẩu
+
+**Loại:** Usability
+
+**Mức độ:** 3
+
+**Mô tả:** Nếu checkbox Active trong Edit User là cơ chế chặn/bỏ chặn tài khoản, UI chưa giải thích rõ mapping này và không có confirmation riêng trước thao tác ảnh hưởng quyền truy cập của user.
+
+**Bước tái hiện / minh chứng:**
+
+1. Đăng nhập EMS bằng tài khoản admin.
+2. Vào Users Management.
+3. Bấm Edit user ở một dòng Active.
+4. Quan sát checkbox Active và nút Save Changes.
+5. Không bấm Save trong lượt kiểm an toàn để tránh thay đổi dữ liệu thật.
+
+**Kết quả mong đợi:**
+
+Thao tác chặn/bỏ chặn tài khoản phải có label trực tiếp như `Block user`/`Unblock user`, helper text nêu hậu quả và confirmation dialog trước khi lưu.
+
+**Kết quả thực tế:**
+
+UI chỉ có checkbox `Active` trong Edit User; không giải thích bỏ chọn Active sẽ khóa tài khoản hay ảnh hưởng gì, và không có confirmation riêng cho thao tác này trước nút Save Changes.
+
+**Đề xuất sửa:**
+
+Tách Block/Unblock khỏi form Edit User thành action riêng hoặc bổ sung confirmation khi checkbox Active thay đổi; dialog cần hiển thị tên/email user, trạng thái trước-sau và hậu quả đăng nhập.
+
+**Ảnh minh chứng:**
+
+<img src="screenshots/checklist-failures/C-F013.png" alt="C-F013 evidence">
+
+**Timestamp form:** Chờ sinh viên submit
+
 ## Thang mức độ nghiêm trọng
 
 | Mức độ | Ý nghĩa                                                                         |
@@ -442,4 +521,3 @@ Dịch validation message Member Code sang tiếng Việt khi giao diện ở VI
 | 2      | Vấn đề usability nhỏ, có workaround                                             |
 | 3      | Vấn đề lớn gây chậm, nhầm lẫn hoặc lỗi thao tác đáng kể                         |
 | 4      | Vấn đề nghiêm trọng chặn hoàn thành nhiệm vụ hoặc có rủi ro mất dữ liệu/bảo mật |
-
