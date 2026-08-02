@@ -12,6 +12,7 @@
 | 8 | `9395b5ad2fe88b536219228230d2bcf50f981f8e` | `docs: localize Task 1B artifacts in Vietnamese` | Việt hóa nội dung Task 1B, ID/câu chữ checklist dùng chung, số liệu và liên kết minh chứng. |
 | 9 | `b905f21a536316bf01d9e5b3d863285aba2d3fb7` | `docs: restore Task 1B table structure` | Khôi phục cấu trúc bảng theo commit `d655d24e9dc92adb3b09783d18ec56cb84852189`, giữ nội dung tiếng Việt và xóa mục AI Audit của lần rebuild. |
 | 10 | `5b3658df7f6314de3284404b7187e0d145cd7ef1` | `docs: embed Task 1B evidence images` | Nhúng trực tiếp toàn bộ ảnh minh chứng Task 1B vào bảng checklist, báo cáo, nhật ký phát hiện, mục Google Form và nhật ký kiểm thử. |
-| 11 | `(commit này)` | `docs: record Task 1B AI audit entry` | Ghi lại việc AI hỗ trợ kiểm thử live Task 1B, phạm vi sinh viên cần review và các artefact liên quan. |
+| 11 | `5ac63fbdf42e7c2b61dea028c19152023ce4702f` | `docs: record Task 1B AI audit entry` | Ghi lại việc AI hỗ trợ kiểm thử live Task 1B, phạm vi tôi review và các artefact liên quan. |
+| 12 | `(commit này)` | `docs: personalize AI audit wording` | Đổi cách diễn đạt AI Audit sang ngôi tôi, giữ giọng tự nhiên hơn. |
 
 Dòng cuối dùng `(commit này)` vì một commit không thể chứa chính mã SHA của nó. Có thể xác định sau khi checkout bằng `git log -1 --format=%H`.
