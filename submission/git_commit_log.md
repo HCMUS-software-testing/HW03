@@ -8,7 +8,8 @@
 | 4 | `7ac052489a581253a5d73af10ce2fd40ed201809` | `docs: capture Task 1B A1 targeted retest evidence` | Minh chứng xác nhận/hủy xóa an toàn, trạng thái di chuột/tiêu điểm/hoạt động/vô hiệu hóa và điều hướng gọn. |
 | 5 | `b7b14a6eb4bb492a665d59a85f12fc4b949aaf9b` | `docs: capture Task 1B A2 targeted retest evidence` | Tương tác với nhãn/chú giải biểu tượng cùng minh chứng biểu mẫu và điều hướng gọn. |
 | 6 | `d9d95f5b189072c4ee7d072ad283a8aec91c9e72` | `docs: capture Task 1B A3 targeted retest evidence` | Minh chứng `Registration & Roles` ở giao diện gọn, mất thay đổi chưa lưu và xác minh trạng thái đã lưu. |
-| 7 | `d237fd48650cec9fb327369a6db16c86166e3341` | `docs: synchronize Task 1B findings and totals` | Checklist 153 dòng cuối, đồng bộ báo cáo/phát hiện, tổng số trong README, mục sẵn sàng nhập Google Form, nhật ký AI và nhật ký này. |
-| 8 | `(commit này)` | `docs: localize Task 1B artifacts in Vietnamese` | Việt hóa nội dung Task 1B, giữ nguyên cấu trúc bảng, ID/câu chữ checklist dùng chung, số liệu và liên kết minh chứng. |
+| 7 | `d237fd48650cec9fb327369a6db16c86166e3341` | `docs: synchronize Task 1B findings and totals` | Checklist 153 dòng cuối, đồng bộ báo cáo/phát hiện, tổng số trong README, mục sẵn sàng nhập Google Form và nhật ký commit. |
+| 8 | `9395b5ad2fe88b536219228230d2bcf50f981f8e` | `docs: localize Task 1B artifacts in Vietnamese` | Việt hóa nội dung Task 1B, ID/câu chữ checklist dùng chung, số liệu và liên kết minh chứng. |
+| 9 | `(commit này)` | `docs: restore Task 1B table structure` | Khôi phục cấu trúc bảng theo commit `d655d24e9dc92adb3b09783d18ec56cb84852189`, giữ nội dung tiếng Việt và xóa mục AI Audit của lần rebuild. |
 
-Dòng thứ tám dùng `(commit này)` vì một commit không thể chứa chính mã SHA của nó. Có thể xác định sau khi checkout bằng `git log -1 --format=%H`.
+Dòng thứ chín dùng `(commit này)` vì một commit không thể chứa chính mã SHA của nó. Có thể xác định sau khi checkout bằng `git log -1 --format=%H`.
