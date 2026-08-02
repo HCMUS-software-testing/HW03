@@ -27,7 +27,7 @@ Trước khi gửi, Bảo phải nhập email sinh viên thật, mở từng ả
 - Kết quả thực tế: Thông báo giải thích không có sự kiện phù hợp nhưng không có hành động xóa truy vấn/bộ lọc.
 - Mức độ nghiêm trọng: 2 — Trung bình
 - Đề xuất khắc phục: Thêm nút `Reset filters` nổi bật trong trạng thái rỗng và trả tiêu điểm về ô tìm kiếm sau khi đặt lại.
-- Ảnh minh chứng: `screenshots/task1b/a1-f01-empty-no-reset.png`
+- Ảnh minh chứng: ![Minh chứng a1-f01-empty-no-reset](screenshots/task1b/a1-f01-empty-no-reset.png)
 - Tác vụ nguồn: Task 1B
 - Thời điểm gửi biểu mẫu: Chờ đồng bộ sau khi Bảo gửi
 
@@ -42,7 +42,7 @@ Trước khi gửi, Bảo phải nhập email sinh viên thật, mở từng ả
 - Kết quả thực tế: Bảng rộng tràn ngang, che các cột/hành động phía sau cho đến khi người dùng cuộn ngang.
 - Mức độ nghiêm trọng: 2 — Trung bình
 - Đề xuất khắc phục: Ưu tiên cột cốt lõi, cho phép xuống dòng có kiểm soát và chuyển dữ liệu phụ sang phần chi tiết ở chiều rộng hẹp.
-- Ảnh minh chứng: `screenshots/task1b/a1-overview.png`
+- Ảnh minh chứng: ![Minh chứng a1-overview](screenshots/task1b/a1-overview.png)
 - Tác vụ nguồn: Task 1B
 - Thời điểm gửi biểu mẫu: Chờ đồng bộ sau khi Bảo gửi
 
@@ -57,7 +57,7 @@ Trước khi gửi, Bảo phải nhập email sinh viên thật, mở từng ả
 - Kết quả thực tế: Bảng hiển thị `Phản hồi khiếu nại` trong khi phần giao diện xung quanh là tiếng Anh.
 - Mức độ nghiêm trọng: 1 — Nhẹ
 - Đề xuất khắc phục: Đưa mọi mẫu thông báo qua cùng tài nguyên bản địa hóa và bổ sung kiểm thử hồi quy EN/VI.
-- Ảnh minh chứng: `screenshots/task1b/a1-f04-notification-mixed-language.png`
+- Ảnh minh chứng: ![Minh chứng a1-f04-notification-mixed-language](screenshots/task1b/a1-f04-notification-mixed-language.png)
 - Tác vụ nguồn: Task 1B
 - Thời điểm gửi biểu mẫu: Chờ đồng bộ sau khi Bảo gửi
 
@@ -72,7 +72,7 @@ Trước khi gửi, Bảo phải nhập email sinh viên thật, mở từng ả
 - Kết quả thực tế: Biểu tượng `Delete` có viền tiêu điểm nhưng không hiển thị nhãn/chú giải.
 - Mức độ nghiêm trọng: 2 — Trung bình
 - Đề xuất khắc phục: Thêm tên hỗ trợ truy cập bền vững và chú giải được kích hoạt bằng cả di chuột lẫn tiêu điểm bàn phím.
-- Ảnh minh chứng: `screenshots/task1b/a1-f05-action-focus-no-tooltip.png`
+- Ảnh minh chứng: ![Minh chứng a1-f05-action-focus-no-tooltip](screenshots/task1b/a1-f05-action-focus-no-tooltip.png)
 - Tác vụ nguồn: Task 1B
 - Thời điểm gửi biểu mẫu: Chờ đồng bộ sau khi Bảo gửi
 
@@ -87,7 +87,7 @@ Trước khi gửi, Bảo phải nhập email sinh viên thật, mở từng ả
 - Kết quả thực tế: Toàn bộ danh sách trở lại với ô tìm kiếm bị xóa.
 - Mức độ nghiêm trọng: 2 — Trung bình
 - Đề xuất khắc phục: Lưu trạng thái truy vấn/bộ lọc/trang trong URL hoặc trạng thái điều hướng và khôi phục khi quay lại.
-- Ảnh minh chứng: trước `screenshots/task1b/a1-f05-action-focus-no-tooltip.png`; sau `screenshots/task1b/a1-f06-filter-not-retained.png`
+- Ảnh minh chứng: trước ![Minh chứng a1-f05-action-focus-no-tooltip](screenshots/task1b/a1-f05-action-focus-no-tooltip.png); sau ![Minh chứng a1-f06-filter-not-retained](screenshots/task1b/a1-f06-filter-not-retained.png)
 - Tác vụ nguồn: Task 1B
 - Thời điểm gửi biểu mẫu: Chờ đồng bộ sau khi Bảo gửi
 
@@ -102,7 +102,7 @@ Trước khi gửi, Bảo phải nhập email sinh viên thật, mở từng ả
 - Kết quả thực tế: Tệp `.txt` được chấp nhận và phần xem trước bị hỏng hiển thị mà không có lỗi.
 - Mức độ nghiêm trọng: 2 — Trung bình
 - Đề xuất khắc phục: Giới hạn bộ chọn tệp và kiểm tra MIME, chữ ký tệp, phần mở rộng và kích thước trước khi tạo phần xem trước.
-- Ảnh minh chứng: `screenshots/task1b/a2-f01-invalid-thumbnail-accepted.png`
+- Ảnh minh chứng: ![Minh chứng a2-f01-invalid-thumbnail-accepted](screenshots/task1b/a2-f01-invalid-thumbnail-accepted.png)
 - Tác vụ nguồn: Task 1B
 - Thời điểm gửi biểu mẫu: Chờ đồng bộ sau khi Bảo gửi
 
@@ -117,7 +117,7 @@ Trước khi gửi, Bảo phải nhập email sinh viên thật, mở từng ả
 - Kết quả thực tế: Điều hướng xảy ra ngay, không có cảnh báo; tiêu đề chưa lưu bị mất.
 - Mức độ nghiêm trọng: 3 — Nghiêm trọng
 - Đề xuất khắc phục: Theo dõi trạng thái biểu mẫu đã thay đổi và hiển thị hộp thoại xác nhận cho điều hướng trong ứng dụng/trình duyệt.
-- Ảnh minh chứng: trước `screenshots/task1b/a2-f02-unsaved-before.png`; sau `screenshots/task1b/a2-f02-unsaved-after-no-warning.png`
+- Ảnh minh chứng: trước ![Minh chứng a2-f02-unsaved-before](screenshots/task1b/a2-f02-unsaved-before.png); sau ![Minh chứng a2-f02-unsaved-after-no-warning](screenshots/task1b/a2-f02-unsaved-after-no-warning.png)
 - Tác vụ nguồn: Task 1B
 - Thời điểm gửi biểu mẫu: Chờ đồng bộ sau khi Bảo gửi
 
@@ -132,7 +132,7 @@ Trước khi gửi, Bảo phải nhập email sinh viên thật, mở từng ả
 - Kết quả thực tế: `Back` và các nút máy ảnh `Thumbnail`/`Banner` không hiển thị nhãn/chú giải trong các trạng thái đã kiểm thử.
 - Mức độ nghiêm trọng: 2 — Trung bình
 - Đề xuất khắc phục: Thêm tên hỗ trợ truy cập và chú giải kích hoạt bằng di chuột/tiêu điểm, hoặc thêm nhãn hiển thị.
-- Ảnh minh chứng: `screenshots/task1b/a2-icon-hover-back-no-tooltip.png`; `screenshots/task1b/a2-icon-keyboard-focus-unlabeled-camera.png`; `screenshots/task1b/a2-icon-hover-thumbnail-camera-no-tooltip.png`; `screenshots/task1b/a2-icon-hover-banner-camera-no-tooltip.png`
+- Ảnh minh chứng: ![Minh chứng a2-icon-hover-back-no-tooltip](screenshots/task1b/a2-icon-hover-back-no-tooltip.png); ![Minh chứng a2-icon-keyboard-focus-unlabeled-camera](screenshots/task1b/a2-icon-keyboard-focus-unlabeled-camera.png); ![Minh chứng a2-icon-hover-thumbnail-camera-no-tooltip](screenshots/task1b/a2-icon-hover-thumbnail-camera-no-tooltip.png); ![Minh chứng a2-icon-hover-banner-camera-no-tooltip](screenshots/task1b/a2-icon-hover-banner-camera-no-tooltip.png)
 - Tác vụ nguồn: Task 1B
 - Thời điểm gửi biểu mẫu: Chờ đồng bộ sau khi Bảo gửi
 
@@ -147,7 +147,7 @@ Trước khi gửi, Bảo phải nhập email sinh viên thật, mở từng ả
 - Kết quả thực tế: `Max Slots` vẫn hiển thị và chỉnh sửa được khi `Is Unlimited` đang bật.
 - Mức độ nghiêm trọng: 2 — Trung bình
 - Đề xuất khắc phục: Vô hiệu hóa và xóa `Max Slots` khi bật `Is Unlimited`; chỉ khôi phục khi tắt `Is Unlimited`.
-- Ảnh minh chứng: `screenshots/task1b/a3-f01-unlimited-max-slots-active.png`
+- Ảnh minh chứng: ![Minh chứng a3-f01-unlimited-max-slots-active](screenshots/task1b/a3-f01-unlimited-max-slots-active.png)
 - Tác vụ nguồn: Task 1B
 - Thời điểm gửi biểu mẫu: Chờ đồng bộ sau khi Bảo gửi
 
@@ -162,7 +162,7 @@ Trước khi gửi, Bảo phải nhập email sinh viên thật, mở từng ả
 - Kết quả thực tế: Các điều khiển vai trò `Student` biến mất nhưng `Waitlist` vẫn bật.
 - Mức độ nghiêm trọng: 3 — Nghiêm trọng
 - Đề xuất khắc phục: Xóa/vô hiệu hóa `Waitlist` khi `Student Registration` tắt và kiểm tra lại khi lưu.
-- Ảnh minh chứng: `screenshots/task1b/a3-f03-waitlist-with-student-off.png`
+- Ảnh minh chứng: ![Minh chứng a3-f03-waitlist-with-student-off](screenshots/task1b/a3-f03-waitlist-with-student-off.png)
 - Tác vụ nguồn: Task 1B
 - Thời điểm gửi biểu mẫu: Chờ đồng bộ sau khi Bảo gửi
 
@@ -177,6 +177,6 @@ Trước khi gửi, Bảo phải nhập email sinh viên thật, mở từng ả
 - Kết quả thực tế: Điều hướng quay về `Events` ngay; khi mở lại, giá trị đã lưu là 24, nên giá trị 25 chưa lưu bị mất.
 - Mức độ nghiêm trọng: 3 — Nghiêm trọng
 - Đề xuất khắc phục: Thêm cơ chế bảo vệ biểu mẫu đã thay đổi dùng chung, bao quát trạng thái vai trò/tùy chọn lồng nhau và điều hướng trong ứng dụng/trình duyệt.
-- Ảnh minh chứng: `screenshots/task1b/a3-unsaved-reminder-25-before-back.png`; `screenshots/task1b/a3-unsaved-back-no-warning-destination.png`; `screenshots/task1b/a3-unsaved-reopen-reminder-24-persisted.png`
+- Ảnh minh chứng: ![Minh chứng a3-unsaved-reminder-25-before-back](screenshots/task1b/a3-unsaved-reminder-25-before-back.png); ![Minh chứng a3-unsaved-back-no-warning-destination](screenshots/task1b/a3-unsaved-back-no-warning-destination.png); ![Minh chứng a3-unsaved-reopen-reminder-24-persisted](screenshots/task1b/a3-unsaved-reopen-reminder-24-persisted.png)
 - Tác vụ nguồn: Task 1B
 - Thời điểm gửi biểu mẫu: Chờ đồng bộ sau khi Bảo gửi
