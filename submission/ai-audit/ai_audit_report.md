@@ -19,6 +19,8 @@
 | 6 | Time: `2026-07-29 00:05 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>Liệu có thể dùng MCP Playwright + Browserstack để hoàn thành bài tập này theo chiến thuật AI-first không? Nếu có thì tạo các docs hướng dẫn tôi làm | [Manual by user] |
 | 7 | Time: `2026-08-02 22:34 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>cài thêm nó đi | [Manual by user] |
 | 8 | Time: `2026-08-02 22:39 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>Bạn tạo 1 file để tôi cung cấp link web mới vì link web cũ đã hỏng. Thêm vào đó là account user và admin. Thêm 1 rule là khi vào trang admin nếu có CRUD tài khoản user thì chỉ đuợc làm trên tài khoản của bản thân, tức là tài khoản user tôi cung cấp để tránh ảnh hưởng đến account người khác. | [Manual by user] |
+| 9 | Time: `2026-08-02 23:26 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>@Superpowers Đọc các file trong folder docs để hiểu bối cảnh bài tập. Thực hiện Task 1B cho Kiên trên Scene D1. Dùng submission/group/gui_usability_checklist_final.md (không thay đổi file này) để làm check list. Tạo 1 file markdown cho task1b_D1.md trong folder submission/task1B cho việc testing dựa trên checklist đó. Hãy tận dụng MCP Playwright và Chrome Devtools trong quá trình test. Thông tin link web, tài khoản admin và user đã được cung cấp trong submission/test_environment_access.md. Tuyệt đối tuân theo rule được ghi trong  submission/test_environment_access.md. Nếu cần thêm gì thì hãy yêu cầu tôi cung cấp. | [Manual by user] |
+| 10 | Time: `2026-08-02 23:34 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>Dịch submission/task1B/task1b_D1.md sang tiếng Việt. Thêm rule để biết bài nộp ngôn ngữ chính là Tiếng Việt. Sau đó thêm 1 rule trong folder docs và ai-reasoning là chỉ đọc file markdown vì đọc pdf sẽ tốn token hơn. | [Manual by user] |
 
 ### 2.2. Chi tiết audit
 
@@ -273,6 +275,211 @@ Tài khoản này dùng cho Scenario D màn hình `D3`.
 **Reasoning:** [Manual by user]
 
 **Student Fix:** Sinh viên điền link web mới, account user, account admin và quy tắc chỉ CRUD trên tài khoản user của bản thân để tránh ảnh hưởng account người khác.
+
+### 2.2.9 Entry 9
+
+**Prompt + Tool:**
+
+Time: `2026-08-02 23:26 +07`
+Tool: `Codex / GPT-5`
+Prompt:
+@Superpowers Đọc các file trong folder docs để hiểu bối cảnh bài tập. Thực hiện Task 1B cho Kiên trên Scene D1. Dùng submission/group/gui_usability_checklist_final.md (không thay đổi file này) để làm check list. Tạo 1 file markdown cho task1b_D1.md trong folder submission/task1B cho việc testing dựa trên checklist đó. Hãy tận dụng MCP Playwright và Chrome Devtools trong quá trình test. Thông tin link web, tài khoản admin và user đã được cung cấp trong submission/test_environment_access.md. Tuyệt đối tuân theo rule được ghi trong  submission/test_environment_access.md. Nếu cần thêm gì thì hãy yêu cầu tôi cung cấp.
+
+**AI Output:**
+
+````markdown
+# Task 1B - Checklist Execution for D1
+
+| Field | Value |
+| --- | --- |
+| Tester | Lê Trung Kiên |
+| MSSV | `23127075` |
+| Scenario | D - User requests Support and Admin resolves it |
+| Screen | D1 - User creates support request form with image attachment |
+| Role used | User |
+| SUT | `https://prod-dev.ems-fitus.cloud` |
+| Test date | 2026-08-02 |
+| Checklist source | `submission/group/gui_usability_checklist_final.md` |
+| Checklist source modified? | No |
+
+## 1. Full Prompt Used for AI-Assisted D1 Testing
+
+```text
+Bạn là QA tester cho HW03 GUI & Usability Testing trên EMS.
+
+Hãy thực hiện Task 1B cho Lê Trung Kiên (MSSV 23127075), Scenario D, màn hình D1: User - create support request form with image attachment.
+
+Nguồn bắt buộc:
+- Đọc các tài liệu trong `docs/` để hiểu bối cảnh bài tập, EMS, Scenario D và yêu cầu Task 1B.
+- Dùng checklist gốc `submission/group/gui_usability_checklist_final.md` làm checklist thực thi.
+- Không sửa `submission/group/gui_usability_checklist_final.md`.
+- Dùng thông tin URL/tài khoản trong `submission/test_environment_access.md`.
+- Tuyệt đối tuân thủ Testing Rules trong `submission/test_environment_access.md`: chỉ dùng tài khoản user của Kiên cho D1/D2, không thao tác dữ liệu hoặc tài khoản người khác, chỉ tạo support request test của chính tài khoản Kiên nếu cần.
+
+Công cụ:
+- Dùng Playwright MCP để đăng nhập, điều hướng, lấy accessibility snapshot, thao tác form, upload ảnh, submit, chụp screenshot evidence và kiểm tra network/console.
+- Dùng Chrome DevTools MCP nếu môi trường cho phép để kiểm tra bổ sung snapshot/console/network. Nếu Chrome DevTools MCP không chạy được, ghi rõ limitation và không bịa evidence.
+
+Quy trình D1:
+1. Mở EMS tại URL mới trong `submission/test_environment_access.md`.
+2. Đăng nhập bằng user account của Kiên.
+3. Điều hướng `Support requests -> Create request` hoặc route tương ứng.
+4. Ghi lại URL, page title, heading, primary actions và danh sách widget hiển thị.
+5. Chụp screenshot tổng quan của màn hình D1.
+6. Chạy từng item trong `submission/group/gui_usability_checklist_final.md` trên riêng màn hình D1.
+7. Với mỗi item, đánh dấu `Pass`, `Fail`, hoặc `N/A`.
+8. Với mỗi `Fail`, ghi lý do cụ thể dựa trên quan sát UI/network/console, user impact, severity 0-4, screenshot ref và suggested fix.
+9. Kiểm tra tối thiểu các trạng thái D1: submit rỗng, chọn request type, nhập issue/title, nhập detailed description, character counter, upload ảnh hợp lệ, preview/remove ảnh, submit thành công, cancel/back khi có dữ liệu chưa lưu, desktop và mobile responsive layout.
+10. Không submit Google Form tự động. Chỉ tạo finding entries sẵn để sinh viên review và submit thủ công.
+
+Output cần tạo:
+- File Markdown `submission/task1B/task1b_D1.md`.
+- Nội dung gồm: test scope, test log, UI inventory, bảng checklist execution theo ID checklist gốc, danh sách findings, screenshot evidence và completion notes.
+```
+
+## 2. Test Log
+
+| Step | Tool | Observation |
+| --- | --- | --- |
+| Open EMS | Playwright MCP | Opened `https://prod-dev.ems-fitus.cloud`; existing session was admin, so logged out first. |
+| Login as Kiên user | Playwright MCP | Logged in as `ltkien23@clc.fitus.edu.vn`; dashboard loaded successfully. |
+| Navigate to Support | Playwright MCP | User menu showed `Support requests` -> `/complaints`. |
+| Open D1 | Playwright MCP | `Create request` opened `/complaints/new`; page title `Gửi yêu cầu hỗ trợ \| HCMUS EMS`; visible H1 `Create support request`. |
+| Submit empty form | Playwright MCP | Alert displayed: `Request type, issue requiring support and detailed description are required.` |
+| Fill/upload form | Playwright MCP | Form accepted title, description and PNG attachment; image thumbnail and remove button appeared. |
+| Submit after default/category issue | Playwright MCP | First submit attempt produced `POST /api/complaints => 400`; response body said category must be one of `SUPPORT`, `COMPLAINT`, `CONTACT`, `OTHER`; console warning: `Select: Keys "S" passed to "selectedKeys" are not present in the collection.` |
+| Submit after keyboard category selection | Playwright MCP | Keyboard selection changed visible type to `Complaint`; submit returned `POST /api/complaints => 201`; redirected to `/complaints?created=1`; new request appeared as `Pending` with URL `/complaints/56`. |
+| Mobile responsive check | Playwright MCP | At `390x844`, form fit without horizontal overflow; fields stacked properly. |
+| Chrome DevTools check | Chrome DevTools MCP | Could not start because the environment reported `Missing X server to start the headful browser`; no Chrome DevTools evidence was fabricated. |
+
+## 3. D1 UI Inventory
+
+| Category | Observed D1 Items |
+| --- | --- |
+| Screen and route | `Support requests` list at `/complaints`; create form at `/complaints/new`. |
+| Role | User account for Kiên only. |
+| Main flow | Open support requests, create request, choose request type, enter issue and detailed description, attach image, submit. |
+| Widgets | Header, user menu, `Back`, H1, request type select, issue textbox, `0/255` counter, detailed description textarea, image upload drop zone, image thumbnail, remove attachment button, `Cancel`, `Submit request`, alert/toast area. |
+| Dynamic states | Empty validation alert, category validation error, upload preview/remove state, mobile layout, submit success redirect, API error state. |
+
+## 4. Screenshot Evidence
+
+| Evidence ID | Path | Purpose |
+| --- | --- | --- |
+| E-D1-001 | `submission/screenshots/D1/D1_create_request_overview.png` | D1 overview before data entry. |
+| E-D1-002 | `submission/screenshots/D1/D1_form_filled_with_attachment.png` | Filled form with uploaded image evidence. |
+| E-D1-003 | `submission/screenshots/D1/D1_mobile_validation_layout.png` | Mobile layout and validation state at `390x844`. |
+| E-D1-004 | `submission/screenshots/D1/D1_submit_success_redirect.png` | Successful submit redirect and new request in list. |
+| F-D1-001 | `submission/screenshots/checklist-failures/F-D1-001_validation-not-inline.png` | Required-field validation uses a global alert and submit is enabled while empty. |
+| F-D1-002 | `submission/screenshots/checklist-failures/F-D1-002_category-submit-400-no-clear-ui-error.png` | Category/default submit issue with no clear recovery message before retry. |
+| F-D1-003 | `submission/screenshots/checklist-failures/F-D1-003_cancel-discards-without-confirmation.png` | Cancel returns to list without confirmation after form data was entered. |
+
+## 5. Checklist Execution Table - D1
+
+| Screen | Checklist ID | Result | Evidence | Notes | Screenshot ref | Finding ID |
+| --- | --- | --- | --- | --- | --- | --- |
+| D1 Create support request | IA-01-01 | Pass | Header, footer, typography and spacing are consistent with the support list and dashboard. | Layout remains consistent in D1. | E-D1-001 |  |
+| D1 Create support request | IA-01-02 | Pass | Terms `Support requests`, `Create support request`, `Request type`, `Complaint`, `Support` are used consistently in visible D1 UI. | Browser title is Vietnamese, but visible UI terms are understandable. | E-D1-001 |  |
+| D1 Create support request | IA-01-03 | Pass | Primary `Submit request` button is visually stronger than `Cancel`; `Back` is secondary. | Primary and secondary actions are distinguishable. | E-D1-001 |  |
+| D1 Create support request | IA-01-04 | Fail | Request type invalid state and alert are shown, but the category/default selection state is confusing and inconsistent with the visible value. | The UI displays a sample/default-looking value while native validation still treats the select as empty. | F-D1-002 | F-D1-002 |
+| D1 Create support request | IA-01-05 | Pass | Labels, placeholder text, buttons and alerts are readable on desktop and mobile. | No unreadable low-contrast text observed during D1 run. | E-D1-001, E-D1-003 |  |
+| D1 Create support request | IA-01-06 | N/A | Checklist item is about event cards/lists. | D1 is a support request form, not an event card/list. |  |  |
+| D1 Create support request | IA-01-07 | Pass | Attachment remove action has accessible label `Remove D1_create_request_overview.png`. | Icon/action is identifiable through label. | E-D1-002 |  |
+| D1 Create support request | IA-01-08 | Pass | Inputs, buttons, upload zone and menu are keyboard/click focusable; invalid select exposes invalid state. | Interaction states are observable. | E-D1-003 |  |
+| D1 Create support request | IA-01-09 | Pass | The form keeps entered title, description and attachment after a failed submit. | Data was preserved after API/category failure. | F-D1-002 |  |
+| D1 Create support request | IA-01-10 | Pass | At `390x844`, fields stack and no horizontal overflow is visible. | Mobile layout is usable. | E-D1-003 |  |
+| D1 Create support request | IA-01-11 | Pass | Form is grouped into request type, issue, description, attachments and actions. | Density is manageable. | E-D1-001 |  |
+| D1 Create support request | IA-01-12 | Pass | D1 is reachable quickly from user menu `Support requests -> Create request`. | No unnecessary multi-step navigation observed. | E-D1-001 |  |
+| D1 Create support request | IA-01-13 | N/A | Language switching was not part of this D1 run. | Needs a separate EN/VI execution pass if required. |  |  |
+| D1 Create support request | IA-02-01 | Pass | Required fields have `*`: request type, issue, detailed description. | Required fields are visible before submit. | E-D1-001 |  |
+| D1 Create support request | IA-02-02 | Pass | Labels are visible and placed near their controls; form does not rely only on placeholders. | Placeholders provide examples, not sole field meaning. | E-D1-001 |  |
+| D1 Create support request | IA-02-03 | Pass | Request type uses a select; issue uses text input; description uses textarea; attachment uses file input. | Control types fit the data. | E-D1-001 |  |
+| D1 Create support request | IA-02-04 | Fail | Submit empty form triggers validation only after submit; submit button is enabled while required fields are empty. | Error prevention is weak because invalid submit is allowed. | F-D1-001 | F-D1-001 |
+| D1 Create support request | IA-02-05 | Fail | Empty-form error is a global alert; field-level guidance is incomplete, especially for request type/category recovery. | Users must infer which field to fix and why the displayed category value is invalid. | F-D1-001, F-D1-002 | F-D1-001, F-D1-002 |
+| D1 Create support request | IA-02-06 | Pass | Entered title, detailed description and image remained visible after failed submit. | No data loss on validation/API error path. | F-D1-002 |  |
+| D1 Create support request | IA-02-07 | Pass | D1 form is short and grouped logically; no unnecessary long sections. | Grouping matches the support request mental model. | E-D1-001 |  |
+| D1 Create support request | IA-02-08 | Pass | Keyboard interaction can focus the request type and select an option; tab order follows form order. | Keyboard selection succeeded and allowed final submit. | E-D1-002 |  |
+| D1 Create support request | IA-02-09 | Fail | `Submit request` remains enabled when required fields are empty. | User can trigger avoidable validation failure. | F-D1-001 | F-D1-001 |
+| D1 Create support request | IA-02-10 | Fail | Request type appears to show `For example: Support`, but actual selected value is empty until user explicitly selects an option. | Default/signifier misleads users and caused `400` category validation. | F-D1-002 | F-D1-002 |
+| D1 Create support request | IA-02-11 | Fail | `Cancel` discards a filled form with selected attachment without confirmation. | User can lose unsaved support request content accidentally. | F-D1-003 | F-D1-003 |
+| D1 Create support request | IA-02-12 | Pass | Upload area states accepted formats `JPG, PNG, GIF or WEBP`, up to 5 images and 5 MB each; valid PNG upload shows thumbnail and remove button. | Upload constraints and preview are visible. | E-D1-002 |  |
+| D1 Create support request | IA-02-13 | N/A | Checklist item is about rich-text editor. | D1 uses a plain detailed-description textarea, not rich text. |  |  |
+| D1 Create support request | IA-03-01 | Pass | User menu exposes `Events`, `Calendar`, `Saved Events`, `User guide`, `Support requests`, profile and notifications. | Role-appropriate support entry exists for the user. | E-D1-001 |  |
+| D1 Create support request | IA-03-02 | Pass | H1 `Create support request`, page title and URL `/complaints/new` identify the current location. | User can tell they are on the create request screen. | E-D1-001 |  |
+| D1 Create support request | IA-03-03 | N/A | Checklist item concerns event list/detail filter preservation. | D1 is not an event list/detail browsing flow. |  |  |
+| D1 Create support request | IA-03-04 | Pass | Navigation/action labels are specific: `Back`, `Cancel`, `Submit request`, `Create request`. | No vague `Click here` labels observed. | E-D1-001 |  |
+| D1 Create support request | IA-03-05 | Pass | User account can access user support pages; admin-only support management is not exposed in this user flow. | No role mismatch observed for D1. | E-D1-001 |  |
+| D1 Create support request | IA-03-06 | N/A | Search/filter belongs to support list D2, not create form D1. | Not applicable to D1 form execution. |  |  |
+| D1 Create support request | IA-03-07 | N/A | Pagination belongs to support list D2, not create form D1. | Not applicable to D1 form execution. |  |  |
+| D1 Create support request | IA-03-08 | N/A | D1 is a one-page form, not a multi-step registration/checkout flow. | No stepper expected. |  |  |
+| D1 Create support request | IA-03-09 | Fail | `Cancel` exits the filled form without warning or recovery. | Navigation can cause unsaved data loss. | F-D1-003 | F-D1-003 |
+| D1 Create support request | IA-03-10 | Pass | On mobile viewport, navigation collapses into menu and does not cover the form's primary action. | D1 remains usable on phone width. | E-D1-003 |  |
+| D1 Create support request | IA-03-11 | Pass | `Submit request` and `Cancel` are placed at the end of the form near the entered content. | Actions are mapped to the form context. | E-D1-001 |  |
+| D1 Create support request | IA-03-12 | N/A | 404/deleted event route recovery was not relevant to D1 create form. | Not applicable. |  |  |
+| D1 Create support request | IA-04-01 | Fail | Successful submit redirects and creates a pending request, but no visible success toast/banner was observed; API success message is wrongly about event review. | User gets weak closure and the backend message is wrong for support request creation. | E-D1-004 | F-D1-004 |
+| D1 Create support request | IA-04-02 | Pass | Submit completed quickly; upload preview appeared after file selection. | No long loading state was needed in this run. | E-D1-002, E-D1-004 |  |
+| D1 Create support request | IA-04-03 | Pass | During the observed successful submit, only one request was created. | No duplicate request was observed in the final list. | E-D1-004 |  |
+| D1 Create support request | IA-04-04 | Fail | API category error returned `400`; visible recovery was limited and not clearly mapped to why the category payload was invalid. | Technical validation behavior is not translated into a clear user recovery path. | F-D1-002 | F-D1-002 |
+| D1 Create support request | IA-04-05 | Fail | Empty-submit alert and invalid-category alert appear near the bottom of the form; on long form/scroll states users may miss the field context. | Alert is visible but not field-local. | F-D1-001, E-D1-003 | F-D1-001 |
+| D1 Create support request | IA-04-06 | Pass | Created request appears as `Pending` with category text in the support list after submit. | Status uses visible text. | E-D1-004 |  |
+| D1 Create support request | IA-04-07 | N/A | Empty state is for support list, not D1 create form. | Not applicable in this D1 execution because list had existing requests. |  |  |
+| D1 Create support request | IA-04-08 | N/A | D1 has no destructive server-side action such as delete/cancel submitted request. | Cancel on unsaved form is covered by IA-02-11 and IA-03-09. |  |  |
+| D1 Create support request | IA-04-09 | Fail | No undo or recovery was offered after `Cancel` discarded the filled form. | User cannot recover unsaved support request content. | F-D1-003 | F-D1-003 |
+| D1 Create support request | IA-04-10 | N/A | Session-expired state was not triggered in this D1 run. | Requires separate long-session/expired-token test. |  |  |
+| D1 Create support request | IA-04-11 | N/A | D1 create form does not display dynamic event capacity/status data. | Not applicable. |  |  |
+| D1 Create support request | IA-04-12 | Pass | Form includes short instructions and concrete examples for issue and detailed description. | Inline guidance helps users write a useful support request. | E-D1-001 |  |
+| D1 Create support request | IA-04-13 | Fail | Flow ends by redirecting to list and showing new `Pending` row, but there is no explicit visible confirmation message; API success body says `Event review saved successfully`. | Closure is present through list update but message semantics are wrong/unclear. | E-D1-004 | F-D1-004 |
+
+## 6. Summary
+
+| Metric | Count |
+| --- | ---: |
+| Checklist items total | 51 |
+| Pass | 27 |
+| Fail | 12 |
+| N/A | 12 |
+| Needs Google Form submission | 4 findings |
+
+## 7. Findings Draft for Bug & Usability Log
+
+| ID | Scenario/Screen | Type | Description | Steps/Heuristic | Expected | Actual | Severity | Suggested fix | Screenshot ref | Form-submission timestamp |
+| --- | --- | --- | --- | --- | --- | --- | ---: | --- | --- | --- |
+| F-D1-001 | D1 Create support request | Usability | Required-field validation is not prevented early and is shown as a global alert instead of field-local messages. | IA-02-04, IA-02-05, IA-02-09, IA-04-05. Steps: open `/complaints/new`; leave required fields empty; click `Submit request`. | Submit should be disabled until required fields are valid, or each invalid field should show an inline message near the field. | Submit remains enabled; one alert says `Request type, issue requiring support and detailed description are required.` | 2 | Disable submit until required fields are satisfied and add inline errors beside request type, issue and description. | `submission/screenshots/checklist-failures/F-D1-001_validation-not-inline.png` | `[Manual after Google Form submit]` |
+| F-D1-002 | D1 Create support request | Bug | Request type appears to have a default/example value, but actual category can remain empty or invalid and submit can return `400`. | IA-01-04, IA-02-05, IA-02-10, IA-04-04. Steps: open `/complaints/new`; observe request type showing `For example: Support`; fill issue/description/upload image; submit without explicitly selecting a valid option, or use the problematic select state. | Displayed request type and submitted category should match one valid value: `SUPPORT`, `COMPLAINT`, `CONTACT`, or `OTHER`; user should get clear recovery guidance. | Network returned `POST /api/complaints => 400` with `category must be one of the following values: SUPPORT, COMPLAINT, CONTACT, OTHER`; console warning said `Select: Keys "S" passed to "selectedKeys" are not present in the collection.` | 3 | Fix select state mapping, make placeholder visually distinct from a real value, and validate category before API submit. | `submission/screenshots/checklist-failures/F-D1-002_category-submit-400-no-clear-ui-error.png` | `[Manual after Google Form submit]` |
+| F-D1-003 | D1 Create support request | Usability | `Cancel` discards an in-progress support request without confirmation or recovery. | IA-02-11, IA-03-09, IA-04-09. Steps: fill issue/description, attach image, click `Cancel`. | If unsaved data exists, system should confirm before leaving or preserve draft on return. | Page immediately returned to `/complaints`; no confirmation, undo, or draft recovery was observed. | 2 | Add unsaved-changes confirmation for `Cancel`/`Back`, or save draft locally until submit/cancel confirmation. | `submission/screenshots/checklist-failures/F-D1-003_cancel-discards-without-confirmation.png` | `[Manual after Google Form submit]` |
+| F-D1-004 | D1 Create support request | Bug | Successful D1 submit has wrong success semantics and weak visible closure. | IA-04-01, IA-04-13. Steps: select category via keyboard, fill valid issue/description, upload PNG, submit. | UI should show a clear support-request success message such as `Support request created successfully`, then show the new pending request. | Redirected to `/complaints?created=1` and new request appeared, but no visible success toast/banner was observed; API response body said `UPSERT_EVENT_REVIEW_SUCCESS` and `Event review saved successfully.` | 3 | Return support-specific success code/message and display a visible success toast/banner after creation. | `submission/screenshots/D1/D1_submit_success_redirect.png` | `[Manual after Google Form submit]` |
+
+## 8. Completion Notes
+
+- The D1 checklist execution used the shared checklist from `submission/group/gui_usability_checklist_final.md` without changing it.
+- Playwright MCP was used for live EMS interaction, screenshots, responsive check, console and network evidence.
+- Chrome DevTools MCP was attempted but could not start in the current environment because the tool reported a missing X server for headful browser startup.
+- One real D1 test request was created under Kiên's user account: `/complaints/56`, visible as `Pending` after successful submit.
+- Findings above are drafts. Kiên should review screenshots, submit confirmed findings to the Google Form, then fill the `Form-submission timestamp` values.
+````
+
+**Verdict:** [Manual by user]
+
+**Reasoning:** [Manual by user]
+
+**Student Fix:** [Manual by user]
+
+### 2.2.10 Entry 10
+
+**Prompt + Tool:**
+
+Time: `2026-08-02 23:34 +07`
+Tool: `Codex / GPT-5`
+Prompt:
+Dịch submission/task1B/task1b_D1.md sang tiếng Việt. Thêm rule để biết bài nộp ngôn ngữ chính là Tiếng Việt. Sau đó thêm 1 rule trong folder docs và ai-reasoning là chỉ đọc file markdown vì đọc pdf sẽ tốn token hơn.
+
+**AI Output:** Đã dịch submission/task1B/task1b_D1.md sang tiếng Việt; thêm rule ngôn ngữ chính tiếng Việt trong submission/AGENTS.md; thêm rule ưu tiên đọc Markdown, tránh PDF khi có bản Markdown trong docs/AGENTS.md và ai-reasonin...
+
+**Verdict:** [Manual by user]
+
+**Reasoning:** [Manual by user]
+
+**Student Fix:** [Manual by user]
 
 ## 3. Tổng kết độ chính xác AI
 - Các nội dung AI tạo đã được rà soát với yêu cầu bài làm: `[TODO]`

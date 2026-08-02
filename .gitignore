@@ -5,5 +5,3 @@
 !.agents/skills/gui-usability-testing/
 !.agents/skills/gui-usability-testing/**
 .playwright-mcp
-
-AGENTS.md
