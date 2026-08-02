@@ -8,5 +8,10 @@
 !.agents/skills/ems-usability-report-writer/**
 !.agents/skills/ems-compatibility-matrix-builder/
 !.agents/skills/ems-compatibility-matrix-builder/**
+!.agents/skills/ems-finding-log-writer/
+!.agents/skills/ems-finding-log-writer/**
 
 AGENTS.md
+node_modules/
+package-lock.json
+package.json

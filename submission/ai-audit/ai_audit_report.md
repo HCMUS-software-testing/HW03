@@ -10,11 +10,13 @@
 
 ### 2.1. Tóm tắt audit
 
-| STT | Prompt + công cụ                                                                                                                                                                                              | Đánh giá                |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| 1   | Thời gian:`2026-07-28`; Công cụ: `Codex / GPT-5`; Mục đích: triển khai kế hoạch HW03; Prompt: `PLEASE IMPLEMENT THIS PLAN: HW03 GUI Testing Completion Plan ...`                                              | Hữu ích, cần sinh viên kiểm chứng bằng dữ liệu thật |
-| 2   | Thời gian:`2026-07-28 23:47 +07`; Công cụ: `Codex / GPT-5`; Mục đích: ghi nhận phiên AI hỗ trợ hoàn thiện HW03 và Việt hóa artifact; Prompt: Dùng $ai-audit-entry để thêm audit entry cho phiên làm việc này. | Hữu ích, nhưng output audit ban đầu cần chỉnh chi tiết hơn |
-| 3 | Thời gian: `2026-07-28 23:55 +07`; Công cụ: `Codex / GPT-5`; Mục đích: Ghi nhận phiên chỉnh format AI audit theo phản hồi của sinh viên; Prompt: Dùng $ai-audit-entry để thêm audit entry cho phiên làm việc này. | Đạt yêu cầu format audit sau phản hồi |
+| STT | Prompt + công cụ                                                                                                                                                                                                                                                                            | Đánh giá                                                     |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| 1   | Thời gian:`2026-07-28`; Công cụ: `Codex / GPT-5`; Mục đích: triển khai kế hoạch HW03; Prompt: `PLEASE IMPLEMENT THIS PLAN: HW03 GUI Testing Completion Plan ...`                                                                                                                            | Hữu ích, cần sinh viên kiểm chứng bằng dữ liệu thật          |
+| 2   | Thời gian:`2026-07-28 23:47 +07`; Công cụ: `Codex / GPT-5`; Mục đích: ghi nhận phiên AI hỗ trợ hoàn thiện HW03 và Việt hóa artifact; Prompt: Dùng $ai-audit-entry để thêm audit entry cho phiên làm việc này.                                                                               | Hữu ích, nhưng output audit ban đầu cần chỉnh chi tiết hơn   |
+| 3   | Thời gian:`2026-07-28 23:55 +07`; Công cụ: `Codex / GPT-5`; Mục đích: Ghi nhận phiên chỉnh format AI audit theo phản hồi của sinh viên; Prompt: Dùng $ai-audit-entry để thêm audit entry cho phiên làm việc này.                                                                            | Đạt yêu cầu format audit sau phản hồi                        |
+| 4   | Thời gian:`2026-08-02 00:35 +07`; Công cụ: `Codex / GPT-5`; Mục đích: AI-assisted audit cho C1 Users Management list; Prompt: Hãy dùng skill EMS GUI Checklist Runner để audit C1 Users Management list, ghi checklist execution, findings, screenshots và phần cần sinh viên validate lại. | Hữu ích cho draft C1, cần sinh viên verify lại bằng EMS thật |
+| 5 | Thời gian: `2026-08-02 14:32 +07`; Công cụ: `Codex / GPT-5`; Mục đích: Ghi nhận phiên AI hỗ trợ kiểm thử C2, cập nhật finding log và tạo/cập nhật skill EMS finding log; Prompt: Hãy thực hiện dùng skill EMS GUI Checklist Runner để thực hiện cho màn hình C2; cập nhật domain https://prod-dev.ems-fitus.cloud/dashboard; dùng Playwright đã có sẵn để check sc... | Hữu ích cho việc chuẩn hóa artifact C2, cần sinh viên kiểm chứng và submit form |
 
 ### 2.2. Chi tiết audit
 
@@ -103,6 +105,80 @@ Dùng $ai-audit-entry để thêm audit entry cho phiên làm việc này.
 **Lý do:** Entry 3 ghi nhận đúng phiên chỉnh format audit. Sau lần chỉnh này, phần `Prompt + công cụ` đã xuống dòng theo các trường `Thời gian`, `Công cụ`, `Mục đích`, `Prompt đầy đủ`; phần `Kết quả AI` đã tóm tắt artifact liên quan thay vì chỉ mô tả chung. Skill và script audit cũng được cập nhật để các entry sau sinh ra theo format mới.
 
 **Sinh viên chỉnh sửa:** Sinh viên đã yêu cầu prompt phải đầy đủ, phần prompt/công cụ/thời gian phải xuống dòng rõ hơn và output AI phải tóm tắt theo từng entry. AI đã cập nhật `submission/ai-audit/ai_audit_report.md`, `.agents/skills/ai-audit-entry/SKILL.md`, script append audit và regression test theo yêu cầu đó.
+
+### 2.2.4 Entry 4
+
+**Prompt + công cụ:**
+
+**Thời gian:** `2026-08-02 00:35 +07`
+
+**Công cụ:** `Codex / GPT-5`
+
+**Mục đích:** AI-assisted audit cho C1 Users Management list
+
+**Prompt đầy đủ:**
+
+```text
+Hãy dùng skill EMS GUI Checklist Runner để thực hiện AI-assisted audit cho màn hình C1 Users Management list trên EMS `https://prod-dev.ems-fitus.cloud/dashboard`. Dùng Playwright/browser automation để đăng nhập bằng admin account trong đề, quan sát màn hình Users list, chụp screenshot working evidence và chỉ lưu screenshot fail thật vào `submission/screenshots/checklist-failures/`.
+
+Đọc checklist nguồn `submission/group/gui_usability_checklist_final.md`, điền phần C1 trong `submission/checklist_execution_scenario_c.md` theo đúng yêu cầu đề: chỉ dùng `Pass` hoặc `Fail`, không dùng `N/A` cho bản final. Với item không có form/control trực tiếp trên C1 thì đánh `Pass` kèm ghi chú rằng không phát hiện lỗi trong phạm vi C1 hoặc sẽ kiểm sâu ở C2/C3 nếu liên quan.
+
+Cập nhật file execution theo format tách từng màn hình: thêm phần phạm vi màn hình kiểm thử cho C1/C2/C3, giữ bảng C1 gồm các cột `Màn hình`, `Checklist ID`, `Kết quả`, `Ghi chú`, `Finding`. Cột `Finding` chỉ reference tới bug trong file log bằng relative path từ file execution, ví dụ `[C-F001](bug_usability_findings_log.md)`.
+
+Nếu phát hiện lỗi C1, ghi vào `submission/bug_usability_findings_log.md` với ID `C-F001`, `C-F002`, gồm màn hình, loại lỗi, severity, steps, expected vs actual, suggested fix, screenshot ref và `Timestamp form` để `Chờ sinh viên submit`. Không tự submit Google Form.
+
+Áp dụng các chỉnh sửa đã verify trong phiên: không ghi bug cho icon filter thiếu tooltip nếu icon nằm cạnh tiêu đề cột đủ rõ ngữ cảnh; giữ `IA-01-07` là `Pass`. Ghi nhận hai finding nháp cho C1: mobile overflow trên iPhone SE 375x667 và empty state search không có nút clear/reset. Sau khi sửa, chạy validator để kiểm tra artifact, rồi báo lại để sinh viên tự mở EMS validate Pass/Fail, severity, screenshot và submit form sau.
+```
+
+**Kết quả AI:** Tóm tắt artifact liên quan:
+
+- Dùng browser automation/Playwright sau khi sinh viên cài Playwright để đăng nhập EMS tại `https://prod-dev.ems-fitus.cloud/dashboard` bằng tài khoản admin trong đề và quan sát màn hình C1 Users Management list.
+- Tạo/thu thập working screenshots cho C1 như overview, role/status filter popover, search result, search empty state và ảnh failure trong `submission/screenshots/checklist-failures/`.
+- Dùng `submission/group/gui_usability_checklist_final.md` làm checklist nguồn và điền nháp C1 trong `submission/checklist_execution_scenario_c.md` theo trạng thái `Pass`/`Fail`.
+- Cập nhật phần "Phạm vi màn hình kiểm thử" để C1/C2/C3 rõ hơn; riêng C1 mô tả phạm vi gồm search, filter Vai trò/Trạng thái, bảng user, Export/Add User, Edit/Delete và phân trang.
+- Sau phản hồi của sinh viên, bỏ `N/A`, giữ `IA-01-07` là `Pass` vì icon filter nằm cạnh tiêu đề cột đủ ngữ cảnh; lỗi tooltip filter chỉ được xem là improvement, không ghi finding.
+- Ghi 2 finding nháp cho C1 trong `submission/bug_usability_findings_log.md`: `C-F001` mobile overflow trên iPhone SE 375x667 và `C-F002` empty state thiếu hành động clear/reset.
+- Sửa cột `Finding` trong execution thành reference tương đối tới `bug_usability_findings_log.md`, ví dụ `[C-F001](bug_usability_findings_log.md)`.
+- Chạy `python submission/validate_hw03_artifacts.py` sau các lần chỉnh; validator báo `Kiểm tra artifact HW03 đã đạt`.
+- Các finding C1 vẫn là draft do AI hỗ trợ kiểm thử; sinh viên cần mở EMS, đối chiếu screenshot, xác nhận Pass/Fail/severity và submit Google Form sau, rồi điền timestamp.
+
+**Đánh giá:** Hữu ích cho việc tạo bản nháp kiểm thử C1 có cấu trúc, nhưng chưa thể xem là kết quả cuối cùng nếu sinh viên chưa tự verify lại trên EMS thật.
+
+**Lý do:** AI giúp đọc checklist nguồn, chạy quan sát bằng browser automation, phát hiện và ghi lại các vấn đề có minh chứng như mobile overflow và empty state thiếu hành động clear/reset. AI cũng hỗ trợ chuẩn hóa artifact: tách bảng theo màn hình, bỏ trạng thái `N/A`, nối `Finding` tới bug log bằng relative path và chạy validator. Tuy nhiên AI vẫn có thể đánh giá sai mức độ usability nếu thiếu ngữ cảnh người dùng; ví dụ sinh viên đã phản biện trường hợp icon filter thiếu tooltip và quyết định giữ `IA-01-07` là `Pass`.
+
+**Sinh viên chỉnh sửa:** Sinh viên đã kiểm tra lại các nhận định của AI, yêu cầu chỉ dùng `Pass`/`Fail`, chỉnh cách reference finding, làm rõ phạm vi màn hình C1/C2/C3, phản biện bug tooltip filter và giữ lại các finding phù hợp hơn cho C1. Trước khi nộp, sinh viên cần mở EMS để xác nhận lại C1, đối chiếu ảnh fail, submit Google Form cho từng bug hợp lệ và điền timestamp vào bug log.
+
+### 2.2.5 Entry 5
+
+**Prompt + công cụ:**
+
+**Thời gian:** `2026-08-02 14:32 +07`
+
+**Công cụ:** `Codex / GPT-5`
+
+**Mục đích:** Ghi nhận phiên AI hỗ trợ kiểm thử C2, cập nhật finding log và tạo/cập nhật skill EMS finding log
+
+**Prompt đầy đủ:**
+
+```text
+Hãy thực hiện dùng skill EMS GUI Checklist Runner để thực hiện cho màn hình C2; cập nhật domain https://prod-dev.ems-fitus.cloud/dashboard; dùng Playwright đã có sẵn để check screen C2; phân loại và ghi các lỗi usability/bug người dùng phát hiện như password validation tiếng Anh khi đang dùng VI, email @g vẫn thành công, phone thiếu gợi ý/cho nhập chữ, role dropdown chọn placeholder, email đã xóa vẫn báo already use, member code duplicate hiển thị tiếng Anh; chỉnh bug_usability_findings_log.md để có bảng tổng hợp ở đầu, chi tiết từng finding không dùng bảng mà viết từng mục, ảnh hiển thị trực tiếp, bước tái hiện xuống dòng từng bước, ảnh giữ kích thước bình thường; tạo/cập nhật skill ems-finding-log-writer bằng skill-creator.
+```
+
+**Kết quả AI:** Tóm tắt artifact hiện hành:
+
+- `submission/checklist_execution_scenario_c.md`: cập nhật execution cho C2 theo checklist GUI usability, dùng `Pass`/`Fail` và link finding về `bug_usability_findings_log.md`.
+- `submission/bug_usability_findings_log.md`: cập nhật finding log hiện hành với bảng tổng hợp ở đầu và chi tiết các finding C-F001 đến C-F011 theo từng mục, không dùng bảng chi tiết.
+- `submission/screenshots/checklist-failures/`: dùng ảnh minh chứng hiện hành cho C-F001 đến C-F011 và hiển thị trực tiếp trong finding log bằng thẻ `<img>` ở kích thước bình thường.
+- `.agents/skills/ems-finding-log-writer/`: tạo và cập nhật skill local để chuẩn hóa cách ghi finding log, quy tắc ảnh, cách tách bước tái hiện và cách nối checklist fail với finding log.
+- `.gitignore`: thêm exception để tracking skill `ems-finding-log-writer`.
+- `README.md`, `docs/`, `submission/HW03_step_by_step_guide.md`, `submission/main_report.md`: cập nhật URL SUT hiện hành thành `https://prod-dev.ems-fitus.cloud/dashboard`.
+- `submission/validate_hw03_artifacts.py`: được chạy lại sau khi chỉnh artifact; validator báo `Kiểm tra artifact HW03 đã đạt`.
+
+**Đánh giá:** Hữu ích cho việc chuẩn hóa artifact C2, nhưng cần sinh viên kiểm chứng lại trên EMS thật và submit Google Form trước khi xem là kết quả cuối.
+
+**Lý do:** AI hỗ trợ tổng hợp các lỗi đã quan sát/thảo luận, cập nhật checklist execution, finding log, ảnh minh chứng và skill tái sử dụng theo format nộp bài. Output phù hợp ở mức tổ chức artifact và diễn đạt finding, nhưng timestamp Google Form, quyết định cuối về severity và tính đúng của từng lỗi vẫn phụ thuộc vào kiểm chứng của sinh viên.
+
+**Sinh viên chỉnh sửa:** Sinh viên đã phản biện và chỉnh hướng nhiều điểm trong phiên: yêu cầu không bịa audit, phân biệt bug và usability finding, quyết định tách/ghép finding cho password/phone/role/member code, yêu cầu bỏ bảng chi tiết finding, tách bước tái hiện xuống dòng từng bước, hiển thị ảnh trực tiếp và giữ ảnh ở kích thước bình thường. Sinh viên vẫn cần tự submit Google Form và điền timestamp tương ứng.
 
 ## 3. Tổng kết độ chính xác AI
 
