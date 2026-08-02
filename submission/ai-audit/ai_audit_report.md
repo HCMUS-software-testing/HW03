@@ -111,3 +111,40 @@ Tóm tắt: AI đọc skill ems-checklist-execution và các file liên quan, ch
 - **Lý do đánh giá:** Output đúng phạm vi hỗ trợ chuẩn bị bảng và hướng dẫn ghi kết quả. AI không tự tạo Passed, Failed, N/A, screenshot, bug count hoặc bằng chứng live EMS.
 - **Phần sinh viên sửa hoặc kiểm chứng:** Sinh viên cần mở EMS bằng vai trò Admin, kiểm từng item trên A1/A2/A3, thay placeholder bằng Passed/Failed/N/A dựa trên quan sát thật, chụp screenshot cho từng Failed và ghi bug tương ứng vào findings log nếu có.
 - **Artefact liên quan:** `submission/checklist_execution.md`, `submission/group/gui_usability_checklist_final.md`, `submission/skills/ems-checklist-execution/SKILL.md`
+
+
+## Entry 6
+
+- **Ngày giờ:** 2026-08-02 22:20 +0700
+- **Công cụ AI / model:** Codex / GPT-5
+- **Tác vụ:** AI hỗ trợ kiểm thử live Task 1B Scenario A và đồng bộ lại artefact
+- **Prompt của sinh viên:**
+
+```text
+# Rebuild Task 1B — Scenario A
+
+Retain Bảo’s assigned screens: A1 Events list, A2 Add/Edit Event, and A3 Registration & Roles. Re-test all 51 checklist items on each screen using the live prod-dev.ems-fitus.cloud deployment. Log in with the provided Admin account, create one uniquely named draft event, capture evidence, update checklist_execution.md, main_report.md, bug_usability_findings_log.md, READMEs, Google-Form-ready entries, and git_commit_log.md.
+
+ngôn ngữ phải là tiếng Việt và tuân thủ cái format bảng đã có
+
+ý của tôi là cái format của cái bảng trước khi bạn sửa á, chỉ cần sài format bảng đó là được rồi với lại không cần ghi AI audit ở bước này nên xoá đi
+
+cái cấu trúc bảng vẫn sài cái của cái này á d655d24e9dc92adb3b09783d18ec56cb84852189
+
+Hãy nhúng mấy cái ảnh vào luôn đi sao toàn để đường dẫn k vậy
+
+bài tập nảy có cấm dùng AI để làm task 1 part b excution ko
+
+cho AI kiểm thử luôn được ko?
+
+vậy ghi lại cái audit dùm đi
+```
+
+- **Output của AI:**
+
+Tóm tắt: AI điều khiển trình duyệt kiểm thử trực tiếp deployment `https://prod-dev.ems-fitus.cloud/`, dùng tài khoản Admin đã cung cấp, tạo và giữ lại draft event `23127326_TASK1B_20260802_163308`, chạy lại 51 checklist item cho từng màn hình A1/A2/A3, chụp bộ ảnh minh chứng mới trong `submission/screenshots/task1b/`, xác nhận 14 phát hiện bằng tương tác thật, cập nhật bảng checklist/report/findings theo tiếng Việt và khôi phục cấu trúc bảng theo commit `d655d24e9dc92adb3b09783d18ec56cb84852189`. Sau phản hồi của sinh viên, AI xóa mục audit tạm thời, nhúng ảnh trực tiếp bằng Markdown image trong các artefact Task 1B, rồi kiểm tra lại số dòng, số lượng checklist ID, ảnh tồn tại, bảng render và sự nhất quán giữa checklist, report và findings log.
+
+- **Nhận xét của sinh viên:** Chấp nhận việc AI hỗ trợ kiểm thử nếu kết quả dựa trên EMS live, có screenshot thật, không suy đoán từ ảnh tĩnh và sinh viên review lại trước khi nộp.
+- **Lý do đánh giá:** Việc dùng AI phù hợp chính sách `AI Policy: Open`; AI được dùng như trợ lý kiểm thử có điều khiển browser. Phần không được phép là tạo giả evidence hoặc tự bịa Passed/Failed. Entry này ghi rõ kết quả dựa trên tương tác live và ảnh thật, còn sinh viên vẫn chịu trách nhiệm xác minh cuối cùng.
+- **Phần sinh viên sửa hoặc kiểm chứng:** Bảo cần mở lại các artefact, đối chiếu một số ảnh failed quan trọng với mô tả lỗi, gửi các phát hiện lên Google Form bằng email sinh viên thật, rồi thay trạng thái `Chờ đồng bộ sau khi Bảo gửi` bằng timestamp thật từ Google Form.
+- **Artefact liên quan:** `submission/checklist_execution.md`, `submission/main_report.md`, `submission/bug_usability_findings_log.md`, `submission/task1b_google_form_entries.md`, `submission/screenshots/task1b/`, `submission/git_commit_log.md`, `README.md`, `submission/README.md`
