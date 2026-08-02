@@ -30,10 +30,12 @@
 | --- | --- |
 | Scenario chosen | A - Admin creates and manages events |
 | Screens tested | A1 Events list; A2 Add/Edit Event; A3 Registration & Roles |
-| Checklist items designed | [ ] |
-| Checklist items executed | [ ] |
-| Passed / Failed | [ ] / [ ] |
-| Bugs found | [ ] |
+| Checklist items designed | 51 shared checklist items |
+| Checklist items executed | 153 rows (51 per screen) |
+| Applicable / Not applicable | 96 / 57 |
+| Passed / Failed | 82 / 14 (85.4% pass rate over applicable rows) |
+| Per-screen Task 1B totals | A1: 51 / 25 / 18 / 7 / 26 / 72.0%; A2: 51 / 38 / 34 / 4 / 13 / 89.5%; A3: 51 / 33 / 30 / 3 / 18 / 90.9% (`rows / applicable / passed / failed / not applicable / pass rate`) |
+| Bugs found | 11 interaction-confirmed Task 1B findings |
 | User-testing participants | 5 |
 | Usability issues by severity | S0: [ ], S1: [ ], S2: [ ], S3: [ ], S4: [ ] |
 | Compatibility cells covered | [ ] |
