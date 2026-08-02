@@ -9,7 +9,7 @@
 
 | STT | MSSV | Họ và tên | Scenario | Danh sách 3 Màn hình kiểm thử |
 | :---: | :---: | :--- | :---: | :--- |
-| **1** | 23127075 | Lê Trung Kiên | **Scenario D** | |
+| **1** | 23127075 | Lê Trung Kiên | **Scenario D** | 1. D1: User - create support request form with image attachment; <br> 2. D2: User - My Requests list/detail with response; <br> 3. D3: Admin - Support Requests list, Pending/Resolved tabs, search; |
 | **2** | 23127185 | Mai Thị Kim Duyên | **Scenario B** |1. B1: Home / events listing - featured carousel, categories, search/filter <br> 2. B2: Event detail page - banner, schedule, register button, waitlist notice <br> 3. B3: Registration form - role selection, additional role, confirmation; |
 | **3** | 23127205 | Lâm Hữu Khánh | **Scenario C** | 1. C1: Users list - search, role/active filters, columns; <br> 2. C2: Assign Role / edit user; <br> 3. C3: Block-Unblock and Reset-Password dialogs - confirmation + audit; |
 | **4** | 23127326 | Lê Mai Hoài Bảo | **Scenario A** | 1. A1: Events list with status filters and notification dots; <br> 2. A2: Add/Edit Event form - image upload + Rich-Text + date/time validation; <br> 3. A3: Registration & Roles configuration panel - Max Slots / Waitlist / additional role; |
@@ -81,7 +81,7 @@
 ## 3. TÓM TẮT KẾT QUẢ KIỂM THỬ CỦA TỪNG THÀNH VIÊN (TEST SUMMARIES)
 
 ### 3.1 Lê Trung Kiên (23127075) - Scenario D
-- **Màn hình đã test:** 
+- **Màn hình đã test:** D1, D2, D3
 - **GUI Checklist:** Designed: _____ | Executed: _____ | Passed: _____ | Failed: _____
 - **Số lượng Bug & Usability Issues:** _____
 - **User Testing:** 5 người dùng | Điểm SUS/UEQ-S: _____ / 100

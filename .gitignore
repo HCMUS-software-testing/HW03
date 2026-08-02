@@ -2,5 +2,8 @@
 !.agents/skills/
 .agents/skills/*
 !.agents/skills/ai-audit-entry/
+!.agents/skills/gui-usability-testing/
+!.agents/skills/gui-usability-testing/**
+.playwright-mcp
 
 AGENTS.md

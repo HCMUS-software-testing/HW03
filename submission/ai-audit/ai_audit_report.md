@@ -11,10 +11,14 @@
 
 | STT | Prompt + Tool | Verdict |
 | --- | --- | --- |
-| 1 | Time: `2026-07-25 22:04 +07`Tool: `Codex / GPT-5`Prompt: @Superpowers Convert docs/ISTQB_CT-AI_Syllabus_v1.0.pdf sang markdown. | [Manual by user] |
-| 2 | Time: `2026-07-25 22:14 +07` Tool: `Codex / GPT-5` Prompt: Tôi muốn 2. Bảng audit sẽ có 2 phần: 2.1. chỉ là tóm tắt STT \\\| Prompt + Tool \\\| Verdict Còn 2.2. Sẽ là list các entry đầy đủ các phần | [Manual by user] |
-| 3 | Time: `2026-07-26 15:23 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>[@superpowers](plugin://superpowers@openai-api-curated) Tạo một danh sách kiểm tra (checklist) tính khả dụng của GUI (GUI usability) để kiểm thử ứng dụng web Hệ thống Quản lý Sự kiện (Event Management System).<br>Danh sách kiểm tra phải có hơn 40 mục và bao gồm:<br>- IA-01 Các tiêu chuẩn UI chung,<br>- IA-02 Biểu mẫu,<br>- IA-03 Điều hướng,<br>- IA-04 Phản hồi và trạng thái hệ thống.<br>Xây dựng danh sách kiểm tra dựa trên các nguyên tắc Heuristic của Nielsen, các nguyên lý của Norman, và 8 quy tắc vàng của Shneiderman.<br>Trả kết quả dưới dạng bảng Markdown với các cột: ID, Khía cạnh giao diện (Interface Aspect), Mục kiểm tra (Checklist Item), Tiêu chuẩn đối chiếu (Reference), Lý do (Rationale).<br>Output sẽ nằm trong folder submission. Nhớ trích nguồn tham khảo. | [Manual by user] |
+| 1 | Time: `2026-07-25 22:04 +07`Tool: `Codex / GPT-5`Prompt: @Superpowers Convert docs/ISTQB_CT-AI_Syllabus_v1.0.pdf sang markdown. | Valid |
+| 2 | Time: `2026-07-25 22:14 +07` Tool: `Codex / GPT-5` Prompt: Tôi muốn 2. Bảng audit sẽ có 2 phần: 2.1. chỉ là tóm tắt STT \\\| Prompt + Tool \\\| Verdict Còn 2.2. Sẽ là list các entry đầy đủ các phần | Valid |
+| 3 | Time: `2026-07-26 15:23 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>[@superpowers](plugin://superpowers@openai-api-curated) Tạo một danh sách kiểm tra (checklist) tính khả dụng của GUI (GUI usability) để kiểm thử ứng dụng web Hệ thống Quản lý Sự kiện (Event Management System).<br>Danh sách kiểm tra phải có hơn 40 mục và bao gồm:<br><br>- IA-01 Các tiêu chuẩn UI chung,<br>- IA-02 Biểu mẫu,<br>- IA-03 Điều hướng,<br>- IA-04 Phản hồi và trạng thái hệ thống.<br>  Xây dựng danh sách kiểm tra dựa trên các nguyên tắc Heuristic của Nielsen, các nguyên lý của Norman, và 8 quy tắc vàng của Shneiderman.<br>  Trả kết quả dưới dạng bảng Markdown với các cột: ID, Khía cạnh giao diện (Interface Aspect), Mục kiểm tra (Checklist Item), Tiêu chuẩn đối chiếu (Reference), Lý do (Rationale).<br>  Output sẽ nằm trong folder submission. Nhớ trích nguồn tham khảo. | Incompleted |
 | 4 | Time: `2026-07-26 15:30 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>Hãy ghi full output của AI vì nó nằm trong cùng 1 file và liên tục (nội dung không bị ngắt quãng). Sau đó sửa skill ai-audit-entry để đảm bảo khi nội dung được tạo bởi AI liên tục, không bị ngắt quãng, có thể trích full được thì hãy trích full | [Manual by user] |
+| 5 | Time: `2026-07-27 23:33 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>@Superpowers Hãy dựa vào submission/group để viết bước đầu tiên của skill GUI -  Usability Testing là tạo checklist. Bước này, skill sẽ nhận input là các spec của project để tạo ra checklist dựa trên các nguyên tắc Nielsen's 10 heuristics, Norman's 6 principles, Shneiderman's 8 golden rules, and the per-widget checklists. Nguồn để tham khảo các nguyên tắc ấy cũng đã có trong các file markdown trong thư mục submission/group. | [Manual by user] |
+| 6 | Time: `2026-07-29 00:05 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>Liệu có thể dùng MCP Playwright + Browserstack để hoàn thành bài tập này theo chiến thuật AI-first không? Nếu có thì tạo các docs hướng dẫn tôi làm | [Manual by user] |
+| 7 | Time: `2026-08-02 22:34 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>cài thêm nó đi | [Manual by user] |
+| 8 | Time: `2026-08-02 22:39 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>Bạn tạo 1 file để tôi cung cấp link web mới vì link web cũ đã hỏng. Thêm vào đó là account user và admin. Thêm 1 rule là khi vào trang admin nếu có CRUD tài khoản user thì chỉ đuợc làm trên tài khoản của bản thân, tức là tài khoản user tôi cung cấp để tránh ảnh hưởng đến account người khác. | [Manual by user] |
 
 ### 2.2. Chi tiết audit
 
@@ -24,11 +28,11 @@
 
 **AI Output:** Tạo file docs/ISTQB_CT-AI_Syllabus_v1.0.md từ PDF, loại bỏ header/footer lặp, dựng lại heading theo section numbering, tách Keywords và giữ phần lớn danh sách/mục lục ở dạng Markdown đọc được.
 
-**Verdict:** [Manual by user]
+**Verdict:** Valid
 
 **Reasoning:** [Manual by user]
 
-**Student Fix:** [Manual by user]
+**Student Fix:** Đã đọc lại nhưng không sửa vì convert sang markdown với mục đích cho AI đọc để đỡ hao Token.
 
 ### 2.2.2 Entry 2
 
@@ -36,11 +40,11 @@
 
 **AI Output:** Cập nhật skill ai-audit-entry để gồm với bảng và với các mục chứa đủ Prompt + Tool, AI Output, Verdict, Reasoning, Student Fix. Script tự migrate format cũ, tự đánh số lại summary rows và detail entries, và test/valid...
 
-**Verdict:** [Manual by user]
+**Verdict:** Valid
 
 **Reasoning:** [Manual by user]
 
-**Student Fix:** [Manual by user]
+**Student Fix:** Check lại format ai_audit_report.md đã ổn nên không sửa vì đã phù hợp với nhu cầu ở hiện tại.
 
 ### 2.2.3 Entry 3
 
@@ -51,13 +55,14 @@ Tool: `Codex / GPT-5`
 Prompt:
 [@superpowers](plugin://superpowers@openai-api-curated) Tạo một danh sách kiểm tra (checklist) tính khả dụng của GUI (GUI usability) để kiểm thử ứng dụng web Hệ thống Quản lý Sự kiện (Event Management System).
 Danh sách kiểm tra phải có hơn 40 mục và bao gồm:
+
 - IA-01 Các tiêu chuẩn UI chung,
 - IA-02 Biểu mẫu,
 - IA-03 Điều hướng,
 - IA-04 Phản hồi và trạng thái hệ thống.
-Xây dựng danh sách kiểm tra dựa trên các nguyên tắc Heuristic của Nielsen, các nguyên lý của Norman, và 8 quy tắc vàng của Shneiderman.
-Trả kết quả dưới dạng bảng Markdown với các cột: ID, Khía cạnh giao diện (Interface Aspect), Mục kiểm tra (Checklist Item), Tiêu chuẩn đối chiếu (Reference), Lý do (Rationale).
-Output sẽ nằm trong folder submission. Nhớ trích nguồn tham khảo.
+  Xây dựng danh sách kiểm tra dựa trên các nguyên tắc Heuristic của Nielsen, các nguyên lý của Norman, và 8 quy tắc vàng của Shneiderman.
+  Trả kết quả dưới dạng bảng Markdown với các cột: ID, Khía cạnh giao diện (Interface Aspect), Mục kiểm tra (Checklist Item), Tiêu chuẩn đối chiếu (Reference), Lý do (Rationale).
+  Output sẽ nằm trong folder submission. Nhớ trích nguồn tham khảo.
 
 **AI Output:**
 
@@ -125,11 +130,11 @@ Checklist này dùng để kiểm thử tính khả dụng GUI của ứng dụn
 - Basic Books/Hachette Book Group, bibliographic page for Don Norman's *The Design of Everyday Things*: https://www.hachettebookgroup.com/titles/don-norman/the-design-of-everyday-things/9780465050659/
 ```
 
-**Verdict:** [Manual by user]
+**Verdict:** Incompleted
 
 **Reasoning:** [Manual by user]
 
-**Student Fix:** [Manual by user]
+**Student Fix:** Cả nhóm đã họp với nhau và sửa. Output được dùng chung và nằm trong folder group.
 
 ### 2.2.4 Entry 4
 
@@ -146,7 +151,128 @@ Hãy ghi full output của AI vì nó nằm trong cùng 1 file và liên tục (
 
 **Reasoning:** [Manual by user]
 
+**Student Fix:** Output của AI đã phú hợp với mong muốn. Bằng chứng là ở Entry 3, checklist đã được ghi full. Sinh viên không sửa.
+
+### 2.2.5 Entry 5
+
+**Prompt + Tool:**
+
+Time: `2026-07-27 23:33 +07`
+Tool: `Codex / GPT-5`
+Prompt:
+@Superpowers Hãy dựa vào submission/group để viết bước đầu tiên của skill GUI -  Usability Testing là tạo checklist. Bước này, skill sẽ nhận input là các spec của project để tạo ra checklist dựa trên các nguyên tắc Nielsen's 10 heuristics, Norman's 6 principles, Shneiderman's 8 golden rules, and the per-widget checklists. Nguồn để tham khảo các nguyên tắc ấy cũng đã có trong các file markdown trong thư mục submission/group.
+
+**AI Output:** Đã tạo .agents/skills/gui-usability-testing/SKILL.md mô tả Step 1 - Create Checklist và cập nhật .gitignore để skill mới không bị ignore. Đã kiểm tra file tồn tại, marker nội dung chính, artifact scan và git status.
+
+**Verdict:** [Manual by user]
+
+**Reasoning:** [Manual by user]
+
 **Student Fix:** [Manual by user]
+
+### 2.2.6 Entry 6
+
+**Prompt + Tool:**
+
+Time: `2026-07-29 00:05 +07`
+Tool: `Codex / GPT-5`
+Prompt:
+Liệu có thể dùng MCP Playwright + Browserstack để hoàn thành bài tập này theo chiến thuật AI-first không? Nếu có thì tạo các docs hướng dẫn tôi làm
+
+**AI Output:** Đã tạo submission/ai_first_playwright_browserstack_strategy.md và submission/ai_first_playwright_browserstack_templates.md, giải thích chiến thuật AI-first với Playwright MCP, BrowserStack Live/MCP/Automate, workflow...
+
+**Verdict:** [Manual by user]
+
+**Reasoning:** [Manual by user]
+
+**Student Fix:** Sinh viên sửa lại theo đúng pool của sinh viên.
+
+### 2.2.7 Entry 7
+
+**Prompt + Tool:**
+
+Time: `2026-08-02 22:34 +07`
+Tool: `Codex / GPT-5`
+Prompt:
+cài thêm nó đi
+
+**AI Output:** Đã thêm MCP server chrome-devtools bằng lệnh codex mcp add và xác nhận server enabled trong danh sách MCP.
+
+**Verdict:** [Manual by user]
+
+**Reasoning:** [Manual by user]
+
+**Student Fix:** [Manual by user]
+
+### 2.2.8 Entry 8
+
+**Prompt + Tool:**
+
+Time: `2026-08-02 22:39 +07`
+Tool: `Codex / GPT-5`
+Prompt:
+Bạn tạo 1 file để tôi cung cấp link web mới vì link web cũ đã hỏng. Thêm vào đó là account user và admin. Thêm 1 rule là khi vào trang admin nếu có CRUD tài khoản user thì chỉ đuợc làm trên tài khoản của bản thân, tức là tài khoản user tôi cung cấp để tránh ảnh hưởng đến account người khác.
+
+**AI Output:**
+
+```markdown
+# Test Environment Access
+
+File này dùng để lưu thông tin truy cập EMS cho các task AI-first/manual testing. Chỉ dùng tài khoản test hoặc mật khẩu tạm; không commit thông tin nhạy cảm nếu repository được chia sẻ công khai.
+
+## Web URL
+
+| Field | Value |
+| --- | --- |
+| EMS URL mới | `[Điền link web mới tại đây]` |
+| Ghi chú môi trường | `[Ví dụ: ngrok mới, staging, production-like, thời điểm link được cấp]` |
+
+## Accounts
+
+### User Account
+
+Tài khoản này dùng cho Scenario D màn hình `D1` và `D2`.
+
+| Field | Value |
+| --- | --- |
+| Email / Username / MSSV | `[Điền tài khoản user của Kiên]` |
+| Password | `[Điền password user]` |
+| Role | `User` |
+| Ghi chú | `Chỉ dùng để tạo support request và kiểm tra My Requests của chính tài khoản này.` |
+
+### Admin Account
+
+Tài khoản này dùng cho Scenario D màn hình `D3`.
+
+| Field | Value |
+| --- | --- |
+| Email / Username | `[Điền tài khoản admin]` |
+| Password | `[Điền password admin]` |
+| Role | `Admin` |
+| Ghi chú | `Chỉ dùng để xem/xử lý support request phục vụ kiểm thử.` |
+
+## Testing Rules
+
+1. Khi test trang admin, nếu có thao tác CRUD tài khoản user, chỉ được thao tác trên tài khoản user của Kiên được cung cấp trong file này.
+2. Không sửa, khóa, reset mật khẩu, xóa, đổi role hoặc thay đổi dữ liệu cá nhân của tài khoản người khác.
+3. Nếu cần dữ liệu để test admin, ưu tiên tạo dữ liệu mới bằng tài khoản user của Kiên rồi xử lý bằng tài khoản admin.
+4. Trước mọi thao tác có thể ảnh hưởng dữ liệu thật, ghi rõ mục đích test và chụp/sao lưu bằng chứng trạng thái trước khi thao tác.
+5. Nếu không chắc một thao tác có ảnh hưởng tới tài khoản người khác hay không, dừng lại và hỏi lại trước khi thực hiện.
+
+## Scenario D Scope
+
+| ID | Screen | Role | Intended Use |
+| --- | --- | --- | --- |
+| D1 | User - create support request form with image attachment | User | Tạo support request test bằng tài khoản user của Kiên. |
+| D2 | User - My Requests list/detail with response | User | Kiểm tra danh sách, chi tiết, trạng thái và phản hồi chính thức của request thuộc tài khoản Kiên. |
+| D3 | Admin - Support Requests list, Pending/Resolved tabs, search | Admin | Tìm và xử lý support request test do tài khoản Kiên tạo; không thao tác dữ liệu người khác. |
+```
+
+**Verdict:** [Manual by user]
+
+**Reasoning:** [Manual by user]
+
+**Student Fix:** Sinh viên điền link web mới, account user, account admin và quy tắc chỉ CRUD trên tài khoản user của bản thân để tránh ảnh hưởng account người khác.
 
 ## 3. Tổng kết độ chính xác AI
 - Các nội dung AI tạo đã được rà soát với yêu cầu bài làm: `[TODO]`
