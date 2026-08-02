@@ -125,20 +125,6 @@ Tóm tắt: AI đọc skill ems-checklist-execution và các file liên quan, ch
 
 Retain Bảo’s assigned screens: A1 Events list, A2 Add/Edit Event, and A3 Registration & Roles. Re-test all 51 checklist items on each screen using the live prod-dev.ems-fitus.cloud deployment. Log in with the provided Admin account, create one uniquely named draft event, capture evidence, update checklist_execution.md, main_report.md, bug_usability_findings_log.md, READMEs, Google-Form-ready entries, and git_commit_log.md.
 
-ngôn ngữ phải là tiếng Việt và tuân thủ cái format bảng đã có
-
-ý của tôi là cái format của cái bảng trước khi bạn sửa á, chỉ cần sài format bảng đó là được rồi với lại không cần ghi AI audit ở bước này nên xoá đi
-
-cái cấu trúc bảng vẫn sài cái của cái này á d655d24e9dc92adb3b09783d18ec56cb84852189
-
-Hãy nhúng mấy cái ảnh vào luôn đi sao toàn để đường dẫn k vậy
-
-bài tập nảy có cấm dùng AI để làm task 1 part b excution ko
-
-cho AI kiểm thử luôn được ko?
-
-vậy ghi lại cái audit dùm đi
-
 ```
 
 - **Output của AI:**
