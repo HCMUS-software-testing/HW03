@@ -13,13 +13,13 @@ Tài liệu này tổng hợp từ các file Markdown trong `docs/`, ngoại tr�
 | Task 4 | Submit findings vào Google Form và tổng hợp vào Bug & Usability Findings Log | 10 | Cá nhân |
 | Task 5 | Agent Skills và demo video | 10 | Cá nhân |
 
-SUT: `https://promoter-starboard-prude.ngrok-free.dev/`
+SUT: `https://prod-dev.ems-fitus.cloud/dashboard`
 
 Admin account: `admin@gmail.com` / `Admin@123`
 
 Findings Google Form: `https://forms.gle/CJQFQCAXcsDbXDMM9`
 
-Lưu ý quan trọng: EMS chạy qua ngrok và dữ liệu có thể reset. Chụp screenshot, quay video, lưu bằng chứng ngay khi test.
+Lưu ý quan trọng: EMS chạy trên domain mới và dữ liệu có thể reset. Chụp screenshot, quay video, lưu bằng chứng ngay khi test.
 
 ## 2. Chuẩn bị repository và thư mục làm bài
 

@@ -2,7 +2,7 @@
 
 **Course:** Software Testing - AI-First Edition (2026)  
 **Subtitle:** Design a shared GUI checklist, test your scenario, evaluate usability, and go cross-platform.  
-**SUT:** <https://promoter-starboard-prude.ngrok-free.dev/>
+**SUT:** <https://prod-dev.ems-fitus.cloud/dashboard>
 
 ## At a Glance
 
@@ -19,14 +19,14 @@ What you will deliver: four graded tasks, one shared team checklist, everything 
 
 **EMS - Event Management System** is a live web app of the Faculty of IT for creating events, registering, check-in, support, and analytics.
 
-**URL:** <https://promoter-starboard-prude.ngrok-free.dev/>
+**URL:** <https://prod-dev.ems-fitus.cloud/dashboard>
 
 | Area | Details |
 | --- | --- |
 | What it does | Admin side: events, users, categories, check-in, support, settings, analytics. |
 | What it does | User side: browse and register for events, get a QR ticket, rate events, ask for support. |
 | What it does | UI-rich: forms, drag-drop reorder, uploads, rich-text, toasts, status colours, EN/VI. |
-| Web (SUT) | `promoter-starboard-prude.ngrok-free.dev` |
+| Web (SUT) | `prod-dev.ems-fitus.cloud/dashboard` |
 | Admin | `admin@gmail.com` / `Admin@123` |
 | User side | Register your own student/guest account. |
 | Support group | <https://zalo.me/g/rupogxlykt3yxd3snodl> |

@@ -7,7 +7,7 @@
 | MSSV | 23127205 |
 | Họ và tên | Lâm Hữu Khánh |
 | Kịch bản | Kịch bản C - Admin quản lý người dùng |
-| Hệ thống kiểm thử | https://promoter-starboard-prude.ngrok-free.dev/ |
+| Hệ thống kiểm thử | https://prod-dev.ems-fitus.cloud/dashboard |
 | Tài khoản admin sử dụng | admin@gmail.com |
 | Màn hình kiểm thử | C1 Danh sách người dùng; C2 Gán vai trò / chỉnh sửa người dùng; C3 Hộp thoại chặn/bỏ chặn và đặt lại mật khẩu |
 
@@ -33,7 +33,7 @@ Artifact thực thi: `submission/checklist_execution_scenario_c.md`.
 | Màn hình | Mục đích kiểm thử | Trạng thái |
 | --- | --- | --- |
 | C1 Danh sách người dùng | Kiểm tra độ dễ đọc của danh sách, bộ lọc, cột vai trò/trạng thái hoạt động, tìm kiếm, phân trang, trạng thái rỗng/tải dữ liệu | Chờ thực thi trên EMS thật |
-| C2 Gán vai trò / chỉnh sửa người dùng | Kiểm tra nhãn form, điều khiển vai trò, hợp lệ hóa, luồng lưu/hủy và phản hồi | Chờ thực thi trên EMS thật |
+| C2 Gán vai trò / chỉnh sửa người dùng | Kiểm tra nhãn form, điều khiển vai trò, hợp lệ hóa, luồng lưu/hủy và phản hồi | Đã thực thi bằng Playwright trên `https://prod-dev.ems-fitus.cloud/dashboard` |
 | C3 Hộp thoại chặn/bỏ chặn và đặt lại mật khẩu | Kiểm tra xác nhận, nội dung cảnh báo thao tác rủi ro, đường hủy thao tác, phản hồi thành công/lỗi và khả năng truy vết audit | Chờ thực thi trên EMS thật |
 
 Mỗi checklist item bị `Fail` phải có đường dẫn ảnh chụp màn hình và mã finding tương ứng trong `submission/bug_usability_findings_log.md`.
