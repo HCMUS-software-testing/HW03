@@ -135,3 +135,24 @@ Tóm tắt: AI điều khiển trình duyệt kiểm thử trực tiếp deploym
 - **Lý do đánh giá:** Việc dùng AI phù hợp chính sách `AI Policy: Open`; AI được dùng như trợ lý kiểm thử có điều khiển browser. Phần không được phép là tạo giả evidence hoặc tự bịa Passed/Failed. Entry này ghi rõ kết quả dựa trên tương tác live và ảnh thật, còn em vẫn chịu trách nhiệm xác minh cuối cùng.
 - **Phần sinh viên sửa hoặc kiểm chứng:** Em đã mở lại các artefact, đối chiếu ảnh failed với mô tả lỗi, xác nhận kết quả dựa trên kiểm thử EMS live và chuẩn bị các phát hiện để gửi/đồng bộ Google Form bằng email trường thật của em.
 - **Artefact liên quan:** `submission/checklist_execution.md`, `submission/main_report.md`, `submission/bug_usability_findings_log.md`, `submission/task1b_google_form_entries.md`, `submission/screenshots/task1b/`, `submission/git_commit_log.md`, `README.md`, `submission/README.md`
+
+
+## Entry 7
+
+- **Ngày giờ:** 2026-08-03 00:21 +0700
+- **Công cụ AI / model:** Codex / GPT-5
+- **Tác vụ:** Thiết kế và chuẩn bị Task 2 Giai đoạn 1 cho Kịch bản A
+- **Prompt của sinh viên:**
+
+```text
+Hãy thực hiện task 2 phase 1 cho tôi
+```
+
+- **Output của AI:**
+
+Tóm tắt: AI đối chiếu yêu cầu Task 2 Phase 1 trong đề, soạn kịch bản theo mục tiêu bao phủ A1/A2/A3, bộ dữ liệu nghiệp vụ, quy trình consent/think-aloud, tiêu chí tuyển người tham gia, quy tắc đo task success, time, error, hesitation và intervention, phiếu SUS 10 câu kèm cách tính, năm câu hỏi thăm dò và tiêu chí pilot. AI đồng bộ nội dung vào ba artefact Task 2, đồng thời ghi rõ phần tuyển 5 người thật và chạy pilot chưa có dữ liệu thay vì tự tạo hồ sơ hoặc kết quả.
+
+- **Nhận xét của sinh viên:** Chấp nhận bộ tài liệu chuẩn bị; dữ liệu người tham gia và pilot chỉ được bổ sung sau khi em thực hiện thật.
+- **Lý do đánh giá:** Nội dung bao phủ đủ bốn yêu cầu của Phase 1 và không biến kịch bản thành hướng dẫn từng cú nhấp. Những thành phần bắt buộc phải có người thật được đánh dấu trung thực là chưa xác nhận.
+- **Phần sinh viên sửa hoặc kiểm chứng:** Em sẽ điền liên hệ đã che của 5 người thật, chạy pilot với người thứ sáu, ghi kết quả/điều chỉnh thực tế và khóa protocol trước P1.
+- **Artefact liên quan:** `submission/main_report.md`, `submission/usability_report.md`, `submission/user_testing_evidence.md`, `submission/ai-audit/ai_audit_report.md`

@@ -286,60 +286,82 @@ Chỉ 11 phát hiện được xác nhận bằng thao tác trực tiếp đư�
 | 2026-08-02 18:23–18:26 | A2 | Biểu mẫu/điều hướng thích ứng ở kích thước gọn và kiểm thử lại chú giải/tiêu điểm biểu tượng | ![Minh chứng a2-responsive-compact-sidebar-open](screenshots/task1b/a2-responsive-compact-sidebar-open.png); ![Minh chứng a2-responsive-compact-sidebar-collapsed](screenshots/task1b/a2-responsive-compact-sidebar-collapsed.png); ![Minh chứng a2-responsive-compact-richtext-dates](screenshots/task1b/a2-responsive-compact-richtext-dates.png); ![Minh chứng a2-icon-hover-back-no-tooltip](screenshots/task1b/a2-icon-hover-back-no-tooltip.png); ![Minh chứng a2-icon-keyboard-focus-unlabeled-camera](screenshots/task1b/a2-icon-keyboard-focus-unlabeled-camera.png); ![Minh chứng a2-icon-hover-thumbnail-camera-no-tooltip](screenshots/task1b/a2-icon-hover-thumbnail-camera-no-tooltip.png); ![Minh chứng a2-icon-hover-banner-camera-no-tooltip](screenshots/task1b/a2-icon-hover-banner-camera-no-tooltip.png) |
 | 2026-08-02 18:26–18:28 | A3 | Giao diện gọn `Registration & Roles` và kiểm thử `Reminder` chưa lưu 24→25 → `Back` → mở lại | ![Minh chứng a3-responsive-compact-registration-roles](screenshots/task1b/a3-responsive-compact-registration-roles.png); ![Minh chứng a3-unsaved-reminder-25-before-back](screenshots/task1b/a3-unsaved-reminder-25-before-back.png); ![Minh chứng a3-unsaved-back-no-warning-destination](screenshots/task1b/a3-unsaved-back-no-warning-destination.png); ![Minh chứng a3-unsaved-reopen-reminder-24-persisted](screenshots/task1b/a3-unsaved-reopen-reminder-24-persisted.png) |
 
-## 4. Task 2 - User Testing with 5 Real Users
+## 4. Task 2 - Kiểm thử với 5 người dùng thật
 
-### 4.1 Goal-based task scenario
+### 4.1 Kịch bản nhiệm vụ theo mục tiêu
 
-[Viết task cho người dùng theo mục tiêu, không viết từng bước click. Ví dụ cho Pool A nếu participant đóng vai admin: “Bạn cần tạo một sự kiện học thuật mới, cấu hình đăng ký phù hợp và kiểm tra lại sự kiện trong danh sách quản trị.”]
+**Bối cảnh đọc cho người tham gia:**
+
+> Bạn là cộng tác viên quản trị sự kiện của khoa. Ban tổ chức cần bạn chuẩn bị một sự kiện học thuật mới ở trạng thái bản nháp, cấu hình đăng ký phù hợp cho sinh viên và giảng viên, sau đó tìm và mở lại sự kiện trong danh sách quản trị để xác nhận dữ liệu đã được lưu. Không xuất bản hoặc xóa sự kiện.
+
+| Dữ liệu nghiệp vụ | Yêu cầu |
+| --- | --- |
+| Tên sự kiện | `23127326_UT_<mã người tham gia>_<thời điểm>` |
+| Chủ đề | Workshop Kỹ năng nghiên cứu 2026 |
+| Địa điểm | Phòng I.23 |
+| Thời gian đăng ký | 08:00 10/08/2026 đến 23:00 20/08/2026 |
+| Thời gian sự kiện | 08:00 đến 11:30 ngày 25/08/2026 |
+| Mô tả | Workshop giúp sinh viên chuẩn bị đề cương nghiên cứu và trình bày kết quả. |
+| Đăng ký sinh viên | Giới hạn 30 chỗ và cho phép danh sách chờ |
+| Vai trò bổ sung | `Giảng viên`, giới hạn 10 chỗ |
+| Nhắc lịch | 24 giờ trước sự kiện |
+
+Kịch bản bao phủ A2 khi tạo/sửa dữ liệu, A3 khi cấu hình đăng ký và vai trò, và A1 khi tìm kiếm, nhận biết trạng thái nháp và mở lại sự kiện.
 
 ### 4.2 Thiết kế đo lường
 
-| Metric | Cách đo |
+| Chỉ số | Cách đo |
 | --- | --- |
-| Task success | Completed / Partial / Failed |
-| Time on task | Từ lúc participant bắt đầu đến khi kết thúc task |
-| Error / hesitation count | Đếm lỗi thao tác, dừng lâu, quay lại, hỏi lại, nhập sai |
-| Post-task score | SUS hoặc UEQ-S |
-| Probe questions | Clarity, error recovery, speed, trust |
+| Task success | `Hoàn thành`: tạo được bản nháp, đủ dữ liệu A2/A3 và mở lại xác nhận mà không cần gợi ý; `Một phần`: lưu được bản nháp nhưng thiếu ít nhất một yêu cầu, không xác nhận được hoặc phải nhận gợi ý; `Thất bại`: không tạo được bản nháp dùng được trong 15 phút hoặc để người điều phối làm thay. |
+| Time on task | Bắt đầu khi người tham gia nói đã hiểu nhiệm vụ; dừng khi họ mở lại bản nháp và tuyên bố hoàn tất, bỏ cuộc hoặc chạm mốc 15 phút. Ghi theo `mm:ss`. |
+| Error count | Mỗi thao tác tạo kết quả sai, thông báo lỗi, nhập sai cần sửa hoặc đi sai luồng được tính một lỗi. Cùng một lỗi liên tiếp chỉ tính lại sau khi người tham gia đã thực hiện một hành động khác. |
+| Hesitation count | Một lần dừng/quét giao diện từ 5 giây, lặp lại việc tìm kiếm hoặc nói rõ sự không chắc chắn được tính là một hesitation. Một episode liên tục chỉ tính một lần. |
+| Can thiệp | Ghi riêng mọi gợi ý của người điều phối; nếu có gợi ý dẫn đường thì kết quả cao nhất là `Một phần`. |
+| Post-task score | Dùng System Usability Scale (SUS) gồm 10 mệnh đề, thang 1–5. Điểm câu lẻ = phản hồi - 1; câu chẵn = 5 - phản hồi; cộng 10 câu rồi nhân 2,5 để ra thang 0–100. |
+| Probe questions | Năm câu hỏi mở về độ rõ ràng, khả năng phục hồi khi lỗi, tốc độ/phản hồi, mức độ tin tưởng và thay đổi ưu tiên. |
 
-### 4.3 Pilot session
+### 4.3 Tuyển người tham gia và pilot
+
+Nhóm mục tiêu là người từ 18 tuổi, ngoài lớp học phần này, đã từng dùng biểu mẫu web và phù hợp vai trò quản trị/tổ chức sự kiện. Tuyển 5 người chính và 1 người pilot riêng; lưu thông tin liên hệ thật để có thể xác minh, nhưng chỉ ghi bản che phần giữa trong bài nộp.
 
 | Nội dung | Ghi chú |
 | --- | --- |
-| Người pilot | [Một người không tính vào 5 participant chính] |
-| Vấn đề phát hiện | [Task wording/dữ liệu/flow] |
-| Điều chỉnh trước 5 session chính | [Điền thay đổi] |
+| Trạng thái pilot | Chưa có dữ liệu người thật; không tính là đã hoàn thành. |
+| Người pilot | Cần 1 người phù hợp tiêu chí và không thuộc P1–P5. |
+| Mục tiêu pilot | Xác nhận người tham gia hiểu mục tiêu mà không cần hướng dẫn từng bước; dữ liệu ngày giờ hợp lệ; luồng A1/A2/A3 không bị gãy; phiên có thể hoàn tất trong 20 phút. |
+| Vấn đề phát hiện | Chờ kết quả quan sát pilot thật. |
+| Điều chỉnh trước 5 session chính | Chỉ ghi sau pilot; ưu tiên sửa câu chữ, dữ liệu hoặc khâu chuẩn bị, không biến kịch bản thành hướng dẫn thao tác. |
 
-### 4.4 Participant table
+### 4.4 Bảng người tham gia
 
-| ID | Hồ sơ phù hợp | Liên hệ đã che | Ngày giờ session | Thiết bị/trình duyệt | Recording ref |
+| ID | Hồ sơ phù hợp | Liên hệ đã che | Ngày giờ phiên | Thiết bị/trình duyệt | Minh chứng ghi hình |
 | --- | --- | --- | --- | --- | --- |
-| P1 | [Sinh viên/giảng viên/event organizer...] | [Zalo/email/phone che giữa] | [ ] | [ ] | [videos/...] |
-| P2 | [ ] | [ ] | [ ] | [ ] | [videos/...] |
-| P3 | [ ] | [ ] | [ ] | [ ] | [videos/...] |
-| P4 | [ ] | [ ] | [ ] | [ ] | [videos/...] |
-| P5 | [ ] | [ ] | [ ] | [ ] | [videos/...] |
+| P1 | Chưa tuyển/xác nhận | Chưa có dữ liệu thật | Chưa xếp lịch | Chưa ghi nhận | Chưa ghi nhận |
+| P2 | Chưa tuyển/xác nhận | Chưa có dữ liệu thật | Chưa xếp lịch | Chưa ghi nhận | Chưa ghi nhận |
+| P3 | Chưa tuyển/xác nhận | Chưa có dữ liệu thật | Chưa xếp lịch | Chưa ghi nhận | Chưa ghi nhận |
+| P4 | Chưa tuyển/xác nhận | Chưa có dữ liệu thật | Chưa xếp lịch | Chưa ghi nhận | Chưa ghi nhận |
+| P5 | Chưa tuyển/xác nhận | Chưa có dữ liệu thật | Chưa xếp lịch | Chưa ghi nhận | Chưa ghi nhận |
 
-### 4.5 Metrics table
+### 4.5 Bảng chỉ số
 
-| Participant | Success | Time on task | Error count | Hesitation count | SUS/UEQ-S score | Ghi chú chính |
+| Người tham gia | Kết quả | Thời gian | Số lỗi | Số lần do dự | Điểm SUS | Ghi chú chính |
 | --- | --- | ---: | ---: | ---: | ---: | --- |
-| P1 | [Completed/Partial/Failed] | [mm:ss] | [ ] | [ ] | [ ] | [ ] |
+| P1 | [Hoàn thành/Một phần/Thất bại] | [mm:ss] | [ ] | [ ] | [ ] | [ ] |
 | P2 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
 | P3 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
 | P4 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
 | P5 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| **Tổng hợp** | [Success rate] | [Mean] | [Mean] | [Mean] | [Mean] | [ ] |
+| **Tổng hợp** | [Tỷ lệ hoàn thành] | [Trung bình] | [Trung bình] | [Trung bình] | [Trung bình] | [ ] |
 
-### 4.6 Ranked usability findings
+### 4.6 Các phát hiện tính khả dụng theo mức độ
 
-| ID | Screen | Finding | Evidence | Severity | Screenshot ref | Recommendation |
+| ID | Màn hình | Phát hiện | Bằng chứng | Mức độ | Ảnh minh chứng | Khuyến nghị |
 | --- | --- | --- | --- | ---: | --- | --- |
-| UX-001 | [A1/A2/A3] | [Vấn đề usability] | [Participant/metric/probe quote] | [0-4] | [screenshots/...] | [Khuyến nghị cụ thể] |
+| UX-001 | [A1/A2/A3] | [Vấn đề tính khả dụng] | [Người tham gia/chỉ số/trích dẫn] | [0-4] | [screenshots/...] | [Khuyến nghị cụ thể] |
 
-### 4.7 Prioritised recommendations
+### 4.7 Khuyến nghị theo độ ưu tiên
 
-| Priority | Recommendation | Lý do | Finding liên quan |
+| Ưu tiên | Khuyến nghị | Lý do | Phát hiện liên quan |
 | --- | --- | --- | --- |
 | P0 | [Sửa ngay] | [Ảnh hưởng nghiêm trọng] | [UX-...] |
 | P1 | [Sửa sớm] | [Ảnh hưởng vừa] | [UX-...] |
