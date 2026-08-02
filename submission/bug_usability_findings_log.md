@@ -24,7 +24,7 @@ Mọi defect hoặc đề xuất cải thiện tính khả dụng từ checklist
 | C-F010 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 3      | Xóa user rồi tạo lại email cũ báo`email already use` bằng tiếng Anh.                      | Chờ sinh viên submit |
 | C-F011 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Member Code trùng được chặn đúng nhưng lỗi hiển thị tiếng Anh khi đang ở VI.              | Chờ sinh viên submit |
 | C-F012 | C3 Block/Unblock và Reset Password    | Usability | 3      | Block/Unblock bị biểu diễn mơ hồ qua Active/Inactive và không thấy Reset Password action. | Chờ sinh viên submit |
-| C-F013 | C3 Block/Unblock và Reset Password    | Usability | 3      | Active checkbox có thể đại diện Block/Unblock nhưng không có xác nhận nguy hiểm riêng.    | Chờ sinh viên submit |
+| C-F013 | C3 Block/Unblock và Reset Password    | Usability | 3      | Đổi trạng thái Active/Inactive thiếu xác nhận nguy hiểm riêng.                            | Chờ sinh viên submit |
 
 ## Chi tiết finding
 
@@ -63,7 +63,9 @@ Dùng mobile/tablet drawer hoặc collapsed sidebar mặc định, cho table có
 <img src="screenshots/checklist-failures/C-F001-01.png"  alt="C-F001 evidence-1">
 <img src="screenshots/checklist-failures/C-F001-02.png"  alt="C-F001 evidence-2">
 
-**Timestamp form:** Chờ sinh viên submit
+**Timestamp form:**
+Phản ánh lúc 22:43 ngày 02/08/2026
+<img src="screenshots/checklist-failures/C-F001-form.png" alt="C-F001 Google Form submission evidence">
 
 ### C-F002 - Empty state search thiếu hành động phục hồi
 
@@ -99,7 +101,10 @@ Thêm nút`Clear search` hoặc `Reset filters` ngay trong empty state và hiể
 
 <img src="screenshots/checklist-failures/C-F002.png" alt="C-F002 evidence">
 
-**Timestamp form:** Chờ sinh viên submit
+**Timestamp form:**
+Phản ánh lúc 22:45 ngày 02/08/2026
+
+<img src="screenshots/checklist-failures/C-F002-form.png" alt="C-F002 Google Form submission evidence">
 
 ### C-F003 - Dialog Edit User không responsive tốt
 
@@ -136,7 +141,9 @@ Dùng mobile/tablet drawer hoặc collapsed sidebar, giới hạn chiều rộng
 <img src="screenshots/checklist-failures/C-F003-01.png" alt="C-F003 evidence-1">
 <img src="screenshots/checklist-failures/C-F003-02.png" alt="C-F003 evidence-2">
 
-**Timestamp form:** Chờ sinh viên submit
+**Timestamp form:**
+Phản ánh lúc 22:49 ngày 02/08/2026
+<img src="screenshots/checklist-failures/C-F003-form.png" alt="C-F003 Google Form submission evidence">
 
 ### C-F004 - Add User form đảo First Name và Last Name
 
@@ -173,7 +180,9 @@ Sửa mapping label/placeholder/schema validation để First Name dùng placeho
 
 <img src="screenshots/checklist-failures/C-F004.png" alt="C-F004 evidence">
 
-**Timestamp form:** Chờ sinh viên submit
+**Timestamp form:**
+Phản ánh lúc 22:50 ngày 02/08/2026
+<img src="screenshots/checklist-failures/C-F004-form.png" alt="C-F004 Google Form submission evidence">
 
 ### C-F005 - Password validation không nhất quán và chưa đồng bộ ngôn ngữ
 
@@ -210,7 +219,9 @@ Hiển thị helper text password policy đầy đủ ngay dưới trường Pas
 
 <img src="screenshots/checklist-failures/C-F005.png" alt="C-F005 evidence">
 
-**Timestamp form:** Chờ sinh viên submit
+**Timestamp form:**
+Phản ánh lúc 22:51 ngày 02/08/2026
+<img src="screenshots/checklist-failures/C-F005-form.png" alt="C-F005 Google Form submission evidence">
 
 ### C-F006 - Email validation cho phép email `@g`
 
@@ -247,7 +258,9 @@ Bổ sung validation email ở cả client và server theo định dạng email 
 
 <img src="screenshots/checklist-failures/C-F006.png" alt="C-F006 evidence">
 
-**Timestamp form:** Chờ sinh viên submit
+**Timestamp form:**
+Phản ánh lúc 22:54 ngày 02/08/2026
+<img src="screenshots/checklist-failures/C-F006-form.png" alt="C-F006 Google Form submission evidence">
 
 ### C-F007 - Phone Number thiếu gợi ý định dạng
 
@@ -283,7 +296,9 @@ Thêm helper text hoặc placeholder cụ thể như`VD: 0912345678 - 10 số, b
 
 <img src="screenshots/checklist-failures/C-F007.png" alt="C-F007 evidence">
 
-**Timestamp form:** Chờ sinh viên submit
+**Timestamp form:**
+Phản ánh lúc 22:55 ngày 02/08/2026
+<img src="screenshots/checklist-failures/C-F007-form.png" alt="C-F007 Google Form submission evidence">
 
 ### C-F008 - Phone Number cho nhập chữ
 
@@ -320,7 +335,9 @@ Dùng input mode numeric/tel, lọc ký tự không hợp lệ hoặc validate i
 
 <img src="screenshots/checklist-failures/C-F008.png" alt="C-F008 evidence">
 
-**Timestamp form:** Chờ sinh viên submit
+**Timestamp form:**
+Phản ánh lúc 22:57 ngày 02/08/2026
+<img src="screenshots/checklist-failures/C-F008-form.png" alt="C-F008 Google Form submission evidence">
 
 ### C-F009 - Role dropdown cho chọn placeholder
 
@@ -358,7 +375,9 @@ Placeholder nằm cùng cấp với Admin/Guest/Lecturer/Student hoặc Sinh vi�
 
 <img src="screenshots/checklist-failures/C-F009.png" alt="C-F009 evidence">
 
-**Timestamp form:** Chờ sinh viên submit
+**Timestamp form:**
+Phản ánh lúc 22:58 ngày 02/08/2026
+<img src="screenshots/checklist-failures/C-F009-form.png" alt="C-F009 Google Form submission evidence">
 
 ### C-F010 - Email của user đã xóa vẫn báo đang dùng
 
@@ -396,7 +415,9 @@ Làm rõ hậu quả trong dialog xóa user; nếu giữ email do soft delete, c
 
 <img src="screenshots/checklist-failures/C-F010.png" alt="C-F010 evidence">
 
-**Timestamp form:** Chờ sinh viên submit
+**Timestamp form:**
+Phản ánh lúc 22:58 ngày 02/08/2026
+<img src="screenshots/checklist-failures/C-F010-form.png" alt="C-F010 Google Form submission evidence">
 
 ### C-F011 - Member Code trùng báo lỗi tiếng Anh khi đang ở VI
 
@@ -434,7 +455,9 @@ Dịch validation message Member Code sang tiếng Việt khi giao diện ở VI
 
 <img src="screenshots/checklist-failures/C-F011.png" alt="C-F011 evidence">
 
-**Timestamp form:** Chờ sinh viên submit
+**Timestamp form:**
+Phản ánh lúc 22:59 ngày 02/08/2026
+<img src="screenshots/checklist-failures/C-F011-form.png" alt="C-F011 Google Form submission evidence">
 
 ### C-F012 - Block/Unblock mơ hồ qua Active và thiếu Reset Password action
 
@@ -473,9 +496,11 @@ Thêm action riêng `Block`/`Unblock` và `Reset Password`, hoặc đổi wordin
 <img src="screenshots/checklist-failures/C-F012-01.png" alt="C-F012 evidence-1">
 <img src="screenshots/checklist-failures/C-F012-02.png" alt="C-F012 evidence-2">
 
-**Timestamp form:** Chờ sinh viên submit
+**Timestamp form:**
+Phản ánh lúc 23:00 ngày 02/08/2026
+<img src="screenshots/checklist-failures/C-F012-form.png" alt="C-F012 Google Form submission evidence">
 
-### C-F013 - Active checkbox thiếu xác nhận Block/Unblock riêng
+### C-F013 - Active/Inactive thiếu xác nhận nguy hiểm riêng
 
 **Nguồn:** Checklist execution C3
 
@@ -485,23 +510,24 @@ Thêm action riêng `Block`/`Unblock` và `Reset Password`, hoặc đổi wordin
 
 **Mức độ:** 3
 
-**Mô tả:** Nếu checkbox Active trong Edit User là cơ chế chặn/bỏ chặn tài khoản, UI chưa giải thích rõ mapping này và không có confirmation riêng trước thao tác ảnh hưởng quyền truy cập của user.
+**Mô tả:** Checkbox Active trong Edit User phản ánh trạng thái tài khoản hiện tại: user Active được tick và user Inactive không được tick. Tuy nhiên thao tác đổi trạng thái Active/Inactive có thể ảnh hưởng quyền truy cập của user nhưng không có confirmation riêng trước khi lưu.
 
 **Bước tái hiện / minh chứng:**
 
 1. Đăng nhập EMS bằng tài khoản admin.
 2. Vào Users Management.
-3. Bấm Edit user ở một dòng Active.
-4. Quan sát checkbox Active và nút Save Changes.
-5. Không bấm Save trong lượt kiểm an toàn để tránh thay đổi dữ liệu thật.
+3. Lọc Status = Inactive.
+4. Bấm Edit user ở một dòng Inactive.
+5. Quan sát checkbox Active đang không được tick và nút Save Changes.
+6. Không bấm Save trong lượt kiểm an toàn để tránh thay đổi dữ liệu thật.
 
 **Kết quả mong đợi:**
 
-Thao tác chặn/bỏ chặn tài khoản phải có label trực tiếp như `Block user`/`Unblock user`, helper text nêu hậu quả và confirmation dialog trước khi lưu.
+Thao tác đổi trạng thái tài khoản phải có label trực tiếp như `Block user`/`Unblock user` hoặc helper text nêu hậu quả, đồng thời có confirmation dialog trước khi lưu.
 
 **Kết quả thực tế:**
 
-UI chỉ có checkbox `Active` trong Edit User; không giải thích bỏ chọn Active sẽ khóa tài khoản hay ảnh hưởng gì, và không có confirmation riêng cho thao tác này trước nút Save Changes.
+UI chỉ có checkbox `Active` trong Edit User; với user Inactive checkbox không được tick đúng trạng thái, nhưng UI không giải thích trạng thái này ảnh hưởng quyền truy cập thế nào và không có confirmation riêng trước nút Save Changes.
 
 **Đề xuất sửa:**
 
@@ -511,7 +537,9 @@ Tách Block/Unblock khỏi form Edit User thành action riêng hoặc bổ sung 
 
 <img src="screenshots/checklist-failures/C-F013.png" alt="C-F013 evidence">
 
-**Timestamp form:** Chờ sinh viên submit
+**Timestamp form:**
+Phản ánh lúc 23:01 ngày 02/08/2026
+<img src="screenshots/checklist-failures/C-F013-form.png" alt="C-F013 Google Form submission evidence">
 
 ## Thang mức độ nghiêm trọng
 
