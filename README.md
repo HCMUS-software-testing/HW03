@@ -1,7 +1,7 @@
 # HW03 – GUI & Usability Testing on EMS (Event Management System)
 
 > **Môn học:** CS423 / CSC15003 – Software Testing (AI-augmented edition)  
-> **Hệ thống kiểm thử (SUT):** EMS (`https://promoter-starboard-prude.ngrok-free.dev/`)
+> **Hệ thống kiểm thử (SUT):** EMS (`https://prod-dev.ems-fitus.cloud/dashboard`)
 
 ---
 
