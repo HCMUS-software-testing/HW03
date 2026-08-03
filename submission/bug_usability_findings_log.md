@@ -25,6 +25,7 @@ Mọi defect hoặc đề xuất cải thiện tính khả dụng từ checklist
 | C-F011 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Member Code trùng được chặn đúng nhưng lỗi hiển thị tiếng Anh khi đang ở VI.              | Chờ sinh viên submit |
 | C-F012 | C3 Block/Unblock và Reset Password    | Usability | 3      | Block/Unblock bị biểu diễn mơ hồ qua Active/Inactive và không thấy Reset Password action. | Chờ sinh viên submit |
 | C-F013 | C3 Block/Unblock và Reset Password    | Usability | 3      | Đổi trạng thái Active/Inactive thiếu xác nhận nguy hiểm riêng.                            | Chờ sinh viên submit |
+| C-F014 | C2/C3 Chỉnh sửa user và Active status | Bug       | 3      | Sau khi đổi email rồi chỉnh Active/Inactive, request PATCH cập nhật user bị timed out.    | Chờ sinh viên submit |
 
 ## Chi tiết finding
 
@@ -540,6 +541,50 @@ Tách Block/Unblock khỏi form Edit User thành action riêng hoặc bổ sung 
 **Timestamp form:**
 Phản ánh lúc 23:01 ngày 02/08/2026
 <img src="screenshots/checklist-failures/C-F013-form.png" alt="C-F013 Google Form submission evidence">
+
+### C-F014 - PATCH cập nhật user bị timed out sau khi đổi email và Active/Inactive
+
+**Nguồn:** Checklist execution / manual re-test Scenario C - IA-04 Feedback / State
+
+**Màn hình:** C2/C3 Chỉnh sửa user và trạng thái Active/Inactive
+
+**Loại:** Bug
+
+**Mức độ:** 3
+
+**Mô tả:** Khi admin chỉnh email ban đầu của một user rồi tiếp tục thay đổi trạng thái Active/Inactive, request `PATCH` để cập nhật user bị lỗi timed out. Đây là lỗi kỹ thuật trong luồng cập nhật user, có thể làm admin không biết thao tác đã được lưu hay chưa.
+
+**Bước tái hiện / minh chứng:**
+
+1. Đăng nhập EMS bằng tài khoản admin.
+2. Vào Users Management.
+3. Chọn một user test an toàn và mở Edit User.
+4. Thay đổi email hiện tại của user sang một email hợp lệ khác.
+5. Thay đổi trạng thái Active/Inactive của user.
+6. Lưu thay đổi.
+7. Quan sát request `PATCH` trong Network tab hoặc thông báo lỗi trên giao diện.
+
+**Kết quả mong đợi:**
+
+Hệ thống phải cập nhật email và trạng thái Active/Inactive thành công, hoặc nếu không thể cập nhật thì phải trả về lỗi rõ ràng, không để request bị timed out.
+
+**Kết quả thực tế:**
+
+Request `PATCH` cập nhật user bị timed out sau khi thay đổi email rồi chỉnh Active/Inactive. Admin không nhận được phản hồi đáng tin cậy để biết thao tác đã lưu thành công hay thất bại.
+
+**Đề xuất sửa:**
+
+Kiểm tra API cập nhật user khi payload chứa đồng thời email mới và trạng thái Active/Inactive; bổ sung timeout handling, rollback hoặc thông báo lỗi rõ ràng. UI nên disable nút Save khi request đang chạy và hiển thị trạng thái thất bại có thể thử lại.
+
+**Ảnh minh chứng:**
+
+<img src="screenshots/checklist-failures/C-F014.png" alt="C-F014 evidence">
+
+**Timestamp form:**
+
+Phản ánh lúc 11:07 ngày 03/08/2026
+
+<img src="screenshots/checklist-failures/C-F014-form.png" alt="C-F014 Google Form submission evidence">
 
 ## Thang mức độ nghiêm trọng
 
