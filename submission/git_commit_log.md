@@ -15,6 +15,7 @@
 | 11 | `5ac63fbdf42e7c2b61dea028c19152023ce4702f` | `docs: record Task 1B AI audit entry` | Ghi lại việc AI hỗ trợ kiểm thử live Task 1B, phạm vi em review và các artefact liên quan. |
 | 12 | `92c222786d90abc6863e74aba2904f6fdc0fb4f5` | `docs: personalize AI audit wording` | Đổi cách diễn đạt AI Audit sang ngôi tôi theo phản hồi ban đầu. |
 | 13 | `0a2df93f1e356958f1a495e97610b97265b8f9ec` | `docs: adjust AI audit voice` | Giữ heading theo mẫu sinh viên, đổi câu văn AI Audit sang ngôi em. |
-| 14 | `(commit này)` | `docs: prepare Task 2 phase 1` | Soạn kịch bản, metrics, SUS, probe, kế hoạch tuyển người tham gia và pilot cho Kịch bản A; đồng bộ báo cáo và AI Audit. |
+| 14 | `79587c7d38804a951892ef01149f078f50735710` | `docs: prepare Task 2 phase 1` | Soạn kịch bản, metrics, SUS, probe, kế hoạch tuyển người tham gia và pilot cho Kịch bản A; đồng bộ báo cáo và AI Audit. |
+| 15 | `(commit này)` | `docs: align Task 2 fields with EMS` | Sửa mục 2.3 và tiêu chí thành công theo tên trường quan sát được trên EMS; giữ định dạng bảng hiện có. |
 
 Dòng cuối dùng `(commit này)` vì một commit không thể chứa chính mã SHA của nó. Có thể xác định sau khi checkout bằng `git log -1 --format=%H`.

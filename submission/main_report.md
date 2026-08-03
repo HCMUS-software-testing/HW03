@@ -292,19 +292,19 @@ Chỉ 11 phát hiện được xác nhận bằng thao tác trực tiếp đư�
 
 **Bối cảnh đọc cho người tham gia:**
 
-> Bạn là cộng tác viên quản trị sự kiện của khoa. Ban tổ chức cần bạn chuẩn bị một sự kiện học thuật mới ở trạng thái bản nháp, cấu hình đăng ký phù hợp cho sinh viên và giảng viên, sau đó tìm và mở lại sự kiện trong danh sách quản trị để xác nhận dữ liệu đã được lưu. Không xuất bản hoặc xóa sự kiện.
+> Bạn là cộng tác viên quản trị sự kiện của khoa. Ban tổ chức cần bạn chuẩn bị một sự kiện học thuật mới ở trạng thái bản nháp, cấu hình đăng ký cho sinh viên và một vai trò cộng tác viên bổ sung, sau đó tìm và mở lại sự kiện trong danh sách quản trị để xác nhận dữ liệu đã được lưu. Không xuất bản hoặc xóa sự kiện.
 
-| Dữ liệu nghiệp vụ | Yêu cầu |
+| Nhóm trường trên EMS | Dữ liệu nghiệp vụ cần đạt |
 | --- | --- |
-| Tên sự kiện | `23127326_UT_<mã người tham gia>_<thời điểm>` |
-| Chủ đề | Workshop Kỹ năng nghiên cứu 2026 |
-| Địa điểm | Phòng I.23 |
-| Thời gian đăng ký | 08:00 10/08/2026 đến 23:00 20/08/2026 |
-| Thời gian sự kiện | 08:00 đến 11:30 ngày 25/08/2026 |
-| Mô tả | Workshop giúp sinh viên chuẩn bị đề cương nghiên cứu và trình bày kết quả. |
-| Đăng ký sinh viên | Giới hạn 30 chỗ và cho phép danh sách chờ |
-| Vai trò bổ sung | `Giảng viên`, giới hạn 10 chỗ |
-| Nhắc lịch | 24 giờ trước sự kiện |
+| `Thumbnail`, `Event Banner`, `Attachments` | Không yêu cầu tải tệp trong task này; giữ trống. |
+| `Basic Information` | `Event Title`: `23127326_UT_<mã người tham gia>_<thời điểm>`; `Sub-description`: `Workshop Kỹ năng nghiên cứu 2026`; `Description`: `Workshop giúp sinh viên chuẩn bị đề cương nghiên cứu và trình bày kết quả.` |
+| `Date & Time` | `Start Date & Time`: 08:00 25/08/2026; `End Date & Time`: 11:30 25/08/2026; `Check-in Open`: 07:30 25/08/2026; `Check-in Close`: 09:00 25/08/2026. |
+| `Categories` | Chọn một `Event Types` và một `Academic Context` phù hợp trong các giá trị EMS đang cung cấp. |
+| `Registration` | `Registration Open`: 08:00 10/08/2026; `Registration Close`: 23:00 20/08/2026; bật `Allow Student Registration` và `Allow Waitlist`; tắt `Allow Lecturer Registration`, `Allow Guest Registration` và `Public Event`. |
+| `Student Roles` | Tắt `Is Unlimited`; `Max roles per student`: 1; `Role Name`: `Student`; `Max Slots`: 30; `Description`: `Sinh viên tham dự workshop`. |
+| `Location & Organization` | `Location`: `Phòng I.23`; `Campus`: `Cho Quan Campus`; `Organizing Unit`: `Khoa Công nghệ Thông tin`. |
+| `Additional Options` | Để trống `Album Link`; bật `Allow Additional Role`; `Additional Role Name`: `Cộng tác viên`; `Description`: `Hỗ trợ tổ chức sự kiện`; `Reminder before hours`: 24. |
+| Trạng thái cuối | Lưu dưới dạng `Draft`; không `Publish` và không xóa sự kiện. |
 
 Kịch bản bao phủ A2 khi tạo/sửa dữ liệu, A3 khi cấu hình đăng ký và vai trò, và A1 khi tìm kiếm, nhận biết trạng thái nháp và mở lại sự kiện.
 

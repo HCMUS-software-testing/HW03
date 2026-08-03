@@ -156,3 +156,24 @@ Tóm tắt: AI đối chiếu yêu cầu Task 2 Phase 1 trong đề, soạn kị
 - **Lý do đánh giá:** Nội dung bao phủ đủ bốn yêu cầu của Phase 1 và không biến kịch bản thành hướng dẫn từng cú nhấp. Những thành phần bắt buộc phải có người thật được đánh dấu trung thực là chưa xác nhận.
 - **Phần sinh viên sửa hoặc kiểm chứng:** Em sẽ điền liên hệ đã che của 5 người thật, chạy pilot với người thứ sáu, ghi kết quả/điều chỉnh thực tế và khóa protocol trước P1.
 - **Artefact liên quan:** `submission/main_report.md`, `submission/usability_report.md`, `submission/user_testing_evidence.md`, `submission/ai-audit/ai_audit_report.md`
+
+
+## Entry 8
+
+- **Ngày giờ:** 2026-08-03 13:43 +0700
+- **Công cụ AI / model:** Codex / GPT-5
+- **Tác vụ:** Sửa dữ liệu hướng dẫn Task 2 mục 2.3 theo đúng các trường EMS
+- **Prompt của sinh viên:**
+
+```text
+có vẻ cái phần hướng dẫn của task 2.3 mấy cái trường không đúng với cái web vậy nên hãy sửa cho đúng hơn đi
+```
+
+- **Output của AI:**
+
+Tóm tắt: AI thử kết nối Browser để kiểm tra EMS live nhưng không có browser khả dụng, nên chỉ dùng bộ screenshot Task 1B đã chụp thật từ `prod-dev.ems-fitus.cloud` làm bằng chứng. AI xác nhận form dùng các nhóm `Basic Information`, `Date & Time`, `Categories`, `Registration`, `Student Roles`, `Location & Organization` và `Additional Options`; bổ sung bốn mốc thời gian gồm cả `Check-in Open/Close`; chuyển giới hạn 30 chỗ sang `Student Roles → Max Slots`; bỏ giới hạn 10 chỗ không tồn tại ở `Additional Role`; và đồng bộ kịch bản/tiêu chí thành công trong ba artefact Task 2.
+
+- **Nhận xét của sinh viên:** Chấp nhận bản sửa vì tên trường và quan hệ giữa `Student Roles`, `Max Slots` và `Additional Role` phù hợp hơn với giao diện EMS em đã quan sát.
+- **Lý do đánh giá:** Bản sửa loại bỏ các trường nghiệp vụ không ánh xạ trực tiếp với form, giữ kịch bản theo mục tiêu và không tự khẳng định đã kiểm tra live khi browser chưa kết nối.
+- **Phần sinh viên sửa hoặc kiểm chứng:** Em đã phát hiện bảng cũ không khớp web và yêu cầu sửa; trước pilot em sẽ mở form EMS để xác nhận lần cuối các giá trị lựa chọn trong `Event Types` và `Academic Context`.
+- **Artefact liên quan:** `submission/main_report.md`, `submission/usability_report.md`, `submission/user_testing_evidence.md`, `submission/screenshots/task1b/a2-overview.png`, `submission/screenshots/task1b/a2-persistence-dates.png`, `submission/screenshots/task1b/a3-persistence-after-reopen.png`, `submission/screenshots/task1b/a3-overview-additional.png`

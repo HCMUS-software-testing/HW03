@@ -15,7 +15,7 @@
 
 ## 2. Kịch bản nhiệm vụ
 
-> Bạn là cộng tác viên quản trị sự kiện của khoa. Ban tổ chức cần bạn chuẩn bị một sự kiện học thuật mới ở trạng thái bản nháp, cấu hình đăng ký phù hợp cho sinh viên và giảng viên, sau đó tìm và mở lại sự kiện trong danh sách quản trị để xác nhận dữ liệu đã được lưu. Không xuất bản hoặc xóa sự kiện.
+> Bạn là cộng tác viên quản trị sự kiện của khoa. Ban tổ chức cần bạn chuẩn bị một sự kiện học thuật mới ở trạng thái bản nháp, cấu hình đăng ký cho sinh viên và một vai trò cộng tác viên bổ sung, sau đó tìm và mở lại sự kiện trong danh sách quản trị để xác nhận dữ liệu đã được lưu. Không xuất bản hoặc xóa sự kiện.
 
 Dữ liệu nghiệp vụ, tiêu chí hoàn thành, quy tắc quan sát, bộ câu SUS và câu hỏi thăm dò được khóa trong `submission/user_testing_evidence.md` trước khi chạy pilot.
 

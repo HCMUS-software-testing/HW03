@@ -2,14 +2,14 @@
 
 ## 1. Thông tin task
 
-| Trường | Nội dung |
-| --- | --- |
-| Sinh viên | Lê Mai Hoài Bảo |
-| MSSV | 23127326 |
-| Scenario | A - Admin creates and manages events |
-| Màn hình | A1 Events list, A2 Add/Edit Event, A3 Registration & Roles |
-| Task scenario trong báo cáo chính | `submission/main_report.md` |
-| Usability Report | `submission/usability_report.md` |
+| Trường                            | Nội dung                                                   |
+| --------------------------------- | ---------------------------------------------------------- |
+| Sinh viên                         | Lê Mai Hoài Bảo                                            |
+| MSSV                              | 23127326                                                   |
+| Scenario                          | A - Admin creates and manages events                       |
+| Màn hình                          | A1 Events list, A2 Add/Edit Event, A3 Registration & Roles |
+| Task scenario trong báo cáo chính | `submission/main_report.md`                                |
+| Usability Report                  | `submission/usability_report.md`                           |
 
 ## 2. Kịch bản điều phối
 
@@ -21,32 +21,32 @@
 
 Trước khi bắt đầu, người điều phối đọc và ghi lại câu trả lời cho từng mục:
 
-| Nội dung xác nhận | Lựa chọn |
-| --- | --- |
-| Tôi tham gia tự nguyện và có thể dừng bất cứ lúc nào. | Đồng ý / Không đồng ý |
-| Tôi đồng ý cho ghi lại màn hình phục vụ bài kiểm thử. | Đồng ý / Không đồng ý |
-| Tôi đồng ý cho ghi âm phần think-aloud. | Đồng ý / Không đồng ý |
+| Nội dung xác nhận                                                                                | Lựa chọn              |
+| ------------------------------------------------------------------------------------------------ | --------------------- |
+| Tôi tham gia tự nguyện và có thể dừng bất cứ lúc nào.                                            | Đồng ý / Không đồng ý |
+| Tôi đồng ý cho ghi lại màn hình phục vụ bài kiểm thử.                                            | Đồng ý / Không đồng ý |
+| Tôi đồng ý cho ghi âm phần think-aloud.                                                          | Đồng ý / Không đồng ý |
 | Tôi hiểu bài nộp chỉ hiển thị liên hệ đã che phần giữa, nhưng trợ giảng có thể liên hệ xác minh. | Đồng ý / Không đồng ý |
 
 Nếu không đồng ý ghi âm hoặc ghi màn hình, phiên vẫn có thể tiếp tục bằng ghi chép thủ công. Nếu không đồng ý tham gia/xác minh thì không đưa người đó vào P1–P5.
 
 ### 2.3 Task đưa cho người tham gia
 
-> Bạn là cộng tác viên quản trị sự kiện của khoa. Ban tổ chức cần bạn chuẩn bị một sự kiện học thuật mới ở trạng thái bản nháp, cấu hình đăng ký phù hợp cho sinh viên và giảng viên, sau đó tìm và mở lại sự kiện trong danh sách quản trị để xác nhận dữ liệu đã được lưu. Không xuất bản hoặc xóa sự kiện.
+> Bạn là cộng tác viên quản trị sự kiện của khoa. Ban tổ chức cần bạn chuẩn bị một sự kiện học thuật mới ở trạng thái bản nháp, cấu hình đăng ký cho sinh viên và một vai trò cộng tác viên bổ sung, sau đó tìm và mở lại sự kiện trong danh sách quản trị để xác nhận dữ liệu đã được lưu. Không xuất bản hoặc xóa sự kiện.
 
 Người tham gia nhận bảng dữ liệu nghiệp vụ, không nhận hướng dẫn vị trí nút hoặc chuỗi thao tác:
 
-| Dữ liệu nghiệp vụ | Yêu cầu |
+| Nhóm trường trên EMS | Dữ liệu nghiệp vụ cần đạt |
 | --- | --- |
-| Tên sự kiện | `23127326_UT_<mã người tham gia>_<thời điểm>` |
-| Chủ đề | Workshop Kỹ năng nghiên cứu 2026 |
-| Địa điểm | Phòng I.23 |
-| Thời gian đăng ký | 08:00 10/08/2026 đến 23:00 20/08/2026 |
-| Thời gian sự kiện | 08:00 đến 11:30 ngày 25/08/2026 |
-| Mô tả | Workshop giúp sinh viên chuẩn bị đề cương nghiên cứu và trình bày kết quả. |
-| Đăng ký sinh viên | Giới hạn 30 chỗ và cho phép danh sách chờ |
-| Vai trò bổ sung | `Giảng viên`, giới hạn 10 chỗ |
-| Nhắc lịch | 24 giờ trước sự kiện |
+| `Thumbnail`, `Event Banner`, `Attachments` | Không yêu cầu tải tệp trong task này; giữ trống. |
+| `Basic Information` | `Event Title`: `23127326_UT_<mã người tham gia>_<thời điểm>`; `Sub-description`: `Workshop Kỹ năng nghiên cứu 2026`; `Description`: `Workshop giúp sinh viên chuẩn bị đề cương nghiên cứu và trình bày kết quả.` |
+| `Date & Time` | `Start Date & Time`: 08:00 25/08/2026; `End Date & Time`: 11:30 25/08/2026; `Check-in Open`: 07:30 25/08/2026; `Check-in Close`: 09:00 25/08/2026. |
+| `Categories` | Chọn một `Event Types` và một `Academic Context` phù hợp trong các giá trị EMS đang cung cấp. |
+| `Registration` | `Registration Open`: 08:00 10/08/2026; `Registration Close`: 23:00 20/08/2026; bật `Allow Student Registration` và `Allow Waitlist`; tắt `Allow Lecturer Registration`, `Allow Guest Registration` và `Public Event`. |
+| `Student Roles` | Tắt `Is Unlimited`; `Max roles per student`: 1; `Role Name`: `Student`; `Max Slots`: 30; `Description`: `Sinh viên tham dự workshop`. |
+| `Location & Organization` | `Location`: `Phòng I.23`; `Campus`: `Cho Quan Campus`; `Organizing Unit`: `Khoa Công nghệ Thông tin`. |
+| `Additional Options` | Để trống `Album Link`; bật `Allow Additional Role`; `Additional Role Name`: `Cộng tác viên`; `Description`: `Hỗ trợ tổ chức sự kiện`; `Reminder before hours`: 24. |
+| Trạng thái cuối | Lưu dưới dạng `Draft`; không `Publish` và không xóa sự kiện. |
 
 ### 2.4 Chuẩn bị môi trường
 
@@ -70,25 +70,25 @@ Người tham gia nhận bảng dữ liệu nghiệp vụ, không nhận hướn
 
 ### 3.1 Định nghĩa chỉ số
 
-| Chỉ số | Cách ghi nhận |
-| --- | --- |
+| Chỉ số       | Cách ghi nhận                                                                                                                                                                                                                                                                             |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Task success | `Hoàn thành`: có bản nháp, đủ dữ liệu A2/A3 và mở lại xác nhận mà không cần gợi ý. `Một phần`: lưu được bản nháp nhưng thiếu ít nhất một yêu cầu, không xác nhận được hoặc phải nhận gợi ý. `Thất bại`: không tạo được bản nháp dùng được trong 15 phút hoặc để người điều phối làm thay. |
-| Time on task | Bắt đầu khi người tham gia nói đã hiểu nhiệm vụ; dừng khi họ mở lại bản nháp và tuyên bố hoàn tất, bỏ cuộc hoặc chạm 15 phút. Ghi `mm:ss`. |
-| Error | Tính 1 cho mỗi thao tác tạo kết quả sai, thông báo lỗi, giá trị sai cần sửa hoặc đi sai luồng. Cùng một lỗi liên tiếp chỉ tính lại sau một hành động khác. |
-| Hesitation | Tính 1 cho mỗi episode dừng/quét giao diện từ 5 giây, lặp việc tìm kiếm hoặc nói rõ sự không chắc chắn. Episode liên tục chỉ tính một lần. |
-| Can thiệp | Ghi nguyên văn gợi ý và mốc thời gian. Nếu gợi ý tiết lộ vị trí/chức năng cần dùng thì task cao nhất là `Một phần`. |
-| SUS | 10 phản hồi từ 1–5 sau task; tính riêng từng người rồi lấy trung bình của P1–P5. |
+| Time on task | Bắt đầu khi người tham gia nói đã hiểu nhiệm vụ; dừng khi họ mở lại bản nháp và tuyên bố hoàn tất, bỏ cuộc hoặc chạm 15 phút. Ghi `mm:ss`.                                                                                                                                                |
+| Error        | Tính 1 cho mỗi thao tác tạo kết quả sai, thông báo lỗi, giá trị sai cần sửa hoặc đi sai luồng. Cùng một lỗi liên tiếp chỉ tính lại sau một hành động khác.                                                                                                                                |
+| Hesitation   | Tính 1 cho mỗi episode dừng/quét giao diện từ 5 giây, lặp việc tìm kiếm hoặc nói rõ sự không chắc chắn. Episode liên tục chỉ tính một lần.                                                                                                                                                |
+| Can thiệp    | Ghi nguyên văn gợi ý và mốc thời gian. Nếu gợi ý tiết lộ vị trí/chức năng cần dùng thì task cao nhất là `Một phần`.                                                                                                                                                                       |
+| SUS          | 10 phản hồi từ 1–5 sau task; tính riêng từng người rồi lấy trung bình của P1–P5.                                                                                                                                                                                                          |
 
 ### 3.2 Tiêu chí xác nhận task
 
-| Mã | Kết quả cần quan sát | Màn hình |
-| --- | --- | --- |
-| SC-01 | Bản nháp có tên duy nhất và đủ chủ đề, địa điểm, thời gian, mô tả. | A2 |
-| SC-02 | Đăng ký sinh viên giới hạn 30 chỗ và waitlist được bật. | A3 |
-| SC-03 | Vai trò bổ sung `Giảng viên` có giới hạn 10 chỗ. | A3 |
-| SC-04 | Reminder là 24 giờ. | A3 |
-| SC-05 | Sự kiện hiển thị ở trạng thái nháp trong danh sách và có thể được tìm thấy. | A1 |
-| SC-06 | Sau khi mở lại từ A1, dữ liệu A2/A3 vẫn đúng. | A1/A2/A3 |
+| Mã    | Kết quả cần quan sát                                                        | Màn hình |
+| ----- | --------------------------------------------------------------------------- | -------- |
+| SC-01 | Bản nháp có `Event Title` duy nhất; đủ `Sub-description`, `Description`, bốn mốc `Date & Time`, `Location`, `Campus` và `Organizing Unit`. | A2 |
+| SC-02 | `Allow Student Registration` và `Allow Waitlist` được bật; `Student Roles` không unlimited, `Max roles per student` = 1, `Role Name` = `Student`, `Max Slots` = 30. | A3 |
+| SC-03 | `Allow Additional Role` được bật; tên vai trò là `Cộng tác viên` và có mô tả `Hỗ trợ tổ chức sự kiện`. | A3 |
+| SC-04 | `Reminder before hours` = 24. | A3 |
+| SC-05 | Sự kiện hiển thị ở trạng thái nháp trong danh sách và có thể được tìm thấy. | A1       |
+| SC-06 | Sau khi mở lại từ A1, dữ liệu A2/A3 vẫn đúng.                               | A1/A2/A3 |
 
 ## 4. Kế hoạch tuyển người tham gia
 
@@ -106,36 +106,36 @@ Người tham gia nhận bảng dữ liệu nghiệp vụ, không nhận hướn
 
 ### 4.3 Danh sách cần xác nhận
 
-| ID | Hồ sơ mục tiêu | Hồ sơ/liên hệ thật | Trạng thái |
-| --- | --- | --- | --- |
-| PILOT | Người ngoài P1–P5, phù hợp gần nhóm mục tiêu | Chưa cung cấp | Chưa xác nhận |
-| P1 | Sinh viên từng tổ chức hoạt động | Chưa cung cấp | Chưa xác nhận |
-| P2 | Sinh viên từng tổ chức hoạt động | Chưa cung cấp | Chưa xác nhận |
-| P3 | Sinh viên/người tham dự sự kiện thường xuyên | Chưa cung cấp | Chưa xác nhận |
-| P4 | Giảng viên/nhân viên | Chưa cung cấp | Chưa xác nhận |
-| P5 | Người từng quản trị sự kiện hoặc biểu mẫu web | Chưa cung cấp | Chưa xác nhận |
+| ID    | Hồ sơ mục tiêu                                | Hồ sơ/liên hệ thật | Trạng thái    |
+| ----- | --------------------------------------------- | ------------------ | ------------- |
+| PILOT | Người ngoài P1–P5, phù hợp gần nhóm mục tiêu  | Chưa cung cấp      | Chưa xác nhận |
+| P1    | Sinh viên từng tổ chức hoạt động              | Chưa cung cấp      | Chưa xác nhận |
+| P2    | Sinh viên từng tổ chức hoạt động              | Chưa cung cấp      | Chưa xác nhận |
+| P3    | Sinh viên/người tham dự sự kiện thường xuyên  | Chưa cung cấp      | Chưa xác nhận |
+| P4    | Giảng viên/nhân viên                          | Chưa cung cấp      | Chưa xác nhận |
+| P5    | Người từng quản trị sự kiện hoặc biểu mẫu web | Chưa cung cấp      | Chưa xác nhận |
 
 ## 5. Bảng người tham gia
 
-| ID | Họ tên hoặc mã hóa | Hồ sơ phù hợp | Liên hệ đã che | Ngày giờ phiên | Thiết bị/trình duyệt | Minh chứng ghi hình |
-| --- | --- | --- | --- | --- | --- | --- |
-| P1 | Chưa có dữ liệu thật | Chưa xác nhận | Chưa có dữ liệu thật | Chưa xếp lịch | Chưa ghi nhận | Chưa ghi nhận |
-| P2 | Chưa có dữ liệu thật | Chưa xác nhận | Chưa có dữ liệu thật | Chưa xếp lịch | Chưa ghi nhận | Chưa ghi nhận |
-| P3 | Chưa có dữ liệu thật | Chưa xác nhận | Chưa có dữ liệu thật | Chưa xếp lịch | Chưa ghi nhận | Chưa ghi nhận |
-| P4 | Chưa có dữ liệu thật | Chưa xác nhận | Chưa có dữ liệu thật | Chưa xếp lịch | Chưa ghi nhận | Chưa ghi nhận |
-| P5 | Chưa có dữ liệu thật | Chưa xác nhận | Chưa có dữ liệu thật | Chưa xếp lịch | Chưa ghi nhận | Chưa ghi nhận |
+| ID  | Họ tên hoặc mã hóa   | Hồ sơ phù hợp | Liên hệ đã che       | Ngày giờ phiên | Thiết bị/trình duyệt | Minh chứng ghi hình |
+| --- | -------------------- | ------------- | -------------------- | -------------- | -------------------- | ------------------- |
+| P1  | Chưa có dữ liệu thật | Chưa xác nhận | Chưa có dữ liệu thật | Chưa xếp lịch  | Chưa ghi nhận        | Chưa ghi nhận       |
+| P2  | Chưa có dữ liệu thật | Chưa xác nhận | Chưa có dữ liệu thật | Chưa xếp lịch  | Chưa ghi nhận        | Chưa ghi nhận       |
+| P3  | Chưa có dữ liệu thật | Chưa xác nhận | Chưa có dữ liệu thật | Chưa xếp lịch  | Chưa ghi nhận        | Chưa ghi nhận       |
+| P4  | Chưa có dữ liệu thật | Chưa xác nhận | Chưa có dữ liệu thật | Chưa xếp lịch  | Chưa ghi nhận        | Chưa ghi nhận       |
+| P5  | Chưa có dữ liệu thật | Chưa xác nhận | Chưa có dữ liệu thật | Chưa xếp lịch  | Chưa ghi nhận        | Chưa ghi nhận       |
 
 ## 6. Phiên pilot
 
-| Nội dung | Ghi chú |
-| --- | --- |
-| Trạng thái | Chưa thực hiện với người thật; không được ghi là đã hoàn thành. |
-| Người pilot | Cần 1 người ngoài P1–P5, phù hợp gần nhóm mục tiêu. |
-| Ngày giờ | Chưa xếp lịch. |
-| Consent | Chưa ghi nhận. |
-| Kết quả/thời gian task | Chưa ghi nhận. |
-| Vấn đề về câu chữ/dữ liệu/luồng | Chờ quan sát pilot thật. |
-| Điều chỉnh sau pilot | Chỉ ghi thay đổi đã thực hiện sau khi có evidence thật. |
+| Nội dung                        | Ghi chú                                                         |
+| ------------------------------- | --------------------------------------------------------------- |
+| Trạng thái                      | Chưa thực hiện với người thật; không được ghi là đã hoàn thành. |
+| Người pilot                     | Cần 1 người ngoài P1–P5, phù hợp gần nhóm mục tiêu.             |
+| Ngày giờ                        | Chưa xếp lịch.                                                  |
+| Consent                         | Chưa ghi nhận.                                                  |
+| Kết quả/thời gian task          | Chưa ghi nhận.                                                  |
+| Vấn đề về câu chữ/dữ liệu/luồng | Chờ quan sát pilot thật.                                        |
+| Điều chỉnh sau pilot            | Chỉ ghi thay đổi đã thực hiện sau khi có evidence thật.         |
 
 ### 6.1 Tiêu chí pilot đạt
 
@@ -149,97 +149,97 @@ Người tham gia nhận bảng dữ liệu nghiệp vụ, không nhận hướn
 
 ### 7.1 Phiên P1
 
-| Trường | Nội dung |
-| --- | --- |
-| Kết quả | [Hoàn thành/Một phần/Thất bại] |
-| Thời gian task | [mm:ss] |
-| Error / Hesitation / Can thiệp | [ ] / [ ] / [ ] |
-| Điểm SUS | [ ] |
+| Trường                         | Nội dung                       |
+| ------------------------------ | ------------------------------ |
+| Kết quả                        | [Hoàn thành/Một phần/Thất bại] |
+| Thời gian task                 | [mm:ss]                        |
+| Error / Hesitation / Can thiệp | [ ] / [ ] / [ ]                |
+| Điểm SUS                       | [ ]                            |
 
-| Mốc thời gian | Quan sát | Loại | Minh chứng ảnh/video |
-| --- | --- | --- | --- |
-| [00:00] | [ ] | [Lỗi/Do dự/Nhận xét] | [ ] |
+| Mốc thời gian | Quan sát | Loại                 | Minh chứng ảnh/video |
+| ------------- | -------- | -------------------- | -------------------- |
+| [00:00]       | [ ]      | [Lỗi/Do dự/Nhận xét] | [ ]                  |
 
 ### 7.2 Phiên P2
 
-| Trường | Nội dung |
-| --- | --- |
-| Kết quả | [Hoàn thành/Một phần/Thất bại] |
-| Thời gian task | [mm:ss] |
-| Error / Hesitation / Can thiệp | [ ] / [ ] / [ ] |
-| Điểm SUS | [ ] |
+| Trường                         | Nội dung                       |
+| ------------------------------ | ------------------------------ |
+| Kết quả                        | [Hoàn thành/Một phần/Thất bại] |
+| Thời gian task                 | [mm:ss]                        |
+| Error / Hesitation / Can thiệp | [ ] / [ ] / [ ]                |
+| Điểm SUS                       | [ ]                            |
 
-| Mốc thời gian | Quan sát | Loại | Minh chứng ảnh/video |
-| --- | --- | --- | --- |
-| [00:00] | [ ] | [Lỗi/Do dự/Nhận xét] | [ ] |
+| Mốc thời gian | Quan sát | Loại                 | Minh chứng ảnh/video |
+| ------------- | -------- | -------------------- | -------------------- |
+| [00:00]       | [ ]      | [Lỗi/Do dự/Nhận xét] | [ ]                  |
 
 ### 7.3 Phiên P3
 
-| Trường | Nội dung |
-| --- | --- |
-| Kết quả | [Hoàn thành/Một phần/Thất bại] |
-| Thời gian task | [mm:ss] |
-| Error / Hesitation / Can thiệp | [ ] / [ ] / [ ] |
-| Điểm SUS | [ ] |
+| Trường                         | Nội dung                       |
+| ------------------------------ | ------------------------------ |
+| Kết quả                        | [Hoàn thành/Một phần/Thất bại] |
+| Thời gian task                 | [mm:ss]                        |
+| Error / Hesitation / Can thiệp | [ ] / [ ] / [ ]                |
+| Điểm SUS                       | [ ]                            |
 
-| Mốc thời gian | Quan sát | Loại | Minh chứng ảnh/video |
-| --- | --- | --- | --- |
-| [00:00] | [ ] | [Lỗi/Do dự/Nhận xét] | [ ] |
+| Mốc thời gian | Quan sát | Loại                 | Minh chứng ảnh/video |
+| ------------- | -------- | -------------------- | -------------------- |
+| [00:00]       | [ ]      | [Lỗi/Do dự/Nhận xét] | [ ]                  |
 
 ### 7.4 Phiên P4
 
-| Trường | Nội dung |
-| --- | --- |
-| Kết quả | [Hoàn thành/Một phần/Thất bại] |
-| Thời gian task | [mm:ss] |
-| Error / Hesitation / Can thiệp | [ ] / [ ] / [ ] |
-| Điểm SUS | [ ] |
+| Trường                         | Nội dung                       |
+| ------------------------------ | ------------------------------ |
+| Kết quả                        | [Hoàn thành/Một phần/Thất bại] |
+| Thời gian task                 | [mm:ss]                        |
+| Error / Hesitation / Can thiệp | [ ] / [ ] / [ ]                |
+| Điểm SUS                       | [ ]                            |
 
-| Mốc thời gian | Quan sát | Loại | Minh chứng ảnh/video |
-| --- | --- | --- | --- |
-| [00:00] | [ ] | [Lỗi/Do dự/Nhận xét] | [ ] |
+| Mốc thời gian | Quan sát | Loại                 | Minh chứng ảnh/video |
+| ------------- | -------- | -------------------- | -------------------- |
+| [00:00]       | [ ]      | [Lỗi/Do dự/Nhận xét] | [ ]                  |
 
 ### 7.5 Phiên P5
 
-| Trường | Nội dung |
-| --- | --- |
-| Kết quả | [Hoàn thành/Một phần/Thất bại] |
-| Thời gian task | [mm:ss] |
-| Error / Hesitation / Can thiệp | [ ] / [ ] / [ ] |
-| Điểm SUS | [ ] |
+| Trường                         | Nội dung                       |
+| ------------------------------ | ------------------------------ |
+| Kết quả                        | [Hoàn thành/Một phần/Thất bại] |
+| Thời gian task                 | [mm:ss]                        |
+| Error / Hesitation / Can thiệp | [ ] / [ ] / [ ]                |
+| Điểm SUS                       | [ ]                            |
 
-| Mốc thời gian | Quan sát | Loại | Minh chứng ảnh/video |
-| --- | --- | --- | --- |
-| [00:00] | [ ] | [Lỗi/Do dự/Nhận xét] | [ ] |
+| Mốc thời gian | Quan sát | Loại                 | Minh chứng ảnh/video |
+| ------------- | -------- | -------------------- | -------------------- |
+| [00:00]       | [ ]      | [Lỗi/Do dự/Nhận xét] | [ ]                  |
 
 ## 8. Phiếu SUS sau task
 
 Với mỗi câu, người tham gia chọn một mức: `1 = Hoàn toàn không đồng ý`, `2 = Không đồng ý`, `3 = Trung lập`, `4 = Đồng ý`, `5 = Hoàn toàn đồng ý`.
 
-| Mã | Mệnh đề |
-| --- | --- |
-| Q1 | Tôi nghĩ mình muốn sử dụng EMS thường xuyên. |
-| Q2 | Tôi thấy EMS phức tạp một cách không cần thiết. |
-| Q3 | Tôi thấy EMS dễ sử dụng. |
-| Q4 | Tôi nghĩ mình sẽ cần người có chuyên môn hỗ trợ để dùng EMS. |
-| Q5 | Tôi thấy các chức năng trong EMS được kết hợp tốt. |
-| Q6 | Tôi thấy EMS có quá nhiều điểm thiếu nhất quán. |
-| Q7 | Tôi nghĩ phần lớn mọi người sẽ học cách dùng EMS rất nhanh. |
-| Q8 | Tôi thấy EMS rườm rà khi sử dụng. |
-| Q9 | Tôi cảm thấy tự tin khi sử dụng EMS. |
-| Q10 | Tôi cần học nhiều thứ trước khi có thể sử dụng EMS. |
+| Mã  | Mệnh đề                                                      |
+| --- | ------------------------------------------------------------ |
+| Q1  | Tôi nghĩ mình muốn sử dụng EMS thường xuyên.                 |
+| Q2  | Tôi thấy EMS phức tạp một cách không cần thiết.              |
+| Q3  | Tôi thấy EMS dễ sử dụng.                                     |
+| Q4  | Tôi nghĩ mình sẽ cần người có chuyên môn hỗ trợ để dùng EMS. |
+| Q5  | Tôi thấy các chức năng trong EMS được kết hợp tốt.           |
+| Q6  | Tôi thấy EMS có quá nhiều điểm thiếu nhất quán.              |
+| Q7  | Tôi nghĩ phần lớn mọi người sẽ học cách dùng EMS rất nhanh.  |
+| Q8  | Tôi thấy EMS rườm rà khi sử dụng.                            |
+| Q9  | Tôi cảm thấy tự tin khi sử dụng EMS.                         |
+| Q10 | Tôi cần học nhiều thứ trước khi có thể sử dụng EMS.          |
 
 **Cách tính:** với Q1, Q3, Q5, Q7, Q9, điểm đóng góp = phản hồi - 1. Với Q2, Q4, Q6, Q8, Q10, điểm đóng góp = 5 - phản hồi. Cộng 10 điểm đóng góp và nhân 2,5 để ra SUS 0–100.
 
 Nguồn thang đo: [John Brooke, *SUS: A Quick and Dirty Usability Scale* (1996)](https://www.taylorfrancis.com/chapters/edit/10.1201/9781498710411-35/sus-quick-dirty-usability-scale-john-brooke). Điểm SUS là điểm quy đổi trên thang 0–100, không phải tỷ lệ phần trăm.
 
-| Người tham gia | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Q9 | Q10 | Điểm SUS |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| P1 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| P2 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| P3 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| P4 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| P5 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| Người tham gia |   Q1 |   Q2 |   Q3 |   Q4 |   Q5 |   Q6 |   Q7 |   Q8 |   Q9 |  Q10 | Điểm SUS |
+| -------------- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | -------: |
+| P1             |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |      [ ] |
+| P2             |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |      [ ] |
+| P3             |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |      [ ] |
+| P4             |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |      [ ] |
+| P5             |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |      [ ] |
 
 ## 9. Câu hỏi thăm dò sau task
 
@@ -251,10 +251,10 @@ Người điều phối hỏi nguyên văn theo thứ tự, không gợi ý câu
 4. Ở thời điểm nào bạn tin hoặc không tin rằng dữ liệu đã được lưu đúng?
 5. Nếu chỉ được thay đổi một điều trong luồng này, bạn sẽ thay đổi điều gì trước?
 
-| Câu hỏi | P1 | P2 | P3 | P4 | P5 | Chủ đề rút ra |
-| --- | --- | --- | --- | --- | --- | --- |
-| Rõ ràng/khó hiểu | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| Phục hồi khi lỗi | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| Tốc độ/phản hồi | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| Tin tưởng dữ liệu đã lưu | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| Thay đổi ưu tiên | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| Câu hỏi                  | P1  | P2  | P3  | P4  | P5  | Chủ đề rút ra |
+| ------------------------ | --- | --- | --- | --- | --- | ------------- |
+| Rõ ràng/khó hiểu         | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]           |
+| Phục hồi khi lỗi         | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]           |
+| Tốc độ/phản hồi          | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]           |
+| Tin tưởng dữ liệu đã lưu | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]           |
+| Thay đổi ưu tiên         | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]           |
