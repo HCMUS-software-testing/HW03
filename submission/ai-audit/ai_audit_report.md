@@ -158,6 +158,27 @@ Tóm tắt: AI đối chiếu yêu cầu Task 2 Phase 1 trong đề, soạn kị
 - **Artefact liên quan:** `submission/main_report.md`, `submission/usability_report.md`, `submission/user_testing_evidence.md`, `submission/ai-audit/ai_audit_report.md`
 
 
+## Entry 11
+
+- **Ngày giờ:** 2026-08-03 14:59 +0700
+- **Công cụ AI / model:** Codex / GPT-5
+- **Tác vụ:** Bỏ nhãn tiếng Anh trong câu mở lại bản nháp Task 2
+- **Prompt của sinh viên:**
+
+```text
+đừng để chữ (Edit)
+```
+
+- **Output của AI:**
+
+Tóm tắt: AI bỏ chữ `Edit` khỏi kịch bản, task success, time on task, SC-06 và phần tóm tắt phạm vi; thay bằng cách diễn đạt thống nhất “mở lại ở chế độ chỉnh sửa” trong ba artefact Task 2.
+
+- **Nhận xét của sinh viên:** Chấp nhận vì câu nhiệm vụ tự nhiên hơn và vẫn xác định đúng chế độ cần mở.
+- **Lý do đánh giá:** Thay đổi không làm mất yêu cầu xác nhận dữ liệu A2/A3 và giữ nội dung hướng dẫn bằng tiếng Việt.
+- **Phần sinh viên sửa hoặc kiểm chứng:** Em đã yêu cầu bỏ chữ `Edit` và giữ cụm “chế độ chỉnh sửa”.
+- **Artefact liên quan:** `submission/main_report.md`, `submission/usability_report.md`, `submission/user_testing_evidence.md`, `submission/ai-audit/ai_audit_report.md`
+
+
 ## Entry 8
 
 - **Ngày giờ:** 2026-08-03 13:43 +0700

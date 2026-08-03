@@ -18,6 +18,7 @@
 | 14 | `79587c7d38804a951892ef01149f078f50735710` | `docs: prepare Task 2 phase 1` | Soạn kịch bản, metrics, SUS, probe, kế hoạch tuyển người tham gia và pilot cho Kịch bản A; đồng bộ báo cáo và AI Audit. |
 | 15 | `d6145a06b91f2d1996df00f3d97b29c09cb53410` | `docs: align Task 2 fields with EMS` | Sửa mục 2.3 và tiêu chí thành công theo tên trường quan sát được trên EMS; giữ định dạng bảng hiện có. |
 | 16 | `3b721637af9354e023e24b71c21f3f148fe553a5` | `docs: split Task 2 fields into rows` | Tách mỗi trường/điều khiển trong bảng dữ liệu mục 2.3 thành một dòng và đồng bộ báo cáo. |
-| 17 | `(commit này)` | `docs: clarify Task 2 draft reopening` | Làm rõ bản nháp phải được mở lại bằng `Edit` và đồng bộ task success, time on task, SC-06. |
+| 17 | `f6d2c5cb11ea433d2289837096b0604c9be8f132` | `docs: clarify Task 2 draft reopening` | Làm rõ bản nháp phải được mở lại bằng `Edit` và đồng bộ task success, time on task, SC-06. |
+| 18 | `(commit này)` | `docs: localize Task 2 draft reopening` | Bỏ nhãn `Edit` khỏi câu nhiệm vụ và dùng thống nhất cụm “chế độ chỉnh sửa”. |
 
 Dòng cuối dùng `(commit này)` vì một commit không thể chứa chính mã SHA của nó. Có thể xác định sau khi checkout bằng `git log -1 --format=%H`.

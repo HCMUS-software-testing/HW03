@@ -32,7 +32,7 @@ Nếu không đồng ý ghi âm hoặc ghi màn hình, phiên vẫn có thể ti
 
 ### 2.3 Task đưa cho người tham gia
 
-> Bạn là cộng tác viên quản trị sự kiện của khoa. Ban tổ chức cần bạn chuẩn bị một sự kiện học thuật mới ở trạng thái bản nháp, cấu hình đăng ký cho sinh viên và một vai trò cộng tác viên bổ sung, sau đó tìm sự kiện trong danh sách quản trị và mở lại ở chế độ chỉnh sửa (`Edit`) để xác nhận dữ liệu đã được lưu. Không xuất bản hoặc xóa sự kiện.
+> Bạn là cộng tác viên quản trị sự kiện của khoa. Ban tổ chức cần bạn chuẩn bị một sự kiện học thuật mới ở trạng thái bản nháp, cấu hình đăng ký cho sinh viên và một vai trò cộng tác viên bổ sung, sau đó tìm sự kiện trong danh sách quản trị và mở lại ở chế độ chỉnh sửa để xác nhận dữ liệu đã được lưu. Không xuất bản hoặc xóa sự kiện.
 
 Người tham gia nhận bảng dữ liệu nghiệp vụ, không nhận hướng dẫn vị trí nút hoặc chuỗi thao tác:
 
@@ -96,8 +96,8 @@ Người tham gia nhận bảng dữ liệu nghiệp vụ, không nhận hướn
 
 | Chỉ số       | Cách ghi nhận                                                                                                                                                                                                                                                                             |
 | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Task success | `Hoàn thành`: có bản nháp, đủ dữ liệu A2/A3 và mở lại bằng `Edit` để xác nhận mà không cần gợi ý. `Một phần`: lưu được bản nháp nhưng thiếu ít nhất một yêu cầu, không xác nhận được hoặc phải nhận gợi ý. `Thất bại`: không tạo được bản nháp dùng được trong 15 phút hoặc để người điều phối làm thay. |
-| Time on task | Bắt đầu khi người tham gia nói đã hiểu nhiệm vụ; dừng khi họ mở bản nháp bằng `Edit` và tuyên bố hoàn tất, bỏ cuộc hoặc chạm 15 phút. Ghi `mm:ss`.                                                                                                                                                |
+| Task success | `Hoàn thành`: có bản nháp, đủ dữ liệu A2/A3 và mở lại ở chế độ chỉnh sửa để xác nhận mà không cần gợi ý. `Một phần`: lưu được bản nháp nhưng thiếu ít nhất một yêu cầu, không xác nhận được hoặc phải nhận gợi ý. `Thất bại`: không tạo được bản nháp dùng được trong 15 phút hoặc để người điều phối làm thay. |
+| Time on task | Bắt đầu khi người tham gia nói đã hiểu nhiệm vụ; dừng khi họ mở bản nháp ở chế độ chỉnh sửa và tuyên bố hoàn tất, bỏ cuộc hoặc chạm 15 phút. Ghi `mm:ss`.                                                                                                                                                |
 | Error        | Tính 1 cho mỗi thao tác tạo kết quả sai, thông báo lỗi, giá trị sai cần sửa hoặc đi sai luồng. Cùng một lỗi liên tiếp chỉ tính lại sau một hành động khác.                                                                                                                                |
 | Hesitation   | Tính 1 cho mỗi episode dừng/quét giao diện từ 5 giây, lặp việc tìm kiếm hoặc nói rõ sự không chắc chắn. Episode liên tục chỉ tính một lần.                                                                                                                                                |
 | Can thiệp    | Ghi nguyên văn gợi ý và mốc thời gian. Nếu gợi ý tiết lộ vị trí/chức năng cần dùng thì task cao nhất là `Một phần`.                                                                                                                                                                       |
@@ -112,7 +112,7 @@ Người tham gia nhận bảng dữ liệu nghiệp vụ, không nhận hướn
 | SC-03 | `Allow Additional Role` được bật; tên vai trò là `Cộng tác viên` và có mô tả `Hỗ trợ tổ chức sự kiện`. | A3 |
 | SC-04 | `Reminder before hours` = 24. | A3 |
 | SC-05 | Sự kiện hiển thị ở trạng thái nháp trong danh sách và có thể được tìm thấy. | A1       |
-| SC-06 | Sau khi tìm bản nháp ở A1 và mở bằng `Edit`, dữ liệu A2/A3 vẫn đúng. | A1/A2/A3 |
+| SC-06 | Sau khi tìm bản nháp ở A1 và mở ở chế độ chỉnh sửa, dữ liệu A2/A3 vẫn đúng. | A1/A2/A3 |
 
 ## 4. Kế hoạch tuyển người tham gia
 

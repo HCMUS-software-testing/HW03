@@ -292,7 +292,7 @@ Chỉ 11 phát hiện được xác nhận bằng thao tác trực tiếp đư�
 
 **Bối cảnh đọc cho người tham gia:**
 
-> Bạn là cộng tác viên quản trị sự kiện của khoa. Ban tổ chức cần bạn chuẩn bị một sự kiện học thuật mới ở trạng thái bản nháp, cấu hình đăng ký cho sinh viên và một vai trò cộng tác viên bổ sung, sau đó tìm sự kiện trong danh sách quản trị và mở lại ở chế độ chỉnh sửa (`Edit`) để xác nhận dữ liệu đã được lưu. Không xuất bản hoặc xóa sự kiện.
+> Bạn là cộng tác viên quản trị sự kiện của khoa. Ban tổ chức cần bạn chuẩn bị một sự kiện học thuật mới ở trạng thái bản nháp, cấu hình đăng ký cho sinh viên và một vai trò cộng tác viên bổ sung, sau đó tìm sự kiện trong danh sách quản trị và mở lại ở chế độ chỉnh sửa để xác nhận dữ liệu đã được lưu. Không xuất bản hoặc xóa sự kiện.
 
 | Nhóm trên EMS | Trường/điều khiển | Giá trị yêu cầu |
 | --- | --- | --- |
@@ -330,14 +330,14 @@ Chỉ 11 phát hiện được xác nhận bằng thao tác trực tiếp đư�
 | `Additional Options` | `Reminder before hours` | 24 |
 | Trạng thái cuối | `Save as Draft` | Lưu dưới dạng `Draft`; không `Publish` và không xóa sự kiện. |
 
-Kịch bản bao phủ A2 khi tạo/sửa dữ liệu, A3 khi cấu hình đăng ký và vai trò, và A1 khi tìm kiếm, nhận biết trạng thái nháp và mở lại sự kiện bằng `Edit`.
+Kịch bản bao phủ A2 khi tạo/sửa dữ liệu, A3 khi cấu hình đăng ký và vai trò, và A1 khi tìm kiếm, nhận biết trạng thái nháp và mở lại sự kiện ở chế độ chỉnh sửa.
 
 ### 4.2 Thiết kế đo lường
 
 | Chỉ số | Cách đo |
 | --- | --- |
-| Task success | `Hoàn thành`: tạo được bản nháp, đủ dữ liệu A2/A3 và mở lại bằng `Edit` để xác nhận mà không cần gợi ý; `Một phần`: lưu được bản nháp nhưng thiếu ít nhất một yêu cầu, không xác nhận được hoặc phải nhận gợi ý; `Thất bại`: không tạo được bản nháp dùng được trong 15 phút hoặc để người điều phối làm thay. |
-| Time on task | Bắt đầu khi người tham gia nói đã hiểu nhiệm vụ; dừng khi họ mở bản nháp bằng `Edit` và tuyên bố hoàn tất, bỏ cuộc hoặc chạm mốc 15 phút. Ghi theo `mm:ss`. |
+| Task success | `Hoàn thành`: tạo được bản nháp, đủ dữ liệu A2/A3 và mở lại ở chế độ chỉnh sửa để xác nhận mà không cần gợi ý; `Một phần`: lưu được bản nháp nhưng thiếu ít nhất một yêu cầu, không xác nhận được hoặc phải nhận gợi ý; `Thất bại`: không tạo được bản nháp dùng được trong 15 phút hoặc để người điều phối làm thay. |
+| Time on task | Bắt đầu khi người tham gia nói đã hiểu nhiệm vụ; dừng khi họ mở bản nháp ở chế độ chỉnh sửa và tuyên bố hoàn tất, bỏ cuộc hoặc chạm mốc 15 phút. Ghi theo `mm:ss`. |
 | Error count | Mỗi thao tác tạo kết quả sai, thông báo lỗi, nhập sai cần sửa hoặc đi sai luồng được tính một lỗi. Cùng một lỗi liên tiếp chỉ tính lại sau khi người tham gia đã thực hiện một hành động khác. |
 | Hesitation count | Một lần dừng/quét giao diện từ 5 giây, lặp lại việc tìm kiếm hoặc nói rõ sự không chắc chắn được tính là một hesitation. Một episode liên tục chỉ tính một lần. |
 | Can thiệp | Ghi riêng mọi gợi ý của người điều phối; nếu có gợi ý dẫn đường thì kết quả cao nhất là `Một phần`. |
