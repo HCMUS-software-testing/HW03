@@ -36,17 +36,41 @@ Nếu không đồng ý ghi âm hoặc ghi màn hình, phiên vẫn có thể ti
 
 Người tham gia nhận bảng dữ liệu nghiệp vụ, không nhận hướng dẫn vị trí nút hoặc chuỗi thao tác:
 
-| Nhóm trường trên EMS | Dữ liệu nghiệp vụ cần đạt |
-| --- | --- |
-| `Thumbnail`, `Event Banner`, `Attachments` | Không yêu cầu tải tệp trong task này; giữ trống. |
-| `Basic Information` | `Event Title`: `23127326_UT_<mã người tham gia>_<thời điểm>`; `Sub-description`: `Workshop Kỹ năng nghiên cứu 2026`; `Description`: `Workshop giúp sinh viên chuẩn bị đề cương nghiên cứu và trình bày kết quả.` |
-| `Date & Time` | `Start Date & Time`: 08:00 25/08/2026; `End Date & Time`: 11:30 25/08/2026; `Check-in Open`: 07:30 25/08/2026; `Check-in Close`: 09:00 25/08/2026. |
-| `Categories` | Chọn một `Event Types` và một `Academic Context` phù hợp trong các giá trị EMS đang cung cấp. |
-| `Registration` | `Registration Open`: 08:00 10/08/2026; `Registration Close`: 23:00 20/08/2026; bật `Allow Student Registration` và `Allow Waitlist`; tắt `Allow Lecturer Registration`, `Allow Guest Registration` và `Public Event`. |
-| `Student Roles` | Tắt `Is Unlimited`; `Max roles per student`: 1; `Role Name`: `Student`; `Max Slots`: 30; `Description`: `Sinh viên tham dự workshop`. |
-| `Location & Organization` | `Location`: `Phòng I.23`; `Campus`: `Cho Quan Campus`; `Organizing Unit`: `Khoa Công nghệ Thông tin`. |
-| `Additional Options` | Để trống `Album Link`; bật `Allow Additional Role`; `Additional Role Name`: `Cộng tác viên`; `Description`: `Hỗ trợ tổ chức sự kiện`; `Reminder before hours`: 24. |
-| Trạng thái cuối | Lưu dưới dạng `Draft`; không `Publish` và không xóa sự kiện. |
+| Nhóm trên EMS | Trường/điều khiển | Giá trị yêu cầu |
+| --- | --- | --- |
+| Media | `Thumbnail` | Để trống. |
+| Media | `Event Banner` | Để trống. |
+| Media | `Attachments` | Để trống. |
+| `Basic Information` | `Event Title` | `23127326_UT_<mã người tham gia>_<thời điểm>` |
+| `Basic Information` | `Sub-description` | `Workshop Kỹ năng nghiên cứu 2026` |
+| `Basic Information` | `Description` | `Workshop giúp sinh viên chuẩn bị đề cương nghiên cứu và trình bày kết quả.` |
+| `Date & Time` | `Start Date & Time` | 08:00 25/08/2026 |
+| `Date & Time` | `End Date & Time` | 11:30 25/08/2026 |
+| `Date & Time` | `Check-in Open` | 07:30 25/08/2026 |
+| `Date & Time` | `Check-in Close` | 09:00 25/08/2026 |
+| `Categories` | `Event Types` | Chọn một giá trị phù hợp trong danh sách EMS đang cung cấp. |
+| `Categories` | `Academic Context` | Chọn một giá trị phù hợp trong danh sách EMS đang cung cấp. |
+| `Registration` | `Registration Open` | 08:00 10/08/2026 |
+| `Registration` | `Registration Close` | 23:00 20/08/2026 |
+| `Registration` | `Allow Student Registration` | Bật. |
+| `Registration` | `Allow Lecturer Registration` | Tắt. |
+| `Registration` | `Allow Guest Registration` | Tắt. |
+| `Registration` | `Allow Waitlist` | Bật. |
+| `Registration` | `Public Event` | Tắt. |
+| `Student Roles` | `Is Unlimited` | Tắt. |
+| `Student Roles` | `Max roles per student` | 1 |
+| `Student Roles` | `Role Name` | `Student` |
+| `Student Roles` | `Max Slots` | 30 |
+| `Student Roles` | `Description` | `Sinh viên tham dự workshop` |
+| `Location & Organization` | `Location` | `Phòng I.23` |
+| `Location & Organization` | `Campus` | `Cho Quan Campus` |
+| `Location & Organization` | `Organizing Unit` | `Khoa Công nghệ Thông tin` |
+| `Additional Options` | `Album Link` | Để trống. |
+| `Additional Options` | `Allow Additional Role` | Bật. |
+| `Additional Options` | `Additional Role Name` | `Cộng tác viên` |
+| `Additional Options` | `Description` | `Hỗ trợ tổ chức sự kiện` |
+| `Additional Options` | `Reminder before hours` | 24 |
+| Trạng thái cuối | `Save as Draft` | Lưu dưới dạng `Draft`; không `Publish` và không xóa sự kiện. |
 
 ### 2.4 Chuẩn bị môi trường
 

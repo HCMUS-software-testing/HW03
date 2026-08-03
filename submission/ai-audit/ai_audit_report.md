@@ -177,3 +177,24 @@ Tóm tắt: AI thử kết nối Browser để kiểm tra EMS live nhưng không
 - **Lý do đánh giá:** Bản sửa loại bỏ các trường nghiệp vụ không ánh xạ trực tiếp với form, giữ kịch bản theo mục tiêu và không tự khẳng định đã kiểm tra live khi browser chưa kết nối.
 - **Phần sinh viên sửa hoặc kiểm chứng:** Em đã phát hiện bảng cũ không khớp web và yêu cầu sửa; trước pilot em sẽ mở form EMS để xác nhận lần cuối các giá trị lựa chọn trong `Event Types` và `Academic Context`.
 - **Artefact liên quan:** `submission/main_report.md`, `submission/usability_report.md`, `submission/user_testing_evidence.md`, `submission/screenshots/task1b/a2-overview.png`, `submission/screenshots/task1b/a2-persistence-dates.png`, `submission/screenshots/task1b/a3-persistence-after-reopen.png`, `submission/screenshots/task1b/a3-overview-additional.png`
+
+
+## Entry 9
+
+- **Ngày giờ:** 2026-08-03 14:41 +0700
+- **Công cụ AI / model:** Codex / GPT-5
+- **Tác vụ:** Tách bảng dữ liệu Task 2 mục 2.3 thành từng trường
+- **Prompt của sinh viên:**
+
+```text
+cái bảng dữ liệu á để từng dòng cho dễ nhìn cái
+```
+
+- **Output của AI:**
+
+Tóm tắt: AI đổi bảng hai cột gộp nhiều trường thành bảng ba cột `Nhóm trên EMS | Trường/điều khiển | Giá trị yêu cầu`, mỗi trường hoặc công tắc nằm trên một dòng riêng. Nội dung được đồng bộ trong `user_testing_evidence.md` và `main_report.md` mà không thay đổi dữ liệu task.
+
+- **Nhận xét của sinh viên:** Chấp nhận vì người tham gia có thể đọc và đối chiếu từng trường dễ hơn trong lúc thao tác.
+- **Lý do đánh giá:** Thay đổi chỉ cải thiện khả năng đọc của phiếu nhiệm vụ và giữ nguyên phạm vi A1/A2/A3.
+- **Phần sinh viên sửa hoặc kiểm chứng:** Em đã yêu cầu tách từng trường thành một dòng để phiếu nhiệm vụ dễ theo dõi hơn.
+- **Artefact liên quan:** `submission/user_testing_evidence.md`, `submission/main_report.md`, `submission/ai-audit/ai_audit_report.md`
