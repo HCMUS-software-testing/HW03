@@ -198,3 +198,24 @@ Tóm tắt: AI đổi bảng hai cột gộp nhiều trường thành bảng ba 
 - **Lý do đánh giá:** Thay đổi chỉ cải thiện khả năng đọc của phiếu nhiệm vụ và giữ nguyên phạm vi A1/A2/A3.
 - **Phần sinh viên sửa hoặc kiểm chứng:** Em đã yêu cầu tách từng trường thành một dòng để phiếu nhiệm vụ dễ theo dõi hơn.
 - **Artefact liên quan:** `submission/user_testing_evidence.md`, `submission/main_report.md`, `submission/ai-audit/ai_audit_report.md`
+
+
+## Entry 10
+
+- **Ngày giờ:** 2026-08-03 14:56 +0700
+- **Công cụ AI / model:** Codex / GPT-5
+- **Tác vụ:** Làm rõ thao tác mở lại bản nháp trong kịch bản Task 2
+- **Prompt của sinh viên:**
+
+```text
+ok v sửa đi cái kịch bản đi
+```
+
+- **Output của AI:**
+
+Tóm tắt: AI đổi câu “tìm và mở lại sự kiện” thành “tìm sự kiện và mở lại ở chế độ chỉnh sửa (`Edit`)”, đồng thời cập nhật định nghĩa task success, điểm dừng đo thời gian và SC-06 trong ba artefact Task 2.
+
+- **Nhận xét của sinh viên:** Chấp nhận vì kịch bản không còn mơ hồ giữa `View Detail` và `Edit`.
+- **Lý do đánh giá:** Chỉ chế độ `Edit` mới cho phép người tham gia xác nhận đầy đủ dữ liệu A2 và cấu hình A3 sau khi lưu.
+- **Phần sinh viên sửa hoặc kiểm chứng:** Em đã xác nhận mục tiêu cần mở `Edit` và yêu cầu sửa lại kịch bản.
+- **Artefact liên quan:** `submission/main_report.md`, `submission/usability_report.md`, `submission/user_testing_evidence.md`, `submission/ai-audit/ai_audit_report.md`
