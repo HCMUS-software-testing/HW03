@@ -24,6 +24,7 @@
 | 11 | Time: `2026-08-03 11:25 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>@Superpowers Đọc các file trong folder docs để hiểu bối cảnh bài tập. Thực hiện Task 1B cho Kiên trên Scene D2. Dùng submission/group/gui_usability_checklist_final.md (không thay đổi file này) để làm check list. Tạo 1 file markdown cho task1b_D2.md trong folder submission/task1B cho việc testing dựa trên checklist đó. Hãy tận dụng MCP Playwright và Chrome Devtools trong quá trình test. Thông tin link web, tài khoản admin và user đã được cung cấp trong submission/test_environment_access.md. Tuyệt đối tuân theo rule được ghi trong  submission/test_environment_access.md. Nếu cần thêm gì thì hãy yêu cầu tôi cung cấp. Format cho output của D2 cũng nên tương tự như D1. | [Manual by user] |
 | 12 | Time: `2026-08-03 12:06 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>@Superpowers Đọc các file trong folder docs để hiểu bối cảnh bài tập. Thực hiện Task 1B cho Kiên trên Scene D3. Dùng submission/group/gui_usability_checklist_final.md (không thay đổi file này) để làm check list. Tạo 1 file markdown cho task1b_D3.md trong folder submission/task1B cho việc testing dựa trên checklist đó. Hãy tận dụng MCP Playwright và Chrome Devtools trong quá trình test. Thông tin link web, tài khoản admin và user đã được cung cấp trong submission/test_environment_access.md. Tuyệt đối tuân theo rule được ghi trong  submission/test_environment_access.md. Nếu cần thêm gì thì hãy yêu cầu tôi cung cấp. Format cho output của D3 cũng nên tương tự như D1 và D2. | [Manual by user] |
 | 13 | Time: `2026-08-03 12:33 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>Ghi vào submission/task1B những thứ tiếp theo tôi cần làm với những thứ tạo từ Task1B. Đọc folder docs ghi vào submission/task2 những thứ cần thiết để chuẩn bị interview 5 người, có thể làm trước template. | [Manual by user] |
+| 14 | Time: `2026-08-03 15:46 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>Đọc folder docs và tạo ra các file cần thiết cho task 3 | [Manual by user] |
 
 ### 2.2. Chi tiết audit
 
@@ -826,6 +827,23 @@ Ghi vào submission/task1B những thứ tiếp theo tôi cần làm với nhữ
 **Reasoning:** [Manual by user]
 
 **Student Fix:** Sinh viên sửa `submission/task2/session_notes_template.md` để real user có thể tự điền sau khi trải nghiệm flow. File được bổ sung phần đầu gồm link web, user account cho D1-D2, admin account cho D3, lưu ý không chỉnh sửa dữ liệu ngoài phạm vi, phần task scenario có cả D3, bảng participant tự ghi quá trình thực hiện D1-D2-D3, câu hỏi sau trải nghiệm và SUS.
+
+### 2.2.14 Entry 14
+
+**Prompt + Tool:**
+
+Time: `2026-08-03 15:46 +07`
+Tool: `Codex / GPT-5`
+Prompt:
+Đọc folder docs và tạo ra các file cần thiết cho task 3
+
+**AI Output:** Đã đọc docs và tạo submission/task3 gồm README, checklist scope mapping, matrix template D1-D2-D3, screenshot protocol với overlay, cross-platform report template, findings log template và screenshots README.
+
+**Verdict:** [Manual by user]
+
+**Reasoning:** [Manual by user]
+
+**Student Fix:** [Manual by user]
 
 ## 3. Tổng kết độ chính xác AI
 - Các nội dung AI tạo đã được rà soát với yêu cầu bài làm: `[TODO]`
