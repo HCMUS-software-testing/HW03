@@ -1,125 +1,97 @@
-# Task 2 - User Session Form Template
+# Task 2 - Session Notes Template
 
-## 0. Hướng dẫn cho participant
+File này dành cho người điều phối/interviewer ghi chú, không đưa participant tự điền. Participant chỉ đọc `submission/task2/participant_brief.md`; các quan sát, metric, câu trả lời và SUS raw score sẽ do Lê Trung Kiên ghi lại trong file session tương ứng.
 
-Bạn sẽ trải nghiệm flow support request trên EMS rồi tự điền file này sau khi làm xong. Mục tiêu là kiểm thử giao diện sản phẩm, không phải kiểm tra năng lực của bạn.
+## 1. Thông tin phiên
 
-Trong lúc thao tác:
+| Trường | Giá trị |
+| --- | --- |
+| Participant ID | `P01` |
+| Họ tên | `[Điền sau khi recruit]` |
+| Số điện thoại | `[Điền số thật khi làm việc; mask trong report nếu cần]` |
+| Thiết bị/browser | `[Điền]` |
+| Ngày giờ | `[Điền]` |
+| Người điều phối | Lê Trung Kiên |
+| Scenario | D - User requests Support and Admin resolves it |
+| Consent | `[Yes/No]` |
+| Recording | `[File path hoặc N/A]` |
 
-- Hãy đọc scenario, tự tìm cách hoàn tất mục tiêu và nói ra suy nghĩ nếu có người điều phối quan sát.
-- Người điều phối sẽ không chỉ từng bước click; chỉ can thiệp khi bạn bị kẹt hoàn toàn.
-- Nếu đồng ý ghi màn hình/ghi âm, hãy xác nhận ở mục `Consent` và `Recording`.
-- Timer bắt đầu sau khi bạn đọc xong scenario và kết thúc khi bạn xác nhận đã hoàn tất hoặc dừng task.
-- Không cần tính `SUS score 0-100`; người kiểm thử sẽ tính sau từ 10 câu SUS bạn chấm.
+## 2. Setup đã đưa cho participant
 
-## 1. Thông tin truy cập EMS
-
-| Hạng mục    | Giá trị                                                         |
-| ------------- | ----------------------------------------------------------------- |
-| Website EMS   | `https://prod-dev.ems-fitus.cloud`                              |
-| Scenario test | D - User requests Support and Admin resolves it                   |
-| Màn hình D1 | User tạo support request có image attachment                    |
-| Màn hình D2 | User xem My Requests list/detail có response                     |
+| Hạng mục | Giá trị |
+| --- | --- |
+| Participant brief | `submission/task2/participant_brief.md` |
+| Website EMS | `https://prod-dev.ems-fitus.cloud` |
+| User account D1-D2 | `ltkien23@clc.fitus.edu.vn` / `Nothing2k@5` |
+| Admin account D3 | `admin@gmail.com` / `Admin@123` |
+| Màn hình D1 | User tạo support request có image attachment |
+| Màn hình D2 | User xem My Requests list/detail có response |
 | Màn hình D3 | Admin xem Support Requests list, Pending/Resolved tabs và search |
 
-### User account cho D1-D2
+Ghi chú kiểm soát:
 
-| Field            | Value                                                          |
-| ---------------- | -------------------------------------------------------------- |
-| Email / Username | `ltkien23@clc.fitus.edu.vn`                                  |
-| Password         | `Nothing2k@5`                                                |
-| Role             | `User`                                                       |
-| Dùng cho        | Tạo support request ở D1 và xem lại request/response ở D2 |
+- Không hướng dẫn từng cú click.
+- Chỉ can thiệp nếu participant bị kẹt hoàn toàn.
+- Không để participant đổi mật khẩu, email, profile hoặc sửa dữ liệu ngoài phạm vi test.
+- Với D3, nếu không muốn đưa admin password cho participant, người điều phối đăng nhập sẵn admin session rồi cho participant thao tác dưới giám sát.
 
-### Admin account cho D3
-
-| Field            | Value                                  |
-| ---------------- | -------------------------------------- |
-| Email / Username | `admin@gmail.com`                    |
-| Password         | `Admin@123`                          |
-| Role             | `Admin`                              |
-| Dùng cho        | Tìm request trong màn hình admin D3 |
-
-Lưu ý cho participant:
-
-- Chỉ dùng account trên cho buổi test này.
-- Không đổi mật khẩu, email, profile hoặc thông tin tài khoản.
-- Không xóa, resolve, sửa dữ liệu không được yêu cầu.
-- Nếu thấy dữ liệu của người khác ở màn hình admin, chỉ quan sát/tìm kiếm theo yêu cầu, không chỉnh sửa.
-
-## 2. Thông tin phiên
-
-| Trường             | Giá trị                                       |
-| -------------------- | ----------------------------------------------- |
-| Participant ID       | `P01`                                         |
-| Họ tên               | `[Điền]`                                    |
-| Số điện thoại        | `[Điền]`                                    |
-| Thiết bị/browser   | `[Điền]`                                    |
-| Ngày giờ           | `[Điền]`                                    |
-| Người điều phối | Lê Trung Kiên                                 |
-| Scenario             | D - User requests Support and Admin resolves it |
-| Consent              | `[Yes/No]`                                    |
-| Recording            | `[File path hoặc N/A]`                       |
-
-## 3. Task scenario
+## 3. Task scenario đã đọc cho participant
 
 ```text
-Bạn đang dùng hệ thống EMS của khoa. Bạn gặp một vấn đề khi tham gia hoặc đăng ký sự kiện và muốn gửi yêu cầu hỗ trợ kèm ảnh minh chứng. Sau khi gửi, hãy kiểm tra lại yêu cầu của mình trong danh sách support requests và cho biết bạn thấy trạng thái/phản hồi ở đâu.
+Bạn đang dùng hệ thống EMS của khoa. Bạn gặp một vấn đề khi tham gia hoặc đăng ký sự kiện và muốn gửi yêu cầu hỗ trợ kèm ảnh minh chứng.
+
+Hãy gửi một yêu cầu hỗ trợ, sau đó kiểm tra lại yêu cầu của mình trong danh sách support requests và cho biết bạn thấy trạng thái/phản hồi ở đâu.
 ```
 
-Phần D3:
+Phần admin D3:
 
 ```text
-Sau khi trải nghiệm phía user, hãy đăng nhập admin hoặc dùng session admin đã được chuẩn bị. Trong màn hình quản lý support requests, hãy tìm request theo tiêu đề, member code, category hoặc trạng thái và cho biết bạn tìm thấy request ở tab nào.
+Sau khi trải nghiệm phía user, hãy dùng màn hình admin đã được chuẩn bị để tìm request theo tiêu đề, member code, category hoặc trạng thái, rồi cho biết bạn tìm thấy request ở tab nào.
 ```
 
-## 4. Participant tự ghi quá trình thực hiện
+## 4. Checklist quan sát nhanh
 
-| Màn hình                              | Bạn đã làm gì? | Có hoàn tất không? | Phần nào khó hiểu/chậm? |
-| --------------------------------------- | ------------------- | ---------------------- | ---------------------------- |
-| D1 - Create support request             | `[Điền]`        | `[Yes/Partial/No]`   | `[Điền]`                 |
-| D2 - My Requests/detail                 | `[Điền]`        | `[Yes/Partial/No]`   | `[Điền]`                 |
-| D3 - Admin Support Requests list/search | `[Điền]`        | `[Yes/Partial/No]`   | `[Điền]`                 |
+| Màn hình | Hoàn tất? | Quan sát chính | Lỗi/nhầm lẫn | Do dự | Có can thiệp? |
+| --- | --- | --- | --- | --- | --- |
+| D1 - Create support request | `[Completed/Partial/Failed]` | `[Điền]` | `[Điền]` | `[Số/lý do]` | `[Không/Có]` |
+| D2 - My Requests/detail | `[Completed/Partial/Failed]` | `[Điền]` | `[Điền]` | `[Số/lý do]` | `[Không/Có]` |
+| D3 - Admin Support Requests list/search | `[Completed/Partial/Failed]` | `[Điền]` | `[Điền]` | `[Số/lý do]` | `[Không/Có]` |
 
-## 5. Timeline/quan sát
+## 5. Timeline/quan sát chi tiết
 
-Participant có thể tự điền theo trí nhớ sau khi làm xong. Nếu người điều phối quan sát trực tiếp, có thể bổ sung thêm timestamp, error và hesitation.
-
-| Thời điểm | Màn hình | Hành động/quan sát | Có lỗi/nhầm lẫn? | Có do dự?  | Quote/ghi chú |
-| ------------ | ---------- | ---------------------- | -------------------- | ------------ | -------------- |
-| 00:00        | Start      | Bắt đầu task.       | No                   | No           |                |
-| `[Điền]` | D1         | `[Điền]`           | `[Yes/No]`         | `[Yes/No]` |                |
-| `[Điền]` | D2         | `[Điền]`           | `[Yes/No]`         | `[Yes/No]` |                |
-| `[Điền]` | D3         | `[Điền]`           | `[Yes/No]`         | `[Yes/No]` |                |
+| Thời điểm | Màn hình | Hành động/quan sát | Có lỗi/nhầm lẫn? | Có do dự? | Quote/ghi chú |
+| --- | --- | --- | --- | --- | --- |
+| 00:00 | Start | Bắt đầu task. | No | No |  |
+| `[Điền]` | D1 | `[Điền]` | `[Yes/No]` | `[Yes/No]` | `[Điền]` |
+| `[Điền]` | D2 | `[Điền]` | `[Yes/No]` | `[Yes/No]` | `[Điền]` |
+| `[Điền]` | D3 | `[Điền]` | `[Yes/No]` | `[Yes/No]` | `[Điền]` |
 
 ## 6. Kết quả task
 
-| Metric        | Giá trị                                |
-| ------------- | ---------------------------------------- |
-| Success       | `[Completed/Partial/Failed]`           |
-| Time on task  | `[mm:ss]`                              |
-| Errors        | `[Số]`                                |
-| Hesitations   | `[Số]`                                |
-| Interventions | `[Không/Có, mô tả]`                |
-| Key friction  | `[Điền]`                             |
-| Evidence      | `[Screenshot/recording path nếu có]` |
+| Metric | Giá trị |
+| --- | --- |
+| Success | `[Completed/Partial/Failed]` |
+| Time on task | `[mm:ss]` |
+| Errors | `[Số]` |
+| Hesitations | `[Số]` |
+| Interventions | `[Không/Có, mô tả]` |
+| Key friction | `[Điền]` |
+| Evidence | `[Screenshot/recording path nếu có]` |
 
-## 7. Câu hỏi sau khi trải nghiệm
+## 7. Câu trả lời sau task
 
-| Câu hỏi                                                                                                   | Trả lời    |
-| ----------------------------------------------------------------------------------------------------------- | ------------ |
-| Phần nào giúp bạn hiểu đang cần làm gì? Phần nào gây khó hiểu?                                | `[Điền]` |
-| Nếu nhập sai hoặc muốn quay lại, bạn có thấy cách sửa/khôi phục rõ không?                     | `[Điền]` |
-| Bước nào làm bạn chậm nhất?                                                                          | `[Điền]` |
+| Câu hỏi | Trả lời participant |
+| --- | --- |
+| Phần nào giúp bạn hiểu đang cần làm gì? Phần nào gây khó hiểu? | `[Điền]` |
+| Nếu nhập sai hoặc muốn quay lại, bạn có thấy cách sửa/khôi phục rõ không? | `[Điền]` |
+| Bước nào làm bạn chậm nhất? | `[Điền]` |
 | Sau khi gửi request hoặc xem response, bạn có tin là hệ thống đã ghi nhận/xử lý chưa? Vì sao? | `[Điền]` |
-| Bạn có dễ tìm lại request vừa tạo không?                                                            | `[Điền]` |
-| Nếu phải tìm request để xử lý, bạn sẽ dùng title, member code, category hay status?               | `[Điền]` |
-| Ở D3, bạn có tìm được đúng request trong Pending/Resolved tab không?                              | `[Điền]` |
-| Bạn có nhận thấy vấn đề nào về layout mobile/desktop không?                                       | `[Điền]` |
+| Bạn có dễ tìm lại request vừa tạo không? | `[Điền]` |
+| Nếu phải tìm request để xử lý, bạn sẽ dùng title, member code, category hay status? | `[Điền]` |
+| Ở D3, bạn có tìm được đúng request trong Pending/Resolved tab không? | `[Điền]` |
+| Bạn có nhận thấy vấn đề nào về layout mobile/desktop không? | `[Điền]` |
 
-## 8. Bảng SUS - đánh giá mức độ dễ dùng
-
-SUS là `System Usability Scale`, một bảng 10 câu dùng để đánh giá nhanh mức độ dễ dùng của hệ thống sau khi bạn đã trải nghiệm flow. Vui lòng chấm mỗi câu từ `1` đến `5` theo cảm nhận thật của bạn:
+## 8. SUS raw score
 
 | Điểm | Ý nghĩa |
 | ---: | --- |
@@ -141,10 +113,11 @@ SUS là `System Usability Scale`, một bảng 10 câu dùng để đánh giá n
 | SUS-08 | Tôi thấy hệ thống này rườm rà hoặc bất tiện khi sử dụng. |  |
 | SUS-09 | Tôi cảm thấy tự tin khi sử dụng flow support request này. |  |
 | SUS-10 | Tôi cần học thêm nhiều thứ trước khi có thể sử dụng flow này thành thạo. |  |
-| SUS score 0-100 | Người kiểm thử tính sau, participant không cần điền. |  |
+| SUS score 0-100 | `[Người kiểm thử tính sau]` |  |
 
 ## 9. Candidate findings từ phiên này
 
-| ID tạm    | Screen         | Type                | Description  | Evidence         | Severity 0-4 | Có submit Google Form? |
-| ---------- | -------------- | ------------------- | ------------ | ---------------- | -----------: | ----------------------- |
-| UT-Pxx-001 | `[D1/D2/D3]` | `[Bug/Usability]` | `[Điền]` | `[Path/quote]` |              | `[Yes/No]`            |
+| ID tạm | Screen | Type | Description | Evidence | Severity 0-4 | Có submit Google Form? |
+| --- | --- | --- | --- | --- | ---: | --- |
+| UT-P01-001 | `[D1/D2/D3]` | `[Bug/Usability]` | `[Điền]` | `[Path/quote]` |  | `[Yes/No]` |
+

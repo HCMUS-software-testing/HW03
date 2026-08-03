@@ -20,9 +20,10 @@ Task 2 khác Task 1B: Task 1B là checklist execution do tester tự đánh giá
 | File | Mục đích |
 | --- | --- |
 | `preparation_protocol.md` | Kịch bản, tiêu chí recruit, consent script, pilot plan, protocol chạy 5 sessions. |
+| `participant_brief.md` | File đưa cho real user đọc trước khi test; user không cần điền vào file này. |
 | `participant_table.md` | Bảng 5 participant với contact masked và trạng thái consent. |
 | `test_accounts_template.md` | Bảng chuẩn bị account/session access cho pilot và 5 participants. |
-| `session_notes_template.md` | Template ghi chú từng phiên quan sát. Nhân bản thành `session_notes/P01.md`, `P02.md`, ... sau khi chạy thật. |
+| `session_notes_template.md` | Template ghi chú từng phiên do người điều phối điền, không đưa participant tự điền. |
 | `sus_score_sheet.md` | Phiếu SUS 10 câu, cách tính và bảng raw score. |
 | `usability_report_template.md` | Khung báo cáo Task 2 để điền sau khi có dữ liệu thật. |
 
@@ -33,6 +34,7 @@ Task 2 khác Task 1B: Task 1B là checklist execution do tester tự đánh giá
 - [ ] Recruit 5 participant thật, ngoài lớp, phù hợp profile người dùng EMS.
 - [ ] Mask contact theo dạng `09****1234`, `email: a***@domain`, hoặc Zalo có che giữa.
 - [ ] Chuẩn bị account/session test theo `test_accounts_template.md`.
+- [ ] Đưa participant đọc `participant_brief.md`; không yêu cầu họ tự điền session notes.
 - [ ] Không gửi admin password cho participant. Nếu cần test D3, người kiểm thử đăng nhập admin trước và giám sát thao tác.
 - [ ] Kiểm tra SUT hoạt động trước mỗi phiên vì dữ liệu có thể reset.
 - [ ] Xin consent trước khi ghi hình hoặc ghi âm.
@@ -47,7 +49,7 @@ Task 2 khác Task 1B: Task 1B là checklist execution do tester tự đánh giá
 | Task scenario goal-based | `[Chưa điền]` |
 | Pilot notes và điều chỉnh wording | `[Chưa điền]` |
 | Participant table 5 người thật | `[Chưa điền]` |
-| 5 session notes | `[Chưa điền]` |
+| 5 session notes do người điều phối điền | `[Chưa điền]` |
 | SUS raw scores và điểm trung bình | `[Chưa điền]` |
 | Metrics table | `[Chưa điền]` |
 | Ranked usability findings severity 0-4 | `[Chưa điền]` |

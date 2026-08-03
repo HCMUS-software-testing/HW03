@@ -1,6 +1,14 @@
 # Session Notes
 
-Tạo một file riêng cho từng phiên thật bằng cách copy nội dung từ `../session_notes_template.md`:
+Các file trong thư mục này dành cho người điều phối/interviewer điền sau hoặc trong lúc chạy từng phiên thật. Không đưa các file này cho participant tự điền.
+
+Participant chỉ cần đọc:
+
+```text
+submission/task2/participant_brief.md
+```
+
+Tạo hoặc cập nhật một file riêng cho từng phiên thật dựa trên `../session_notes_template.md`:
 
 | File | Participant |
 | --- | --- |

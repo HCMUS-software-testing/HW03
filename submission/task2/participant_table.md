@@ -1,8 +1,8 @@
 # Task 2 - Participant Table
 
-Điền sau khi recruit người thật. Không bịa thông tin participant. Contact khi nộp phải được mask nhưng vẫn đủ để TA có thể xác minh nếu cần.
+Điền sau khi recruit người thật. Không bịa thông tin participant. Khi đưa vào report nộp cuối, số điện thoại có thể được mask một phần nếu cần nhưng vẫn đủ để TA có thể xác minh.
 
-| ID | Profile | Contact masked | Thiết bị/browser | Session date/time | Consent | Recording consent | Notes |
+| ID | Họ tên | Số điện thoại | Thiết bị/browser | Session date/time | Consent | Recording consent | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Pilot | `[Điền]` | `[Điền]` | `[Điền]` | `[Điền]` | `[Yes/No]` | `[Yes/No/N/A]` | Không tính vào 5 participant chính. |
 | P01 | `[Điền]` | `[Điền]` | `[Điền]` | `[Điền]` | `[Yes/No]` | `[Yes/No/N/A]` |  |
@@ -11,7 +11,7 @@
 | P04 | `[Điền]` | `[Điền]` | `[Điền]` | `[Điền]` | `[Yes/No]` | `[Yes/No/N/A]` |  |
 | P05 | `[Điền]` | `[Điền]` | `[Điền]` | `[Điền]` | `[Yes/No]` | `[Yes/No/N/A]` |  |
 
-## Gợi ý profile hợp lệ
+## Gợi ý người tham gia hợp lệ
 
 - Sinh viên ngoài lớp học phần này.
 - Người từng đăng ký hoặc tham gia event/workshop.

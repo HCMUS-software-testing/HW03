@@ -40,7 +40,7 @@ Bạn đang hỗ trợ xử lý yêu cầu của người dùng. Hãy tìm reque
 
 Không đọc từng bước click cho participant. Chỉ giải thích mục tiêu và để họ tự tìm đường đi.
 
-## 5. Profile participant
+## 5. Người tham gia phù hợp
 
 | Tiêu chí | Yêu cầu |
 | --- | --- |
@@ -48,7 +48,7 @@ Không đọc từng bước click cho participant. Chỉ giải thích mục ti
 | Pilot | 1 người thêm, không tính vào 5 người chính |
 | Đối tượng | Sinh viên, giảng viên, trợ giảng hoặc người từng dùng hệ thống web quản lý sự kiện/hỗ trợ |
 | Ràng buộc | Người ngoài lớp học phần này |
-| Contact | Có thể xác minh, nhưng mask khi nộp bài |
+| Số điện thoại | Có thể xác minh; khi đưa vào report cuối có thể mask một phần nếu cần |
 | Thiết bị | Ưu tiên laptop hoặc điện thoại thật; ghi lại thiết bị/browser nếu khác nhau |
 
 ## 6. Metrics cần đo
@@ -81,7 +81,7 @@ Mình đang kiểm thử giao diện EMS cho bài Software Testing. Mục tiêu 
 
 | Bước | Người kiểm thử làm | Dữ liệu cần ghi |
 | ---: | --- | --- |
-| 1 | Ghi participant ID, profile, contact masked, thiết bị/browser. | `participant_table.md` |
+| 1 | Ghi participant ID, họ tên, số điện thoại, thiết bị/browser. | `participant_table.md` |
 | 2 | Đọc consent script và xin đồng ý. | Consent `Yes/No`; recording consent nếu có. |
 | 3 | Đọc task scenario. | Không đưa click-by-click instruction. |
 | 4 | Bắt đầu timer. | Start time. |

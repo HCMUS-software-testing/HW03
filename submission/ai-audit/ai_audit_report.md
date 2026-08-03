@@ -826,7 +826,7 @@ Ghi vào submission/task1B những thứ tiếp theo tôi cần làm với nhữ
 
 **Reasoning:** [Manual by user]
 
-**Student Fix:** Sinh viên sửa `submission/task2/session_notes_template.md` để real user có thể tự điền sau khi trải nghiệm flow. File được bổ sung phần đầu gồm link web, user account cho D1-D2, admin account cho D3, lưu ý không chỉnh sửa dữ liệu ngoài phạm vi, phần task scenario có cả D3, bảng participant tự ghi quá trình thực hiện D1-D2-D3, câu hỏi sau trải nghiệm và SUS.
+**Student Fix:** Sinh viên thêm vào thông tin link web, user account và admin account để participant có thể test đúng flow D1-D2-D3.
 
 ### 2.2.14 Entry 14
 

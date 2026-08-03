@@ -22,6 +22,17 @@ Tài khoản này dùng cho Scenario D màn hình `D1` và `D2`.
 | Role | `User` |
 | Ghi chú | `Playwright đã xác nhận đăng nhập thành công và vào được /dashboard. Chỉ dùng để tạo support request và kiểm tra My Requests của chính tài khoản này.` |
 
+### Student Account
+
+Tài khoản sinh viên bổ sung để test đăng nhập và có thể dùng cho participant nếu cần account student riêng.
+
+| Field | Value |
+| --- | --- |
+| Email / Username / MSSV | `23127075@student.hcmus.edu.vn` |
+| Password | `Nothing2k@524032005` |
+| Role | `Student` |
+| Ghi chú | `Playwright đã xác nhận đăng nhập thành công ngày 2026-08-03 bằng luồng Student SSO: Login -> Or continue with Student -> Microsoft login. Không dùng form email/password thường của EMS cho account này.` |
+
 ### Admin Account
 
 Tài khoản này dùng cho Scenario D màn hình `D3`.

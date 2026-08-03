@@ -26,7 +26,7 @@ Mục tiêu đánh giá:
 
 | Trường | Giá trị |
 | --- | --- |
-| Pilot participant | `[ID/profile/contact masked]` |
+| Pilot participant | `[ID/họ tên/số điện thoại]` |
 | Ngày giờ | `[Điền]` |
 | Vấn đề phát hiện trong protocol | `[Điền]` |
 | Điều chỉnh trước 5 sessions chính | `[Điền]` |
@@ -35,7 +35,7 @@ Mục tiêu đánh giá:
 
 Tham chiếu file: `submission/task2/participant_table.md`.
 
-| ID | Profile | Contact masked | Device/browser | Session date/time | Consent |
+| ID | Họ tên | Số điện thoại | Device/browser | Session date/time | Consent |
 | --- | --- | --- | --- | --- | --- |
 | P01 | `[Điền]` | `[Điền]` | `[Điền]` | `[Điền]` | `[Yes/No]` |
 | P02 | `[Điền]` | `[Điền]` | `[Điền]` | `[Điền]` | `[Yes/No]` |
