@@ -10,6 +10,7 @@
 | Màn hình liên quan | A1 Events list, A2 Add/Edit Event, A3 Registration & Roles |
 | Ngày chuẩn bị Phase 1 | 2026-08-03 |
 | Ngày chạy 5 phiên | Chưa xếp lịch |
+| Video pilot | [23127326-PilotUser](https://youtu.be/RBcwhBtWzQ0) |
 | Phương pháp điểm số | System Usability Scale (SUS), thang 0–100 |
 | Evidence thô | `submission/user_testing_evidence.md` |
 
@@ -28,7 +29,7 @@ Dữ liệu nghiệp vụ, tiêu chí hoàn thành, quy tắc quan sát, bộ c�
 | Câu hỏi thăm dò | Đã soạn | Clarity, error recovery, speed, trust và ưu tiên thay đổi |
 | Tiêu chí tuyển người tham gia | Đã soạn | 5 người chính + 1 pilot, đều ngoài lớp |
 | Tuyển đủ 5 người thật | Chưa xác nhận | Không bịa hồ sơ/liên hệ |
-| Chạy pilot với 1 người thật | Chưa thực hiện | Cần ghi kết quả và điều chỉnh thực tế |
+| Chạy pilot với 1 người thật | Đã thực hiện | Trần Hữu Lộc (`098****620`), ngoài lớp/P1–P5, đã consent; hoàn thành trong `08:24`, error/hesitation/can thiệp `0/0/0`; không phát hiện vấn đề, không cần điều chỉnh; [video](https://youtu.be/RBcwhBtWzQ0) |
 
 ## 4. Tóm tắt người tham gia
 

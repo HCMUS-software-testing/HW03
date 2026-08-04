@@ -350,11 +350,16 @@ Nhóm mục tiêu là người từ 18 tuổi, ngoài lớp học phần này, �
 
 | Nội dung | Ghi chú |
 | --- | --- |
-| Trạng thái pilot | Chưa có dữ liệu người thật; không tính là đã hoàn thành. |
-| Người pilot | Cần 1 người phù hợp tiêu chí và không thuộc P1–P5. |
+| Trạng thái pilot | Đã thực hiện; hoàn thành task trong `08:24`. |
+| Minh chứng video | [YouTube – 23127326-PilotUser](https://youtu.be/RBcwhBtWzQ0) |
+| Người pilot | Trần Hữu Lộc; `098****620`; ngoài lớp và không thuộc P1–P5. |
+| Ngày giờ | 15:00 ngày 03/08/2026. |
+| Thiết bị/trình duyệt | ASUS Zenbook 14 OLED / Microsoft Edge. |
+| Consent | Đã đồng ý tham gia và ghi hình. |
+| Error / hesitation / can thiệp | `0 / 0 / 0`. |
 | Mục tiêu pilot | Xác nhận người tham gia hiểu mục tiêu mà không cần hướng dẫn từng bước; dữ liệu ngày giờ hợp lệ; luồng A1/A2/A3 không bị gãy; phiên có thể hoàn tất trong 20 phút. |
-| Vấn đề phát hiện | Chờ kết quả quan sát pilot thật. |
-| Điều chỉnh trước 5 session chính | Chỉ ghi sau pilot; ưu tiên sửa câu chữ, dữ liệu hoặc khâu chuẩn bị, không biến kịch bản thành hướng dẫn thao tác. |
+| Vấn đề phát hiện | Không phát hiện vấn đề. |
+| Điều chỉnh trước 5 session chính | Không cần điều chỉnh. |
 
 ### 4.4 Bảng người tham gia
 

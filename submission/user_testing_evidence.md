@@ -132,7 +132,7 @@ Người tham gia nhận bảng dữ liệu nghiệp vụ, không nhận hướn
 
 | ID    | Hồ sơ mục tiêu                                | Hồ sơ/liên hệ thật | Trạng thái    |
 | ----- | --------------------------------------------- | ------------------ | ------------- |
-| PILOT | Người ngoài P1–P5, phù hợp gần nhóm mục tiêu  | Chưa cung cấp      | Chưa xác nhận |
+| PILOT | Người ngoài P1–P5, phù hợp gần nhóm mục tiêu  | Trần Hữu Lộc; `098****620` | Đã thực hiện; [video pilot](https://youtu.be/RBcwhBtWzQ0) |
 | P1    | Sinh viên từng tổ chức hoạt động              | Chưa cung cấp      | Chưa xác nhận |
 | P2    | Sinh viên từng tổ chức hoạt động              | Chưa cung cấp      | Chưa xác nhận |
 | P3    | Sinh viên/người tham dự sự kiện thường xuyên  | Chưa cung cấp      | Chưa xác nhận |
@@ -153,13 +153,16 @@ Người tham gia nhận bảng dữ liệu nghiệp vụ, không nhận hướn
 
 | Nội dung                        | Ghi chú                                                         |
 | ------------------------------- | --------------------------------------------------------------- |
-| Trạng thái                      | Chưa thực hiện với người thật; không được ghi là đã hoàn thành. |
-| Người pilot                     | Cần 1 người ngoài P1–P5, phù hợp gần nhóm mục tiêu.             |
-| Ngày giờ                        | Chưa xếp lịch.                                                  |
-| Consent                         | Chưa ghi nhận.                                                  |
-| Kết quả/thời gian task          | Chưa ghi nhận.                                                  |
-| Vấn đề về câu chữ/dữ liệu/luồng | Chờ quan sát pilot thật.                                        |
-| Điều chỉnh sau pilot            | Chỉ ghi thay đổi đã thực hiện sau khi có evidence thật.         |
+| Trạng thái                      | Đã thực hiện; hoàn thành task trong `08:24`.                         |
+| Người pilot                     | Trần Hữu Lộc; liên hệ đã che `098****620`; ngoài lớp và không thuộc P1–P5. |
+| Minh chứng video                   | [YouTube – 23127326-PilotUser](https://youtu.be/RBcwhBtWzQ0)                 |
+| Ngày giờ                        | 15:00 ngày 03/08/2026.                                           |
+| Thiết bị/trình duyệt            | ASUS Zenbook 14 OLED / Microsoft Edge.                              |
+| Consent                         | Đã đồng ý tham gia và ghi hình.                                  |
+| Kết quả/thời gian task          | Hoàn thành / `08:24`.                                               |
+| Error / hesitation / can thiệp    | `0 / 0 / 0`.                                                        |
+| Vấn đề về câu chữ/dữ liệu/luồng | Không phát hiện vấn đề.                                          |
+| Điều chỉnh sau pilot            | Không cần điều chỉnh.                                              |
 
 ### 6.1 Tiêu chí pilot đạt
 
