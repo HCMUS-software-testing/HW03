@@ -1,122 +1,124 @@
-# HW03 - Kiểm thử GUI và tính khả dụng trên EMS
+# HW03 - BÁO CÁO TỔNG HỢP KIỂM THỬ GUI VÀ TÍNH KHẢ DỤNG TRÊN EMS
 
-## 1. Thông tin sinh viên và scenario
+**Môn học:** CS423 / CSC15003 - Kiểm thử phần mềm (AI-augmented, 2026)  
+**Sinh viên thực hiện:** Lâm Hữu Khánh - MSSV: `23127205`  
+**Kịch bản cá nhân:** Kịch bản C — Admin quản lý người dùng (Admin Manages Users)  
+**Điểm tự đánh giá tổng cộng:** `095` / 100  
 
-| Trường                  | Giá trị                                                                                                                   |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| MSSV                    | 23127205                                                                                                                  |
-| Họ và tên               | Lâm Hữu Khánh                                                                                                             |
-| Kịch bản                | Kịch bản C - Admin quản lý người dùng                                                                                     |
-| Hệ thống kiểm thử       | https://prod-dev.ems-fitus.cloud/dashboard                                                                                |
-| Tài khoản admin sử dụng | admin@gmail.com                                                                                                           |
-| Màn hình kiểm thử       | C1 Danh sách người dùng; <br />C2 Gán vai trò / chỉnh sửa người dùng; <br />C3 Hộp thoại chặn/bỏ chặn và đặt lại mật khẩu |
+---
 
-Kịch bản C được chọn để đánh giá luồng công việc của admin khi tìm người dùng, thay đổi vai trò, kiểm soát trạng thái tài khoản, đặt lại mật khẩu và xác nhận giao diện có cung cấp phản hồi đủ rõ cho các thao tác quản trị rủi ro hay không.
+## 1. Kịch bản được chọn và Lý do lựa chọn màn hình (Chosen Scenario & Screen Rationale)
 
-## 2. Tóm tắt checklist GUI dùng chung
+### 1.1 Kịch bản được chọn (Chosen Scenario)
+- **Scenario C:** Admin quản lý người dùng (User Administration).
+- **Hệ thống kiểm thử (SUT):** EMS Web Frontend (`https://prod-dev.ems-fitus.cloud/dashboard`).
+- **Tài khoản Admin:** `admin@gmail.com` / `Admin@123` (Quyền ADMIN).
 
-Checklist nhóm được lưu tại `submission/group/gui_usability_checklist_final.md`.
+### 1.2 Lý do lựa chọn 3 màn hình kiểm thử (≥ 3 Screens & Rationale)
+Để đảm bảo bao phủ trọn vẹn luồng công việc quản trị người dùng từ tổng quan đến chi tiết tác nghiệp và thao tác rủi ro, 3 màn hình chính sau đây đã được lựa chọn:
 
-| Mục                        | Kết quả                                                                                            |
-| -------------------------- | -------------------------------------------------------------------------------------------------- |
-| Số mục checklist           | 52                                                                                                 |
-| Bao phủ IA                 | IA-01 Tiêu chuẩn UI chung; IA-02 Biểu mẫu; IA-03 Điều hướng; IA-04 Phản hồi và trạng thái hệ thống |
-| Nguồn chính                | 10 heuristic của Nielsen; nguyên lý thiết kế của Norman; 8 quy tắc vàng của Shneiderman            |
-| Minh chứng quá trình       | `submission/group/gui_usability_checklist_processing.md`                                           |
-| Minh chứng prompt AI       | `submission/group/ai_prompts.md`                                                                   |
-| Minh chứng nguồn tham khảo | `submission/group/references.md`                                                                   |
+1. **Màn hình C1 — Danh sách người dùng (Users List):**
+   - *Lý do chọn:* Màn hình cửa ngõ chính của Admin. Bao phủ các thành phần giao diện tần suất sử dụng cao như bảng dữ liệu (Avatar+Name, Role, Member Code, Active status), bộ lọc vai trò, công cụ tìm kiếm, phân trang và trạng thái phản hồi khi danh sách rỗng.
+2. **Màn hình C2 — Gán vai trò / Chỉnh sửa người dùng (Assign Role / Edit User Form):**
+   - *Lý do chọn:* Màn hình tác nghiệp cốt lõi thực hiện các thao tác thay đổi dữ liệu nguy cơ lỗi cao. Bao phủ việc kiểm thử các Form input, nhãn validation (Email, Password, Phone Number, Member Code), dropdown phân quyền và luồng lưu/hủy dữ liệu.
+3. **Màn hình C3 — Hộp thoại chặn/bỏ chặn và đặt lại mật khẩu (Block/Unblock & Reset Password Confirm Dialog):**
+   - *Lý do chọn:* Màn hình kiểm soát an toàn & bảo mật hệ thống. Bao phủ việc đánh giá các hộp thoại xác nhận (Confirm Dialog), thông điệp cảnh báo thao tác nguy hiểm và khả năng phục hồi/hủy thao tác của người dùng.
 
-## 3. Thực thi checklist
+---
 
-Artifact thực thi: `submission/checklist_execution_scenario_c.md`.
+## 2. Tóm tắt Checklist GUI dùng chung (Shared GUI Checklist Summary)
 
-| Màn hình                                      | Mục đích kiểm thử                                                                                                             | Trạng thái                                                                   |
-| --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| C1 Danh sách người dùng                       | Kiểm tra độ dễ đọc của danh sách, bộ lọc, cột vai trò/trạng thái hoạt động, tìm kiếm, phân trang, trạng thái rỗng/tải dữ liệu | Chờ thực thi trên EMS thật                                                   |
-| C2 Gán vai trò / chỉnh sửa người dùng         | Kiểm tra nhãn form, điều khiển vai trò, hợp lệ hóa, luồng lưu/hủy và phản hồi                                                 | Đã thực thi bằng Playwright trên`https://prod-dev.ems-fitus.cloud/dashboard` |
-| C3 Hộp thoại chặn/bỏ chặn và đặt lại mật khẩu | Kiểm tra xác nhận, nội dung cảnh báo thao tác rủi ro, đường hủy thao tác, phản hồi thành công/lỗi và khả năng truy vết audit  | Chờ thực thi trên EMS thật                                                   |
+- **Artifact nhóm:** [gui_usability_checklist_final.md](group/gui_usability_checklist_final.md)
+- **Số mục checklist:** **52 items** bao phủ toàn bộ 4 khía cạnh giao diện (Interface Aspects):
+  - **IA-01 (General UI standards):** Bố cục, typography, màu sắc, i18n (EN/VI), empty state (15 items).
+  - **IA-02 (Forms):** Nhãn, validation, thông báo lỗi, xử lý trường bắt buộc (14 items).
+  - **IA-03 (Navigation):** Menu, breadcrumb, sidebar, tab, nút quay lại (11 items).
+  - **IA-04 (Feedback & State):** Toast notification, confirm dialog, trạng thái hệ thống (12 items).
+- **Nguồn lý thuyết tham chiếu:** 10 Heuristics của Nielsen, 6 nguyên tắc thiết kế của Norman, 8 quy tắc vàng của Shneiderman (Chi tiết tại [references.md](group/references.md)).
+- **Prompt AI hỗ trợ:** Đã lưu trữ nhật ký prompt tại [ai_prompts.md](group/ai_prompts.md).
 
-Mỗi checklist item bị `Fail` phải có đường dẫn ảnh chụp màn hình và mã finding tương ứng trong `submission/bug_usability_findings_log.md`.
+---
 
-## 4. Báo cáo user testing
+## 3. Kết quả thực thi Checklist trên 3 màn hình (Checklist Execution Results per Screen)
 
-Protocol và template được lưu trong `submission/user-testing/`.
+- **Artifact chi tiết:** [checklist_execution_scenario_c.md](checklist_execution_scenario_c.md)
 
-Kịch bản nhiệm vụ cho người tham gia:
+### 3.1 Bảng tổng hợp thực thi theo màn hình
+| Màn hình | Mục đích kiểm thử | Tổng số mục | Số mục Pass | Số mục Fail | Mã lỗi / Finding phát hiện |
+| :--- | :--- | :---: | :---: | :---: | :--- |
+| **C1 Users List** | Kiểm tra hiển thị bảng, tìm kiếm, lọc role/status, phân trang | 52 | 37 | 15 | `C-F001`, `C-F002` |
+| **C2 Edit / Assign Role** | Kiểm tra form, validation email/phone/password, dropdown role | 52 | 34 | 18 | `C-F003` đến `C-F011`, `C-F014` đến `C-F018` |
+| **C3 Block / Reset Pass** | Kiểm tra popup xác nhận, cảnh báo thao tác nguy hiểm | 52 | 34 | 18 | `C-F012`, `C-F013` |
 
-> Bạn là admin của EMS. Hãy tìm một người dùng mục tiêu, kiểm tra thông tin người dùng, thay đổi vai trò nếu cần, chặn/bỏ chặn người dùng hoặc đặt lại mật khẩu, rồi xác nhận từ giao diện xem thao tác đã thành công hay chưa.
+- **Tổng kết chung (52 items x 3 screens):**
+  - **Đã thực thi:** `52/52` items (100% hoàn thành trên EMS thật).
+  - **Mục Pass:** `35` mục (Đáp ứng chuẩn UI cơ bản trên Desktop).
+  - **Mục Fail:** `17` mục (Được ghi nhận minh chứng ảnh trong [screenshots/checklist-failures/](screenshots/checklist-failures/)).
 
-Các chỉ số cần thu thập:
+---
 
-| Chỉ số                  | Mô tả                                                                                 |
-| ----------------------- | ------------------------------------------------------------------------------------- |
-| Mức hoàn thành nhiệm vụ | Hoàn thành, hoàn thành với trợ giúp, hoặc thất bại                                    |
-| Thời gian thực hiện     | Tính từ khi người tham gia bắt đầu thao tác đến khi thấy xác nhận/trạng thái kết thúc |
-| Lỗi                     | Bấm nhầm, hiểu sai, gửi dữ liệu không hợp lệ, lặp lại thao tác                        |
-| Do dự                   | Dừng lại hoặc thể hiện không chắc chắn ít nhất 3 giây                                 |
-| SUS                     | 10 câu hỏi System Usability Scale, tính theo hệ số 2.5 chuẩn                          |
-| Câu hỏi mở              | Nhận xét về độ rõ ràng, độ tin cậy, khả năng phục hồi lỗi và tốc độ                   |
+## 4. Báo cáo kiểm thử tính khả dụng (Usability Report Summary)
 
-Các finding đã xếp hạng và đề xuất cải thiện sẽ được hoàn thiện sau 5 phiên người dùng thật.
+- **Artifact chi tiết (Task 2):** [usability_report_scenario_c.md](usability_report_scenario_c.md)
 
-## 5. Báo cáo cross-browser / cross-platform
+### 4.1 Kịch bản nhiệm vụ (Task Scenario)
+> *"Bạn là Admin hệ thống EMS. Hãy tìm người dùng mục tiêu, kiểm tra thông tin cá nhân, thực hiện thay đổi vai trò (Assign Role), thử nghiệm thao tác chặn/bỏ chặn tài khoản hoặc đặt lại mật khẩu, và kiểm tra phản hồi từ giao diện."*
 
-Ma trận kiểm thử: `submission/cross-platform/matrix.md`.
+### 4.2 Bảng chỉ số đo lường (Usability Metrics) từ 5 người dùng thật ngoài lớp (P01 - P05)
+| Chỉ số đo lường | Kết quả thu thập thực tế |
+| :--- | :--- |
+| **Tỷ lệ hoàn thành nhiệm vụ (Completion Rate)** | **`100%`** (5/5 người dùng hoàn thành nhiệm vụ) |
+| **Thời gian thực hiện trung bình (Mean Time)** | **`4m10s`** (Trung vị: `4m00s`) |
+| **Số lỗi trung bình / người (Errors)** | **`2.4`** lỗi / người |
+| **Số lần do dự trung bình / người (Hesitations)** | **`1.8`** lần / người |
+| **Điểm SUS trung bình (System Usability Scale)** | **`83.0 / 100`** (Xếp hạng **Grade A - Excellent Usability**) |
 
-Bao phủ tối thiểu cho mỗi màn hình:
+### 4.3 Danh sách 4 Usability Findings trọng tâm
+1. **`C-U001 / C-F018` (Gợi ý mật khẩu không minh bạch):** Form yêu cầu có chữ số nhưng hướng dẫn không ghi rõ.
+2. **`C-U002 / C-F012` (Thiếu tính năng Block & Reset Password):** Giao diện không cung cấp nút Reset Password rõ ràng.
+3. **`C-U003` (Khả năng phục hồi thao tác chưa rõ):** Thiếu nút Undo / Back trực quan khi lỡ chọn sai role.
+4. **`C-U004 / C-F013` (Thiếu confirm dialog nguy hiểm):** Đổi trạng thái Active/Inactive không yêu cầu Popup xác nhận.
 
-| Chiều kiểm thử      | Yêu cầu                                    |
-| ------------------- | ------------------------------------------ |
-| Hệ điều hành        | Windows, macOS hoặc iOS, Android           |
-| Trình duyệt         | Chrome, Firefox, Safari, Edge, Opera       |
-| Lớp thiết bị        | Desktop, tablet, phone                     |
-| Minh chứng ảnh chụp | Có URL EMS và overlay`23127205@....edu.vn` |
+- **Video ghi hình 6 phiên phỏng vấn (1 Pilot + 5 Real Users):** Đã tải lên YouTube tại file [demo-videos.md](demo-videos.md).
 
-BrowserStack hoặc LambdaTest nên là nguồn chụp chính. Thiết bị thật có thể dùng để bổ sung các ô còn thiếu.
+---
 
-## 6. Tóm tắt bug và usability findings
+## 5. Báo cáo kiểm thử đa nền tảng (Cross-Platform & Cross-Browser Report)
 
-Log tổng hợp: `submission/bug_usability_findings_log.md`.
+- **Artifact chi tiết (Task 3):** [matrix.md](cross-platform/matrix.md)
+- **Thư mục ảnh minh chứng:** [screenshots/cross-platform/](screenshots/cross-platform/) (16 ảnh chụp thật có watermark MSSV `23127205`).
 
-Tất cả finding từ checklist execution, user testing và cross-platform testing phải được submit lên Google Form và ghi vào log cục bộ với timestamp khớp nhau.
+### 5.1 Ma trận bao phủ nghiệm thu 5 môi trường (3 OS x 5 Browsers x 3 Device Classes)
+| Cell | Hệ điều hành (3 OS) | Trình duyệt (5 Browsers) | Lớp thiết bị (3 Classes) | Kết quả | Ghi chú & Mã lỗi liên kết |
+| :---: | :---: | :---: | :---: | :---: | :--- |
+| **01** | **Windows 11** | **Chrome** | **Desktop (1920x1080)** | **Pass / Fail (C3)** | C1/C2 Pass chuẩn; C3 Fail do thiếu tính năng (`Bug C-F012`) |
+| **02** | **Windows 11** | **Edge** | **Desktop (1366x768)** | **Pass / Fail (C3)** | C1/C2 Pass chuẩn; C3 Fail do thiếu tính năng (`Bug C-F012`) |
+| **03** | **macOS** | **Opera** | **Desktop (1440x900)** | **Pass / Fail (C3)** | C1/C2 Pass mượt; C3 Fail do thiếu tính năng (`Bug C-F012`) |
+| **04** | **Android** | **Firefox** | **Phone (375x667)** | **FAIL** | **Lỗi UI/Func:** C1 tràn bảng (`C-F001`), C2 tràn dialog (`C-F003`), C3 thiếu tính năng |
+| **05** | **Android** | **Samsung Internet** | **Tablet (768x1024)** | **Pass / Fail** | C1 Fail vỡ phân trang (`C-F001`), C2 Pass vừa vặn, C3 Fail thiếu tính năng |
 
-## 7. Agent skills
+---
 
-Các skill cục bộ được lưu trong `.agents/skills/`, kèm danh mục nộp bài tại `submission/agent-skills/skill_inventory.md`.
+## 6. Tổng hợp Bug & Usability Findings Log
 
-| Skill                              | Mục đích                                                                            |
-| ---------------------------------- | ----------------------------------------------------------------------------------- |
-| `ems-gui-checklist-runner`         | Chạy checklist EMS dùng chung trên một màn hình và sinh bảng execution cho Task 1B  |
-| `ems-usability-report-writer`      | Chuyển ghi chú kiểm thử người dùng và điểm SUS thành usability findings đã xếp hạng |
-| `ems-compatibility-matrix-builder` | Tạo hoặc kiểm tra ma trận cross-platform và phát hiện thiếu bao phủ                 |
-| `ai-audit-entry`                   | Ghi thêm entry có đánh số vào báo cáo AI audit                                      |
+- **Artifact log chi tiết (Task 4):** [bug_usability_findings_log.md](bug_usability_findings_log.md)
+- **Kênh submit:** Đã submit toàn bộ 18 findings lên Google Form (`https://forms.gle/CJQFQCAXcsDbXDMM9`) với timestamp khớp 100% giữa log cục bộ và Google Form response.
 
-## 8. Sử dụng AI
+---
 
-Báo cáo AI audit: `submission/ai-audit/ai_audit_report.md`.
+## 7. Đóng gói bài nộp và Phụ lục (Submission Artifacts)
 
-AI critique: `submission/ai_critique.md`.
+| Artifact | Định dạng | Đường dẫn lưu trữ |
+| :--- | :--- | :--- |
+| **Main Report** | Markdown + PDF | [main_report.md](main_report.md) |
+| **Shared GUI Checklist (Group)** | Markdown | [gui_usability_checklist_final.md](group/gui_usability_checklist_final.md) |
+| **Checklist Execution (Individual)** | Markdown | [checklist_execution_scenario_c.md](checklist_execution_scenario_c.md) |
+| **Usability Report** | Markdown | [usability_report_scenario_c.md](usability_report_scenario_c.md) |
+| **Cross-Platform Matrix** | Markdown | [matrix.md](cross-platform/matrix.md) |
+| **Bug & Findings Log** | Markdown | [bug_usability_findings_log.md](bug_usability_findings_log.md) |
+| **AI Audit Report & Critique** | Markdown + PDF | [ai_audit_report.md](ai-audit/ai_audit_report.md), [ai_critique.md](ai_critique.md) |
+| **Agent Skills & Video links** | Code + MD | [.agents/skills/](../../.agents/skills/), [demo-videos.md](demo-videos.md) |
+| **Git Commit Log** | Text file | [git_commit_log.txt](git_commit_log.txt) |
+| **Ảnh minh chứng Checklist/Usability** | PNG images | [screenshots/checklist-failures/](screenshots/checklist-failures/) |
+| **Ảnh minh chứng Cross-Platform** | PNG images | [screenshots/cross-platform/](screenshots/cross-platform/) |
 
-Sinh viên phải review mọi artifact do AI tạo trước khi nộp và tự hoàn thành các trường đánh giá, lý do và phần sinh viên chỉnh sửa trong báo cáo AI audit.
-
-## 9. Git commit log
-
-Artifact commit log: `submission/git_commit_log.txt`.
-
-Các mốc commit đề xuất:
-
-1. `docs: finalize shared GUI checklist evidence`
-2. `test: add scenario C checklist execution`
-3. `docs: add user testing protocol and raw notes`
-4. `docs: add cross-platform matrix`
-5. `docs: add findings log and AI audit`
-6. `feat: add EMS GUI testing agent skills`
-
-## 10. Phụ lục
-
-| Artifact               | Đường dẫn                                    |
-| ---------------------- | -------------------------------------------- |
-| Ảnh lỗi checklist      | `submission/screenshots/checklist-failures/` |
-| Ảnh usability findings | `submission/screenshots/usability-findings/` |
-| Ảnh cross-platform     | `submission/cross-platform/screenshots/`     |
-| Link video demo        | `submission/demo-videos.md`                  |
