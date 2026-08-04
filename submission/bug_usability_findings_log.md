@@ -10,22 +10,26 @@ Mọi defect hoặc đề xuất cải thiện tính khả dụng từ checklist
 
 ## Bảng tổng hợp finding
 
-| ID     | Màn hình                              | Loại      | Mức độ | Tóm tắt                                                                                   | Timestamp form       |
-| ------ | ------------------------------------- | --------- | ------ | ----------------------------------------------------------------------------------------- | -------------------- |
-| C-F001 | C1 Danh sách người dùng               | Usability | 3      | Layout Users Management không responsive tốt trên mobile/tablet.                          | Chờ sinh viên submit |
-| C-F002 | C1 Danh sách người dùng               | Usability | 2      | Empty state search thiếu hành động phục hồi.                                              | Chờ sinh viên submit |
-| C-F003 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 3      | Dialog Edit User/admin layout không responsive tốt trên mobile/tablet.                    | Chờ sinh viên submit |
-| C-F004 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Add User form đảo placeholder/thông báo lỗi First Name và Last Name.                      | Chờ sinh viên submit |
-| C-F005 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Password validation không nhất quán và lỗi tiếng Anh khi đang ở VI.                       | Chờ sinh viên submit |
-| C-F006 | C2 Gán vai trò / chỉnh sửa người dùng | Bug       | 3      | Email validation cho phép submit email không hợp lệ dạng`@g`.                             | Chờ sinh viên submit |
-| C-F007 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Phone Number thiếu gợi ý quy tắc 10 số bắt đầu bằng 0.                                    | Chờ sinh viên submit |
-| C-F008 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Phone Number cho nhập chữ, chỉ báo lỗi sau submit.                                        | Chờ sinh viên submit |
-| C-F009 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Role dropdown cho chọn placeholder như option thật rồi mới báo lỗi.                       | Chờ sinh viên submit |
-| C-F010 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 3      | Xóa user rồi tạo lại email cũ báo`email already use` bằng tiếng Anh.                      | Chờ sinh viên submit |
-| C-F011 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Member Code trùng được chặn đúng nhưng lỗi hiển thị tiếng Anh khi đang ở VI.              | Chờ sinh viên submit |
-| C-F012 | C3 Block/Unblock và Reset Password    | Usability | 3      | Block/Unblock bị biểu diễn mơ hồ qua Active/Inactive và không thấy Reset Password action. | Chờ sinh viên submit |
-| C-F013 | C3 Block/Unblock và Reset Password    | Usability | 3      | Đổi trạng thái Active/Inactive thiếu xác nhận nguy hiểm riêng.                            | Chờ sinh viên submit |
-| C-F014 | C2/C3 Chỉnh sửa user và Active status | Bug       | 3      | Sau khi đổi email rồi chỉnh Active/Inactive, request PATCH cập nhật user bị timed out.    | Chờ sinh viên submit |
+| ID     | Màn hình                              | Loại      | Mức độ | Tóm tắt                                                                                          | Timestamp form                     |
+| ------ | ------------------------------------- | --------- | ------ | ------------------------------------------------------------------------------------------------ | ---------------------------------- |
+| C-F001 | C1 Danh sách người dùng               | Usability | 3      | Layout Users Management không responsive tốt trên mobile/tablet.                                 | Phản ánh lúc 22:43 ngày 02/08/2026 |
+| C-F002 | C1 Danh sách người dùng               | Usability | 2      | Empty state search thiếu hành động phục hồi.                                                     | Phản ánh lúc 22:45 ngày 02/08/2026 |
+| C-F003 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 3      | Dialog Edit User/admin layout không responsive tốt trên mobile/tablet.                           | Phản ánh lúc 22:49 ngày 02/08/2026 |
+| C-F004 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Add User form đảo placeholder/thông báo lỗi First Name và Last Name.                             | Phản ánh lúc 22:50 ngày 02/08/2026 |
+| C-F005 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Password validation không nhất quán và lỗi tiếng Anh khi đang ở VI.                              | Phản ánh lúc 22:51 ngày 02/08/2026 |
+| C-F006 | C2 Gán vai trò / chỉnh sửa người dùng | Bug       | 3      | Email validation cho phép submit email không hợp lệ dạng`@g`.                                    | Phản ánh lúc 22:54 ngày 02/08/2026 |
+| C-F007 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Phone Number thiếu gợi ý quy tắc 10 số bắt đầu bằng 0.                                           | Phản ánh lúc 22:55 ngày 02/08/2026 |
+| C-F008 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Phone Number cho nhập chữ, chỉ báo lỗi sau submit.                                               | Phản ánh lúc 22:57 ngày 02/08/2026 |
+| C-F009 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Role dropdown cho chọn placeholder như option thật rồi mới báo lỗi.                              | Phản ánh lúc 22:58 ngày 02/08/2026 |
+| C-F010 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 3      | Xóa user rồi tạo lại email cũ báo`email already use` bằng tiếng Anh.                             | Phản ánh lúc 22:58 ngày 02/08/2026 |
+| C-F011 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Member Code trùng được chặn đúng nhưng lỗi hiển thị tiếng Anh khi đang ở VI.                     | Phản ánh lúc 22:59 ngày 02/08/2026 |
+| C-F012 | C3 Block/Unblock và Reset Password    | Usability | 3      | Block/Unblock bị biểu diễn mơ hồ qua Active/Inactive và không thấy Reset Password action.        | Phản ánh lúc 23:00 ngày 02/08/2026 |
+| C-F013 | C3 Block/Unblock và Reset Password    | Usability | 3      | Đổi trạng thái Active/Inactive thiếu xác nhận nguy hiểm riêng.                                   | Phản ánh lúc 23:01 ngày 02/08/2026 |
+| C-F014 | C2/C3 Chỉnh sửa user và Active status | Bug       | 3      | Sau khi đổi email rồi chỉnh Active/Inactive, request PATCH cập nhật user bị timed out.           | Phản ánh lúc 11:07 ngày 03/08/2026 |
+| C-F015 | C2 chỉnh sửa user; delete dialog      | Bug       | 3      | Tên hoặc email quá dài được hệ thống chấp nhận, dẫn đến tràn UI trong user UI và dialog.         | Phản ánh lúc 19:08 ngày 04/08/2026 |
+| C-F016 | C2 Gán vai trò / chỉnh sửa người dùng | Bug       | 2      | Email dài dạng`@g.com` bị báo sai `email must be an email` dù email ngắn cùng domain hợp lệ.     | Phản ánh lúc 19:10 ngày 04/08/2026 |
+| C-F017 | C2 Gán vai trò / chỉnh sửa người dùng | Bug       | 3      | Member Code quá dài không bị validate và gây lỗi Internal Server Error.                          | Phản ánh lúc 19:12 ngày 04/08/2026 |
+| C-F018 | C2 Gán vai trò / chỉnh sửa người dùng | Bug       | 2      | Cảnh báo Mật khẩu chỉ báo cần 8 ký tự, chữ hoa và ký tự đặc biệt nhưng vẫn lỗi nếu thiếu chữ số. | Phản ánh lúc 19:15 ngày 04/08/2026 |
 
 ## Chi tiết finding
 
@@ -66,7 +70,6 @@ Dùng mobile/tablet drawer hoặc collapsed sidebar mặc định, cho table có
 
 **Timestamp form:**
 Phản ánh lúc 22:43 ngày 02/08/2026
-<img src="screenshots/checklist-failures/C-F001-form.png" alt="C-F001 Google Form submission evidence">
 
 ### C-F002 - Empty state search thiếu hành động phục hồi
 
@@ -144,7 +147,6 @@ Dùng mobile/tablet drawer hoặc collapsed sidebar, giới hạn chiều rộng
 
 **Timestamp form:**
 Phản ánh lúc 22:49 ngày 02/08/2026
-<img src="screenshots/checklist-failures/C-F003-form.png" alt="C-F003 Google Form submission evidence">
 
 ### C-F004 - Add User form đảo First Name và Last Name
 
@@ -183,7 +185,6 @@ Sửa mapping label/placeholder/schema validation để First Name dùng placeho
 
 **Timestamp form:**
 Phản ánh lúc 22:50 ngày 02/08/2026
-<img src="screenshots/checklist-failures/C-F004-form.png" alt="C-F004 Google Form submission evidence">
 
 ### C-F005 - Password validation không nhất quán và chưa đồng bộ ngôn ngữ
 
@@ -222,7 +223,6 @@ Hiển thị helper text password policy đầy đủ ngay dưới trường Pas
 
 **Timestamp form:**
 Phản ánh lúc 22:51 ngày 02/08/2026
-<img src="screenshots/checklist-failures/C-F005-form.png" alt="C-F005 Google Form submission evidence">
 
 ### C-F006 - Email validation cho phép email `@g`
 
@@ -261,7 +261,6 @@ Bổ sung validation email ở cả client và server theo định dạng email 
 
 **Timestamp form:**
 Phản ánh lúc 22:54 ngày 02/08/2026
-<img src="screenshots/checklist-failures/C-F006-form.png" alt="C-F006 Google Form submission evidence">
 
 ### C-F007 - Phone Number thiếu gợi ý định dạng
 
@@ -299,7 +298,6 @@ Thêm helper text hoặc placeholder cụ thể như`VD: 0912345678 - 10 số, b
 
 **Timestamp form:**
 Phản ánh lúc 22:55 ngày 02/08/2026
-<img src="screenshots/checklist-failures/C-F007-form.png" alt="C-F007 Google Form submission evidence">
 
 ### C-F008 - Phone Number cho nhập chữ
 
@@ -338,7 +336,6 @@ Dùng input mode numeric/tel, lọc ký tự không hợp lệ hoặc validate i
 
 **Timestamp form:**
 Phản ánh lúc 22:57 ngày 02/08/2026
-<img src="screenshots/checklist-failures/C-F008-form.png" alt="C-F008 Google Form submission evidence">
 
 ### C-F009 - Role dropdown cho chọn placeholder
 
@@ -378,7 +375,6 @@ Placeholder nằm cùng cấp với Admin/Guest/Lecturer/Student hoặc Sinh vi�
 
 **Timestamp form:**
 Phản ánh lúc 22:58 ngày 02/08/2026
-<img src="screenshots/checklist-failures/C-F009-form.png" alt="C-F009 Google Form submission evidence">
 
 ### C-F010 - Email của user đã xóa vẫn báo đang dùng
 
@@ -418,7 +414,6 @@ Làm rõ hậu quả trong dialog xóa user; nếu giữ email do soft delete, c
 
 **Timestamp form:**
 Phản ánh lúc 22:58 ngày 02/08/2026
-<img src="screenshots/checklist-failures/C-F010-form.png" alt="C-F010 Google Form submission evidence">
 
 ### C-F011 - Member Code trùng báo lỗi tiếng Anh khi đang ở VI
 
@@ -458,7 +453,6 @@ Dịch validation message Member Code sang tiếng Việt khi giao diện ở VI
 
 **Timestamp form:**
 Phản ánh lúc 22:59 ngày 02/08/2026
-<img src="screenshots/checklist-failures/C-F011-form.png" alt="C-F011 Google Form submission evidence">
 
 ### C-F012 - Block/Unblock mơ hồ qua Active và thiếu Reset Password action
 
@@ -499,7 +493,6 @@ Thêm action riêng `Block`/`Unblock` và `Reset Password`, hoặc đổi wordin
 
 **Timestamp form:**
 Phản ánh lúc 23:00 ngày 02/08/2026
-<img src="screenshots/checklist-failures/C-F012-form.png" alt="C-F012 Google Form submission evidence">
 
 ### C-F013 - Active/Inactive thiếu xác nhận nguy hiểm riêng
 
@@ -540,11 +533,10 @@ Tách Block/Unblock khỏi form Edit User thành action riêng hoặc bổ sung 
 
 **Timestamp form:**
 Phản ánh lúc 23:01 ngày 02/08/2026
-<img src="screenshots/checklist-failures/C-F013-form.png" alt="C-F013 Google Form submission evidence">
 
 ### C-F014 - PATCH cập nhật user bị timed out sau khi đổi email và Active/Inactive
 
-**Nguồn:** Checklist execution / manual re-test Scenario C - IA-04 Feedback / State
+**Nguồn:** Task 2 user testing Scenario C - IA-04 Feedback / State
 
 **Màn hình:** C2/C3 Chỉnh sửa user và trạng thái Active/Inactive
 
@@ -552,7 +544,7 @@ Phản ánh lúc 23:01 ngày 02/08/2026
 
 **Mức độ:** 3
 
-**Mô tả:** Khi admin chỉnh email ban đầu của một user rồi tiếp tục thay đổi trạng thái Active/Inactive, request `PATCH` để cập nhật user bị lỗi timed out. Đây là lỗi kỹ thuật trong luồng cập nhật user, có thể làm admin không biết thao tác đã được lưu hay chưa.
+**Mô tả:** Trong phiên phỏng vấn người dùng Task 2, khi participant thao tác chỉnh email ban đầu của một user rồi tiếp tục thay đổi trạng thái Active/Inactive, request `PATCH` để cập nhật user bị lỗi timed out. Đây là lỗi kỹ thuật trong luồng cập nhật user, làm người dùng/admin không biết thao tác đã được lưu hay chưa.
 
 **Bước tái hiện / minh chứng:**
 
@@ -562,7 +554,7 @@ Phản ánh lúc 23:01 ngày 02/08/2026
 4. Thay đổi email hiện tại của user sang một email hợp lệ khác.
 5. Thay đổi trạng thái Active/Inactive của user.
 6. Lưu thay đổi.
-7. Quan sát request `PATCH` trong Network tab hoặc thông báo lỗi trên giao diện.
+7. Quan sát request `PATCH` trong Network tab hoặc thông báo lỗi trên giao diện trong phiên user testing.
 
 **Kết quả mong đợi:**
 
@@ -570,7 +562,7 @@ Hệ thống phải cập nhật email và trạng thái Active/Inactive thành 
 
 **Kết quả thực tế:**
 
-Request `PATCH` cập nhật user bị timed out sau khi thay đổi email rồi chỉnh Active/Inactive. Admin không nhận được phản hồi đáng tin cậy để biết thao tác đã lưu thành công hay thất bại.
+Request `PATCH` cập nhật user bị timed out sau khi thay đổi email rồi chỉnh Active/Inactive trong phiên phỏng vấn người dùng. Participant/admin không nhận được phản hồi đáng tin cậy để biết thao tác đã lưu thành công hay thất bại.
 
 **Đề xuất sửa:**
 
@@ -585,6 +577,166 @@ Kiểm tra API cập nhật user khi payload chứa đồng thời email mới v
 Phản ánh lúc 11:07 ngày 03/08/2026
 
 <img src="screenshots/checklist-failures/C-F014-form.png" alt="C-F014 Google Form submission evidence">
+
+### C-F015 - Tên hoặc email quá dài được chấp nhận và làm tràn UI
+
+**Nguồn:** Task 2 user testing Scenario C - Participant P01
+
+**Màn hình:** C2 Gán vai trò / chỉnh sửa người dùng; delete confirmation dialog
+
+**Loại:** Bug
+
+**Mức độ:** 3
+
+**Mô tả:** Trong phiên phỏng vấn người dùng P01, participant nhập tên hoặc email quá dài trong form chỉnh sửa/tạo user. Hệ thống không kiểm tra giới hạn độ dài hoặc không chặn dữ liệu quá dài, vẫn chấp nhận giá trị này. Sau khi dữ liệu dài được lưu, nội dung user bị tràn UI khi hiển thị và tiếp tục làm tràn layout ở delete confirmation dialog.
+
+**Bước tái hiện / minh chứng:**
+
+1. Đăng nhập EMS bằng tài khoản admin.
+2. Vào Users Management.
+3. Mở Add User hoặc Edit User cho một user test an toàn.
+4. Nhập tên hoặc email với chuỗi rất dài vượt quá độ dài hiển thị hợp lý.
+5. Lưu thay đổi.
+6. Quan sát hệ thống chấp nhận dữ liệu và hiển thị tên/email bị tràn UI trong form hoặc danh sách user.
+7. Mở thao tác delete trên user có tên/email dài.
+8. Quan sát delete confirmation dialog cũng bị tràn layout do hiển thị lại dữ liệu quá dài.
+
+**Kết quả mong đợi:**
+
+Hệ thống phải validate giới hạn độ dài cho tên/email, hiển thị lỗi rõ ràng nếu vượt quá giới hạn, hoặc ít nhất phải xử lý hiển thị bằng truncate/wrap để không làm vỡ layout.
+
+**Kết quả thực tế:**
+
+Hệ thống chấp nhận tên hoặc email quá dài mà không verify độ dài. Khi hiển thị lại, nội dung dài làm tràn UI ở màn hình quản lý user và delete confirmation dialog, ảnh hưởng khả năng đọc, xác nhận đúng target user và bố cục thao tác.
+
+**Đề xuất sửa:**
+
+Bổ sung validation độ dài tối đa cho First Name, Last Name và Email ở cả client/server; hiển thị thông báo lỗi tại field khi vượt quá giới hạn. Với dữ liệu đã tồn tại, UI nên dùng word-break, wrap hoặc truncate kèm tooltip ở danh sách user, form chỉnh sửa và các dialog xác nhận như delete để tránh tràn layout.
+
+**Ảnh minh chứng:**
+
+**Timestamp form:**
+
+Phản ánh lúc 19:08 ngày 04/08/2026
+
+### C-F016 - Email dài dạng @g.com bị báo lỗi email không hợp lệ không nhất quán
+
+**Nguồn:** Task 2 user testing Scenario C - Participants P01/P02
+
+**Màn hình:** C2 Gán vai trò / chỉnh sửa người dùng
+
+**Loại:** Bug
+
+**Mức độ:** 2
+
+**Mô tả:** Trong phiên phỏng vấn người dùng P01/P02, participants gặp lỗi validation với email quá dài. Trong một trường hợp, khi participant nhập email rất dài có domain `@g.com`, hệ thống báo lỗi `email must be an email`. Tuy nhiên khi nhập email ngắn hơn với cùng domain `@g.com`, hệ thống lại chấp nhận là hợp lệ. Điều này cho thấy validation email không nhất quán và thông báo lỗi không phản ánh đúng nguyên nhân, vì vấn đề có vẻ liên quan đến độ dài nhưng message lại nói email không đúng định dạng.
+
+**Bước tái hiện / minh chứng:**
+
+1. Đăng nhập EMS bằng tài khoản admin.
+2. Vào Users Management.
+3. Mở Add User hoặc Edit User cho một user test an toàn.
+4. Nhập email rất dài có domain `@g.com`.
+5. Submit hoặc chuyển focus để quan sát validation.
+6. Quan sát lỗi `email must be an email`.
+7. Rút ngắn phần local-part của email nhưng vẫn giữ domain `@g.com`.
+8. Quan sát email ngắn hơn lại được hệ thống chấp nhận.
+
+**Kết quả mong đợi:**
+
+Validation phải nhất quán. Nếu email vượt quá giới hạn độ dài, hệ thống cần báo lỗi về độ dài tối đa; nếu email đúng định dạng thì không nên báo `email must be an email`.
+
+**Kết quả thực tế:**
+
+Cùng domain `@g.com` nhưng email dài bị báo sai là không đúng định dạng, còn email ngắn lại được chấp nhận. Participant/admin khó hiểu rule thật sự của field Email.
+
+**Đề xuất sửa:**
+
+Tách rule validation email format và max length; hiển thị message đúng nguyên nhân, ví dụ email quá dài thì báo giới hạn ký tự. Đồng bộ validation ở client và server để cùng một giá trị không cho kết quả khác nhau theo nhánh xử lý.
+
+**Ảnh minh chứng:**
+
+**Timestamp form:**
+
+Phản ảnh lúc 19:10 ngày 04/08/2026
+
+### C-F017 - Member Code quá dài không bị validate và gây Internal Server Error
+
+**Nguồn:** Manual test Scenario C
+
+**Màn hình:** C2 Gán vai trò / chỉnh sửa người dùng
+
+**Loại:** Bug
+
+**Mức độ:** 3
+
+**Mô tả:** Trong quá trình kiểm tra thủ công, khi nhập Member Code quá dài, hệ thống không verify giới hạn độ dài trước khi submit. Sau khi gửi form, hệ thống trả lỗi Internal Server Error thay vì chặn input hoặc hiển thị lỗi validation rõ ràng tại field.
+
+**Bước tái hiện / minh chứng:**
+
+1. Đăng nhập EMS bằng tài khoản admin.
+2. Vào Users Management.
+3. Mở Add User hoặc Edit User cho một user test an toàn.
+4. Nhập Member Code với chuỗi rất dài vượt quá độ dài hợp lý.
+5. Submit form.
+6. Quan sát hệ thống không chặn input trước khi gửi và trả lỗi Internal Server Error.
+
+**Kết quả mong đợi:**
+
+Hệ thống phải validate độ dài Member Code ở client/server, hiển thị lỗi rõ ràng tại field và không để lỗi server nội bộ lộ ra cho admin.
+
+**Kết quả thực tế:**
+
+Member Code quá dài được gửi lên server và gây Internal Server Error, làm admin không biết dữ liệu sai ở đâu và thao tác không hoàn tất đáng tin cậy.
+
+**Đề xuất sửa:**
+
+Bổ sung max-length cho Member Code ở UI và API; trả về lỗi validation 4xx có message rõ ràng thay vì lỗi 500/Internal Server Error. UI nên hiển thị lỗi tại field Member Code.
+
+**Ảnh minh chứng:**
+
+**Timestamp form:**
+
+Đã phản ảnh lúc 19:12 ngày 04/08/2026
+
+### C-F018 - Thông báo gợi ý Mật khẩu không hiển thị đầy đủ điều kiện (thiếu chữ số)
+
+**Nguồn:** Task 2 user testing Scenario C - Participants interview
+
+**Màn hình:** C2 Gán vai trò / chỉnh sửa người dùng
+
+**Loại:** Bug
+
+**Mức độ:** 2
+
+**Mô tả:** Trong phiên phỏng vấn người dùng thật, khi tạo/sửa người dùng, người tham gia quan sát cảnh báo tại trường Password và nhập đúng theo gợi ý (tối thiểu 8 ký tự, có chữ hoa và ký tự đặc biệt, ví dụ `Password!`). Tuy nhiên form vẫn báo lỗi không cho lưu. Chỉ sau khi thử nghiệm và tìm hiểu sâu mới biết hệ thống yêu cầu bắt buộc phải có thêm ít nhất 1 chữ số (digit), nhưng thông báo cảnh báo ban đầu không liệt kê tiêu chí này.
+
+**Bước tái hiện / minh chứng:**
+
+1. Đăng nhập EMS bằng tài khoản admin.
+2. Vào Users Management -> Mở Add User hoặc Edit User dialog.
+3. Nhập mật khẩu thỏa mãn cảnh báo ban đầu hiển thị: 8 ký tự, có chữ hoa, có ký tự đặc biệt (ví dụ `Password!`).
+4. Quan sát hệ thống vẫn báo lỗi không cho submit form.
+5. Thử nhập thêm chữ số vào mật khẩu (ví dụ `Password1!`).
+6. Quan sát lúc này form mới chấp nhận mật khẩu hợp lệ.
+
+**Kết quả mong đợi:**
+
+Thông báo gợi ý/cảnh báo quy tắc mật khẩu phải minh bạch và liệt kê đầy đủ toàn bộ tiêu chí bắt buộc (tối thiểu 8 ký tự, 1 chữ hoa, 1 ký tự đặc biệt VÀ 1 chữ số).
+
+**Kết quả thực tế:**
+
+Thông báo gợi ý thiếu điều kiện chữ số, làm người dùng nhập đúng theo hướng dẫn hiển thị trên giao diện nhưng vẫn bị từ chối và bối rối không biết vì sao lỗi.
+
+**Đề xuất sửa:**
+
+Cập nhật thông báo gợi ý/lỗi của trường Password ở cả client và server hiển thị đầy đủ 4 điều kiện: độ dài >= 8, chữ hoa, ký tự đặc biệt và chữ số. Hiển thị live checklist các điều kiện thỏa mãn ngay khi người dùng đang nhập.
+
+**Ảnh minh chứng:**
+
+**Timestamp form:**
+
+Đã phản ánh lúc 19:15 ngày 04/08/2026
 
 ## Thang mức độ nghiêm trọng
 
