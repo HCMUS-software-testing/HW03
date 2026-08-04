@@ -14,29 +14,23 @@ Mỗi screenshot phải có:
 ## Tên file
 
 ```text
-D1_CP-01_windows_chrome_desktop.png
-D1_CP-02_windows_edge_desktop.png
+D1_CP-01_windows_edge_desktop.png
+D1_CP-02_windows_chrome_desktop.png
 D1_CP-03_macos_safari_desktop.png
-D1_CP-04_android_chrome_phone.png
-D1_CP-05_android_firefox_phone.png
-D1_CP-06_ios_safari_phone.png
-D1_CP-07_tablet_samsung_or_opera.png
+D1_CP-04_android_firefox_phone.png
+D1_CP-05_android_samsung_tablet.png
 
-D2_CP-01_windows_chrome_desktop.png
-D2_CP-02_windows_edge_desktop.png
+D2_CP-01_windows_edge_desktop.png
+D2_CP-02_windows_chrome_desktop.png
 D2_CP-03_macos_safari_desktop.png
-D2_CP-04_android_chrome_phone.png
-D2_CP-05_android_firefox_phone.png
-D2_CP-06_ios_safari_phone.png
-D2_CP-07_tablet_samsung_or_opera.png
+D2_CP-04_android_firefox_phone.png
+D2_CP-05_android_samsung_tablet.png
 
-D3_CP-01_windows_chrome_desktop.png
-D3_CP-02_windows_edge_desktop.png
+D3_CP-01_windows_edge_desktop.png
+D3_CP-02_windows_chrome_desktop.png
 D3_CP-03_macos_safari_desktop.png
-D3_CP-04_android_chrome_phone.png
-D3_CP-05_android_firefox_phone.png
-D3_CP-06_ios_safari_phone.png
-D3_CP-07_tablet_samsung_or_opera.png
+D3_CP-04_android_firefox_phone.png
+D3_CP-05_android_samsung_tablet.png
 ```
 
 Nếu có ảnh defect riêng:
@@ -46,4 +40,3 @@ CP-F-D1-001_<short-problem>.png
 CP-F-D2-001_<short-problem>.png
 CP-F-D3-001_<short-problem>.png
 ```
-

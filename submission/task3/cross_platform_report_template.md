@@ -10,20 +10,19 @@
 | Scenario | D - User requests Support and Admin resolves it |
 | SUT | `https://prod-dev.ems-fitus.cloud` |
 | Screens | D1, D2, D3 |
-| Công cụ | `[BrowserStack Live / LambdaTest / thiết bị thật - điền sau]` |
+| Công cụ | `BrowserStack Live` |
 | Ngày test | `[YYYY-MM-DD]` |
+| Trạng thái thực thi | `[Chưa chạy thật / Đang chạy / Hoàn tất]` |
 
 ## 2. Test Environment
 
 | Cell | OS | Browser | Device class | Device/profile | Tool/session link | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| CP-01 | Windows 11 | Chrome | Desktop | `[Điền device/profile]` | `[Điền link nếu có]` | Baseline desktop. |
-| CP-02 | Windows 11 | Edge | Desktop | `[Điền device/profile]` | `[Điền link nếu có]` | Desktop Edge. |
-| CP-03 | macOS | Safari | Desktop | `[Điền device/profile]` | `[Điền link nếu có]` | Safari desktop. |
-| CP-04 | Android | Chrome | Phone | `[Điền device/profile]` | `[Điền link nếu có]` | Android phone Chrome. |
-| CP-05 | Android | Firefox | Phone | `[Điền device/profile]` | `[Điền link nếu có]` | Android phone Firefox. |
-| CP-06 | iOS | Safari | Phone | `[Điền device/profile]` | `[Điền link nếu có]` | iOS Safari. |
-| CP-07 | Android/iPadOS | Samsung Internet/Opera | Tablet | `[Điền device/profile]` | `[Điền link nếu có]` | Tablet coverage và browser thứ 5. |
+| CP-01 | Windows 11 | Edge | Desktop | `Windows 11 + Edge latest` | `[Điền link nếu có]` | Desktop Edge. |
+| CP-02 | Windows 11 | Chrome | Desktop | `Windows 11 + Chrome latest` | `[Điền link nếu có]` | Baseline desktop. |
+| CP-03 | macOS | Safari | Desktop | `macOS Safari latest` | `[Điền link nếu có]` | Safari desktop. |
+| CP-04 | Android | Firefox | Phone | `Samsung Galaxy S23/S24 + Firefox` | `[Điền link nếu có]` | Android phone Firefox. |
+| CP-05 | Android | Samsung Internet | Tablet | `Samsung Galaxy Tab S8/S9/A9 + Samsung Browser` | `[Điền link nếu có]` | Tablet coverage và browser thứ 5. |
 
 ## 3. Method
 
@@ -37,10 +36,10 @@
 
 | Screen | Cells run | Pass | Fail | Needs review | Compatibility risk summary |
 | --- | ---: | ---: | ---: | ---: | --- |
-| D1 | 7 | `[ ]` | `[ ]` | `[ ]` | `[Tóm tắt sau khi test]` |
-| D2 | 7 | `[ ]` | `[ ]` | `[ ]` | `[Tóm tắt sau khi test]` |
-| D3 | 7 | `[ ]` | `[ ]` | `[ ]` | `[Tóm tắt sau khi test]` |
-| Total | 21 | `[ ]` | `[ ]` | `[ ]` | `[Tóm tắt sau khi test]` |
+| D1 | 5 | `[ ]` | `[ ]` | `[ ]` | `[Tóm tắt sau khi test]` |
+| D2 | 5 | `[ ]` | `[ ]` | `[ ]` | `[Tóm tắt sau khi test]` |
+| D3 | 5 | `[ ]` | `[ ]` | `[ ]` | `[Tóm tắt sau khi test]` |
+| Total | 15 | `[ ]` | `[ ]` | `[ ]` | `[Tóm tắt sau khi test]` |
 
 ## 5. Per-Screen Results
 
@@ -48,37 +47,31 @@
 
 | Cell | OS | Browser | Device class | Result | Screenshot ref | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| D1-CP-01 | Windows 11 | Chrome | Desktop | `[Pass/Fail]` | `submission/task3/screenshots/D1_CP-01_windows_chrome_desktop.png` | `[Điền sau]` |
-| D1-CP-02 | Windows 11 | Edge | Desktop | `[Pass/Fail]` | `submission/task3/screenshots/D1_CP-02_windows_edge_desktop.png` | `[Điền sau]` |
+| D1-CP-01 | Windows 11 | Edge | Desktop | `[Pass/Fail]` | `submission/task3/screenshots/D1_CP-01_windows_edge_desktop.png` | `[Điền sau]` |
+| D1-CP-02 | Windows 11 | Chrome | Desktop | `[Pass/Fail]` | `submission/task3/screenshots/D1_CP-02_windows_chrome_desktop.png` | `[Điền sau]` |
 | D1-CP-03 | macOS | Safari | Desktop | `[Pass/Fail]` | `submission/task3/screenshots/D1_CP-03_macos_safari_desktop.png` | `[Điền sau]` |
-| D1-CP-04 | Android | Chrome | Phone | `[Pass/Fail]` | `submission/task3/screenshots/D1_CP-04_android_chrome_phone.png` | `[Điền sau]` |
-| D1-CP-05 | Android | Firefox | Phone | `[Pass/Fail]` | `submission/task3/screenshots/D1_CP-05_android_firefox_phone.png` | `[Điền sau]` |
-| D1-CP-06 | iOS | Safari | Phone | `[Pass/Fail]` | `submission/task3/screenshots/D1_CP-06_ios_safari_phone.png` | `[Điền sau]` |
-| D1-CP-07 | Android/iPadOS | Samsung Internet/Opera | Tablet | `[Pass/Fail]` | `submission/task3/screenshots/D1_CP-07_tablet_samsung_or_opera.png` | `[Điền sau]` |
+| D1-CP-04 | Android | Firefox | Phone | `[Pass/Fail]` | `submission/task3/screenshots/D1_CP-04_android_firefox_phone.png` | `[Điền sau]` |
+| D1-CP-05 | Android | Samsung Internet | Tablet | `[Pass/Fail]` | `submission/task3/screenshots/D1_CP-05_android_samsung_tablet.png` | `[Điền sau]` |
 
 ### D2 - User My Requests list/detail
 
 | Cell | OS | Browser | Device class | Result | Screenshot ref | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| D2-CP-01 | Windows 11 | Chrome | Desktop | `[Pass/Fail]` | `submission/task3/screenshots/D2_CP-01_windows_chrome_desktop.png` | `[Điền sau]` |
-| D2-CP-02 | Windows 11 | Edge | Desktop | `[Pass/Fail]` | `submission/task3/screenshots/D2_CP-02_windows_edge_desktop.png` | `[Điền sau]` |
+| D2-CP-01 | Windows 11 | Edge | Desktop | `[Pass/Fail]` | `submission/task3/screenshots/D2_CP-01_windows_edge_desktop.png` | `[Điền sau]` |
+| D2-CP-02 | Windows 11 | Chrome | Desktop | `[Pass/Fail]` | `submission/task3/screenshots/D2_CP-02_windows_chrome_desktop.png` | `[Điền sau]` |
 | D2-CP-03 | macOS | Safari | Desktop | `[Pass/Fail]` | `submission/task3/screenshots/D2_CP-03_macos_safari_desktop.png` | `[Điền sau]` |
-| D2-CP-04 | Android | Chrome | Phone | `[Pass/Fail]` | `submission/task3/screenshots/D2_CP-04_android_chrome_phone.png` | `[Điền sau]` |
-| D2-CP-05 | Android | Firefox | Phone | `[Pass/Fail]` | `submission/task3/screenshots/D2_CP-05_android_firefox_phone.png` | `[Điền sau]` |
-| D2-CP-06 | iOS | Safari | Phone | `[Pass/Fail]` | `submission/task3/screenshots/D2_CP-06_ios_safari_phone.png` | `[Điền sau]` |
-| D2-CP-07 | Android/iPadOS | Samsung Internet/Opera | Tablet | `[Pass/Fail]` | `submission/task3/screenshots/D2_CP-07_tablet_samsung_or_opera.png` | `[Điền sau]` |
+| D2-CP-04 | Android | Firefox | Phone | `[Pass/Fail]` | `submission/task3/screenshots/D2_CP-04_android_firefox_phone.png` | `[Điền sau]` |
+| D2-CP-05 | Android | Samsung Internet | Tablet | `[Pass/Fail]` | `submission/task3/screenshots/D2_CP-05_android_samsung_tablet.png` | `[Điền sau]` |
 
 ### D3 - Admin Support Requests list
 
 | Cell | OS | Browser | Device class | Result | Screenshot ref | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| D3-CP-01 | Windows 11 | Chrome | Desktop | `[Pass/Fail]` | `submission/task3/screenshots/D3_CP-01_windows_chrome_desktop.png` | `[Điền sau]` |
-| D3-CP-02 | Windows 11 | Edge | Desktop | `[Pass/Fail]` | `submission/task3/screenshots/D3_CP-02_windows_edge_desktop.png` | `[Điền sau]` |
+| D3-CP-01 | Windows 11 | Edge | Desktop | `[Pass/Fail]` | `submission/task3/screenshots/D3_CP-01_windows_edge_desktop.png` | `[Điền sau]` |
+| D3-CP-02 | Windows 11 | Chrome | Desktop | `[Pass/Fail]` | `submission/task3/screenshots/D3_CP-02_windows_chrome_desktop.png` | `[Điền sau]` |
 | D3-CP-03 | macOS | Safari | Desktop | `[Pass/Fail]` | `submission/task3/screenshots/D3_CP-03_macos_safari_desktop.png` | `[Điền sau]` |
-| D3-CP-04 | Android | Chrome | Phone | `[Pass/Fail]` | `submission/task3/screenshots/D3_CP-04_android_chrome_phone.png` | `[Điền sau]` |
-| D3-CP-05 | Android | Firefox | Phone | `[Pass/Fail]` | `submission/task3/screenshots/D3_CP-05_android_firefox_phone.png` | `[Điền sau]` |
-| D3-CP-06 | iOS | Safari | Phone | `[Pass/Fail]` | `submission/task3/screenshots/D3_CP-06_ios_safari_phone.png` | `[Điền sau]` |
-| D3-CP-07 | Android/iPadOS | Samsung Internet/Opera | Tablet | `[Pass/Fail]` | `submission/task3/screenshots/D3_CP-07_tablet_samsung_or_opera.png` | `[Điền sau]` |
+| D3-CP-04 | Android | Firefox | Phone | `[Pass/Fail]` | `submission/task3/screenshots/D3_CP-04_android_firefox_phone.png` | `[Điền sau]` |
+| D3-CP-05 | Android | Samsung Internet | Tablet | `[Pass/Fail]` | `submission/task3/screenshots/D3_CP-05_android_samsung_tablet.png` | `[Điền sau]` |
 
 ## 6. Compatibility Findings
 
@@ -89,4 +82,3 @@
 ## 7. Conclusion
 
 `[Viết sau khi chạy thật: nêu màn hình nào ổn định nhất, màn hình nào có rủi ro compatibility cao nhất, browser/device nào tạo lỗi nghiêm trọng nhất, và ưu tiên sửa.]`
-

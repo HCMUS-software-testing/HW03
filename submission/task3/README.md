@@ -17,6 +17,8 @@ Task 3 kiểm tra ba màn hình đã chọn của Scenario D trên nhiều OS, b
 
 Task này không thay thế Task 1B. Task 1B là chạy checklist GUI/usability sâu trên từng màn hình; Task 3 dùng cùng màn hình và checklist nền nhưng tập trung vào tính tương thích khi đổi môi trường chạy.
 
+Matrix hiện tại dùng `5` cell cho mỗi màn hình, tổng `15` screenshot thật. Bộ cell này vẫn phủ đủ `3 OS`, `5 browser/platform`, và `3 device class` cho từng screen theo yêu cầu đề.
+
 ## 2. Màn hình cần test
 
 | Screen ID | Màn hình | Vai trò | URL/đường dẫn cần mở | Trạng thái đại diện cần chụp |
@@ -44,7 +46,7 @@ Mỗi ô trong matrix phải có screenshot thật. Screenshot cần thấy đ�
 | File | Mục đích |
 | --- | --- |
 | `task3_checklist_scope.md` | Xác định subset checklist Task 1A nên dùng cho compatibility và các mục N/A hợp lý. |
-| `matrix_template.md` | Matrix D1-D2-D3 để điền kết quả thật và screenshot ref. |
+| `matrix_template.md` | Matrix D1-D2-D3 với `5` cell/màn hình để điền kết quả thật và screenshot ref. |
 | `screenshot_protocol.md` | Quy trình chụp ảnh trên BrowserStack, cách đặt overlay và naming convention. |
 | `cross_platform_report_template.md` | Template report Task 3 để đưa vào main report. |
 | `task3_findings_log_template.md` | Template log defect/usability riêng cho Task 3, dùng để đồng bộ với Google Form và aggregated log chung. |
@@ -57,4 +59,3 @@ Mỗi ô trong matrix phải có screenshot thật. Screenshot cần thấy đ�
 3. Đánh dấu `Pass` nếu layout và thao tác chính dùng được; đánh dấu `Fail` nếu có lỗi tương thích.
 4. Với mỗi `Fail`, ghi defect vào `task3_findings_log_template.md`, submit Google Form, rồi copy entry vào aggregated findings log chung của bài.
 5. Tổng hợp kết quả cuối vào `cross_platform_report_template.md`.
-

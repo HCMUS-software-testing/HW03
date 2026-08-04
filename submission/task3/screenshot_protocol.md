@@ -2,14 +2,14 @@
 
 ## 1. Khi nào chụp screenshot
 
-Chụp một screenshot cho mỗi cell trong `matrix_template.md`. Với matrix đề xuất có 7 cell cho 3 màn hình, tổng số ảnh tối thiểu là 21 ảnh.
+Chụp một screenshot cho mỗi cell trong `matrix_template.md`. Với matrix đang dùng có `5` cell cho mỗi màn hình, tổng số ảnh tối thiểu là `15` ảnh.
 
 | Màn hình | Số cell | Số ảnh tối thiểu |
 | --- | ---: | ---: |
-| D1 | 7 | 7 |
-| D2 | 7 | 7 |
-| D3 | 7 | 7 |
-| Tổng | 21 | 21 |
+| D1 | 5 | 5 |
+| D2 | 5 | 5 |
+| D3 | 5 | 5 |
+| Tổng | 15 | 15 |
 
 ## 2. Nội dung screenshot phải có
 
@@ -78,9 +78,9 @@ submission/task3/screenshots/<Screen>_<Cell>_<os>_<browser>_<device>.png
 Ví dụ:
 
 ```text
-submission/task3/screenshots/D1_CP-01_windows_chrome_desktop.png
-submission/task3/screenshots/D2_CP-04_android_chrome_phone.png
-submission/task3/screenshots/D3_CP-07_tablet_samsung_or_opera.png
+submission/task3/screenshots/D1_CP-01_windows_edge_desktop.png
+submission/task3/screenshots/D2_CP-04_android_firefox_phone.png
+submission/task3/screenshots/D3_CP-05_android_samsung_tablet.png
 ```
 
 Nếu chụp thêm ảnh cho lỗi cụ thể, đặt tên có finding ID:
@@ -99,4 +99,3 @@ submission/task3/screenshots/CP-F-D3-001_android_chrome_sidebar_overflow.png
 | Screenshot thấy browser/OS/device identity chưa? | `[ ]` |
 | Nếu Fail, screenshot đã chụp đúng lỗi chưa? | `[ ]` |
 | Đã ghi result và notes vào `matrix_template.md` chưa? | `[ ]` |
-
