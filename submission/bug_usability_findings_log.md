@@ -655,8 +655,11 @@ Cùng domain `@g.com` nhưng email dài bị báo sai là không đúng định 
 Tách rule validation email format và max length; hiển thị message đúng nguyên nhân, ví dụ email quá dài thì báo giới hạn ký tự. Đồng bộ validation ở client và server để cùng một giá trị không cho kết quả khác nhau theo nhánh xử lý.
 
 **Ảnh minh chứng:**
+<img src="screenshots/checklist-failures/C-F016.png"  alt="C-F016 evidence">
 
 **Timestamp form:**
+
+<img src="screenshots/checklist-failures/C-F016-form.png" alt="C-F016 Google Form submission evidence">
 
 Phản ảnh lúc 19:10 ngày 04/08/2026
 
@@ -694,8 +697,10 @@ Member Code quá dài được gửi lên server và gây Internal Server Error,
 Bổ sung max-length cho Member Code ở UI và API; trả về lỗi validation 4xx có message rõ ràng thay vì lỗi 500/Internal Server Error. UI nên hiển thị lỗi tại field Member Code.
 
 **Ảnh minh chứng:**
+<img src="screenshots/checklist-failures/C-F017.png" alt="C-F017 evidence">
 
 **Timestamp form:**
+<img src="screenshots/checklist-failures/C-F017-form.png" alt="C-F017 Google Form submission evidence">
 
 Đã phản ảnh lúc 19:12 ngày 04/08/2026
 
@@ -733,8 +738,10 @@ Thông báo gợi ý thiếu điều kiện chữ số, làm người dùng nh�
 Cập nhật thông báo gợi ý/lỗi của trường Password ở cả client và server hiển thị đầy đủ 4 điều kiện: độ dài >= 8, chữ hoa, ký tự đặc biệt và chữ số. Hiển thị live checklist các điều kiện thỏa mãn ngay khi người dùng đang nhập.
 
 **Ảnh minh chứng:**
+<img src="screenshots/checklist-failures/C-F018.png" alt="C-F018 evidence">
 
 **Timestamp form:**
+<img src="screenshots/checklist-failures/C-F018-form.png" alt="C-F018 Google Form submission evidence">
 
 Đã phản ánh lúc 19:15 ngày 04/08/2026
 
