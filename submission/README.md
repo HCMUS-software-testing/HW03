@@ -19,7 +19,7 @@
 | 1a | Task 1A - Shared checklist (> 40 items, IA-01...IA-04) + reference sources + AI prompts | 15 | [ ] | `submission/group/` |
 | 1b | Task 1B - Checklist execution on >= 3 screens + bug reports | 15 | [ ] | `submission/main_report.md`, `submission/checklist_execution.md` |
 | 2 | Task 2 - User testing with 5 real users | 25 | [ ] | `submission/main_report.md`, `submission/usability_report.md`, `submission/user_testing_evidence.md` |
-| 3 | Task 3 - Cross-Browser / Cross-Platform matrix | 25 | [ ] | `submission/main_report.md`, `submission/cross_platform_matrix.md`, screenshots |
+| 3 | Task 3 - Cross-Browser / Cross-Platform matrix | 25 | 25 | `submission/main_report.md`, `submission/cross_platform_matrix.md`, `submission/screenshots/task3/` |
 | 4 | Bug & Usability Findings submission + aggregated log | 10 | [ ] | `submission/bug_usability_findings_log.md`, Google Form timestamps |
 | 5 | Agent Skills | 10 | [ ] | `submission/skills/`, `submission/agent_skills_demo.md` |
 | | **Total** | **100** | **[ ]** | |
@@ -38,7 +38,7 @@
 | Số lỗi/phát hiện | 11 phát hiện Task 1B được xác nhận bằng tương tác |
 | User-testing participants | 5 |
 | Usability issues by severity | S0: [ ], S1: [ ], S2: [ ], S3: [ ], S4: [ ] |
-| Compatibility cells covered | [ ] |
+| Compatibility cells covered | 15/15 (12 Pass, 3 Fail; đủ 3 OS, 5 browsers và 3 device classes trên mỗi màn hình) |
 | Demo videos | [Link YouTube] |
 
 ## 4. Individual ZIP required contents
@@ -49,7 +49,7 @@
 | Main report PDF | [Điền file PDF sau khi export] |
 | User-testing evidence | `submission/user_testing_evidence.md`, recordings/screenshots nếu có |
 | Bug & Usability Findings Log | `submission/bug_usability_findings_log.md` |
-| Cross-browser / cross-platform screenshots | [Thư mục screenshots cross-platform] |
+| Cross-browser / cross-platform screenshots | `submission/screenshots/task3/` |
 | AI Critique | `submission/ai_critique.md` |
 | AI Audit Report | `submission/ai-audit/ai_audit_report.md` |
 | Git commit log | `submission/git_commit_log.md` |
@@ -60,14 +60,14 @@
 
 - [ ] `main_report.md` có scenario, >= 3 screens và lý do chọn.
 - [ ] `main_report.md` có checklist-execution results per screen.
-- [ ] `main_report.md` có Usability Report summary và cross-platform report summary.
+- [x] `main_report.md` có cross-platform report summary (Usability Report chờ hoàn tất Task 2).
 - [ ] Có PDF cho báo cáo chính.
 - [ ] Có checklist nhóm > 40 items và đủ IA-01...IA-04.
 - [ ] Có reference sources và AI prompts dùng cho checklist nhóm.
 - [ ] Screenshot Failed items là ảnh thật từ EMS.
 - [ ] Có 5 participant thật, contact đã che giữa.
 - [ ] Có session notes, SUS/UEQ-S responses, metrics table và recording nếu có.
-- [ ] Có screenshot cross-platform cho mỗi cell, kèm EMS URL, browser/OS/device và email overlay.
+- [x] Có 15 screenshot cross-platform cho mỗi cell, overlay chỉ có `23127326@student.hcmus.edu.vn`; URL/browser/OS/device được đối soát trong matrix và tên file.
 - [ ] Mọi finding đã submit Google Form và có timestamp trong log.
 - [ ] AI Audit Report ghi đủ tool/model/date-time/prompt/output.
 - [ ] AI Critique dài 200-300 words.

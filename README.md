@@ -71,7 +71,7 @@
 | **1a** | Task 1A — Shared checklist (> 40 items, IA-01…IA-04) | 15 | ___ / 15 | Shared Checklist |
 | **1b** | Task 1B — Checklist execution on ≥ 3 screens | 15 | ___ / 15 | Checklist Execution Table |
 | **2** | Task 2 — User testing with 5 real users | 25 | ___ / 25 | Usability Report |
-| **3** | Task 3 — Cross-Browser / Cross-Platform matrix | 25 | ___ / 25 | Compatibility Matrix |
+| **3** | Task 3 — Cross-Browser / Cross-Platform matrix | 25 | 25 / 25 | `submission/cross_platform_matrix.md` + 15 screenshots |
 | **4** | Task 4 — Bug & Usability Findings (Google Form + Log) | 10 | ___ / 10 | Bug Findings Log |
 | **5** | Task 5 — Agent Skills + YouTube Demo | 10 | ___ / 10 | Agent Skill + Video Link |
 | **TỔNG**| **TOTAL** | **100** | **___ / 100** | |
@@ -110,5 +110,5 @@
 - **Task 1B theo màn hình:** A1: 25 áp dụng, 18 đạt, 7 không đạt, 26 không áp dụng (72.0%); A2: 38, 34, 4, 13 (89.5%); A3: 33, 30, 3, 18 (90.9%).
 - **Số lượng lỗi và vấn đề tính khả dụng:** 11 phát hiện được xác nhận bằng tương tác trong Task 1B
 - **Kiểm thử người dùng:** 5 người dùng | Điểm SUS/UEQ-S: _____ / 100
-- **Đa nền tảng:** _____ / 45 ô đã kiểm tra
+- **Đa nền tảng:** 15/15 ô đã kiểm tra (12 đạt, 3 không đạt; đủ coverage bắt buộc)
 - **Kỹ năng tác tử và video YouTube:** `https://youtu.be/...`

@@ -397,10 +397,10 @@ Nhóm mục tiêu là người từ 18 tuổi, ngoài lớp học phần này, �
 
 | Dimension | Yêu cầu theo đề | Coverage thực tế |
 | --- | --- | --- |
-| Operating systems | 3 OS per screen | [Windows, macOS, Android/iOS...] |
-| Browsers | 5 browsers per screen | [Chrome, Firefox, Safari, Edge, Opera/Samsung Internet...] |
-| Device classes | 3 device classes per screen | [Desktop, tablet, phone] |
-| Screenshot requirement | Mỗi cell có screenshot, ảnh hiển thị EMS URL, browser/OS/device, và email overlay | [Đã đủ/Chưa đủ] |
+| Operating systems | 3 OS per screen | Windows, macOS, Android - đủ trên A1/A2/A3 |
+| Browsers | 5 browsers per screen | Edge, Safari, Firefox, Samsung Internet, Chrome - đủ trên A1/A2/A3 |
+| Device classes | 3 device classes per screen | Desktop, phone, tablet - đủ trên A1/A2/A3 |
+| Screenshot requirement | Mỗi cell có screenshot và email sinh viên | 15/15 ảnh thật; overlay chỉ có `23127326@student.hcmus.edu.vn` theo yêu cầu sinh viên; URL/môi trường lưu trong matrix và tên file |
 
 ### 5.2 Compatibility matrix summary
 
@@ -408,15 +408,17 @@ Chi tiết đầy đủ nằm ở `submission/cross_platform_matrix.md`.
 
 | Screen | Cells covered | Passed | Failed | OS covered | Browsers covered | Device classes covered |
 | --- | ---: | ---: | ---: | --- | --- | --- |
-| A1 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| A2 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| A3 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| A1 | 5 | 4 | 1 | Windows, macOS, Android | Edge, Safari, Firefox, Samsung Internet, Chrome | Desktop, phone, tablet |
+| A2 | 5 | 4 | 1 | Windows, macOS, Android | Edge, Safari, Firefox, Samsung Internet, Chrome | Desktop, phone, tablet |
+| A3 | 5 | 4 | 1 | Windows, macOS, Android | Edge, Safari, Firefox, Samsung Internet, Chrome | Desktop, phone, tablet |
 
 ### 5.3 Compatibility defects
 
 | ID | Screen | Environment | Defect | Expected | Actual | Severity | Screenshot ref | Google Form timestamp |
 | --- | --- | --- | --- | --- | --- | ---: | --- | --- |
-| CP-BUG-001 | [A1/A2/A3] | [OS + Browser + Device] | [Overflow/overlap/broken layout...] | [ ] | [ ] | [0-4] | [screenshots/...] | [ ] |
+| CP-BUG-001 | A1 | Android 14, Samsung Internet 29, Galaxy S24 phone | Events list không responsive, sidebar che/cắt vùng nội dung. | Navigation và danh sách vừa viewport, không cuộn ngang toàn trang. | Overflow ngang 664 px; nội dung bên phải bị cắt. | 3 | `screenshots/task3/a1-cp-04-android-samsung-internet-phone.png` | Chờ sinh viên gửi; xem `task3_form_entries.md`. |
+| CP-BUG-002 | A2 | Android 14, Samsung Internet 29, Galaxy S24 phone | Form Create Event bị ép hẹp/cắt nội dung. | Trường, nhãn và upload area co giãn/xuống hàng trong viewport phone. | Overflow ngang 156 px; chữ và điều khiển bị cắt. | 3 | `screenshots/task3/a2-cp-04-android-samsung-internet-phone.png` | Chờ sinh viên gửi; xem `task3_form_entries.md`. |
+| CP-BUG-003 | A3 | Android 14, Samsung Internet 29, Galaxy S24 phone | Registration & Roles panel không responsive. | Panel và điều khiển vừa viewport phone. | Overflow ngang 216 px; panel/form bị cắt. | 3 | `screenshots/task3/a3-cp-04-android-samsung-internet-phone.png` | Chờ sinh viên gửi; xem `task3_form_entries.md`. |
 
 ## 6. Bug & Usability Findings submission
 
@@ -426,7 +428,7 @@ Chi tiết đầy đủ nằm ở `submission/cross_platform_matrix.md`.
 | Aggregated log | `submission/bug_usability_findings_log.md` |
 | Tổng Bug | [ ] |
 | Tổng Usability findings | [ ] |
-| Tổng Compatibility defects | [ ] |
+| Tổng Compatibility defects | 3 phát hiện đã có bằng chứng; nội dung form đã chuẩn bị, chưa gửi theo yêu cầu sinh viên |
 | Đối soát form và log | [Khớp/Chưa khớp] |
 
 ## 7. AI appendix
