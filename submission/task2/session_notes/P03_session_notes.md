@@ -10,11 +10,11 @@ File này dành cho người điều phối/interviewer ghi chú, không đưa p
 | Họ tên             | Nguyễn Hữu Anh Trí                           |
 | Số điện thoại    | 0947570902                                      |
 | Thiết bị/browser   | Windows 11 - Edge                               |
-| Ngày giờ           | 22:31 4/8/2026                                  |
+| Ngày giờ           | `2026-08-04 22:31`                              |
 | Người điều phối | Lê Trung Kiên                                 |
 | Scenario             | D - User requests Support and Admin resolves it |
 | Consent              | Yes                                             |
-| Recording            | `[File path hoặc N/A]`                       |
+| Recording            | `N/A`                                           |
 
 ## 2. Setup đã đưa cho participant
 
@@ -51,32 +51,32 @@ Sau khi trải nghiệm phía user, hãy dùng màn hình admin đã được ch
 
 ## 4. Checklist quan sát nhanh
 
-| Màn hình                              | Hoàn tất?                    | Quan sát chính | Lỗi/nhầm lẫn                         | Do dự           | Có can thiệp?  |
-| --------------------------------------- | ------------------------------ | ---------------- | --------------------------------------- | ---------------- | ---------------- |
-| D1 - Create support request             | `[Completed/Partial/Failed]` | `[Điền]`     | `[Điền]`<br />Phần support cs đỏ | `[Số/lý do]` | `[Không/Có]` |
-| D2 - My Requests/detail                 | `[Completed/Partial/Failed]` | `[Điền]`     | `[Điền]`                            | `[Số/lý do]` | `[Không/Có]` |
-| D3 - Admin Support Requests list/search | `[Completed/Partial/Failed]` | `[Điền]`     | `[Điền]`                            | `[Số/lý do]` | `[Không/Có]` |
+| Màn hình                              | Hoàn tất?   | Quan sát chính | Lỗi/nhầm lẫn | Do dự | Có can thiệp? |
+| --------------------------------------- | ------------- | ---------------- | --------------- | ------ | --------------- |
+| D1 - Create support request             | `Completed`   | Tạo được support request thành công; participant hiểu mục tiêu task và biết form cần điền. | Không gặp lỗi thao tác rõ rệt. | 1 - Mất thời gian ở bước điền form support request. | `Không` |
+| D2 - My Requests/detail                 | `Completed`   | Tìm lại được request vừa tạo trong danh sách và tin hệ thống đã ghi nhận nhờ trạng thái `Pending`. | Không gặp lỗi thao tác rõ rệt. | 0 - Không do dự đáng kể khi tìm lại request vì request nằm ở đầu danh sách. | `Không` |
+| D3 - Admin Support Requests list/search | `Completed`   | Tìm được request ở màn hình admin; participant ưu tiên lọc bằng category/member code/title/status. | Không nhận ra ngay hai vùng `Pending` và `Resolved` có thể chuyển qua lại. | 1 - Do dự khi xác định request nằm trong tab/trạng thái nào vì card trạng thái chưa đủ giống tab điều hướng. | `Không` |
 
 ## 5. Timeline/quan sát chi tiết
 
 | Thời điểm | Màn hình | Hành động/quan sát | Có lỗi/nhầm lẫn? | Có do dự?  | Quote/ghi chú |
 | ------------ | ---------- | ---------------------- | -------------------- | ------------ | -------------- |
 | 00:00        | Start      | Bắt đầu task.       | No                   | No           |                |
-| 02:14        | D1         | `[Điền]`           | `[Yes/No]`         | `[Yes/No]` | `[Điền]`   |
-| 02:20        | D2         | `[Điền]`           | `[Yes/No]`         | `[Yes/No]` | `[Điền]`   |
-| 05:14        | D3         | `[Điền]`           | `[Yes/No]`         | `[Yes/No]` | `[Điền]`   |
+| 02:14        | D1         | Hoàn tất tạo support request; bước điền form là phần làm participant chậm nhất. | No                   | Yes          | Participant trả lời bước chậm nhất là `Điền form support request`. |
+| 02:20        | D2         | Tìm lại request vừa tạo trong danh sách user và xác nhận request nằm ở đầu danh sách. | No                   | No           | Tin hệ thống đã ghi nhận vì thấy trạng thái `Pending` và request xuất hiện trong danh sách. |
+| 05:14        | D3         | Tìm request ở màn hình admin; participant tìm được request nhưng không nhận ra ngay `Pending` và `Resolved` là hai tab/card có thể chuyển qua lại. | No                   | Yes          | Participant nhận xét thêm cột `REQUEST` khá rộng và filter date range nên để một hàng riêng. |
 
 ## 6. Kết quả task
 
 | Metric        | Giá trị                                |
 | ------------- | ---------------------------------------- |
-| Success       | `[Completed/Partial/Failed]`           |
-| Time on task  | `[mm:ss]`                              |
-| Errors        | `[Số]`                                |
-| Hesitations   | `[Số]`                                |
-| Interventions | `[Không/Có, mô tả]`                |
-| Key friction  | `[Điền]`                             |
-| Evidence      | `[Screenshot/recording path nếu có]` |
+| Success       | `Completed`                              |
+| Time on task  | 05:14                                    |
+| Errors        | 0                                        |
+| Hesitations   | 2                                        |
+| Interventions | `Không`                                  |
+| Key friction  | Form tạo support request làm participant chậm nhất; ở D3, trạng thái `Pending`/`Resolved` chưa đủ nổi bật như tab điều hướng và bố cục bảng/filter admin còn gây giảm khả năng quét thông tin. |
+| Evidence      | `submission/task2/session_notes/image/P03_session_notes/1785858880325.png`; `submission/task2/session_notes/image/P03_session_notes/1785859116174.png`; `submission/task2/session_notes/image/P03_session_notes/1785859136741.png` |
 
 ## 7. Câu trả lời sau task
 
@@ -113,22 +113,24 @@ Sau khi trải nghiệm phía user, hãy dùng màn hình admin đã được ch
 | SUS-08          | Tôi thấy hệ thống này rườm rà hoặc bất tiện khi sử dụng.                                                      |          2 |
 | SUS-09          | Tôi cảm thấy tự tin khi sử dụng flow support request này.                                                           |          4 |
 | SUS-10          | Tôi cần học thêm nhiều thứ trước khi có thể sử dụng flow này thành thạo.                                    |          1 |
-| SUS score 0-100 | `[Người kiểm thử tính sau]`                                                                                         |            |
+| SUS score 0-100 | `75.0`                                                                                                              |            |
 
 ## 9. Candidate findings từ phiên này
 
-| ID tạm    | Screen         | Type                | Description  | Evidence         | Severity 0-4 | Có submit Google Form? |
-| ---------- | -------------- | ------------------- | ------------ | ---------------- | -----------: | ----------------------- |
-| UT-P03-001 | `[D1/D2/D3]` | `[Bug/Usability]` | `[Điền]` | `[Path/quote]` |              | `[Yes/No]`            |
+| ID tạm    | Screen   | Type        | Description  | Evidence         | Severity 0-4 | Có submit Google Form? |
+| ---------- | -------- | ----------- | ------------ | ---------------- | -----------: | ----------------------- |
+| UT-P03-001 | `D2/D3`  | `Usability` | Control `Rows per page` xuất hiện ở danh sách support request nhưng participant ghi nhận số lượng dòng mỗi trang bị cố định ở cả phía user và admin, làm giảm cảm giác kiểm soát khi danh sách dài. | `submission/task2/session_notes/image/P03_session_notes/1785858880325.png`; ghi chú: `Số lượng rows per page bị fix cố định cả bên user và admin` | 1 | `No` |
+| UT-P03-002 | `D3`     | `Usability` | Bố cục bảng admin dành quá nhiều chiều rộng cho cột `REQUEST`, trong khi các bộ lọc như date range chưa được tách thành hàng riêng, làm giảm khả năng quét và lọc request. | `submission/task2/session_notes/image/P03_session_notes/1785859116174.png`; participant trả lời: `Admin: Cột REQUEST khá rộng. Filter date range nên để 1 hàng mới.` | 1 | `No` |
+| UT-P03-003 | `D3`     | `Usability` | Hai card/trạng thái `Pending` và `Resolved` chưa đủ affordance/signifier như tab có thể click, khiến participant tìm được request nhưng không nhận ra ngay có thể chuyển qua lại giữa hai trạng thái. | `submission/task2/session_notes/image/P03_session_notes/1785859136741.png`; participant trả lời: `Có. Nhưng không nhận ra 2 tab switch qua lại được` | 2 | `No` |
 
-- Số lượng rows per page bị fix cố định cả bên user và admin
+Hình này thể hiện control `Rows per page`; participant ghi nhận số lượng dòng mỗi trang bị cố định cả bên user và admin.
 
 ![1785858880325](image/P03_session_notes/1785858880325.png)
 
-- Cột Request trong Admin dashboard tab support requests
+Hình này thể hiện cột `REQUEST` trong admin support request list; participant nhận xét cột này khá rộng.
 
 ![1785859116174](image/P03_session_notes/1785859116174.png)
 
-- Khó nhận ra tab Pending, Resolved chuyển qua lại được
+Hình này thể hiện hai card `Pending` và `Resolved`; participant không nhận ra ngay đây là hai tab/trạng thái có thể chuyển qua lại.
 
 ![1785859136741](image/P03_session_notes/1785859136741.png)
