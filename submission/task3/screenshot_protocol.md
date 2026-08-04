@@ -78,9 +78,9 @@ submission/task3/screenshots/<Screen>_<Cell>_<os>_<browser>_<device>.png
 Ví dụ:
 
 ```text
-submission/task3/screenshots/D1_CP-01_windows_edge_desktop.png
-submission/task3/screenshots/D2_CP-04_android_firefox_phone.png
-submission/task3/screenshots/D3_CP-05_android_samsung_tablet.png
+submission/task3/screenshots/D1_CP-01_linux_firefox_desktop.png
+submission/task3/screenshots/D2_CP-04_android_samsung-tablet.png
+submission/task3/screenshots/D3_CP-05_android_chrome_phone.png
 ```
 
 Nếu chụp thêm ảnh cho lỗi cụ thể, đặt tên có finding ID:
