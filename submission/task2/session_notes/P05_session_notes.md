@@ -9,12 +9,12 @@ File này dành cho người điều phối/interviewer ghi chú, không đưa p
 | Participant ID       | `P05`                                         |
 | Họ tên             | Nguyễn Trần Thiên Phú                       |
 | Số điện thoại    | 0948245045                                      |
-| OS/browser          | Windows 11 - Chrome                             |
-| Ngày giờ           | 20:28                                           |
+| OS/browser           | Windows 11 - Chrome                             |
+| Ngày giờ           | `2026-08-05 20:28`                            |
 | Người điều phối | Lê Trung Kiên                                 |
 | Scenario             | D - User requests Support and Admin resolves it |
 | Consent              | Yes                                             |
-| Recording            | `[File path hoặc N/A]`                       |
+| Recording            | `N/A`                                         |
 
 ## 2. Setup đã đưa cho participant
 
@@ -51,32 +51,32 @@ Sau khi trải nghiệm phía user, hãy dùng màn hình admin đã được ch
 
 ## 4. Checklist quan sát nhanh
 
-| Màn hình                              | Hoàn tất?                    | Quan sát chính | Lỗi/nhầm lẫn | Do dự                           | Có can thiệp?  |
-| --------------------------------------- | ------------------------------ | ---------------- | --------------- | -------------------------------- | ---------------- |
-| D1 - Create support request             | `[Completed/Partial/Failed]` | `[Điền]`     | `[Điền]`    | `[Số/lý do]`                 | `[Không/Có]` |
-| D2 - My Requests/detail                 | `[Completed/Partial/Failed]` | `[Điền]`     | `[Điền]`    | `[Số/lý do]`                 | `[Không/Có]` |
-| D3 - Admin Support Requests list/search | `[Completed/Partial/Failed]` | `[Điền]`     | `[Điền]`    | Lộn qua danh sách request user | `[Không/Có]` |
+| Màn hình                              | Hoàn tất?   | Quan sát chính                                                                                                                      | Lỗi/nhầm lẫn                                                                                                                                            | Do dự                                                                             | Có can thiệp? |
+| --------------------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | --------------- |
+| D1 - Create support request             | `Completed` | Tạo được support request; participant hiểu form nhưng xem đây là bước chậm nhất.                                         | Không gặp lỗi thao tác rõ rệt.                                                                                                                       | 1 - Chậm ở bước tạo request.                                                  | `Không`      |
+| D2 - My Requests/detail                 | `Completed` | Tìm lại được request vừa tạo vì request nằm ở đầu danh sách và thấy trạng thái`Pending`.                           | Không gặp lỗi thao tác rõ rệt.                                                                                                                       | 0 - Không do dự đáng kể.                                                      | `Không`      |
+| D3 - Admin Support Requests list/search | `Completed` | Tìm được request trong admin, nhưng bị lẫn giữa danh sách support request của user và khu vực xử lý request của admin. | Menu/tên mục trong admin vẫn có`User Dashboard` và `My support requests`; filter trạng thái dễ bị hiểu như card tổng quan hơn là filter. | 2 - Do dự khi xác định đúng khu vực admin và cách lọc theo trạng thái. | `Không`      |
 
 ## 5. Timeline/quan sát chi tiết
 
-| Thời điểm | Màn hình | Hành động/quan sát | Có lỗi/nhầm lẫn? | Có do dự?  | Quote/ghi chú |
-| ------------ | ---------- | ---------------------- | -------------------- | ------------ | -------------- |
-| 00:00        | Start      | Bắt đầu task.       | No                   | No           |                |
-| 00:25        | D1         | `[Điền]`           | `[Yes/No]`         | `[Yes/No]` | `[Điền]`   |
-| 00:29        | D2         | `[Điền]`           | `[Yes/No]`         | `[Yes/No]` | `[Điền]`   |
-| 01:50        | D3         | `[Điền]`           | `[Yes/No]`         | `[Yes`     | `[Điền]`   |
+| Thời điểm | Màn hình | Hành động/quan sát                                                                                                                                          | Có lỗi/nhầm lẫn? | Có do dự? | Quote/ghi chú                                                              |
+| ------------ | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | ----------- | --------------------------------------------------------------------------- |
+| 00:00        | Start      | Bắt đầu task.                                                                                                                                                | No                   | No          |                                                                             |
+| 00:25        | D1         | Hoàn tất tạo support request; participant trả lời đây là bước làm chậm nhất.                                                                       | No                   | Yes         | `Tạo request`                                                            |
+| 00:29        | D2         | Mở danh sách request phía user, tìm lại được request vừa tạo vì nằm ở đầu và xác nhận hệ thống đã ghi nhận nhờ trạng thái`Pending`. | No                   | No          | `Có. Nằm trên đầu`; `Có. Vì có status Pending`                  |
+| 01:50        | D3         | Tìm request trong admin; participant bị lẫn sang danh sách support request của user và nhận xét filter status dễ gây nhầm lẫn.                      | Yes                  | Yes         | `Lộn qua danh sách request user`; `Filter status dễ gây nhầm lẫn` |
 
 ## 6. Kết quả task
 
-| Metric        | Giá trị                                |
-| ------------- | ---------------------------------------- |
-| Success       | `[Completed/Partial/Failed]`           |
-| Time on task  | `[mm:ss]`                              |
-| Errors        | `[Số]`                                |
-| Hesitations   | `[Số]`                                |
-| Interventions | `[Không/Có, mô tả]`                |
-| Key friction  | `[Điền]`                             |
-| Evidence      | `[Screenshot/recording path nếu có]` |
+| Metric        | Giá trị                                                                                                                                                                                                                                                    |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Success       | `Completed`                                                                                                                                                                                                                                                |
+| Time on task  | 01:50                                                                                                                                                                                                                                                        |
+| Errors        | 2                                                                                                                                                                                                                                                            |
+| Hesitations   | 3                                                                                                                                                                                                                                                            |
+| Interventions | `Không`                                                                                                                                                                                                                                                   |
+| Key friction  | Participant chậm nhất ở bước tạo request; ở D3, admin navigation còn lẫn với luồng user, filter status tách khỏi cụm filter còn lại nên dễ bị hiểu như card tổng quan, và participant ghi nhận giao diện user/admin chưa đồng nhất về màu sắc, đặc biệt sidebar user sáng còn sidebar admin tối. |
+| Evidence      | `submission/task2/session_notes/image/P05_session_notes/1785938625303.png`; `submission/task2/session_notes/image/P05_session_notes/1785938635976.png`                                                                                                   |
 
 ## 7. Câu trả lời sau task
 
@@ -89,7 +89,7 @@ Sau khi trải nghiệm phía user, hãy dùng màn hình admin đã được ch
 | Bạn có dễ tìm lại request vừa tạo không?                                                            | Có. Nằm trên đầu                                                                                                                  |
 | Nếu phải tìm request để xử lý, bạn sẽ dùng title, member code, category hay status?               | Status > category > title > member code                                                                                                |
 | Ở D3, bạn có tìm được đúng request trong Pending/Resolved tab không?                              | Dễ. Filter status dễ gây nhầm lẫn                                                                                                |
-| Bạn có nhận thấy vấn đề nào về layout mobile/desktop không?                                       | Layout user và admin không đồng nhất                                                                                              |
+| Bạn có nhận thấy vấn đề nào về layout mobile/desktop không?                                       | Giao diện màu sắc giữa user và admin không đồng nhất; sidebar của user màu sáng còn sidebar của admin màu tối.                  |
 
 ## 8. SUS raw score
 
@@ -113,13 +113,26 @@ Sau khi trải nghiệm phía user, hãy dùng màn hình admin đã được ch
 | SUS-08          | Tôi thấy hệ thống này rườm rà hoặc bất tiện khi sử dụng.                                                      |          3 |
 | SUS-09          | Tôi cảm thấy tự tin khi sử dụng flow support request này.                                                           |          4 |
 | SUS-10          | Tôi cần học thêm nhiều thứ trước khi có thể sử dụng flow này thành thạo.                                    |          2 |
-| SUS score 0-100 | `[Người kiểm thử tính sau]`                                                                                         |            |
+| SUS score 0-100 | `50.0`                                                                                                                   |            |
 
 ## 9. Candidate findings từ phiên này
 
-| ID tạm    | Screen         | Type                | Description  | Evidence         | Severity 0-4 | Có submit Google Form? |
-| ---------- | -------------- | ------------------- | ------------ | ---------------- | -----------: | ----------------------- |
-| UT-P05-001 | `[D1/D2/D3]` | `[Bug/Usability]` | `[Điền]` | `[Path/quote]` |              | `[Yes/No]`            |
+| ID tạm    | Screen    | Type          | Description                                                                                                                                                                                                                                          | Evidence                                                                                                                                   | Severity 0-4 | Có submit Google Form? |
+| ---------- | --------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | -----------: | ----------------------- |
+| UT-P05-001 | `D3`    | `Usability` | Khi đăng nhập bằng admin, menu tài khoản vẫn hiển thị các lựa chọn mang tính user như`User Dashboard` và `My support requests`, làm participant lẫn giữa danh sách request của user và khu vực xử lý request của admin. | `submission/task2/session_notes/image/P05_session_notes/1785938625303.png`; ghi chú: `Lộn qua danh sách request user`               |            2 | `No`                  |
+| UT-P05-002 | `D3`    | `Usability` | Trong màn hình admin, trạng thái`Pending`/`Resolved` nằm dạng card phía trên thay vì cùng cụm filter, khiến participant dễ hiểu đây là thống kê tổng quan hơn là bộ lọc trạng thái.                                    | `submission/task2/session_notes/image/P05_session_notes/1785938635976.png`; participant trả lời: `Filter status dễ gây nhầm lẫn` |            2 | `No`                  |
+| UT-P05-003 | `D2/D3` | `Usability` | Giao diện màu sắc giữa dashboard user và admin chưa đồng nhất: sidebar/filter phía user dùng nền sáng, trong khi sidebar admin dùng nền tối, làm hai khu vực có cảm giác thuộc hai hệ giao diện khác nhau. | `submission/task2/session_notes/image/P05_session_notes/1785939135603.png`; `submission/task2/session_notes/image/P05_session_notes/1785939155583.png`; participant trả lời: `Layout user và admin không đồng nhất` |            1 | `No`                  |
 
 - Lẫn lộn danh sách support request của user và admin khi đăng nhập bằng admin
+
+![1785938625303](image/P05_session_notes/1785938625303.png)
+
 - Danh sách support requests bên admin, filter status nên nằm chung với các filter còn lại vì user có thể không để ý nó là filter mà chỉ là overview.
+
+![1785938635976](image/P05_session_notes/1785938635976.png)
+
+- Giao diện màu sắc giữa dashboard user và admin không đồng nhất: sidebar của user màu sáng, sidebar của admin màu tối.
+
+![1785939135603](image/P05_session_notes/1785939135603.png)
+
+![1785939155583](image/P05_session_notes/1785939155583.png)
