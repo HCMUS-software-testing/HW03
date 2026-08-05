@@ -8,6 +8,15 @@
 
 Mọi defect hoặc đề xuất cải thiện tính khả dụng từ checklist execution, user testing và cross-platform testing phải xuất hiện ở cả file này và Google Form. Cột `Timestamp form` là khóa đối chiếu.
 
+## Thang mức độ nghiêm trọng
+
+| Mức độ | Ý nghĩa                                                                         |
+| ------ | ------------------------------------------------------------------------------- |
+| 1      | Lỗi thẩm mỹ hoặc gây khó chịu nhẹ                                               |
+| 2      | Vấn đề usability nhỏ, có workaround                                             |
+| 3      | Vấn đề lớn gây chậm, nhầm lẫn hoặc lỗi thao tác đáng kể                         |
+| 4      | Vấn đề nghiêm trọng chặn hoàn thành nhiệm vụ hoặc có rủi ro mất dữ liệu/bảo mật |
+
 ## Bảng tổng hợp finding
 
 | ID     | Màn hình                              | Loại      | Mức độ | Tóm tắt                                                                                          | Timestamp form                     |
@@ -785,11 +794,3 @@ Cập nhật thông báo gợi ý/lỗi của trường Password ở cả client
 
 Đã phản ánh lúc 19:15 ngày 04/08/2026
 
-## Thang mức độ nghiêm trọng
-
-| Mức độ | Ý nghĩa                                                                         |
-| ------ | ------------------------------------------------------------------------------- |
-| 1      | Lỗi thẩm mỹ hoặc gây khó chịu nhẹ                                               |
-| 2      | Vấn đề usability nhỏ, có workaround                                             |
-| 3      | Vấn đề lớn gây chậm, nhầm lẫn hoặc lỗi thao tác đáng kể                         |
-| 4      | Vấn đề nghiêm trọng chặn hoàn thành nhiệm vụ hoặc có rủi ro mất dữ liệu/bảo mật |

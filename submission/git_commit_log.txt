@@ -1,49 +1,585 @@
-* 7def5b1 (HEAD -> khanh) docs: align agent skill submission metadata
-* 8ad532c test: refresh Scenario C cross-platform evidence
-* 04abc62 docs: finalize AI audit critique and findings
-* 968556c docs: synchronize checklist counts and references
-* 5aede87 docs(readme): format video links section with line breaks and bullet points
-* 9cbaf67 docs(usability): update P04 video link to Google Drive with privacy policy note
-* 0249585 feat: add cross-platform test execution screenshots for various device and browser configurations
-* 3e606ac chore: remove unused configuration file
-* 32b39e0 docs(git): update git commit log with Task 3 commits
-* 9950a89 docs(report): update main report, AI audit, AI critique, and README self-assessment
-* 79711b6 docs(cross-platform): finalize compatibility matrix and link defect findings
-* b552662 test(cross-platform): add 16 cross-platform screenshots with MSSV watermark
-* 6bfd524 feat: remove unused files
-* 0d6981a docs: add evidence screenshots
-* 2f82424 docs(findings): synchronize Google Form submission timestamps for findings C-F001 through C-F018
-* 0d510a4 feat(usability): consolidate Task 2 evidence into single report and add 6 YouTube session recording links
-* 7b04ae3 test: add new finding for checklist execution
-* f09dfd6 docs: add form submission finding report
-* 7c5254c test: execute checklist for C3 account action dialogs
-* bf55d89 chore: remove unused authentication middleware configuration
-* 06478b5 docs: update SUT URL in README to the new production environment address
-* f144190 docs: add EMS finding log skill and audit entry
-* 1667ec3 docs: add Scenario C evidence screenshots
-* 97bd61a docs: update Scenario C checklist and finding log
-* aeb5d95 docs: update EMS SUT domain
-* 827423a test: execute checklist for C1 users list
-* 9d56ef5 docs: add HW03 git commit plan
-* 8d805cf (origin/khanh) docs:add-git-commit-log
-* 58d0731 test:add-hw03-artifact-validator
-* 8617d7c docs:add-ai-audit-artifacts
-* bc58c1c feat:add-hw03-agent-skills
-* 2f41d0d docs:add-scenario-c-testing-templates
-* c3d18fe docs:update-shared-checklist-evidence
-*   5fdc93d (origin/main, origin/HEAD) Merge pull request #2 from HCMUS-software-testing/kien
-|\  
-| * 93c1e3c fixed: gui usability checklist
-* | c1189ed docs: update Scenario A task details and test checklist in README.md
-* | 59da4dd Merge pull request #1 from HCMUS-software-testing/kien
-|\| 
-| *   607265f Merge branch 'main' of https://github.com/HCMUS-software-testing/HW03 into kien
-| |\  
-| |/  
-|/|   
-* | af1c50a chores: change template for README.md
-| * d5bfe7d added gui usability checklist and fixed ai-audit-entry skill
-|/  
-* 69f74fc added ai audit skill
-* a43f874 (main) init project
-* 36550e4 first commit
+* commit 79b5f58484df4c6a133a6d0e53a835cb89e63036
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Wed Aug 5 19:37:07 2026 +0700
+| 
+|     docs: update graph commit log
+| 
+|  submission/git_commit_log.txt | 79 +++++++++++++++++++++++++----------------
+|  1 file changed, 49 insertions(+), 30 deletions(-)
+| 
+* commit 7def5b1748670d9a571b56e68356b393aa91ca0e
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Wed Aug 5 19:36:55 2026 +0700
+| 
+|     docs: align agent skill submission metadata
+| 
+|  submission/agent-skills/skill_inventory.md | 11 ++++++-----
+|  submission/demo-videos.md                  | 12 ++++++------
+|  2 files changed, 12 insertions(+), 11 deletions(-)
+| 
+* commit 8ad532cb7061127bfcc337e104a4de4609488104
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Wed Aug 5 19:36:44 2026 +0700
+| 
+|     test: refresh Scenario C cross-platform evidence
+| 
+|  .../cross-platform/C3_android_firefox_phone.png   | Bin 572887 -> 609136 bytes
+|  .../cross-platform/C3_android_samsung_tablet.png  | Bin 562323 -> 595128 bytes
+|  .../cross-platform/C3_macos_opera_desktop.png     | Bin 1353413 -> 1163640 bytes
+|  .../cross-platform/C3_win_chrome_desktop.png      | Bin 855690 -> 831813 bytes
+|  submission/cross-platform/C3_win_edge_desktop.png | Bin 884355 -> 898435 bytes
+|  submission/cross-platform/matrix.md               |  30 ++++++++++----------
+|  6 files changed, 15 insertions(+), 15 deletions(-)
+| 
+* commit 04abc628c4ea5a036694ac6d1fb196d9155e21df
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Wed Aug 5 19:36:34 2026 +0700
+| 
+|     docs: finalize AI audit critique and findings
+| 
+|  submission/{ai-audit => }/ai_audit_report.md |  14 +-
+|  submission/ai_audit_report.pdf               | Bin 0 -> 64614 bytes
+|  submission/ai_critique.md                    |  10 +-
+|  submission/ai_critique.pdf                   | Bin 0 -> 43161 bytes
+|  submission/bug_usability_findings_log.md     |  56 ++++++-
+|  submission/usability_report_scenario_c.md    | 200 +++++++++++++------------
+|  6 files changed, 166 insertions(+), 114 deletions(-)
+| 
+* commit 968556cced72116aacfe22daf9e789b19f7df681
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Wed Aug 5 19:36:20 2026 +0700
+| 
+|     docs: synchronize checklist counts and references
+| 
+|  README.md                                         |  16 ++++++-------
+|  submission/checklist_execution_scenario_c.md      |  12 +++++-----
+|  submission/group/gui_usability_checklist.md       |   2 +-
+|  submission/group/gui_usability_checklist_final.md |   2 ++
+|  .../group/gui_usability_checklist_processing.md   |   2 +-
+|  submission/group/references.md                    |   2 ++
+|  submission/main_report.md                         |  24 ++++++++++----------
+|  submission/main_report.pdf                        | Bin 0 -> 57523 bytes
+|  8 files changed, 32 insertions(+), 28 deletions(-)
+| 
+* commit 5aede873cf622dc7e0ed5b8e5fe58c0970657f9a
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Wed Aug 5 17:18:45 2026 +0700
+| 
+|     docs(readme): format video links section with line breaks and bullet points
+| 
+|  README.md | 10 ++++++++--
+|  1 file changed, 8 insertions(+), 2 deletions(-)
+| 
+* commit 9cbaf67317ec76e94f9d60490ae2ac54e22c7c6a
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Wed Aug 5 17:17:53 2026 +0700
+| 
+|     docs(usability): update P04 video link to Google Drive with privacy policy note
+| 
+|  README.md                                 | 3 ++-
+|  submission/demo-videos.md                 | 4 +++-
+|  submission/usability_report_scenario_c.md | 8 +++++---
+|  3 files changed, 10 insertions(+), 5 deletions(-)
+| 
+* commit 0249585d6e3a30360093283c268d8132dd0803ab
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Wed Aug 5 00:16:21 2026 +0700
+| 
+|     feat: add cross-platform test execution screenshots for various device and browser configurations
+| 
+|  .../cross-platform/C1_android_firefox_phone.png     | Bin 0 -> 605690 bytes
+|  .../cross-platform/C1_android_samsung_tablet.png    | Bin 0 -> 516843 bytes
+|  .../cross-platform/C1_macos_opera_desktop.png       | Bin 0 -> 1259381 bytes
+|  submission/cross-platform/C1_win_chrome_desktop.png | Bin 0 -> 944135 bytes
+|  submission/cross-platform/C1_win_edge_desktop.png   | Bin 0 -> 871775 bytes
+|  .../cross-platform/C2_android_firefox_phone.png     | Bin 0 -> 572887 bytes
+|  .../cross-platform/C2_android_samsung_tablet.png    | Bin 0 -> 562323 bytes
+|  .../cross-platform/C2_macos_opera_desktop.png       | Bin 0 -> 1353413 bytes
+|  submission/cross-platform/C2_win_chrome_desktop.png | Bin 0 -> 855690 bytes
+|  .../C2_win_edge_desktop.png}                        | Bin
+|  .../cross-platform/C3_android_firefox_phone.png     | Bin 0 -> 572887 bytes
+|  .../cross-platform/C3_android_samsung_tablet.png    | Bin 0 -> 562323 bytes
+|  .../cross-platform/C3_macos_opera_desktop.png       | Bin 0 -> 1353413 bytes
+|  submission/cross-platform/C3_win_chrome_desktop.png | Bin 0 -> 855690 bytes
+|  submission/cross-platform/C3_win_edge_desktop.png   | Bin 0 -> 884355 bytes
+|  15 files changed, 0 insertions(+), 0 deletions(-)
+| 
+* commit 3e606acace1314e77663ce960a8e2e80267cb435
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Tue Aug 4 23:56:30 2026 +0700
+| 
+|     chore: remove unused configuration file
+| 
+|  submission/HW03_step_by_step_guide.md             | 492 --------------------
+|  submission/checklist_execution_scenario_c.md      | 226 +++++----
+|  submission/cross-platform/matrix.md               |  63 ++-
+|  submission/cross-platform/screenshots/README.md   |   3 -
+|  .../screenshots/usability-findings/README.md      |   3 -
+|  5 files changed, 136 insertions(+), 651 deletions(-)
+| 
+* commit 32b39e0eb5d6070a126fffb9c8d9848c0e627c01
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Tue Aug 4 23:56:08 2026 +0700
+| 
+|     docs(git): update git commit log with Task 3 commits
+| 
+|  submission/git_commit_log.txt | 27 +++++++++++++++++++++------
+|  1 file changed, 21 insertions(+), 6 deletions(-)
+| 
+* commit 9950a89595c923a7222090680dc2820ef52b8626
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Tue Aug 4 23:55:37 2026 +0700
+| 
+|     docs(report): update main report, AI audit, AI critique, and README self-assessment
+| 
+|  .gitignore                             |   1 +
+|  README.md                              | 125 +++++--------------
+|  submission/ai-audit/ai_audit_report.md | 200 +++++++++++++++++++------------
+|  submission/ai_critique.md              |  12 +-
+|  submission/main_report.md              | 182 ++++++++++++++--------------
+|  5 files changed, 256 insertions(+), 264 deletions(-)
+| 
+* commit 79711b6bcc8377e97edb9fb83b352660615f3a6b
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Tue Aug 4 23:55:29 2026 +0700
+| 
+|     docs(cross-platform): finalize compatibility matrix and link defect findings
+| 
+|  submission/bug_usability_findings_log.md     |  7 +++
+|  submission/checklist_execution_scenario_c.md | 13 +++--
+|  submission/cross-platform/matrix.md          | 77 ++++++++++++++------------
+|  3 files changed, 56 insertions(+), 41 deletions(-)
+| 
+* commit b552662a02112d13da01edd5a8dc19034401b61f
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Tue Aug 4 23:55:19 2026 +0700
+| 
+|     test(cross-platform): add 16 cross-platform screenshots with MSSV watermark
+| 
+|  submission/screenshots/cross-platform | Bin 0 -> 884355 bytes
+|  1 file changed, 0 insertions(+), 0 deletions(-)
+| 
+* commit 6bfd524349589a5aa13b6fd928bd5a9fc203196e
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Tue Aug 4 19:29:32 2026 +0700
+| 
+|     feat: remove unused files
+| 
+|  submission/git_commit_plan.md                     | 59 -------------
+|  submission/user-testing/participant_table.md      | 10 ---
+|  submission/user-testing/pilot_notes.md            | 10 ---
+|  submission/user-testing/protocol.md               | 45 ----------
+|  submission/user-testing/raw_scores/sus_scores.md  | 24 ------
+|  .../session_notes/session_notes_template.md       | 34 --------
+|  submission/validate_hw03_artifacts.py             | 96 ---------------------
+|  7 files changed, 278 deletions(-)
+| 
+* commit 0d6981a864542b9d049d3e770a1567f14b9e65c9
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Tue Aug 4 19:28:55 2026 +0700
+| 
+|     docs: add evidence screenshots
+| 
+|  .../screenshots/checklist-failures/C-F015-01.png    | Bin 0 -> 1974788 bytes
+|  .../screenshots/checklist-failures/C-F015-02.png    | Bin 0 -> 548434 bytes
+|  .../screenshots/checklist-failures/C-F015-form.png  | Bin 0 -> 207071 bytes
+|  .../screenshots/checklist-failures/C-F016-form.png  | Bin 0 -> 206856 bytes
+|  .../screenshots/checklist-failures/C-F016.png       | Bin 0 -> 1944712 bytes
+|  .../screenshots/checklist-failures/C-F017-form.png  | Bin 0 -> 205645 bytes
+|  .../screenshots/checklist-failures/C-F017.png       | Bin 0 -> 606319 bytes
+|  .../screenshots/checklist-failures/C-F018-form.png  | Bin 0 -> 205661 bytes
+|  .../screenshots/checklist-failures/C-F018.png       | Bin 0 -> 1259220 bytes
+|  9 files changed, 0 insertions(+), 0 deletions(-)
+| 
+* commit 2f8242469142463edceb625cd07a5e7d50d9126d
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Tue Aug 4 19:27:48 2026 +0700
+| 
+|     docs(findings): synchronize Google Form submission timestamps for findings C-F001 through C-F018
+| 
+|  submission/bug_usability_findings_log.md | 216 ++++++++++++++++++++++++-----
+|  1 file changed, 184 insertions(+), 32 deletions(-)
+| 
+* commit 0d510a4c7c58274583a9da94f3432f98c9eccd30
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Tue Aug 4 19:27:41 2026 +0700
+| 
+|     feat(usability): consolidate Task 2 evidence into single report and add 6 YouTube session recording links
+| 
+|  submission/demo-videos.md                 |  32 ++-
+|  submission/usability_report_scenario_c.md | 386 ++++++++++++++++++++++++++++
+|  2 files changed, 412 insertions(+), 6 deletions(-)
+| 
+* commit 7b04ae384c7c8dac445da80abccfb4e832a5ca06
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Mon Aug 3 11:08:15 2026 +0700
+| 
+|     test: add new finding for checklist execution
+| 
+|  submission/bug_usability_findings_log.md          |  45 ++++++++++++++++++++
+|  submission/checklist_execution_scenario_c.md      |   8 ++--
+|  .../checklist-failures/C-F014-form.png            | Bin 0 -> 210683 bytes
+|  .../screenshots/checklist-failures/C-F014.png     | Bin 0 -> 1545545 bytes
+|  4 files changed, 49 insertions(+), 4 deletions(-)
+| 
+* commit f09dfd6bd3a6dd9808721bff51db8864bf179681
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Sun Aug 2 23:14:40 2026 +0700
+| 
+|     docs: add form submission finding report
+| 
+|  submission/bug_usability_findings_log.md          |  70 ++++++++++-----
+|  submission/checklist_execution_scenario_c.md      |   2 +-
+|  submission/main_report.md                         |  92 ++++++++++----------
+|  submission/screenshots/c1-admin-dashboard.png     | Bin 63069 -> 0 bytes
+|  submission/screenshots/c1-after-login.png         | Bin 982195 -> 0 bytes
+|  submission/screenshots/c1-landing-or-login.png    | Bin 333156 -> 0 bytes
+|  submission/screenshots/c1-users-list-overview.png | Bin 110352 -> 0 bytes
+|  .../screenshots/c1-users-role-filter-popover.png  | Bin 113420 -> 0 bytes
+|  submission/screenshots/c1-users-search-empty.png  | Bin 52756 -> 0 bytes
+|  submission/screenshots/c1-users-search-result.png | Bin 68207 -> 0 bytes
+|  .../c1-users-status-filter-popover.png            | Bin 113884 -> 0 bytes
+|  submission/screenshots/c2-add-user-form.png       | Bin 199311 -> 0 bytes
+|  submission/screenshots/c2-add-user-validation.png | Bin 206253 -> 0 bytes
+|  .../screenshots/c2-edit-user-form-desktop.png     | Bin 198183 -> 0 bytes
+|  .../screenshots/c2-edit-user-form-mobile.png      | Bin 71451 -> 0 bytes
+|  submission/screenshots/c2-users-desktop.png       | Bin 111489 -> 0 bytes
+|  submission/screenshots/c2-users-mobile.png        | Bin 53399 -> 0 bytes
+|  submission/screenshots/c3-delete-confirmation.png | Bin 188301 -> 0 bytes
+|  submission/screenshots/c3-edit-dialog-actions.png | Bin 189275 -> 0 bytes
+|  .../screenshots/c3-users-actions-overview.png     | Bin 107232 -> 0 bytes
+|  .../checklist-failures/C-F001-form.png            | Bin 0 -> 313948 bytes
+|  .../checklist-failures/C-F002-form.png            | Bin 0 -> 313771 bytes
+|  .../checklist-failures/C-F003-form.png            | Bin 0 -> 206404 bytes
+|  .../checklist-failures/C-F004-form.png            | Bin 0 -> 206408 bytes
+|  .../checklist-failures/C-F005-form.png            | Bin 0 -> 191971 bytes
+|  .../checklist-failures/C-F006-form.png            | Bin 0 -> 315208 bytes
+|  .../checklist-failures/C-F007-form.png            | Bin 0 -> 266166 bytes
+|  .../checklist-failures/C-F008-form.png            | Bin 0 -> 207396 bytes
+|  .../checklist-failures/C-F009-form.png            | Bin 0 -> 207285 bytes
+|  .../checklist-failures/C-F010-form.png            | Bin 0 -> 207285 bytes
+|  .../checklist-failures/C-F011-form.png            | Bin 0 -> 207254 bytes
+|  .../checklist-failures/C-F012-form.png            | Bin 0 -> 207110 bytes
+|  .../checklist-failures/C-F013-form.png            | Bin 0 -> 206115 bytes
+|  .../screenshots/checklist-failures/C-F013.png     | Bin 543850 -> 193418 bytes
+|  .../screenshots/checklist-failures/README.md      |   3 -
+|  35 files changed, 96 insertions(+), 71 deletions(-)
+| 
+* commit 7c5254c4d81b1d5c2f159b6183e7cf1751fcdfe6
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Sun Aug 2 19:28:04 2026 +0700
+| 
+|     test: execute checklist for C3 account action dialogs
+| 
+|  submission/ai-audit/ai_audit_report.md            |  32 +++
+|  submission/bug_usability_findings_log.md          | 106 ++++++++--
+|  submission/checklist_execution_scenario_c.md      | 214 ++++++++++----------
+|  submission/screenshots/c3-delete-confirmation.png | Bin 0 -> 188301 bytes
+|  submission/screenshots/c3-edit-dialog-actions.png | Bin 0 -> 189275 bytes
+|  .../screenshots/c3-users-actions-overview.png     | Bin 0 -> 107232 bytes
+|  .../screenshots/checklist-failures/C-F012-01.png  | Bin 0 -> 349742 bytes
+|  .../screenshots/checklist-failures/C-F012-02.png  | Bin 0 -> 189275 bytes
+|  .../screenshots/checklist-failures/C-F013.png     | Bin 0 -> 543850 bytes
+|  9 files changed, 231 insertions(+), 121 deletions(-)
+| 
+* commit bf55d89bd86cc1ca14568575e9c0a3d5e4915ee4
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Sun Aug 2 14:49:41 2026 +0700
+| 
+|     chore: remove unused authentication middleware configuration
+| 
+|  submission/bug_usability_findings_log.pdf | Bin 138848 -> 0 bytes
+|  1 file changed, 0 insertions(+), 0 deletions(-)
+| 
+* commit 06478b50b51bf6ce5f4d753edf8dfcff35daca34
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Sun Aug 2 14:41:56 2026 +0700
+| 
+|     docs: update SUT URL in README to the new production environment address
+| 
+|  README.md | 2 +-
+|  1 file changed, 1 insertion(+), 1 deletion(-)
+| 
+* commit f144190a2c39900cc74e83e8a4792793d232c260
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Sun Aug 2 14:41:46 2026 +0700
+| 
+|     docs: add EMS finding log skill and audit entry
+| 
+|  .agents/skills/ems-finding-log-writer/SKILL.md    | 106 ++++++++++++++++++++
+|  .../ems-finding-log-writer/agents/openai.yaml     |   4 +
+|  .agents/skills/ems-gui-checklist-runner/SKILL.md  |  21 ++--
+|  .gitignore                                        |   5 +
+|  submission/ai-audit/ai_audit_report.md            |  86 +++++++++++++++-
+|  5 files changed, 208 insertions(+), 14 deletions(-)
+| 
+* commit 1667ec34a06634cd059b361d95e437b43e5b662e
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Sun Aug 2 14:41:14 2026 +0700
+| 
+|     docs: add Scenario C evidence screenshots
+| 
+|  submission/screenshots/c1-admin-dashboard.png        | Bin 0 -> 63069 bytes
+|  submission/screenshots/c1-after-login.png            | Bin 0 -> 982195 bytes
+|  submission/screenshots/c1-landing-or-login.png       | Bin 0 -> 333156 bytes
+|  submission/screenshots/c1-users-list-overview.png    | Bin 0 -> 110352 bytes
+|  .../screenshots/c1-users-role-filter-popover.png     | Bin 0 -> 113420 bytes
+|  submission/screenshots/c1-users-search-empty.png     | Bin 0 -> 52756 bytes
+|  submission/screenshots/c1-users-search-result.png    | Bin 0 -> 68207 bytes
+|  .../screenshots/c1-users-status-filter-popover.png   | Bin 0 -> 113884 bytes
+|  submission/screenshots/c2-add-user-form.png          | Bin 0 -> 199311 bytes
+|  submission/screenshots/c2-add-user-validation.png    | Bin 0 -> 206253 bytes
+|  submission/screenshots/c2-edit-user-form-desktop.png | Bin 0 -> 198183 bytes
+|  submission/screenshots/c2-edit-user-form-mobile.png  | Bin 0 -> 71451 bytes
+|  submission/screenshots/c2-users-desktop.png          | Bin 0 -> 111489 bytes
+|  submission/screenshots/c2-users-mobile.png           | Bin 0 -> 53399 bytes
+|  submission/screenshots/checklist-failures/BUG-04.png | Bin 604381 -> 0 bytes
+|  .../checklist-failures/{C-F001.png => C-F001-01.png} | Bin
+|  .../screenshots/checklist-failures/C-F001-02.png     | Bin 0 -> 349223 bytes
+|  .../screenshots/checklist-failures/C-F003-01.png     | Bin 0 -> 349453 bytes
+|  .../screenshots/checklist-failures/C-F003-02.png     | Bin 0 -> 445291 bytes
+|  submission/screenshots/checklist-failures/C-F004.png | Bin 0 -> 611395 bytes
+|  submission/screenshots/checklist-failures/C-F005.png | Bin 0 -> 615033 bytes
+|  submission/screenshots/checklist-failures/C-F006.png | Bin 0 -> 349564 bytes
+|  submission/screenshots/checklist-failures/C-F007.png | Bin 0 -> 595021 bytes
+|  submission/screenshots/checklist-failures/C-F008.png | Bin 0 -> 592321 bytes
+|  submission/screenshots/checklist-failures/C-F009.png | Bin 0 -> 604838 bytes
+|  submission/screenshots/checklist-failures/C-F010.png | Bin 0 -> 603724 bytes
+|  submission/screenshots/checklist-failures/C-F011.png | Bin 0 -> 599691 bytes
+|  27 files changed, 0 insertions(+), 0 deletions(-)
+| 
+* commit 97bd61aa3874f4cc6bf9341eaa2b8d9528b59cf8
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Sun Aug 2 14:41:02 2026 +0700
+| 
+|     docs: update Scenario C checklist and finding log
+| 
+|  submission/bug_usability_findings_log.md     | 430 ++++++++++++++++++++++++-
+|  submission/bug_usability_findings_log.pdf    | Bin 0 -> 138848 bytes
+|  submission/checklist_execution_scenario_c.md | 214 ++++++------
+|  3 files changed, 533 insertions(+), 111 deletions(-)
+| 
+* commit aeb5d95bfdc76d886e68010ea93fdd027ffb77ad
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Sun Aug 2 14:40:47 2026 +0700
+| 
+|     docs: update EMS SUT domain
+| 
+|  docs/2026.HW03.GUI Usability EMS_En.md | 2 +-
+|  docs/HW03_EMS_Intro_EN.md              | 6 +++---
+|  submission/HW03_step_by_step_guide.md  | 4 ++--
+|  submission/main_report.md              | 4 ++--
+|  4 files changed, 8 insertions(+), 8 deletions(-)
+| 
+* commit 827423ade1ac527b4ff774430a35839da2194228
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Sun Aug 2 00:58:41 2026 +0700
+| 
+|     test: execute checklist for C1 users list
+| 
+|  submission/bug_usability_findings_log.md          |  27 +-
+|  submission/checklist_execution_scenario_c.md      | 266 ++++++++++++++------
+|  .../screenshots/checklist-failures/BUG-04.png     | Bin 0 -> 604381 bytes
+|  .../screenshots/checklist-failures/C-F001.png     | Bin 0 -> 299992 bytes
+|  .../screenshots/checklist-failures/C-F002.png     | Bin 0 -> 257078 bytes
+|  5 files changed, 207 insertions(+), 86 deletions(-)
+| 
+* commit 9d56ef5052c7ff5e3a7eb91bbe260cd14c1c4d21
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Sat Aug 1 22:06:06 2026 +0700
+| 
+|     docs: add HW03 git commit plan
+| 
+|  submission/git_commit_plan.md | 59 +++++++++++++++++++++++++++++++++++++++++
+|  1 file changed, 59 insertions(+)
+| 
+* commit 8d805cf6079ea6347aab2f0cd456077ac7dbdb57
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Wed Jul 29 00:02:30 2026 +0700
+| 
+|     docs:add-git-commit-log
+| 
+|  submission/git_commit_log.txt | 15 +++++++++++++++
+|  1 file changed, 15 insertions(+)
+| 
+* commit 58d07318edf67763bce3ecfe3125c6f7895725d8
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Wed Jul 29 00:01:58 2026 +0700
+| 
+|     test:add-hw03-artifact-validator
+| 
+|  submission/validate_hw03_artifacts.py | 96 +++++++++++++++++++++++++++++++++
+|  1 file changed, 96 insertions(+)
+| 
+* commit 8617d7c25e83f50502ff11f0fe10b9e77fc7764e
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Wed Jul 29 00:01:45 2026 +0700
+| 
+|     docs:add-ai-audit-artifacts
+| 
+|  submission/ai-audit/ai_audit_report.md | 197 ++++++++++++-------------------
+|  submission/ai_critique.md              |   9 ++
+|  2 files changed, 87 insertions(+), 119 deletions(-)
+| 
+* commit bc58c1c498e3e6f742c778e90ae088b375b0605e
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Wed Jul 29 00:01:35 2026 +0700
+| 
+|     feat:add-hw03-agent-skills
+| 
+|  .agents/skills/ai-audit-entry/SKILL.md            |  98 +---
+|  .agents/skills/ai-audit-entry/agents/openai.yaml  |   4 +-
+|  .../scripts/append_ai_audit_entry.py              | 463 +++--------------
+|  .../scripts/test_append_ai_audit_entry.py         | 529 ++------------------
+|  .../ems-compatibility-matrix-builder/SKILL.md     |  56 +++
+|  .../agents/openai.yaml                            |   4 +
+|  .agents/skills/ems-gui-checklist-runner/SKILL.md  |  42 ++
+|  .../ems-gui-checklist-runner/agents/openai.yaml   |   4 +
+|  .../skills/ems-usability-report-writer/SKILL.md   |  54 ++
+|  .../agents/openai.yaml                            |   4 +
+|  .gitignore                                        |   8 +-
+|  submission/agent-skills/skill_inventory.md        |  16 +
+|  12 files changed, 334 insertions(+), 948 deletions(-)
+| 
+* commit 2f41d0d391aa42ca269529f994a0bac5e2d291bc
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Wed Jul 29 00:01:13 2026 +0700
+| 
+|     docs:add-scenario-c-testing-templates
+| 
+|  submission/bug_usability_findings_log.md          |  22 ++++
+|  submission/checklist_execution_scenario_c.md      |  80 +++++++++++++
+|  submission/cross-platform/matrix.md               |  51 ++++++++
+|  submission/cross-platform/screenshots/README.md   |   3 +
+|  submission/demo-videos.md                         |   8 ++
+|  submission/main_report.md                         | 122 ++++++++++++++++++++
+|  .../screenshots/checklist-failures/README.md      |   3 +
+|  .../screenshots/usability-findings/README.md      |   3 +
+|  submission/user-testing/participant_table.md      |  10 ++
+|  submission/user-testing/pilot_notes.md            |  10 ++
+|  submission/user-testing/protocol.md               |  45 ++++++++
+|  submission/user-testing/raw_scores/sus_scores.md  |  24 ++++
+|  .../session_notes/session_notes_template.md       |  34 ++++++
+|  13 files changed, 415 insertions(+)
+| 
+* commit c3d18fe8b7579a9bcb0afd1a2ed1ad1d92b8d2fc
+| Author: LamKhanhDepzai <lamhuukhanh69@gmail.com>
+| Date:   Wed Jul 29 00:00:59 2026 +0700
+| 
+|     docs:update-shared-checklist-evidence
+| 
+|  submission/group/ai_prompts.md                    | 31 +++++++++++++++++++++
+|  submission/group/gui_usability_checklist.md       |  4 +--
+|  submission/group/gui_usability_checklist_final.md |  6 ++--
+|  .../group/gui_usability_checklist_processing.md   |  2 +-
+|  submission/group/references.md                    | 11 ++++++++
+|  5 files changed, 48 insertions(+), 6 deletions(-)
+|   
+*   commit 5fdc93d8f041d9c43f7002d58a3bc6c95074990b
+|\  Merge: c1189ed 93c1e3c
+| | Author: Hacdess <88873029+Hacdess@users.noreply.github.com>
+| | Date:   Mon Jul 27 15:32:51 2026 +0700
+| | 
+| |     Merge pull request #2 from HCMUS-software-testing/kien
+| |     
+| |     fixed: gui usability checklist
+| | 
+| * commit 93c1e3cef2746817d25a8440b3265f5a0e9546e2
+| | Author: TKin <letrungkienthd@gmail.com>
+| | Date:   Mon Jul 27 15:30:27 2026 +0700
+| | 
+| |     fixed: gui usability checklist
+| | 
+| |  submission/group/gui_usability_checklist.md      | 67 ++++++++++++++
+| |  .../gui_usability_checklist_final.md}            | 14 +--
+| |  .../group/gui_usability_checklist_processing.md  | 91 ++++++++++++++++++++
+| |  3 files changed, 167 insertions(+), 5 deletions(-)
+| | 
+* | commit c1189ed648777c125ab99d475cbf712b0b4b3521
+| | Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| | Date:   Sun Jul 26 19:35:08 2026 +0700
+| | 
+| |     docs: update Scenario A task details and test checklist in README.md
+| | 
+| |  README.md                                        |   4 +-
+| |  ...E2E-Test-Flow-Luo\314\202\314\200ng-Admin.md" | 227 -------------------
+| |  ...2E-Test-Flow-Luo\314\202\314\200ng-Admin.pdf" | Bin 73893 -> 0 bytes
+| |  3 files changed, 2 insertions(+), 229 deletions(-)
+| | 
+* | commit 59da4dd5da3f07d424f06c89a649e733afc1f6e0
+|\| Merge: af1c50a 607265f
+| | Author: Hacdess <88873029+Hacdess@users.noreply.github.com>
+| | Date:   Sun Jul 26 15:38:59 2026 +0700
+| | 
+| |     Merge pull request #1 from HCMUS-software-testing/kien
+| |     
+| |     Kien
+| |   
+| *   commit 607265ff41d741201138e029ee4b48ab13d8d20a
+| |\  Merge: d5bfe7d af1c50a
+| |/  Author: TKin <letrungkienthd@gmail.com>
+|/|   Date:   Sun Jul 26 15:38:09 2026 +0700
+| |   
+| |       Merge branch 'main' of https://github.com/HCMUS-software-testing/HW03 into kien
+| | 
+* | commit af1c50a4ea373f0946ced1fc22691eae0550bed4
+| | Author: Melyenn <thiduyen310@gmail.com>
+| | Date:   Sun Jul 26 15:13:01 2026 +0700
+| | 
+| |     chores: change template for README.md
+| | 
+| |  README.md | 114 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+| |  1 file changed, 113 insertions(+), 1 deletion(-)
+| | 
+| * commit d5bfe7dd99e25715b241af3d1fd98e861b65a612
+|/  Author: TKin <letrungkienthd@gmail.com>
+|   Date:   Sun Jul 26 15:37:35 2026 +0700
+|   
+|       added gui usability checklist and fixed ai-audit-entry skill
+|   
+|    .agents/skills/ai-audit-entry/SKILL.md           |  12 +-
+|    .../scripts/append_ai_audit_entry.py             |  80 +++++++++---
+|    submission/ai-audit/ai_audit_report.md           | 124 +++++++++++++++++--
+|    submission/task1a_gui_usability_checklist.md     |  61 +++++++++
+|    4 files changed, 246 insertions(+), 31 deletions(-)
+| 
+* commit 69f74fc81d788052a49cbb04db60215c6edbd383
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Sun Jul 26 14:46:31 2026 +0700
+| 
+|     added ai audit skill
+| 
+|  .agents/skills/ai-audit-entry/SKILL.md            |  89 ++++
+|  .agents/skills/ai-audit-entry/agents/openai.yaml  |   4 +
+|  .../scripts/append_ai_audit_entry.py              | 411 +++++++++++++++
+|  .../scripts/test_append_ai_audit_entry.py         | 534 ++++++++++++++++++++
+|  .gitignore                                        |   6 +-
+|  5 files changed, 1043 insertions(+), 1 deletion(-)
+| 
+* commit a43f874e8a4577602bc3e27ed6fc651cd4a07a8c
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Sun Jul 26 10:25:34 2026 +0700
+| 
+|     init project
+| 
+|  .gitignore                                        |    2 +
+|  docs/2026.HW03.GUI Usability EMS_En.md            |  275 +++
+|  docs/2026.HW03.GUI Usability EMS_En.pdf           |  Bin 0 -> 181499 bytes
+|  docs/HW03_EMS_Intro_EN.md                         |  159 ++
+|  docs/HW03_EMS_Intro_EN.pdf                        |  Bin 0 -> 374372 bytes
+|  docs/ISTQB_CT-AI_Syllabus_v1.0.md                 | 1750 +++++++++++++++++++
+|  docs/ISTQB_CT-AI_Syllabus_v1.0.pdf                |  Bin 0 -> 1712829 bytes
+|  ...-E2E-Test-Flow-Luo\314\202\314\200ng-Admin.md" |  227 +++
+|  ...E2E-Test-Flow-Luo\314\202\314\200ng-Admin.pdf" |  Bin 0 -> 73893 bytes
+|  submission/HW03_step_by_step_guide.md             |  492 ++++++
+|  submission/ai-audit/ai_audit_report.md            |   56 +
+|  11 files changed, 2961 insertions(+)
+| 
+* commit 36550e43c8243103ef610aa1954f39eec014b6ae
+  Author: TKin <letrungkienthd@gmail.com>
+  Date:   Sat Jul 25 21:03:38 2026 +0700
+  
+      first commit
+  
+   README.md | 1 +
+   1 file changed, 1 insertion(+)

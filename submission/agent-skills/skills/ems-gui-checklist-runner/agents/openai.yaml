@@ -1,0 +1,4 @@
+interface:
+  display_name: "EMS GUI Checklist Runner"
+  short_description: "Chạy checklist GUI EMS trên một màn hình"
+  default_prompt: "Dùng $ems-gui-checklist-runner để thực thi checklist GUI dùng chung của HW03 EMS cho một màn hình được chọn và sinh bảng Pass/Fail/N/A."

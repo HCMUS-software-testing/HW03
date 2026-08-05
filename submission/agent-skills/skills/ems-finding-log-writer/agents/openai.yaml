@@ -1,0 +1,4 @@
+interface:
+  display_name: "EMS Finding Log Writer"
+  short_description: "Ghi finding log EMS gọn, có ảnh"
+  default_prompt: "Dùng $ems-finding-log-writer để cập nhật bug_usability_findings_log.md cho HW03 EMS với bảng tổng hợp ở đầu và chi tiết từng finding theo từng mục có ảnh."

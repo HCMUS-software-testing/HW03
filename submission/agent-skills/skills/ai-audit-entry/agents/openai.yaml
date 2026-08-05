@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Audit Entry"
+  short_description: "Thêm entry AI audit cho HW03"
+  default_prompt: "Dùng $ai-audit-entry để thêm một entry AI audit có đánh số cho phiên làm việc HW03 này."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "EMS Compatibility Matrix Builder"
+  short_description: "Kiểm tra coverage cross-platform EMS"
+  default_prompt: "Dùng $ems-compatibility-matrix-builder để tạo hoặc kiểm tra ma trận cross-browser HW03 EMS và phát hiện ảnh minh chứng còn thiếu."
