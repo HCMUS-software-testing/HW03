@@ -26,6 +26,7 @@
 | 13 | Time: `2026-08-03 12:33 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>Ghi vào submission/task1B những thứ tiếp theo tôi cần làm với những thứ tạo từ Task1B. Đọc folder docs ghi vào submission/task2 những thứ cần thiết để chuẩn bị interview 5 người, có thể làm trước template. | [Manual by user] |
 | 14 | Time: `2026-08-03 15:46 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>Đọc folder docs và tạo ra các file cần thiết cho task 3 | [Manual by user] |
 | 15 | Time: `2026-08-04 10:48 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>@Superpowers Hãy đọc folder docs tạo ra bộ 3 OS x 5 platform x 3 devices hoàn chỉnh kèm theo tổ hợp để phủ tẩ cả chúng. Sau đó viết plan để thực hiện Task 3 với BrowserStack. Lưu ý vì BrowserStack chỉ có 1 phút trial nên phải cap thật nhanh. Test bằng acc email sinh viên. Bạn hãy thử mở BrowserStack đăng nhập xem cần tôi cung cấp gì để đăng nhập. | [Manual by user] |
+| 16 | Time: `2026-08-06 01:24 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>Với những screenshot downloads và defects tôi cung cấp, hãy điền vào template ma trận ở Task 3 | [Manual by user] |
 
 ### 2.2. Chi tiết audit
 
@@ -856,6 +857,197 @@ Prompt:
 @Superpowers Hãy đọc folder docs tạo ra bộ 3 OS x 5 platform x 3 devices hoàn chỉnh kèm theo tổ hợp để phủ tẩ cả chúng. Sau đó viết plan để thực hiện Task 3 với BrowserStack. Lưu ý vì BrowserStack chỉ có 1 phút trial nên phải cap thật nhanh. Test bằng acc email sinh viên. Bạn hãy thử mở BrowserStack đăng nhập xem cần tôi cung cấp gì để đăng nhập.
 
 **AI Output:** Đã đọc lại yêu cầu Task 3 và artifact hiện có, kiểm tra reachability của EMS/BrowserStack qua HTTP, xác nhận không có screenshot thật sẵn trong submission/task3/screenshots. Đã cập nhật các template Task 3 sang matrix...
+
+**Verdict:** [Manual by user]
+
+**Reasoning:** [Manual by user]
+
+**Student Fix:** [Manual by user]
+
+### 2.2.16 Entry 16
+
+**Prompt + Tool:**
+
+Time: `2026-08-06 01:24 +07`
+Tool: `Codex / GPT-5`
+Prompt:
+Với những screenshot downloads và defects tôi cung cấp, hãy điền vào template ma trận ở Task 3
+
+**AI Output:**
+
+`submission/task3/matrix_template.md`
+
+```markdown
+# Task 3 - Compatibility Matrix Template
+
+| Trường | Giá trị |
+| --- | --- |
+| Scenario | D - User requests Support and Admin resolves it |
+| SUT | `https://prod-dev.ems-fitus.cloud` |
+| Overlay bắt buộc | `23127075@clc.fitus.edu.vn` |
+| Công cụ ưu tiên | TestingBot, BrowserStack Live hoặc LambdaTest |
+| Người thực hiện | Lê Trung Kiên - `23127075` |
+
+## Coverage bắt buộc cho mỗi màn hình
+
+Mỗi màn hình D1, D2, D3 phải phủ đủ:
+
+| Dimension | Yêu cầu |
+| --- | --- |
+| Operating systems | Ít nhất 3 OS; matrix này dùng Linux, Windows và Android. |
+| Browsers | Ít nhất 5 browser; matrix này dùng Firefox, Opera, Edge, Samsung Internet và Chrome. |
+| Device classes | Ít nhất 3 loại thiết bị: desktop, tablet, phone. |
+| Screenshot | Một ảnh cho mỗi cell, có EMS URL, TestingBot OS/browser/device identity và overlay email. |
+
+## Matrix đề xuất dùng chung
+
+Matrix `5` cell dưới đây đủ phủ `3 OS`, `5 browser/platform`, và `3 device classes` cho từng màn hình.
+
+| Cell | OS | Browser | Device class | Device/profile đề xuất | Lý do chọn |
+| --- | --- | --- | --- | --- | --- |
+| CP-01 | Linux | Firefox | Desktop | Linux desktop + Firefox latest | Phủ desktop non-Windows và engine Gecko. |
+| CP-02 | Windows 11 | Opera | Desktop | Windows 11 + Opera latest | Phủ desktop Windows với Chromium-based browser khác Edge/Chrome. |
+| CP-03 | Windows 11 | Edge | Desktop | Windows 11 + Edge latest | Browser mặc định Windows, dễ đối chiếu layout admin/list. |
+| CP-04 | Android | Samsung Internet | Tablet | Samsung Galaxy Tab A + Samsung Internet | Phủ tablet Samsung với browser Samsung Internet. |
+| CP-05 | Android | Chrome | Phone | Samsung Galaxy A54 + Chrome | Phủ điện thoại Android Samsung với Chrome. |
+
+## D1 - User tạo support request
+
+| Cell | OS | Browser | Device class | Device/profile | Result | Screenshot ref | Checklist focus | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| D1-CP-01 | Linux | Firefox | Desktop | Linux desktop + Firefox latest | `Fail` | `submission/task3/screenshots/downloads/CP-01_linux_firefox_desktop/D1.png` | Form width, dropdown behavior, button hierarchy trên desktop non-Windows. | Defects: `submission/task3/screenshots/defects/D1/D1_CP-01_linux_firefox_desktop/` có `F-D1-001`, `F-D1-002`, `F-D1-003`. |
+| D1-CP-02 | Windows 11 | Opera | Desktop | Windows 11 + Opera latest | `Fail` | `submission/task3/screenshots/downloads/CP-02_windows_opera_desktop/D1.png` | Form layout, labels, required markers, upload zone, submit/cancel. | Defects: `submission/task3/screenshots/defects/D1/D1_CP-02_windows_opera_desktop/` có `F-D1-001`, `F-D1-002`, `F-D1-003`, `F-D1-004`. |
+| D1-CP-03 | Windows 11 | Edge | Desktop | Windows 11 + Edge latest | `Fail` | `submission/task3/screenshots/downloads/CP-03_windows_edge_desktop/D1.png` | Select/category, file upload, textarea, focus state. | Defects: `submission/task3/screenshots/defects/D1/D1_CP-03_windows_edge_desktop/` có `F-D1-001`, `F-D1-002`, `F-D1-003`, `F-D1-004`. |
+| D1-CP-04 | Android | Samsung Internet | Tablet | Samsung Galaxy Tab A + Samsung Internet | `Fail` | `submission/task3/screenshots/downloads/CP-04_android_samsung-internet_tablet/D1.png` | Tablet layout, form readability, action buttons. | Defects: `submission/task3/screenshots/defects/D1/D1_CP-04_android_samsung-internet_tablet/` có `F-D1-001`, `F-D1-002`, `F-D1-003`, `F-D1-004`. |
+| D1-CP-05 | Android | Chrome | Phone | Samsung Galaxy A54 + Chrome | `Fail` | `submission/task3/screenshots/downloads/CP-05_android_chrome_phone/D1.png` | Textarea/input rendering, upload button, no horizontal overflow trên phone. | Defects: `submission/task3/screenshots/defects/D1/D1_CP-05_android_chrome_phone/` có `F-D1-001`, `F-D1-003`, `F-D1-004`. |
+
+## D2 - User My Requests list/detail
+
+| Cell | OS | Browser | Device class | Device/profile | Result | Screenshot ref | Checklist focus | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| D2-CP-01 | Linux | Firefox | Desktop | Linux desktop + Firefox latest | `Fail` | `submission/task3/screenshots/downloads/CP-01_linux_firefox_desktop/D2.png` | List density, filter row, rows-per-page trên Firefox/Linux. | Defects: `submission/task3/screenshots/defects/D2/D2_CP-01_linux_firefox_desktop/` có `F-D2-001`, `F-D2-002`. |
+| D2-CP-02 | Windows 11 | Opera | Desktop | Windows 11 + Opera latest | `Fail` | `submission/task3/screenshots/downloads/CP-02_windows_opera_desktop/D2-list.png`; `submission/task3/screenshots/downloads/CP-02_windows_opera_desktop/D2-detail.png` | List cards, status/category badges, search/filter, pagination. | Defects: `submission/task3/screenshots/defects/D2/D2_CP-02_windows_opera_desktop/` có `F-D2-001`, `F-D2-002`. |
+| D2-CP-03 | Windows 11 | Edge | Desktop | Windows 11 + Edge latest | `Fail` | `submission/task3/screenshots/downloads/CP-03_windows_edge_desktop/D2-list.png`; `submission/task3/screenshots/downloads/CP-03_windows_edge_desktop/D2-detail.png` | Detail page, attachment thumbnail/lightbox, response section. | Defects: `submission/task3/screenshots/defects/D2/D2_CP-03_windows_edge_desktop/` có `F-D2-001`, `F-D2-002`. |
+| D2-CP-04 | Android | Samsung Internet | Tablet | Samsung Galaxy Tab A + Samsung Internet | `Fail` | `submission/task3/screenshots/downloads/CP-04_android_samsung-internet_tablet/D2-list.png`; `submission/task3/screenshots/downloads/CP-04_android_samsung-internet_tablet/D2-detail.png` | Tablet list/detail layout and filter controls. | Defects: `submission/task3/screenshots/defects/D2/D2_CP-04_android_samsung-internet_tablet/` có `F-D2-001`, `F-D2-002`. |
+| D2-CP-05 | Android | Chrome | Phone | Samsung Galaxy A54 + Chrome | `Fail` | `submission/task3/screenshots/downloads/CP-05_android_chrome_phone/D2-list.png`; `submission/task3/screenshots/downloads/CP-05_android_chrome_phone/D2-detail.png` | Search/filter and card readability on phone. | Defects: `submission/task3/screenshots/defects/D2/D2_CP-05_android_chrome_phone/` có `F-D2-001`, `F-D2-002`. |
+
+## D3 - Admin Support Requests list
+
+| Cell | OS | Browser | Device class | Device/profile | Result | Screenshot ref | Checklist focus | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| D3-CP-01 | Linux | Firefox | Desktop | Linux desktop + Firefox latest | `Fail` | `submission/task3/screenshots/downloads/CP-01_linux_firefox_desktop/D3.png` | Admin sidebar, Pending/Resolved cards, filter wrap trên Firefox/Linux. | Defects: `submission/task3/screenshots/defects/D3/D3_CP-01_linux_firefox_desktop/` có `F-D3-001`, `F-D3-002`. |
+| D3-CP-02 | Windows 11 | Opera | Desktop | Windows 11 + Opera latest | `Fail` | `submission/task3/screenshots/downloads/CP-02_windows_opera_desktop/D3.png` | Admin sidebar, Pending tab, filter panel, cards, pagination. | Defects: `submission/task3/screenshots/defects/D3/D3_CP-02_windows_opera_desktop/` có `F-D3-001`, `F-D3-002`. |
+| D3-CP-03 | Windows 11 | Edge | Desktop | Windows 11 + Edge latest | `Fail` | `submission/task3/screenshots/downloads/CP-03_windows_edge_desktop/D3.png` | Search/member-code/category filter rendering. | Defects: `submission/task3/screenshots/defects/D3/D3_CP-03_windows_edge_desktop/` có `F-D3-001`, `F-D3-002`. |
+| D3-CP-04 | Android | Samsung Internet | Tablet | Samsung Galaxy Tab A + Samsung Internet | `Fail` | `submission/task3/screenshots/downloads/CP-04_android_samsung-internet_tablet/D3.png` | Tablet sidebar/content layout and filter usability. | Defects: `submission/task3/screenshots/defects/D3/D3_CP-04_android_samsung-internet_tablet/` có `F-D3-001`, `F-D3-002`. |
+| D3-CP-05 | Android | Chrome | Phone | Samsung Galaxy A54 + Chrome | `Fail` | `submission/task3/screenshots/downloads/CP-05_android_chrome_phone/D3.png` | Mobile admin layout, sidebar/content width, filter usability trên phone. | Defects: `submission/task3/screenshots/defects/D3/D3_CP-05_android_chrome_phone/` có `F-D3-003`. |
+
+## Coverage check sau khi chạy
+
+| Screen | 3 OS covered? | 5 browsers covered? | 3 device classes covered? | Screenshot đủ chưa? | Notes |
+| --- | --- | --- | --- | --- | --- |
+| D1 | `Yes` | `Yes` | `Yes` | `Complete` | Đã có ảnh baseline cho CP-01 đến CP-05 trong `screenshots/downloads`; tất cả cell có defect evidence tương ứng. |
+| D2 | `Yes` | `Yes` | `Yes` | `Complete` | Đã có ảnh baseline cho CP-01 đến CP-05 trong `screenshots/downloads`; CP-02 đến CP-05 có đủ ảnh list/detail, CP-01 có ảnh D2 tổng hợp. |
+| D3 | `Yes` | `Yes` | `Yes` | `Complete` | Đã có ảnh baseline cho CP-01 đến CP-05 trong `screenshots/downloads`; tất cả cell có defect evidence tương ứng. |
+```
+
+`submission/task3/cross_platform_report_template.md`
+
+```markdown
+# Task 3 - Cross-Browser / Cross-Platform Report
+
+## 1. Scope
+
+| Trường | Giá trị |
+| --- | --- |
+| Sinh viên | Lê Trung Kiên |
+| MSSV | `23127075` |
+| Email overlay | `23127075@clc.fitus.edu.vn` |
+| Scenario | D - User requests Support and Admin resolves it |
+| SUT | `https://prod-dev.ems-fitus.cloud` |
+| Screens | D1, D2, D3 |
+| Công cụ | `TestingBot` |
+| Ngày test | `2026-08-06` |
+| Trạng thái thực thi | `Hoàn tất` |
+
+## 2. Test Environment
+
+| Cell | OS | Browser | Device class | Device/profile | Tool/session link | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| CP-01 | Linux | Firefox | Desktop | `Linux desktop + Firefox latest` | `Không ghi nhận trong repo` | Desktop Firefox trên Linux, có ảnh D1/D2/D3 trong `screenshots/downloads/CP-01_linux_firefox_desktop/`. |
+| CP-02 | Windows 11 | Opera | Desktop | `Windows 11 + Opera latest` | `Không ghi nhận trong repo` | Desktop Opera, có ảnh D1/D2-list/D2-detail/D3 trong `screenshots/downloads/CP-02_windows_opera_desktop/`. |
+| CP-03 | Windows 11 | Edge | Desktop | `Windows 11 + Edge latest` | `Không ghi nhận trong repo` | Desktop Edge, có ảnh D1/D2-list/D2-detail/D3 trong `screenshots/downloads/CP-03_windows_edge_desktop/`. |
+| CP-04 | Android | Samsung Internet | Tablet | `Samsung Galaxy Tab A + Samsung Internet` | `Không ghi nhận trong repo` | Tablet Samsung chạy Samsung Internet, có ảnh D1/D2-list/D2-detail/D3 trong `screenshots/downloads/CP-04_android_samsung-internet_tablet/`. |
+| CP-05 | Android | Chrome | Phone | `Samsung Galaxy A54 + Chrome` | `Không ghi nhận trong repo` | Điện thoại Android Samsung chạy Chrome, có ảnh D1/D2-list/D2-detail/D3 trong `screenshots/downloads/CP-05_android_chrome_phone/`. |
+
+## 3. Method
+
+1. Đọc yêu cầu Task 3 trong `docs/2026.HW03.GUI Usability EMS_En.md`.
+2. Dùng ba màn hình đã test ở Task 1B: D1, D2, D3.
+3. Dùng checklist gốc `submission/group/gui_usability_checklist_final.md`, nhưng tập trung vào các item compatibility trong `task3_checklist_scope.md`.
+4. Với mỗi cell, mở EMS trên môi trường tương ứng, đăng nhập đúng vai trò, đặt overlay `23127075@clc.fitus.edu.vn`, chụp screenshot và ghi `Pass/Fail`.
+5. Với mỗi `Fail`, ghi defect vào Google Form và log tổng hợp.
+
+## 4. Result Summary
+
+| Screen | Cells run | Pass | Fail | Needs review | Compatibility risk summary |
+| --- | ---: | ---: | ---: | ---: | --- |
+| D1 | 5 | 0 | 5 | 0 | Form tạo support request tái hiện lỗi validation không inline, lỗi category/submit `400`, `Cancel` mất dữ liệu và thông báo success chưa tạo closure rõ trên nhiều browser/device. |
+| D2 | 5 | 0 | 5 | 0 | My Requests list/detail tái hiện lỗi mất filter context khi quay lại detail và empty state gây hiểu nhầm trên tất cả cell đã chụp. |
+| D3 | 5 | 0 | 5 | 0 | Admin Support Requests có lỗi search trả thêm kết quả không liên quan, đổi tab làm mất filter context trên desktop/tablet, và lỗi sidebar/content nghiêm trọng trên Android phone. |
+| Total | 15 | 0 | 15 | 0 | Matrix phủ đủ `3 OS`, `5 browsers/platforms`, `3 device classes`; tất cả cell có ít nhất một defect evidence. |
+
+## 5. Per-Screen Results
+
+### D1 - User tạo support request
+
+| Cell | OS | Browser | Device class | Result | Screenshot ref | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| D1-CP-01 | Linux | Firefox | Desktop | `Fail` | `submission/task3/screenshots/downloads/CP-01_linux_firefox_desktop/D1.png` | Có `F-D1-001`, `F-D1-002`, `F-D1-003` trong `screenshots/defects/D1/D1_CP-01_linux_firefox_desktop/`. |
+| D1-CP-02 | Windows 11 | Opera | Desktop | `Fail` | `submission/task3/screenshots/downloads/CP-02_windows_opera_desktop/D1.png` | Có `F-D1-001`, `F-D1-002`, `F-D1-003`, `F-D1-004` trong `screenshots/defects/D1/D1_CP-02_windows_opera_desktop/`. |
+| D1-CP-03 | Windows 11 | Edge | Desktop | `Fail` | `submission/task3/screenshots/downloads/CP-03_windows_edge_desktop/D1.png` | Có `F-D1-001`, `F-D1-002`, `F-D1-003`, `F-D1-004` trong `screenshots/defects/D1/D1_CP-03_windows_edge_desktop/`. |
+| D1-CP-04 | Android | Samsung Internet | Tablet | `Fail` | `submission/task3/screenshots/downloads/CP-04_android_samsung-internet_tablet/D1.png` | Có `F-D1-001`, `F-D1-002`, `F-D1-003`, `F-D1-004` trong `screenshots/defects/D1/D1_CP-04_android_samsung-internet_tablet/`. |
+| D1-CP-05 | Android | Chrome | Phone | `Fail` | `submission/task3/screenshots/downloads/CP-05_android_chrome_phone/D1.png` | Có `F-D1-001`, `F-D1-003`, `F-D1-004` trong `screenshots/defects/D1/D1_CP-05_android_chrome_phone/`. |
+
+### D2 - User My Requests list/detail
+
+| Cell | OS | Browser | Device class | Result | Screenshot ref | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| D2-CP-01 | Linux | Firefox | Desktop | `Fail` | `submission/task3/screenshots/downloads/CP-01_linux_firefox_desktop/D2.png` | Có `F-D2-001`, `F-D2-002` trong `screenshots/defects/D2/D2_CP-01_linux_firefox_desktop/`. |
+| D2-CP-02 | Windows 11 | Opera | Desktop | `Fail` | `submission/task3/screenshots/downloads/CP-02_windows_opera_desktop/D2-list.png`; `submission/task3/screenshots/downloads/CP-02_windows_opera_desktop/D2-detail.png` | Có `F-D2-001`, `F-D2-002` trong `screenshots/defects/D2/D2_CP-02_windows_opera_desktop/`. |
+| D2-CP-03 | Windows 11 | Edge | Desktop | `Fail` | `submission/task3/screenshots/downloads/CP-03_windows_edge_desktop/D2-list.png`; `submission/task3/screenshots/downloads/CP-03_windows_edge_desktop/D2-detail.png` | Có `F-D2-001`, `F-D2-002` trong `screenshots/defects/D2/D2_CP-03_windows_edge_desktop/`. |
+| D2-CP-04 | Android | Samsung Internet | Tablet | `Fail` | `submission/task3/screenshots/downloads/CP-04_android_samsung-internet_tablet/D2-list.png`; `submission/task3/screenshots/downloads/CP-04_android_samsung-internet_tablet/D2-detail.png` | Có `F-D2-001`, `F-D2-002` trong `screenshots/defects/D2/D2_CP-04_android_samsung-internet_tablet/`. |
+| D2-CP-05 | Android | Chrome | Phone | `Fail` | `submission/task3/screenshots/downloads/CP-05_android_chrome_phone/D2-list.png`; `submission/task3/screenshots/downloads/CP-05_android_chrome_phone/D2-detail.png` | Có `F-D2-001`, `F-D2-002` trong `screenshots/defects/D2/D2_CP-05_android_chrome_phone/`. |
+
+### D3 - Admin Support Requests list
+
+| Cell | OS | Browser | Device class | Result | Screenshot ref | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| D3-CP-01 | Linux | Firefox | Desktop | `Fail` | `submission/task3/screenshots/downloads/CP-01_linux_firefox_desktop/D3.png` | Có `F-D3-001`, `F-D3-002` trong `screenshots/defects/D3/D3_CP-01_linux_firefox_desktop/`. |
+| D3-CP-02 | Windows 11 | Opera | Desktop | `Fail` | `submission/task3/screenshots/downloads/CP-02_windows_opera_desktop/D3.png` | Có `F-D3-001`, `F-D3-002` trong `screenshots/defects/D3/D3_CP-02_windows_opera_desktop/`. |
+| D3-CP-03 | Windows 11 | Edge | Desktop | `Fail` | `submission/task3/screenshots/downloads/CP-03_windows_edge_desktop/D3.png` | Có `F-D3-001`, `F-D3-002` trong `screenshots/defects/D3/D3_CP-03_windows_edge_desktop/`. |
+| D3-CP-04 | Android | Samsung Internet | Tablet | `Fail` | `submission/task3/screenshots/downloads/CP-04_android_samsung-internet_tablet/D3.png` | Có `F-D3-001`, `F-D3-002` trong `screenshots/defects/D3/D3_CP-04_android_samsung-internet_tablet/`. |
+| D3-CP-05 | Android | Chrome | Phone | `Fail` | `submission/task3/screenshots/downloads/CP-05_android_chrome_phone/D3.png` | Có `F-D3-003` trong `screenshots/defects/D3/D3_CP-05_android_chrome_phone/`. |
+
+## 6. Compatibility Findings
+
+| ID | Screen | Cell(s) | Type | Description | Severity | Screenshot ref | Google Form timestamp |
+| --- | --- | --- | --- | --- | ---: | --- | --- |
+| `CP-F-D1-001` | D1 | D1-CP-01, D1-CP-02, D1-CP-03, D1-CP-04, D1-CP-05 | Usability | Required-field validation chưa inline theo từng input, làm người dùng khó biết trường nào cần sửa khi tạo support request. | 2 | `submission/task3/screenshots/defects/D1/*/F-D1-001_validation-not-inline.png` | `[Điền sau khi submit Google Form]` |
+| `CP-F-D1-002` | D1 | D1-CP-01, D1-CP-02, D1-CP-03, D1-CP-04 | Bug | Request type/category hiển thị như đã có giá trị nhưng submit trả lỗi `400`, UI không chỉ rõ nguyên nhân hoặc cách sửa. | 3 | `submission/task3/screenshots/defects/D1/*/F-D1-002_category-submit-400-no-clear-ui-error.png` | `[Điền sau khi submit Google Form]` |
+| `CP-F-D1-003` | D1 | D1-CP-01, D1-CP-02, D1-CP-03, D1-CP-04, D1-CP-05 | Usability | Nút `Cancel` bỏ dữ liệu form đang nhập mà không có xác nhận, tăng rủi ro mất dữ liệu trên cả desktop và mobile. | 3 | `submission/task3/screenshots/defects/D1/*/F-D1-003_cancel-discards-without-confirmation.png` | `[Điền sau khi submit Google Form]` |
+| `CP-F-D1-004` | D1 | D1-CP-02, D1-CP-03, D1-CP-04, D1-CP-05 | Usability | Submit thành công nhưng success message chưa nói rõ request đã được tạo, bước tiếp theo hoặc nơi xem trạng thái. | 2 | `submission/task3/screenshots/defects/D1/*/F-D1-004_success-semantics-weak-closure.png` | `[Điền sau khi submit Google Form]` |
+| `CP-F-D2-001` | D2 | D2-CP-01, D2-CP-02, D2-CP-03, D2-CP-04, D2-CP-05 | Usability | Khi mở detail rồi `Back` về list, search/status filter bị mất context làm người dùng phải lọc lại. | 2 | `submission/task3/screenshots/defects/D2/*/F-D2-001_back-loses-filter-context.png` | `[Điền sau khi submit Google Form]` |
+| `CP-F-D2-002` | D2 | D2-CP-01, D2-CP-02, D2-CP-03, D2-CP-04, D2-CP-05 | Usability | Empty state khi search không có kết quả gây hiểu nhầm vì không nhắc tiêu chí tìm kiếm/filter hiện tại hoặc cách reset. | 2 | `submission/task3/screenshots/defects/D2/*/F-D2-002_search-no-results-misleading-empty-state.png` | `[Điền sau khi submit Google Form]` |
+| `CP-F-D3-001` | D3 | D3-CP-01, D3-CP-02, D3-CP-03, D3-CP-04 | Bug | Admin search theo title cụ thể vẫn trả thêm support request không liên quan, làm kết quả lọc thiếu tin cậy. | 3 | `submission/task3/screenshots/defects/D3/*/F-D3-001_search-title-returns-extra-result.png` | `[Điền sau khi submit Google Form]` |
+| `CP-F-D3-002` | D3 | D3-CP-01, D3-CP-02, D3-CP-03, D3-CP-04 | Usability | Đổi giữa `Pending` và `Resolved` tab làm mất filter/search context, khiến admin phải nhập lại tiêu chí. | 2 | `submission/task3/screenshots/defects/D3/*/F-D3-002_tab-switch-loses-filter-context.png` | `[Điền sau khi submit Google Form]` |
+| `CP-F-D3-003` | D3 | D3-CP-05 | Usability | Trên Android Chrome phone, admin sidebar/content bị vỡ hoặc chiếm chiều ngang, làm vùng nội dung chính khó đọc và khó thao tác. | 3 | `submission/task3/screenshots/defects/D3/D3_CP-05_android_chrome_phone/F-D3-003_mobile-sidebar-overflow.png` | `[Điền sau khi submit Google Form]` |
+
+## 7. Conclusion
+
+Kết quả Task 3 cho thấy cả ba màn hình D1, D2 và D3 đều có lỗi usability/compatibility tái hiện trên nhiều môi trường. D2 có rủi ro thấp hơn vì lỗi chủ yếu ảnh hưởng hiệu quả thao tác khi lọc và quay lại detail. D1 có rủi ro trung bình-cao do liên quan trực tiếp đến tạo support request, validation, submit và khả năng mất dữ liệu form. D3 có rủi ro cao nhất trên mobile vì layout admin bị vỡ ở Android Chrome phone, đồng thời search/filter context chưa ổn định trên desktop/tablet.
+
+Ưu tiên sửa đề xuất: xử lý D3 mobile sidebar/content responsive trước, sau đó sửa D1 category submit `400` và xác nhận `Cancel`, cuối cùng cải thiện giữ filter context/empty state cho D2-D3.
+```
 
 **Verdict:** [Manual by user]
 
