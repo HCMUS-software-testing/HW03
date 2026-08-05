@@ -35,12 +35,12 @@ This submission focuses on Scenario D - the support-request lifecycle across use
 
 ## 4. Task 2 - User Testing
 
-- Preparation protocol: [preparation_protocol.md](task2_user_testing/task2/preparation_protocol.md)
-- Participant table: [participant_table.md](task2_user_testing/task2/participant_table.md)
-- Participant brief: [participant_brief.md](task2_user_testing/task2/participant_brief.md)
-- SUS score sheet: [sus_score_sheet.md](task2_user_testing/task2/sus_score_sheet.md)
-- Usability report template: [usability_report_template.md](task2_user_testing/task2/usability_report_template.md)
-- Session notes folder: [session_notes](task2_user_testing/task2/session_notes)
+- Preparation protocol: [preparation_protocol.md](task2_user_testing/preparation_protocol.md)
+- Participant table: [participant_table.md](task2_user_testing/participant_table.md)
+- Participant brief: [participant_brief.md](task2_user_testing/participant_brief.md)
+- SUS score sheet: [sus_score_sheet.md](task2_user_testing/sus_score_sheet.md)
+- Usability report: [usability_report_template.md](task2_user_testing/usability_report_template.md)
+- Session notes folder: [session_notes](task2_user_testing/session_notes)
 
 ## 5. Task 3 - Cross-Browser / Cross-Platform
 

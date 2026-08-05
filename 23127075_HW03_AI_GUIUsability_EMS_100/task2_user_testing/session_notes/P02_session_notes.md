@@ -1,4 +1,4 @@
-# Task 2 - Session Notes Template
+# Task 2 - Session Notes P02
 
 File này dành cho người điều phối/interviewer ghi chú, không đưa participant tự điền. Participant chỉ đọc `../participant_brief.md`; các quan sát, metric, câu trả lời và SUS raw score sẽ do Lê Trung Kiên ghi lại trong file session tương ứng.
 
