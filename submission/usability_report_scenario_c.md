@@ -43,8 +43,10 @@ Người tham gia là 5 người thật ngoài lớp học. Số Zalo/điện th
 | P01 | Trần Hữu Lộc | Sinh viên | 21 | Trung bình | 084****3053 | Đồng ý | https://youtu.be/Qg45dvZBvzo | Người dùng ngoài lớp (Edge / Windows) |
 | P02 | Lê Minh Đức | Sinh viên | 21 | Trung bình | 038****4909 | Đồng ý | https://youtu.be/MnQzUx25SYI | Người dùng ngoài lớp (Edge / Windows) |
 | P03 | Phùng Ngọc Tuấn | Sinh viên | 21 | Trung bình | 093****2285 | Đồng ý | https://youtu.be/5hYpKizmWhA | Người dùng ngoài lớp (Edge / Windows) |
-| P04 | Lê Tuấn Anh | Sinh viên | 21 | Trung bình | 084****1688 | Đồng ý | https://youtu.be/syO6zu7qQhU | Người dùng ngoài lớp (Edge / Windows) |
+| P04 | Lê Tuấn Anh | Sinh viên | 21 | Trung bình | 084****1688 | Đồng ý | https://drive.google.com/file/d/1hon0elJEEtFcuhF9n13mTz2mttJw3a5T/view?usp=sharing * | Người dùng ngoài lớp (Edge / Windows) |
 | P05 | Vũ Thế Anh | Sinh viên | 21 | Trung bình | 094****5183 | Đồng ý | https://youtu.be/ysRW-LvCq_M | Người dùng ngoài lớp (Edge / Windows) |
+
+> *\* Ghi chú cho P04 (Lê Tuấn Anh): Do chính sách quyền riêng tư và bảo mật thông tin cá nhân của YouTube chặn công khai video phỏng vấn cá nhân, video của P04 được lưu trữ trực tiếp trên Google Drive (đã có sự xin phép và đồng ý của người tham gia).*
 
 ---
 
@@ -217,7 +219,7 @@ Chi tiết tính toán:
 
 ### 8.4 Phiên P04 (Lê Tuấn Anh - 21 tuổi - Edge/Windows)
 
-* **Thời gian:** `2026-08-03 23:22` | **Thời gian thực hiện:** `3m29s` | **Số lỗi:** `2` | **Do dự:** `3` | **Trợ giúp:** `3` | **SUS:** `70.0` | **Video ghi hình:** https://youtu.be/syO6zu7qQhU
+* **Thời gian:** `2026-08-03 23:22` | **Thời gian thực hiện:** `3m29s` | **Số lỗi:** `2` | **Do dự:** `3` | **Trợ giúp:** `3` | **SUS:** `70.0` | **Video ghi hình:** https://drive.google.com/file/d/1hon0elJEEtFcuhF9n13mTz2mttJw3a5T/view?usp=sharing *(Lưu trữ trên Google Drive do chính sách bảo mật thông tin cá nhân của YouTube, đã có sự xin phép người tham gia)*
 
 **Mốc thời gian quan sát thô:**
 - `0m50s` (C2 Edit/Add User): P04 nhập mật khẩu bị sai do điều kiện quy tắc mật khẩu không hiển thị rõ trong lúc điền form. Finding: `C-U001`. Ảnh: `submission/screenshots/checklist-failures/C-F005.png`
@@ -363,7 +365,7 @@ Dùng mã `C-U001`, `C-U002`, ... cho các vấn đề usability từ kiểm th�
 | **P01 (U1)** | Trần Hữu Lộc | https://youtu.be/Qg45dvZBvzo |
 | **P02 (U2)** | Lê Minh Đức | https://youtu.be/MnQzUx25SYI |
 | **P03 (U3)** | Phùng Ngọc Tuấn | https://youtu.be/5hYpKizmWhA |
-| **P04 (U4)** | Lê Tuấn Anh | https://youtu.be/syO6zu7qQhU |
+| **P04 (U4)** | Lê Tuấn Anh | https://drive.google.com/file/d/1hon0elJEEtFcuhF9n13mTz2mttJw3a5T/view?usp=sharing * |
 | **P05 (U5)** | Vũ Thế Anh | https://youtu.be/ysRW-LvCq_M |
 
 ---

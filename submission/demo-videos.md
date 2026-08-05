@@ -13,8 +13,10 @@
 | **P01 (U1)** | Trần Hữu Lộc | Sinh viên (21 tuổi) | Edge / Windows | https://youtu.be/Qg45dvZBvzo |
 | **P02 (U2)** | Lê Minh Đức | Sinh viên (21 tuổi) | Edge / Windows | https://youtu.be/MnQzUx25SYI |
 | **P03 (U3)** | Phùng Ngọc Tuấn | Sinh viên (21 tuổi) | Edge / Windows | https://youtu.be/5hYpKizmWhA |
-| **P04 (U4)** | Lê Tuấn Anh | Sinh viên (21 tuổi) | Edge / Windows | https://youtu.be/syO6zu7qQhU |
+| **P04 (U4)** | Lê Tuấn Anh | Sinh viên (21 tuổi) | Edge / Windows | https://drive.google.com/file/d/1hon0elJEEtFcuhF9n13mTz2mttJw3a5T/view?usp=sharing * |
 | **P05 (U5)** | Vũ Thế Anh | Sinh viên (21 tuổi) | Edge / Windows | https://youtu.be/ysRW-LvCq_M |
+
+> *\* Ghi chú cho P04 (Lê Tuấn Anh): Do chính sách quyền riêng tư và thông tin cá nhân của YouTube chặn công khai video phỏng vấn cá nhân, video của P04 được lưu trữ trực tiếp trên Google Drive (đã được sự cho phép của người tham gia).*
 
 ---
 

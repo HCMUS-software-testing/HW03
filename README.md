@@ -46,7 +46,8 @@
   - Thời gian trung bình: `4m10s`
   - Số lỗi trung bình: `2.4` | Do dự trung bình: `1.8` | Trợ giúp trung bình: `1.8`
   - Điểm SUS trung bình: **`83.0 / 100`** (Hạng A - Good Usability)
-  - Video phỏng vấn (YouTube): Pilot: https://youtu.be/lpxRwuFYGBM | U1: https://youtu.be/Qg45dvZBvzo | U2: https://youtu.be/MnQzUx25SYI | U3: https://youtu.be/5hYpKizmWhA | U4: https://youtu.be/syO6zu7qQhU | U5: https://youtu.be/ysRW-LvCq_M
+  - Video phỏng vấn: Pilot: https://youtu.be/lpxRwuFYGBM | U1: https://youtu.be/Qg45dvZBvzo | U2: https://youtu.be/MnQzUx25SYI | U3: https://youtu.be/5hYpKizmWhA | U4 (Google Drive*): https://drive.google.com/file/d/1hon0elJEEtFcuhF9n13mTz2mttJw3a5T/view?usp=sharing | U5: https://youtu.be/ysRW-LvCq_M
+    *(Ghi chú U4/P04: Dùng Google Drive do chính sách bảo mật thông tin cá nhân của YouTube, đã có sự xin phép người tham gia)*
 - **Độ bao phủ Cross-Platform:** `15 / 15 cells` (3 OS x 5 Browsers x 3 Device classes)
 - **Báo cáo AI Audit & AI Critique:** `submission/ai-audit/ai_audit_report.md` | `submission/ai_critique.md`
 - **Agent Skill & YouTube Video:** `submission/agent-skills/skill_inventory.md` | `submission/demo-videos.md`
