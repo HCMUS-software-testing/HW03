@@ -40,6 +40,6 @@ Các lỗi đã thấy ở Task 1B nên được kiểm tra lại trong Task 3 n
 | `F-D1-001` validation không inline | Trên phone/tablet, alert chung có dễ bị khuất hoặc khó thấy không. |
 | `F-D1-002` request type/category gây lỗi submit | Select có hoạt động khác nhau trên Safari/iOS, Samsung Internet hoặc Firefox Android không. |
 | `F-D1-003` cancel mất dữ liệu | Back/cancel trên mobile browser có dễ bấm nhầm hơn không. |
-| `F-D2-001` back mất filter context | Back behavior trên mobile Samsung Internet và tablet Android Chrome có giữ query/history khác desktop không. |
+| `F-D2-001` back mất filter context | Back behavior trên tablet Samsung Internet và phone Android Chrome có giữ query/history khác desktop không. |
 | `F-D2-003` floating social links che pagination | Kiểm tra kỹ trên phone/tablet vì đây là lỗi responsive. |
 | `F-D3-003` admin mobile sidebar chiếm ngang | Kiểm tra trên Android phone, iOS phone và tablet; đây có thể là finding compatibility chính của D3. |

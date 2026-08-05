@@ -21,8 +21,8 @@
 | CP-01 | Linux | Firefox | Desktop | `Linux desktop + Firefox latest` | `[Điền link nếu có]` | Desktop Firefox trên Linux. |
 | CP-02 | Windows 11 | Opera | Desktop | `Windows 11 + Opera latest` | `[Điền link nếu có]` | Desktop Opera. |
 | CP-03 | Windows 11 | Edge | Desktop | `Windows 11 + Edge latest` | `[Điền link nếu có]` | Desktop Edge. |
-| CP-04 | Android | Chrome | Tablet | `Samsung Galaxy Tab hoặc tablet Android + Chrome` | `[Điền link nếu có]` | TestingBot chỉ có Chrome cho tablet; vẫn phủ tablet Android. |
-| CP-05 | Android | Samsung Internet | Phone | `Samsung Galaxy S series + Samsung Internet` | `[Điền link nếu có]` | Android phone Samsung Internet. |
+| CP-04 | Android | Samsung Internet | Tablet | `Samsung Galaxy Tab A + Samsung Internet` | `[Điền link nếu có]` | Tablet Samsung chạy Samsung Internet. |
+| CP-05 | Android | Chrome | Phone | `Samsung Galaxy A54 + Chrome` | `[Điền link nếu có]` | Điện thoại Android Samsung chạy Chrome. |
 
 ## 3. Method
 
@@ -50,8 +50,8 @@
 | D1-CP-01 | Linux | Firefox | Desktop | `[Pass/Fail]` | `submission/task3/screenshots/D1_CP-01_linux_firefox_desktop.png` | `[Điền sau]` |
 | D1-CP-02 | Windows 11 | Opera | Desktop | `[Pass/Fail]` | `submission/task3/screenshots/D1_CP-02_windows_opera_desktop.png` | `[Điền sau]` |
 | D1-CP-03 | Windows 11 | Edge | Desktop | `[Pass/Fail]` | `submission/task3/screenshots/D1_CP-03_windows_edge_desktop.png` | `[Điền sau]` |
-| D1-CP-04 | Android | Chrome | Tablet | `[Pass/Fail]` | `submission/task3/screenshots/D1_CP-04_android_chrome_tablet.png` | `[Điền sau]` |
-| D1-CP-05 | Android | Samsung Internet | Phone | `[Pass/Fail]` | `submission/task3/screenshots/D1_CP-05_android_samsung-internet_phone.png` | `[Điền sau]` |
+| D1-CP-04 | Android | Samsung Internet | Tablet | `[Pass/Fail]` | `submission/task3/screenshots/D1_CP-04_android_samsung-internet_tablet.png` | `[Điền sau]` |
+| D1-CP-05 | Android | Chrome | Phone | `[Pass/Fail]` | `submission/task3/screenshots/D1_CP-05_android_chrome_phone.png` | `[Điền sau]` |
 
 ### D2 - User My Requests list/detail
 
@@ -60,8 +60,8 @@
 | D2-CP-01 | Linux | Firefox | Desktop | `[Pass/Fail]` | `submission/task3/screenshots/D2_CP-01_linux_firefox_desktop.png` | `[Điền sau]` |
 | D2-CP-02 | Windows 11 | Opera | Desktop | `[Pass/Fail]` | `submission/task3/screenshots/D2_CP-02_windows_opera_desktop.png` | `[Điền sau]` |
 | D2-CP-03 | Windows 11 | Edge | Desktop | `[Pass/Fail]` | `submission/task3/screenshots/D2_CP-03_windows_edge_desktop.png` | `[Điền sau]` |
-| D2-CP-04 | Android | Chrome | Tablet | `[Pass/Fail]` | `submission/task3/screenshots/D2_CP-04_android_chrome_tablet.png` | `[Điền sau]` |
-| D2-CP-05 | Android | Samsung Internet | Phone | `[Pass/Fail]` | `submission/task3/screenshots/D2_CP-05_android_samsung-internet_phone.png` | `[Điền sau]` |
+| D2-CP-04 | Android | Samsung Internet | Tablet | `[Pass/Fail]` | `submission/task3/screenshots/D2_CP-04_android_samsung-internet_tablet.png` | `[Điền sau]` |
+| D2-CP-05 | Android | Chrome | Phone | `[Pass/Fail]` | `submission/task3/screenshots/D2_CP-05_android_chrome_phone.png` | `[Điền sau]` |
 
 ### D3 - Admin Support Requests list
 
@@ -70,8 +70,8 @@
 | D3-CP-01 | Linux | Firefox | Desktop | `[Pass/Fail]` | `submission/task3/screenshots/D3_CP-01_linux_firefox_desktop.png` | `[Điền sau]` |
 | D3-CP-02 | Windows 11 | Opera | Desktop | `[Pass/Fail]` | `submission/task3/screenshots/D3_CP-02_windows_opera_desktop.png` | `[Điền sau]` |
 | D3-CP-03 | Windows 11 | Edge | Desktop | `[Pass/Fail]` | `submission/task3/screenshots/D3_CP-03_windows_edge_desktop.png` | `[Điền sau]` |
-| D3-CP-04 | Android | Chrome | Tablet | `[Pass/Fail]` | `submission/task3/screenshots/D3_CP-04_android_chrome_tablet.png` | `[Điền sau]` |
-| D3-CP-05 | Android | Samsung Internet | Phone | `[Pass/Fail]` | `submission/task3/screenshots/D3_CP-05_android_samsung-internet_phone.png` | `[Điền sau]` |
+| D3-CP-04 | Android | Samsung Internet | Tablet | `[Pass/Fail]` | `submission/task3/screenshots/D3_CP-04_android_samsung-internet_tablet.png` | `[Điền sau]` |
+| D3-CP-05 | Android | Chrome | Phone | `[Pass/Fail]` | `submission/task3/screenshots/D3_CP-05_android_chrome_phone.png` | `[Điền sau]` |
 
 ## 6. Compatibility Findings
 

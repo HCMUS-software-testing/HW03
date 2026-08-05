@@ -79,14 +79,14 @@ Ví dụ:
 
 ```text
 submission/task3/screenshots/D1_CP-01_linux_firefox_desktop.png
-submission/task3/screenshots/D2_CP-04_android_chrome_tablet.png
-submission/task3/screenshots/D3_CP-05_android_samsung-internet_phone.png
+submission/task3/screenshots/D2_CP-04_android_samsung-internet_tablet.png
+submission/task3/screenshots/D3_CP-05_android_chrome_phone.png
 ```
 
 Nếu chụp thêm ảnh cho lỗi cụ thể, đặt tên có finding ID:
 
 ```text
-submission/task3/screenshots/CP-F-D3-001_android_samsung-internet_sidebar_overflow.png
+submission/task3/screenshots/CP-F-D3-001_android_chrome_sidebar_overflow.png
 ```
 
 ## 5. Checklist trước khi chuyển sang cell tiếp theo

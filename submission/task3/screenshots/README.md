@@ -19,8 +19,8 @@ Tải screenshot gốc từ TestingBot/BrowserStack/LambdaTest/thiết bị th�
 submission/task3/screenshots/downloads/CP-01_linux_firefox_desktop/
 submission/task3/screenshots/downloads/CP-02_windows_opera_desktop/
 submission/task3/screenshots/downloads/CP-03_windows_edge_desktop/
-submission/task3/screenshots/downloads/CP-04_android_chrome_tablet/
-submission/task3/screenshots/downloads/CP-05_android_samsung-internet_phone/
+submission/task3/screenshots/downloads/CP-04_android_samsung-internet_tablet/
+submission/task3/screenshots/downloads/CP-05_android_chrome_phone/
 ```
 
 Sau khi chọn ảnh cuối cùng, copy hoặc đổi tên ra root `submission/task3/screenshots/` theo đúng tên bên dưới để khớp report template.
@@ -31,20 +31,20 @@ Sau khi chọn ảnh cuối cùng, copy hoặc đổi tên ra root `submission/t
 D1_CP-01_linux_firefox_desktop.png
 D1_CP-02_windows_opera_desktop.png
 D1_CP-03_windows_edge_desktop.png
-D1_CP-04_android_chrome_tablet.png
-D1_CP-05_android_samsung-internet_phone.png
+D1_CP-04_android_samsung-internet_tablet.png
+D1_CP-05_android_chrome_phone.png
 
 D2_CP-01_linux_firefox_desktop.png
 D2_CP-02_windows_opera_desktop.png
 D2_CP-03_windows_edge_desktop.png
-D2_CP-04_android_chrome_tablet.png
-D2_CP-05_android_samsung-internet_phone.png
+D2_CP-04_android_samsung-internet_tablet.png
+D2_CP-05_android_chrome_phone.png
 
 D3_CP-01_linux_firefox_desktop.png
 D3_CP-02_windows_opera_desktop.png
 D3_CP-03_windows_edge_desktop.png
-D3_CP-04_android_chrome_tablet.png
-D3_CP-05_android_samsung-internet_phone.png
+D3_CP-04_android_samsung-internet_tablet.png
+D3_CP-05_android_chrome_phone.png
 ```
 
 Nếu có ảnh defect riêng:
@@ -61,20 +61,20 @@ Với ảnh failure riêng của D1 trong Task 3, tải ảnh thô vào đúng t
 submission/task3/screenshots/defects/D1/D1_CP-01_linux_firefox_desktop/
 submission/task3/screenshots/defects/D1/D1_CP-02_windows_opera_desktop/
 submission/task3/screenshots/defects/D1/D1_CP-03_windows_edge_desktop/
-submission/task3/screenshots/defects/D1/D1_CP-04_android_chrome_tablet/
-submission/task3/screenshots/defects/D1/D1_CP-05_android_samsung-internet_phone/
+submission/task3/screenshots/defects/D1/D1_CP-04_android_samsung-internet_tablet/
+submission/task3/screenshots/defects/D1/D1_CP-05_android_chrome_phone/
 
 submission/task3/screenshots/defects/D2/D2_CP-01_linux_firefox_desktop/
 submission/task3/screenshots/defects/D2/D2_CP-02_windows_opera_desktop/
 submission/task3/screenshots/defects/D2/D2_CP-03_windows_edge_desktop/
-submission/task3/screenshots/defects/D2/D2_CP-04_android_chrome_tablet/
-submission/task3/screenshots/defects/D2/D2_CP-05_android_samsung-internet_phone/
+submission/task3/screenshots/defects/D2/D2_CP-04_android_samsung-internet_tablet/
+submission/task3/screenshots/defects/D2/D2_CP-05_android_chrome_phone/
 
 submission/task3/screenshots/defects/D3/D3_CP-01_linux_firefox_desktop/
 submission/task3/screenshots/defects/D3/D3_CP-02_windows_opera_desktop/
 submission/task3/screenshots/defects/D3/D3_CP-03_windows_edge_desktop/
-submission/task3/screenshots/defects/D3/D3_CP-04_android_chrome_tablet/
-submission/task3/screenshots/defects/D3/D3_CP-05_android_samsung-internet_phone/
+submission/task3/screenshots/defects/D3/D3_CP-04_android_samsung-internet_tablet/
+submission/task3/screenshots/defects/D3/D3_CP-05_android_chrome_phone/
 ```
 
 Trong mỗi thư mục `D1_CP-*`, đặt file ảnh trực tiếp theo tên defect D1 từ Task 1B:
