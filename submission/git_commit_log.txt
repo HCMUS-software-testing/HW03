@@ -1,30 +1,49 @@
-9950a89 docs(report): update main report, AI audit, AI critique, and README self-assessment
-79711b6 docs(cross-platform): finalize compatibility matrix and link defect findings
-b552662 test(cross-platform): add 16 cross-platform screenshots with MSSV watermark
-6bfd524 feat: remove unused files
-0d6981a docs: add evidence screenshots
-2f82424 docs(findings): synchronize Google Form submission timestamps for findings C-F001 through C-F018
-0d510a4 feat(usability): consolidate Task 2 evidence into single report and add 6 YouTube session recording links
-7b04ae3 test: add new finding for checklist execution
-f09dfd6 docs: add form submission finding report
-7c5254c test: execute checklist for C3 account action dialogs
-bf55d89 chore: remove unused authentication middleware configuration
-06478b5 docs: update SUT URL in README to the new production environment address
-f144190 docs: add EMS finding log skill and audit entry
-1667ec3 docs: add Scenario C evidence screenshots
-97bd61a docs: update Scenario C checklist and finding log
-aeb5d95 docs: update EMS SUT domain
-827423a test: execute checklist for C1 users list
-9d56ef5 docs: add HW03 git commit plan
-8d805cf docs:add-git-commit-log
-58d0731 test:add-hw03-artifact-validator
-8617d7c docs:add-ai-audit-artifacts
-bc58c1c feat:add-hw03-agent-skills
-2f41d0d docs:add-scenario-c-testing-templates
-c3d18fe docs:update-shared-checklist-evidence
-5fdc93d Merge pull request #2 from HCMUS-software-testing/kien
-93c1e3c fixed: gui usability checklist
-c1189ed docs: update Scenario A task details and test checklist in README.md
-59da4dd Merge pull request #1 from HCMUS-software-testing/kien
-607265f Merge branch 'main' of https://github.com/HCMUS-software-testing/HW03 into kien
-d5bfe7d added gui usability checklist and fixed ai-audit-entry skill
+* 7def5b1 (HEAD -> khanh) docs: align agent skill submission metadata
+* 8ad532c test: refresh Scenario C cross-platform evidence
+* 04abc62 docs: finalize AI audit critique and findings
+* 968556c docs: synchronize checklist counts and references
+* 5aede87 docs(readme): format video links section with line breaks and bullet points
+* 9cbaf67 docs(usability): update P04 video link to Google Drive with privacy policy note
+* 0249585 feat: add cross-platform test execution screenshots for various device and browser configurations
+* 3e606ac chore: remove unused configuration file
+* 32b39e0 docs(git): update git commit log with Task 3 commits
+* 9950a89 docs(report): update main report, AI audit, AI critique, and README self-assessment
+* 79711b6 docs(cross-platform): finalize compatibility matrix and link defect findings
+* b552662 test(cross-platform): add 16 cross-platform screenshots with MSSV watermark
+* 6bfd524 feat: remove unused files
+* 0d6981a docs: add evidence screenshots
+* 2f82424 docs(findings): synchronize Google Form submission timestamps for findings C-F001 through C-F018
+* 0d510a4 feat(usability): consolidate Task 2 evidence into single report and add 6 YouTube session recording links
+* 7b04ae3 test: add new finding for checklist execution
+* f09dfd6 docs: add form submission finding report
+* 7c5254c test: execute checklist for C3 account action dialogs
+* bf55d89 chore: remove unused authentication middleware configuration
+* 06478b5 docs: update SUT URL in README to the new production environment address
+* f144190 docs: add EMS finding log skill and audit entry
+* 1667ec3 docs: add Scenario C evidence screenshots
+* 97bd61a docs: update Scenario C checklist and finding log
+* aeb5d95 docs: update EMS SUT domain
+* 827423a test: execute checklist for C1 users list
+* 9d56ef5 docs: add HW03 git commit plan
+* 8d805cf (origin/khanh) docs:add-git-commit-log
+* 58d0731 test:add-hw03-artifact-validator
+* 8617d7c docs:add-ai-audit-artifacts
+* bc58c1c feat:add-hw03-agent-skills
+* 2f41d0d docs:add-scenario-c-testing-templates
+* c3d18fe docs:update-shared-checklist-evidence
+*   5fdc93d (origin/main, origin/HEAD) Merge pull request #2 from HCMUS-software-testing/kien
+|\  
+| * 93c1e3c fixed: gui usability checklist
+* | c1189ed docs: update Scenario A task details and test checklist in README.md
+* | 59da4dd Merge pull request #1 from HCMUS-software-testing/kien
+|\| 
+| *   607265f Merge branch 'main' of https://github.com/HCMUS-software-testing/HW03 into kien
+| |\  
+| |/  
+|/|   
+* | af1c50a chores: change template for README.md
+| * d5bfe7d added gui usability checklist and fixed ai-audit-entry skill
+|/  
+* 69f74fc added ai audit skill
+* a43f874 (main) init project
+* 36550e4 first commit
