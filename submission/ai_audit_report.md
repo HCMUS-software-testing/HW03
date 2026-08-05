@@ -43,8 +43,8 @@ Hiện tại tôi đang trong quá trình làm bài tập HW3 của môn Softwar
 
 - Nhóm báo cáo chính: `submission/main_report.md`, `submission/checklist_execution_scenario_c.md`, `submission/bug_usability_findings_log.md`.
 - Nhóm user testing: `submission/usability_report_scenario_c.md` (bao gồm kịch bản, bảng 5 người dùng, tóm tắt pilot, metrics và bảng SUS thô).
-- Nhóm cross-platform: `submission/cross-platform/matrix.md`, `submission/screenshots/cross-platform/`.
-- Nhóm AI và đóng gói: `submission/ai_critique.md`, `submission/ai-audit/ai_audit_report.md`, `submission/demo-videos.md`, `submission/git_commit_log.txt`.
+- Nhóm cross-platform: `submission/cross-platform/matrix.md`, `submission/cross-platform/`.
+- Nhóm AI và đóng gói: `submission/ai_critique.md`, `submission/ai_audit_report.md`, `submission/demo-videos.md`, `submission/git_commit_log.txt`.
 - Nhóm minh chứng checklist: `submission/group/ai_prompts.md`, `submission/group/references.md`, `submission/group/gui_usability_checklist_final.md`.
 - Nhóm agent skills: `.agents/skills/ems-gui-checklist-runner/`, `.agents/skills/ems-usability-report-writer/`, `.agents/skills/ems-compatibility-matrix-builder/`, `.agents/skills/ai-audit-entry/`.
 
@@ -74,7 +74,7 @@ Dùng $ai-audit-entry để thêm audit entry cho phiên làm việc này.
 
 **Kết quả AI:** Tóm tắt artifact của Entry 2:
 
-- `submission/ai-audit/ai_audit_report.md`: thêm Entry 2 để ghi nhận phiên AI hỗ trợ.
+- `submission/ai_audit_report.md`: thêm Entry 2 để ghi nhận phiên AI hỗ trợ.
 - `.agents/skills/ai-audit-entry/SKILL.md`: cập nhật hướng dẫn audit theo yêu cầu xuống dòng rõ ràng và prompt đầy đủ.
 
 **Đánh giá:** Hữu ích ở mức ghi nhận phiên làm việc, nhưng output audit ban đầu còn quá chung chung.
@@ -101,7 +101,7 @@ Dùng $ai-audit-entry để thêm audit entry cho phiên làm việc này.
 Dùng $ai-audit-entry để thêm audit entry cho phiên làm việc này.
 ```
 
-**Kết quả AI:** Cập nhật `submission/ai-audit/ai_audit_report.md` để format hiển thị minh bạch, rõ ràng theo từng trường dữ liệu.
+**Kết quả AI:** Cập nhật `submission/ai_audit_report.md` để format hiển thị minh bạch, rõ ràng theo từng trường dữ liệu.
 
 **Đánh giá:** Đạt yêu cầu format audit sau phản hồi của sinh viên.
 
@@ -246,10 +246,10 @@ Rà soát bài nộp HW03, xóa các file nháp trùng lặp (compatibility_matr
 
 **Kết quả AI:** 
 
-- Xóa các file/thư mục trùng thừa: `submission/compatibility_matrix_scenario_c.md`, `submission/compatibility_report_scenario_c.md`, `submission/group/gui_usability_checklist_processing.md`, `submission/user-testing/`, `submission/user_testing_raw_notes_scenario_c.md`, `submission/sus_responses_scenario_c.md`, `submission/validate_hw03_artifacts.py`.
+- Xóa các file/thư mục trùng thừa: `submission/compatibility_matrix_scenario_c.md`, `submission/compatibility_report_scenario_c.md`, `submission/user-testing/`, `submission/user_testing_raw_notes_scenario_c.md`, `submission/sus_responses_scenario_c.md`, `submission/validate_hw03_artifacts.py`. Giữ lại `submission/group/gui_usability_checklist_processing.md` như ghi chú review thủ công của checklist nhóm.
 - Tích hợp toàn bộ 100% bằng chứng User Testing Task 2 vào duy nhất 1 file: `submission/usability_report_scenario_c.md`.
 - Cập nhật 6 đường dẫn YouTube ghi hình phỏng vấn người dùng thật (Pilot, U1, U2, U3, U4, U5) vào `usability_report_scenario_c.md`, `demo-videos.md`, `main_report.md` và `README.md`.
-- Cập nhật `README.md` với Bảng thông tin nhóm (Section 1), Bảng tự đánh giá điểm cá nhân Lâm Hữu Khánh `90/100` (Section 2) và Tóm tắt kết quả cá nhân Lâm Hữu Khánh (Section 3).
+- Cập nhật `README.md` với Bảng thông tin nhóm (Section 1), Bảng tự đánh giá điểm cá nhân Lâm Hữu Khánh `100/100` (Section 2) và Tóm tắt kết quả cá nhân Lâm Hữu Khánh (Section 3).
 - Cập nhật `submission/main_report.md` trỏ chính xác về `usability_report_scenario_c.md`.
 
 **Đánh giá:** Đạt yêu cầu rà soát, tinh gọn và làm sạch bộ artifact HW03.
@@ -263,7 +263,7 @@ Rà soát bài nộp HW03, xóa các file nháp trùng lặp (compatibility_matr
 ## 3. Tổng kết độ chính xác AI
 
 - AI được sử dụng để hỗ trợ lập cấu trúc artifact, tính toán số liệu SUS, sắp xếp bài báo cáo và tạo agent skills.
-- Không có bất kỳ đường dẫn file ảo hay file rác dư thừa nào còn tồn tại trong báo cáo AI Audit.
+- Các đường dẫn artifact trong báo cáo AI Audit đã được rà soát lại theo cấu trúc hiện tại của thư mục `submission/`.
 - Mọi dữ liệu kiểm thử trên EMS, phỏng vấn 5 người dùng thật ngoài lớp, ảnh chụp minh chứng lỗi, video ghi hình YouTube và nộp Google Form đều do sinh viên kiểm chứng và thực hiện.
 
 ## 4. Kết luận

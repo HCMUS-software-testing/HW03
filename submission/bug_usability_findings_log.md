@@ -17,7 +17,7 @@ Mọi defect hoặc đề xuất cải thiện tính khả dụng từ checklist
 | C-F003 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 3      | Dialog Edit User/admin layout không responsive tốt trên mobile/tablet.                           | Phản ánh lúc 22:49 ngày 02/08/2026 |
 | C-F004 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Add User form đảo placeholder/thông báo lỗi First Name và Last Name.                             | Phản ánh lúc 22:50 ngày 02/08/2026 |
 | C-F005 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Password validation không nhất quán và lỗi tiếng Anh khi đang ở VI.                              | Phản ánh lúc 22:51 ngày 02/08/2026 |
-| C-F006 | C2 Gán vai trò / chỉnh sửa người dùng | Bug       | 3      | Email validation cho phép submit email không hợp lệ dạng`@g`.                                    | Phản ánh lúc 22:54 ngày 02/08/2026 |
+| C-F006 | C2 Gán vai trò / chỉnh sửa người dùng | Bug       | 3      | Email validation cho phép submit email không hợp lệ dạng `@g`.                                   | Phản ánh lúc 22:54 ngày 02/08/2026 |
 | C-F007 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Phone Number thiếu gợi ý quy tắc 10 số bắt đầu bằng 0.                                           | Phản ánh lúc 22:55 ngày 02/08/2026 |
 | C-F008 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Phone Number cho nhập chữ, chỉ báo lỗi sau submit.                                               | Phản ánh lúc 22:57 ngày 02/08/2026 |
 | C-F009 | C2 Gán vai trò / chỉnh sửa người dùng | Usability | 2      | Role dropdown cho chọn placeholder như option thật rồi mới báo lỗi.                              | Phản ánh lúc 22:58 ngày 02/08/2026 |
@@ -27,7 +27,7 @@ Mọi defect hoặc đề xuất cải thiện tính khả dụng từ checklist
 | C-F013 | C3 Block/Unblock và Reset Password    | Usability | 3      | Đổi trạng thái Active/Inactive thiếu xác nhận nguy hiểm riêng.                                   | Phản ánh lúc 23:01 ngày 02/08/2026 |
 | C-F014 | C2/C3 Chỉnh sửa user và Active status | Bug       | 3      | Sau khi đổi email rồi chỉnh Active/Inactive, request PATCH cập nhật user bị timed out.           | Phản ánh lúc 11:07 ngày 03/08/2026 |
 | C-F015 | C2 chỉnh sửa user; delete dialog      | Bug       | 3      | Tên hoặc email quá dài được hệ thống chấp nhận, dẫn đến tràn UI trong user UI và dialog.         | Phản ánh lúc 19:08 ngày 04/08/2026 |
-| C-F016 | C2 Gán vai trò / chỉnh sửa người dùng | Bug       | 2      | Email dài dạng`@g.com` bị báo sai `email must be an email` dù email ngắn cùng domain hợp lệ.     | Phản ánh lúc 19:10 ngày 04/08/2026 |
+| C-F016 | C2 Gán vai trò / chỉnh sửa người dùng | Bug       | 2      | Email dài dạng `@g.com` bị báo sai `email must be an email` dù email ngắn cùng domain hợp lệ.    | Phản ánh lúc 19:10 ngày 04/08/2026 |
 | C-F017 | C2 Gán vai trò / chỉnh sửa người dùng | Bug       | 3      | Member Code quá dài không bị validate và gây lỗi Internal Server Error.                          | Phản ánh lúc 19:12 ngày 04/08/2026 |
 | C-F018 | C2 Gán vai trò / chỉnh sửa người dùng | Bug       | 2      | Cảnh báo Mật khẩu chỉ báo cần 8 ký tự, chữ hoa và ký tự đặc biệt nhưng vẫn lỗi nếu thiếu chữ số. | Phản ánh lúc 19:15 ngày 04/08/2026 |
 
@@ -69,6 +69,9 @@ Dùng mobile/tablet drawer hoặc collapsed sidebar mặc định, cho table có
 <img src="screenshots/checklist-failures/C-F001-02.png"  alt="C-F001 evidence-2">
 
 **Timestamp form:**
+
+<img src="screenshots/checklist-failures/C-F001-form.png" alt="C-F001 Google Form submission evidence">
+
 Phản ánh lúc 22:43 ngày 02/08/2026
 
 ### C-F002 - Empty state search thiếu hành động phục hồi
@@ -95,11 +98,11 @@ Empty state giải thích ngắn gọn và cung cấp hành động tiếp theo 
 
 **Kết quả thực tế:**
 
-Hệ thống hiển thị`No users found matching your filters.` nhưng không có nút Clear/Reset rõ ràng trong empty state.
+Hệ thống hiển thị `No users found matching your filters.` nhưng không có nút Clear/Reset rõ ràng trong empty state.
 
 **Đề xuất sửa:**
 
-Thêm nút`Clear search` hoặc `Reset filters` ngay trong empty state và hiển thị tiêu chí đang áp dụng.
+Thêm nút `Clear search` hoặc `Reset filters` ngay trong empty state và hiển thị tiêu chí đang áp dụng.
 
 **Ảnh minh chứng:**
 
@@ -146,6 +149,9 @@ Dùng mobile/tablet drawer hoặc collapsed sidebar, giới hạn chiều rộng
 <img src="screenshots/checklist-failures/C-F003-02.png" alt="C-F003 evidence-2">
 
 **Timestamp form:**
+
+<img src="screenshots/checklist-failures/C-F003-form.png" alt="C-F003 Google Form submission evidence">
+
 Phản ánh lúc 22:49 ngày 02/08/2026
 
 ### C-F004 - Add User form đảo First Name và Last Name
@@ -184,6 +190,9 @@ Sửa mapping label/placeholder/schema validation để First Name dùng placeho
 <img src="screenshots/checklist-failures/C-F004.png" alt="C-F004 evidence">
 
 **Timestamp form:**
+
+<img src="screenshots/checklist-failures/C-F004-form.png" alt="C-F004 Google Form submission evidence">
+
 Phản ánh lúc 22:50 ngày 02/08/2026
 
 ### C-F005 - Password validation không nhất quán và chưa đồng bộ ngôn ngữ
@@ -222,6 +231,9 @@ Hiển thị helper text password policy đầy đủ ngay dưới trường Pas
 <img src="screenshots/checklist-failures/C-F005.png" alt="C-F005 evidence">
 
 **Timestamp form:**
+
+<img src="screenshots/checklist-failures/C-F005-form.png" alt="C-F005 Google Form submission evidence">
+
 Phản ánh lúc 22:51 ngày 02/08/2026
 
 ### C-F006 - Email validation cho phép email `@g`
@@ -234,7 +246,7 @@ Phản ánh lúc 22:51 ngày 02/08/2026
 
 **Mức độ:** 3
 
-**Mô tả:** Email validation cho phép submit thành công với email không hợp lệ dạng`@g`.
+**Mô tả:** Email validation cho phép submit thành công với email không hợp lệ dạng `@g`.
 
 **Bước tái hiện / minh chứng:**
 
@@ -260,6 +272,9 @@ Bổ sung validation email ở cả client và server theo định dạng email 
 <img src="screenshots/checklist-failures/C-F006.png" alt="C-F006 evidence">
 
 **Timestamp form:**
+
+<img src="screenshots/checklist-failures/C-F006-form.png" alt="C-F006 Google Form submission evidence">
+
 Phản ánh lúc 22:54 ngày 02/08/2026
 
 ### C-F007 - Phone Number thiếu gợi ý định dạng
@@ -299,6 +314,8 @@ Thêm helper text hoặc placeholder cụ thể như`VD: 0912345678 - 10 số, b
 **Timestamp form:**
 Phản ánh lúc 22:55 ngày 02/08/2026
 
+<img src="screenshots/checklist-failures/C-F007-form.png" alt="C-F007 Google Form submission evidence">
+
 ### C-F008 - Phone Number cho nhập chữ
 
 **Nguồn:** Checklist execution C2
@@ -335,6 +352,9 @@ Dùng input mode numeric/tel, lọc ký tự không hợp lệ hoặc validate i
 <img src="screenshots/checklist-failures/C-F008.png" alt="C-F008 evidence">
 
 **Timestamp form:**
+
+<img src="screenshots/checklist-failures/C-F008-form.png" alt="C-F008 Google Form submission evidence">
+
 Phản ánh lúc 22:57 ngày 02/08/2026
 
 ### C-F009 - Role dropdown cho chọn placeholder
@@ -374,6 +394,9 @@ Placeholder nằm cùng cấp với Admin/Guest/Lecturer/Student hoặc Sinh vi�
 <img src="screenshots/checklist-failures/C-F009.png" alt="C-F009 evidence">
 
 **Timestamp form:**
+
+<img src="screenshots/checklist-failures/C-F009-form.png" alt="C-F009 Google Form submission evidence">
+
 Phản ánh lúc 22:58 ngày 02/08/2026
 
 ### C-F010 - Email của user đã xóa vẫn báo đang dùng
@@ -413,6 +436,9 @@ Làm rõ hậu quả trong dialog xóa user; nếu giữ email do soft delete, c
 <img src="screenshots/checklist-failures/C-F010.png" alt="C-F010 evidence">
 
 **Timestamp form:**
+
+<img src="screenshots/checklist-failures/C-F010-form.png" alt="C-F010 Google Form submission evidence">
+
 Phản ánh lúc 22:58 ngày 02/08/2026
 
 ### C-F011 - Member Code trùng báo lỗi tiếng Anh khi đang ở VI
@@ -441,7 +467,7 @@ Hệ thống nên chặn Member Code đã tồn tại và hiển thị thông b�
 
 **Kết quả thực tế:**
 
-Hệ thống chặn đúng Member Code đã tồn tại nhưng hiển thị`this member code is already in use` bằng tiếng Anh dù giao diện đang ở VI.
+Hệ thống chặn đúng Member Code đã tồn tại nhưng hiển thị `this member code is already in use` bằng tiếng Anh dù giao diện đang ở VI.
 
 **Đề xuất sửa:**
 
@@ -452,6 +478,9 @@ Dịch validation message Member Code sang tiếng Việt khi giao diện ở VI
 <img src="screenshots/checklist-failures/C-F011.png" alt="C-F011 evidence">
 
 **Timestamp form:**
+
+<img src="screenshots/checklist-failures/C-F011-form.png" alt="C-F011 Google Form submission evidence">
+
 Phản ánh lúc 22:59 ngày 02/08/2026
 
 ### C-F012 - Block/Unblock mơ hồ qua Active và thiếu Reset Password action
@@ -492,6 +521,9 @@ Thêm action riêng `Block`/`Unblock` và `Reset Password`, hoặc đổi wordin
 <img src="screenshots/checklist-failures/C-F012-02.png" alt="C-F012 evidence-2">
 
 **Timestamp form:**
+
+<img src="screenshots/checklist-failures/C-F012-form.png" alt="C-F012 Google Form submission evidence">
+
 Phản ánh lúc 23:00 ngày 02/08/2026
 
 ### C-F013 - Active/Inactive thiếu xác nhận nguy hiểm riêng
@@ -532,6 +564,9 @@ Tách Block/Unblock khỏi form Edit User thành action riêng hoặc bổ sung 
 <img src="screenshots/checklist-failures/C-F013.png" alt="C-F013 evidence">
 
 **Timestamp form:**
+
+<img src="screenshots/checklist-failures/C-F013-form.png" alt="C-F013 Google Form submission evidence">
+
 Phản ánh lúc 23:01 ngày 02/08/2026
 
 ### C-F014 - PATCH cập nhật user bị timed out sau khi đổi email và Active/Inactive
@@ -615,7 +650,12 @@ Bổ sung validation độ dài tối đa cho First Name, Last Name và Email �
 
 **Ảnh minh chứng:**
 
+<img src="screenshots/checklist-failures/C-F015-01.png" alt="C-F015 evidence-1">
+<img src="screenshots/checklist-failures/C-F015-02.png" alt="C-F015 evidence-2">
+
 **Timestamp form:**
+
+<img src="screenshots/checklist-failures/C-F015-form.png" alt="C-F015 Google Form submission evidence">
 
 Phản ánh lúc 19:08 ngày 04/08/2026
 
@@ -661,7 +701,7 @@ Tách rule validation email format và max length; hiển thị message đúng n
 
 <img src="screenshots/checklist-failures/C-F016-form.png" alt="C-F016 Google Form submission evidence">
 
-Phản ảnh lúc 19:10 ngày 04/08/2026
+Phản ánh lúc 19:10 ngày 04/08/2026
 
 ### C-F017 - Member Code quá dài không bị validate và gây Internal Server Error
 
@@ -702,7 +742,7 @@ Bổ sung max-length cho Member Code ở UI và API; trả về lỗi validation
 **Timestamp form:**
 <img src="screenshots/checklist-failures/C-F017-form.png" alt="C-F017 Google Form submission evidence">
 
-Đã phản ảnh lúc 19:12 ngày 04/08/2026
+Đã phản ánh lúc 19:12 ngày 04/08/2026
 
 ### C-F018 - Thông báo gợi ý Mật khẩu không hiển thị đầy đủ điều kiện (thiếu chữ số)
 
