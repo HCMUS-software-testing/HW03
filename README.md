@@ -9,7 +9,7 @@
 
 | STT | MSSV | Họ và tên | Scenario | Danh sách 3 Màn hình kiểm thử |
 | :---: | :---: | :--- | :---: | :--- |
-| **1** | 23127075 | Lê Trung Kiên | **Scenario D** | 1. D1: Audit logs / activity feed <br> 2. D2: Export data dialog <br> 3. D3: System settings panel |
+| **1** | 23127075 | Lê Trung Kiên | **Scenario D** | 1. D1: User - create support request form with image attachment <br> 2. D2: User - My Requests list and detail with the response <br> 3. D3: Admin - Support Requests list/detail with response handling |
 | **2** | 23127185 | Mai Thị Kim Duyên | **Scenario B** | 1. B1: Home / events listing - featured carousel, categories, search/filter <br> 2. B2: Event detail page - banner, schedule, register button, waitlist notice <br> 3. B3: Registration form - role selection, additional role, confirmation |
 | **3** | 23127205 | Lâm Hữu Khánh | **Scenario C** | 1. C1: Users list - search, role/active filters, columns <br> 2. C2: Assign Role / edit user <br> 3. C3: Block-Unblock and Reset-Password dialogs - confirmation + audit |
 | **4** | 23127326 | Lê Mai Hoài Bảo | **Scenario A** | 1. A1: Events list with status filters and notification dots <br> 2. A2: Add/Edit Event form - image upload + Rich-Text + date/time validation <br> 3. A3: Registration & Roles configuration panel - Max Slots / Waitlist / additional role |
@@ -19,7 +19,7 @@
 ## 2. BẢNG TỰ ĐÁNH GIÁ ĐIỂM CÁ NHÂN
 
 ### Sinh viên: Lâm Hữu Khánh (MSSV: 23127205) - Scenario C
-> **Điểm tự đánh giá tổng cộng (Self-Assessed Grade):** `095` / 100
+> **Điểm tự đánh giá tổng cộng (Self-Assessed Grade):** `100` / 100
 
 | No. | Criteria | Grade | Self-Assessed Grade | Ghi chú & Đường dẫn minh chứng |
 | :---: | :--- | :---: | :---: | :--- |
@@ -28,8 +28,8 @@
 | **2** | Task 2 — User testing with 5 real users | 25 | 25 / 25 | Usability Report (`submission/usability_report_scenario_c.md`) |
 | **3** | Task 3 — Cross-Browser / Cross-Platform matrix | 25 | 25 / 25 | Compatibility Matrix (`submission/cross-platform/matrix.md`) |
 | **4** | Task 4 — Bug & Usability Findings (Google Form + Log) | 10 | 10 / 10 | Bug Findings Log (`submission/bug_usability_findings_log.md`) |
-| **5** | Task 5 — Agent Skills + YouTube Demo | 10 | 5 / 10 | Agent Skill + Video Link (`submission/agent-skills/skill_inventory.md`) |
-| **TỔNG**| **TOTAL** | **100** | **95 / 100** | |
+| **5** | Task 5 — Agent Skills + YouTube Demo | 10 | 10 / 10 | Agent Skill + Video Link (`submission/agent-skills/skill_inventory.md`; https://youtu.be/3L7RXKMArdo) |
+| **TỔNG**| **TOTAL** | **100** | **100 / 100** | |
 
 ---
 
@@ -38,8 +38,8 @@
 ### Sinh viên: Lâm Hữu Khánh (23127205) - Scenario C
 
 - **Màn hình đã test:** C1 Users list, C2 Assign Role / edit user, C3 Block/Reset Password dialogs
-- **GUI Checklist thiết kế:** Designed: `52` items (Bao phủ đầy đủ IA-01, IA-02, IA-03, IA-04)
-- **Kết quả thực thi Checklist:** Executed: `52` | Passed: `35` | Failed: `17`
+- **GUI Checklist thiết kế:** Designed: `51` items (Bao phủ đầy đủ IA-01, IA-02, IA-03, IA-04)
+- **Kết quả thực thi Checklist:** Executed: `51` items/screen (`153` checks total) | Passed: `118` | Failed: `35`
 - **Số lượng Bug & Usability Issues phát hiện:** `18 findings` (`C-F001` đến `C-F018`)
 - **Kết quả User Testing (5 người dùng ngoài lớp):** 
   - Mức hoàn thành: `100%` (5/5 người dùng)
@@ -55,5 +55,5 @@
     - **U5 (P05):** https://youtu.be/ysRW-LvCq_M
     - *\* Ghi chú U4/P04: Dùng Google Drive do chính sách bảo mật thông tin cá nhân của YouTube (đã xin phép người tham gia).*
 - **Độ bao phủ Cross-Platform:** `15 / 15 cells` (3 OS x 5 Browsers x 3 Device classes)
-- **Báo cáo AI Audit & AI Critique:** `submission/ai-audit/ai_audit_report.md` | `submission/ai_critique.md`
-- **Agent Skill & YouTube Video:** `submission/agent-skills/skill_inventory.md` | `submission/demo-videos.md`
+- **Báo cáo AI Audit & AI Critique:** `submission/ai_audit_report.md` | `submission/ai_critique.md`
+- **Agent Skill & YouTube Video Demo:** `submission/agent-skills/skill_inventory.md` | https://youtu.be/3L7RXKMArdo (`submission/demo-videos.md`)

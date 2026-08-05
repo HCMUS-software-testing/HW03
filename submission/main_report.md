@@ -3,7 +3,7 @@
 **Môn học:** CS423 / CSC15003 - Kiểm thử phần mềm (AI-augmented, 2026)  
 **Sinh viên thực hiện:** Lâm Hữu Khánh - MSSV: `23127205`  
 **Kịch bản cá nhân:** Kịch bản C — Admin quản lý người dùng (Admin Manages Users)  
-**Điểm tự đánh giá tổng cộng:** `095` / 100  
+**Điểm tự đánh giá tổng cộng:** `100` / 100  
 
 ---
 
@@ -29,7 +29,7 @@
 ## 2. Tóm tắt Checklist GUI dùng chung (Shared GUI Checklist Summary)
 
 - **Artifact nhóm:** [gui_usability_checklist_final.md](group/gui_usability_checklist_final.md)
-- **Số mục checklist:** **52 items** bao phủ toàn bộ 4 khía cạnh giao diện (Interface Aspects):
+- **Số mục checklist:** **51 items** bao phủ toàn bộ 4 khía cạnh giao diện (Interface Aspects):
   - **IA-01 (General UI standards):** Bố cục, typography, màu sắc, i18n (EN/VI), empty state (15 items).
   - **IA-02 (Forms):** Nhãn, validation, thông báo lỗi, xử lý trường bắt buộc (14 items).
   - **IA-03 (Navigation):** Menu, breadcrumb, sidebar, tab, nút quay lại (11 items).
@@ -46,14 +46,14 @@
 ### 3.1 Bảng tổng hợp thực thi theo màn hình
 | Màn hình | Mục đích kiểm thử | Tổng số mục | Số mục Pass | Số mục Fail | Mã lỗi / Finding phát hiện |
 | :--- | :--- | :---: | :---: | :---: | :--- |
-| **C1 Users List** | Kiểm tra hiển thị bảng, tìm kiếm, lọc role/status, phân trang | 52 | 37 | 15 | `C-F001`, `C-F002` |
-| **C2 Edit / Assign Role** | Kiểm tra form, validation email/phone/password, dropdown role | 52 | 34 | 18 | `C-F003` đến `C-F011`, `C-F014` đến `C-F018` |
-| **C3 Block / Reset Pass** | Kiểm tra popup xác nhận, cảnh báo thao tác nguy hiểm | 52 | 34 | 18 | `C-F012`, `C-F013` |
+| **C1 Users List** | Kiểm tra hiển thị bảng, tìm kiếm, lọc role/status, phân trang | 51 | 48 | 3 | `C-F001`, `C-F002` |
+| **C2 Edit / Assign Role** | Kiểm tra form, validation email/phone/password, dropdown role | 51 | 37 | 14 | `C-F003` đến `C-F011`, `C-F014` đến `C-F018` |
+| **C3 Block / Reset Pass** | Kiểm tra popup xác nhận, cảnh báo thao tác nguy hiểm | 51 | 33 | 18 | `C-F012`, `C-F013` |
 
-- **Tổng kết chung (52 items x 3 screens):**
-  - **Đã thực thi:** `52/52` items (100% hoàn thành trên EMS thật).
-  - **Mục Pass:** `35` mục (Đáp ứng chuẩn UI cơ bản trên Desktop).
-  - **Mục Fail:** `17` mục (Được ghi nhận minh chứng ảnh trong [screenshots/checklist-failures/](screenshots/checklist-failures/)).
+- **Tổng kết chung (51 items x 3 screens):**
+  - **Đã thực thi:** `51/51` items cho mỗi màn hình (`153` checks total, 100% hoàn thành trên EMS thật).
+  - **Mục Pass:** `118` checks.
+  - **Mục Fail:** `35` checks (được ghi nhận minh chứng ảnh trong [screenshots/checklist-failures/](screenshots/checklist-failures/)).
 
 ---
 
@@ -86,7 +86,7 @@
 ## 5. Báo cáo kiểm thử đa nền tảng (Cross-Platform & Cross-Browser Report)
 
 - **Artifact chi tiết (Task 3):** [matrix.md](cross-platform/matrix.md)
-- **Thư mục ảnh minh chứng:** [screenshots/cross-platform/](screenshots/cross-platform/) (16 ảnh chụp thật có watermark MSSV `23127205`).
+- **Thư mục ảnh minh chứng:** [cross-platform/](cross-platform/) (15 ảnh chụp có watermark MSSV `23127205@student.hcmus.edu.vn`).
 
 ### 5.1 Ma trận bao phủ nghiệm thu 5 môi trường (3 OS x 5 Browsers x 3 Device Classes)
 | Cell | Hệ điều hành (3 OS) | Trình duyệt (5 Browsers) | Lớp thiết bị (3 Classes) | Kết quả | Ghi chú & Mã lỗi liên kết |
@@ -116,9 +116,9 @@
 | **Usability Report** | Markdown | [usability_report_scenario_c.md](usability_report_scenario_c.md) |
 | **Cross-Platform Matrix** | Markdown | [matrix.md](cross-platform/matrix.md) |
 | **Bug & Findings Log** | Markdown | [bug_usability_findings_log.md](bug_usability_findings_log.md) |
-| **AI Audit Report & Critique** | Markdown + PDF | [ai_audit_report.md](ai-audit/ai_audit_report.md), [ai_critique.md](ai_critique.md) |
+| **AI Audit Report & Critique** | Markdown + PDF | [ai_audit_report.md](ai_audit_report.md), [ai_critique.md](ai_critique.md) |
 | **Agent Skills & Video links** | Code + MD | [.agents/skills/](../../.agents/skills/), [demo-videos.md](demo-videos.md) |
 | **Git Commit Log** | Text file | [git_commit_log.txt](git_commit_log.txt) |
 | **Ảnh minh chứng Checklist/Usability** | PNG images | [screenshots/checklist-failures/](screenshots/checklist-failures/) |
-| **Ảnh minh chứng Cross-Platform** | PNG images | [screenshots/cross-platform/](screenshots/cross-platform/) |
+| **Ảnh minh chứng Cross-Platform** | PNG images | [cross-platform/](cross-platform/) |
 

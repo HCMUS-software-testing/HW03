@@ -63,3 +63,5 @@ Checklist này dùng để kiểm thử tính khả dụng GUI của ứng dụn
 - Don Norman, *The Design of Everyday Things, Revised and Expanded Edition*, JND.org: https://jnd.org/books/the-design-of-everyday-things-revised-and-expanded-edition/
 - Basic Books/Hachette Book Group, bibliographic page for Don Norman's *The Design of Everyday Things*: https://www.hachettebookgroup.com/titles/don-norman/the-design-of-everyday-things/9780465050659/
 - UX Magazine, "Understanding Don Norman's Principles of Interaction": https://uxmag.com/articles/understanding-don-normans-principles-of-interaction
+- Course slides: GUI Testing, Usability Testing, Compatibility Testing (CS423/CSC15003, 2026).
+- BrowserStack Documentation: https://www.browserstack.com/docs/

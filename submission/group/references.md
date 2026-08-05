@@ -7,5 +7,7 @@
 | Don Norman, The Design of Everyday Things, Revised and Expanded Edition, https://jnd.org/books/the-design-of-everyday-things-revised-and-expanded-edition/ | Đối chiếu signifiers, affordances, mapping, constraints, feedback và conceptual model |
 | Basic Books/Hachette Book Group bibliographic page, https://www.hachettebookgroup.com/titles/don-norman/the-design-of-everyday-things/9780465050659/ | Xác nhận thông tin sách và metadata trích dẫn |
 | UX Magazine, "Understanding Don Norman's Principles of Interaction", https://uxmag.com/articles/understanding-don-normans-principles-of-interaction | Tham khảo giải thích phụ về các nguyên lý tương tác của Norman |
+| Course slides: GUI Testing, Usability Testing, Compatibility Testing (CS423/CSC15003, 2026) | Đối chiếu cấu trúc checklist, quy trình user testing, severity và yêu cầu cross-platform |
+| BrowserStack Documentation, https://www.browserstack.com/docs/ | Đối chiếu cách ghi nhận môi trường OS/browser/device và bằng chứng kiểm thử cross-platform |
 
 Checklist final nằm ở `submission/group/gui_usability_checklist_final.md`. Ghi chú review và chỉnh sửa nằm ở `submission/group/gui_usability_checklist_processing.md`.
