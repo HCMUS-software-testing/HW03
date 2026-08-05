@@ -35,10 +35,10 @@
 | Áp dụng / Không áp dụng | 96 / 57 |
 | Đạt / Không đạt | 82 / 14 (tỷ lệ đạt 85.4% trên các dòng áp dụng) |
 | Tổng Task 1B theo màn hình | A1: 51 / 25 / 18 / 7 / 26 / 72.0%; A2: 51 / 38 / 34 / 4 / 13 / 89.5%; A3: 51 / 33 / 30 / 3 / 18 / 90.9% (`tổng dòng / áp dụng / đạt / không đạt / không áp dụng / tỷ lệ đạt`) |
-| Số lỗi/phát hiện | 11 phát hiện Task 1B được xác nhận bằng tương tác |
-| User-testing participants | 5 |
+| Số lỗi/phát hiện | 18 tổng: 11 Task 1B, 4 Task 2 và 3 Task 3 |
+| User-testing participants | 5/5 phiên chính đã đủ dữ liệu; pilot đã hoàn thành |
 | Pilot user | Trần Hữu Lộc (`098****620`), ngoài lớp/P1–P5, đã consent; hoàn thành trong `08:24`, error/hesitation/can thiệp `0/0/0`, không cần điều chỉnh; [video](https://youtu.be/RBcwhBtWzQ0) |
-| Usability issues by severity | S0: [ ], S1: [ ], S2: [ ], S3: [ ], S4: [ ] |
+| Usability issues by severity | S0: 0, S1: 0, S2: 4, S3: 0, S4: 0 |
 | Compatibility cells covered | 15/15 (12 Pass, 3 Fail; đủ 3 OS, 5 browsers và 3 device classes trên mỗi màn hình) |
 | Demo videos | [Link YouTube] |
 

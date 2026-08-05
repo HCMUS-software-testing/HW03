@@ -133,21 +133,21 @@ Người tham gia nhận bảng dữ liệu nghiệp vụ, không nhận hướn
 | ID    | Hồ sơ mục tiêu                                | Hồ sơ/liên hệ thật | Trạng thái    |
 | ----- | --------------------------------------------- | ------------------ | ------------- |
 | PILOT | Người ngoài P1–P5, phù hợp gần nhóm mục tiêu  | Trần Hữu Lộc; `098****620` | Đã thực hiện; [video pilot](https://youtu.be/RBcwhBtWzQ0) |
-| P1    | Sinh viên từng tổ chức hoạt động              | Chưa cung cấp      | Chưa xác nhận |
-| P2    | Sinh viên từng tổ chức hoạt động              | Chưa cung cấp      | Chưa xác nhận |
-| P3    | Sinh viên/người tham dự sự kiện thường xuyên  | Chưa cung cấp      | Chưa xác nhận |
-| P4    | Giảng viên/nhân viên                          | Chưa cung cấp      | Chưa xác nhận |
-| P5    | Người từng quản trị sự kiện hoặc biểu mẫu web | Chưa cung cấp      | Chưa xác nhận |
+| P1    | Sinh viên ngoài lớp | Phùng Ngọc Tuấn; `093****285` | Đã thực hiện; [video P1](https://www.youtube.com/watch?v=dilkwkxXt0Q) |
+| P2    | Sinh viên ngoài lớp | Trần Tuấn Kiệt; `070****688` | Đã thực hiện; [video P2](https://youtu.be/ZKvHyMedWX4) |
+| P3    | Sinh viên ngoài lớp | Vũ Thế Anh; `094****183` | Đã thực hiện; [video P3](https://youtu.be/mEJQPFBlc64) |
+| P4    | Sinh viên ngoài lớp | Hồng Gia Bảo; `090****520` | Đã thực hiện; [video P4](https://www.youtube.com/watch?v=kyZxvvLCOkE) |
+| P5    | Sinh viên ngoài lớp | Quách Vĩnh Kỳ; `094****445` | Đã thực hiện; [video P5](https://youtu.be/FmSO-TaYQxo) |
 
 ## 5. Bảng người tham gia
 
 | ID  | Họ tên hoặc mã hóa   | Hồ sơ phù hợp | Liên hệ đã che       | Ngày giờ phiên | Thiết bị/trình duyệt | Minh chứng ghi hình |
 | --- | -------------------- | ------------- | -------------------- | -------------- | -------------------- | ------------------- |
-| P1  | Chưa có dữ liệu thật | Chưa xác nhận | Chưa có dữ liệu thật | Chưa xếp lịch  | Chưa ghi nhận        | Chưa ghi nhận       |
-| P2  | Chưa có dữ liệu thật | Chưa xác nhận | Chưa có dữ liệu thật | Chưa xếp lịch  | Chưa ghi nhận        | Chưa ghi nhận       |
-| P3  | Chưa có dữ liệu thật | Chưa xác nhận | Chưa có dữ liệu thật | Chưa xếp lịch  | Chưa ghi nhận        | Chưa ghi nhận       |
-| P4  | Chưa có dữ liệu thật | Chưa xác nhận | Chưa có dữ liệu thật | Chưa xếp lịch  | Chưa ghi nhận        | Chưa ghi nhận       |
-| P5  | Chưa có dữ liệu thật | Chưa xác nhận | Chưa có dữ liệu thật | Chưa xếp lịch  | Chưa ghi nhận        | Chưa ghi nhận       |
+| P1  | Phùng Ngọc Tuấn | Sinh viên ngoài lớp | `093****285` | 15:30 ngày 03/08/2026 | Lenovo / Google Chrome | [YouTube – 23127326-Tuan](https://www.youtube.com/watch?v=dilkwkxXt0Q) |
+| P2  | Trần Tuấn Kiệt | Sinh viên ngoài lớp | `070****688` | 16:05 ngày 03/08/2026 | MacBook Pro M1 Pro / Google Chrome | [YouTube – 23127326-Kiet](https://youtu.be/ZKvHyMedWX4) |
+| P3  | Vũ Thế Anh | Sinh viên ngoài lớp | `094****183` | 16:20 ngày 03/08/2026 | Lenovo / Google Chrome | [YouTube – 23127326-TheAnh](https://youtu.be/mEJQPFBlc64) |
+| P4  | Hồng Gia Bảo | Sinh viên ngoài lớp | `090****520` | 20:00 ngày 04/08/2026 | ASUS / Microsoft Edge | [YouTube – P4](https://www.youtube.com/watch?v=kyZxvvLCOkE) |
+| P5  | Quách Vĩnh Kỳ | Sinh viên ngoài lớp | `094****445` | 22:30 ngày 04/08/2026 | Lenovo ThinkBook / Cốc Cốc | [YouTube – P5](https://youtu.be/FmSO-TaYQxo) |
 
 ## 6. Phiên pilot
 
@@ -178,66 +178,86 @@ Người tham gia nhận bảng dữ liệu nghiệp vụ, không nhận hướn
 
 | Trường                         | Nội dung                       |
 | ------------------------------ | ------------------------------ |
-| Kết quả                        | [Hoàn thành/Một phần/Thất bại] |
-| Thời gian task                 | [mm:ss]                        |
-| Error / Hesitation / Can thiệp | [ ] / [ ] / [ ]                |
-| Điểm SUS                       | [ ]                            |
+| Kết quả                        | Hoàn thành                     |
+| Thời gian task                 | `08:42`                        |
+| Error / Hesitation / Can thiệp | `1 / 1 / 0`                    |
+| Điểm SUS                       | `60/100`                       |
+| Consent                        | Đã đồng ý tham gia và ghi hình |
+| Ngày giờ                       | 15:30 ngày 03/08/2026       |
+| Video                          | [YouTube – 23127326-Tuan](https://www.youtube.com/watch?v=dilkwkxXt0Q) |
 
 | Mốc thời gian | Quan sát | Loại                 | Minh chứng ảnh/video |
 | ------------- | -------- | -------------------- | -------------------- |
-| [00:00]       | [ ]      | [Lỗi/Do dự/Nhận xét] | [ ]                  |
+| `07:55`       | Khi chọn `Academic Context` trong mục `Categories`, người dùng lúng túng và nói “này là sao”. | Lỗi + do dự | [Video/audio tại 07:55](https://youtu.be/dilkwkxXt0Q?t=475) |
 
 ### 7.2 Phiên P2
 
 | Trường                         | Nội dung                       |
 | ------------------------------ | ------------------------------ |
-| Kết quả                        | [Hoàn thành/Một phần/Thất bại] |
-| Thời gian task                 | [mm:ss]                        |
-| Error / Hesitation / Can thiệp | [ ] / [ ] / [ ]                |
-| Điểm SUS                       | [ ]                            |
+| Kết quả                        | Hoàn thành                     |
+| Thời gian task                 | `03:29`                        |
+| Error / Hesitation / Can thiệp | `0 / 0 / 0`                    |
+| Điểm SUS                       | `80/100`                       |
+| Consent                        | Đã đồng ý tham gia và ghi hình |
+| Ngày giờ                       | 16:05 ngày 03/08/2026       |
+| Thiết bị/trình duyệt           | MacBook Pro M1 Pro / Google Chrome |
+| Video                          | [YouTube – 23127326-Kiet](https://youtu.be/ZKvHyMedWX4) |
 
 | Mốc thời gian | Quan sát | Loại                 | Minh chứng ảnh/video |
 | ------------- | -------- | -------------------- | -------------------- |
-| [00:00]       | [ ]      | [Lỗi/Do dự/Nhận xét] | [ ]                  |
+| —             | Không ghi nhận lỗi, do dự hoặc can thiệp trong phiên. | Nhận xét | [Video P2](https://youtu.be/ZKvHyMedWX4) |
 
 ### 7.3 Phiên P3
 
 | Trường                         | Nội dung                       |
 | ------------------------------ | ------------------------------ |
-| Kết quả                        | [Hoàn thành/Một phần/Thất bại] |
-| Thời gian task                 | [mm:ss]                        |
-| Error / Hesitation / Can thiệp | [ ] / [ ] / [ ]                |
-| Điểm SUS                       | [ ]                            |
+| Kết quả                        | Một phần – nhập sai title       |
+| Thời gian task                 | `07:33`                        |
+| Error / Hesitation / Can thiệp | `1 / 1 / 0`                    |
+| Điểm SUS                       | `77.5/100`                     |
+| Consent                        | Đã đồng ý tham gia và ghi hình |
+| Ngày giờ                       | 16:20 ngày 03/08/2026       |
+| Thiết bị/trình duyệt           | Lenovo / Google Chrome          |
+| Video                          | [YouTube – 23127326-TheAnh](https://youtu.be/mEJQPFBlc64) |
 
 | Mốc thời gian | Quan sát | Loại                 | Minh chứng ảnh/video |
 | ------------- | -------- | -------------------- | -------------------- |
-| [00:00]       | [ ]      | [Lỗi/Do dự/Nhận xét] | [ ]                  |
+| `11:20`       | Người dùng nhấn `Save as Draft` hai lần nhưng màn hình không thay đổi và không hiển thị phản hồi; sau đó tự cuộn lên để tìm trường nhập sai. | Lỗi + do dự | [Video P3 tại 11:20](https://youtu.be/mEJQPFBlc64?t=680) |
 
 ### 7.4 Phiên P4
 
 | Trường                         | Nội dung                       |
 | ------------------------------ | ------------------------------ |
-| Kết quả                        | [Hoàn thành/Một phần/Thất bại] |
-| Thời gian task                 | [mm:ss]                        |
-| Error / Hesitation / Can thiệp | [ ] / [ ] / [ ]                |
-| Điểm SUS                       | [ ]                            |
+| Kết quả                        | Một phần – bật `Is Unlimited` trái yêu cầu |
+| Thời gian task                 | `06:28`                        |
+| Error / Hesitation / Can thiệp | `1` / `1` / `0`                |
+| Điểm SUS                       | `75/100`                       |
+| Consent                        | Đã đồng ý tham gia và ghi hình |
+| Ngày giờ                       | 20:00 ngày 04/08/2026          |
+| Thiết bị/trình duyệt           | ASUS / Microsoft Edge           |
+| Video                          | [YouTube – P4](https://www.youtube.com/watch?v=kyZxvvLCOkE) |
 
 | Mốc thời gian | Quan sát | Loại                 | Minh chứng ảnh/video |
 | ------------- | -------- | -------------------- | -------------------- |
-| [00:00]       | [ ]      | [Lỗi/Do dự/Nhận xét] | [ ]                  |
+| `05:25`       | Người dùng do dự khi thao tác `Event Types`; quan sát cho thấy họ có vẻ không chắc giá trị đã được chọn hay chưa. | Do dự | [Video P4 tại 05:25](https://www.youtube.com/watch?v=kyZxvvLCOkE&t=325s) |
+| —             | Người dùng bật `Is Unlimited`, trong khi dữ liệu task yêu cầu tắt; vì vậy phiên chỉ được tính là hoàn thành một phần. | Lỗi | [Video P4](https://www.youtube.com/watch?v=kyZxvvLCOkE) |
 
 ### 7.5 Phiên P5
 
 | Trường                         | Nội dung                       |
 | ------------------------------ | ------------------------------ |
-| Kết quả                        | [Hoàn thành/Một phần/Thất bại] |
-| Thời gian task                 | [mm:ss]                        |
-| Error / Hesitation / Can thiệp | [ ] / [ ] / [ ]                |
-| Điểm SUS                       | [ ]                            |
+| Kết quả                        | Một phần – mở nhầm sự kiện của người khác khi xác nhận |
+| Thời gian task                 | `11:10`                        |
+| Error / Hesitation / Can thiệp | `1` / `0` / `0`                |
+| Điểm SUS                       | `77.5/100`                     |
+| Consent                        | Đã đồng ý tham gia và ghi hình |
+| Ngày giờ                       | 22:30 ngày 04/08/2026          |
+| Thiết bị/trình duyệt           | Lenovo ThinkBook / Cốc Cốc     |
+| Video                          | [YouTube – P5](https://youtu.be/FmSO-TaYQxo) |
 
 | Mốc thời gian | Quan sát | Loại                 | Minh chứng ảnh/video |
 | ------------- | -------- | -------------------- | -------------------- |
-| [00:00]       | [ ]      | [Lỗi/Do dự/Nhận xét] | [ ]                  |
+| —             | Ở bước cuối, người dùng mở nhầm sự kiện của người khác và cho rằng đó là sự kiện mình vừa tạo; không xác nhận đúng bản nháp theo SC-06. | Lỗi | [Video P5](https://youtu.be/FmSO-TaYQxo) |
 
 ## 8. Phiếu SUS sau task
 
@@ -262,11 +282,11 @@ Nguồn thang đo: [John Brooke, *SUS: A Quick and Dirty Usability Scale* (1996)
 
 | Người tham gia |   Q1 |   Q2 |   Q3 |   Q4 |   Q5 |   Q6 |   Q7 |   Q8 |   Q9 |  Q10 | Điểm SUS |
 | -------------- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | -------: |
-| P1             |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |      [ ] |
-| P2             |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |      [ ] |
-| P3             |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |      [ ] |
-| P4             |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |      [ ] |
-| P5             |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |  [ ] |      [ ] |
+| P1             |    4 |    2 |    4 |    1 |    3 |    3 |    2 |    2 |    4 |    5 |       60 |
+| P2             |    3 |    1 |    4 |    1 |    3 |    1 |    4 |    1 |    3 |    1 |       80 |
+| P3             |    4 |    2 |    5 |    2 |    4 |    1 |    3 |    2 |    3 |    1 |     77.5 |
+| P4             |    3 |    1 |    5 |    2 |    3 |    3 |    5 |    1 |    4 |    3 |       75 |
+| P5             |    3 |    1 |    5 |    3 |    5 |    2 |    5 |    2 |    4 |    3 |     77.5 |
 
 ## 9. Câu hỏi thăm dò sau task
 
@@ -280,8 +300,8 @@ Người điều phối hỏi nguyên văn theo thứ tự, không gợi ý câu
 
 | Câu hỏi                  | P1  | P2  | P3  | P4  | P5  | Chủ đề rút ra |
 | ------------------------ | --- | --- | --- | --- | --- | ------------- |
-| Rõ ràng/khó hiểu         | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]           |
-| Phục hồi khi lỗi         | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]           |
-| Tốc độ/phản hồi          | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]           |
-| Tin tưởng dữ liệu đã lưu | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]           |
-| Thay đổi ưu tiên         | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]           |
+| Rõ ràng/khó hiểu         | Việc tạo hoạt động nhìn chung rõ ràng; `Academic Context` là chỗ khó hiểu. | Tạo sự kiện có giao diện trực quan và thông báo lỗi rõ ràng. | Phần lên kế hoạch sự kiện rõ ràng vì có đủ chi tiết thời gian, phân công và mô tả; phần xem log khó hiểu. | Các nhiệm vụ đều rõ ràng; phần tự chọn `Event Types` gây bối rối vì chưa biết nên chọn gì. | Không có phần nào được nêu là đặc biệt rõ ràng hoặc khó hiểu. | Tổng thể trực quan; `Academic Context`, `Event Types` và phần xem log cần giải thích rõ hơn |
+| Phục hồi khi lỗi         | Không gặp khó khăn gì. | Có thể tiếp tục vì thông báo lỗi dễ hiểu và dễ sửa. | Không biết cách sửa ngay vì hệ thống không thông báo lỗi nằm ở đâu. | Đọc thông báo lỗi hiển thị trên màn hình và sửa được lỗi. | Biết cách tiếp tục nhưng hơi khó hiểu vì không có thông báo lỗi chung dạng pop-up. | Trải nghiệm phục hồi không nhất quán; P3 và P5 cần phản hồi lỗi tổng thể rõ hơn |
+| Tốc độ/phản hồi          | Hệ thống có giật nhẹ tại chỗ thiết lập số lượng student. | Ổn định và nhanh chóng. | Tạm ổn, nhưng thao tác chọn giờ khó dùng, phải kéo chuột mạnh; nên cho phép nhập giờ trực tiếp. | Hệ thống phản hồi nhanh, nhưng thao tác chọn giờ rất chậm. | Khá nhanh. | Phản hồi nhìn chung tốt; điều khiển thời gian gây ma sát thao tác |
+| Tin tưởng dữ liệu đã lưu | Sau khi mở lại chế độ chỉnh sửa và thấy dữ liệu đã lưu, người dùng cảm thấy tin tưởng. | Sau khi tạo sự kiện, người dùng xem bản nháp để kiểm tra và tin rằng dữ liệu đã lưu. | Chưa tin ngay sau khi bấm save; chỉ chắc chắn sau khi mở phần xem/chỉnh sửa và thấy dữ liệu. | Tin dữ liệu đã lưu khi submit, nhưng vẫn cần vào kiểm tra lại một lần. | Tin dữ liệu đã lưu khi hệ thống chuyển về trang danh sách. | Phần lớn người dùng dựa vào trang danh sách hoặc kiểm tra lại bản nháp/chỉnh sửa để xác nhận dữ liệu đã lưu |
+| Thay đổi ưu tiên         | Gom các trường thiết lập thời gian vào một chỗ. | Không đề xuất thay đổi; cảm thấy hệ thống ổn. | Thay đổi phần chỉnh giờ vì đây là phần phiền và mất thời gian nhất. | Không đề xuất thay đổi. | Thay đổi cách hệ thống xử lý lỗi trường nhập sai. | P1 muốn gom nhóm thời gian; P3 muốn cải thiện cách nhập giờ; P5 muốn cải thiện xử lý lỗi |

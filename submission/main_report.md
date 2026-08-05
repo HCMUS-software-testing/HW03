@@ -365,36 +365,41 @@ Nhóm mục tiêu là người từ 18 tuổi, ngoài lớp học phần này, �
 
 | ID | Hồ sơ phù hợp | Liên hệ đã che | Ngày giờ phiên | Thiết bị/trình duyệt | Minh chứng ghi hình |
 | --- | --- | --- | --- | --- | --- |
-| P1 | Chưa tuyển/xác nhận | Chưa có dữ liệu thật | Chưa xếp lịch | Chưa ghi nhận | Chưa ghi nhận |
-| P2 | Chưa tuyển/xác nhận | Chưa có dữ liệu thật | Chưa xếp lịch | Chưa ghi nhận | Chưa ghi nhận |
-| P3 | Chưa tuyển/xác nhận | Chưa có dữ liệu thật | Chưa xếp lịch | Chưa ghi nhận | Chưa ghi nhận |
-| P4 | Chưa tuyển/xác nhận | Chưa có dữ liệu thật | Chưa xếp lịch | Chưa ghi nhận | Chưa ghi nhận |
-| P5 | Chưa tuyển/xác nhận | Chưa có dữ liệu thật | Chưa xếp lịch | Chưa ghi nhận | Chưa ghi nhận |
+| P1 | Phùng Ngọc Tuấn; sinh viên ngoài lớp, đã consent | `093****285` | 15:30 ngày 03/08/2026 | Lenovo / Google Chrome | [YouTube – 23127326-Tuan](https://www.youtube.com/watch?v=dilkwkxXt0Q) |
+| P2 | Trần Tuấn Kiệt; sinh viên ngoài lớp, đã consent | `070****688` | 16:05 ngày 03/08/2026 | MacBook Pro M1 Pro / Google Chrome | [YouTube – 23127326-Kiet](https://youtu.be/ZKvHyMedWX4) |
+| P3 | Vũ Thế Anh; sinh viên ngoài lớp, đã consent | `094****183` | 16:20 ngày 03/08/2026 | Lenovo / Google Chrome | [YouTube – 23127326-TheAnh](https://youtu.be/mEJQPFBlc64) |
+| P4 | Hồng Gia Bảo; sinh viên ngoài lớp, đã consent | `090****520` | 20:00 ngày 04/08/2026 | ASUS / Microsoft Edge | [YouTube – P4](https://www.youtube.com/watch?v=kyZxvvLCOkE) |
+| P5 | Quách Vĩnh Kỳ; sinh viên ngoài lớp, đã consent | `094****445` | 22:30 ngày 04/08/2026 | Lenovo ThinkBook / Cốc Cốc | [YouTube – P5](https://youtu.be/FmSO-TaYQxo) |
 
 ### 4.5 Bảng chỉ số
 
 | Người tham gia | Kết quả | Thời gian | Số lỗi | Số lần do dự | Điểm SUS | Ghi chú chính |
 | --- | --- | ---: | ---: | ---: | ---: | --- |
-| P1 | [Hoàn thành/Một phần/Thất bại] | [mm:ss] | [ ] | [ ] | [ ] | [ ] |
-| P2 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| P3 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| P4 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| P5 | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| **Tổng hợp** | [Tỷ lệ hoàn thành] | [Trung bình] | [Trung bình] | [Trung bình] | [Trung bình] | [ ] |
+| P1 | Hoàn thành | `08:42` | `1` | `1` | `60` | Do dự/lỗi tại `07:55` khi chọn `Academic Context`; nói “này là sao”; can thiệp `0`. |
+| P2 | Hoàn thành | `03:29` | `0` | `0` | `80` | Không ghi nhận lỗi/do dự; can thiệp `0`; đánh giá giao diện trực quan, nhanh và tin dữ liệu sau khi xem bản nháp. |
+| P3 | Một phần | `07:33` | `1` | `1` | `77.5` | Tại `11:20`, nhấn `Save as Draft` hai lần không có phản hồi rồi tự cuộn lên tìm trường sai; can thiệp `0`. |
+| P4 | Một phần | `06:28` | `1` | `1` | `75` | Bật `Is Unlimited` trái yêu cầu; do dự tại `05:25` vì không chắc `Event Types` đã được chọn; can thiệp `0`; đã consent; ASUS / Microsoft Edge; [video](https://www.youtube.com/watch?v=kyZxvvLCOkE&t=325s). |
+| P5 | Một phần | `11:10` | `1` | `0` | `77.5` | Ở bước cuối, mở nhầm sự kiện của người khác và cho rằng đó là sự kiện mình vừa tạo; không xác nhận đúng bản nháp; do dự `0`, can thiệp `0`; [video](https://youtu.be/FmSO-TaYQxo). |
+| **Tổng hợp (5/5)** | **40% hoàn thành; 60% một phần** | **`07:28` (làm tròn)** | **`0.80`** | **`0.60`** | **`74.0`** | **Cả 5 phiên chính đã đủ dữ liệu.** |
 
 ### 4.6 Các phát hiện tính khả dụng theo mức độ
 
-| ID | Màn hình | Phát hiện | Bằng chứng | Mức độ | Ảnh minh chứng | Khuyến nghị |
+| ID | Màn hình | Phát hiện | Bằng chứng | Mức độ | Minh chứng ảnh/video | Khuyến nghị |
 | --- | --- | --- | --- | ---: | --- | --- |
-| UX-001 | [A1/A2/A3] | [Vấn đề tính khả dụng] | [Người tham gia/chỉ số/trích dẫn] | [0-4] | [screenshots/...] | [Khuyến nghị cụ thể] |
+| UX-001 | A2 – Categories | `Academic Context` không đủ rõ nghĩa, làm người dùng lúng túng khi chọn. | P1 tại `07:55`: “này là sao”; [video](https://youtu.be/dilkwkxXt0Q?t=475). | 2 | [Video/audio P1 tại 07:55](https://youtu.be/dilkwkxXt0Q?t=475) | Thêm mô tả ngắn/ví dụ và làm rõ quan hệ với `Event Types`. |
+| UX-002 | A2 – Save as Draft/validation | Nhấn `Save as Draft` khi form không hợp lệ không có phản hồi tổng thể và không chuyển tới trường lỗi. | P3 tại `11:20` nhấn hai lần rồi phải tự cuộn lên tìm trường sai; P5 cũng nói khó hiểu vì không có thông báo lỗi chung dạng pop-up; [video P3](https://youtu.be/mEJQPFBlc64?t=680), [video P5](https://youtu.be/FmSO-TaYQxo). | 2 | [Video P3 tại 11:20](https://youtu.be/mEJQPFBlc64?t=680); [video/audio probe P5](https://youtu.be/FmSO-TaYQxo) | Hiển thị tóm tắt validation và tự cuộn/focus trường lỗi đầu tiên. |
+| UX-003 | A2 – Date & Time | Điều khiển chọn/chỉnh giờ bằng thao tác kéo gây khó khăn và mất thời gian. | P3 cho biết phải kéo chuột mạnh và đây là phần phiền nhất; [video P3](https://youtu.be/mEJQPFBlc64). | 2 | [Video/audio probe P3](https://youtu.be/mEJQPFBlc64) | Cho phép nhập giờ trực tiếp, cải thiện time picker và gom các trường thời gian liên quan. |
+| UX-004 | A2 – Categories | Trạng thái đã chọn của `Event Types` không đủ rõ, khiến người dùng không chắc lựa chọn đã được ghi nhận. | P4 do dự tại `05:25`; [video](https://www.youtube.com/watch?v=kyZxvvLCOkE&t=325s). | 2 | [Video P4 tại 05:25](https://www.youtube.com/watch?v=kyZxvvLCOkE&t=325s) | Hiển thị giá trị hiện tại và dấu chọn option rõ ràng, kể cả sau khi danh sách đóng. |
 
 ### 4.7 Khuyến nghị theo độ ưu tiên
 
 | Ưu tiên | Khuyến nghị | Lý do | Phát hiện liên quan |
 | --- | --- | --- | --- |
 | P0 | [Sửa ngay] | [Ảnh hưởng nghiêm trọng] | [UX-...] |
-| P1 | [Sửa sớm] | [Ảnh hưởng vừa] | [UX-...] |
-| P2 | [Cải thiện sau] | [Tối ưu trải nghiệm] | [UX-...] |
+| P1 | Thêm giải thích/ví dụ cho `Academic Context`. | P1 lúng túng nhưng vẫn hoàn thành task. | UX-001 |
+| P1 | Hiển thị validation tổng thể và focus trường lỗi sau khi nhấn `Save as Draft`. | P3 bị mất phản hồi và phải tự tìm lỗi. | UX-002 |
+| P1 | Cho phép nhập giờ trực tiếp và cải thiện time picker. | P3 xem đây là phần phiền và mất thời gian nhất. | UX-003 |
+| P1 | Làm rõ trạng thái đã chọn của `Event Types`. | P4 không chắc lựa chọn đã được ghi nhận. | UX-004 |
 
 ## 5. Task 3 - Cross-Browser / Cross-Platform
 
@@ -432,7 +437,7 @@ Chi tiết đầy đủ nằm ở `submission/cross_platform_matrix.md`.
 | Google Form | https://forms.gle/CJQFQCAXcsDbXDMM9 |
 | Aggregated log | `submission/bug_usability_findings_log.md` |
 | Tổng Bug | [ ] |
-| Tổng Usability findings | [ ] |
+| Tổng Usability findings | 3 phát hiện tạm thời từ P1/P3 (`UX-001`–`UX-003`); cập nhật lại sau P4–P5 |
 | Tổng Compatibility defects | 3 phát hiện đã có bằng chứng; nội dung form đã chuẩn bị, chưa gửi theo yêu cầu sinh viên |
 | Đối soát form và log | [Khớp/Chưa khớp] |
 
