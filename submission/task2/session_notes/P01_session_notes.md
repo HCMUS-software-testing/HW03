@@ -9,7 +9,7 @@ File này dành cho người điều phối/interviewer ghi chú, không đưa p
 | Participant ID       | `P01`                                         |
 | Họ tên             | Võ Trung Hiếu                                 |
 | Số điện thoại    | 0365223199                                      |
-| Thiết bị/browser   | Windows 11 - Chrome                             |
+| OS/browser          | Windows 11 - Chrome                             |
 | Ngày giờ           | `2026-08-03 12:12`                              |
 | Người điều phối | Lê Trung Kiên                                 |
 | Scenario             | D - User requests Support and Admin resolves it |

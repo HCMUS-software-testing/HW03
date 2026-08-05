@@ -9,7 +9,7 @@ File này dành cho người điều phối/interviewer ghi chú, không đưa p
 | Participant ID       | `P04`                                         |
 | Họ tên             | Trần Hoài Thiện Nhân                        |
 | Số điện thoại    | 0702525341                                      |
-| Thiết bị/browser   | Windows 11 - Chrome                             |
+| OS/browser          | Windows 11 - Chrome                             |
 | Ngày giờ           | `2026-08-05 14:20`                              |
 | Người điều phối | Lê Trung Kiên                                 |
 | Scenario             | D - User requests Support and Admin resolves it |

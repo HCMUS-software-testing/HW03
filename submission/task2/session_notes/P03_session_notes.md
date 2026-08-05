@@ -9,7 +9,7 @@ File này dành cho người điều phối/interviewer ghi chú, không đưa p
 | Participant ID       | `P03`                                         |
 | Họ tên             | Nguyễn Hữu Anh Trí                           |
 | Số điện thoại    | 0947570902                                      |
-| Thiết bị/browser   | Windows 11 - Edge                               |
+| OS/browser          | Windows 11 - Edge                               |
 | Ngày giờ           | `2026-08-04 22:31`                              |
 | Người điều phối | Lê Trung Kiên                                 |
 | Scenario             | D - User requests Support and Admin resolves it |
