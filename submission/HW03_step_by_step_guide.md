@@ -251,7 +251,7 @@ Với mỗi màn hình cá nhân, tạo matrix bao phủ:
 
 Không cần chạy đủ `3 x 5 x 3 = 45` tổ hợp cho mỗi màn hình, nhưng với mỗi màn hình phải bao phủ đủ mọi OS, mọi browser, và mọi device class ít nhất một lần.
 
-Nên dùng BrowserStack hoặc LambdaTest trial. Nếu không có trial, dùng cloud tool khác hoặc thiết bị thật. Mỗi screenshot phải hiển thị:
+Nên dùng TestingBot, BrowserStack hoặc LambdaTest trial. Nếu không có trial, dùng cloud tool khác hoặc thiết bị thật. Mỗi screenshot phải hiển thị:
 
 1. EMS URL.
 2. Browser, OS, device name.
@@ -274,9 +274,9 @@ Một matrix tối thiểu hợp lý cho mỗi màn hình có thể gồm `5` đ
 | 1 | Windows | Chrome | Desktop |
 | 2 | Windows | Edge | Desktop |
 | 3 | macOS | Safari | Desktop |
-| 4 | Android | Chrome | Phone |
+| 4 | Android | Samsung Internet | Phone |
 | 5 | Android | Firefox | Phone |
-| 6 | iOS hoặc Android tablet | Safari, Opera, hoặc Samsung Internet | Tablet |
+| 6 | iOS hoặc Android tablet | Safari, Opera, hoặc Chrome | Tablet |
 
 Nếu chọn Android thay iOS, Safari sẽ khó bao phủ. Khi có thể, nên dùng macOS hoặc iOS để test Safari.
 

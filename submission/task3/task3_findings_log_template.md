@@ -27,8 +27,7 @@ File này là bản nháp riêng cho Task 3 trước khi copy vào aggregated lo
 
 | Candidate | Nguồn | Điều kiện để ghi thành finding Task 3 |
 | --- | --- | --- |
-| D2 floating social links che pagination trên mobile | Task 1B D2 | Nếu tái hiện trên Android/iOS/tablet BrowserStack và ảnh thấy rõ overlap/cản thao tác. |
-| D3 admin sidebar làm content quá hẹp trên mobile | Task 1B D3 | Nếu tái hiện trên phone/tablet BrowserStack và ảnh thấy rõ sidebar/content bị vỡ. |
+| D2 floating social links che pagination trên mobile | Task 1B D2 | Nếu tái hiện trên Android/iOS/tablet TestingBot và ảnh thấy rõ overlap/cản thao tác. |
+| D3 admin sidebar làm content quá hẹp trên mobile | Task 1B D3 | Nếu tái hiện trên phone/tablet TestingBot và ảnh thấy rõ sidebar/content bị vỡ. |
 | D1 select/upload khác nhau trên Safari/iOS | Rủi ro compatibility từ form/upload | Chỉ ghi nếu quan sát được lỗi chọn category, upload ảnh, preview hoặc submit trên môi trường cụ thể. |
 | D2 attachment lightbox lỗi trên mobile/Safari | Rủi ro compatibility từ modal/media | Chỉ ghi nếu modal không fit viewport, ảnh bị méo, hoặc nút close không thao tác được. |
-

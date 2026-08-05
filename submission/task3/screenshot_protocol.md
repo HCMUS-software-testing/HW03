@@ -16,16 +16,16 @@ Chụp một screenshot cho mỗi cell trong `matrix_template.md`. Với matrix 
 | Yếu tố | Cách kiểm tra trước khi lưu ảnh |
 | --- | --- |
 | EMS URL | Thanh địa chỉ hoặc browser frame phải thấy `https://prod-dev.ems-fitus.cloud/...`. |
-| Browser/OS/device | Nếu dùng BrowserStack Live, chụp cả vùng BrowserStack toolbar/device label nếu có thể. |
+| Browser/OS/device | Nếu dùng TestingBot/BrowserStack Live, chụp cả vùng toolbar/device label nếu có thể. |
 | Overlay sinh viên | Trên trang EMS phải có text `23127075@clc.fitus.edu.vn`. |
 | State đúng | D1 là form tạo request; D2 là list/detail user; D3 là admin support list/tab/filter. |
 | Lỗi hiển thị | Nếu Fail, ảnh phải cho thấy lỗi, không chỉ chụp màn hình bình thường. |
 
-Playwright local có thể chụp viewport hoặc full page của trang web, nhưng không chụp được toàn bộ giao diện BrowserStack/device/OS. Vì vậy Task 3 nên dùng screenshot của BrowserStack Live hoặc công cụ cloud tương đương để evidence có đủ identity môi trường.
+Playwright local có thể chụp viewport hoặc full page của trang web, nhưng không chụp được toàn bộ giao diện TestingBot/BrowserStack/device/OS. Vì vậy Task 3 nên dùng screenshot của TestingBot Live, BrowserStack Live hoặc công cụ cloud tương đương để evidence có đủ identity môi trường.
 
 ## 3. Cách đặt overlay bằng DevTools Console
 
-Mở DevTools/Console trong BrowserStack session rồi chạy đoạn JavaScript sau trên trang EMS:
+Mở DevTools/Console trong TestingBot session rồi chạy đoạn JavaScript sau trên trang EMS:
 
 ```js
 (() => {
@@ -79,14 +79,14 @@ Ví dụ:
 
 ```text
 submission/task3/screenshots/D1_CP-01_linux_firefox_desktop.png
-submission/task3/screenshots/D2_CP-04_android_samsung-tablet.png
-submission/task3/screenshots/D3_CP-05_android_chrome_phone.png
+submission/task3/screenshots/D2_CP-04_android_chrome_tablet.png
+submission/task3/screenshots/D3_CP-05_android_samsung-internet_phone.png
 ```
 
 Nếu chụp thêm ảnh cho lỗi cụ thể, đặt tên có finding ID:
 
 ```text
-submission/task3/screenshots/CP-F-D3-001_android_chrome_sidebar_overflow.png
+submission/task3/screenshots/CP-F-D3-001_android_samsung-internet_sidebar_overflow.png
 ```
 
 ## 5. Checklist trước khi chuyển sang cell tiếp theo

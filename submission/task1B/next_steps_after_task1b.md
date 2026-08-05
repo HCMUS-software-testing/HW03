@@ -41,12 +41,12 @@ Các bảng `Draft finding cho Bug & Usability Log` trong từng file đã có �
 | F-D1-002 | D1 Tạo support request | Bug | 3 | `submission/screenshots/checklist-failures/F-D1-002_category-submit-400-no-clear-ui-error.png` | Nhấn mạnh mismatch giữa placeholder/default category và payload/API validation. |
 | F-D1-003 | D1 Tạo support request | Usability | 2 | `submission/screenshots/checklist-failures/F-D1-003_cancel-discards-without-confirmation.png` | Nhấn mạnh mất dữ liệu form khi bấm `Cancel` không xác nhận. |
 | F-D1-004 | D1 Tạo support request | Bug | 3 | `submission/screenshots/D1/D1_submit_success_redirect.png` | Nhấn mạnh success message sai ngữ cảnh support request. |
-| F-D2-001 | D2 My Requests list/detail | Usability | 2 | `submission/screenshots/D2/D2_back_loses_filter_context.png` | Nhấn mạnh `Back` từ detail làm mất filter/search context. |
-| F-D2-002 | D2 My Requests list/detail | Usability | 2 | `submission/screenshots/D2/D2_search_no_results.png` | Nhấn mạnh no-result state dùng message `No requests yet` gây hiểu nhầm. |
-| F-D2-003 | D2 My Requests list/detail | Usability | 2 | `submission/screenshots/D2/D2_mobile_list_layout.png` | Nhấn mạnh floating social button chồng sát vùng pagination/list trên mobile. |
-| F-D3-001 | D3 Admin Support Requests list | Usability | 2 | `submission/screenshots/D3/D3_search_title_returns_extra_result.png` | Nhấn mạnh search theo title cụ thể trả thêm request không liên quan. |
-| F-D3-002 | D3 Admin Support Requests list | Usability | 2 | `submission/screenshots/D3/D3_category_support_filter.png`, `submission/screenshots/D3/D3_resolved_tab_overview.png` | Nhấn mạnh đổi tab làm mất member-code/category filter context. |
-| F-D3-003 | D3 Admin Support Requests list | Bug | 3 | `submission/screenshots/D3/D3_mobile_layout_sidebar_overflow.png` | Nhấn mạnh mobile admin layout bị sidebar fixed làm content hẹp/khó đọc. |
+| F-D2-001 | D2 My Requests list/detail | Usability | 2 | `submission/screenshots/checklist-failures/F-D2-001_back-loses-filter-context.png` | Nhấn mạnh `Back` từ detail làm mất filter/search context. |
+| F-D2-002 | D2 My Requests list/detail | Usability | 2 | `submission/screenshots/checklist-failures/F-D2-002_search-no-results-misleading-empty-state.png` | Nhấn mạnh no-result state dùng message `No requests yet` gây hiểu nhầm. |
+| F-D2-003 | D2 My Requests list/detail | Usability | 2 | `submission/screenshots/checklist-failures/F-D2-003_mobile-floating-button-near-pagination.png` | Nhấn mạnh floating social button chồng sát vùng pagination/list trên mobile. |
+| F-D3-001 | D3 Admin Support Requests list | Usability | 2 | `submission/screenshots/checklist-failures/F-D3-001_search-title-returns-extra-result.png` | Nhấn mạnh search theo title cụ thể trả thêm request không liên quan. |
+| F-D3-002 | D3 Admin Support Requests list | Usability | 2 | `submission/screenshots/D3/D3_category_support_filter.png`, `submission/screenshots/checklist-failures/F-D3-002_tab-switch-loses-filter-context.png` | Nhấn mạnh đổi tab làm mất member-code/category filter context. |
+| F-D3-003 | D3 Admin Support Requests list | Bug | 3 | `submission/screenshots/checklist-failures/F-D3-003_mobile-sidebar-overflow.png` | Nhấn mạnh mobile admin layout bị sidebar fixed làm content hẹp/khó đọc. |
 
 ## 4. Checklist trước khi chuyển sang Task 2
 

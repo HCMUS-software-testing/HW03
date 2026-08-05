@@ -467,7 +467,7 @@ Output cần tạo:
 
 **Reasoning:** [Manual by user]
 
-**Student Fix:** [Manual by user]
+**Student Fix:** Sinh viên kiểm tra lại các screenshot D1 bằng trình duyệt thật. Ghi chú: ảnh chụp bằng Playwright MCP, đặc biệt khi dùng mobile viewport/full-page screenshot hoặc khi trang có header/footer `sticky`/`fixed`, có thể làm header bị lệch vị trí trong ảnh; nếu hiện tượng này không tái hiện khi quan sát trực tiếp trên trình duyệt thì không tính riêng là lỗi sản phẩm.
 
 ### 2.2.10 Entry 10
 
@@ -646,7 +646,7 @@ Prompt:
 
 **Reasoning:** [Manual by user]
 
-**Student Fix:** [Manual by user]
+**Student Fix:** Sinh viên kiểm tra lại các screenshot D2 bằng trình duyệt thật. Ghi chú: ảnh chụp bằng Playwright MCP, đặc biệt khi dùng mobile viewport/full-page screenshot hoặc khi trang có header/footer `sticky`/`fixed`, có thể làm header bị lệch vị trí trong ảnh; nếu hiện tượng này không tái hiện khi quan sát trực tiếp trên trình duyệt thì không tính riêng là lỗi sản phẩm.
 
 ### 2.2.12 Entry 12
 
@@ -810,7 +810,7 @@ Prompt:
 
 **Reasoning:** [Manual by user]
 
-**Student Fix:** [Manual by user]
+**Student Fix:** Sinh viên kiểm tra lại các screenshot D3 bằng trình duyệt thật. Ghi chú: ảnh chụp bằng Playwright MCP, đặc biệt khi dùng mobile viewport/full-page screenshot hoặc khi trang có header/footer `sticky`/`fixed`, có thể làm header bị lệch vị trí trong ảnh; nếu hiện tượng này không tái hiện khi quan sát trực tiếp trên trình duyệt thì không tính riêng là lỗi sản phẩm.
 
 ### 2.2.13 Entry 13
 
