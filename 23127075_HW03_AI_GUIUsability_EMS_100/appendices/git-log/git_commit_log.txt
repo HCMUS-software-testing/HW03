@@ -1,0 +1,20 @@
+Git Commit Log
+==============
+
+Template to fill before final submission.
+
+Required by HW03:
+- checklist design
+- checklist execution per screen
+- bug logging
+- usability evaluation
+- each cross-platform run
+- final packaging
+
+Recommended command:
+rtk git log --oneline --decorate --all
+
+Paste relevant commits below:
+
+[Điền sau]
+

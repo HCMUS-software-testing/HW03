@@ -1,0 +1,6 @@
+# AI Critique
+
+> Template to complete before submission. Required length: 200-300 words.
+
+Trong bài HW03 này, AI hỗ trợ tốt ở việc phân rã yêu cầu, tạo checklist ban đầu, chuẩn hóa bảng báo cáo và rà soát tính nhất quán giữa screenshot, defect ID và các task. Tuy nhiên, AI có một số giới hạn cần được kiểm soát bởi người học. Thứ nhất, AI dễ gom các lỗi có triệu chứng giống nhau thành một nhóm nếu chỉ nhìn mô tả ngắn, trong khi bài yêu cầu phân biệt theo màn hình, task, luồng thao tác và mục đích bằng chứng. Ví dụ, hai lỗi đều có phản hồi lỗi không rõ ràng nhưng một lỗi thuộc validation required-field, lỗi còn lại thuộc API `400` do category/default state; nếu nhập prompt không đủ chi tiết, AI có thể kết luận sai là trùng hoàn toàn. Thứ hai, AI không tự xác minh được tính thật của user testing, Google Form timestamp hoặc môi trường BrowserStack; các dữ liệu này bắt buộc phải do sinh viên thu thập và kiểm tra thủ công. Thứ ba, AI đôi khi tạo template đầy đủ nhưng vẫn để sót yêu cầu vận hành như xuất PDF, cập nhật timestamp form, hoặc link video demo. Bài học chính là cần dùng AI như trợ lý phân tích và tổ chức, không dùng như nguồn sự thật cuối cùng. Mỗi output phải được đối chiếu với tài liệu `docs`, screenshot thực tế và yêu cầu chấm điểm trước khi đưa vào submission.
+

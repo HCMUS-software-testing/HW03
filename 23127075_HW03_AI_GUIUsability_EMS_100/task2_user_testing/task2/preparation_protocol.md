@@ -1,0 +1,116 @@
+# Task 2 - Preparation Protocol cho Scenario D
+
+## 1. Mục tiêu nghiên cứu
+
+Đánh giá mức độ dễ hiểu và dễ hoàn tất của luồng hỗ trợ trong EMS, từ lúc người dùng tạo support request đến lúc họ kiểm tra phản hồi, và kiểm tra khả năng admin tìm đúng request cần xử lý trong danh sách quản trị.
+
+## 2. Phạm vi màn hình
+
+| Mã | Màn hình | Vai trò | Lý do đưa vào Task 2 |
+| --- | --- | --- | --- |
+| D1 | User tạo support request có image attachment | User | Đây là điểm nhập liệu chính của luồng, có form required fields, category, upload ảnh và submit/cancel. |
+| D2 | User xem My Requests list/detail có response | User | Đây là nơi người dùng xác nhận request đã được ghi nhận, theo dõi status và đọc phản hồi. |
+| D3 | Admin Support Requests list với Pending/Resolved/search/filter | Admin hoặc người quan sát vai trò hỗ trợ | Đây là nơi người xử lý tìm request theo title/member code/category và phân biệt pending/resolved. |
+
+Nếu participant không có quyền admin, phần D3 có thể chạy theo dạng observer task: người kiểm thử đăng nhập admin, participant được yêu cầu tìm request trên màn hình admin mà không thao tác dữ liệu nhạy cảm. Ghi rõ cách chạy thực tế trong session notes.
+
+## 3. Chuẩn bị account/session access
+
+Không nên đưa trực tiếp admin password cho người test. Người kiểm thử chịu trách nhiệm đăng nhập sẵn, giám sát thao tác và đăng xuất sau phiên.
+
+| Phần task | Account/session nên dùng | Cách cấp cho participant | Ghi chú an toàn |
+| --- | --- | --- | --- |
+| D1 - tạo support request | User test account của Kiên hoặc account user test riêng cho phiên đó | Cho participant dùng trình duyệt đã đăng nhập sẵn, hoặc cung cấp credential tạm nếu account chỉ dùng cho bài test | Không dùng account cá nhân thật của participant nếu không cần thiết. Không dùng chung account nhóm nếu dữ liệu cần phân biệt. |
+| D2 - xem My Requests/detail | Cùng user account đã tạo request ở D1 | Giữ nguyên session sau D1 để participant tự tìm lại request | Nếu EMS reset dữ liệu, tạo request mới trước phiên hoặc để participant tạo trong phiên. |
+| D3 - admin list/search/filter | Admin session do người kiểm thử đăng nhập sẵn | Participant thao tác dưới giám sát hoặc chỉ hướng dẫn người kiểm thử nhập query theo lời participant | Không chia sẻ `admin@gmail.com` / password qua chat, form, giấy hoặc file nộp. Không để participant resolve/delete/sửa request không thuộc phạm vi. |
+
+Theo `test access notes used during execution`, chỉ dùng account và dữ liệu được phép cho Scenario D. Nếu tạo account user tạm cho participant, ghi account alias trong `researcher-prepared account/session notes`, nhưng không đưa password thật vào báo cáo nộp Moodle.
+
+## 4. Task scenario đọc cho participant
+
+```text
+Bạn đang dùng hệ thống EMS của khoa. Bạn gặp một vấn đề khi tham gia hoặc đăng ký sự kiện và muốn gửi yêu cầu hỗ trợ kèm ảnh minh chứng. Sau khi gửi, hãy kiểm tra lại yêu cầu của mình trong danh sách support requests và cho biết bạn thấy trạng thái/phản hồi ở đâu.
+```
+
+Biến thể có phần admin nếu participant phù hợp:
+
+```text
+Bạn đang hỗ trợ xử lý yêu cầu của người dùng. Hãy tìm request vừa được tạo bằng tiêu đề, member code hoặc category trong màn hình quản lý support requests, rồi cho biết request đang ở trạng thái nào.
+```
+
+Không đọc từng bước click cho participant. Chỉ giải thích mục tiêu và để họ tự tìm đường đi.
+
+## 5. Người tham gia phù hợp
+
+| Tiêu chí | Yêu cầu |
+| --- | --- |
+| Số lượng chính | 5 người thật |
+| Pilot | 1 người thêm, không tính vào 5 người chính |
+| Đối tượng | Sinh viên, giảng viên, trợ giảng hoặc người từng dùng hệ thống web quản lý sự kiện/hỗ trợ |
+| Ràng buộc | Người ngoài lớp học phần này |
+| Số điện thoại | Có thể xác minh; khi đưa vào report cuối có thể mask một phần nếu cần |
+| Thiết bị | Ưu tiên laptop hoặc điện thoại thật; ghi lại thiết bị/browser nếu khác nhau |
+
+## 6. Metrics cần đo
+
+| Metric | Cách ghi |
+| --- | --- |
+| Task success | `Completed`, `Partial`, hoặc `Failed` |
+| Time on task | Bắt đầu khi đọc xong scenario, kết thúc khi participant xác nhận đã hoàn tất |
+| Errors | Số hành động sai, nhầm luồng, submit lỗi, mất dữ liệu, chọn sai filter |
+| Hesitations | Số lần dừng lâu, hỏi lại, quay lại, hoặc biểu hiện không chắc chắn |
+| SUS score | 0-100, tính từ 10 câu SUS |
+| Key friction | Tóm tắt điểm vướng lớn nhất của từng participant |
+
+## 7. Consent script
+
+```text
+Mình đang kiểm thử giao diện EMS cho bài Software Testing. Mục tiêu là đánh giá sản phẩm, không đánh giá bạn. Bạn có thể dừng bất kỳ lúc nào. Mình sẽ ghi thời gian, thao tác, lỗi/khó khăn và câu trả lời sau task. Nếu bạn đồng ý, mình có thể ghi màn hình hoặc ghi âm để xem lại bằng chứng; thông tin liên hệ khi nộp sẽ được che một phần.
+```
+
+## 8. Quy trình pilot
+
+| Bước | Việc cần làm | Ghi chú |
+| ---: | --- | --- |
+| 1 | Chạy thử protocol với 1 người ngoài 5 participant chính. | Không dùng dữ liệu pilot trong metrics cuối. |
+| 2 | Kiểm tra participant có hiểu scenario không. | Nếu họ hỏi “cần bấm đâu”, wording có thể đang quá mơ hồ hoặc thiếu goal. |
+| 3 | Kiểm tra SUT/account/screenshot/recording hoạt động. | EMS có thể reset, nên xác nhận trước khi chạy chính. |
+| 4 | Điều chỉnh wording hoặc setup nếu cần. | Ghi rõ thay đổi trong usability report. |
+
+## 9. Quy trình mỗi session chính
+
+| Bước | Người kiểm thử làm | Dữ liệu cần ghi |
+| ---: | --- | --- |
+| 1 | Ghi participant ID, họ tên, số điện thoại, thiết bị/browser. | `participant_table.md` |
+| 2 | Đọc consent script và xin đồng ý. | Consent `Yes/No`; recording consent nếu có. |
+| 3 | Đọc task scenario. | Không đưa click-by-click instruction. |
+| 4 | Bắt đầu timer. | Start time. |
+| 5 | Quan sát trung lập, yêu cầu think aloud. | Errors, hesitations, quote, friction. |
+| 6 | Chỉ can thiệp nếu participant bị kẹt hoàn toàn. | Ghi intervention nếu có. |
+| 7 | Kết thúc timer khi participant hoàn tất hoặc bỏ cuộc. | End time, duration, success. |
+| 8 | Cho participant trả lời SUS. | Raw SUS 1-5 từng câu. |
+| 9 | Hỏi probe questions. | Câu trả lời ngắn hoặc quote. |
+| 10 | Lưu screenshot/recording nếu có. | Evidence path. |
+
+## 10. Probe questions sau task
+
+| Chủ đề | Câu hỏi |
+| --- | --- |
+| Clarity | Phần nào của màn hình giúp bạn hiểu đang cần làm gì? Phần nào gây khó hiểu? |
+| Error recovery | Nếu nhập sai hoặc muốn quay lại, bạn có thấy cách sửa/khôi phục rõ không? |
+| Speed | Bạn thấy bước nào làm chậm nhất? |
+| Trust | Sau khi gửi request hoặc xem response, bạn có tin là hệ thống đã ghi nhận/xử lý chưa? Vì sao? |
+| Navigation | Bạn có dễ tìm lại request vừa tạo không? |
+| Admin search/filter | Nếu phải tìm request để xử lý, bạn sẽ dùng thông tin nào: title, member code, category hay status? |
+
+## 11. Liên hệ với findings Task 1B
+
+Các vấn đề từ Task 1B chỉ dùng để định hướng quan sát, không được nói trước cho participant:
+
+| Finding Task 1B | Quan sát trong Task 2 |
+| --- | --- |
+| F-D1-001, F-D1-002 | Participant có hiểu required fields/category và recovery khi submit lỗi không. |
+| F-D1-003 | Participant có lo ngại hoặc bị mất dữ liệu khi bấm `Cancel`/`Back` không. |
+| F-D2-001, F-D2-002 | Participant có hiểu filter/no-result và giữ ngữ cảnh khi quay lại detail không. |
+| F-D3-001, F-D3-002 | Participant hoặc admin observer có tìm đúng request bằng search/filter không. |
+| F-D2-003, F-D3-003 | Nếu chạy mobile, participant có bị control che hoặc layout làm chậm không. |
