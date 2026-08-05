@@ -9,8 +9,8 @@
 - Ngày kiểm thử: 2026-08-02 (Asia/Ho_Chi_Minh)
 - Bản nháp được giữ lại: `23127326_TASK1B_20260802_163308`, mã sự kiện 80; không xuất bản hoặc xóa
 - Google Form: https://forms.gle/CJQFQCAXcsDbXDMM9
-- Trạng thái gửi bên ngoài: **Chưa thực hiện. Bảo vẫn kiểm soát việc gửi.**
-- Thời điểm gửi biểu mẫu: **Chờ đồng bộ sau khi Bảo gửi.**
+- Trạng thái gửi bên ngoài: **Đã gửi đủ 11/11 finding Task 1B.**
+- Thời điểm gửi gần nhất: **22:31 ngày 05/08/2026.**
 
 Trước khi gửi, Bảo phải nhập email sinh viên thật, mở từng ảnh minh chứng và xác nhận tên trường trên Google Form khớp với các giá trị dưới đây. Sau mỗi phản hồi, thay thời điểm đang chờ trong tệp này và `bug_usability_findings_log.md` bằng thời điểm nhận thực tế.
 
@@ -29,7 +29,7 @@ Trước khi gửi, Bảo phải nhập email sinh viên thật, mở từng ả
 - Đề xuất khắc phục: Thêm nút `Reset filters` nổi bật trong trạng thái rỗng và trả tiêu điểm về ô tìm kiếm sau khi đặt lại.
 - Ảnh minh chứng: ![Minh chứng a1-f01-empty-no-reset](screenshots/task1b/a1-f01-empty-no-reset.png)
 - Tác vụ nguồn: Task 1B
-- Thời điểm gửi biểu mẫu: Chờ đồng bộ sau khi Bảo gửi
+- Thời điểm gửi biểu mẫu: 20:39 ngày 05/08/2026
 
 ### T1B-A1-03
 
@@ -44,7 +44,7 @@ Trước khi gửi, Bảo phải nhập email sinh viên thật, mở từng ả
 - Đề xuất khắc phục: Ưu tiên cột cốt lõi, cho phép xuống dòng có kiểm soát và chuyển dữ liệu phụ sang phần chi tiết ở chiều rộng hẹp.
 - Ảnh minh chứng: ![Minh chứng a1-overview](screenshots/task1b/a1-overview.png)
 - Tác vụ nguồn: Task 1B
-- Thời điểm gửi biểu mẫu: Chờ đồng bộ sau khi Bảo gửi
+- Thời điểm gửi biểu mẫu: 20:43 ngày 05/08/2026
 
 ### T1B-A1-04
 
@@ -59,7 +59,7 @@ Trước khi gửi, Bảo phải nhập email sinh viên thật, mở từng ả
 - Đề xuất khắc phục: Đưa mọi mẫu thông báo qua cùng tài nguyên bản địa hóa và bổ sung kiểm thử hồi quy EN/VI.
 - Ảnh minh chứng: ![Minh chứng a1-f04-notification-mixed-language](screenshots/task1b/a1-f04-notification-mixed-language.png)
 - Tác vụ nguồn: Task 1B
-- Thời điểm gửi biểu mẫu: Chờ đồng bộ sau khi Bảo gửi
+- Thời điểm gửi biểu mẫu: 21:05 ngày 05/08/2026
 
 ### T1B-A1-05
 
@@ -74,7 +74,7 @@ Trước khi gửi, Bảo phải nhập email sinh viên thật, mở từng ả
 - Đề xuất khắc phục: Thêm tên hỗ trợ truy cập bền vững và chú giải được kích hoạt bằng cả di chuột lẫn tiêu điểm bàn phím.
 - Ảnh minh chứng: ![Minh chứng a1-f05-action-focus-no-tooltip](screenshots/task1b/a1-f05-action-focus-no-tooltip.png)
 - Tác vụ nguồn: Task 1B
-- Thời điểm gửi biểu mẫu: Chờ đồng bộ sau khi Bảo gửi
+- Thời điểm gửi biểu mẫu: 21:08 ngày 05/08/2026
 
 ### T1B-A1-06
 
@@ -89,7 +89,7 @@ Trước khi gửi, Bảo phải nhập email sinh viên thật, mở từng ả
 - Đề xuất khắc phục: Lưu trạng thái truy vấn/bộ lọc/trang trong URL hoặc trạng thái điều hướng và khôi phục khi quay lại.
 - Ảnh minh chứng: trước ![Minh chứng a1-f05-action-focus-no-tooltip](screenshots/task1b/a1-f05-action-focus-no-tooltip.png); sau ![Minh chứng a1-f06-filter-not-retained](screenshots/task1b/a1-f06-filter-not-retained.png)
 - Tác vụ nguồn: Task 1B
-- Thời điểm gửi biểu mẫu: Chờ đồng bộ sau khi Bảo gửi
+- Thời điểm gửi biểu mẫu: 21:48 ngày 05/08/2026
 
 ### T1B-A2-01
 
@@ -104,7 +104,7 @@ Trước khi gửi, Bảo phải nhập email sinh viên thật, mở từng ả
 - Đề xuất khắc phục: Giới hạn bộ chọn tệp và kiểm tra MIME, chữ ký tệp, phần mở rộng và kích thước trước khi tạo phần xem trước.
 - Ảnh minh chứng: ![Minh chứng a2-f01-invalid-thumbnail-accepted](screenshots/task1b/a2-f01-invalid-thumbnail-accepted.png)
 - Tác vụ nguồn: Task 1B
-- Thời điểm gửi biểu mẫu: Chờ đồng bộ sau khi Bảo gửi
+- Thời điểm gửi biểu mẫu: 22:16 ngày 05/08/2026
 
 ### T1B-A2-02
 
@@ -119,7 +119,7 @@ Trước khi gửi, Bảo phải nhập email sinh viên thật, mở từng ả
 - Đề xuất khắc phục: Theo dõi trạng thái biểu mẫu đã thay đổi và hiển thị hộp thoại xác nhận cho điều hướng trong ứng dụng/trình duyệt.
 - Ảnh minh chứng: trước ![Minh chứng a2-f02-unsaved-before](screenshots/task1b/a2-f02-unsaved-before.png); sau ![Minh chứng a2-f02-unsaved-after-no-warning](screenshots/task1b/a2-f02-unsaved-after-no-warning.png)
 - Tác vụ nguồn: Task 1B
-- Thời điểm gửi biểu mẫu: Chờ đồng bộ sau khi Bảo gửi
+- Thời điểm gửi biểu mẫu: 22:19 ngày 05/08/2026
 
 ### T1B-A2-03
 
@@ -134,7 +134,7 @@ Trước khi gửi, Bảo phải nhập email sinh viên thật, mở từng ả
 - Đề xuất khắc phục: Thêm tên hỗ trợ truy cập và chú giải kích hoạt bằng di chuột/tiêu điểm, hoặc thêm nhãn hiển thị.
 - Ảnh minh chứng: ![Minh chứng a2-icon-hover-back-no-tooltip](screenshots/task1b/a2-icon-hover-back-no-tooltip.png); ![Minh chứng a2-icon-keyboard-focus-unlabeled-camera](screenshots/task1b/a2-icon-keyboard-focus-unlabeled-camera.png); ![Minh chứng a2-icon-hover-thumbnail-camera-no-tooltip](screenshots/task1b/a2-icon-hover-thumbnail-camera-no-tooltip.png); ![Minh chứng a2-icon-hover-banner-camera-no-tooltip](screenshots/task1b/a2-icon-hover-banner-camera-no-tooltip.png)
 - Tác vụ nguồn: Task 1B
-- Thời điểm gửi biểu mẫu: Chờ đồng bộ sau khi Bảo gửi
+- Thời điểm gửi biểu mẫu: 22:23 ngày 05/08/2026
 
 ### T1B-A3-01
 
@@ -149,7 +149,7 @@ Trước khi gửi, Bảo phải nhập email sinh viên thật, mở từng ả
 - Đề xuất khắc phục: Vô hiệu hóa và xóa `Max Slots` khi bật `Is Unlimited`; chỉ khôi phục khi tắt `Is Unlimited`.
 - Ảnh minh chứng: ![Minh chứng a3-f01-unlimited-max-slots-active](screenshots/task1b/a3-f01-unlimited-max-slots-active.png)
 - Tác vụ nguồn: Task 1B
-- Thời điểm gửi biểu mẫu: Chờ đồng bộ sau khi Bảo gửi
+- Thời điểm gửi biểu mẫu: 22:26 ngày 05/08/2026
 
 ### T1B-A3-03
 
@@ -164,7 +164,7 @@ Trước khi gửi, Bảo phải nhập email sinh viên thật, mở từng ả
 - Đề xuất khắc phục: Xóa/vô hiệu hóa `Waitlist` khi `Student Registration` tắt và kiểm tra lại khi lưu.
 - Ảnh minh chứng: ![Minh chứng a3-f03-waitlist-with-student-off](screenshots/task1b/a3-f03-waitlist-with-student-off.png)
 - Tác vụ nguồn: Task 1B
-- Thời điểm gửi biểu mẫu: Chờ đồng bộ sau khi Bảo gửi
+- Thời điểm gửi biểu mẫu: 22:28 ngày 05/08/2026
 
 ### T1B-A3-04
 
@@ -179,4 +179,4 @@ Trước khi gửi, Bảo phải nhập email sinh viên thật, mở từng ả
 - Đề xuất khắc phục: Thêm cơ chế bảo vệ biểu mẫu đã thay đổi dùng chung, bao quát trạng thái vai trò/tùy chọn lồng nhau và điều hướng trong ứng dụng/trình duyệt.
 - Ảnh minh chứng: ![Minh chứng a3-unsaved-reminder-25-before-back](screenshots/task1b/a3-unsaved-reminder-25-before-back.png); ![Minh chứng a3-unsaved-back-no-warning-destination](screenshots/task1b/a3-unsaved-back-no-warning-destination.png); ![Minh chứng a3-unsaved-reopen-reminder-24-persisted](screenshots/task1b/a3-unsaved-reopen-reminder-24-persisted.png)
 - Tác vụ nguồn: Task 1B
-- Thời điểm gửi biểu mẫu: Chờ đồng bộ sau khi Bảo gửi
+- Thời điểm gửi biểu mẫu: 22:31 ngày 05/08/2026

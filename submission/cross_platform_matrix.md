@@ -62,9 +62,9 @@ Mỗi màn hình dùng cùng năm ô CP-01 đến CP-05. Tổ hợp được ch�
 
 | ID | Cell ID | Màn hình | Mô tả lỗi | Expected | Actual | Severity | Screenshot | Form timestamp |
 | --- | --- | --- | --- | --- | --- | ---: | --- | --- |
-| CP-BUG-001 | A1-CP-04 | A1 | Layout danh sách sự kiện không responsive trên phone Samsung Internet. | Navigation và vùng danh sách vừa viewport hoặc chuyển sang bố cục mobile mà không cần cuộn ngang toàn trang. | Sidebar chiếm phần lớn chiều rộng, nội dung bên phải bị cắt; overflow ngang 664 px. | 3 | [Ảnh](screenshots/task3/a1-cp-04-android-samsung-internet-phone.png) | Chờ sinh viên gửi; nội dung tại `task3_form_entries.md`. |
-| CP-BUG-002 | A2-CP-04 | A2 | Form tạo sự kiện bị ép hẹp/cắt nội dung trên phone Samsung Internet. | Trường, nhãn và khu vực upload xuống hàng/co giãn trong viewport phone. | Nội dung bị cắt và yêu cầu cuộn ngang; overflow 156 px. | 3 | [Ảnh](screenshots/task3/a2-cp-04-android-samsung-internet-phone.png) | Chờ sinh viên gửi; nội dung tại `task3_form_entries.md`. |
-| CP-BUG-003 | A3-CP-04 | A3 | Panel Registration & Roles không responsive trên phone Samsung Internet. | Panel và điều khiển hiển thị đủ trong viewport phone, không cuộn ngang toàn trang. | Panel/form bị cắt; overflow ngang 216 px. | 3 | [Ảnh](screenshots/task3/a3-cp-04-android-samsung-internet-phone.png) | Chờ sinh viên gửi; nội dung tại `task3_form_entries.md`. |
+| CP-BUG-001 | A1-CP-04 | A1 | Layout danh sách sự kiện không responsive trên phone Samsung Internet. | Navigation và vùng danh sách vừa viewport hoặc chuyển sang bố cục mobile mà không cần cuộn ngang toàn trang. | Sidebar chiếm phần lớn chiều rộng, nội dung bên phải bị cắt; overflow ngang 664 px. | 3 | [Ảnh](screenshots/task3/a1-cp-04-android-samsung-internet-phone.png) | 22:44 ngày 05/08/2026 |
+| CP-BUG-002 | A2-CP-04 | A2 | Form tạo sự kiện bị ép hẹp/cắt nội dung trên phone Samsung Internet. | Trường, nhãn và khu vực upload xuống hàng/co giãn trong viewport phone. | Nội dung bị cắt và yêu cầu cuộn ngang; overflow 156 px. | 3 | [Ảnh](screenshots/task3/a2-cp-04-android-samsung-internet-phone.png) | 22:46 ngày 05/08/2026 |
+| CP-BUG-003 | A3-CP-04 | A3 | Panel Registration & Roles không responsive trên phone Samsung Internet. | Panel và điều khiển hiển thị đủ trong viewport phone, không cuộn ngang toàn trang. | Panel/form bị cắt; overflow ngang 216 px. | 3 | [Ảnh](screenshots/task3/a3-cp-04-android-samsung-internet-phone.png) | 22:48 ngày 05/08/2026 |
 
 ## 5. Kết luận compatibility
 

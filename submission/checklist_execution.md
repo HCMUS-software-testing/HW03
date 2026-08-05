@@ -213,7 +213,7 @@
 
 - Mỗi màn hình A1/A2/A3 có đúng 51 mã checklist duy nhất; tổng cộng 153 dòng.
 - 14 dòng `Không đạt` ánh xạ tới 11 phát hiện được xác nhận bằng tương tác; IA-02-04/A3 chứa hai phát hiện về quan hệ phụ thuộc.
-- Google Form chưa được gửi; Bảo sẽ gửi bằng email sinh viên. Thời điểm gửi: `Chờ Bảo gửi bằng email sinh viên`.
+- Google Form đã gửi đủ 11/11 finding Task 1B; lần gửi cuối là `T1B-A3-04` lúc 22:31 ngày 05/08/2026.
 
 ## 6. Nhật ký kiểm thử trực tiếp
 

@@ -14,6 +14,8 @@ Mỗi defect bên dưới là **một lần gửi form riêng**. Không gửi l�
 | Điều gì khiến bạn chưa hài lòng khi sử dụng EMS? | `Bố cục phone không thu gọn sidebar và làm nội dung danh sách bị cắt, buộc người dùng cuộn ngang.` |
 | Bạn mong muốn EMS bổ sung hoặc cải thiện tính năng nào? | `Thêm breakpoint phone: chuyển sidebar thành drawer/hamburger, bỏ fixed/min-width gây tràn và bảo đảm danh sách vừa chiều rộng viewport.` |
 
+- Thời điểm gửi biểu mẫu: **22:44 ngày 05/08/2026**
+
 ## CP-BUG-002 - A2 Add Event form
 
 | Câu hỏi trên form | Nội dung cần điền |
@@ -26,6 +28,8 @@ Mỗi defect bên dưới là **một lần gửi form riêng**. Không gửi l�
 | Điều gì khiến bạn chưa hài lòng khi sử dụng EMS? | `Ở phone, các cột và khu vực upload không xuống hàng đúng cách nên nội dung khó đọc và khó thao tác.` |
 | Bạn mong muốn EMS bổ sung hoặc cải thiện tính năng nào? | `Đổi form/grid sang một cột ở breakpoint phone, cho text và upload area co giãn theo 100% viewport, đồng thời loại bỏ min-width gây tràn.` |
 
+- Thời điểm gửi biểu mẫu: **22:46 ngày 05/08/2026**
+
 ## CP-BUG-003 - A3 Registration & Roles
 
 | Câu hỏi trên form | Nội dung cần điền |
@@ -37,3 +41,5 @@ Mỗi defect bên dưới là **một lần gửi form riêng**. Không gửi l�
 | Điều bạn thích nhất ở hệ thống EMS là gì? | `Các nhóm cấu hình Registration & Roles vẫn tải đủ và hoạt động ổn trên các môi trường desktop/tablet đã kiểm thử.` |
 | Điều gì khiến bạn chưa hài lòng khi sử dụng EMS? | `Trên phone, vùng cấu hình bị cắt và yêu cầu cuộn ngang nên khó đọc, đối chiếu và chỉnh các tùy chọn.` |
 | Bạn mong muốn EMS bổ sung hoặc cải thiện tính năng nào? | `Cho panel chuyển sang một cột trên phone, dùng width/max-width responsive và thêm regression test cho các breakpoint mobile.` |
+
+- Thời điểm gửi biểu mẫu: **22:48 ngày 05/08/2026**
