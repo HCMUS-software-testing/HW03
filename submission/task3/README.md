@@ -49,6 +49,7 @@ Mỗi ô trong matrix phải có screenshot thật. Screenshot cần thấy đ�
 | `matrix_template.md` | Matrix D1-D2-D3 với `5` cell/màn hình để điền kết quả thật và screenshot ref. |
 | `screenshot_protocol.md` | Quy trình chụp ảnh trên TestingBot, cách đặt overlay và naming convention. |
 | `cross_platform_report_template.md` | Template report Task 3 để đưa vào main report. |
+| `defect_capture_checklist.md` | Checklist defect D1-D2-D3 cần thử lại/cap khi chạy cross-platform. |
 | `task3_findings_log_template.md` | Template log defect/usability riêng cho Task 3, dùng để đồng bộ với Google Form và aggregated log chung. |
 | `screenshots/README.md` | Quy ước lưu ảnh Task 3. |
 
