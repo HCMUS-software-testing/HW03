@@ -41,6 +41,7 @@ This submission focuses on Scenario D - the support-request lifecycle across use
 - SUS score sheet: [sus_score_sheet.md](task2_user_testing/sus_score_sheet.md)
 - Usability report: [usability_report.md](task2_user_testing/usability_report.md)
 - Session notes folder: [session_notes](task2_user_testing/session_notes)
+- User testing video links: [video_links.md](video_links.md)
 
 ## 5. Task 3 - Cross-Browser / Cross-Platform
 
@@ -64,7 +65,7 @@ Google Form submissions must be kept consistent with the aggregated log.
 ## 8. Agent Skills And Demo
 
 - GUI usability testing skill: [gui-usability-testing/SKILL.md](agent-skills/gui-usability-testing/SKILL.md)
-- Demo video links template: [demo-videos.md](agent-skills/demo-videos.md)
+- Video links (Task 2 & Skill Demo): [video_links.md](video_links.md)
 
 ## 9. Supporting Materials
 
