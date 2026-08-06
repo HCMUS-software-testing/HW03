@@ -14,7 +14,7 @@ File này dành cho người điều phối/interviewer ghi chú, không đưa p
 | Người điều phối | Lê Trung Kiên                                 |
 | Scenario             | D - User requests Support and Admin resolves it |
 | Consent              | Yes                                             |
-| Recording            | `../video_links.md`                            |
+| Recording            | `../../video_links.md`                         |
 
 ## 2. Setup đã đưa cho participant
 

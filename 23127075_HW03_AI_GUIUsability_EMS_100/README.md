@@ -33,6 +33,7 @@
 | Findings log | Aggregated log stored at `findings/bug_usability_findings_log.md` |
 | AI appendix | Audit report and AI critique stored under `appendices/` |
 | Agent skill | `agent-skills/gui-usability-testing/SKILL.md` |
+| Skill demo video | `https://youtu.be/1km-tJIKVmw` (bao gồm cả `gui-usability-testing` và `ai-audit-entry`) |
 
 ## Notes
 

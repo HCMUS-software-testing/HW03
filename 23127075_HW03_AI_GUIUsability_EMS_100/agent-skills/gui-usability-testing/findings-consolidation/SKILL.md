@@ -1,20 +1,20 @@
 ---
 name: findings-consolidation
-description: Use when consolidating defect and usability findings from Task 1B, Task 2, and Task 3 into a unified findings directory with deduplicated screenshots and Google Form submission timestamps.
+description: Use when consolidating website defect and usability findings from checklist execution, user testing, cross-platform testing, or external submissions into a unified findings directory.
 ---
 
 # Findings Consolidation Subskill
 
 ## Overview
 
-Use this subskill to aggregate, deduplicate, and finalize all bug and usability findings across Task 1B, Task 2, and Task 3 into a standardized `findings` directory (matching `findings/bug_usability_findings_log.md` and `findings/defect-screenshots/`).
+Use this subskill to aggregate, deduplicate, and finalize bug and usability findings from any website testing workflow into a standardized `findings` directory, for example `findings/bug_usability_findings_log.md` and `findings/defect-screenshots/`.
 
-## Reference AI Audit Prompts
+## Inputs
 
-Derived from AI Audit Entries 18, 19, and 20:
-- Consolidates duplicated defect screenshots into one single folder with 1 representative screenshot per defect.
-- Maps Google Form submission timestamps to each finding row.
-- Verifies relative links and removes temporary `template` suffixes once populated.
+- Source reports from checklist execution, moderated user testing, cross-platform testing, manual QA, issue trackers, or external submission forms.
+- Screenshot/evidence directories.
+- Optional external tracker IDs, submitter names, or submission timestamps supplied by the user.
+- Target URL and target scope when available.
 
 ---
 
@@ -22,30 +22,30 @@ Derived from AI Audit Entries 18, 19, and 20:
 
 ### Step 1 - Deduplicate Defect Screenshots (`defect-screenshots/`)
 
-1. Scan all defects identified across Task 1B (e.g. `F-D1-*`, `F-D2-*`, `F-D3-*`), Task 2 (`UT-D-*`), and Task 3 (`CP-*`).
-2. Identify overlapping or duplicate symptoms observed across multiple environments/tasks.
+1. Scan all defects identified across source reports, for example checklist findings (`CHK-*`), user testing findings (`UT-*`), cross-platform findings (`CP-*`), or imported issue IDs.
+2. Identify overlapping or duplicate symptoms observed across multiple environments, roles, screens, or test methods.
 3. Move/copy exactly **1 representative screenshot** for each unique defect into `findings/defect-screenshots/`.
-   - Example naming: `F-D1-001_validation-not-inline.png`
-4. Update defect references in all task reports so they point directly to `findings/defect-screenshots/<Filename>`.
+   - Example naming: `CHK-001_validation-not-inline.png`
+4. Update defect references in all source reports so they point directly to `findings/defect-screenshots/<Filename>`.
 
 ### Step 2 - Build Aggregated Findings Log (`bug_usability_findings_log.md`)
 
 Create/update `findings/bug_usability_findings_log.md` with the unified table format:
 
-| ID | Scenario/Màn hình | Loại | Mô tả | Bước thực hiện/Heuristic | Mức độ nghiêm trọng | Đề xuất sửa | Tham chiếu screenshot đại diện | Xuất hiện trong | Thời điểm submit form |
+| ID | Website/Screen/Flow | Type | Description | Reproduction Steps / Heuristic | Severity | Suggested Fix | Representative Screenshot | Observed In | External Reference / Timestamp |
 | --- | --- | --- | --- | --- | ---: | --- | --- | --- | --- |
 
 Column Rules:
-- `ID`: Standardized prefix (`F-D1-xxx`, `F-D2-xxx`, `F-D3-xxx` for functional/checklist defects; `UT-D-xxx` for user testing findings).
-- `Loại`: `Bug` or `Usability`.
-- `Mức độ nghiêm trọng`: Integer rating from `1` (cosmetic) to `4` (catastrophe).
-- `Tham chiếu screenshot đại diện`: Relative path to `defect-screenshots/<filename>`.
-- `Xuất hiện trong`: List all tasks & cross-platform cells where observed (e.g., `Task 1B D1; Task 3 D1-CP-01, D1-CP-02`).
-- `Thời điểm submit form`: Exact timestamp of Google Form submission (e.g. `06/08/2026 13:24`).
+- `ID`: Standardized prefix such as `CHK-xxx` for checklist findings, `UT-xxx` for user testing findings, and `CP-xxx` for cross-platform findings. Preserve external issue IDs when needed.
+- `Type`: `Bug`, `Usability`, `Compatibility`, or another user-supplied category.
+- `Severity`: Integer rating from `1` (cosmetic) to `4` (catastrophe), unless the user's project uses another scale.
+- `Representative Screenshot`: Relative path to `defect-screenshots/<filename>`.
+- `Observed In`: List all screens, roles, environments, and test methods where observed.
+- `External Reference / Timestamp`: Optional tracker link, form timestamp, or submission metadata. Leave blank if not supplied.
 
 ### Step 3 - Final Audit & Checklist Verification
 
-1. Verify that number of findings in log matches total Google Form submissions.
+1. Verify that number of findings in the log matches the selected source set after deduplication.
 2. Ensure every finding links to valid relative image paths without broken links.
-3. Remove `template` suffixes from file names once content is finalized.
+3. Preserve source traceability for every merged or deduplicated finding.
 4. Mark completion checklist in `bug_usability_findings_log.md`.

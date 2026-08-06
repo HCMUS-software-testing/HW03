@@ -67,6 +67,8 @@ Google Form submissions must be kept consistent with the aggregated log.
 ## 8. Agent Skills And Demo
 
 - GUI usability testing skill: [gui-usability-testing/SKILL.md](agent-skills/gui-usability-testing/SKILL.md)
+- AI audit entry skill: [ai-audit-entry/SKILL.md](agent-skills/ai-audit-entry/SKILL.md)
+- Combined YouTube demo for both skills: [https://youtu.be/1km-tJIKVmw](https://youtu.be/1km-tJIKVmw)
 - Video links (Task 2 & Skill Demo): [video_links.md](video_links.md)
 
 ## 9. Supporting Materials

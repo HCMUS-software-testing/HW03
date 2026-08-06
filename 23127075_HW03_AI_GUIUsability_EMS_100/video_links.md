@@ -21,7 +21,10 @@ File này tổng hợp các đường dẫn (URL YouTube & Drive Backup) lưu tr
 
 ## 2. Agent Skill - Video Demo Thực Thi Skill (End-to-End)
 
+Demo tổng hợp cho cả hai skill:
+- **YouTube Demo:** [https://youtu.be/1km-tJIKVmw](https://youtu.be/1km-tJIKVmw)
+
 | STT | Tên Agent Skill | Đường dẫn Skill | Link YouTube Video Demo | Nội dung minh họa |
 | --- | --- | --- | --- | --- |
-| 1 | **GUI Usability Testing** | `agent-skills/gui-usability-testing/SKILL.md` | Chưa đính kèm riêng trong folder hiện tại | Demo luồng AI tự động đọc spec EMS, lập UI inventory và tạo GUI Usability Checklist |
-| 2 | **AI Audit Entry Helper** | `.agents/skills/ai-audit-entry/SKILL.md` | Chưa đính kèm riêng trong folder hiện tại | Demo tự động trích xuất prompt, tool output và tạo nhật ký audit |
+| 1 | **GUI Usability Testing** | `agent-skills/gui-usability-testing/SKILL.md` | [https://youtu.be/1km-tJIKVmw](https://youtu.be/1km-tJIKVmw) | Video demo chung, có phần minh họa luồng `gui-usability-testing` |
+| 2 | **AI Audit Entry Helper** | `agent-skills/ai-audit-entry/SKILL.md` | [https://youtu.be/1km-tJIKVmw](https://youtu.be/1km-tJIKVmw) | Video demo chung, có phần minh họa luồng `ai-audit-entry` |

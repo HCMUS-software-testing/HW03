@@ -13,7 +13,7 @@ Ask the user whether they want to append an audit entry before writing to:
 If the user says no, do not run the append script. If the user says yes, run the bundled script before the final response whenever meaningful work was performed:
 
 ```bash
-rtk python3 .agents/skills/ai-audit-entry/scripts/append_ai_audit_entry.py \
+rtk python3 agent-skills/ai-audit-entry/scripts/append_ai_audit_entry.py \
   --purpose "Short purpose of the session" \
   --prompt "Copy the user's prompt exactly, with no paraphrase or correction" \
   --output "Short factual summary of the AI output for the audit table" \

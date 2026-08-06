@@ -1,19 +1,21 @@
 ---
 name: step1-checklist
-description: Use when generating a project-specific GUI usability testing checklist (Task 1A) based on Nielsen heuristics, Norman principles, Shneiderman rules, and UI widget specs.
+description: Use when generating a website-specific GUI usability checklist based on target URL, target scope, Nielsen heuristics, Norman principles, Shneiderman rules, and UI widget specs.
 ---
 
-# Step 1 - GUI Usability Checklist (Task 1A)
+# GUI Usability Checklist Generation
 
 ## Overview
 
-Use this skill to turn project specs into a reusable GUI usability testing checklist. It extracts a project UI inventory and maps heuristic principles to concrete, testable checklist items.
+Use this skill to turn a target website, specs, screenshots, or user journeys into a reusable GUI usability testing checklist. It extracts a UI inventory and maps heuristic principles to concrete, observable checklist items.
 
 ## Inputs
 
-Gather or inspect these project specs before generating the checklist:
-- Project overview, domain concepts, and user roles.
-- Target feature pools, scenarios, and screens.
+Gather or inspect these inputs before generating the checklist:
+- `target_url`: the website URL. Required when the checklist is based on live pages; ask the user if missing.
+- Website overview, domain concepts, and user roles.
+- Target features, journeys, routes, and screens.
+- Authentication requirement and available account types if private screens must be inventoried.
 - Required interface aspects:
   - `IA-01`: General UI standards
   - `IA-02`: Forms and data entry
@@ -32,7 +34,8 @@ Every item must reference at least one recognized standard:
 ## Workflow
 
 1. **Extract UI Inventory:**
-   - Map screens, user roles, multi-step flows, widget families (forms, date pickers, uploads, rich-text, search/filters, tables, tabs, modals, badges), and dynamic states (loading, disabled, empty, error, stale data).
+   - Map screens, roles, multi-step flows, widget families (forms, date pickers, uploads, rich-text, search/filters, tables, tabs, modals, badges), and dynamic states (loading, disabled, empty, error, stale data).
+   - If using live pages and login is required, ask for the needed account type and credentials before inspecting private screens.
 
 2. **Generate Checklist Table:**
    - Format as Markdown table:
@@ -41,10 +44,10 @@ Every item must reference at least one recognized standard:
    - Ensure items are concrete and observable (can be marked `Passed` or `Failed`).
 
 3. **Human Review Pass:**
-   - Review AI output against project domain realities to remove duplicates or generic fluff before finalizing.
+   - Review AI output against website domain realities to remove duplicates or generic fluff before finalizing.
 
 ## Output Contract
 
 - Summary of UI Inventory.
-- Markdown Checklist Table (>40 items).
-- Reference sources section (`Nguồn tham khảo`).
+- Markdown Checklist Table (>40 items unless the user requests another size).
+- Reference sources section (`Nguồn tham khảo` or `References`, matching the requested report language).
