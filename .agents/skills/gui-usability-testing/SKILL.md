@@ -1,59 +1,80 @@
 ---
 name: gui-usability-testing
-description: Use when designing, executing, or managing GUI usability testing artifacts (Task 1A, Task 1B, Task 2, Task 3, and Findings Consolidation) for an application like EMS.
+description: Use when designing, executing, or managing reusable GUI usability testing artifacts for any website or web application.
 ---
 
 # GUI Usability Testing Suite
 
 ## Overview
 
-The `gui-usability-testing` skill suite provides an end-to-end testing workflow for GUI Usability & Cross-Platform Evaluation. It is organized into 5 dedicated subskills located in subdirectories:
+The `gui-usability-testing` skill suite provides an end-to-end workflow for GUI usability, user testing, cross-platform evaluation, and findings consolidation for any website. It is portable and must not assume a specific assignment, domain, application name, account, or route.
 
-| Subskill Name | Path | Homework Task | Key Output / Purpose |
-| --- | --- | --- | --- |
-| **`step1-checklist`** | `step1-checklist/SKILL.md` | Task 1A | Generates project UI inventory & >40-item checklist based on Nielsen, Norman, and Shneiderman principles. |
-| **`task1b-execution`** | `task1b-execution/SKILL.md` | Task 1B | Generates `test_environment_access.md` template for Playwright MCP login, then executes checklist testing per screen. |
-| **`task2-user-testing`** | `task2-user-testing/SKILL.md` | Task 2 | Prepares interview templates (protocol, SUS sheet, notes, participant table) & synthesizes post-interview data into `usability_report.md`. |
-| **`task3-cross-platform`** | `task3-cross-platform/SKILL.md` | Task 3 | Takes OS/Browser/Device lists, builds pairwise test matrix, defines email overlay screenshot protocol, and outputs compatibility report. |
-| **`findings-consolidation`** | `findings-consolidation/SKILL.md` | Findings | Consolidates all defects into `findings/`, deduplicates screenshots into `defect-screenshots/`, and maps Google Form timestamps. |
+## Required Context
+
+Before using any subskill, obtain or infer:
+- `target_url`: the website or web app URL under test. If missing, ask the user for it before browser execution or website-specific checklist generation.
+- `target_scope`: screens, routes, user journeys, or features to evaluate.
+- `artifact_location`: where reports, checklists, screenshots, and findings should be saved.
+- `auth_required`: whether the target website requires login.
+- `account_type` and credentials for each required role if login is needed, for example `customer`, `editor`, `admin`, `student`, or any domain-specific role supplied by the user.
+
+If login is required and account data is missing, ask the user for:
+- Account type / role name.
+- Username or email.
+- Password or authentication method.
+- Any safety rules for data mutation.
+
+Do not invent credentials, reuse credentials from another project, or attempt login with placeholders.
+
+## Browser Automation Requirement
+
+When a workflow says to execute live browser testing with MCP Playwright:
+- Actually call MCP Playwright tools such as `browser_navigate`, `browser_snapshot`, `browser_click`, `browser_fill_form`, and `browser_take_screenshot`.
+- Do not claim live execution from static files, previous reports, cached screenshots, or memory.
+- If MCP Playwright tools are not available, help the user install or enable the MCP Playwright server before continuing. Do not silently substitute manual reasoning unless the user explicitly approves a non-MCP fallback.
+
+## Subskills
+
+| Subskill Name | Path | Key Output / Purpose |
+| --- | --- | --- |
+| **`step1-checklist`** | `step1-checklist/SKILL.md` | Generates website UI inventory and a reusable heuristic checklist based on Nielsen, Norman, Shneiderman, and widget-specific criteria. |
+| **`task1b-execution`** | `task1b-execution/SKILL.md` | Executes a checklist against target website screens using live MCP Playwright browser testing and produces execution reports. |
+| **`task2-user-testing`** | `task2-user-testing/SKILL.md` | Prepares moderated user testing templates and synthesizes participant notes, SUS scores, and usability reports. |
+| **`task3-cross-platform`** | `task3-cross-platform/SKILL.md` | Builds cross-browser/device matrices, defines screenshot evidence protocol, and outputs compatibility reports. |
+| **`findings-consolidation`** | `findings-consolidation/SKILL.md` | Consolidates defects and usability findings into a portable findings directory with deduplicated screenshots. |
 
 ---
 
-## Subskill Details & AI Audit Traceability
+## Subskill Details
 
-### 1. `step1-checklist` (Task 1A)
-- **Derived from AI Audit Entries 3 & 5.**
-- Extracts UI inventory (screens, roles, flows, widgets, dynamic states).
-- Maps heuristics to IA-01 (General UI), IA-02 (Forms), IA-03 (Navigation), IA-04 (Feedback).
+### 1. `step1-checklist`
+- Extracts UI inventory from specs, screenshots, live pages, or user-provided scope.
+- Maps heuristics to `IA-01` General UI, `IA-02` Forms, `IA-03` Navigation, and `IA-04` Feedback.
 
-### 2. `task1b-execution` (Task 1B)
-- **Derived from AI Audit Entries 8, 9, 11, and 12.**
-- Step 1: Prepares `test_environment_access.md` for URL, credentials, and safety rules.
-- Step 2: Uses Playwright MCP & Chrome DevTools MCP to navigate, inspect DOM/console/network, capture screenshot evidence, and produce `task1b_<Screen>.md`.
+### 2. `task1b-execution`
+- Confirms `target_url`, target screens, role/account requirements, credentials, and safety rules.
+- Uses MCP Playwright to navigate, log in when needed, inspect live DOM and interaction behavior, capture screenshot evidence, and produce per-screen reports.
 
-### 3. `task2-user-testing` (Task 2)
-- **Derived from AI Audit Entries 13 & 20.**
-- Step 1 (Prep): Generates interview protocol, participant table, session notes template, SUS sheet, and usability report template.
-- Step 2 (Synthesis): Processes raw participant notes (P01-P05), calculates SUS scores, ranks severity (0-4), and populates `usability_report.md`.
+### 3. `task2-user-testing`
+- Generates interview protocol, participant table, session notes template, SUS sheet, and usability report template.
+- Processes raw participant notes, calculates SUS scores, ranks severity, and populates a usability report.
 
-### 4. `task3-cross-platform` (Task 3)
-- **Derived from AI Audit Entries 14, 15, and 16.**
-- Takes user inputs for OS, Browsers, and Devices.
-- Builds optimal pairwise reduction matrix (e.g. 5 cells for 3 OS x 5 Browsers x 3 Devices), defines screenshot overlay rules (`MSSV@...`), and outputs compatibility report.
+### 4. `task3-cross-platform`
+- Takes user inputs for OS, browsers, device classes, viewport sizes, and target flows.
+- Builds a pairwise reduction matrix when full Cartesian testing is too costly, defines screenshot evidence rules, and outputs a compatibility report.
 
-### 5. `findings-consolidation` (Findings Directory)
-- **Derived from AI Audit Entries 18, 19, and 20.**
-- Aggregates all defects into `findings/bug_usability_findings_log.md`.
-- Deduplicates images into `findings/defect-screenshots/` (1 representative image per defect).
-- Fills exact Google Form submission timestamps.
+### 5. `findings-consolidation`
+- Aggregates findings from checklist execution, user testing, cross-platform testing, bug reports, or manual notes.
+- Deduplicates images into `findings/defect-screenshots/` with one representative image per unique finding.
+- Preserves optional external tracker IDs or submission timestamps only when supplied by the user.
 
 ---
 
 ## Invocation Guidance
 
 - To execute a specific task, navigate to or invoke the corresponding subskill:
-  - Task 1A Checklist: `gui-usability-testing/step1-checklist`
-  - Task 1B Execution: `gui-usability-testing/task1b-execution`
-  - Task 2 User Testing: `gui-usability-testing/task2-user-testing`
-  - Task 3 Cross-Platform: `gui-usability-testing/task3-cross-platform`
+  - Checklist generation: `gui-usability-testing/step1-checklist`
+  - Checklist execution: `gui-usability-testing/task1b-execution`
+  - User testing: `gui-usability-testing/task2-user-testing`
+  - Cross-platform testing: `gui-usability-testing/task3-cross-platform`
   - Findings Consolidation: `gui-usability-testing/findings-consolidation`

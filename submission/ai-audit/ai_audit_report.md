@@ -533,7 +533,7 @@ Lưu ý các subskill phải có folder con trong .agents/skills/gui-usability-t
 
 **Reasoning:** Theo ISTQB CT-AI mục 11.6, thiết lập và mô đun hóa các quy trình test qua AI (Modular Agent Skills) giúp tăng tính tái sử dụng, minh bạch và khả năng truy vết của toàn bộ hoạt động kiểm thử GUI Usability.
 
-**Student Fix:** Sinh viên đã rà soát lại cấu trúc 5 subskill trong thư mục `.agents/skills/gui-usability-testing/`, xác nhận các thư mục con và file `SKILL.md` đáp ứng đúng yêu cầu gọi skill độc lập.
+**Student Fix:** Sinh viên đã rà soát và chỉnh lại bộ skill `.agents/skills/gui-usability-testing/` để các subskill độc lập, đóng gói, portable cho bất kỳ website nào. Sau khi chỉnh, sinh viên xác nhận skill đã yêu cầu cung cấp `target_url`, hỏi đúng loại account/role và credential khi cần đăng nhập, đồng thời bắt buộc dùng MCP Playwright thật cho live testing; MCP Playwright cũng đã được cài/enable trong Codex để tránh mô phỏng kết quả từ artifact tĩnh.
 
 ## 3. Tổng kết độ chính xác AI
 

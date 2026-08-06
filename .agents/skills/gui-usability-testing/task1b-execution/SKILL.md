@@ -1,24 +1,35 @@
 ---
 name: task1b-execution
-description: Use when executing a GUI usability checklist on target screens (Task 1B) using MCP Playwright and Chrome DevTools based on credentials from test_environment_access.md.
+description: Use when executing a GUI usability checklist on target website screens with required target URL, optional role credentials, and live MCP Playwright browser testing.
 ---
 
-# Task 1B - Checklist Execution & Bug Logging
+# Checklist Execution & Bug Logging
 
 ## Overview
 
-Use this skill to execute a GUI usability checklist against target application screens (such as Scenario D: D1, D2, D3). It first ensures environment access parameters are documented, then performs automated/interactive browser testing via Playwright MCP & Chrome DevTools MCP.
+Use this skill to execute a GUI usability checklist against target website screens, routes, or user journeys. It first confirms the website URL, target scope, account requirements, credentials, and safety rules, then performs live interactive browser testing via MCP Playwright.
 
-## Reference AI Audit Prompts
+---
 
-This skill is derived from AI Audit Entries 9, 11, and 12:
-- **Pattern:** Read project docs & `submission/test_environment_access.md` -> Load `gui_usability_checklist_final.md` -> Use Playwright MCP & Chrome DevTools MCP -> Execute per-screen checklist -> Capture screenshots -> Generate `task1b_<Screen>.md`.
+## Critical Execution Rules
+
+1. **Pre-Execution Account & URL Prompt:**
+   - Before launching browser execution, verify that `target_url` and `target_scope` are known.
+   - If the website requires login, ask the user for each required account type / role, username or email, password or authentication method, and data safety rules.
+   - Do not attempt browser login with empty credentials, placeholder credentials, guessed accounts, or credentials from an unrelated project.
+
+2. **Mandatory Live Browser Execution:**
+   - Do not rely solely on cached text, past test logs, static screenshots, or summary artifacts.
+   - Actually call MCP Playwright tools such as `browser_navigate`, `browser_snapshot`, `browser_fill_form`, `browser_click`, and `browser_take_screenshot` to open the live web app, log in when required, navigate screens, inspect live behavior, and capture fresh screenshot evidence.
+   - If MCP Playwright tools are unavailable, stop and help the user install or enable the MCP Playwright server before continuing. Do not mark checklist items as executed without live MCP Playwright evidence.
+
+---
 
 ## Workflow
 
-### Step 1 - Generate Environment Access Template (`test_environment_access.md`)
+### Step 1 - Environment Access Verification
 
-If `test_environment_access.md` does not exist or needs initialization, create it using this structure:
+If an access note file is helpful, create `test_environment_access.md` using this generic structure and ask the user to confirm or fill missing details:
 
 ```markdown
 # Test Environment Access
@@ -26,46 +37,51 @@ If `test_environment_access.md` does not exist or needs initialization, create i
 ## Web URL
 | Field | Value |
 | --- | --- |
-| EMS URL | `https://[your-target-url]` |
-| Ghi chú | `[Environment details, ngrok / staging link]` |
+| Target URL | `https://[your-target-url]` |
+| Environment Notes | `[production / staging / local / ngrok / other]` |
 
 ## Accounts
-### User Account (for D1, D2)
+### Account 1
 | Field | Value |
 | --- | --- |
-| Email / Username | `[User Email]` |
-| Password | `[User Password]` |
-| Role | `User` |
+| Account Type / Role | `[e.g. customer, editor, admin]` |
+| Email / Username | `[provided by user]` |
+| Password / Auth Method | `[provided by user]` |
+| Screens / Flows Covered | `[routes or features]` |
 
-### Admin Account (for D3)
+### Account 2
 | Field | Value |
 | --- | --- |
-| Email / Username | `[Admin Email]` |
-| Password | `[Admin Password]` |
-| Role | `Admin` |
+| Account Type / Role | `[optional additional role]` |
+| Email / Username | `[provided by user]` |
+| Password / Auth Method | `[provided by user]` |
+| Screens / Flows Covered | `[routes or features]` |
 
 ## Testing Rules
-1. Khi test trang admin, nếu có thao tác CRUD tài khoản user, chỉ được thao tác trên tài khoản user được cấp.
-2. Không sửa, khóa, xóa hoặc thay đổi dữ liệu của người dùng khác.
-3. Chụp bằng chứng hình ảnh cho mọi phát hiện lỗi (defect/usability issue).
+1. Only mutate data the user explicitly permits.
+2. Do not edit, disable, delete, or expose other users' data.
+3. Capture screenshot evidence for every defect or usability issue.
 ```
 
-### Step 2 - Playwright & DevTools Execution
+### Step 2 - Live MCP Playwright Browser Execution
 
-1. Read `test_environment_access.md` to retrieve SUT URL, role credentials, and safety rules.
-2. Launch Playwright MCP / Chrome DevTools MCP:
-   - Navigate to login page, fill credentials, submit form, verify session landing page.
-3. Open target screen (e.g., `D1` Create Request, `D2` My Requests, `D3` Admin Support Requests).
-4. For each item in `gui_usability_checklist_final.md`:
+1. Confirm `target_url`, target screens/routes, role credentials when needed, and safety rules.
+2. Launch MCP Playwright browser tools:
+   - `browser_navigate` -> Open the target URL or login page.
+   - `browser_snapshot` -> Inspect accessible page structure before interacting.
+   - `browser_fill_form` / `browser_click` -> Fill credentials and log in when required.
+   - Verify landing page URL and session state.
+3. Open each target screen, route, or user journey supplied by the user.
+4. For each item in the checklist:
    - Evaluate live DOM elements, interactive states, validation triggers, network responses, and console errors.
    - Assign status: `Passed`, `Failed`, or `N/A`.
-   - For `Failed` items, record: Observed behavior, Expected behavior, Heuristic reference, User impact, Severity rating (0-4), and Suggested fix.
-   - Capture screenshot evidence into `screenshots/<Screen>/` or `findings/defect-screenshots/`.
+   - For `Failed` items, record observed behavior, expected behavior, heuristic reference, user impact, severity rating (0-4), and suggested fix.
+   - Capture live screenshot evidence into `screenshots/<screen-or-flow>/` or `findings/defect-screenshots/`.
 
-### Step 3 - Produce Execution Report (`task1b_<Screen>.md`)
+### Step 3 - Produce Execution Report
 
 Generate a structured Markdown execution report containing:
-- Test summary metadata (Student, Screen, Scope, Date, Environment).
-- Environment status & login verification.
-- Complete checklist execution table with Pass/Fail status.
-- Summary of defect findings with relative links to screenshot evidence.
+- Test summary metadata: website, target URL, screen/flow, scope, date, browser/viewport, and account type if used.
+- Live environment status and login verification screenshot links.
+- Complete checklist execution table with Pass/Fail status based on live inspection.
+- Summary of defect findings with relative links to live screenshot evidence.
