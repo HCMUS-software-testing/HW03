@@ -6,8 +6,7 @@
 | --- | --- |
 | MSSV | 23127326 |
 | Họ và tên | Lê Mai Hoài Bảo |
-| Email sinh viên | Bảo cần xác nhận email sinh viên thật; không tìm thấy email trong kho mã nguồn |
-| Nhóm | [Điền tên/mã nhóm] |
+| Email sinh viên | `23127326@student.hcmus.edu.vn` |
 | Kịch bản phụ trách | Kịch bản A - Quản trị viên tạo và quản lý sự kiện |
 | Nhóm chức năng | A - Quản trị sự kiện |
 | URL EMS | https://prod-dev.ems-fitus.cloud/ (đường dẫn ngrok trong đề trả về 404 khi Task 1B được chạy lại ngày 2026-08-02) |
@@ -26,8 +25,6 @@ Kịch bản A tập trung vào vòng đời quản trị sự kiện trên EMS:
 | A1 | Danh sách sự kiện có bộ lọc trạng thái và chấm thông báo | Đây là màn hình trung tâm để quản trị viên xem, lọc và quản lý trạng thái sự kiện. | Quản trị viên | [Danh sách sự kiện](https://prod-dev.ems-fitus.cloud/dashboard/admin/events) | ![Tổng quan trực tiếp A1](screenshots/task1b/a1-overview.png) |
 | A2 | Biểu mẫu Thêm/Sửa sự kiện - tải ảnh, văn bản định dạng và kiểm tra ngày/giờ | Đây là biểu mẫu phức tạp nhất của nhóm chức năng A, có tải ảnh, văn bản định dạng và kiểm tra ngày giờ. | Quản trị viên | [Tạo mới](https://prod-dev.ems-fitus.cloud/dashboard/admin/events/create); [bản nháp được giữ lại, ID 80](https://prod-dev.ems-fitus.cloud/dashboard/admin/events/edit?id=80) | ![Tổng quan trực tiếp A2](screenshots/task1b/a2-overview.png) |
 | A3 | Bảng cấu hình Đăng ký và vai trò - `Max Slots`, `Waitlist`, vai trò bổ sung | Đây là phần cấu hình đăng ký có nhiều công tắc, số chỗ tối đa, danh sách chờ và vai trò bổ sung. | Quản trị viên | [Bản nháp được giữ lại, ID 80](https://prod-dev.ems-fitus.cloud/dashboard/admin/events/edit?id=80) | ![Tổng quan trực tiếp phần Đăng ký A3](screenshots/task1b/a3-overview-registration.png) ![Tổng quan trực tiếp phần Vai trò bổ sung A3](screenshots/task1b/a3-overview-additional.png) |
-
-> Nếu thay đổi màn hình, màn hình mới vẫn phải thuộc nhóm chức năng A và cần giải thích lý do chọn.
 
 ## 3. Task 1B - Thực thi checklist trên Kịch bản A
 
@@ -386,10 +383,10 @@ Nhóm mục tiêu là người từ 18 tuổi, ngoài lớp học phần này, �
 
 | ID | Màn hình | Phát hiện | Bằng chứng | Mức độ | Minh chứng ảnh/video | Khuyến nghị |
 | --- | --- | --- | --- | ---: | --- | --- |
-| UX-001 | A2 – Categories | `Academic Context` không đủ rõ nghĩa, làm người dùng lúng túng khi chọn. | P1 tại `07:55`: “này là sao”; [video](https://youtu.be/dilkwkxXt0Q?t=475). | 2 | [Video/audio P1 tại 07:55](https://youtu.be/dilkwkxXt0Q?t=475) | Thêm mô tả ngắn/ví dụ và làm rõ quan hệ với `Event Types`. |
-| UX-002 | A2 – Save as Draft/validation | Nhấn `Save as Draft` khi form không hợp lệ không có phản hồi tổng thể và không chuyển tới trường lỗi. | P3 tại `11:20` nhấn hai lần rồi phải tự cuộn lên tìm trường sai; P5 cũng nói khó hiểu vì không có thông báo lỗi chung dạng pop-up; [video P3](https://youtu.be/mEJQPFBlc64?t=680), [video P5](https://youtu.be/FmSO-TaYQxo). | 2 | [Video P3 tại 11:20](https://youtu.be/mEJQPFBlc64?t=680); [video/audio probe P5](https://youtu.be/FmSO-TaYQxo) | Hiển thị tóm tắt validation và tự cuộn/focus trường lỗi đầu tiên. |
+| UX-001 | A2 – Categories | `Academic Context` không đủ rõ nghĩa, làm người dùng lúng túng khi chọn. | P1 tại `07:55`: “này là sao”; [video](https://youtu.be/dilkwkxXt0Q?t=475). | 2 | ![Minh chứng UX-001](screenshots/task2/UX-001.png)<br>[Video/audio P1 tại 07:55](https://youtu.be/dilkwkxXt0Q?t=475) | Thêm mô tả ngắn/ví dụ và làm rõ quan hệ với `Event Types`. |
+| UX-002 | A2 – Save as Draft/validation | Nhấn `Save as Draft` khi form không hợp lệ không có phản hồi tổng thể và không chuyển tới trường lỗi. | P3 tại `11:20` nhấn hai lần rồi phải tự cuộn lên tìm trường sai; P5 cũng nói khó hiểu vì không có thông báo lỗi chung dạng pop-up; [video P3](https://youtu.be/mEJQPFBlc64?t=680), [video P5](https://youtu.be/FmSO-TaYQxo). | 2 | ![Minh chứng UX-002](screenshots/task2/UX-002.png)<br>[Video P3 tại 11:20](https://youtu.be/mEJQPFBlc64?t=680); [video/audio probe P5](https://youtu.be/FmSO-TaYQxo) | Hiển thị tóm tắt validation và tự cuộn/focus trường lỗi đầu tiên. |
 | UX-003 | A2 – Date & Time | Điều khiển chọn/chỉnh giờ bằng thao tác kéo gây khó khăn và mất thời gian. | P3 cho biết phải kéo chuột mạnh và đây là phần phiền nhất; [video P3](https://youtu.be/mEJQPFBlc64). | 2 | [Video/audio probe P3](https://youtu.be/mEJQPFBlc64) | Cho phép nhập giờ trực tiếp, cải thiện time picker và gom các trường thời gian liên quan. |
-| UX-004 | A2 – Categories | Trạng thái đã chọn của `Event Types` không đủ rõ, khiến người dùng không chắc lựa chọn đã được ghi nhận. | P4 do dự tại `05:25`; [video](https://www.youtube.com/watch?v=kyZxvvLCOkE&t=325s). | 2 | [Video P4 tại 05:25](https://www.youtube.com/watch?v=kyZxvvLCOkE&t=325s) | Hiển thị giá trị hiện tại và dấu chọn option rõ ràng, kể cả sau khi danh sách đóng. |
+| UX-004 | A2 – Categories | Trạng thái đã chọn của `Event Types` không đủ rõ, khiến người dùng không chắc lựa chọn đã được ghi nhận. | P4 do dự tại `05:25`; [video](https://www.youtube.com/watch?v=kyZxvvLCOkE&t=325s). | 2 | ![Minh chứng UX-004](screenshots/task2/UX-004.png)<br>[Video P4 tại 05:25](https://www.youtube.com/watch?v=kyZxvvLCOkE&t=325s) | Hiển thị giá trị hiện tại và dấu chọn option rõ ràng, kể cả sau khi danh sách đóng. |
 
 ### 4.7 Khuyến nghị theo độ ưu tiên
 
@@ -402,36 +399,101 @@ Nhóm mục tiêu là người từ 18 tuổi, ngoài lớp học phần này, �
 
 ### 4.8 Phân tích và kết luận Task 2
 
-Bốn finding mức độ 2 tập trung ở ba nhóm: độ rõ ràng của `Categories` (UX-001, UX-004), phản hồi và phục hồi lỗi khi lưu (UX-002), và hiệu quả nhập thời gian (UX-003). Điểm SUS trung bình `74.0` cho thấy cảm nhận sử dụng nhìn chung tích cực, nhưng tỷ lệ hoàn thành đầy đủ chỉ đạt `40%` (2/5). Vì vậy, ưu tiên cao nhất là cải thiện phản hồi validation khi lưu; tiếp theo là làm rõ trường phân loại, trạng thái lựa chọn và cách nhập giờ. Chi tiết phân tích nằm trong `submission/usability_report.md`.
+#### 4.8.1 Nhóm điểm khó sử dụng
+
+Các phát hiện được chia thành ba nhóm. Nhóm thứ nhất liên quan đến **độ rõ ràng khi phân loại sự kiện**: `Academic Context` không giải thích ý nghĩa (UX-001), còn `Event Types` không thể hiện đủ rõ lựa chọn hiện tại (UX-004). Hai vấn đề đều làm người dùng phải dừng lại để diễn giải trạng thái của phần `Categories`.
+
+Nhóm thứ hai liên quan đến **phản hồi và phục hồi lỗi khi lưu**. UX-002 cho thấy khi `Save as Draft` thất bại vì dữ liệu không hợp lệ, hệ thống không hiển thị tóm tắt lỗi và không đưa người dùng tới trường cần sửa. Đây là rủi ro trực tiếp đối với việc hoàn thành nhiệm vụ vì người dùng có thể nhấn lại nhiều lần hoặc cho rằng hệ thống không phản hồi.
+
+Nhóm thứ ba liên quan đến **hiệu quả nhập thời gian**. UX-003 phản ánh điều khiển chọn giờ bằng thao tác kéo gây khó khăn và làm chậm quá trình nhập. Các sai lệch riêng của P4 (`Is Unlimited`) và P5 (mở nhầm sự kiện) được giữ trong dữ liệu phiên để giải thích kết quả `Một phần`, nhưng chưa được nâng thành finding riêng vì chưa có đủ bằng chứng cho thấy đó là vấn đề lặp lại của thiết kế.
+
+#### 4.8.2 Ảnh hưởng tới trải nghiệm
+
+Về **mức độ rõ ràng**, UX-001 và UX-004 làm người dùng không chắc trường có nghĩa gì hoặc lựa chọn đã được ghi nhận chưa. Về **khả năng phục hồi lỗi và độ tin cậy**, UX-002 khiến người dùng không biết vì sao bản nháp chưa được lưu, làm giảm niềm tin vào phản hồi của hệ thống. Về **tốc độ**, UX-003 tạo thêm thao tác và thời gian khi nhập giờ.
+
+Điểm SUS trung bình `74.0` cho thấy người tham gia nhìn chung đánh giá hệ thống ở mức có thể sử dụng, nhưng tỷ lệ hoàn thành đầy đủ chỉ đạt `40%` (2/5). Chênh lệch này cho thấy cảm nhận sử dụng tương đối tích cực không đồng nghĩa với việc dữ liệu nghiệp vụ được nhập chính xác. Ba phiên `Một phần` đều hoàn tất mà không cần can thiệp, nhưng vẫn để lại dữ liệu sai hoặc không xác nhận đúng bản nháp; vì vậy phản hồi hệ thống và khả năng nhận biết trạng thái cần được ưu tiên cải thiện.
+
+#### 4.8.3 Kết luận Task 2
+
+Năm phiên kiểm thử cho thấy luồng tạo và lưu bản nháp có thể hoàn thành nhưng chưa đủ rõ và ổn định để bảo đảm người dùng luôn nhập đúng dữ liệu. Bốn finding đều ở mức độ 2 và tập trung tại A2. Ưu tiên cao nhất là cải thiện phản hồi validation khi lưu; tiếp theo là làm rõ `Academic Context`, trạng thái chọn `Event Types` và cách nhập giờ. Không ghi nhận finding mức độ 3 hoặc 4 trong Task 2.
 
 ## 5. Task 3 - Cross-Browser / Cross-Platform
 
-### 5.1 Coverage summary
+### 5.1 Thông tin và phạm vi bao phủ
 
-| Dimension | Yêu cầu theo đề | Coverage thực tế |
-| --- | --- | --- |
-| Operating systems | 3 OS per screen | Windows, macOS, Android - đủ trên A1/A2/A3 |
-| Browsers | 5 browsers per screen | Edge, Safari, Firefox, Samsung Internet, Chrome - đủ trên A1/A2/A3 |
-| Device classes | 3 device classes per screen | Desktop, phone, tablet - đủ trên A1/A2/A3 |
-| Screenshot requirement | Mỗi cell có screenshot, email sinh viên, URL EMS và browser/OS/device | 15/15 ảnh thật; overlay góc trên bên phải hiển thị đủ `23127326@student.hcmus.edu.vn`, URL EMS và browser/OS/device |
+| Trường | Nội dung |
+| --- | --- |
+| Công cụ | Playwright 1.59.1 và Selenium WebDriver 4.35 trên BrowserStack Automate |
+| Ngày chạy | 04/08/2026 |
+| Màn hình | A1 Danh sách sự kiện, A2 Thêm/Sửa sự kiện, A3 Đăng ký và vai trò |
+| Nội dung overlay | `23127326@student.hcmus.edu.vn`, URL EMS và browser/OS/device |
 
-### 5.2 Compatibility matrix summary
+Mỗi màn hình sử dụng cùng năm ô CP-01 đến CP-05. Tổ hợp được chọn bao phủ đủ từng chiều kiểm thử mà không cần chạy toàn bộ tích Descartes 3 × 5 × 3.
 
-Chi tiết đầy đủ nằm ở `submission/cross_platform_matrix.md`.
+| Chiều kiểm thử | Yêu cầu | Bao phủ thực tế trên mỗi màn hình | Kết quả |
+| --- | --- | --- | --- |
+| Hệ điều hành | Ít nhất 3 OS | Windows, macOS, Android | Đủ |
+| Trình duyệt | Ít nhất 5 browser | Edge, Safari, Firefox, Samsung Internet, Chrome | Đủ |
+| Loại thiết bị | Desktop, tablet, phone | Desktop, phone, tablet | Đủ |
+| Màn hình | Ít nhất 3 màn hình | A1, A2, A3 | Đủ |
+| Ảnh chụp | Một ảnh thật cho mỗi ô | 15/15 ảnh; mỗi ảnh hiển thị email sinh viên, URL EMS và browser/OS/device | Đủ |
 
-| Screen | Cells covered | Passed | Failed | OS covered | Browsers covered | Device classes covered |
+`Samsung Internet` được dùng thay cho `Opera/Samsung Internet` theo mẫu Task 3. API BrowserStack Automate của tài khoản chỉ cung cấp Opera 12.x, không phù hợp để kiểm thử EMS hiện đại. Thông tin OS và thiết bị mobile được đối soát từ capability BrowserStack trong phiên chạy.
+
+### 5.2 Ma trận tương thích chi tiết
+
+#### 5.2.1 A1 - Danh sách sự kiện
+
+| Mã ô | OS | Browser | Loại thiết bị | Thiết bị/Phiên bản | URL | Overlay | Kết quả | Minh chứng | Ghi chú |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| A1-CP-01 | Windows 11 | Edge 150 | Desktop | BrowserStack 1280×720 | `/dashboard/admin/events` | Đủ thông tin | Đạt | ![A1-CP-01](screenshots/task3/a1-cp-01-windows-edge-desktop.png) | Nội dung/marker có mặt; không chuyển hướng; overflow 0 px. |
+| A1-CP-02 | macOS Sequoia | Safari 18.4 | Desktop | BrowserStack, viewport rộng 1324 px | `/dashboard/admin/events` | Đủ thông tin | Đạt | ![A1-CP-02](screenshots/task3/a1-cp-02-macos-safari-desktop.png) | Nội dung/marker có mặt; không chuyển hướng; overflow 0 px. |
+| A1-CP-03 | macOS Sequoia | Firefox 151 | Desktop | BrowserStack 1280×720 | `/dashboard/admin/events` | Đủ thông tin | Đạt | ![A1-CP-03](screenshots/task3/a1-cp-03-macos-firefox-desktop.png) | Nội dung/marker có mặt; không chuyển hướng; overflow 0 px. |
+| A1-CP-04 | Android 14 | Samsung Internet 29 | Phone | Samsung Galaxy S24 | `/dashboard/admin/events` | Đủ thông tin | **Không đạt** | ![A1-CP-04](screenshots/task3/a1-cp-04-android-samsung-internet-phone.png) | Thanh bên và nội dung không co theo phone; overflow ngang 664 px. |
+| A1-CP-05 | Android 16 | Chrome 149 | Tablet | Galaxy Tab S11, landscape 1204×579 | `/dashboard/admin/events` | Đủ thông tin | Đạt | ![A1-CP-05](screenshots/task3/a1-cp-05-android-chrome-tablet.png) | Nội dung/marker có mặt; không chuyển hướng; overflow 0 px. |
+
+#### 5.2.2 A2 - Biểu mẫu Thêm/Sửa sự kiện
+
+| Mã ô | OS | Browser | Loại thiết bị | Thiết bị/Phiên bản | URL | Overlay | Kết quả | Minh chứng | Ghi chú |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| A2-CP-01 | Windows 11 | Edge 150 | Desktop | BrowserStack 1280×720 | `/dashboard/admin/events/create` | Đủ thông tin | Đạt | ![A2-CP-01](screenshots/task3/a2-cp-01-windows-edge-desktop.png) | Form/marker có mặt; không chuyển hướng; overflow 0 px. |
+| A2-CP-02 | macOS Sequoia | Safari 18.4 | Desktop | BrowserStack, viewport rộng 1324 px | `/dashboard/admin/events/create` | Đủ thông tin | Đạt | ![A2-CP-02](screenshots/task3/a2-cp-02-macos-safari-desktop.png) | Form/marker có mặt; không chuyển hướng; overflow 0 px. |
+| A2-CP-03 | macOS Sequoia | Firefox 151 | Desktop | BrowserStack 1280×720 | `/dashboard/admin/events/create` | Đủ thông tin | Đạt | ![A2-CP-03](screenshots/task3/a2-cp-03-macos-firefox-desktop.png) | Form/marker có mặt; không chuyển hướng; overflow 0 px. |
+| A2-CP-04 | Android 14 | Samsung Internet 29 | Phone | Samsung Galaxy S24 | `/dashboard/admin/events/create` | Đủ thông tin | **Không đạt** | ![A2-CP-04](screenshots/task3/a2-cp-04-android-samsung-internet-phone.png) | Form bị ép hẹp/cắt chữ và phải cuộn ngang; overflow 156 px. |
+| A2-CP-05 | Android 16 | Chrome 149 | Tablet | Galaxy Tab S11, landscape 1204×579 | `/dashboard/admin/events/create` | Đủ thông tin | Đạt | ![A2-CP-05](screenshots/task3/a2-cp-05-android-chrome-tablet.png) | Form/marker có mặt; không chuyển hướng; overflow 0 px. |
+
+#### 5.2.3 A3 - Đăng ký và vai trò
+
+| Mã ô | OS | Browser | Loại thiết bị | Thiết bị/Phiên bản | URL | Overlay | Kết quả | Minh chứng | Ghi chú |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| A3-CP-01 | Windows 11 | Edge 150 | Desktop | BrowserStack 1280×720 | `/dashboard/admin/events/edit?id=114` | Đủ thông tin | Đạt | ![A3-CP-01](screenshots/task3/a3-cp-01-windows-edge-desktop.png) | Marker Registration có mặt; không chuyển hướng; overflow 0 px. |
+| A3-CP-02 | macOS Sequoia | Safari 18.4 | Desktop | BrowserStack, viewport rộng 1324 px | `/dashboard/admin/events/edit?id=114` | Đủ thông tin | Đạt | ![A3-CP-02](screenshots/task3/a3-cp-02-macos-safari-desktop.png) | Marker Registration có mặt; không chuyển hướng; overflow 0 px. |
+| A3-CP-03 | macOS Sequoia | Firefox 151 | Desktop | BrowserStack 1280×720 | `/dashboard/admin/events/edit?id=114` | Đủ thông tin | Đạt | ![A3-CP-03](screenshots/task3/a3-cp-03-macos-firefox-desktop.png) | Marker Registration có mặt; không chuyển hướng; overflow 0 px. |
+| A3-CP-04 | Android 14 | Samsung Internet 29 | Phone | Samsung Galaxy S24 | `/dashboard/admin/events/edit?id=114` | Đủ thông tin | **Không đạt** | ![A3-CP-04](screenshots/task3/a3-cp-04-android-samsung-internet-phone.png) | Panel/form bị cắt và phải cuộn ngang; overflow 216 px. |
+| A3-CP-05 | Android 16 | Chrome 149 | Tablet | Galaxy Tab S11, landscape 1204×579 | `/dashboard/admin/events/edit?id=114` | Đủ thông tin | Đạt | ![A3-CP-05](screenshots/task3/a3-cp-05-android-chrome-tablet.png) | Marker Registration có mặt; không chuyển hướng; overflow 0 px. |
+
+### 5.3 Tổng hợp kết quả
+
+| Màn hình | Số ô | Đạt | Không đạt | OS đã bao phủ | Browser đã bao phủ | Loại thiết bị đã bao phủ |
 | --- | ---: | ---: | ---: | --- | --- | --- |
 | A1 | 5 | 4 | 1 | Windows, macOS, Android | Edge, Safari, Firefox, Samsung Internet, Chrome | Desktop, phone, tablet |
 | A2 | 5 | 4 | 1 | Windows, macOS, Android | Edge, Safari, Firefox, Samsung Internet, Chrome | Desktop, phone, tablet |
 | A3 | 5 | 4 | 1 | Windows, macOS, Android | Edge, Safari, Firefox, Samsung Internet, Chrome | Desktop, phone, tablet |
 
-### 5.3 Compatibility defects
+### 5.4 Các lỗi tương thích
 
-| ID | Screen | Environment | Defect | Expected | Actual | Severity | Screenshot ref | Google Form timestamp |
-| --- | --- | --- | --- | --- | --- | ---: | --- | --- |
-| CP-BUG-001 | A1 | Android 14, Samsung Internet 29, Galaxy S24 phone | Events list không responsive, sidebar che/cắt vùng nội dung. | Navigation và danh sách vừa viewport, không cuộn ngang toàn trang. | Overflow ngang 664 px; nội dung bên phải bị cắt. | 3 | ![CP-BUG-001](screenshots/task3/a1-cp-04-android-samsung-internet-phone.png) | 22:44 ngày 05/08/2026 |
-| CP-BUG-002 | A2 | Android 14, Samsung Internet 29, Galaxy S24 phone | Form Create Event bị ép hẹp/cắt nội dung. | Trường, nhãn và upload area co giãn/xuống hàng trong viewport phone. | Overflow ngang 156 px; chữ và điều khiển bị cắt. | 3 | ![CP-BUG-002](screenshots/task3/a2-cp-04-android-samsung-internet-phone.png) | 22:46 ngày 05/08/2026 |
-| CP-BUG-003 | A3 | Android 14, Samsung Internet 29, Galaxy S24 phone | Registration & Roles panel không responsive. | Panel và điều khiển vừa viewport phone. | Overflow ngang 216 px; panel/form bị cắt. | 3 | ![CP-BUG-003](screenshots/task3/a3-cp-04-android-samsung-internet-phone.png) | 22:48 ngày 05/08/2026 |
+| ID | Mã ô | Màn hình | Môi trường | Lỗi | Mong đợi | Thực tế | Mức độ | Minh chứng | Thời gian biểu mẫu |
+| --- | --- | --- | --- | --- | --- | --- | ---: | --- | --- |
+| CP-BUG-001 | A1-CP-04 | A1 | Android 14, Samsung Internet 29, Galaxy S24 phone | Danh sách sự kiện không responsive, sidebar che/cắt vùng nội dung. | Navigation và danh sách vừa viewport, không cuộn ngang toàn trang. | Overflow ngang 664 px; nội dung bên phải bị cắt. | 3 | ![CP-BUG-001](screenshots/task3/a1-cp-04-android-samsung-internet-phone.png) | 22:44 ngày 05/08/2026 |
+| CP-BUG-002 | A2-CP-04 | A2 | Android 14, Samsung Internet 29, Galaxy S24 phone | Form tạo sự kiện bị ép hẹp/cắt nội dung. | Trường, nhãn và vùng upload co giãn hoặc xuống hàng trong viewport phone. | Overflow ngang 156 px; chữ và điều khiển bị cắt. | 3 | ![CP-BUG-002](screenshots/task3/a2-cp-04-android-samsung-internet-phone.png) | 22:46 ngày 05/08/2026 |
+| CP-BUG-003 | A3-CP-04 | A3 | Android 14, Samsung Internet 29, Galaxy S24 phone | Panel Đăng ký và vai trò không responsive. | Panel và điều khiển vừa viewport phone. | Overflow ngang 216 px; panel/form bị cắt. | 3 | ![CP-BUG-003](screenshots/task3/a3-cp-04-android-samsung-internet-phone.png) | 22:48 ngày 05/08/2026 |
+
+### 5.5 Kết luận Task 3
+
+- Đã chạy đủ **15/15 ô**: năm môi trường cho từng màn hình A1, A2 và A3.
+- Tổng kết **12 Đạt, 3 Không đạt**. Edge/Windows desktop, Safari/macOS desktop, Firefox/macOS desktop và Chrome/Android tablet đều đạt các kiểm tra nội dung, chuyển hướng và overflow.
+- Ba kết quả Không đạt đều nằm ở Samsung Internet/Android phone và thể hiện cùng một rủi ro responsive ở cả ba màn hình. Vì ma trận không có Chrome/phone cùng kích thước, kết luận an toàn là lỗi xảy ra trong tổ hợp CP-04; chưa đủ dữ liệu để khẳng định lỗi chỉ do browser hoặc chỉ do breakpoint phone.
+- Khuyến nghị ưu tiên là thu gọn sidebar thành drawer ở breakpoint phone, bỏ chiều rộng tối thiểu/fixed width gây tràn, chuyển form/grid thành một cột và bổ sung kiểm thử hồi quy ở viewport phone.
 
 ## 6. Bug & Usability Findings submission
 
@@ -453,4 +515,12 @@ Chi tiết đầy đủ nằm ở `submission/cross_platform_matrix.md`.
 
 ## 8. Kết luận
 
-[Tóm tắt mức độ ổn định UI của các màn hình Pool A, rủi ro nổi bật, và 3 đề xuất ưu tiên nhất.]
+Ba màn hình thuộc Kịch bản A hoạt động tương đối ổn định trên desktop và tablet, nhưng vẫn còn rủi ro đáng kể về phản hồi hệ thống, khả năng hiểu trạng thái và bố cục mobile. Task 1B có 96 dòng áp dụng, trong đó 82 Đạt và 14 Không đạt, tương ứng tỷ lệ đạt `85.4%`. Task 2 đạt SUS trung bình `74.0`, nhưng chỉ 2/5 người tham gia hoàn thành đầy đủ; bốn finding mức độ 2 cho thấy người dùng vẫn gặp khó khăn với validation, trường phân loại và nhập thời gian. Task 3 đạt 12/15 ô, còn ba lỗi responsive trên Samsung Internet/Android phone ở cả A1, A2 và A3.
+
+Ba đề xuất ưu tiên nhất là:
+
+1. Khi lưu hoặc gửi biểu mẫu thất bại, hiển thị tóm tắt validation và tự cuộn/focus trường lỗi đầu tiên.
+2. Sửa bố cục phone bằng sidebar dạng drawer, loại bỏ chiều rộng cố định gây tràn và chuyển form/grid thành một cột.
+3. Làm rõ nhãn, trạng thái lựa chọn và phản hồi của các điều khiển quan trọng như `Academic Context`, `Event Types`, icon hành động và time picker.
+
+Tổng cộng 18 phát hiện đã được ghi vào nhật ký và đối soát với Google Form: 11 phát hiện Task 1B, 4 finding Task 2 và 3 lỗi tương thích Task 3. Các kết luận trong báo cáo chỉ sử dụng dữ liệu kiểm thử trực tiếp, phiên người dùng thật và ảnh/video minh chứng đã thu thập.
