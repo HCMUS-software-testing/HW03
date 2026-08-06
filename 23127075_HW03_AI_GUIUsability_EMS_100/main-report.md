@@ -74,3 +74,5 @@ Google Form submissions must be kept consistent with the aggregated log.
 ## 9. Supporting Materials
 
 - No extra working-guide files are included in the submission folder.
+- GitHub repository: [https://github.com/HCMUS-software-testing/HW03.git](https://github.com/HCMUS-software-testing/HW03.git)
+- Phần bài làm của Lê Trung Kiên được thực hiện và lưu trên branch `kien`.
