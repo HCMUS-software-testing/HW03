@@ -28,6 +28,9 @@
 | 15 | Time: `2026-08-04 10:48 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>@Superpowers Hãy đọc folder docs tạo ra bộ 3 OS x 5 platform x 3 devices hoàn chỉnh kèm theo tổ hợp để phủ tẩ cả chúng. Sau đó viết plan để thực hiện Task 3 với BrowserStack. Lưu ý vì BrowserStack chỉ có 1 phút trial nên phải cap thật nhanh. Test bằng acc email sinh viên. Bạn hãy thử mở BrowserStack đăng nhập xem cần tôi cung cấp gì để đăng nhập. | [Manual by user] |
 | 16 | Time: `2026-08-06 01:24 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>Với những screenshot downloads và defects tôi cung cấp, hãy điền vào template ma trận ở Task 3 | [Manual by user] |
 | 17 | Time: `2026-08-06 01:43 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>[@superpowers](plugin://superpowers@openai-api-curated) <br>Đọc folder docs rồi đưa các content từ trong folder submission vào 23127075_HW03_AI_GUIUsability_EMS_100 là folder nộp. Nếu thiếu file nào sẽ tạo template để làm sau. Các task sẽ chia folder riêng biệt. File main-report.md sẽ là nơi tổng hợp và chứa đường dẫn "relative" đến các content tương ứng, chứ không đưa full nội dung vào. Hãy thêm entry mới trong ai audit cho prompt này. | [Manual by user] |
+| 18 | Time: `2026-08-06 11:43 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>[@superpowers](plugin://superpowers@openai-api-curated) Hiện tại các defects trong 23127075_HW03_AI_GUIUsability_EMS_100 bị lặp khá nhiều. Vì vậy hãy gom ảnh các defects lại vào 1 folder duy nhất trong 23127075_HW03_AI_GUIUsability_EMS_100. Mỗi defects khác nhau để 1 ảnh làm đại diện. Bug report có thể đề cập nó xuất hiện ở cross platform hay ở các task như thế nào nhưng mỗi defects chỉ 1 ảnh thôi. Hãy ghi prompt này vào ai-audit. | [Manual by user] |
+| 19 | Time: `2026-08-06 12:25 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>Check lại 23127075_HW03_AI_GUIUsability_EMS_100 những file nào có chữ template mà đã được điền thì bỏ chữ template trong tên file | [Manual by user] |
+| 20 | Time: `2026-08-06 13:46 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>06/08/2026<br>13:24<br>13:25<br>13:26<br>13:26<br>13:27<br>13:28<br>13:29<br>13:29<br>13:30<br>13:31<br>13:31<br>13:32<br>13:32<br>13:33<br>13:34<br>13:34<br>13:35<br>Ở trên là toàn bộ mốc submit form theo thứ tự. Hãy điền vào 23127075_HW03_AI_GUIUsability_EMS_100\\findings\\bug_usability_findings_log.md | [Manual by user] |
 
 ### 2.2. Chi tiết audit
 
@@ -1069,6 +1072,75 @@ Prompt:
 Đọc folder docs rồi đưa các content từ trong folder submission vào 23127075_HW03_AI_GUIUsability_EMS_100 là folder nộp. Nếu thiếu file nào sẽ tạo template để làm sau. Các task sẽ chia folder riêng biệt. File main-report.md sẽ là nơi tổng hợp và chứa đường dẫn "relative" đến các content tương ứng, chứ không đưa full nội dung vào. Hãy thêm entry mới trong ai audit cho prompt này.
 
 **AI Output:** Đã đọc docs, đối chiếu submission, tạo/cập nhật folder nộp 23127075_HW03_AI_GUIUsability_EMS_100 theo từng task; copy các artifact sẵn có từ submission; tạo main-report.md với relative links và các template còn thiếu...
+
+**Verdict:** [Manual by user]
+
+**Reasoning:** [Manual by user]
+
+**Student Fix:** [Manual by user]
+
+### 2.2.18 Entry 18
+
+**Prompt + Tool:**
+
+Time: `2026-08-06 11:43 +07`
+Tool: `Codex / GPT-5`
+Prompt:
+[@superpowers](plugin://superpowers@openai-api-curated) Hiện tại các defects trong 23127075_HW03_AI_GUIUsability_EMS_100 bị lặp khá nhiều. Vì vậy hãy gom ảnh các defects lại vào 1 folder duy nhất trong 23127075_HW03_AI_GUIUsability_EMS_100. Mỗi defects khác nhau để 1 ảnh làm đại diện. Bug report có thể đề cập nó xuất hiện ở cross platform hay ở các task như thế nào nhưng mỗi defects chỉ 1 ảnh thôi. Hãy ghi prompt này vào ai-audit.
+
+**AI Output:** Đã tạo thư mục findings/defect-screenshots với ảnh đại diện cho từng finding, cập nhật Task 1B/Task 2/Task 3 và findings log để trỏ về ảnh đại diện, đồng thời ghi rõ các task/CP nơi finding xuất hiện. Việc xóa folder...
+
+**Verdict:** [Manual by user]
+
+**Reasoning:** [Manual by user]
+
+**Student Fix:** [Manual by user]
+
+### 2.2.19 Entry 19
+
+**Prompt + Tool:**
+
+Time: `2026-08-06 12:25 +07`
+Tool: `Codex / GPT-5`
+Prompt:
+Check lại 23127075_HW03_AI_GUIUsability_EMS_100 những file nào có chữ template mà đã được điền thì bỏ chữ template trong tên file
+
+**AI Output:** Đã đổi tên usability_report_template.md thành usability_report.md, matrix_template.md thành compatibility_matrix.md, cross_platform_report_template.md thành cross_platform_report.md; cập nhật main-report.md và relativ...
+
+**Verdict:** [Manual by user]
+
+**Reasoning:** [Manual by user]
+
+**Student Fix:** [Manual by user]
+
+### 2.2.20 Entry 20
+
+**Prompt + Tool:**
+
+Time: `2026-08-06 13:46 +07`
+Tool: `Codex / GPT-5`
+Prompt:
+06/08/2026
+13:24
+13:25
+13:26
+13:26
+13:27
+13:28
+13:29
+13:29
+13:30
+13:31
+13:31
+13:32
+13:32
+13:33
+13:34
+13:34
+13:35
+Ở trên là toàn bộ mốc submit form theo thứ tự. Hãy điền vào 23127075_HW03_AI_GUIUsability_EMS_100\findings\bug_usability_findings_log.md
+
+**AI Output:** Đã điền 17 timestamp submit form vào findings/bug_usability_findings_log.md theo đúng thứ tự người dùng cung cấp, tick các checklist liên quan submit form, và xác nhận không còn placeholder [Điền sau] trong file.
 
 **Verdict:** [Manual by user]
 

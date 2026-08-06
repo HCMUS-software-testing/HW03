@@ -76,7 +76,7 @@ Sau khi trải nghiệm phía user, hãy dùng màn hình admin đã được ch
 | Hesitations   | 3                                        |
 | Interventions | `Không`                                  |
 | Key friction  | Tìm request ở phía admin chậm hơn mong đợi; ngoài ra phần request description có lỗi tràn chữ làm giảm khả năng đọc. |
-| Evidence      | `image/P01_session_notes/1785821851780.png` |
+| Evidence      | `../../findings/defect-screenshots/UT-D-003_request-description-overflow.png` |
 
 ## 7. Câu trả lời sau task
 
@@ -119,6 +119,6 @@ Sau khi trải nghiệm phía user, hãy dùng màn hình admin đã được ch
 
 | ID tạm    | Screen         | Type                | Description  | Evidence         | Severity 0-4 | Có submit Google Form? |
 | ---------- | -------------- | ------------------- | ------------ | ---------------- | -----------: | ----------------------- |
-| UT-P01-001 | `D3` | `Usability` | Request description chứa chuỗi dài không tự xuống dòng, bị tràn ngang khỏi khung nội dung và làm giảm khả năng đọc khi xử lý request. | `image/P01_session_notes/1785821851780.png`; participant ghi nhận: `Request description nội dung bị tràn ra` | 2 | `No` |
+| UT-P01-001 | `D3` | `Usability` | Request description chứa chuỗi dài không tự xuống dòng, bị tràn ngang khỏi khung nội dung và làm giảm khả năng đọc khi xử lý request. | `../../findings/defect-screenshots/UT-D-003_request-description-overflow.png`; participant ghi nhận: `Request description nội dung bị tràn ra` | 2 | `No` |
 
-![1785821851780](image/P01_session_notes/1785821851780.png)
+![1785821851780](../../findings/defect-screenshots/UT-D-003_request-description-overflow.png)

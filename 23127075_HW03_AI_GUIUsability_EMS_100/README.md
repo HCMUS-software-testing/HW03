@@ -27,7 +27,7 @@
 | Screens tested | D1 create request, D2 My Requests list/detail, D3 Admin Support Requests list |
 | Checklist | Shared checklist copied under `task1A_group_checklist/group` |
 | Task 1B evidence | Reports and screenshots copied under `task1B_checklist_execution` |
-| Task 2 evidence | Preparation, participant table, SUS sheet, session notes, and report template copied under `task2_user_testing` |
+| Task 2 evidence | Preparation, participant table, SUS sheet, session notes, and usability report copied under `task2_user_testing` |
 | Task 3 evidence | Matrix, cross-platform report, downloads, and defect screenshots copied under `task3_cross_platform` |
 | Findings log | Template available at `findings/bug_usability_findings_log.md` |
 | AI appendix | Audit report copied under `appendices/ai-audit`; critique template under `appendices/ai-critique` |

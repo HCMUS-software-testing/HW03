@@ -76,7 +76,7 @@ Sau khi trải nghiệm phía user, hãy dùng màn hình admin đã được ch
 | Hesitations   | 3                                        |
 | Interventions | `Không`                                  |
 | Key friction  | Participant chậm nhất ở D3 do lẫn giữa support request phía user và trang xử lý của admin; ngoài ra label `My Support Requests` trong admin gây không nhất quán, và field form có dấu hiệu focus/caret chưa rõ. |
-| Evidence      | `image/P04_session_notes/1785915787357.png`; `image/P04_session_notes/1785915794108.png`; `image/P04_session_notes/1785915761757.png` |
+| Evidence      | `../../findings/defect-screenshots/UT-D-001_admin-user-navigation-confusion.png`; `../../findings/defect-screenshots/UT-D-004_form-focus-caret-weak.png`; `../../findings/defect-screenshots/UT-D-001_admin-user-navigation-confusion.png` |
 
 ## 7. Câu trả lời sau task
 
@@ -119,18 +119,18 @@ Sau khi trải nghiệm phía user, hãy dùng màn hình admin đã được ch
 
 | ID tạm    | Screen | Type        | Description  | Evidence         | Severity 0-4 | Có submit Google Form? |
 | ---------- | ------ | ----------- | ------------ | ---------------- | -----------: | ----------------------- |
-| UT-P04-001 | `D3`   | `Usability` | Khi đăng nhập bằng admin, participant bị lẫn giữa support request phía user và trang xử lý support request của admin, làm chậm bước tìm request cần xử lý. | `image/P04_session_notes/1785915787357.png`; participant trả lời: `Khó: Lộn xem support requests của user trong khi đăng nhập admin` | 2 | `No` |
-| UT-P04-002 | `D1`   | `Usability` | Khi click vào field của form tạo support request, caret/focus không nhấp nháy rõ ngay từ đầu, làm participant không chắc field đã sẵn sàng nhập. | `image/P04_session_notes/1785915794108.png`; participant trả lời: `Con trỏ không nhấp nháy từ đầu khi click vào field của form.` | 1 | `No` |
-| UT-P04-003 | `D3`   | `Usability` | Trong admin dashboard, mục support request hiển thị/đổi thành `My Support Requests`, không nhất quán với vai trò admin và dễ làm participant nghĩ đang ở luồng request cá nhân. | `image/P04_session_notes/1785915761757.png`; ghi chú quan sát: `Khi vào admin dashboard, tab support request chuyển thành My Support Requests` | 2 | `No` |
+| UT-P04-001 | `D3`   | `Usability` | Khi đăng nhập bằng admin, participant bị lẫn giữa support request phía user và trang xử lý support request của admin, làm chậm bước tìm request cần xử lý. | `../../findings/defect-screenshots/UT-D-001_admin-user-navigation-confusion.png`; participant trả lời: `Khó: Lộn xem support requests của user trong khi đăng nhập admin` | 2 | `No` |
+| UT-P04-002 | `D1`   | `Usability` | Khi click vào field của form tạo support request, caret/focus không nhấp nháy rõ ngay từ đầu, làm participant không chắc field đã sẵn sàng nhập. | `../../findings/defect-screenshots/UT-D-004_form-focus-caret-weak.png`; participant trả lời: `Con trỏ không nhấp nháy từ đầu khi click vào field của form.` | 1 | `No` |
+| UT-P04-003 | `D3`   | `Usability` | Trong admin dashboard, mục support request hiển thị/đổi thành `My Support Requests`, không nhất quán với vai trò admin và dễ làm participant nghĩ đang ở luồng request cá nhân. | `../../findings/defect-screenshots/UT-D-001_admin-user-navigation-confusion.png`; ghi chú quan sát: `Khi vào admin dashboard, tab support request chuyển thành My Support Requests` | 2 | `No` |
 
 - Bị lẫn lộn trang support request của user và admin khi đăng nhập bằng tài khoản admin.
 
-![1785915787357](image/P04_session_notes/1785915787357.png)
+![1785915787357](../../findings/defect-screenshots/UT-D-001_admin-user-navigation-confusion.png)
 
 - Con trỏ không nhấp nháy từ đầu khi click vào field của form.
 
-![1785915794108](image/P04_session_notes/1785915794108.png)
+![1785915794108](../../findings/defect-screenshots/UT-D-004_form-focus-caret-weak.png)
 
 - Khi vào admin dashboard, tab support request chuyển thành My Support Requests => Không nhất quán
 
-![1785915761757](image/P04_session_notes/1785915761757.png)
+![1785915761757](../../findings/defect-screenshots/UT-D-001_admin-user-navigation-confusion.png)

@@ -28,6 +28,7 @@
 | 15 | Time: `2026-08-04 10:48 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>@Superpowers Hãy đọc folder docs tạo ra bộ 3 OS x 5 platform x 3 devices hoàn chỉnh kèm theo tổ hợp để phủ tẩ cả chúng. Sau đó viết plan để thực hiện Task 3 với BrowserStack. Lưu ý vì BrowserStack chỉ có 1 phút trial nên phải cap thật nhanh. Test bằng acc email sinh viên. Bạn hãy thử mở BrowserStack đăng nhập xem cần tôi cung cấp gì để đăng nhập. | [Manual by user] |
 | 16 | Time: `2026-08-06 01:24 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>Với những screenshot downloads và defects tôi cung cấp, hãy điền vào template ma trận ở Task 3 | [Manual by user] |
 | 17 | Time: `2026-08-06 01:43 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>[@superpowers](plugin://superpowers@openai-api-curated) <br>Đọc folder docs rồi đưa các content từ trong folder submission vào 23127075_HW03_AI_GUIUsability_EMS_100 là folder nộp. Nếu thiếu file nào sẽ tạo template để làm sau. Các task sẽ chia folder riêng biệt. File main-report.md sẽ là nơi tổng hợp và chứa đường dẫn "relative" đến các content tương ứng, chứ không đưa full nội dung vào. Hãy thêm entry mới trong ai audit cho prompt này. | [Manual by user] |
+| 18 | Time: `2026-08-06 11:43 +07`<br>Tool: `Codex / GPT-5`<br>Prompt:<br>[@superpowers](plugin://superpowers@openai-api-curated) Hiện tại các defects trong 23127075_HW03_AI_GUIUsability_EMS_100 bị lặp khá nhiều. Vì vậy hãy gom ảnh các defects lại vào 1 folder duy nhất trong 23127075_HW03_AI_GUIUsability_EMS_100. Mỗi defects khác nhau để 1 ảnh làm đại diện. Bug report có thể đề cập nó xuất hiện ở cross platform hay ở các task như thế nào nhưng mỗi defects chỉ 1 ảnh thôi. Hãy ghi prompt này vào ai-audit. | [Manual by user] |
 
 ### 2.2. Chi tiết audit
 
@@ -1069,6 +1070,23 @@ Prompt:
 Đọc folder docs rồi đưa các content từ trong folder submission vào 23127075_HW03_AI_GUIUsability_EMS_100 là folder nộp. Nếu thiếu file nào sẽ tạo template để làm sau. Các task sẽ chia folder riêng biệt. File main-report.md sẽ là nơi tổng hợp và chứa đường dẫn "relative" đến các content tương ứng, chứ không đưa full nội dung vào. Hãy thêm entry mới trong ai audit cho prompt này.
 
 **AI Output:** Đã đọc docs, đối chiếu submission, tạo/cập nhật folder nộp 23127075_HW03_AI_GUIUsability_EMS_100 theo từng task; copy các artifact sẵn có từ submission; tạo main-report.md với relative links và các template còn thiếu...
+
+**Verdict:** [Manual by user]
+
+**Reasoning:** [Manual by user]
+
+**Student Fix:** [Manual by user]
+
+### 2.2.18 Entry 18
+
+**Prompt + Tool:**
+
+Time: `2026-08-06 11:43 +07`
+Tool: `Codex / GPT-5`
+Prompt:
+[@superpowers](plugin://superpowers@openai-api-curated) Hiện tại các defects trong 23127075_HW03_AI_GUIUsability_EMS_100 bị lặp khá nhiều. Vì vậy hãy gom ảnh các defects lại vào 1 folder duy nhất trong 23127075_HW03_AI_GUIUsability_EMS_100. Mỗi defects khác nhau để 1 ảnh làm đại diện. Bug report có thể đề cập nó xuất hiện ở cross platform hay ở các task như thế nào nhưng mỗi defects chỉ 1 ảnh thôi. Hãy ghi prompt này vào ai-audit.
+
+**AI Output:** Đã tạo thư mục findings/defect-screenshots với ảnh đại diện cho từng finding, cập nhật Task 1B/Task 2/Task 3 và findings log để trỏ về ảnh đại diện, đồng thời ghi rõ các task/CP nơi finding xuất hiện. Việc xóa folder...
 
 **Verdict:** [Manual by user]
 

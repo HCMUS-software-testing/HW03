@@ -76,7 +76,7 @@ Sau khi trải nghiệm phía user, hãy dùng màn hình admin đã được ch
 | Hesitations   | 3                                                                                                                                                                                                                                                            |
 | Interventions | `Không`                                                                                                                                                                                                                                                   |
 | Key friction  | Participant chậm nhất ở bước tạo request; ở D3, admin navigation còn lẫn với luồng user, filter status tách khỏi cụm filter còn lại nên dễ bị hiểu như card tổng quan, và participant ghi nhận giao diện user/admin chưa đồng nhất về màu sắc, đặc biệt sidebar user sáng còn sidebar admin tối. |
-| Evidence      | `image/P05_session_notes/1785938625303.png`; `image/P05_session_notes/1785938635976.png`                                                                                                   |
+| Evidence      | `../../findings/defect-screenshots/UT-D-001_admin-user-navigation-confusion.png`; `../../findings/defect-screenshots/UT-D-002_pending-resolved-tab-affordance.png`                                                                                                   |
 
 ## 7. Câu trả lời sau task
 
@@ -119,20 +119,20 @@ Sau khi trải nghiệm phía user, hãy dùng màn hình admin đã được ch
 
 | ID tạm    | Screen    | Type          | Description                                                                                                                                                                                                                                          | Evidence                                                                                                                                   | Severity 0-4 | Có submit Google Form? |
 | ---------- | --------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | -----------: | ----------------------- |
-| UT-P05-001 | `D3`    | `Usability` | Khi đăng nhập bằng admin, menu tài khoản vẫn hiển thị các lựa chọn mang tính user như`User Dashboard` và `My support requests`, làm participant lẫn giữa danh sách request của user và khu vực xử lý request của admin. | `image/P05_session_notes/1785938625303.png`; ghi chú: `Lộn qua danh sách request user`               |            2 | `No`                  |
-| UT-P05-002 | `D3`    | `Usability` | Trong màn hình admin, trạng thái`Pending`/`Resolved` nằm dạng card phía trên thay vì cùng cụm filter, khiến participant dễ hiểu đây là thống kê tổng quan hơn là bộ lọc trạng thái.                                    | `image/P05_session_notes/1785938635976.png`; participant trả lời: `Filter status dễ gây nhầm lẫn` |            2 | `No`                  |
-| UT-P05-003 | `D2/D3` | `Usability` | Giao diện màu sắc giữa dashboard user và admin chưa đồng nhất: sidebar/filter phía user dùng nền sáng, trong khi sidebar admin dùng nền tối, làm hai khu vực có cảm giác thuộc hai hệ giao diện khác nhau. | `image/P05_session_notes/1785939135603.png`; `image/P05_session_notes/1785939155583.png`; participant trả lời: `Layout user và admin không đồng nhất` |            1 | `No`                  |
+| UT-P05-001 | `D3`    | `Usability` | Khi đăng nhập bằng admin, menu tài khoản vẫn hiển thị các lựa chọn mang tính user như`User Dashboard` và `My support requests`, làm participant lẫn giữa danh sách request của user và khu vực xử lý request của admin. | `../../findings/defect-screenshots/UT-D-001_admin-user-navigation-confusion.png`; ghi chú: `Lộn qua danh sách request user`               |            2 | `No`                  |
+| UT-P05-002 | `D3`    | `Usability` | Trong màn hình admin, trạng thái`Pending`/`Resolved` nằm dạng card phía trên thay vì cùng cụm filter, khiến participant dễ hiểu đây là thống kê tổng quan hơn là bộ lọc trạng thái.                                    | `../../findings/defect-screenshots/UT-D-002_pending-resolved-tab-affordance.png`; participant trả lời: `Filter status dễ gây nhầm lẫn` |            2 | `No`                  |
+| UT-P05-003 | `D2/D3` | `Usability` | Giao diện màu sắc giữa dashboard user và admin chưa đồng nhất: sidebar/filter phía user dùng nền sáng, trong khi sidebar admin dùng nền tối, làm hai khu vực có cảm giác thuộc hai hệ giao diện khác nhau. | `../../findings/defect-screenshots/UT-D-007_user-admin-visual-inconsistency.png`; `../../findings/defect-screenshots/UT-D-007_user-admin-visual-inconsistency.png`; participant trả lời: `Layout user và admin không đồng nhất` |            1 | `No`                  |
 
 - Lẫn lộn danh sách support request của user và admin khi đăng nhập bằng admin
 
-![1785938625303](image/P05_session_notes/1785938625303.png)
+![1785938625303](../../findings/defect-screenshots/UT-D-001_admin-user-navigation-confusion.png)
 
 - Danh sách support requests bên admin, filter status nên nằm chung với các filter còn lại vì user có thể không để ý nó là filter mà chỉ là overview.
 
-![1785938635976](image/P05_session_notes/1785938635976.png)
+![1785938635976](../../findings/defect-screenshots/UT-D-002_pending-resolved-tab-affordance.png)
 
 - Giao diện màu sắc giữa dashboard user và admin không đồng nhất: sidebar của user màu sáng, sidebar của admin màu tối.
 
-![1785939135603](image/P05_session_notes/1785939135603.png)
+![1785939135603](../../findings/defect-screenshots/UT-D-007_user-admin-visual-inconsistency.png)
 
-![1785939155583](image/P05_session_notes/1785939155583.png)
+![1785939155583](../../findings/defect-screenshots/UT-D-007_user-admin-visual-inconsistency.png)

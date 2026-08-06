@@ -76,7 +76,7 @@ Sau khi trải nghiệm phía user, hãy dùng màn hình admin đã được ch
 | Hesitations   | 3                                        |
 | Interventions | `Không`                                  |
 | Key friction  | Participant bị lẫn giữa luồng support phía user và trang quản trị khi dùng tài khoản admin; trạng thái `Chờ xử lý`/`Đã giải quyết` chưa đủ nổi bật để nhận ra ngay. |
-| Evidence      | `image/P02_session_notes/1785855764060.png`; `image/P02_session_notes/1785855715511.png` |
+| Evidence      | `../../findings/defect-screenshots/UT-D-001_admin-user-navigation-confusion.png`; `../../findings/defect-screenshots/UT-D-002_pending-resolved-tab-affordance.png` |
 
 ## 7. Câu trả lời sau task
 
@@ -119,12 +119,12 @@ Sau khi trải nghiệm phía user, hãy dùng màn hình admin đã được ch
 
 | ID tạm    | Screen         | Type                | Description  | Evidence         | Severity 0-4 | Có submit Google Form? |
 | ---------- | -------------- | ------------------- | ------------ | ---------------- | -----------: | ----------------------- |
-| UT-P02-001 | `D3` | `Usability` | Khi đăng nhập bằng admin, menu tài khoản hiển thị cả `Trang quản trị` và `Yêu cầu hỗ trợ`, làm participant lẫn giữa luồng support phía user và màn hình quản trị cần dùng để xử lý request. | `image/P02_session_notes/1785855764060.png`; participant trả lời: `Lẫn lộn trang người dùng và quản lý của admin khi đăng nhập bằng admin` | 2 | `No` |
-| UT-P02-002 | `D3` | `Usability` | Hai trạng thái/tab `Chờ xử lý` và `Đã giải quyết` trong màn hình quản lý support request chưa được participant nhận ra ngay, làm chậm việc xác định request nằm ở tab nào. | `image/P02_session_notes/1785855715511.png`; participant trả lời: `Có nhưng không để ý có 2 tab để chuyển qua lại` | 2 | `No` |
+| UT-P02-001 | `D3` | `Usability` | Khi đăng nhập bằng admin, menu tài khoản hiển thị cả `Trang quản trị` và `Yêu cầu hỗ trợ`, làm participant lẫn giữa luồng support phía user và màn hình quản trị cần dùng để xử lý request. | `../../findings/defect-screenshots/UT-D-001_admin-user-navigation-confusion.png`; participant trả lời: `Lẫn lộn trang người dùng và quản lý của admin khi đăng nhập bằng admin` | 2 | `No` |
+| UT-P02-002 | `D3` | `Usability` | Hai trạng thái/tab `Chờ xử lý` và `Đã giải quyết` trong màn hình quản lý support request chưa được participant nhận ra ngay, làm chậm việc xác định request nằm ở tab nào. | `../../findings/defect-screenshots/UT-D-002_pending-resolved-tab-affordance.png`; participant trả lời: `Có nhưng không để ý có 2 tab để chuyển qua lại` | 2 | `No` |
 
 
 Hình này là Danh lẫn lộn giữa tab yêu cầu hỗ trợ bên user và admin khi đăng nhập tài khoản admin.
-![1785855764060](image/P02_session_notes/1785855764060.png)
+![1785855764060](../../findings/defect-screenshots/UT-D-001_admin-user-navigation-confusion.png)
 
 Hình này là Danh không nhận ra việc chuyển Chờ xử lý và Đã giải quyết.
-![1785855715511](image/P02_session_notes/1785855715511.png)
+![1785855715511](../../findings/defect-screenshots/UT-D-002_pending-resolved-tab-affordance.png)

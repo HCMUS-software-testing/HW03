@@ -76,7 +76,7 @@ Sau khi trải nghiệm phía user, hãy dùng màn hình admin đã được ch
 | Hesitations   | 2                                        |
 | Interventions | `Không`                                  |
 | Key friction  | Form tạo support request làm participant chậm nhất; ở D3, trạng thái `Pending`/`Resolved` chưa đủ nổi bật như tab điều hướng và bố cục bảng/filter admin còn gây giảm khả năng quét thông tin. |
-| Evidence      | `image/P03_session_notes/1785858880325.png`; `image/P03_session_notes/1785859116174.png`; `image/P03_session_notes/1785859136741.png` |
+| Evidence      | `../../findings/defect-screenshots/UT-D-006_rows-per-page-fixed.png`; `../../findings/defect-screenshots/UT-D-005_admin-table-filter-layout.png`; `../../findings/defect-screenshots/UT-D-002_pending-resolved-tab-affordance.png` |
 
 ## 7. Câu trả lời sau task
 
@@ -119,18 +119,18 @@ Sau khi trải nghiệm phía user, hãy dùng màn hình admin đã được ch
 
 | ID tạm    | Screen   | Type        | Description  | Evidence         | Severity 0-4 | Có submit Google Form? |
 | ---------- | -------- | ----------- | ------------ | ---------------- | -----------: | ----------------------- |
-| UT-P03-001 | `D2/D3`  | `Usability` | Control `Rows per page` xuất hiện ở danh sách support request nhưng participant ghi nhận số lượng dòng mỗi trang bị cố định ở cả phía user và admin, làm giảm cảm giác kiểm soát khi danh sách dài. | `image/P03_session_notes/1785858880325.png`; ghi chú: `Số lượng rows per page bị fix cố định cả bên user và admin` | 1 | `No` |
-| UT-P03-002 | `D3`     | `Usability` | Bố cục bảng admin dành quá nhiều chiều rộng cho cột `REQUEST`, trong khi các bộ lọc như date range chưa được tách thành hàng riêng, làm giảm khả năng quét và lọc request. | `image/P03_session_notes/1785859116174.png`; participant trả lời: `Admin: Cột REQUEST khá rộng. Filter date range nên để 1 hàng mới.` | 1 | `No` |
-| UT-P03-003 | `D3`     | `Usability` | Hai card/trạng thái `Pending` và `Resolved` chưa đủ affordance/signifier như tab có thể click, khiến participant tìm được request nhưng không nhận ra ngay có thể chuyển qua lại giữa hai trạng thái. | `image/P03_session_notes/1785859136741.png`; participant trả lời: `Có. Nhưng không nhận ra 2 tab switch qua lại được` | 2 | `No` |
+| UT-P03-001 | `D2/D3`  | `Usability` | Control `Rows per page` xuất hiện ở danh sách support request nhưng participant ghi nhận số lượng dòng mỗi trang bị cố định ở cả phía user và admin, làm giảm cảm giác kiểm soát khi danh sách dài. | `../../findings/defect-screenshots/UT-D-006_rows-per-page-fixed.png`; ghi chú: `Số lượng rows per page bị fix cố định cả bên user và admin` | 1 | `No` |
+| UT-P03-002 | `D3`     | `Usability` | Bố cục bảng admin dành quá nhiều chiều rộng cho cột `REQUEST`, trong khi các bộ lọc như date range chưa được tách thành hàng riêng, làm giảm khả năng quét và lọc request. | `../../findings/defect-screenshots/UT-D-005_admin-table-filter-layout.png`; participant trả lời: `Admin: Cột REQUEST khá rộng. Filter date range nên để 1 hàng mới.` | 1 | `No` |
+| UT-P03-003 | `D3`     | `Usability` | Hai card/trạng thái `Pending` và `Resolved` chưa đủ affordance/signifier như tab có thể click, khiến participant tìm được request nhưng không nhận ra ngay có thể chuyển qua lại giữa hai trạng thái. | `../../findings/defect-screenshots/UT-D-002_pending-resolved-tab-affordance.png`; participant trả lời: `Có. Nhưng không nhận ra 2 tab switch qua lại được` | 2 | `No` |
 
 Hình này thể hiện control `Rows per page`; participant ghi nhận số lượng dòng mỗi trang bị cố định cả bên user và admin.
 
-![1785858880325](image/P03_session_notes/1785858880325.png)
+![1785858880325](../../findings/defect-screenshots/UT-D-006_rows-per-page-fixed.png)
 
 Hình này thể hiện cột `REQUEST` trong admin support request list; participant nhận xét cột này khá rộng.
 
-![1785859116174](image/P03_session_notes/1785859116174.png)
+![1785859116174](../../findings/defect-screenshots/UT-D-005_admin-table-filter-layout.png)
 
 Hình này thể hiện hai card `Pending` và `Resolved`; participant không nhận ra ngay đây là hai tab/trạng thái có thể chuyển qua lại.
 
-![1785859136741](image/P03_session_notes/1785859136741.png)
+![1785859136741](../../findings/defect-screenshots/UT-D-002_pending-resolved-tab-affordance.png)
