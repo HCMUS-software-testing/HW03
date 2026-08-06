@@ -1,8 +1,6 @@
 Git Commit Log
 ==============
 
-Template to fill before final submission.
-
 Required by HW03:
 - checklist design
 - checklist execution per screen
@@ -14,7 +12,37 @@ Required by HW03:
 Recommended command:
 rtk git log --oneline --decorate --all
 
-Paste relevant commits below:
+Current project log:
 
-[Điền sau]
-
+23c8f0e 2026-08-06 add: agent skills demo and fix submission folder
+b07ad19 2026-08-06 fix files and added skill demo's outline
+d6c048e 2026-08-06 fix: guid  skill
+ef22958 2026-08-06 add: skill
+522da39 2026-08-06 complete task 3, added overlay for images, submit formn
+d04ff9a 2026-08-06 fix: task 2 folder in final submission
+06e8c4a 2026-08-06 add: final submmision folder
+ffa8eab 2026-08-06 complete: tasks 3
+a80791f 2026-08-05 added: task 3 - linux, mobile, tablet
+33838a6 2026-08-05 fix: os - browser - devie matrix
+9c05bc7 2026-08-05 fix: task 2 -  P05
+550cbb6 2026-08-05 add: task 2 -  P05
+7a92160 2026-08-05 add: task 2 -  P04 and task 3 CP01
+f84a50f 2026-08-04 fix: task 2 -  P03
+b91b481 2026-08-04 add: task 2 -  P03
+a4c61a4 2026-08-04 add: task 2 -  P02
+85a9b12 2026-08-04 add: task 2 -  P01
+087b976 2026-08-03 fixed: user docs in Task 2 and added student account
+a736881 2026-08-03 add: file templates for task 3
+92c05a4 2026-08-03 add: task 2 preparation
+223f608 2026-08-03 add: task 1b D3
+7fa063b 2026-08-03 add: task 1b D2
+19f57eb 2026-08-02 add: kien D1
+f36fe26 2026-08-02 add: test env access markdown for AI
+6c9382e 2026-07-27 fixed: gui usability checklist
+93c1e3c 2026-07-27 fixed: gui usability checklist
+c1189ed 2026-07-26 docs: update Scenario A task details and test checklist in...
+d5bfe7d 2026-07-26 added gui usability checklist and fixed ai-audit-entry skill
+af1c50a 2026-07-26 chores: change template for README.md
+69f74fc 2026-07-26 added ai audit skill
+a43f874 2026-07-26 init project
+36550e4 2026-07-25 first commit

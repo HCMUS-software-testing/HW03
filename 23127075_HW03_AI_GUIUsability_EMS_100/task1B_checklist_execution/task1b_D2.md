@@ -123,15 +123,15 @@
 | Đạt | 29 |
 | Không đạt | 6 |
 | Không áp dụng | 16 |
-| Cần submit Google Form | 3 findings |
+| Đã submit Google Form | 3 findings |
 
-## 7. Draft finding cho Bug & Usability Log
+## 7. Finding đã tổng hợp vào Bug & Usability Log
 
 | ID | Kịch bản/Màn hình | Loại | Mô tả | Bước/Heuristic | Kỳ vọng | Thực tế | Mức độ nghiêm trọng | Đề xuất sửa | Ảnh tham chiếu | Thời điểm submit Form |
 | --- | --- | --- | --- | --- | --- | --- | ---: | --- | --- | --- |
-| F-D2-001 | D2 My Requests list/detail | Usability | `Back` từ request detail làm mất ngữ cảnh search/status filter của list. | IA-03-03, IA-03-09. Steps: mở `/complaints?status=RESOLVED&search=keyboard`; mở request `/complaints/56`; bấm `Back`. | Quay lại đúng list đã filter, giữ `search=keyboard` và `status=RESOLVED`. | Trang quay về `/complaints`, search textbox rỗng và status trở lại `All statuses`. | 2 | Lưu query trước khi vào detail và để `Back` dùng `router.back()` hoặc link về URL list có query hiện tại. | `../findings/defect-screenshots/F-D2-001_back-loses-filter-context.png` | `[Điền thủ công sau khi submit Google Form]` |
-| F-D2-002 | D2 My Requests list/detail | Usability | Empty state khi search/filter không có kết quả dùng message gây hiểu nhầm là tài khoản chưa có request. | IA-03-06, IA-04-07. Steps: mở `/complaints`; nhập search `not-found-D2-2026`. | Empty state nên nói rõ `No matching requests found`, hiển thị criteria đang áp dụng và có nút `Clear filters`. | UI hiển thị `No requests yet` và `Create a request when you need help.` dù tài khoản vẫn có 2 requests khi bỏ search. | 2 | Tách empty state thật sự chưa có dữ liệu khỏi no-result do filter/search; thêm `Clear search`/`Clear filters`. | `../findings/defect-screenshots/F-D2-002_search-no-results-misleading-empty-state.png` | `[Điền thủ công sau khi submit Google Form]` |
-| F-D2-003 | D2 My Requests list/detail | Usability | Floating social links button chồng sát/che vùng thao tác ở mobile list. | IA-01-10, IA-03-10. Steps: resize viewport `390x844`; mở `/complaints`; quan sát cuối list/pagination. | Floating button nên tránh vùng pagination/card content hoặc tự ẩn/đổi vị trí trên mobile. | Nút social links màu xanh nằm ở mép phải vùng card/pagination, có thể che hoặc gây nhầm với action của request. | 2 | Đặt offset cao hơn pagination, giới hạn trong footer, hoặc ẩn social floating button trên các trang tác vụ có pagination ở mobile. | `../findings/defect-screenshots/F-D2-003_mobile-floating-button-near-pagination.png` | `[Điền thủ công sau khi submit Google Form]` |
+| F-D2-001 | D2 My Requests list/detail | Usability | `Back` từ request detail làm mất ngữ cảnh search/status filter của list. | IA-03-03, IA-03-09. Steps: mở `/complaints?status=RESOLVED&search=keyboard`; mở request `/complaints/56`; bấm `Back`. | Quay lại đúng list đã filter, giữ `search=keyboard` và `status=RESOLVED`. | Trang quay về `/complaints`, search textbox rỗng và status trở lại `All statuses`. | 2 | Lưu query trước khi vào detail và để `Back` dùng `router.back()` hoặc link về URL list có query hiện tại. | `../findings/defect-screenshots/F-D2-001_back-loses-filter-context.png` | `06/08/2026 13:27` |
+| F-D2-002 | D2 My Requests list/detail | Usability | Empty state khi search/filter không có kết quả dùng message gây hiểu nhầm là tài khoản chưa có request. | IA-03-06, IA-04-07. Steps: mở `/complaints`; nhập search `not-found-D2-2026`. | Empty state nên nói rõ `No matching requests found`, hiển thị criteria đang áp dụng và có nút `Clear filters`. | UI hiển thị `No requests yet` và `Create a request when you need help.` dù tài khoản vẫn có 2 requests khi bỏ search. | 2 | Tách empty state thật sự chưa có dữ liệu khỏi no-result do filter/search; thêm `Clear search`/`Clear filters`. | `../findings/defect-screenshots/F-D2-002_search-no-results-misleading-empty-state.png` | `06/08/2026 13:28` |
+| F-D2-003 | D2 My Requests list/detail | Usability | Floating social links button chồng sát/che vùng thao tác ở mobile list. | IA-01-10, IA-03-10. Steps: resize viewport `390x844`; mở `/complaints`; quan sát cuối list/pagination. | Floating button nên tránh vùng pagination/card content hoặc tự ẩn/đổi vị trí trên mobile. | Nút social links màu xanh nằm ở mép phải vùng card/pagination, có thể che hoặc gây nhầm với action của request. | 2 | Đặt offset cao hơn pagination, giới hạn trong footer, hoặc ẩn social floating button trên các trang tác vụ có pagination ở mobile. | `../findings/defect-screenshots/F-D2-003_mobile-floating-button-near-pagination.png` | `06/08/2026 13:29` |
 
 ## 8. Ghi chú hoàn tất
 
@@ -139,4 +139,4 @@
 - Playwright MCP đã được dùng để tương tác EMS thật, lấy accessibility snapshot, kiểm tra search/filter/detail/lightbox/mobile, chụp screenshot, và kiểm tra console/network.
 - Chrome DevTools MCP đã được thử nhưng không khởi động được trong môi trường hiện tại vì tool báo thiếu X server cho headful browser startup.
 - Không tạo support request mới và không dùng admin account trong lần D2 này vì tài khoản Kiên đã có resolved requests đủ để kiểm tra official response.
-- Các findings ở trên là draft. Kiên cần review screenshot, submit các finding đã xác nhận lên Google Form, rồi điền giá trị `Form-submission timestamp`.
+- Các finding D2 ở trên đã được đối chiếu với `../findings/bug_usability_findings_log.md` và đã có `Form-submission timestamp`.
