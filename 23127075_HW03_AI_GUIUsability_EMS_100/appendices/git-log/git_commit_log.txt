@@ -1,48 +1,949 @@
-Git Commit Log
-==============
-
-Required by HW03:
-- checklist design
-- checklist execution per screen
-- bug logging
-- usability evaluation
-- each cross-platform run
-- final packaging
-
-Recommended command:
-rtk git log --oneline --decorate --all
-
-Current project log:
-
-23c8f0e 2026-08-06 add: agent skills demo and fix submission folder
-b07ad19 2026-08-06 fix files and added skill demo's outline
-d6c048e 2026-08-06 fix: guid  skill
-ef22958 2026-08-06 add: skill
-522da39 2026-08-06 complete task 3, added overlay for images, submit formn
-d04ff9a 2026-08-06 fix: task 2 folder in final submission
-06e8c4a 2026-08-06 add: final submmision folder
-ffa8eab 2026-08-06 complete: tasks 3
-a80791f 2026-08-05 added: task 3 - linux, mobile, tablet
-33838a6 2026-08-05 fix: os - browser - devie matrix
-9c05bc7 2026-08-05 fix: task 2 -  P05
-550cbb6 2026-08-05 add: task 2 -  P05
-7a92160 2026-08-05 add: task 2 -  P04 and task 3 CP01
-f84a50f 2026-08-04 fix: task 2 -  P03
-b91b481 2026-08-04 add: task 2 -  P03
-a4c61a4 2026-08-04 add: task 2 -  P02
-85a9b12 2026-08-04 add: task 2 -  P01
-087b976 2026-08-03 fixed: user docs in Task 2 and added student account
-a736881 2026-08-03 add: file templates for task 3
-92c05a4 2026-08-03 add: task 2 preparation
-223f608 2026-08-03 add: task 1b D3
-7fa063b 2026-08-03 add: task 1b D2
-19f57eb 2026-08-02 add: kien D1
-f36fe26 2026-08-02 add: test env access markdown for AI
-6c9382e 2026-07-27 fixed: gui usability checklist
-93c1e3c 2026-07-27 fixed: gui usability checklist
-c1189ed 2026-07-26 docs: update Scenario A task details and test checklist in...
-d5bfe7d 2026-07-26 added gui usability checklist and fixed ai-audit-entry skill
-af1c50a 2026-07-26 chores: change template for README.md
-69f74fc 2026-07-26 added ai audit skill
-a43f874 2026-07-26 init project
-36550e4 2026-07-25 first commit
+* commit ce8f5c73f2913752006ae15d3208856565e9ab9f
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Thu Aug 6 21:13:53 2026 +0700
+| 
+|     add: github link to main report
+| 
+|  .../main-report.md                                |   2 ++
+|  .../main-report.pdf                               | Bin 90014 -> 93928 bytes
+|  2 files changed, 2 insertions(+)
+| 
+* commit 98526cf1368a456a7335bac4dff7959e190f8408
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Thu Aug 6 21:11:35 2026 +0700
+| 
+|     complete, add git log then done
+| 
+|  23127075_HW03_AI_GUIUsability_EMS_100/README.md   |  12 +++++--
+|  .../appendices/ai-audit/ai_audit_report.pdf       | Bin 0 -> 289323 bytes
+|  .../appendices/ai-critique/ai_critique.pdf        | Bin 0 -> 36625 bytes
+|  .../appendices/git-log/git_commit_log.txt         |  38 +++++++++++++++++---
+|  .../main-report.pdf                               | Bin 0 -> 90014 bytes
+|  .../task1B_checklist_execution/task1b_D1.md       |  14 ++++----
+|  .../task1B_checklist_execution/task1b_D2.md       |  12 +++----
+|  .../task1B_checklist_execution/task1b_D3.md       |  12 +++----
+|  8 files changed, 62 insertions(+), 26 deletions(-)
+| 
+* commit 23c8f0e737e2f9ab78389ce7ba31ffef12fac39a
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Thu Aug 6 20:43:04 2026 +0700
+| 
+|     add: agent skills demo and fix submission folder
+| 
+|  23127075_HW03_AI_GUIUsability_EMS_100/README.md   |   1 +
+|  .../agent-skills/ai-audit-entry/SKILL.md          |   2 +-
+|  .../agent-skills/demo-videos.md                   |   9 --
+|  .../agent-skills/gui-usability-testing/SKILL.md   |  91 ++++++++-----
+|  .../findings-consolidation/SKILL.md               |  40 +++---
+|  .../step1-checklist/SKILL.md                      |  23 ++--
+|  .../task1b-execution/SKILL.md                     |  77 +++++------
+|  .../task2-user-testing/SKILL.md                   |  32 +++--
+|  .../task3-cross-platform/SKILL.md                 |  47 ++++---
+|  .../main-report.md                                |   2 +
+|  .../session_notes/P01_session_notes.md            |   2 +-
+|  .../session_notes/P02_session_notes.md            |   2 +-
+|  .../session_notes/P03_session_notes.md            |   2 +-
+|  .../session_notes/P04_session_notes.md            |   2 +-
+|  .../session_notes/P05_session_notes.md            |   2 +-
+|  .../video_links.md                                |   7 +-
+|  demo/gui_usability_checklist.md                   |  92 -------------
+|  .../gui_usability_checklist_scenario_d.md         |  80 +++++++++++
+|  .../screenshots/D1/D1_create_request_overview.png | Bin 0 -> 140158 bytes
+|  .../D1/D1_form_filled_with_attachment.png         | Bin 0 -> 160746 bytes
+|  .../D1/D1_mobile_validation_layout.png            | Bin 0 -> 123963 bytes
+|  .../screenshots/D1/D1_submit_success_redirect.png | Bin 0 -> 244058 bytes
+|  .../D1/D1_support_list_before_create.png          | Bin 0 -> 222674 bytes
+|  .../F-D1-cancel-before-click.png                  | Bin 0 -> 139960 bytes
+|  demo/task1b-execution/task1b_D1_live_execution.md | 144 ++++++++++++++++++++
+|  demo/task2-user-testing/README.md                 |  30 ++++
+|  demo/task2-user-testing/participant_brief.md      |  47 +++++++
+|  demo/task2-user-testing/participant_table.md      |  15 ++
+|  demo/task2-user-testing/preparation_protocol.md   | 100 ++++++++++++++
+|  demo/task2-user-testing/session_notes_template.md |  86 ++++++++++++
+|  demo/task2-user-testing/sus_score_sheet.md        |  60 ++++++++
+|  .../usability_report_template.md                  |  99 ++++++++++++++
+|  demo/task3-cross-platform/README.md               |  67 +++++++++
+|  demo/task3-cross-platform/compatibility_matrix.md |  78 +++++++++++
+|  .../task3-cross-platform/cross_platform_report.md |  73 ++++++++++
+|  demo/task3-cross-platform/screenshot_protocol.md  |  95 +++++++++++++
+|  demo/task4-findings/README.md                     |  17 +++
+|  demo/task4-findings/bug_usability_findings_log.md |  44 ++++++
+|  .../defect-screenshots/1785821851780.png          | Bin 0 -> 167423 bytes
+|  .../defect-screenshots/1785855764060.png          | Bin 0 -> 596391 bytes
+|  .../defect-screenshots/1785858880325.png          | Bin 0 -> 736145 bytes
+|  .../defect-screenshots/1785859116174.png          | Bin 0 -> 70727 bytes
+|  .../defect-screenshots/1785859136741.png          | Bin 0 -> 104103 bytes
+|  .../defect-screenshots/1785915794108.png          | Bin 0 -> 351011 bytes
+|  .../defect-screenshots/1785939135603.png          | Bin 0 -> 306968 bytes
+|  .../D1_submit_success_redirect.png                | Bin 0 -> 144888 bytes
+|  .../F-D1-001_validation-not-inline.png            | Bin 0 -> 146003 bytes
+|  ...-002_category-submit-400-no-clear-ui-error.png | Bin 0 -> 162302 bytes
+|  ...1-003_cancel-discards-without-confirmation.png | Bin 0 -> 93480 bytes
+|  .../F-D2-001_back-loses-filter-context.png        | Bin 0 -> 110565 bytes
+|  ...2_search-no-results-misleading-empty-state.png | Bin 0 -> 110220 bytes
+|  ...003_mobile-floating-button-near-pagination.png | Bin 0 -> 110540 bytes
+|  ...F-D3-001_search-title-returns-extra-result.png | Bin 0 -> 99275 bytes
+|  .../F-D3-002_tab-switch-loses-filter-context.png  | Bin 0 -> 263737 bytes
+|  .../F-D3-003_mobile-sidebar-overflow.png          | Bin 0 -> 133147 bytes
+|  .../finding_screenshot_inventory.md               |  21 +++
+|  56 files changed, 1243 insertions(+), 246 deletions(-)
+| 
+* commit b07ad193d42232730d58d367e0be87e311729eb8
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Thu Aug 6 19:37:22 2026 +0700
+| 
+|     fix files and added skill demo's outline
+| 
+|  23127075_HW03_AI_GUIUsability_EMS_100/README.md   |  13 +-
+|  .../agent-skills/demo-videos.md                   |   4 +-
+|  .../main-report.md                                |   8 +-
+|  .../task2_user_testing/participant_table.md       |   2 +-
+|  .../task2_user_testing/preparation_protocol.md    |   4 +-
+|  .../session_notes/P01_session_notes.md            |   2 +-
+|  .../session_notes/P02_session_notes.md            |   2 +-
+|  .../session_notes/P03_session_notes.md            |   2 +-
+|  .../session_notes/P04_session_notes.md            |   2 +-
+|  .../session_notes/P05_session_notes.md            |   2 +-
+|  .../task2_user_testing/usability_report.md        |  49 +--
+|  .../video_links.md                                |   4 +-
+|  skill_demo_gui_usability_testing_script.md        | 414 ++++++++++++++++++++
+|  13 files changed, 456 insertions(+), 52 deletions(-)
+| 
+* commit d6c048ec08a5f87b004fed3ad5bbfeb9279923c2
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Thu Aug 6 15:46:16 2026 +0700
+| 
+|     fix: guid  skill
+| 
+|  .agents/skills/gui-usability-testing/SKILL.md     | 91 ++++++++++++--------
+|  .../findings-consolidation/SKILL.md               | 40 ++++-----
+|  .../step1-checklist/SKILL.md                      | 23 +++---
+|  .../task1b-execution/SKILL.md                     | 84 +++++++++++--------
+|  .../task2-user-testing/SKILL.md                   | 32 +++----
+|  .../task3-cross-platform/SKILL.md                 | 47 ++++++-----
+|  .../task1b-execution/SKILL.md                     | 47 +++++++----
+|  demo/gui_usability_checklist.md                   | 92 +++++++++++++++++++++
+|  submission/ai-audit/ai_audit_report.md            |  2 +-
+|  9 files changed, 308 insertions(+), 150 deletions(-)
+| 
+* commit ef22958672e9d1409f1cd485db0915adbe9bd1f9
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Thu Aug 6 14:58:43 2026 +0700
+| 
+|     add: skill
+| 
+|  .agents/skills/gui-usability-testing/SKILL.md     |  145 +-
+|  .../findings-consolidation/SKILL.md               |   51 +
+|  .../step1-checklist/SKILL.md                      |   50 +
+|  .../task1b-execution/SKILL.md                     |   71 +
+|  .../task2-user-testing/SKILL.md                   |   70 +
+|  .../task3-cross-platform/SKILL.md                 |   58 +
+|  .../agent-skills/ai-audit-entry/SKILL.md          |   91 +
+|  .../ai-audit-entry/agents/openai.yaml             |    4 +
+|  .../scripts/append_ai_audit_entry.py              |  459 +++++
+|  .../scripts/test_append_ai_audit_entry.py         |  534 ++++++
+|  .../agent-skills/demo-videos.md                   |   12 +-
+|  .../agent-skills/gui-usability-testing/SKILL.md   |  145 +-
+|  .../findings-consolidation/SKILL.md               |   51 +
+|  .../step1-checklist/SKILL.md                      |   50 +
+|  .../task1b-execution/SKILL.md                     |   71 +
+|  .../task2-user-testing/SKILL.md                   |   70 +
+|  .../task3-cross-platform/SKILL.md                 |   58 +
+|  .../appendices/ai-audit/ai_audit_report.md        | 1710 ++++++-------------
+|  .../main-report.md                                |    3 +-
+|  .../task2_user_testing/participant_table.md       |   16 +-
+|  .../video_links.md                                |   27 +
+|  submission/ai-audit/ai_audit_report.md            | 1656 ++++++------------
+|  submission/video_links.md                         |   27 +
+|  23 files changed, 2942 insertions(+), 2487 deletions(-)
+| 
+* commit 522da394e33ae46727638d491c505f1c82d885a8
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Thu Aug 6 13:52:09 2026 +0700
+| 
+|     complete task 3, added overlay for images, submit formn
+| 
+|  23127075_HW03_AI_GUIUsability_EMS_100/README.md   |   2 +-
+|  .../appendices/ai-audit/ai_audit_report.md        |  76 ++++-
+|  .../findings/bug_usability_findings_log.md        |  44 +--
+|  .../F-D1-001_validation-not-inline.png            | Bin 0 -> 210879 bytes
+|  ...-002_category-submit-400-no-clear-ui-error.png | Bin 0 -> 243944 bytes
+|  ...1-003_cancel-discards-without-confirmation.png | Bin 0 -> 136314 bytes
+|  .../F-D1-004_success-semantics-weak-closure.png   | Bin 0 -> 571746 bytes
+|  .../F-D2-001_back-loses-filter-context.png        | Bin 0 -> 159891 bytes
+|  ...2_search-no-results-misleading-empty-state.png | Bin 0 -> 161652 bytes
+|  ...003_mobile-floating-button-near-pagination.png | Bin 0 -> 159568 bytes
+|  ...F-D3-001_search-title-returns-extra-result.png | Bin 0 -> 146355 bytes
+|  .../F-D3-002_tab-switch-loses-filter-context.png  | Bin 0 -> 387821 bytes
+|  .../F-D3-003_mobile-sidebar-overflow.png          | Bin 0 -> 651725 bytes
+|  .../UT-D-001_admin-user-navigation-confusion.png  | Bin 0 -> 596899 bytes
+|  .../UT-D-002_pending-resolved-tab-affordance.png  | Bin 0 -> 119057 bytes
+|  .../UT-D-003_request-description-overflow.png     | Bin 0 -> 189215 bytes
+|  .../UT-D-004_form-focus-caret-weak.png            | Bin 0 -> 362542 bytes
+|  .../UT-D-005_admin-table-filter-layout.png        | Bin 0 -> 91745 bytes
+|  .../UT-D-006_rows-per-page-fixed.png              | Bin 0 -> 838942 bytes
+|  .../UT-D-007_user-admin-visual-inconsistency.png  | Bin 0 -> 288677 bytes
+|  .../main-report.md                                |  26 +-
+|  .../{task1B => }/task1b_D1.md                     | 336 ++++++++++----------
+|  .../{task1B => }/task1b_D2.md                     | 284 ++++++++---------
+|  .../{task1B => }/task1b_D3.md                     | 288 ++++++++---------
+|  .../session_notes/P01_session_notes.md            | 246 +++++++-------
+|  .../session_notes/P02_session_notes.md            | 258 +++++++--------
+|  .../session_notes/P03_session_notes.md            | 270 ++++++++--------
+|  .../session_notes/P04_session_notes.md            | 270 ++++++++--------
+|  .../session_notes/P05_session_notes.md            | 274 ++++++++--------
+|  .../image/P01_session_notes/1785821851780.png     | Bin 167423 -> 0 bytes
+|  .../image/P02_session_notes/1785855715511.png     | Bin 534725 -> 0 bytes
+|  .../image/P02_session_notes/1785855764060.png     | Bin 596391 -> 0 bytes
+|  .../image/P03_session_notes/1785858880325.png     | Bin 736145 -> 0 bytes
+|  .../image/P03_session_notes/1785859116174.png     | Bin 70727 -> 0 bytes
+|  .../image/P03_session_notes/1785859136741.png     | Bin 104103 -> 0 bytes
+|  .../image/P04_session_notes/1785915761757.png     | Bin 338032 -> 0 bytes
+|  .../image/P04_session_notes/1785915787357.png     | Bin 510345 -> 0 bytes
+|  .../image/P04_session_notes/1785915794108.png     | Bin 351011 -> 0 bytes
+|  .../image/P05_session_notes/1785938625303.png     | Bin 55251 -> 0 bytes
+|  .../image/P05_session_notes/1785938635976.png     | Bin 167162 -> 0 bytes
+|  .../image/P05_session_notes/1785939135603.png     | Bin 306968 -> 0 bytes
+|  .../image/P05_session_notes/1785939155583.png     | Bin 210358 -> 0 bytes
+|  ...ity_report_template.md => usability_report.md} |  44 ++-
+|  ...matrix_template.md => compatibility_matrix.md} | 142 +++++----
+|  ...eport_template.md => cross_platform_report.md} | 190 +++++------
+|  .../downloads/CP-01_linux_firefox_desktop/D1.png  | Bin
+|  .../downloads/CP-01_linux_firefox_desktop/D2.png  | Bin
+|  .../downloads/CP-01_linux_firefox_desktop/D3.png  | Bin 0 -> 315015 bytes
+|  .../downloads/CP-02_windows_opera_desktop/D1.png  | Bin 0 -> 533075 bytes
+|  .../CP-02_windows_opera_desktop/D2-detail.png     | Bin 0 -> 580822 bytes
+|  .../CP-02_windows_opera_desktop/D2-list.png       | Bin 0 -> 571327 bytes
+|  .../downloads/CP-02_windows_opera_desktop/D3.png  | Bin 0 -> 626124 bytes
+|  .../downloads/CP-03_windows_edge_desktop/D1.png   | Bin 0 -> 445208 bytes
+|  .../CP-03_windows_edge_desktop/D2-detail.png      | Bin 0 -> 460330 bytes
+|  .../CP-03_windows_edge_desktop/D2-list.png        | Bin 0 -> 509278 bytes
+|  .../downloads/CP-03_windows_edge_desktop/D3.png   | Bin 0 -> 503468 bytes
+|  .../CP-04_android_samsung-internet_tablet/D1.png  | Bin 0 -> 592208 bytes
+|  .../D2-detail.png                                 | Bin 0 -> 556287 bytes
+|  .../D2-list.png                                   | Bin 0 -> 606550 bytes
+|  .../CP-04_android_samsung-internet_tablet/D3.png  | Bin 0 -> 531879 bytes
+|  .../downloads/CP-05_android_chrome_phone/D1.png   | Bin 0 -> 951616 bytes
+|  .../CP-05_android_chrome_phone/D2-detail.png      | Bin 0 -> 788758 bytes
+|  .../CP-05_android_chrome_phone/D2-list.png        | Bin 0 -> 844397 bytes
+|  .../downloads/CP-05_android_chrome_phone/D3.png   | Bin 0 -> 650307 bytes
+|  .../F-D1-001_validation-not-inline.png            | Bin 354496 -> 0 bytes
+|  ...-002_category-submit-400-no-clear-ui-error.png | Bin 367637 -> 0 bytes
+|  ...1-003_cancel-discards-without-confirmation.png | Bin 299425 -> 0 bytes
+|  .../F-D1-001_validation-not-inline.png            | Bin 388113 -> 0 bytes
+|  ...-002_category-submit-400-no-clear-ui-error.png | Bin 387413 -> 0 bytes
+|  ...1-003_cancel-discards-without-confirmation.png | Bin 476276 -> 0 bytes
+|  .../F-D1-004_success-semantics-weak-closure.png   | Bin 447097 -> 0 bytes
+|  .../F-D1-001_validation-not-inline.png            | Bin 307990 -> 0 bytes
+|  ...-002_category-submit-400-no-clear-ui-error.png | Bin 300276 -> 0 bytes
+|  ...1-003_cancel-discards-without-confirmation.png | Bin 387322 -> 0 bytes
+|  .../F-D1-004_success-semantics-weak-closure.png   | Bin 388481 -> 0 bytes
+|  .../F-D1-001_validation-not-inline.png            | Bin 705404 -> 0 bytes
+|  ...-002_category-submit-400-no-clear-ui-error.png | Bin 631284 -> 0 bytes
+|  ...1-003_cancel-discards-without-confirmation.png | Bin 626610 -> 0 bytes
+|  .../F-D1-004_success-semantics-weak-closure.png   | Bin 663344 -> 0 bytes
+|  .../F-D1-001_validation-not-inline.png            | Bin 938663 -> 0 bytes
+|  ...1-003_cancel-discards-without-confirmation.png | Bin 790388 -> 0 bytes
+|  .../F-D1-004_success-semantics-weak-closure.png   | Bin 814272 -> 0 bytes
+|  .../F-D2-001_back-loses-filter-context.png        | Bin 283689 -> 0 bytes
+|  ...2_search-no-results-misleading-empty-state.png | Bin 249830 -> 0 bytes
+|  .../F-D2-001_back-loses-filter-context.png        | Bin 447097 -> 0 bytes
+|  ...2_search-no-results-misleading-empty-state.png | Bin 448313 -> 0 bytes
+|  .../F-D2-001_back-loses-filter-context.png        | Bin 388481 -> 0 bytes
+|  ...2_search-no-results-misleading-empty-state.png | Bin 344486 -> 0 bytes
+|  .../F-D2-001_back-loses-filter-context.png        | Bin 663344 -> 0 bytes
+|  ...2_search-no-results-misleading-empty-state.png | Bin 559917 -> 0 bytes
+|  .../F-D2-001_back-loses-filter-context.png        | Bin 814272 -> 0 bytes
+|  ...2_search-no-results-misleading-empty-state.png | Bin 609287 -> 0 bytes
+|  ...F-D3-001_search-title-returns-extra-result.png | Bin 235196 -> 0 bytes
+|  .../F-D3-002_tab-switch-loses-filter-context.png  | Bin 233663 -> 0 bytes
+|  ...F-D3-001_search-title-returns-extra-result.png | Bin 477703 -> 0 bytes
+|  .../F-D3-002_tab-switch-loses-filter-context.png  | Bin 498984 -> 0 bytes
+|  ...F-D3-001_search-title-returns-extra-result.png | Bin 372525 -> 0 bytes
+|  .../F-D3-002_tab-switch-loses-filter-context.png  | Bin 390237 -> 0 bytes
+|  ...F-D3-001_search-title-returns-extra-result.png | Bin 535064 -> 0 bytes
+|  .../F-D3-002_tab-switch-loses-filter-context.png  | Bin 549261 -> 0 bytes
+|  .../F-D3-003_mobile-sidebar-overflow.png          | Bin 634463 -> 0 bytes
+|  .../downloads/CP-01_linux_firefox_desktop/D3.png  | Bin 231884 -> 0 bytes
+|  .../downloads/CP-02_windows_opera_desktop/D1.png  | Bin 411903 -> 0 bytes
+|  .../CP-02_windows_opera_desktop/D2-detail.png     | Bin 457206 -> 0 bytes
+|  .../CP-02_windows_opera_desktop/D2-list.png       | Bin 447097 -> 0 bytes
+|  .../downloads/CP-02_windows_opera_desktop/D3.png  | Bin 500899 -> 0 bytes
+|  .../downloads/CP-03_windows_edge_desktop/D1.png   | Bin 332388 -> 0 bytes
+|  .../CP-03_windows_edge_desktop/D2-detail.png      | Bin 345665 -> 0 bytes
+|  .../CP-03_windows_edge_desktop/D2-list.png        | Bin 388481 -> 0 bytes
+|  .../downloads/CP-03_windows_edge_desktop/D3.png   | Bin 384778 -> 0 bytes
+|  .../CP-04_android_samsung-internet_tablet/D1.png  | Bin 678534 -> 0 bytes
+|  .../D2-detail.png                                 | Bin 619407 -> 0 bytes
+|  .../D2-list.png                                   | Bin 663344 -> 0 bytes
+|  .../CP-04_android_samsung-internet_tablet/D3.png  | Bin 542315 -> 0 bytes
+|  .../downloads/CP-05_android_chrome_phone/D1.png   | Bin 971749 -> 0 bytes
+|  .../CP-05_android_chrome_phone/D2-detail.png      | Bin 763832 -> 0 bytes
+|  .../CP-05_android_chrome_phone/D2-list.png        | Bin 814272 -> 0 bytes
+|  .../downloads/CP-05_android_chrome_phone/D3.png   | Bin 634463 -> 0 bytes
+|  submission/ai-audit/ai_audit_report.md            |  22 +-
+|  119 files changed, 1434 insertions(+), 1338 deletions(-)
+| 
+* commit d04ff9a0eea8bad2d12caf378ebacfd23804f24e
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Thu Aug 6 02:07:25 2026 +0700
+| 
+|     fix: task 2 folder in final submission
+| 
+|  .../main-report.md                                |  12 +-
+|  .../{task2 => }/participant_brief.md              | 136 +++++++++---------
+|  .../task2_user_testing/participant_table.md       |  25 ++++
+|  .../task2_user_testing/preparation_protocol.md    |  98 +++++++++++++
+|  .../session_notes/P01_session_notes.md            |   2 +-
+|  .../session_notes/P02_session_notes.md            |   2 +-
+|  .../session_notes/P03_session_notes.md            |   2 +-
+|  .../session_notes/P04_session_notes.md            |   2 +-
+|  .../session_notes/P05_session_notes.md            |   2 +-
+|  .../image/P01_session_notes/1785821851780.png     | Bin
+|  .../image/P02_session_notes/1785855715511.png     | Bin
+|  .../image/P02_session_notes/1785855764060.png     | Bin
+|  .../image/P03_session_notes/1785858880325.png     | Bin
+|  .../image/P03_session_notes/1785859116174.png     | Bin
+|  .../image/P03_session_notes/1785859136741.png     | Bin
+|  .../image/P04_session_notes/1785915761757.png     | Bin
+|  .../image/P04_session_notes/1785915787357.png     | Bin
+|  .../image/P04_session_notes/1785915794108.png     | Bin
+|  .../image/P05_session_notes/1785938625303.png     | Bin
+|  .../image/P05_session_notes/1785938635976.png     | Bin
+|  .../image/P05_session_notes/1785939135603.png     | Bin
+|  .../image/P05_session_notes/1785939155583.png     | Bin
+|  .../task2_user_testing/sus_score_sheet.md         |  56 ++++++++
+|  .../task2_user_testing/task2/participant_table.md |  19 ---
+|  .../task2/preparation_protocol.md                 | 116 ----------------
+|  .../task2_user_testing/task2/sus_score_sheet.md   |  54 --------
+|  .../task2/usability_report_template.md            | 105 --------------
+|  .../usability_report_template.md                  | 145 ++++++++++++++++++++
+|  28 files changed, 409 insertions(+), 367 deletions(-)
+| 
+* commit 06e8c4ab48cf243ca660ae3b3f2b00c426c739e5
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Thu Aug 6 01:55:19 2026 +0700
+| 
+|     add: final submmision folder
+| 
+|  23127075_HW03_AI_GUIUsability_EMS_100/README.md   |   41 +
+|  .../agent-skills/demo-videos.md                   |    7 +
+|  .../agent-skills/gui-usability-testing/SKILL.md   |  122 +++
+|  .../appendices/ai-audit/ai_audit_report.md        | 1088 +++++++++++++++++++
+|  .../appendices/ai-critique/ai_critique.md         |    6 +
+|  .../appendices/git-log/git_commit_log.txt         |   20 +
+|  .../findings/bug_usability_findings_log.md        |   23 +
+|  .../main-report.md                                |   71 ++
+|  .../group/gui_usability_checklist_final.md        |   65 ++
+|  .../group/gui_usability_checklist_processing.md   |   91 ++
+|  .../screenshots/D1/D1_create_request_overview.png |  Bin 0 -> 140210 bytes
+|  .../D1/D1_form_filled_with_attachment.png         |  Bin 0 -> 158872 bytes
+|  .../D1/D1_mobile_validation_layout.png            |  Bin 0 -> 135199 bytes
+|  .../screenshots/D1/D1_submit_success_redirect.png |  Bin 0 -> 144888 bytes
+|  .../screenshots/D2/D2_attachment_lightbox.png     |  Bin 0 -> 133737 bytes
+|  .../D2/D2_back_loses_filter_context.png           |  Bin 0 -> 110565 bytes
+|  .../screenshots/D2/D2_detail_with_response.png    |  Bin 0 -> 158867 bytes
+|  .../screenshots/D2/D2_mobile_detail_response.png  |  Bin 0 -> 134809 bytes
+|  .../screenshots/D2/D2_mobile_list_layout.png      |  Bin 0 -> 110540 bytes
+|  .../screenshots/D2/D2_my_requests_overview.png    |  Bin 0 -> 135515 bytes
+|  .../screenshots/D2/D2_search_no_results.png       |  Bin 0 -> 110220 bytes
+|  .../screenshots/D2/D2_search_status_filter.png    |  Bin 0 -> 130472 bytes
+|  .../screenshots/D3/D3_category_support_filter.png |  Bin 0 -> 85016 bytes
+|  .../D3/D3_member_code_filter_kien_pending.png     |  Bin 0 -> 86464 bytes
+|  .../D3/D3_mobile_layout_sidebar_overflow.png      |  Bin 0 -> 133147 bytes
+|  .../screenshots/D3/D3_no_matching_requests.png    |  Bin 0 -> 74855 bytes
+|  .../screenshots/D3/D3_pending_overview.png        |  Bin 0 -> 135092 bytes
+|  .../screenshots/D3/D3_resolved_tab_overview.png   |  Bin 0 -> 263737 bytes
+|  .../D3/D3_search_title_returns_extra_result.png   |  Bin 0 -> 99275 bytes
+|  .../F-D1-001_validation-not-inline.png            |  Bin 0 -> 146003 bytes
+|  ...-002_category-submit-400-no-clear-ui-error.png |  Bin 0 -> 162302 bytes
+|  ...1-003_cancel-discards-without-confirmation.png |  Bin 0 -> 93480 bytes
+|  .../F-D2-001_back-loses-filter-context.png        |  Bin 0 -> 110565 bytes
+|  ...2_search-no-results-misleading-empty-state.png |  Bin 0 -> 110220 bytes
+|  ...003_mobile-floating-button-near-pagination.png |  Bin 0 -> 110540 bytes
+|  ...F-D3-001_search-title-returns-extra-result.png |  Bin 0 -> 99275 bytes
+|  .../F-D3-002_tab-switch-loses-filter-context.png  |  Bin 0 -> 263737 bytes
+|  .../F-D3-003_mobile-sidebar-overflow.png          |  Bin 0 -> 133147 bytes
+|  .../task1B/task1b_D1.md                           |  168 +++
+|  .../task1B/task1b_D2.md                           |  142 +++
+|  .../task1B/task1b_D3.md                           |  144 +++
+|  .../task2_user_testing/task2/participant_brief.md |   62 ++
+|  .../task2_user_testing/task2/participant_table.md |   19 +
+|  .../task2/preparation_protocol.md                 |  116 ++
+|  .../task2/session_notes/P01_session_notes.md      |  124 +++
+|  .../task2/session_notes/P02_session_notes.md      |  130 +++
+|  .../task2/session_notes/P03_session_notes.md      |  136 +++
+|  .../task2/session_notes/P04_session_notes.md      |  136 +++
+|  .../task2/session_notes/P05_session_notes.md      |  138 +++
+|  .../image/P01_session_notes/1785821851780.png     |  Bin 0 -> 167423 bytes
+|  .../image/P02_session_notes/1785855715511.png     |  Bin 0 -> 534725 bytes
+|  .../image/P02_session_notes/1785855764060.png     |  Bin 0 -> 596391 bytes
+|  .../image/P03_session_notes/1785858880325.png     |  Bin 0 -> 736145 bytes
+|  .../image/P03_session_notes/1785859116174.png     |  Bin 0 -> 70727 bytes
+|  .../image/P03_session_notes/1785859136741.png     |  Bin 0 -> 104103 bytes
+|  .../image/P04_session_notes/1785915761757.png     |  Bin 0 -> 338032 bytes
+|  .../image/P04_session_notes/1785915787357.png     |  Bin 0 -> 510345 bytes
+|  .../image/P04_session_notes/1785915794108.png     |  Bin 0 -> 351011 bytes
+|  .../image/P05_session_notes/1785938625303.png     |  Bin 0 -> 55251 bytes
+|  .../image/P05_session_notes/1785938635976.png     |  Bin 0 -> 167162 bytes
+|  .../image/P05_session_notes/1785939135603.png     |  Bin 0 -> 306968 bytes
+|  .../image/P05_session_notes/1785939155583.png     |  Bin 0 -> 210358 bytes
+|  .../task2_user_testing/task2/sus_score_sheet.md   |   54 +
+|  .../task2/usability_report_template.md            |  105 ++
+|  .../task3/cross_platform_report_template.md       |   94 ++
+|  .../task3_cross_platform/task3/matrix_template.md |   70 ++
+|  .../F-D1-001_validation-not-inline.png            |  Bin 0 -> 354496 bytes
+|  ...-002_category-submit-400-no-clear-ui-error.png |  Bin 0 -> 367637 bytes
+|  ...1-003_cancel-discards-without-confirmation.png |  Bin 0 -> 299425 bytes
+|  .../F-D1-001_validation-not-inline.png            |  Bin 0 -> 388113 bytes
+|  ...-002_category-submit-400-no-clear-ui-error.png |  Bin 0 -> 387413 bytes
+|  ...1-003_cancel-discards-without-confirmation.png |  Bin 0 -> 476276 bytes
+|  .../F-D1-004_success-semantics-weak-closure.png   |  Bin 0 -> 447097 bytes
+|  .../F-D1-001_validation-not-inline.png            |  Bin 0 -> 307990 bytes
+|  ...-002_category-submit-400-no-clear-ui-error.png |  Bin 0 -> 300276 bytes
+|  ...1-003_cancel-discards-without-confirmation.png |  Bin 0 -> 387322 bytes
+|  .../F-D1-004_success-semantics-weak-closure.png   |  Bin 0 -> 388481 bytes
+|  .../F-D1-001_validation-not-inline.png            |  Bin 0 -> 705404 bytes
+|  ...-002_category-submit-400-no-clear-ui-error.png |  Bin 0 -> 631284 bytes
+|  ...1-003_cancel-discards-without-confirmation.png |  Bin 0 -> 626610 bytes
+|  .../F-D1-004_success-semantics-weak-closure.png   |  Bin 0 -> 663344 bytes
+|  .../F-D1-001_validation-not-inline.png            |  Bin 0 -> 938663 bytes
+|  ...1-003_cancel-discards-without-confirmation.png |  Bin 0 -> 790388 bytes
+|  .../F-D1-004_success-semantics-weak-closure.png   |  Bin 0 -> 814272 bytes
+|  .../F-D2-001_back-loses-filter-context.png        |  Bin 0 -> 283689 bytes
+|  ...2_search-no-results-misleading-empty-state.png |  Bin 0 -> 249830 bytes
+|  .../F-D2-001_back-loses-filter-context.png        |  Bin 0 -> 447097 bytes
+|  ...2_search-no-results-misleading-empty-state.png |  Bin 0 -> 448313 bytes
+|  .../F-D2-001_back-loses-filter-context.png        |  Bin 0 -> 388481 bytes
+|  ...2_search-no-results-misleading-empty-state.png |  Bin 0 -> 344486 bytes
+|  .../F-D2-001_back-loses-filter-context.png        |  Bin 0 -> 663344 bytes
+|  ...2_search-no-results-misleading-empty-state.png |  Bin 0 -> 559917 bytes
+|  .../F-D2-001_back-loses-filter-context.png        |  Bin 0 -> 814272 bytes
+|  ...2_search-no-results-misleading-empty-state.png |  Bin 0 -> 609287 bytes
+|  ...F-D3-001_search-title-returns-extra-result.png |  Bin 0 -> 235196 bytes
+|  .../F-D3-002_tab-switch-loses-filter-context.png  |  Bin 0 -> 233663 bytes
+|  ...F-D3-001_search-title-returns-extra-result.png |  Bin 0 -> 477703 bytes
+|  .../F-D3-002_tab-switch-loses-filter-context.png  |  Bin 0 -> 498984 bytes
+|  ...F-D3-001_search-title-returns-extra-result.png |  Bin 0 -> 372525 bytes
+|  .../F-D3-002_tab-switch-loses-filter-context.png  |  Bin 0 -> 390237 bytes
+|  ...F-D3-001_search-title-returns-extra-result.png |  Bin 0 -> 535064 bytes
+|  .../F-D3-002_tab-switch-loses-filter-context.png  |  Bin 0 -> 549261 bytes
+|  .../F-D3-003_mobile-sidebar-overflow.png          |  Bin 0 -> 634463 bytes
+|  .../downloads/CP-01_linux_firefox_desktop/D1.png  |  Bin 0 -> 196220 bytes
+|  .../downloads/CP-01_linux_firefox_desktop/D2.png  |  Bin 0 -> 283689 bytes
+|  .../downloads/CP-01_linux_firefox_desktop/D3.png  |  Bin 0 -> 231884 bytes
+|  .../downloads/CP-02_windows_opera_desktop/D1.png  |  Bin 0 -> 411903 bytes
+|  .../CP-02_windows_opera_desktop/D2-detail.png     |  Bin 0 -> 457206 bytes
+|  .../CP-02_windows_opera_desktop/D2-list.png       |  Bin 0 -> 447097 bytes
+|  .../downloads/CP-02_windows_opera_desktop/D3.png  |  Bin 0 -> 500899 bytes
+|  .../downloads/CP-03_windows_edge_desktop/D1.png   |  Bin 0 -> 332388 bytes
+|  .../CP-03_windows_edge_desktop/D2-detail.png      |  Bin 0 -> 345665 bytes
+|  .../CP-03_windows_edge_desktop/D2-list.png        |  Bin 0 -> 388481 bytes
+|  .../downloads/CP-03_windows_edge_desktop/D3.png   |  Bin 0 -> 384778 bytes
+|  .../CP-04_android_samsung-internet_tablet/D1.png  |  Bin 0 -> 678534 bytes
+|  .../D2-detail.png                                 |  Bin 0 -> 619407 bytes
+|  .../D2-list.png                                   |  Bin 0 -> 663344 bytes
+|  .../CP-04_android_samsung-internet_tablet/D3.png  |  Bin 0 -> 542315 bytes
+|  .../downloads/CP-05_android_chrome_phone/D1.png   |  Bin 0 -> 971749 bytes
+|  .../CP-05_android_chrome_phone/D2-detail.png      |  Bin 0 -> 763832 bytes
+|  .../CP-05_android_chrome_phone/D2-list.png        |  Bin 0 -> 814272 bytes
+|  .../downloads/CP-05_android_chrome_phone/D3.png   |  Bin 0 -> 634463 bytes
+|  submission/ai-audit/ai_audit_report.md            |  245 +++--
+|  123 files changed, 3305 insertions(+), 112 deletions(-)
+| 
+* commit ffa8eab8aedb420cef5612264dc583a4e52d8420
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Thu Aug 6 01:29:59 2026 +0700
+| 
+|     complete: tasks 3
+| 
+|  submission/ai-audit/ai_audit_report.md            | 1878 ++++++++++---------
+|  .../task3/cross_platform_report_template.md       |   66 +-
+|  submission/task3/matrix_template.md               |   36 +-
+|  .../F-D1-001_validation-not-inline.png            |  Bin 0 -> 388113 bytes
+|  ...-002_category-submit-400-no-clear-ui-error.png |  Bin 0 -> 387413 bytes
+|  ...1-003_cancel-discards-without-confirmation.png |  Bin 0 -> 476276 bytes
+|  .../F-D1-004_success-semantics-weak-closure.png   |  Bin 0 -> 447097 bytes
+|  .../F-D1-001_validation-not-inline.png            |  Bin 0 -> 307990 bytes
+|  ...-002_category-submit-400-no-clear-ui-error.png |  Bin 0 -> 300276 bytes
+|  ...1-003_cancel-discards-without-confirmation.png |  Bin 0 -> 387322 bytes
+|  .../F-D1-004_success-semantics-weak-closure.png   |  Bin 0 -> 388481 bytes
+|  .../F-D2-001_back-loses-filter-context.png        |  Bin 0 -> 447097 bytes
+|  ...2_search-no-results-misleading-empty-state.png |  Bin 0 -> 448313 bytes
+|  .../F-D2-001_back-loses-filter-context.png        |  Bin 0 -> 388481 bytes
+|  ...2_search-no-results-misleading-empty-state.png |  Bin 0 -> 344486 bytes
+|  ...F-D3-001_search-title-returns-extra-result.png |  Bin 0 -> 477703 bytes
+|  .../F-D3-002_tab-switch-loses-filter-context.png  |  Bin 0 -> 498984 bytes
+|  ...F-D3-001_search-title-returns-extra-result.png |  Bin 0 -> 372525 bytes
+|  .../F-D3-002_tab-switch-loses-filter-context.png  |  Bin 0 -> 390237 bytes
+|  .../downloads/CP-02_windows_opera_desktop/D1.png  |  Bin 0 -> 411903 bytes
+|  .../CP-02_windows_opera_desktop/D2-detail.png     |  Bin 0 -> 457206 bytes
+|  .../CP-02_windows_opera_desktop/D2-list.png       |  Bin 0 -> 447097 bytes
+|  .../downloads/CP-02_windows_opera_desktop/D3.png  |  Bin 0 -> 500899 bytes
+|  .../downloads/CP-03_windows_edge_desktop/D1.png   |  Bin 0 -> 332388 bytes
+|  .../CP-03_windows_edge_desktop/D2-detail.png      |  Bin 0 -> 345665 bytes
+|  .../CP-03_windows_edge_desktop/D2-list.png        |  Bin 0 -> 388481 bytes
+|  .../downloads/CP-03_windows_edge_desktop/D3.png   |  Bin 0 -> 384778 bytes
+|  .../{D2_detail.png => D2-detail.png}              |  Bin
+|  .../{D2_list.png => D2-list.png}                  |  Bin
+|  .../{D2_detail.png => D2-detail.png}              |  Bin
+|  .../{D2_list.png => D2-list.png}                  |  Bin
+|  31 files changed, 1091 insertions(+), 889 deletions(-)
+| 
+* commit a80791f6aa7a385fa3a2dd2ffce0d6c317f6d88c
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Wed Aug 5 23:56:29 2026 +0700
+| 
+|     added: task 3 - linux, mobile, tablet
+| 
+|  submission/task3/README.md                        |   1 +
+|  submission/task3/defect_capture_checklist.md      | 113 ++++++++++++++++++++
+|  submission/task3/matrix_template.md               |  24 ++---
+|  .../F-D1-001_validation-not-inline.png            | Bin 0 -> 705404 bytes
+|  ...-002_category-submit-400-no-clear-ui-error.png | Bin 0 -> 631284 bytes
+|  ...1-003_cancel-discards-without-confirmation.png | Bin 0 -> 626610 bytes
+|  .../F-D1-004_success-semantics-weak-closure.png   | Bin 0 -> 663344 bytes
+|  .../F-D1-001_validation-not-inline.png            | Bin 0 -> 938663 bytes
+|  ...1-003_cancel-discards-without-confirmation.png | Bin 0 -> 790388 bytes
+|  .../F-D1-004_success-semantics-weak-closure.png   | Bin 0 -> 814272 bytes
+|  .../F-D2-001_back-loses-filter-context.png        | Bin 0 -> 663344 bytes
+|  ...2_search-no-results-misleading-empty-state.png | Bin 0 -> 559917 bytes
+|  .../F-D2-001_back-loses-filter-context.png        | Bin 0 -> 814272 bytes
+|  ...2_search-no-results-misleading-empty-state.png | Bin 0 -> 609287 bytes
+|  ...F-D3-001_search-title-returns-extra-result.png | Bin 0 -> 535064 bytes
+|  .../F-D3-002_tab-switch-loses-filter-context.png  | Bin 0 -> 549261 bytes
+|  .../F-D3-003_mobile-sidebar-overflow.png          | Bin 0 -> 634463 bytes
+|  .../CP-04_android_samsung-internet_tablet/D1.png  | Bin 0 -> 678534 bytes
+|  .../D2_detail.png                                 | Bin 0 -> 619407 bytes
+|  .../D2_list.png                                   | Bin 0 -> 663344 bytes
+|  .../CP-04_android_samsung-internet_tablet/D3.png  | Bin 0 -> 542315 bytes
+|  .../downloads/CP-05_android_chrome_phone/D1.png   | Bin 0 -> 971749 bytes
+|  .../CP-05_android_chrome_phone/D2_detail.png      | Bin 0 -> 763832 bytes
+|  .../CP-05_android_chrome_phone/D2_list.png        | Bin 0 -> 814272 bytes
+|  .../downloads/CP-05_android_chrome_phone/D3.png   | Bin 0 -> 634463 bytes
+|  25 files changed, 126 insertions(+), 12 deletions(-)
+| 
+* commit 33838a6ccf78904045f9c40b29983b522a950f44
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Wed Aug 5 22:18:09 2026 +0700
+| 
+|     fix: os - browser - devie matrix
+| 
+|  .../task3/cross_platform_report_template.md       | 16 ++++++------
+|  submission/task3/matrix_template.md               | 16 ++++++------
+|  submission/task3/screenshot_protocol.md           |  6 ++---
+|  submission/task3/screenshots/README.md            | 28 ++++++++++-----------
+|  .../.gitkeep                                      |  0
+|  .../.gitkeep                                      |  0
+|  .../.gitkeep                                      |  0
+|  .../.gitkeep                                      |  0
+|  .../.gitkeep                                      |  0
+|  .../.gitkeep                                      |  0
+|  .../.gitkeep                                      |  0
+|  .../.gitkeep                                      |  0
+|  submission/task3/task3_checklist_scope.md         |  2 +-
+|  13 files changed, 34 insertions(+), 34 deletions(-)
+| 
+* commit 9c05bc77a7fb08946ca4a989ab910414cbd09bca
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Wed Aug 5 21:14:41 2026 +0700
+| 
+|     fix: task 2 -  P05
+| 
+|  .../task2/session_notes/P05_session_notes.md      |  69 ++++++++++++--------
+|  .../image/P05_session_notes/1785938625303.png     | Bin 0 -> 55251 bytes
+|  .../image/P05_session_notes/1785938635976.png     | Bin 0 -> 167162 bytes
+|  .../image/P05_session_notes/1785939135603.png     | Bin 0 -> 306968 bytes
+|  .../image/P05_session_notes/1785939155583.png     | Bin 0 -> 210358 bytes
+|  5 files changed, 41 insertions(+), 28 deletions(-)
+| 
+* commit 550cbb6dd6ab89408543e9e3bdc1b719a1e2f252
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Wed Aug 5 21:00:55 2026 +0700
+| 
+|     add: task 2 -  P05
+| 
+|  .../task2/session_notes/P01_session_notes.md      |   2 +-
+|  .../task2/session_notes/P02_session_notes.md      |   2 +-
+|  .../task2/session_notes/P03_session_notes.md      |   2 +-
+|  .../task2/session_notes/P04_session_notes.md      |   2 +-
+|  .../task2/session_notes/P05_session_notes.md      | 150 ++++++++++----------
+|  .../task2/session_notes/P06_session_notes.md      | 122 ++++++++++++++++
+|  6 files changed, 202 insertions(+), 78 deletions(-)
+| 
+* commit 7a9216002e89d3b04e9637ce474e0873b29465bd
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Wed Aug 5 15:10:25 2026 +0700
+| 
+|     add: task 2 -  P04 and task 3 CP01
+| 
+|  submission/HW03_step_by_step_guide.md             |   6 +-
+|  submission/ai-audit/ai_audit_report.md            |   6 +-
+|  .../F-D2-001_back-loses-filter-context.png        | Bin 0 -> 110565 bytes
+|  ...2_search-no-results-misleading-empty-state.png | Bin 0 -> 110220 bytes
+|  ...003_mobile-floating-button-near-pagination.png | Bin 0 -> 110540 bytes
+|  ...F-D3-001_search-title-returns-extra-result.png | Bin 0 -> 99275 bytes
+|  .../F-D3-002_tab-switch-loses-filter-context.png  | Bin 0 -> 263737 bytes
+|  .../F-D3-003_mobile-sidebar-overflow.png          | Bin 0 -> 133147 bytes
+|  submission/task1B/next_steps_after_task1b.md      |  12 +-
+|  submission/task1B/next_steps_after_task1b.pdf     | Bin 0 -> 61769 bytes
+|  submission/task1B/task1b_D2.md                    |  12 +-
+|  submission/task1B/task1b_D3.md                    |  12 +-
+|  submission/task2/participant_brief.pdf            | Bin 0 -> 48272 bytes
+|  .../task2/session_notes/P04_session_notes.md      | 159 +++++++++++---------
+|  .../image/P04_session_notes/1785915761757.png     | Bin 0 -> 338032 bytes
+|  .../image/P04_session_notes/1785915787357.png     | Bin 0 -> 510345 bytes
+|  .../image/P04_session_notes/1785915794108.png     | Bin 0 -> 351011 bytes
+|  submission/task3/README.md                        |   6 +-
+|  .../task3/cross_platform_report_template.md       |  18 +--
+|  submission/task3/matrix_template.md               |  48 +++---
+|  submission/task3/screenshot_protocol.md           |  12 +-
+|  submission/task3/screenshots/README.md            |  77 +++++++++-
+|  .../D1/D1_CP-01_linux_firefox_desktop/.gitkeep    |   1 +
+|  .../F-D1-001_validation-not-inline.png            | Bin 0 -> 354496 bytes
+|  ...-002_category-submit-400-no-clear-ui-error.png | Bin 0 -> 367637 bytes
+|  ...1-003_cancel-discards-without-confirmation.png | Bin 0 -> 299425 bytes
+|  .../D1/D1_CP-02_windows_opera_desktop/.gitkeep    |   1 +
+|  .../D1/D1_CP-03_windows_edge_desktop/.gitkeep     |   1 +
+|  .../D1/D1_CP-04_android_chrome_tablet/.gitkeep    |   1 +
+|  .../.gitkeep                                      |   1 +
+|  .../D2/D2_CP-01_linux_firefox_desktop/.gitkeep    |   1 +
+|  .../F-D2-001_back-loses-filter-context.png        | Bin 0 -> 283689 bytes
+|  ...2_search-no-results-misleading-empty-state.png | Bin 0 -> 249830 bytes
+|  .../D2/D2_CP-02_windows_opera_desktop/.gitkeep    |   1 +
+|  .../D2/D2_CP-03_windows_edge_desktop/.gitkeep     |   1 +
+|  .../D2/D2_CP-04_android_chrome_tablet/.gitkeep    |   1 +
+|  .../.gitkeep                                      |   1 +
+|  .../D3/D3_CP-01_linux_firefox_desktop/.gitkeep    |   1 +
+|  ...F-D3-001_search-title-returns-extra-result.png | Bin 0 -> 235196 bytes
+|  .../F-D3-002_tab-switch-loses-filter-context.png  | Bin 0 -> 233663 bytes
+|  .../D3/D3_CP-02_windows_opera_desktop/.gitkeep    |   1 +
+|  .../D3/D3_CP-03_windows_edge_desktop/.gitkeep     |   1 +
+|  .../D3/D3_CP-04_android_chrome_tablet/.gitkeep    |   1 +
+|  .../.gitkeep                                      |   1 +
+|  .../CP-01_linux_firefox_desktop/.gitkeep          |   1 +
+|  .../downloads/CP-01_linux_firefox_desktop/D1.png  | Bin 0 -> 196220 bytes
+|  .../downloads/CP-01_linux_firefox_desktop/D2.png  | Bin 0 -> 283689 bytes
+|  .../downloads/CP-01_linux_firefox_desktop/D3.png  | Bin 0 -> 231884 bytes
+|  .../CP-02_windows_opera_desktop/.gitkeep          |   1 +
+|  .../downloads/CP-03_windows_edge_desktop/.gitkeep |   1 +
+|  .../CP-04_android_chrome_tablet/.gitkeep          |   1 +
+|  .../CP-05_android_samsung-internet_phone/.gitkeep |   1 +
+|  submission/task3/task3_checklist_scope.md         |   5 +-
+|  submission/task3/task3_findings_log_template.md   |   5 +-
+|  54 files changed, 245 insertions(+), 153 deletions(-)
+| 
+* commit f84a50f0ca60cd5960a49371759b431b8d366804
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Tue Aug 4 23:20:37 2026 +0700
+| 
+|     fix: task 2 -  P03
+| 
+|  .../task2/session_notes/P03_session_notes.md      | 52 +++++++++++----------
+|  1 file changed, 27 insertions(+), 25 deletions(-)
+| 
+* commit b91b481cc795efe7cbe20b0590a798bf042b9b88
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Tue Aug 4 22:59:38 2026 +0700
+| 
+|     add: task 2 -  P03
+| 
+|  .../task2/session_notes/P03_session_notes.md      | 159 +++++++++++---------
+|  .../image/P03_session_notes/1785858880325.png     | Bin 0 -> 736145 bytes
+|  .../image/P03_session_notes/1785859116174.png     | Bin 0 -> 70727 bytes
+|  .../image/P03_session_notes/1785859136741.png     | Bin 0 -> 104103 bytes
+|  4 files changed, 85 insertions(+), 74 deletions(-)
+| 
+* commit a4c61a48465aa9e451bcb32e413aa77fa98861fb
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Tue Aug 4 22:17:16 2026 +0700
+| 
+|     add: task 2 -  P02
+| 
+|  .../task2/session_notes/P02_session_notes.md      | 155 ++++++++++----------
+|  .../image/P02_session_notes/1785855715511.png     | Bin 0 -> 534725 bytes
+|  .../image/P02_session_notes/1785855764060.png     | Bin 0 -> 596391 bytes
+|  .../task3/cross_platform_report_template.md       |  40 ++---
+|  submission/task3/screenshot_protocol.md           |   6 +-
+|  submission/task3/screenshots/README.md            |  34 ++---
+|  6 files changed, 121 insertions(+), 114 deletions(-)
+| 
+* commit 85a9b129e248255dc84b4b5f6abb07cc73fff064
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Tue Aug 4 15:54:28 2026 +0700
+| 
+|     add: task 2 -  P01
+| 
+|  submission/ai-audit/ai_audit_report.md            |  18 +++
+|  .../task2/session_notes/P01_session_notes.md      | 149 ++++++++++----------
+|  .../image/P01_session_notes/1785821851780.png     | Bin 0 -> 167423 bytes
+|  submission/task3/README.md                        |   5 +-
+|  .../task3/cross_platform_report_template.md       |  54 +++----
+|  submission/task3/matrix_template.md               |  43 +++---
+|  submission/task3/screenshot_protocol.md           |  17 ++-
+|  submission/task3/screenshots/README.md            |  31 ++--
+|  8 files changed, 156 insertions(+), 161 deletions(-)
+| 
+* commit 087b976278865487f776dfb0637d8dbc6054abc9
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Mon Aug 3 21:17:01 2026 +0700
+| 
+|     fixed: user docs in Task 2 and added student account
+| 
+|  submission/ai-audit/ai_audit_report.md            |   2 +-
+|  submission/task2/README.md                        |   6 +-
+|  submission/task2/participant_brief.md             |  62 +++++++
+|  submission/task2/participant_table.md             |   6 +-
+|  submission/task2/preparation_protocol.md          |   6 +-
+|  .../task2/session_notes/P01_session_notes.md      | 185 +++++++++-----------
+|  .../task2/session_notes/P02_session_notes.md      | 185 +++++++++-----------
+|  .../task2/session_notes/P03_session_notes.md      | 185 +++++++++-----------
+|  .../task2/session_notes/P04_session_notes.md      | 185 +++++++++-----------
+|  .../task2/session_notes/P05_session_notes.md      | 185 +++++++++-----------
+|  submission/task2/session_notes/README.md          |  10 +-
+|  submission/task2/session_notes_template.md        | 185 +++++++++-----------
+|  submission/task2/usability_report_template.md     |   4 +-
+|  submission/test_environment_access.md             |  11 ++
+|  14 files changed, 569 insertions(+), 648 deletions(-)
+| 
+* commit a7368812cf7225d4d8de4041b9dd91d07dddc73e
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Mon Aug 3 15:50:19 2026 +0700
+| 
+|     add: file templates for task 3
+| 
+|  submission/ai-audit/ai_audit_report.md            |  18 ++++
+|  submission/task3/README.md                        |  60 ++++++++++++
+|  .../task3/cross_platform_report_template.md       |  92 ++++++++++++++++++
+|  submission/task3/matrix_template.md               |  79 +++++++++++++++
+|  submission/task3/screenshot_protocol.md           | 102 ++++++++++++++++++++
+|  submission/task3/screenshots/README.md            |  49 ++++++++++
+|  submission/task3/task3_checklist_scope.md         |  46 +++++++++
+|  submission/task3/task3_findings_log_template.md   |  34 +++++++
+|  8 files changed, 480 insertions(+)
+| 
+* commit 92c05a46b17c8295b30e6f5f47e2ba8cfe690b03
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Mon Aug 3 14:27:13 2026 +0700
+| 
+|     add: task 2 preparation
+| 
+|  submission/ai-audit/ai_audit_report.md            |  18 +++
+|  submission/task1B/next_steps_after_task1b.md      |  73 ++++++++++
+|  submission/task2/README.md                        |  55 +++++++
+|  submission/task2/participant_table.md             |  19 +++
+|  submission/task2/preparation_protocol.md          | 116 +++++++++++++++
+|  .../task2/session_notes/P01_session_notes.md      | 150 ++++++++++++++++++++
+|  .../task2/session_notes/P02_session_notes.md      | 150 ++++++++++++++++++++
+|  .../task2/session_notes/P03_session_notes.md      | 150 ++++++++++++++++++++
+|  .../task2/session_notes/P04_session_notes.md      | 150 ++++++++++++++++++++
+|  .../task2/session_notes/P05_session_notes.md      | 150 ++++++++++++++++++++
+|  submission/task2/session_notes/README.md          |  13 ++
+|  submission/task2/session_notes_template.md        | 150 ++++++++++++++++++++
+|  submission/task2/sus_score_sheet.md               |  54 +++++++
+|  submission/task2/test_accounts_template.md        |  31 ++++
+|  submission/task2/usability_report_template.md     | 105 ++++++++++++++
+|  15 files changed, 1384 insertions(+)
+| 
+* commit 223f60840413747f2c51e968d3debfe576ac1288
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Mon Aug 3 12:14:00 2026 +0700
+| 
+|     add: task 1b D3
+| 
+|  submission/ai-audit/ai_audit_report.md            | 165 ++++++++++++++++++++
+|  .../screenshots/D3/D3_category_support_filter.png | Bin 0 -> 85016 bytes
+|  .../D3/D3_member_code_filter_kien_pending.png     | Bin 0 -> 86464 bytes
+|  .../D3/D3_mobile_layout_sidebar_overflow.png      | Bin 0 -> 133147 bytes
+|  .../screenshots/D3/D3_no_matching_requests.png    | Bin 0 -> 74855 bytes
+|  submission/screenshots/D3/D3_pending_overview.png | Bin 0 -> 135092 bytes
+|  .../screenshots/D3/D3_resolved_tab_overview.png   | Bin 0 -> 263737 bytes
+|  .../D3/D3_search_title_returns_extra_result.png   | Bin 0 -> 99275 bytes
+|  submission/task1B/task1b_D3.md                    | 144 +++++++++++++++++
+|  9 files changed, 309 insertions(+)
+| 
+* commit 7fa063b80c026d7768876dd7437413dab972f04d
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Mon Aug 3 11:26:03 2026 +0700
+| 
+|     add: task 1b D2
+| 
+|  submission/ai-audit/ai_audit_report.md            | 163 ++++++++++++++++++++
+|  .../screenshots/D2/D2_attachment_lightbox.png     | Bin 0 -> 133737 bytes
+|  .../D2/D2_back_loses_filter_context.png           | Bin 0 -> 110565 bytes
+|  .../screenshots/D2/D2_detail_with_response.png    | Bin 0 -> 158867 bytes
+|  .../screenshots/D2/D2_mobile_detail_response.png  | Bin 0 -> 134809 bytes
+|  .../screenshots/D2/D2_mobile_list_layout.png      | Bin 0 -> 110540 bytes
+|  .../screenshots/D2/D2_my_requests_overview.png    | Bin 0 -> 135515 bytes
+|  .../screenshots/D2/D2_search_no_results.png       | Bin 0 -> 110220 bytes
+|  .../screenshots/D2/D2_search_status_filter.png    | Bin 0 -> 130472 bytes
+|  submission/task1B/task1b_D2.md                    | 142 +++++++++++++++++
+|  10 files changed, 305 insertions(+)
+| 
+* commit 19f57eb80cda340ea2bbfdd41736aa93917b968f
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Sun Aug 2 23:34:58 2026 +0700
+| 
+|     add: kien D1
+| 
+|  .gitignore                                        |   4 +-
+|  AGENTS.md                                         |  48 +++++
+|  ai-reasoning/AGENTS.md                            |   4 +
+|  .../ISTQB_CT-AI_Syllabus_v1.0.md                  |   0
+|  .../ISTQB_CT-AI_Syllabus_v1.0.pdf                 | Bin
+|  docs/AGENTS.md                                    |   4 +
+|  submission/AGENTS.md                              |   5 +
+|  submission/ai-audit/ai_audit_report.md            | 207 ++++++++++++++++++++
+|  .../screenshots/D1/D1_create_request_overview.png | Bin 0 -> 140210 bytes
+|  .../D1/D1_form_filled_with_attachment.png         | Bin 0 -> 158872 bytes
+|  .../D1/D1_mobile_validation_layout.png            | Bin 0 -> 135199 bytes
+|  .../screenshots/D1/D1_submit_success_redirect.png | Bin 0 -> 144888 bytes
+|  .../F-D1-001_validation-not-inline.png            | Bin 0 -> 146003 bytes
+|  ...-002_category-submit-400-no-clear-ui-error.png | Bin 0 -> 162302 bytes
+|  ...1-003_cancel-discards-without-confirmation.png | Bin 0 -> 93480 bytes
+|  submission/task1B/task1b_D1.md                    | 168 ++++++++++++++++
+|  16 files changed, 437 insertions(+), 3 deletions(-)
+| 
+* commit f36fe26223482eb4505d78ffbe4d915e142536b4
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Sun Aug 2 23:06:34 2026 +0700
+| 
+|     add: test env access markdown for AI
+| 
+|  .agents/skills/gui-usability-testing/SKILL.md     | 122 ++++++++++
+|  .gitignore                                        |   5 +-
+|  README.md                                         |   4 +-
+|  ...-E2E-Test-Flow-Luo\314\202\314\200ng-Admin.md" | 240 +++++++++++++++++++
+|  ...E2E-Test-Flow-Luo\314\202\314\200ng-Admin.pdf" | Bin 0 -> 73893 bytes
+|  submission/ai-audit/ai_audit_report.md            | 150 +++++++++++-
+|  .../ai_first_playwright_browserstack_strategy.md  | 253 ++++++++++++++++++++
+|  .../ai_first_playwright_browserstack_templates.md | 243 +++++++++++++++++++
+|  submission/test_environment_access.md             |  50 ++++
+|  9 files changed, 1052 insertions(+), 15 deletions(-)
+|   
+*   commit 415739653da2eecf89167a6fb5c9919b0b6b6a6c
+|\  Merge: 6c9382e 5fdc93d
+| | Author: TKin <letrungkienthd@gmail.com>
+| | Date:   Mon Jul 27 15:38:19 2026 +0700
+| | 
+| |     Merge branch 'main' of https://github.com/HCMUS-software-testing/HW03 into kien
+| |   
+| *   commit 5fdc93d8f041d9c43f7002d58a3bc6c95074990b
+| |\  Merge: c1189ed 93c1e3c
+| | | Author: Hacdess <88873029+Hacdess@users.noreply.github.com>
+| | | Date:   Mon Jul 27 15:32:51 2026 +0700
+| | | 
+| | |     Merge pull request #2 from HCMUS-software-testing/kien
+| | |     
+| | |     fixed: gui usability checklist
+| | | 
+| | * commit 93c1e3cef2746817d25a8440b3265f5a0e9546e2
+| | | Author: TKin <letrungkienthd@gmail.com>
+| | | Date:   Mon Jul 27 15:30:27 2026 +0700
+| | | 
+| | |     fixed: gui usability checklist
+| | | 
+| | |  submission/group/gui_usability_checklist.md     | 67 ++++++++++++++
+| | |  .../gui_usability_checklist_final.md}           | 14 ++-
+| | |  .../group/gui_usability_checklist_processing.md | 91 +++++++++++++++++++
+| | |  3 files changed, 167 insertions(+), 5 deletions(-)
+| | | 
+* | | commit 6c9382ecd8e994e06e5270233629826c94bd7ac6
+|/ /  Author: TKin <letrungkienthd@gmail.com>
+| |   Date:   Mon Jul 27 15:30:27 2026 +0700
+| |   
+| |       fixed: gui usability checklist
+| |   
+| |    submission/group/gui_usability_checklist.md     | 67 ++++++++++++++
+| |    .../gui_usability_checklist_final.md}           | 14 ++-
+| |    .../group/gui_usability_checklist_processing.md | 91 +++++++++++++++++++
+| |    3 files changed, 167 insertions(+), 5 deletions(-)
+| | 
+* | commit c1189ed648777c125ab99d475cbf712b0b4b3521
+| | Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| | Date:   Sun Jul 26 19:35:08 2026 +0700
+| | 
+| |     docs: update Scenario A task details and test checklist in README.md
+| | 
+| |  README.md                                        |   4 +-
+| |  ...E2E-Test-Flow-Luo\314\202\314\200ng-Admin.md" | 227 -------------------
+| |  ...2E-Test-Flow-Luo\314\202\314\200ng-Admin.pdf" | Bin 73893 -> 0 bytes
+| |  3 files changed, 2 insertions(+), 229 deletions(-)
+| | 
+* | commit 59da4dd5da3f07d424f06c89a649e733afc1f6e0
+|\| Merge: af1c50a 607265f
+| | Author: Hacdess <88873029+Hacdess@users.noreply.github.com>
+| | Date:   Sun Jul 26 15:38:59 2026 +0700
+| | 
+| |     Merge pull request #1 from HCMUS-software-testing/kien
+| |     
+| |     Kien
+| |   
+| *   commit 607265ff41d741201138e029ee4b48ab13d8d20a
+| |\  Merge: d5bfe7d af1c50a
+| |/  Author: TKin <letrungkienthd@gmail.com>
+|/|   Date:   Sun Jul 26 15:38:09 2026 +0700
+| |   
+| |       Merge branch 'main' of https://github.com/HCMUS-software-testing/HW03 into kien
+| | 
+* | commit af1c50a4ea373f0946ced1fc22691eae0550bed4
+| | Author: Melyenn <thiduyen310@gmail.com>
+| | Date:   Sun Jul 26 15:13:01 2026 +0700
+| | 
+| |     chores: change template for README.md
+| | 
+| |  README.md | 114 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+| |  1 file changed, 113 insertions(+), 1 deletion(-)
+| | 
+| * commit d5bfe7dd99e25715b241af3d1fd98e861b65a612
+|/  Author: TKin <letrungkienthd@gmail.com>
+|   Date:   Sun Jul 26 15:37:35 2026 +0700
+|   
+|       added gui usability checklist and fixed ai-audit-entry skill
+|   
+|    .agents/skills/ai-audit-entry/SKILL.md           |  12 +-
+|    .../scripts/append_ai_audit_entry.py             |  80 +++++++++---
+|    submission/ai-audit/ai_audit_report.md           | 124 +++++++++++++++++--
+|    submission/task1a_gui_usability_checklist.md     |  61 +++++++++
+|    4 files changed, 246 insertions(+), 31 deletions(-)
+| 
+* commit 69f74fc81d788052a49cbb04db60215c6edbd383
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Sun Jul 26 14:46:31 2026 +0700
+| 
+|     added ai audit skill
+| 
+|  .agents/skills/ai-audit-entry/SKILL.md            |  89 ++++
+|  .agents/skills/ai-audit-entry/agents/openai.yaml  |   4 +
+|  .../scripts/append_ai_audit_entry.py              | 411 +++++++++++++++
+|  .../scripts/test_append_ai_audit_entry.py         | 534 ++++++++++++++++++++
+|  .gitignore                                        |   6 +-
+|  5 files changed, 1043 insertions(+), 1 deletion(-)
+| 
+* commit a43f874e8a4577602bc3e27ed6fc651cd4a07a8c
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Sun Jul 26 10:25:34 2026 +0700
+| 
+|     init project
+| 
+|  .gitignore                                        |    2 +
+|  docs/2026.HW03.GUI Usability EMS_En.md            |  275 +++
+|  docs/2026.HW03.GUI Usability EMS_En.pdf           |  Bin 0 -> 181499 bytes
+|  docs/HW03_EMS_Intro_EN.md                         |  159 ++
+|  docs/HW03_EMS_Intro_EN.pdf                        |  Bin 0 -> 374372 bytes
+|  docs/ISTQB_CT-AI_Syllabus_v1.0.md                 | 1750 +++++++++++++++++++
+|  docs/ISTQB_CT-AI_Syllabus_v1.0.pdf                |  Bin 0 -> 1712829 bytes
+|  ...-E2E-Test-Flow-Luo\314\202\314\200ng-Admin.md" |  227 +++
+|  ...E2E-Test-Flow-Luo\314\202\314\200ng-Admin.pdf" |  Bin 0 -> 73893 bytes
+|  submission/HW03_step_by_step_guide.md             |  492 ++++++
+|  submission/ai-audit/ai_audit_report.md            |   56 +
+|  11 files changed, 2961 insertions(+)
+| 
+* commit 36550e43c8243103ef610aa1954f39eec014b6ae
+  Author: TKin <letrungkienthd@gmail.com>
+  Date:   Sat Jul 25 21:03:38 2026 +0700
+  
+      first commit
+  
+   README.md | 1 +
+   1 file changed, 1 insertion(+)
