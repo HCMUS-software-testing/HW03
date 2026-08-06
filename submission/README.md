@@ -68,7 +68,7 @@
 - [ ] Screenshot Failed items là ảnh thật từ EMS.
 - [ ] Có 5 participant thật, contact đã che giữa.
 - [ ] Có session notes, SUS/UEQ-S responses, metrics table và recording nếu có.
-- [x] Có 15 screenshot cross-platform cho mỗi cell, overlay chỉ có `23127326@student.hcmus.edu.vn`; URL/browser/OS/device được đối soát trong matrix và tên file.
+- [x] Có 15 screenshot cross-platform cho mỗi cell; overlay hiển thị `23127326@student.hcmus.edu.vn`, URL EMS và browser/OS/device.
 - [ ] Mọi finding đã submit Google Form và có timestamp trong log.
 - [ ] AI Audit Report ghi đủ tool/model/date-time/prompt/output.
 - [ ] AI Critique dài 200-300 words.
