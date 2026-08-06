@@ -1,4 +1,4 @@
-# Nhật ký commit Git — Xây dựng lại Task 1B Kịch bản A
+# Nhật ký commit Git — Bài cá nhân Kịch bản A
 
 | Thứ tự | Commit | Thông điệp | Phạm vi |
 | ---: | --- | --- | --- |
@@ -19,6 +19,10 @@
 | 15 | `d6145a06b91f2d1996df00f3d97b29c09cb53410` | `docs: align Task 2 fields with EMS` | Sửa mục 2.3 và tiêu chí thành công theo tên trường quan sát được trên EMS; giữ định dạng bảng hiện có. |
 | 16 | `3b721637af9354e023e24b71c21f3f148fe553a5` | `docs: split Task 2 fields into rows` | Tách mỗi trường/điều khiển trong bảng dữ liệu mục 2.3 thành một dòng và đồng bộ báo cáo. |
 | 17 | `f6d2c5cb11ea433d2289837096b0604c9be8f132` | `docs: clarify Task 2 draft reopening` | Làm rõ bản nháp phải được mở lại bằng `Edit` và đồng bộ task success, time on task, SC-06. |
-| 18 | `(commit này)` | `docs: localize Task 2 draft reopening` | Bỏ nhãn `Edit` khỏi câu nhiệm vụ và dùng thống nhất cụm “chế độ chỉnh sửa”. |
-
-Dòng cuối dùng `(commit này)` vì một commit không thể chứa chính mã SHA của nó. Có thể xác định sau khi checkout bằng `git log -1 --format=%H`.
+| 18 | `2f516f70e2c9b5c430c630b5a78f4b004b47bb1e` | `docs: localize Task 2 draft reopening` | Bỏ nhãn `Edit` khỏi câu nhiệm vụ và dùng thống nhất cụm “chế độ chỉnh sửa”. |
+| 19 | `c5f213db3e8e4d6db2395cafe81f70577c763b06` | `feat: add task 03` | Thêm ma trận 15 ô Task 3, ảnh cross-platform và ba phát hiện tương thích cho A1/A2/A3. |
+| 20 | `4ff415b259c607c4562325f3347d51a240b6294b` | `docs: update pilot user details and testing results in reports` | Cập nhật thông tin pilot thật, dữ liệu phiên kiểm thử và kết quả Task 2 trong các báo cáo. |
+| 21 | `27afe4cae6f3e2f1667cd6101d4631d843a5c453` | `feat: add data of user for task 02` | Bổ sung dữ liệu năm người tham gia, metrics, SUS, ghi chép phiên và liên kết video Task 2. |
+| 22 | `85ec38e733ccfa6331a610ad88d262d12c65d3c1` | `docs: update agent skills demo with improved formatting and content` | Hoàn thiện tài liệu Agent Skills và liên kết video demo. |
+| 23 | `e7329d38ff50fbcfc0acd2f63d878527946d2781` | `feat: update finding bug` | Đồng bộ các phát hiện Task 2/Task 3, timestamp Google Form và tổng số trong báo cáo. |
+| 24 | `d66915e1ba6a11c82e1614b309dd1a9a97e73bb0` | `docs: add Task 3 evidence overlays` | Thêm overlay email, URL EMS và browser/OS/device vào 15 ảnh Task 3; nhúng ảnh và đồng bộ mô tả trong báo cáo. |
