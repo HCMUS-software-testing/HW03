@@ -26,6 +26,22 @@ Kịch bản A tập trung vào vòng đời quản trị sự kiện trên EMS:
 | A2 | Biểu mẫu Thêm/Sửa sự kiện - tải ảnh, văn bản định dạng và kiểm tra ngày/giờ | Đây là biểu mẫu phức tạp nhất của nhóm chức năng A, có tải ảnh, văn bản định dạng và kiểm tra ngày giờ. | Quản trị viên | [Tạo mới](https://prod-dev.ems-fitus.cloud/dashboard/admin/events/create); [bản nháp được giữ lại, ID 80](https://prod-dev.ems-fitus.cloud/dashboard/admin/events/edit?id=80) | ![Tổng quan trực tiếp A2](screenshots/task1b/a2-overview.png) |
 | A3 | Bảng cấu hình Đăng ký và vai trò - `Max Slots`, `Waitlist`, vai trò bổ sung | Đây là phần cấu hình đăng ký có nhiều công tắc, số chỗ tối đa, danh sách chờ và vai trò bổ sung. | Quản trị viên | [Bản nháp được giữ lại, ID 80](https://prod-dev.ems-fitus.cloud/dashboard/admin/events/edit?id=80) | ![Tổng quan trực tiếp phần Đăng ký A3](screenshots/task1b/a3-overview-registration.png) ![Tổng quan trực tiếp phần Vai trò bổ sung A3](screenshots/task1b/a3-overview-additional.png) |
 
+### 2.3 Ảnh tổng quan phóng lớn
+
+**A1 — Danh sách sự kiện**
+
+![Tổng quan A1 phóng lớn](screenshots/task1b/a1-overview.png)
+
+**A2 — Thêm/Sửa sự kiện**
+
+![Tổng quan A2 phóng lớn](screenshots/task1b/a2-overview.png)
+
+**A3 — Đăng ký và vai trò**
+
+![Tổng quan Đăng ký A3 phóng lớn](screenshots/task1b/a3-overview-registration.png)
+
+![Tổng quan Vai trò bổ sung A3 phóng lớn](screenshots/task1b/a3-overview-additional.png)
+
 ## 3. Task 1B - Thực thi checklist trên Kịch bản A
 
 > Kết quả dưới đây đồng bộ nguyên văn 153 dòng checklist với `submission/checklist_execution.md`. Minh chứng cũ được giữ lại để tham chiếu; `submission/screenshots/task1b/` là nguồn minh chứng chính thức cho lần kiểm thử lại trực tiếp ngày 2026-08-02.
@@ -262,6 +278,68 @@ Chỉ 11 phát hiện được xác nhận bằng thao tác trực tiếp đư�
 | T1B-A3-03 | A3 Đăng ký và vai trò | `Waitlist` vẫn bật sau khi tắt `Student Registration`. Các bước: 1. Bật `Student Registration` và `Waitlist`. 2. Tắt `Student Registration`. 3. Quan sát `Waitlist`. | Khi tắt chế độ đăng ký cha, trạng thái `Waitlist` phụ thuộc phải bị vô hiệu hóa hoặc xóa. | Các điều khiển vai trò `Student` biến mất nhưng `Waitlist` vẫn bật. | 3 | ![Minh chứng a3-f03-waitlist-with-student-off](screenshots/task1b/a3-f03-waitlist-with-student-off.png) | 22:28 ngày 05/08/2026 |
 | T1B-A3-04 | A3 Đăng ký và vai trò | Thay đổi chưa lưu trong `Registration & Roles` bị mất mà không có cảnh báo (IA-02-11, IA-03-09). Các bước: 1. Đổi `Reminder` từ 24 thành 25. 2. Dùng `Back` mà không lưu. 3. Mở lại bản nháp. | Ứng dụng cảnh báo trước khi điều hướng và giữ thay đổi cho đến khi người dùng chọn hủy bỏ rõ ràng. | Điều hướng quay về `Events` ngay; khi mở lại, giá trị đã lưu là 24, nên giá trị 25 chưa lưu bị mất. | 3 | ![Minh chứng a3-unsaved-reminder-25-before-back](screenshots/task1b/a3-unsaved-reminder-25-before-back.png); ![Minh chứng a3-unsaved-back-no-warning-destination](screenshots/task1b/a3-unsaved-back-no-warning-destination.png); ![Minh chứng a3-unsaved-reopen-reminder-24-persisted](screenshots/task1b/a3-unsaved-reopen-reminder-24-persisted.png) | 22:31 ngày 05/08/2026 |
 
+#### Minh chứng Task 1B phóng lớn
+
+Cột minh chứng trong bảng được giữ để đối soát; các ảnh xác nhận finding được nhúng lại ngoài bảng để hiển thị rõ khi xem Markdown và xuất PDF.
+
+**T1B-A1-01 — Trạng thái rỗng không có Reset**
+
+![T1B-A1-01 phóng lớn](screenshots/task1b/a1-f01-empty-no-reset.png)
+
+**T1B-A1-03 — Bảng sự kiện tràn ngang**
+
+![T1B-A1-03 phóng lớn](screenshots/task1b/a1-overview.png)
+
+**T1B-A1-04 — Thông báo trộn ngôn ngữ**
+
+![T1B-A1-04 phóng lớn](screenshots/task1b/a1-f04-notification-mixed-language.png)
+
+**T1B-A1-05 — Hành động chỉ có biểu tượng thiếu chú giải**
+
+![T1B-A1-05 phóng lớn](screenshots/task1b/a1-f05-action-focus-no-tooltip.png)
+
+**T1B-A1-06 — Mất trạng thái tìm kiếm khi quay lại**
+
+![T1B-A1-06 trước thao tác](screenshots/task1b/a1-f05-action-focus-no-tooltip.png)
+
+![T1B-A1-06 sau khi quay lại](screenshots/task1b/a1-f06-filter-not-retained.png)
+
+**T1B-A2-01 — Thumbnail chấp nhận tệp TXT**
+
+![T1B-A2-01 phóng lớn](screenshots/task1b/a2-f01-invalid-thumbnail-accepted.png)
+
+**T1B-A2-02 — Rời form không cảnh báo thay đổi chưa lưu**
+
+![T1B-A2-02 trước khi rời form](screenshots/task1b/a2-f02-unsaved-before.png)
+
+![T1B-A2-02 sau khi rời form](screenshots/task1b/a2-f02-unsaved-after-no-warning.png)
+
+**T1B-A2-03 — Biểu tượng Back/Thumbnail/Banner thiếu chú giải**
+
+![T1B-A2-03 Back](screenshots/task1b/a2-icon-hover-back-no-tooltip.png)
+
+![T1B-A2-03 tiêu điểm Thumbnail](screenshots/task1b/a2-icon-keyboard-focus-unlabeled-camera.png)
+
+![T1B-A2-03 Thumbnail](screenshots/task1b/a2-icon-hover-thumbnail-camera-no-tooltip.png)
+
+![T1B-A2-03 Banner](screenshots/task1b/a2-icon-hover-banner-camera-no-tooltip.png)
+
+**T1B-A3-01 — Max Slots vẫn hoạt động khi Is Unlimited bật**
+
+![T1B-A3-01 phóng lớn](screenshots/task1b/a3-f01-unlimited-max-slots-active.png)
+
+**T1B-A3-03 — Waitlist vẫn bật khi Student Registration tắt**
+
+![T1B-A3-03 phóng lớn](screenshots/task1b/a3-f03-waitlist-with-student-off.png)
+
+**T1B-A3-04 — Mất thay đổi Registration & Roles không cảnh báo**
+
+![T1B-A3-04 trước khi quay lại](screenshots/task1b/a3-unsaved-reminder-25-before-back.png)
+
+![T1B-A3-04 trang đích không có cảnh báo](screenshots/task1b/a3-unsaved-back-no-warning-destination.png)
+
+![T1B-A3-04 mở lại giá trị cũ](screenshots/task1b/a3-unsaved-reopen-reminder-24-persisted.png)
+
 - Google Form đã được gửi bằng email sinh viên; đã gửi đủ 11/11 finding Task 1B.
 - Thời điểm gửi cuối: `22:31 ngày 05/08/2026`.
 - Bản sao để nhập vào Google Form: `submission/task1b_google_form_entries.md`.
@@ -388,6 +466,24 @@ Nhóm mục tiêu là người từ 18 tuổi, ngoài lớp học phần này, �
 | UX-003 | A2 – Date & Time | Điều khiển chọn/chỉnh giờ bằng thao tác kéo gây khó khăn và mất thời gian. | P3 cho biết phải kéo chuột mạnh và đây là phần phiền nhất; [video P3](https://youtu.be/mEJQPFBlc64). | 2 | [Video/audio probe P3](https://youtu.be/mEJQPFBlc64) | Cho phép nhập giờ trực tiếp, cải thiện time picker và gom các trường thời gian liên quan. |
 | UX-004 | A2 – Categories | Trạng thái đã chọn của `Event Types` không đủ rõ, khiến người dùng không chắc lựa chọn đã được ghi nhận. | P4 do dự tại `05:25`; [video](https://www.youtube.com/watch?v=kyZxvvLCOkE&t=325s). | 2 | ![Minh chứng UX-004](screenshots/task2/UX-004.png)<br>[Video P4 tại 05:25](https://www.youtube.com/watch?v=kyZxvvLCOkE&t=325s) | Hiển thị giá trị hiện tại và dấu chọn option rõ ràng, kể cả sau khi danh sách đóng. |
 
+#### Minh chứng Task 2 phóng lớn
+
+**UX-001 — Academic Context khó hiểu**
+
+![UX-001 phóng lớn](screenshots/task2/UX-001.png)
+
+**UX-002 — Save as Draft thiếu phản hồi lỗi tổng thể**
+
+![UX-002 phóng lớn](screenshots/task2/UX-002.png)
+
+**UX-003 — Điều khiển chọn giờ khó thao tác**
+
+Minh chứng tương tác: [video/audio probe P3](https://youtu.be/mEJQPFBlc64). Finding này không dùng ảnh tĩnh.
+
+**UX-004 — Trạng thái chọn Event Types không rõ**
+
+![UX-004 phóng lớn](screenshots/task2/UX-004.png)
+
 ### 4.7 Khuyến nghị theo độ ưu tiên
 
 | Ưu tiên | Khuyến nghị | Lý do | Phát hiện liên quan |
@@ -472,6 +568,68 @@ Mỗi màn hình sử dụng cùng năm ô CP-01 đến CP-05. Tổ hợp đư�
 | A3-CP-04 | Android 14 | Samsung Internet 29 | Phone | Samsung Galaxy S24 | `/dashboard/admin/events/edit?id=114` | Đủ thông tin | **Không đạt** | ![A3-CP-04](screenshots/task3/a3-cp-04-android-samsung-internet-phone.png) | Panel/form bị cắt và phải cuộn ngang; overflow 216 px. |
 | A3-CP-05 | Android 16 | Chrome 149 | Tablet | Galaxy Tab S11, landscape 1204×579 | `/dashboard/admin/events/edit?id=114` | Đủ thông tin | Đạt | ![A3-CP-05](screenshots/task3/a3-cp-05-android-chrome-tablet.png) | Marker Registration có mặt; không chuyển hướng; overflow 0 px. |
 
+#### Minh chứng 15 ô tương thích phóng lớn
+
+**A1-CP-01 — Edge / Windows / Desktop**
+
+![A1-CP-01 phóng lớn](screenshots/task3/a1-cp-01-windows-edge-desktop.png)
+
+**A1-CP-02 — Safari / macOS / Desktop**
+
+![A1-CP-02 phóng lớn](screenshots/task3/a1-cp-02-macos-safari-desktop.png)
+
+**A1-CP-03 — Firefox / macOS / Desktop**
+
+![A1-CP-03 phóng lớn](screenshots/task3/a1-cp-03-macos-firefox-desktop.png)
+
+**A1-CP-04 — Samsung Internet / Android / Phone**
+
+![A1-CP-04 phóng lớn](screenshots/task3/a1-cp-04-android-samsung-internet-phone.png)
+
+**A1-CP-05 — Chrome / Android / Tablet**
+
+![A1-CP-05 phóng lớn](screenshots/task3/a1-cp-05-android-chrome-tablet.png)
+
+**A2-CP-01 — Edge / Windows / Desktop**
+
+![A2-CP-01 phóng lớn](screenshots/task3/a2-cp-01-windows-edge-desktop.png)
+
+**A2-CP-02 — Safari / macOS / Desktop**
+
+![A2-CP-02 phóng lớn](screenshots/task3/a2-cp-02-macos-safari-desktop.png)
+
+**A2-CP-03 — Firefox / macOS / Desktop**
+
+![A2-CP-03 phóng lớn](screenshots/task3/a2-cp-03-macos-firefox-desktop.png)
+
+**A2-CP-04 — Samsung Internet / Android / Phone**
+
+![A2-CP-04 phóng lớn](screenshots/task3/a2-cp-04-android-samsung-internet-phone.png)
+
+**A2-CP-05 — Chrome / Android / Tablet**
+
+![A2-CP-05 phóng lớn](screenshots/task3/a2-cp-05-android-chrome-tablet.png)
+
+**A3-CP-01 — Edge / Windows / Desktop**
+
+![A3-CP-01 phóng lớn](screenshots/task3/a3-cp-01-windows-edge-desktop.png)
+
+**A3-CP-02 — Safari / macOS / Desktop**
+
+![A3-CP-02 phóng lớn](screenshots/task3/a3-cp-02-macos-safari-desktop.png)
+
+**A3-CP-03 — Firefox / macOS / Desktop**
+
+![A3-CP-03 phóng lớn](screenshots/task3/a3-cp-03-macos-firefox-desktop.png)
+
+**A3-CP-04 — Samsung Internet / Android / Phone**
+
+![A3-CP-04 phóng lớn](screenshots/task3/a3-cp-04-android-samsung-internet-phone.png)
+
+**A3-CP-05 — Chrome / Android / Tablet**
+
+![A3-CP-05 phóng lớn](screenshots/task3/a3-cp-05-android-chrome-tablet.png)
+
 ### 5.3 Tổng hợp kết quả
 
 | Màn hình | Số ô | Đạt | Không đạt | OS đã bao phủ | Browser đã bao phủ | Loại thiết bị đã bao phủ |
@@ -510,7 +668,7 @@ Mỗi màn hình sử dụng cùng năm ô CP-01 đến CP-05. Tổ hợp đư�
 
 | Artefact | File |
 | --- | --- |
-| AI Audit Report | `submission/ai-audit/ai_audit_report.md` |
+| AI Audit Report | `submission/ai_audit_report.md` |
 | AI Critique 200-300 words | `submission/ai_critique.md` |
 
 ## 8. Kết luận

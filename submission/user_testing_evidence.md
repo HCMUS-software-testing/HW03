@@ -259,7 +259,18 @@ Người tham gia nhận bảng dữ liệu nghiệp vụ, không nhận hướn
 | ------------- | -------- | -------------------- | -------------------- |
 | —             | Ở bước cuối, người dùng mở nhầm sự kiện của người khác và cho rằng đó là sự kiện mình vừa tạo; không xác nhận đúng bản nháp theo SC-06. | Lỗi | [Video P5](https://youtu.be/FmSO-TaYQxo) |
 
-## 8. Phiếu SUS sau task
+## 8. Bảng chỉ số tổng hợp
+
+| Người tham gia | Kết quả | Thời gian task | Số lỗi | Số lần do dự | Số lần can thiệp | Điểm SUS | Ghi chú chính |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | --- |
+| P1 | Hoàn thành | `08:42` | 1 | 1 | 0 | 60 | Lúng túng tại `Academic Context` nhưng vẫn hoàn thành task. |
+| P2 | Hoàn thành | `03:29` | 0 | 0 | 0 | 80 | Không ghi nhận lỗi, do dự hoặc can thiệp. |
+| P3 | Một phần | `07:33` | 1 | 1 | 0 | 77.5 | Nhập sai title; nhấn `Save as Draft` hai lần rồi tự tìm trường lỗi. |
+| P4 | Một phần | `06:28` | 1 | 1 | 0 | 75 | Bật `Is Unlimited` trái yêu cầu và do dự tại `Event Types`. |
+| P5 | Một phần | `11:10` | 1 | 0 | 0 | 77.5 | Mở nhầm sự kiện của người khác khi xác nhận bản nháp. |
+| **Tổng hợp (5/5)** | **2/5 hoàn thành; 3/5 một phần** | **`07:28` trung bình** | **0.80 trung bình** | **0.60 trung bình** | **0.00 trung bình** | **74.0 trung bình** | **Cả 5 phiên chính đều có đủ dữ liệu và video.** |
+
+## 9. Phiếu SUS sau task
 
 Với mỗi câu, người tham gia chọn một mức: `1 = Hoàn toàn không đồng ý`, `2 = Không đồng ý`, `3 = Trung lập`, `4 = Đồng ý`, `5 = Hoàn toàn đồng ý`.
 
@@ -288,7 +299,7 @@ Nguồn thang đo: [John Brooke, *SUS: A Quick and Dirty Usability Scale* (1996)
 | P4             |    3 |    1 |    5 |    2 |    3 |    3 |    5 |    1 |    4 |    3 |       75 |
 | P5             |    3 |    1 |    5 |    3 |    5 |    2 |    5 |    2 |    4 |    3 |     77.5 |
 
-## 9. Câu hỏi thăm dò sau task
+## 10. Câu hỏi thăm dò sau task
 
 Người điều phối hỏi nguyên văn theo thứ tự, không gợi ý câu trả lời:
 

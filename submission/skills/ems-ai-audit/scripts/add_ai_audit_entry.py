@@ -13,7 +13,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 
-DEFAULT_REPORT = Path("submission/ai-audit/ai_audit_report.md")
+DEFAULT_REPORT = Path("submission/ai_audit_report.md")
 REQUIRED_NO_AI_DECLARATION = "I do not use any AI help in this exercise."
 REQUIRED_AI_DECLARATION = "I use AI tools for the following tasks."
 
@@ -133,16 +133,16 @@ def ensure_report_header(report_path: Path) -> None:
     report_path.parent.mkdir(parents=True, exist_ok=True)
     if not report_path.exists():
         report_path.write_text(
-            "# AI Audit Report - HW03 EMS\n\n"
-            "## Khai báo sử dụng AI\n\n"
+            "# AI Audit Report — HW03 GUI & Usability Testing on EMS\n\n"
+            "## 1. Khai báo sử dụng AI\n\n"
             f"`{REQUIRED_AI_DECLARATION}`\n\n"
-            "Tài liệu này ghi lại quá trình sinh viên dùng AI trong bài HW03 GUI & Usability Testing on EMS.\n",
+            "## 2. Nhật ký tương tác AI\n",
             encoding="utf-8",
         )
 
 
 def next_entry_number(existing_text: str) -> int:
-    numbers = [int(match) for match in re.findall(r"^## Entry (\d+)\b", existing_text, flags=re.MULTILINE)]
+    numbers = [int(match) for match in re.findall(r"^#{2,3} Entry (\d+)\b", existing_text, flags=re.MULTILINE)]
     return max(numbers, default=0) + 1
 
 
@@ -165,12 +165,12 @@ def output_block(entry: AuditEntry) -> str:
 
 def format_entry(entry_number: int, entry: AuditEntry) -> str:
     return (
-        f"\n\n## Entry {entry_number}\n\n"
+        f"\n\n### Entry {entry_number}\n\n"
         f"- **Ngày giờ:** {entry.timestamp}\n"
         f"- **Công cụ AI / model:** {entry.tool} / {entry.model}\n"
-        "- **Prompt của sinh viên:**\n\n"
+        "- **Prompt:**\n\n"
         f"{fenced_text(entry.prompt)}\n\n"
-        "- **Output của AI:**\n\n"
+        "- **Output AI:**\n\n"
         f"{output_block(entry)}\n"
     )
 

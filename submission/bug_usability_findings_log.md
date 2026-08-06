@@ -39,7 +39,103 @@
 | CP-BUG-002 | A2 Thêm/Sửa sự kiện | Lỗi tương thích | Form Create Event không responsive trên Samsung Internet phone; chữ và điều khiển bị ép hẹp/cắt. | A2-CP-04: Android 14, Samsung Internet 29, Samsung Galaxy S24 phone. | Trường, nhãn và khu vực upload xuống hàng/co giãn trong viewport phone. | Form phải cuộn ngang; page-level horizontal overflow 156 px. | 3 | Đổi grid/form sang một cột trên phone và bỏ min-width gây tràn. | ![A2 CP-04](screenshots/task3/a2-cp-04-android-samsung-internet-phone.png) | Task 3 | 22:46 ngày 05/08/2026 |
 | CP-BUG-003 | A3 Đăng ký và vai trò | Lỗi tương thích | Registration & Roles panel không responsive trên Samsung Internet phone. | A3-CP-04: Android 14, Samsung Internet 29, Samsung Galaxy S24 phone. | Panel và điều khiển vừa viewport phone, không cuộn ngang toàn trang. | Panel/form bị cắt; page-level horizontal overflow 216 px. | 3 | Chuyển panel sang một cột và dùng width/max-width responsive ở breakpoint phone. | ![A3 CP-04](screenshots/task3/a3-cp-04-android-samsung-internet-phone.png) | Task 3 | 22:48 ngày 05/08/2026 |
 
-## 4. Đối soát với Google Form
+## 4. Minh chứng phóng lớn
+
+Cột minh chứng trong bảng tổng hợp được giữ để đối soát. Các ảnh dưới đây nằm ngoài bảng nên hiển thị lớn hơn trong Markdown và PDF.
+
+### 4.1 Task 1B
+
+**T1B-A1-01**
+
+![T1B-A1-01 phóng lớn](screenshots/task1b/a1-f01-empty-no-reset.png)
+
+**T1B-A1-03**
+
+![T1B-A1-03 phóng lớn](screenshots/task1b/a1-overview.png)
+
+**T1B-A1-04**
+
+![T1B-A1-04 phóng lớn](screenshots/task1b/a1-f04-notification-mixed-language.png)
+
+**T1B-A1-05**
+
+![T1B-A1-05 phóng lớn](screenshots/task1b/a1-f05-action-focus-no-tooltip.png)
+
+**T1B-A1-06 — trước và sau khi quay lại**
+
+![T1B-A1-06 trước](screenshots/task1b/a1-f05-action-focus-no-tooltip.png)
+
+![T1B-A1-06 sau](screenshots/task1b/a1-f06-filter-not-retained.png)
+
+**T1B-A2-01**
+
+![T1B-A2-01 phóng lớn](screenshots/task1b/a2-f01-invalid-thumbnail-accepted.png)
+
+**T1B-A2-02 — trước và sau khi rời form**
+
+![T1B-A2-02 trước](screenshots/task1b/a2-f02-unsaved-before.png)
+
+![T1B-A2-02 sau](screenshots/task1b/a2-f02-unsaved-after-no-warning.png)
+
+**T1B-A2-03 — Back, Thumbnail và Banner**
+
+![T1B-A2-03 Back](screenshots/task1b/a2-icon-hover-back-no-tooltip.png)
+
+![T1B-A2-03 tiêu điểm Thumbnail](screenshots/task1b/a2-icon-keyboard-focus-unlabeled-camera.png)
+
+![T1B-A2-03 Thumbnail](screenshots/task1b/a2-icon-hover-thumbnail-camera-no-tooltip.png)
+
+![T1B-A2-03 Banner](screenshots/task1b/a2-icon-hover-banner-camera-no-tooltip.png)
+
+**T1B-A3-01**
+
+![T1B-A3-01 phóng lớn](screenshots/task1b/a3-f01-unlimited-max-slots-active.png)
+
+**T1B-A3-03**
+
+![T1B-A3-03 phóng lớn](screenshots/task1b/a3-f03-waitlist-with-student-off.png)
+
+**T1B-A3-04 — trước, trang đích và sau khi mở lại**
+
+![T1B-A3-04 trước](screenshots/task1b/a3-unsaved-reminder-25-before-back.png)
+
+![T1B-A3-04 trang đích](screenshots/task1b/a3-unsaved-back-no-warning-destination.png)
+
+![T1B-A3-04 mở lại](screenshots/task1b/a3-unsaved-reopen-reminder-24-persisted.png)
+
+### 4.2 Task 2
+
+**UX-001**
+
+![UX-001 phóng lớn](screenshots/task2/UX-001.png)
+
+**UX-002**
+
+![UX-002 phóng lớn](screenshots/task2/UX-002.png)
+
+**UX-003**
+
+Minh chứng tương tác: [video/audio probe P3](https://youtu.be/mEJQPFBlc64). Finding này không dùng ảnh tĩnh.
+
+**UX-004**
+
+![UX-004 phóng lớn](screenshots/task2/UX-004.png)
+
+### 4.3 Task 3
+
+**CP-BUG-001**
+
+![CP-BUG-001 phóng lớn](screenshots/task3/a1-cp-04-android-samsung-internet-phone.png)
+
+**CP-BUG-002**
+
+![CP-BUG-002 phóng lớn](screenshots/task3/a2-cp-04-android-samsung-internet-phone.png)
+
+**CP-BUG-003**
+
+![CP-BUG-003 phóng lớn](screenshots/task3/a3-cp-04-android-samsung-internet-phone.png)
+
+## 5. Đối soát với Google Form
 
 | Tổng phát hiện trong tệp | Tổng đã gửi biểu mẫu | Chênh lệch | Ghi chú xử lý |
 | ---: | ---: | ---: | --- |

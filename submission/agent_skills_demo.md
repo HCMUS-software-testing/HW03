@@ -15,4 +15,4 @@
 
 ## 3. Giới hạn và phần sinh viên kiểm chứng
 
-Skill chỉ hỗ trợ chuẩn hóa quy trình và bảng ghi Task 1B. Sinh viên vẫn phải tự chạy EMS thật, tự chụp screenshot failed item, tự đánh giá severity, tự submit Google Form và tự điền timestamp thật.
+Skill chỉ hỗ trợ chuẩn hóa quy trình và bảng ghi Task 1B. Em đã trực tiếp chạy EMS thật, chụp screenshot cho các mục không đạt, đánh giá severity, gửi Google Form và điền timestamp thật.

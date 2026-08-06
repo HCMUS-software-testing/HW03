@@ -7,7 +7,7 @@
 | Công cụ AI | Codex |
 | Model | GPT-5 |
 | Các tác vụ đã nhờ AI | Sinh checklist, rà soát lỗi và rủi ro dựa trên đặc tả, chuẩn hóa cấu trúc báo cáo, hỗ trợ tổng hợp số liệu và duy trì AI Audit Report |
-| AI Audit Report | `submission/ai-audit/ai_audit_report.md` |
+| AI Audit Report | `submission/ai_audit_report.md` |
 
 ## 2. Bản critique cuối cùng
 

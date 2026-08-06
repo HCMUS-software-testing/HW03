@@ -7,7 +7,7 @@ description: Use when ghi AI Audit Report cho HW03 EMS, ghi lại prompt chat tr
 
 ## Mục tiêu
 
-Ghi lại quá trình dùng AI cho HW03 EMS thành `submission/ai-audit/ai_audit_report.md` bằng tiếng Việt. Mỗi prompt quan trọng trong session phải thành một entry có đủ thông tin bắt buộc tại Mục 10 của đề bài: công cụ/model, ngày giờ, prompt và output AI.
+Ghi lại quá trình dùng AI cho HW03 EMS thành `submission/ai_audit_report.md` bằng tiếng Việt. Mỗi prompt quan trọng trong session phải thành một entry có đủ thông tin bắt buộc tại Mục 10 của đề bài: công cụ/model, ngày giờ, prompt và output AI.
 
 ## Quy tắc bắt buộc
 
@@ -22,7 +22,7 @@ Ghi lại quá trình dùng AI cho HW03 EMS thành `submission/ai-audit/ai_audit
 
 ## Workflow
 
-1. Xác định report đích, mặc định là `submission/ai-audit/ai_audit_report.md`.
+1. Xác định report đích, mặc định là `submission/ai_audit_report.md`.
 2. Rà lại session hiện tại và gom các prompt người dùng đã dùng cho HW03 EMS.
 3. Với từng prompt, xác định:
    - Tác vụ của prompt.
@@ -61,17 +61,17 @@ python3 submission/skills/ems-ai-audit/scripts/add_ai_audit_entry.py --no-ai
 ## Mẫu entry
 
 ````markdown
-## Entry 1
+### Entry 1
 
 - **Ngày giờ:** 2026-07-28 14:30 +07
 - **Công cụ AI / model:** Codex / GPT-5
-- **Prompt của sinh viên:**
+- **Prompt:**
 
 ```text
 Tạo checklist GUI usability cho EMS...
 ```
 
-- **Output của AI:**
+- **Output AI:**
 
 Tóm tắt: AI tạo bảng checklist theo IA-01 đến IA-04.
 

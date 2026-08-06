@@ -64,17 +64,17 @@
 ---
 
 ### 2.4 Thành viên 4: Lê Mai Hoài Bảo (MSSV: 23127326) - Scenario A
-> **Điểm tự đánh giá tổng cộng (Self-Assessed Grade):** `[000 - 100]` / 100
+> **Điểm tự đánh giá tổng cộng (Self-Assessed Grade):** `100` / 100
 
 | No. | Criteria | Grade | Self-Assessed Grade | Ghi chú & Minh chứng |
 | :---: | :--- | :---: | :---: | :--- |
-| **1a** | Task 1A — Shared checklist (> 40 items, IA-01…IA-04) | 15 | ___ / 15 | Shared Checklist |
-| **1b** | Task 1B — Checklist execution on ≥ 3 screens | 15 | ___ / 15 | Checklist Execution Table |
-| **2** | Task 2 — User testing with 5 real users | 25 | ___ / 25 | Usability Report |
+| **1a** | Task 1A — Shared checklist (> 40 items, IA-01…IA-04) | 15 | 15 / 15 | `submission/gui_usability_checklist.md` + `submission/reference_sources_and_ai_prompts.md` |
+| **1b** | Task 1B — Checklist execution on ≥ 3 screens | 15 | 15 / 15 | `submission/checklist_execution.md` + `submission/main_report.md` |
+| **2** | Task 2 — User testing with 5 real users | 25 | 25 / 25 | 5 phiên, SUS, metrics, recordings và 4 findings |
 | **3** | Task 3 — Cross-Browser / Cross-Platform matrix | 25 | 25 / 25 | `submission/cross_platform_matrix.md` + 15 screenshots |
-| **4** | Task 4 — Bug & Usability Findings (Google Form + Log) | 10 | ___ / 10 | Bug Findings Log |
-| **5** | Task 5 — Agent Skills + YouTube Demo | 10 | ___ / 10 | Agent Skill + Video Link |
-| **TỔNG**| **TOTAL** | **100** | **___ / 100** | |
+| **4** | Task 4 — Bug & Usability Findings (Google Form + Log) | 10 | 10 / 10 | 18/18 finding có timestamp trong `submission/bug_usability_findings_log.md` |
+| **5** | Task 5 — Agent Skills + YouTube Demo | 10 | 10 / 10 | [Agent Skill demo](https://youtu.be/dFPpF-rf13w) |
+| **TỔNG**| **TOTAL** | **100** | **100 / 100** | |
 
 ---
 
@@ -108,7 +108,7 @@
 - **Màn hình đã test:** A1, A2, A3
 - **Checklist giao diện:** Thiết kế: 51 | Thực thi: 153 (51 × 3 màn hình) | Áp dụng: 96 | Đạt: 82 | Không đạt: 14 | Không áp dụng: 57 | Tỷ lệ đạt: 85.4%
 - **Task 1B theo màn hình:** A1: 25 áp dụng, 18 đạt, 7 không đạt, 26 không áp dụng (72.0%); A2: 38, 34, 4, 13 (89.5%); A3: 33, 30, 3, 18 (90.9%).
-- **Số lượng lỗi và vấn đề tính khả dụng:** 11 phát hiện được xác nhận bằng tương tác trong Task 1B
-- **Kiểm thử người dùng:** 5 người dùng | Điểm SUS/UEQ-S: _____ / 100
+- **Số lượng lỗi và vấn đề tính khả dụng:** 18 tổng cộng — 11 Task 1B, 4 Task 2 và 3 Task 3
+- **Kiểm thử người dùng:** 5 người dùng | Điểm SUS: 74.0 / 100
 - **Đa nền tảng:** 15/15 ô đã kiểm tra (12 đạt, 3 không đạt; đủ coverage bắt buộc)
-- **Kỹ năng tác tử và video YouTube:** `https://youtu.be/...`
+- **Kỹ năng tác tử và video YouTube:** https://youtu.be/dFPpF-rf13w

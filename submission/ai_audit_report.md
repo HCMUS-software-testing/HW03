@@ -96,3 +96,36 @@ Hãy thực hiện task 2 phase 1 cho tôi
 ```
 
 - **Output AI:** AI soạn Task 2 Phase 1 cho Kịch bản A, gồm kịch bản kiểm thử, dữ liệu nhiệm vụ, consent, think-aloud, tiêu chí tuyển người, metrics, SUS, câu hỏi probe và kế hoạch pilot; nội dung được đồng bộ vào các artefact Task 2.
+
+### Entry 8
+
+- **Ngày giờ:** 2026-08-04 19:10 +0700
+- **Công cụ AI / model:** Codex / GPT-5
+- **Prompt:**
+
+```text
+Hãy thực hiện task 03, sau đó tôi sẽ review lại kết quả và chỉnh sửa nếu có sai sót
+```
+
+- **Output AI:** AI xây dựng báo cáo Cross-Browser/Cross-Platform cho A1, A2 và A3, bao phủ Windows, macOS, Android; Edge, Safari, Firefox, Samsung Internet, Chrome; và ba loại thiết bị desktop, phone, tablet. AI tổng hợp 15 ô kiểm thử, 15 ảnh có overlay email sinh viên/URL/môi trường, kết quả 12 Đạt và 3 Không đạt, đồng thời ghi ba lỗi tương thích CP-BUG-001–03 vào các artefact liên quan.
+
+### Entry 9
+
+- **Ngày giờ:** 2026-08-06 19:46 +0700
+- **Công cụ AI / model:** Codex / GPT-5
+- **Prompt:**
+
+```text
+• Main report (Markdown + PDF): the chosen scenario, the ≥ 3 screens and why, the checklist-execution results per screen, the Usability Report, and the cross-platform report.
+• User-testing evidence: the task scenario, the table of 5 participants (masked contacts), per-session observation notes, the SUS / UEQ-S responses, the metrics table, and screen recordings where available.
+• Bug & Usability Findings Log (the aggregated §7 file), consistent with your Google-Form submissions.
+• Cross-browser / cross-platform screenshots (with the Student-ID overlay).
+• AI Critique and AI Audit Report (Markdown + PDF).
+• Git commit log (text file).
+• Agent Skills + demo-video links.
+• A README.md with the self-assessment table and a test summary.
+
+hãy dựa vào đây check xem còn thiếu gì rồi làm dùm (trừ cái xuất pdf và git commit tôi làm sau)
+```
+
+- **Output AI:** AI đối chiếu từng artefact với danh sách nộp bài, bổ sung bảng metrics P1–P5 vào user-testing evidence, tách rõ 10 lỗi/8 usability findings/18 findings trong README, chỉnh self-assessment thành 100/100 cho đúng thành viên, nhúng minh chứng phóng lớn ngoài các bảng và kiểm tra lại checklist, SUS, Google Form timestamps, 15 ô tương thích, đường dẫn ảnh cùng cấu trúc Markdown. PDF và commit cuối được giữ lại cho người dùng thực hiện sau.

@@ -62,6 +62,24 @@ Mức độ: 0 = không phải vấn đề, 1 = thẩm mỹ/khó chịu nhỏ, 2
 | UX-003 | A2 – Date & Time | Thao tác chọn/chỉnh giờ bằng điều khiển kéo gây khó khăn và mất thời gian. | P3 cho biết phải kéo chuột mạnh, đây là phần phiền nhất và muốn nhập giờ trực tiếp; [video P3](https://youtu.be/mEJQPFBlc64). | 2 | [Video/audio probe P3](https://youtu.be/mEJQPFBlc64) | Cho phép nhập giờ trực tiếp bằng bàn phím, giữ time picker dễ thao tác và gom các trường thời gian liên quan. | 22:41 ngày 05/08/2026 |
 | UX-004 | A2 – Categories | Trạng thái đã chọn của `Event Types` không đủ rõ, khiến người dùng không chắc lựa chọn đã được ghi nhận hay chưa. | P4 do dự tại `05:25` khi danh sách `Event Types` đang mở; [video](https://www.youtube.com/watch?v=kyZxvvLCOkE&t=325s). | 2 | ![Minh chứng UX-004](screenshots/task2/UX-004.png)<br>[Video P4 tại 05:25](https://www.youtube.com/watch?v=kyZxvvLCOkE&t=325s) | Hiển thị lựa chọn hiện tại rõ ràng trong ô, thêm dấu chọn cho option đã chọn và giữ phản hồi sau khi danh sách đóng. | 22:43 ngày 05/08/2026 |
 
+### 6.1 Minh chứng phóng lớn
+
+**UX-001 — Academic Context khó hiểu**
+
+![UX-001 phóng lớn](screenshots/task2/UX-001.png)
+
+**UX-002 — Save as Draft thiếu phản hồi lỗi tổng thể**
+
+![UX-002 phóng lớn](screenshots/task2/UX-002.png)
+
+**UX-003 — Điều khiển chọn giờ khó thao tác**
+
+Minh chứng tương tác: [video/audio probe P3](https://youtu.be/mEJQPFBlc64). Finding này không dùng ảnh tĩnh.
+
+**UX-004 — Trạng thái chọn Event Types không rõ**
+
+![UX-004 phóng lớn](screenshots/task2/UX-004.png)
+
 ## 7. Phân tích
 
 ### 7.1 Nhóm điểm khó sử dụng
