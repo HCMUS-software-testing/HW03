@@ -6,7 +6,7 @@
 | --- | --- |
 | MSSV | 23127326 |
 | Họ và tên | Lê Mai Hoài Bảo |
-| Nhóm | [Điền tên/mã nhóm] |
+| Nhóm | 06 |
 | Kịch bản | A - Quản trị viên tạo và quản lý sự kiện |
 | Nhóm chức năng | Quản trị sự kiện |
 | Self-Assessed Grade | [000-100] |
