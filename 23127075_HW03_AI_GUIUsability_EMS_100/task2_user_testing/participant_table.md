@@ -23,5 +23,5 @@ Thông tin liên hệ được mask một phần trong bảng nộp. Session not
 ## Ghi Chú
 
 - Tất cả 5 participant đều là người dùng thật được ghi nhận trong session notes và video recording.
-- Không có file pilot riêng trong thư mục `session_notes`; report cuối ghi rõ đây là khoảng trống bằng chứng của Task 2.
+- Link recording chi tiết của từng phiên được lưu trong bảng trên và tổng hợp thêm ở `../video_links.md`.
 - Mật khẩu và thông tin truy cập không được đưa vào bảng participant.

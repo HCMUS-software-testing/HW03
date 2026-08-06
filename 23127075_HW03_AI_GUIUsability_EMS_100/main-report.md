@@ -6,11 +6,13 @@
 | MSSV | `23127075` |
 | Scenario | Scenario D - User requests Support and Admin resolves it |
 | Screens tested | D1, D2, D3 |
-| SUT | `https://promoter-starboard-prude.ngrok-free.dev/` |
+| SUT | `https://prod-dev.ems-fitus.cloud` |
 
 ## 1. Scenario Scope
 
 This submission focuses on Scenario D - the support-request lifecycle across user and admin screens.
+
+The three selected screens form one continuous Pool D flow: D1 lets the user create a support request, D2 lets the same user track that request and view the response, and D3 lets the admin search and process requests from the management side.
 
 | Screen | Description | Main artifact |
 | --- | --- | --- |
@@ -59,8 +61,8 @@ Google Form submissions must be kept consistent with the aggregated log.
 ## 7. AI Audit, AI Critique, Git Log
 
 - AI audit report: [ai_audit_report.md](appendices/ai-audit/ai_audit_report.md)
-- AI critique template: [ai_critique.md](appendices/ai-critique/ai_critique.md)
-- Git commit log template: [git_commit_log.txt](appendices/git-log/git_commit_log.txt)
+- AI critique: [ai_critique.md](appendices/ai-critique/ai_critique.md)
+- Git commit log: [git_commit_log.txt](appendices/git-log/git_commit_log.txt)
 
 ## 8. Agent Skills And Demo
 

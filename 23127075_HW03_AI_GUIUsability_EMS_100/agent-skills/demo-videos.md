@@ -5,5 +5,5 @@ Báo cáo tổng hợp toàn bộ video demo Agent Skill và video phỏng vấn
 
 | Skill | Link YouTube Demo | Ghi chú |
 | --- | --- | --- |
-| GUI usability testing checklist skill | `[Điền YouTube link tại đây]` | Xem thêm chi tiết tại [video_links.md](../video_links.md) |
-| AI audit entry helper | `[Điền YouTube link tại đây nếu có]` | Xem thêm chi tiết tại [video_links.md](../video_links.md) |
+| GUI usability testing checklist skill | Chưa đính kèm riêng trong folder hiện tại | Xem thêm chi tiết tại [video_links.md](../video_links.md) |
+| AI audit entry helper | Chưa đính kèm riêng trong folder hiện tại | Xem thêm chi tiết tại [video_links.md](../video_links.md) |

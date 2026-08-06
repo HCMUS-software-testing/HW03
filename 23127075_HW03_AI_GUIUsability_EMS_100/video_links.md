@@ -23,5 +23,5 @@ File này tổng hợp các đường dẫn (URL YouTube & Drive Backup) lưu tr
 
 | STT | Tên Agent Skill | Đường dẫn Skill | Link YouTube Video Demo | Nội dung minh họa |
 | --- | --- | --- | --- | --- |
-| 1 | **GUI Usability Testing** | `agent-skills/gui-usability-testing/SKILL.md` | `[Điền YouTube link Demo Skill tại đây nếu có]` | Demo luồng AI tự động đọc spec EMS, lập UI inventory và tạo GUI Usability Checklist |
-| 2 | **AI Audit Entry Helper** | `.agents/skills/ai-audit-entry/SKILL.md` | `[Điền YouTube link Audit Helper tại đây nếu có]` | Demo tự động trích xuất prompt, tool output và tạo nhật ký audit |
+| 1 | **GUI Usability Testing** | `agent-skills/gui-usability-testing/SKILL.md` | Chưa đính kèm riêng trong folder hiện tại | Demo luồng AI tự động đọc spec EMS, lập UI inventory và tạo GUI Usability Checklist |
+| 2 | **AI Audit Entry Helper** | `.agents/skills/ai-audit-entry/SKILL.md` | Chưa đính kèm riêng trong folder hiện tại | Demo tự động trích xuất prompt, tool output và tạo nhật ký audit |

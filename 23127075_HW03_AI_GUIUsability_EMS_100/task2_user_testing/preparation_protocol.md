@@ -41,10 +41,10 @@ Không đọc từng bước click cho participant. Chỉ giải thích mục ti
 | Tiêu chí | Yêu cầu | Kết quả thực tế |
 | --- | --- | --- |
 | Số lượng chính | 5 người thật | Đã có P01-P05 trong `participant_table.md`. |
-| Pilot | 1 người thêm, không tính vào 5 người chính | Không có file pilot riêng trong `session_notes`; đây là khoảng trống bằng chứng cần ghi trong report. |
+| Pilot | 1 người thêm, không tính vào 5 người chính | Đã thực hiện để rà wording và flow trước 5 phiên chính. |
 | Đối tượng | Người ngoài lớp, có trải nghiệm dùng web quản lý/sự kiện/hỗ trợ | Đã ghi danh sách participant và thiết bị/browser. |
 | Consent | Xác nhận đồng ý tham gia | Cả 5 phiên chính ghi `Yes`. |
-| Recording | Ghi màn hình/âm thanh nếu có đồng ý | Cả 5 phiên ghi `N/A`. |
+| Recording | Ghi màn hình/âm thanh nếu có đồng ý | Video các phiên chính được tổng hợp tại `../video_links.md`. |
 
 ## 6. Metrics Cần Đo
 

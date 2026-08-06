@@ -25,17 +25,16 @@
 | --- | --- |
 | Scenario chosen | Scenario D - User requests Support and Admin resolves it |
 | Screens tested | D1 create request, D2 My Requests list/detail, D3 Admin Support Requests list |
+| Reason for screen selection | D1 -> D2 -> D3 tạo thành một luồng liền mạch của pool D: user tạo request, user theo dõi request, admin tìm và xử lý request |
 | Checklist | Shared checklist copied under `task1A_group_checklist/group` |
 | Task 1B evidence | Reports and screenshots copied under `task1B_checklist_execution` |
 | Task 2 evidence | Preparation, participant table, SUS sheet, session notes, and usability report copied under `task2_user_testing` |
 | Task 3 evidence | Matrix, cross-platform report, downloads, and defect screenshots copied under `task3_cross_platform` |
-| Findings log | Template available at `findings/bug_usability_findings_log.md` |
-| AI appendix | Audit report copied under `appendices/ai-audit`; critique template under `appendices/ai-critique` |
+| Findings log | Aggregated log stored at `findings/bug_usability_findings_log.md` |
+| AI appendix | Audit report and AI critique stored under `appendices/` |
 | Agent skill | `agent-skills/gui-usability-testing/SKILL.md` |
 
-## Notes Before Final Zip
+## Notes
 
-- Export `main-report.md`, AI audit report, and any required Markdown reports to PDF before final Moodle submission.
-- Fill Google Form submission timestamps in the findings log.
-- Replace demo placeholders in `agent-skills/demo-videos.md` with actual YouTube links if available.
-- The folder intentionally excludes internal working guides and setup-only templates that are not direct submission artifacts.
+- Folder này chỉ giữ các artifact nộp bài trực tiếp và các bằng chứng liên quan.
+- Ảnh defect cross-platform được gom đại diện để tối ưu dung lượng ZIP nộp bài.
