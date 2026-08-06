@@ -61,13 +61,13 @@
 
 - [ ] `main_report.md` có scenario, >= 3 screens và lý do chọn.
 - [ ] `main_report.md` có checklist-execution results per screen.
-- [x] `main_report.md` có cross-platform report summary (Usability Report chờ hoàn tất Task 2).
+- [x] `main_report.md` có Usability Report và cross-platform report summary.
 - [ ] Có PDF cho báo cáo chính.
 - [ ] Có checklist nhóm > 40 items và đủ IA-01...IA-04.
 - [ ] Có reference sources và AI prompts dùng cho checklist nhóm.
 - [ ] Screenshot Failed items là ảnh thật từ EMS.
-- [ ] Có 5 participant thật, contact đã che giữa.
-- [ ] Có session notes, SUS/UEQ-S responses, metrics table và recording nếu có.
+- [x] Có 5 participant thật, contact đã che giữa.
+- [x] Có session notes, SUS responses, metrics table và recording.
 - [x] Có 15 screenshot cross-platform cho mỗi cell; overlay hiển thị `23127326@student.hcmus.edu.vn`, URL EMS và browser/OS/device.
 - [ ] Mọi finding đã submit Google Form và có timestamp trong log.
 - [ ] AI Audit Report ghi đủ tool/model/date-time/prompt/output.

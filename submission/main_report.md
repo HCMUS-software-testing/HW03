@@ -346,7 +346,7 @@ Kịch bản bao phủ A2 khi tạo/sửa dữ liệu, A3 khi cấu hình đăng
 
 ### 4.3 Tuyển người tham gia và pilot
 
-Nhóm mục tiêu là người từ 18 tuổi, ngoài lớp học phần này, đã từng dùng biểu mẫu web và phù hợp vai trò quản trị/tổ chức sự kiện. Tuyển 5 người chính và 1 người pilot riêng; lưu thông tin liên hệ thật để có thể xác minh, nhưng chỉ ghi bản che phần giữa trong bài nộp.
+Nhóm mục tiêu là người từ 18 tuổi, ngoài lớp học phần này, đã từng dùng biểu mẫu web và phù hợp vai trò quản trị/tổ chức sự kiện. Đã tuyển 5 người chính và 1 người pilot riêng; thông tin liên hệ thật được lưu để có thể xác minh, nhưng chỉ ghi bản che phần giữa trong bài nộp. Năm phiên chính được thực hiện trong ngày 03–04/08/2026.
 
 | Nội dung | Ghi chú |
 | --- | --- |
@@ -365,11 +365,11 @@ Nhóm mục tiêu là người từ 18 tuổi, ngoài lớp học phần này, �
 
 | ID | Hồ sơ phù hợp | Liên hệ đã che | Ngày giờ phiên | Thiết bị/trình duyệt | Minh chứng ghi hình |
 | --- | --- | --- | --- | --- | --- |
-| P1 | Phùng Ngọc Tuấn; sinh viên ngoài lớp, đã consent | `093****285` | 15:30 ngày 03/08/2026 | Lenovo / Google Chrome | [YouTube – 23127326-Tuan](https://www.youtube.com/watch?v=dilkwkxXt0Q) |
-| P2 | Trần Tuấn Kiệt; sinh viên ngoài lớp, đã consent | `070****688` | 16:05 ngày 03/08/2026 | MacBook Pro M1 Pro / Google Chrome | [YouTube – 23127326-Kiet](https://youtu.be/ZKvHyMedWX4) |
-| P3 | Vũ Thế Anh; sinh viên ngoài lớp, đã consent | `094****183` | 16:20 ngày 03/08/2026 | Lenovo / Google Chrome | [YouTube – 23127326-TheAnh](https://youtu.be/mEJQPFBlc64) |
-| P4 | Hồng Gia Bảo; sinh viên ngoài lớp, đã consent | `090****520` | 20:00 ngày 04/08/2026 | ASUS / Microsoft Edge | [YouTube – P4](https://www.youtube.com/watch?v=kyZxvvLCOkE) |
-| P5 | Quách Vĩnh Kỳ; sinh viên ngoài lớp, đã consent | `094****445` | 22:30 ngày 04/08/2026 | Lenovo ThinkBook / Cốc Cốc | [YouTube – P5](https://youtu.be/FmSO-TaYQxo) |
+| P1 | Phùng Ngọc Tuấn; sinh viên ngoài lớp, đã đồng ý tham gia và ghi hình | `093****285` | 15:30 ngày 03/08/2026 | Lenovo / Google Chrome | [YouTube – 23127326-Tuan](https://www.youtube.com/watch?v=dilkwkxXt0Q) |
+| P2 | Trần Tuấn Kiệt; sinh viên ngoài lớp, đã đồng ý tham gia và ghi hình | `070****688` | 16:05 ngày 03/08/2026 | MacBook Pro M1 Pro / Google Chrome | [YouTube – 23127326-Kiet](https://youtu.be/ZKvHyMedWX4) |
+| P3 | Vũ Thế Anh; sinh viên ngoài lớp, đã đồng ý tham gia và ghi hình | `094****183` | 16:20 ngày 03/08/2026 | Lenovo / Google Chrome | [YouTube – 23127326-TheAnh](https://youtu.be/mEJQPFBlc64) |
+| P4 | Hồng Gia Bảo; sinh viên ngoài lớp, đã đồng ý tham gia và ghi hình | `090****520` | 20:00 ngày 04/08/2026 | ASUS / Microsoft Edge | [YouTube – P4](https://www.youtube.com/watch?v=kyZxvvLCOkE) |
+| P5 | Quách Vĩnh Kỳ; sinh viên ngoài lớp, đã đồng ý tham gia và ghi hình | `094****445` | 22:30 ngày 04/08/2026 | Lenovo ThinkBook / Cốc Cốc | [YouTube – P5](https://youtu.be/FmSO-TaYQxo) |
 
 ### 4.5 Bảng chỉ số
 
@@ -395,11 +395,14 @@ Nhóm mục tiêu là người từ 18 tuổi, ngoài lớp học phần này, �
 
 | Ưu tiên | Khuyến nghị | Lý do | Phát hiện liên quan |
 | --- | --- | --- | --- |
-| P0 | [Sửa ngay] | [Ảnh hưởng nghiêm trọng] | [UX-...] |
-| P1 | Thêm giải thích/ví dụ cho `Academic Context`. | P1 lúng túng nhưng vẫn hoàn thành task. | UX-001 |
-| P1 | Hiển thị validation tổng thể và focus trường lỗi sau khi nhấn `Save as Draft`. | P3 bị mất phản hồi và phải tự tìm lỗi. | UX-002 |
-| P1 | Cho phép nhập giờ trực tiếp và cải thiện time picker. | P3 xem đây là phần phiền và mất thời gian nhất. | UX-003 |
-| P1 | Làm rõ trạng thái đã chọn của `Event Types`. | P4 không chắc lựa chọn đã được ghi nhận. | UX-004 |
+| P1 | Hiển thị tóm tắt validation và tự cuộn/focus trường lỗi đầu tiên sau khi nhấn `Save as Draft`. | Giảm nguy cơ người dùng không hiểu vì sao chưa lưu được và tác động trực tiếp tới khả năng hoàn thành nhiệm vụ. | UX-002 |
+| P2 | Thêm giải thích hoặc ví dụ dưới nhãn `Academic Context`. | Giúp người dùng hiểu mục đích của trường trước khi chọn. | UX-001 |
+| P2 | Hiển thị rõ giá trị hiện tại và dấu chọn của `Event Types`, kể cả sau khi danh sách đóng. | Giúp người dùng xác nhận lựa chọn đã được ghi nhận. | UX-004 |
+| P2 | Cho phép nhập giờ trực tiếp bằng bàn phím và cải thiện thao tác của time picker. | Giảm thời gian và thao tác kéo gây khó khăn khi nhập các mốc thời gian. | UX-003 |
+
+### 4.8 Phân tích và kết luận Task 2
+
+Bốn finding mức độ 2 tập trung ở ba nhóm: độ rõ ràng của `Categories` (UX-001, UX-004), phản hồi và phục hồi lỗi khi lưu (UX-002), và hiệu quả nhập thời gian (UX-003). Điểm SUS trung bình `74.0` cho thấy cảm nhận sử dụng nhìn chung tích cực, nhưng tỷ lệ hoàn thành đầy đủ chỉ đạt `40%` (2/5). Vì vậy, ưu tiên cao nhất là cải thiện phản hồi validation khi lưu; tiếp theo là làm rõ trường phân loại, trạng thái lựa chọn và cách nhập giờ. Chi tiết phân tích nằm trong `submission/usability_report.md`.
 
 ## 5. Task 3 - Cross-Browser / Cross-Platform
 
