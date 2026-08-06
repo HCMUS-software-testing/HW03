@@ -1,0 +1,775 @@
+* commit f3b279da4a2fb067df1c01fb5f99b6939c3a9133
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Thu Aug 6 19:58:25 2026 +0700
+| 
+|     docs: add version pdf
+| 
+|  submission/README.pdf                           | Bin 0 -> 262990 bytes
+|  submission/agent_skills_demo.pdf                | Bin 0 -> 146597 bytes
+|  submission/ai_audit_report.pdf                  | Bin 0 -> 231465 bytes
+|  submission/ai_critique.pdf                      | Bin 0 -> 129245 bytes
+|  submission/bug_usability_findings_log.pdf       | Bin 0 -> 6273872 bytes
+|  submission/cross_platform_matrix.pdf            | Bin 0 -> 2214217 bytes
+|  submission/gui_usability_checklist.pdf          | Bin 0 -> 326439 bytes
+|  submission/main_report.pdf                      | Bin 0 -> 10607520 bytes
+|  submission/reference_sources_and_ai_prompts.pdf | Bin 0 -> 297164 bytes
+|  submission/usability_report.md                  | 110 ----------------------
+|  submission/user_testing_evidence.pdf            | Bin 0 -> 642348 bytes
+|  11 files changed, 110 deletions(-)
+| 
+* commit 208c4830b1af369739313b08649b469b098db52c
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Thu Aug 6 19:50:36 2026 +0700
+| 
+|     feat: add all for submit
+| 
+|  README.md                                         |  20 +-
+|  submission/README.md                              |  58 +-
+|  submission/agent_skills_demo.md                   |   2 +-
+|  submission/{ai-audit => }/ai_audit_report.md      |  33 +
+|  submission/ai_critique.md                         |   2 +-
+|  submission/bug_usability_findings_log.md          |  98 ++-
+|  submission/checklist_execution.md                 | 233 -------
+|  submission/git_commit_log.md                      |  28 -
+|  submission/git_commit_log.txt                     | 731 ++++++++++++++++++++
+|  submission/google_form_all_findings_entries.md    | 364 ----------
+|  submission/main_report.md                         | 160 ++++-
+|  submission/skills/ems-ai-audit/SKILL.md           |  10 +-
+|  .../ems-ai-audit/scripts/add_ai_audit_entry.py    |  16 +-
+|  submission/task1b_google_form_entries.md          | 182 -----
+|  submission/task3_form_entries.md                  |  45 --
+|  submission/usability_report.md                    |  18 +
+|  submission/user_testing_evidence.md               |  15 +-
+|  17 files changed, 1108 insertions(+), 907 deletions(-)
+| 
+* commit 502a61c8f6435662f494a14ee3cc5634ef04d326
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Thu Aug 6 19:16:33 2026 +0700
+| 
+|     docs: add ref and AI prompt group
+| 
+|  submission/group/gui_usability_checklist.md       | 67 ---------------
+|  submission/group/gui_usability_checklist_final.md | 65 ---------------
+|  .../group/gui_usability_checklist_processing.md   | 91 ---------------------
+|  .../group/reference_sources_and_ai_prompts.md     | 30 -------
+|  submission/reference_sources_and_ai_prompts.md    | 68 +++++++++++++++
+|  5 files changed, 68 insertions(+), 253 deletions(-)
+| 
+* commit 2790d5a230e1248d2ae9e6e226ec41c8f0f09b4a
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Thu Aug 6 19:08:54 2026 +0700
+| 
+|     docs: update AI Audit Report and SKILL documentation for HW03 EMS
+| 
+|  submission/ai-audit/ai_audit_report.md            | 112 +++++---------------
+|  submission/skills/ems-ai-audit/SKILL.md           |  24 ++---
+|  .../ems-ai-audit/scripts/add_ai_audit_entry.py    |  53 +--------
+|  3 files changed, 37 insertions(+), 152 deletions(-)
+| 
+* commit a481297471b95c71dba462778d5a297619f31ed9
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Thu Aug 6 19:04:00 2026 +0700
+| 
+|     docs: add GUI usability checklist for Event Management System
+| 
+|  submission/HW03_step_by_step_guide.md | 488 --------------------------------
+|  submission/gui_usability_checklist.md |  65 +++++
+|  2 files changed, 65 insertions(+), 488 deletions(-)
+| 
+* commit 6272d56c8711cd35cde504492801f75198ef30de
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Thu Aug 6 19:03:03 2026 +0700
+| 
+|     docs: update id group in readme
+| 
+|  submission/README.md | 2 +-
+|  1 file changed, 1 insertion(+), 1 deletion(-)
+| 
+* commit f63316d395d8e01d69c2420d4d032cd069e73d4b
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Thu Aug 6 18:54:19 2026 +0700
+| 
+|     docs: update usability report with findings and recommendations; add screenshots for UX issues
+| 
+|  submission/bug_usability_findings_log.md |   6 +-
+|  submission/main_report.md                | 120 +++++++++++++++++++++++------
+|  submission/screenshots/task2/UX-001.png  | Bin 0 -> 2513973 bytes
+|  submission/screenshots/task2/UX-002.png  | Bin 0 -> 1417497 bytes
+|  submission/screenshots/task2/UX-004.png  | Bin 0 -> 1176346 bytes
+|  submission/usability_report.md           |   6 +-
+|  6 files changed, 101 insertions(+), 31 deletions(-)
+| 
+* commit 1d0247fb33aa29727bfafcbf2fdcefe968c18f6c
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Thu Aug 6 13:50:19 2026 +0700
+| 
+|     docs: fix usability report
+| 
+|  submission/README.md           |  6 ++--
+|  submission/main_report.md      | 25 +++++++++--------
+|  submission/usability_report.md | 59 +++++++++++++++++++++++-----------------
+|  3 files changed, 51 insertions(+), 39 deletions(-)
+| 
+* commit 731117f90f2e7b13b3d6ab368ea05cc0436a2bff
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Thu Aug 6 13:27:32 2026 +0700
+| 
+|     docs: add ai critique
+| 
+|  submission/ai_critique.md | 21 +++++----------------
+|  1 file changed, 5 insertions(+), 16 deletions(-)
+| 
+* commit 7cc33a36c423d478c5b35e4063ed17417fa559f4
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Thu Aug 6 13:20:19 2026 +0700
+| 
+|     docs: synchronize submission commit log
+| 
+|  submission/git_commit_log.md | 12 ++++++++----
+|  1 file changed, 8 insertions(+), 4 deletions(-)
+| 
+* commit d66915e1ba6a11c82e1614b309dd1a9a97e73bb0
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Thu Aug 6 13:19:34 2026 +0700
+| 
+|     docs: add Task 3 evidence overlays
+| 
+|  submission/README.md                              |   2 +-
+|  submission/cross_platform_matrix.md               |  40 ++++++++++----------
+|  submission/main_report.md                         |   8 ++--
+|  .../task3/a1-cp-01-windows-edge-desktop.png       | Bin 87350 -> 109000 bytes
+|  .../task3/a1-cp-02-macos-safari-desktop.png       | Bin 203843 -> 185350 bytes
+|  .../task3/a1-cp-03-macos-firefox-desktop.png      | Bin 143561 -> 144091 bytes
+|  .../a1-cp-04-android-samsung-internet-phone.png   | Bin 120272 -> 127460 bytes
+|  .../task3/a1-cp-05-android-chrome-tablet.png      | Bin 194843 -> 233004 bytes
+|  .../task3/a2-cp-01-windows-edge-desktop.png       | Bin 69566 -> 90621 bytes
+|  .../task3/a2-cp-02-macos-safari-desktop.png       | Bin 134299 -> 119681 bytes
+|  .../task3/a2-cp-03-macos-firefox-desktop.png      | Bin 106067 -> 104465 bytes
+|  .../a2-cp-04-android-samsung-internet-phone.png   | Bin 151107 -> 159573 bytes
+|  .../task3/a2-cp-05-android-chrome-tablet.png      | Bin 170306 -> 208924 bytes
+|  .../task3/a3-cp-01-windows-edge-desktop.png       | Bin 74859 -> 97313 bytes
+|  .../task3/a3-cp-02-macos-safari-desktop.png       | Bin 161714 -> 143832 bytes
+|  .../task3/a3-cp-03-macos-firefox-desktop.png      | Bin 112195 -> 115577 bytes
+|  .../a3-cp-04-android-samsung-internet-phone.png   | Bin 150718 -> 158895 bytes
+|  .../task3/a3-cp-05-android-chrome-tablet.png      | Bin 195847 -> 237325 bytes
+|  18 files changed, 25 insertions(+), 25 deletions(-)
+| 
+* commit e7329d38ff50fbcfc0acd2f63d878527946d2781
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Wed Aug 5 23:03:39 2026 +0700
+| 
+|     feat: update finding bug
+| 
+|  submission/bug_usability_findings_log.md       |  38 +--
+|  submission/checklist_execution.md              |   2 +-
+|  submission/cross_platform_matrix.md            |   6 +-
+|  submission/google_form_all_findings_entries.md | 364 +++++++++++++++++++++++
+|  submission/main_report.md                      |  44 +--
+|  submission/screenshots/.DS_Store               | Bin 0 -> 8196 bytes
+|  submission/task1b_google_form_entries.md       |  26 +-
+|  submission/task3_form_entries.md               |   6 +
+|  submission/usability_report.md                 |   8 +-
+|  9 files changed, 432 insertions(+), 62 deletions(-)
+| 
+* commit 85ec38e733ccfa6331a610ad88d262d12c65d3c1
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Wed Aug 5 20:08:16 2026 +0700
+| 
+|     docs: update agent skills demo with improved formatting and content
+| 
+|  submission/agent_skills_demo.md | 28 ++++++++--------------------
+|  1 file changed, 8 insertions(+), 20 deletions(-)
+| 
+* commit 27afe4cae6f3e2f1667cd6101d4631d843a5c453
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Wed Aug 5 19:31:59 2026 +0700
+| 
+|     feat: add data of user for task 02
+| 
+|  submission/README.md                     |   6 +-
+|  submission/bug_usability_findings_log.md |   9 ++-
+|  submission/main_report.md                |  37 +++++-----
+|  submission/usability_report.md           |  33 +++++----
+|  submission/user_testing_evidence.md      | 110 +++++++++++++++++------------
+|  5 files changed, 114 insertions(+), 81 deletions(-)
+| 
+* commit 4ff415b259c607c4562325f3347d51a240b6294b
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Tue Aug 4 21:18:56 2026 +0700
+| 
+|     docs: update pilot user details and testing results in reports
+| 
+|  submission/README.md                |  1 +
+|  submission/main_report.md           | 13 +++++++++----
+|  submission/usability_report.md      |  3 ++-
+|  submission/user_testing_evidence.md | 19 +++++++++++--------
+|  4 files changed, 23 insertions(+), 13 deletions(-)
+| 
+* commit c5f213db3e8e4d6db2395cafe81f70577c763b06
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Tue Aug 4 19:10:53 2026 +0700
+| 
+|     feat: add task 03
+| 
+|  README.md                                         |   4 +-
+|  submission/README.md                              |  10 +--
+|  submission/ai-audit/ai_audit_report.md            |  84 --------------------
+|  submission/bug_usability_findings_log.md          |   6 +-
+|  submission/cross_platform_matrix.md               |  75 +++++++++--------
+|  submission/main_report.md                         |  20 ++---
+|  .../task3/a1-cp-01-windows-edge-desktop.png       | Bin 0 -> 87350 bytes
+|  .../task3/a1-cp-02-macos-safari-desktop.png       | Bin 0 -> 203843 bytes
+|  .../task3/a1-cp-03-macos-firefox-desktop.png      | Bin 0 -> 143561 bytes
+|  .../a1-cp-04-android-samsung-internet-phone.png   | Bin 0 -> 120272 bytes
+|  .../task3/a1-cp-05-android-chrome-tablet.png      | Bin 0 -> 194843 bytes
+|  .../task3/a2-cp-01-windows-edge-desktop.png       | Bin 0 -> 69566 bytes
+|  .../task3/a2-cp-02-macos-safari-desktop.png       | Bin 0 -> 134299 bytes
+|  .../task3/a2-cp-03-macos-firefox-desktop.png      | Bin 0 -> 106067 bytes
+|  .../a2-cp-04-android-samsung-internet-phone.png   | Bin 0 -> 151107 bytes
+|  .../task3/a2-cp-05-android-chrome-tablet.png      | Bin 0 -> 170306 bytes
+|  .../task3/a3-cp-01-windows-edge-desktop.png       | Bin 0 -> 74859 bytes
+|  .../task3/a3-cp-02-macos-safari-desktop.png       | Bin 0 -> 161714 bytes
+|  .../task3/a3-cp-03-macos-firefox-desktop.png      | Bin 0 -> 112195 bytes
+|  .../a3-cp-04-android-samsung-internet-phone.png   | Bin 0 -> 150718 bytes
+|  .../task3/a3-cp-05-android-chrome-tablet.png      | Bin 0 -> 195847 bytes
+|  submission/task3_form_entries.md                  |  39 +++++++++
+|  22 files changed, 102 insertions(+), 136 deletions(-)
+| 
+* commit 2f516f70e2c9b5c430c630b5a78f4b004b47bb1e
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Mon Aug 3 15:00:14 2026 +0700
+| 
+|     docs: localize Task 2 draft reopening
+| 
+|  submission/ai-audit/ai_audit_report.md | 21 +++++++++++++++++++++
+|  submission/git_commit_log.md           |  3 ++-
+|  submission/main_report.md              |  8 ++++----
+|  submission/usability_report.md         |  2 +-
+|  submission/user_testing_evidence.md    |  8 ++++----
+|  5 files changed, 32 insertions(+), 10 deletions(-)
+| 
+* commit f6d2c5cb11ea433d2289837096b0604c9be8f132
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Mon Aug 3 14:57:14 2026 +0700
+| 
+|     docs: clarify Task 2 draft reopening
+| 
+|  submission/ai-audit/ai_audit_report.md | 21 +++++++++++++++++++++
+|  submission/git_commit_log.md           |  3 ++-
+|  submission/main_report.md              |  8 ++++----
+|  submission/usability_report.md         |  2 +-
+|  submission/user_testing_evidence.md    |  8 ++++----
+|  5 files changed, 32 insertions(+), 10 deletions(-)
+| 
+* commit 3b721637af9354e023e24b71c21f3f148fe553a5
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Mon Aug 3 14:42:30 2026 +0700
+| 
+|     docs: split Task 2 fields into rows
+| 
+|  submission/ai-audit/ai_audit_report.md | 21 +++++++++++++++
+|  submission/git_commit_log.md           |  3 ++-
+|  submission/main_report.md              | 46 ++++++++++++++++++++++++--------
+|  submission/user_testing_evidence.md    | 46 ++++++++++++++++++++++++--------
+|  4 files changed, 93 insertions(+), 23 deletions(-)
+| 
+* commit d6145a06b91f2d1996df00f3d97b29c09cb53410
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Mon Aug 3 13:44:18 2026 +0700
+| 
+|     docs: align Task 2 fields with EMS
+| 
+|  submission/ai-audit/ai_audit_report.md |  21 +++
+|  submission/git_commit_log.md           |   3 +-
+|  submission/main_report.md              |  22 +--
+|  submission/usability_report.md         |   2 +-
+|  submission/user_testing_evidence.md    | 268 +++++++++++++++----------------
+|  5 files changed, 169 insertions(+), 147 deletions(-)
+| 
+* commit 79587c7d38804a951892ef01149f078f50735710
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Mon Aug 3 00:25:48 2026 +0700
+| 
+|     docs: prepare Task 2 phase 1
+| 
+|  submission/ai-audit/ai_audit_report.md |  21 +++
+|  submission/git_commit_log.md           |   3 +-
+|  submission/main_report.md              |  80 ++++++----
+|  submission/usability_report.md         |  62 +++++---
+|  submission/user_testing_evidence.md    | 244 +++++++++++++++++++++++--------
+|  5 files changed, 299 insertions(+), 111 deletions(-)
+| 
+* commit c2fb249d3051787cbdb2b905888d54fd9c97f0aa
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Sun Aug 2 22:33:43 2026 +0700
+| 
+|     docs: remove unnecessary comments and clarify table format in AI audit report
+| 
+|  submission/ai-audit/ai_audit_report.md | 14 --------------
+|  1 file changed, 14 deletions(-)
+| 
+* commit 0a2df93f1e356958f1a495e97610b97265b8f9ec
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Sun Aug 2 22:30:01 2026 +0700
+| 
+|     docs: adjust AI audit voice
+| 
+|  submission/ai-audit/ai_audit_report.md | 62 +++++++++++++++++++-------------
+|  submission/git_commit_log.md           |  5 +--
+|  2 files changed, 41 insertions(+), 26 deletions(-)
+| 
+* commit 02f9a0e2b45afc2608027ef0ba42b1c7988168d5
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Sun Aug 2 22:26:32 2026 +0700
+| 
+|     docs: refine AI audit report structure and remove unnecessary comments
+| 
+|  submission/ai-audit/ai_audit_report.md | 13 -------------
+|  1 file changed, 13 deletions(-)
+| 
+* commit 92c222786d90abc6863e74aba2904f6fdc0fb4f5
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Sun Aug 2 22:25:40 2026 +0700
+| 
+|     docs: personalize AI audit wording
+| 
+|  submission/ai-audit/ai_audit_report.md | 48 ++++++++++++++++----------------
+|  submission/git_commit_log.md           |  3 +-
+|  2 files changed, 26 insertions(+), 25 deletions(-)
+| 
+* commit b66e508c18d3ed6899cf610d2d26345599b2ed37
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Sun Aug 2 22:23:25 2026 +0700
+| 
+|     docs: mark AI audit verification complete
+| 
+|  submission/ai-audit/ai_audit_report.md | 12 ++++++------
+|  1 file changed, 6 insertions(+), 6 deletions(-)
+| 
+* commit 5ac63fbdf42e7c2b61dea028c19152023ce4702f
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Sun Aug 2 22:21:19 2026 +0700
+| 
+|     docs: record Task 1B AI audit entry
+| 
+|  submission/ai-audit/ai_audit_report.md | 37 ++++++++++++++++++++++++++++++++
+|  submission/git_commit_log.md           |  5 +++--
+|  2 files changed, 40 insertions(+), 2 deletions(-)
+| 
+* commit 5b3658df7f6314de3284404b7187e0d145cd7ef1
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Sun Aug 2 19:44:24 2026 +0700
+| 
+|     docs: embed Task 1B evidence images
+| 
+|  submission/bug_usability_findings_log.md | 22 ++++----
+|  submission/checklist_execution.md        | 52 +++++++++----------
+|  submission/git_commit_log.md             |  5 +-
+|  submission/main_report.md                | 80 +++++++++++++++---------------
+|  submission/task1b_google_form_entries.md | 22 ++++----
+|  5 files changed, 91 insertions(+), 90 deletions(-)
+| 
+* commit b905f21a536316bf01d9e5b3d863285aba2d3fb7
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Sun Aug 2 19:33:05 2026 +0700
+| 
+|     docs: restore Task 1B table structure
+| 
+|  submission/ai-audit/ai_audit_report.md   |  21 --
+|  submission/checklist_execution.md        | 351 +++++++++++++--------------
+|  submission/git_commit_log.md             |   7 +-
+|  submission/main_report.md                | 366 ++++++++++++++---------------
+|  submission/task1b_google_form_entries.md | 201 ++++++++++++++--
+|  5 files changed, 538 insertions(+), 408 deletions(-)
+| 
+* commit 9395b5ad2fe88b536219228230d2bcf50f981f8e
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Sun Aug 2 19:23:30 2026 +0700
+| 
+|     docs: localize Task 1B artifacts in Vietnamese
+| 
+|  README.md                                |  20 +-
+|  submission/README.md                     |  22 +-
+|  submission/ai-audit/ai_audit_report.md   |  18 +-
+|  submission/bug_usability_findings_log.md |  58 ++--
+|  submission/checklist_execution.md        | 404 ++++++++++++------------
+|  submission/git_commit_log.md             |  21 +-
+|  submission/main_report.md                | 474 ++++++++++++++---------------
+|  submission/task1b_google_form_entries.md | 215 ++-----------
+|  8 files changed, 542 insertions(+), 690 deletions(-)
+| 
+* commit d237fd48650cec9fb327369a6db16c86166e3341
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Sun Aug 2 18:40:09 2026 +0700
+| 
+|     docs: synchronize Task 1B findings and totals
+| 
+|  README.md                                |   7 +-
+|  submission/README.md                     |  10 +-
+|  submission/ai-audit/ai_audit_report.md   |  21 ++
+|  submission/bug_usability_findings_log.md |  13 +-
+|  submission/checklist_execution.md        | 453 ++++++++++++++--------------
+|  submission/git_commit_log.md             |  13 +
+|  submission/main_report.md                | 454 ++++++++++++++++-------------
+|  submission/task1b_google_form_entries.md | 182 ++++++++++++
+|  8 files changed, 727 insertions(+), 426 deletions(-)
+| 
+* commit d9d95f5b189072c4ee7d072ad283a8aec91c9e72
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Sun Aug 2 18:33:07 2026 +0700
+| 
+|     docs: capture Task 1B A3 targeted retest evidence
+| 
+|  .../a3-responsive-compact-registration-roles.png      | Bin 0 -> 89213 bytes
+|  .../task1b/a3-unsaved-back-no-warning-destination.png | Bin 0 -> 85678 bytes
+|  .../task1b/a3-unsaved-reminder-25-before-back.png     | Bin 0 -> 82678 bytes
+|  .../a3-unsaved-reopen-reminder-24-persisted.png       | Bin 0 -> 88463 bytes
+|  4 files changed, 0 insertions(+), 0 deletions(-)
+| 
+* commit b7b14a6eb4bb492a665d59a85f12fc4b949aaf9b
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Sun Aug 2 18:33:00 2026 +0700
+| 
+|     docs: capture Task 1B A2 targeted retest evidence
+| 
+|  .../task1b/a2-icon-hover-back-no-tooltip.png          | Bin 0 -> 62063 bytes
+|  .../task1b/a2-icon-hover-banner-camera-no-tooltip.png | Bin 0 -> 71065 bytes
+|  .../task1b/a2-icon-hover-richtext-tooltip.png         | Bin 0 -> 83367 bytes
+|  .../a2-icon-hover-thumbnail-camera-no-tooltip.png     | Bin 0 -> 62054 bytes
+|  .../a2-icon-keyboard-focus-richtext-tooltip.png       | Bin 0 -> 84139 bytes
+|  .../a2-icon-keyboard-focus-unlabeled-camera.png       | Bin 0 -> 62509 bytes
+|  .../task1b/a2-responsive-compact-richtext-dates.png   | Bin 0 -> 82220 bytes
+|  .../a2-responsive-compact-sidebar-collapsed.png       | Bin 0 -> 62390 bytes
+|  .../task1b/a2-responsive-compact-sidebar-open.png     | Bin 0 -> 74367 bytes
+|  9 files changed, 0 insertions(+), 0 deletions(-)
+| 
+* commit 7ac052489a581253a5d73af10ce2fd40ed201809
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Sun Aug 2 18:32:48 2026 +0700
+| 
+|     docs: capture Task 1B A1 targeted retest evidence
+| 
+|  .../task1b/a1-delete-cancelled-draft-retained.png     | Bin 0 -> 87406 bytes
+|  .../task1b/a1-delete-confirmation-consequence.png     | Bin 0 -> 63003 bytes
+|  .../task1b/a1-interaction-active-filter.png           | Bin 0 -> 88296 bytes
+|  .../a1-interaction-hover-disabled-pagination.png      | Bin 0 -> 88261 bytes
+|  .../task1b/a1-interaction-keyboard-focus.png          | Bin 0 -> 89127 bytes
+|  .../a1-responsive-compact-sidebar-collapsed.png       | Bin 0 -> 67258 bytes
+|  .../task1b/a1-responsive-compact-sidebar-open.png     | Bin 0 -> 80370 bytes
+|  7 files changed, 0 insertions(+), 0 deletions(-)
+| 
+* commit 83a0f42d17fd1908a0c41b64b9f3d4e1ea0d5df4
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Sun Aug 2 17:47:42 2026 +0700
+| 
+|     docs: capture Task 1B A3 live evidence
+| 
+|  .../task1b/a3-f01-unlimited-max-slots-active.png      | Bin 0 -> 98474 bytes
+|  .../task1b/a3-f03-waitlist-with-student-off.png       | Bin 0 -> 96316 bytes
+|  .../screenshots/task1b/a3-max-slots-validation.png    | Bin 0 -> 85338 bytes
+|  .../screenshots/task1b/a3-overview-additional.png     | Bin 0 -> 89910 bytes
+|  .../screenshots/task1b/a3-overview-registration.png   | Bin 0 -> 89498 bytes
+|  .../screenshots/task1b/a3-persistence-additional.png  | Bin 0 -> 89910 bytes
+|  .../task1b/a3-persistence-after-reopen.png            | Bin 0 -> 96777 bytes
+|  .../screenshots/task1b/a3-student-role-fields.png     | Bin 0 -> 90463 bytes
+|  8 files changed, 0 insertions(+), 0 deletions(-)
+| 
+* commit e900e7781848f9c336c112de5262abd849f066fc
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Sun Aug 2 17:47:35 2026 +0700
+| 
+|     docs: capture Task 1B A2 live evidence
+| 
+|  .../task1b/a2-blank-publish-validation.png           | Bin 0 -> 87113 bytes
+|  .../screenshots/task1b/a2-date-order-validation.png  | Bin 0 -> 95283 bytes
+|  .../task1b/a2-f01-invalid-thumbnail-accepted.png     | Bin 0 -> 101155 bytes
+|  .../task1b/a2-f02-unsaved-after-no-warning.png       | Bin 0 -> 121582 bytes
+|  .../screenshots/task1b/a2-f02-unsaved-before.png     | Bin 0 -> 96556 bytes
+|  submission/screenshots/task1b/a2-overview.png        | Bin 0 -> 83227 bytes
+|  .../screenshots/task1b/a2-persistence-dates.png      | Bin 0 -> 90840 bytes
+|  .../screenshots/task1b/a2-persistence-title.png      | Bin 0 -> 95632 bytes
+|  .../screenshots/task1b/a2-richtext-details-after.png | Bin 0 -> 107020 bytes
+|  .../screenshots/task1b/a2-richtext-editor-before.png | Bin 0 -> 90840 bytes
+|  submission/screenshots/task1b/upload_invalid.txt     |   1 +
+|  11 files changed, 1 insertion(+)
+| 
+* commit 0a227f43de19e31fcabc77cc2cc451eeb056b399
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Sun Aug 2 17:47:27 2026 +0700
+| 
+|     docs: capture Task 1B A1 live evidence
+| 
+|  .../screenshots/task1b/a1-f01-empty-no-reset.png     | Bin 0 -> 77411 bytes
+|  .../task1b/a1-f04-notification-mixed-language.png    | Bin 0 -> 124230 bytes
+|  .../task1b/a1-f05-action-focus-no-tooltip.png        | Bin 0 -> 88333 bytes
+|  .../task1b/a1-f06-filter-not-retained.png            | Bin 0 -> 121740 bytes
+|  submission/screenshots/task1b/a1-overview.png        | Bin 0 -> 121821 bytes
+|  5 files changed, 0 insertions(+), 0 deletions(-)
+| 
+* commit b5a744c1620753f2ed8653febf6b445a7cdadbc5
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Sat Aug 1 12:42:41 2026 +0700
+| 
+|     docs: evaluate Screen A3 checklist execution and complete Task 1B deliverables
+| 
+|  submission/checklist_execution.md | 106 ++++++++++++++++++------------------
+|  submission/main_report.md         | 106 ++++++++++++++++++------------------
+|  submission/screenshots/A3-1.png   | Bin 0 -> 341015 bytes
+|  submission/screenshots/A3-2.png   | Bin 0 -> 342075 bytes
+|  4 files changed, 106 insertions(+), 106 deletions(-)
+| 
+* commit 865595f8df0921ffb112fe2ddf722fd6e841c468
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Fri Jul 31 15:52:00 2026 +0700
+| 
+|     docs: evaluate Screen A2 checklist execution and attach overview screenshots
+| 
+|  submission/checklist_execution.md | 106 +++++++++++++++++------------------
+|  submission/main_report.md         | 108 ++++++++++++++++++------------------
+|  submission/screenshots/A2-1.png   | Bin 0 -> 414379 bytes
+|  submission/screenshots/A2-2.png   | Bin 0 -> 469033 bytes
+|  submission/screenshots/A2-3.png   | Bin 0 -> 505598 bytes
+|  submission/screenshots/A2-4.png   | Bin 0 -> 439192 bytes
+|  submission/screenshots/A2-5.png   | Bin 0 -> 479452 bytes
+|  submission/screenshots/A2-6.png   | Bin 0 -> 473575 bytes
+|  submission/screenshots/A2-7.png   | Bin 0 -> 506246 bytes
+|  submission/screenshots/A2-8.png   | Bin 0 -> 453504 bytes
+|  10 files changed, 107 insertions(+), 107 deletions(-)
+| 
+* commit d655d24e9dc92adb3b09783d18ec56cb84852189
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Fri Jul 31 15:27:01 2026 +0700
+| 
+|     feat: update checklist execution report to generate per-screen tables and refine documentation assets
+| 
+|  submission/bug_usability_findings_log.md          |   3 -
+|  submission/checklist_execution.md                 | 237 +++++++++++++++-----
+|  submission/main_report.md                         | 179 ++++++++++++++-
+|  submission/screenshots/A1.png                     | Bin 663542 -> 699419 bytes
+|  .../skills/ems-checklist-execution/SKILL.md       |  27 ++-
+|  .../scripts/build_execution_table.py              |  34 ++-
+|  6 files changed, 392 insertions(+), 88 deletions(-)
+| 
+* commit f22a7fd3da77bfe2539db5224844d62af943989b
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Wed Jul 29 16:22:21 2026 +0700
+| 
+|     feat: update bug and usability findings log for Task 1B, adding new usability issues and screenshots; enhance checklist execution documentation with clearer structure and details
+| 
+|  submission/bug_usability_findings_log.md |   4 +-
+|  submission/checklist_execution.md        | 135 +++++++++++++++--------------
+|  submission/screenshots/A1.png            | Bin 0 -> 663542 bytes
+|  3 files changed, 72 insertions(+), 67 deletions(-)
+| 
+* commit 6169e3821b8b4855eaf65583406456cf67626e16
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Wed Jul 29 16:21:47 2026 +0700
+| 
+|     feat: update skill for agent
+| 
+|  submission/skills/ems-checklist-execution/SKILL.md              | 1 +
+|  .../ems-checklist-execution/scripts/build_execution_table.py    | 8 ++++----
+|  2 files changed, 5 insertions(+), 4 deletions(-)
+| 
+* commit 813f849b24142cc1194c441eb202e84090a8a918
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Tue Jul 28 15:50:55 2026 +0700
+| 
+|     feat: add new entries to AI Audit Report and update checklist execution guidelines for Task 1B
+| 
+|  submission/ai-audit/ai_audit_report.md |  21 +++++++
+|  submission/checklist_execution.md      | 101 +++++++++++++++++++++++--------
+|  2 files changed, 97 insertions(+), 25 deletions(-)
+| 
+* commit d0023a05aa977320cd6dfeac861ce6431991eeeb
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Tue Jul 28 15:39:49 2026 +0700
+| 
+|     feat: add ems-checklist-execution skill and supporting files for Task 1B checklist execution
+| 
+|  submission/agent_skills_demo.md                   |  14 +--
+|  submission/ai-audit/ai_audit_report.md            |  24 +++++
+|  .../skills/ems-checklist-execution/SKILL.md       |  86 +++++++++++++++
+|  .../ems-checklist-execution/agents/openai.yaml    |   4 +
+|  .../scripts/build_execution_table.py              | 114 ++++++++++++++++++++
+|  5 files changed, 236 insertions(+), 6 deletions(-)
+| 
+* commit f4462b105db97aa522051d9d8e06cebe6e376a09
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Tue Jul 28 15:26:54 2026 +0700
+| 
+|     feat: remove checklist execution date and device/browser fields for clarity
+| 
+|  submission/checklist_execution.md | 2 --
+|  1 file changed, 2 deletions(-)
+| 
+* commit e7f324a79ac56ce36d2a460abc862b82ae09e46a
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Tue Jul 28 15:23:33 2026 +0700
+| 
+|     Refactor usability and testing documentation for Scenario A, including detailed coverage matrix, participant summaries, and user testing evidence. Remove raw notes and enhance clarity in reports.
+| 
+|  submission/HW03_step_by_step_guide.md    |  44 +++---
+|  submission/README.md                     |  73 ++++-----
+|  submission/ai-audit/ai_audit_report.md   |  21 +++
+|  submission/bug_usability_findings_log.md |  10 +-
+|  submission/checklist_execution.md        |  66 ++++----
+|  submission/cross_platform_matrix.md      |  74 +++++----
+|  submission/main_report.md                | 241 +++++++++++++++++++----------
+|  submission/usability_report.md           | 106 +++++--------
+|  submission/user_testing_evidence.md      | 130 ++++++++++++++++
+|  submission/user_testing_raw_notes.md     | 104 -------------
+|  10 files changed, 479 insertions(+), 390 deletions(-)
+| 
+* commit 503a00003f3808e1b9f8a544884f6ac38030c3b4
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Tue Jul 28 15:08:36 2026 +0700
+| 
+|     feat: add comprehensive documentation for HW03 submission including README, AI Audit Report, Usability Report, and various logs
+| 
+|  submission/README.md                              |  70 +++++++++++++
+|  submission/agent_skills_demo.md                   |  28 ++++++
+|  submission/ai-audit/ai_audit_report.md            |  47 +++++++++
+|  submission/ai_critique.md                         |  25 +++++
+|  submission/bug_usability_findings_log.md          |  31 ++++++
+|  submission/checklist_execution.md                 |  54 ++++++++++
+|  submission/cross_platform_matrix.md               |  61 ++++++++++++
+|  submission/git_commit_log.md                      |   0
+|  .../group/reference_sources_and_ai_prompts.md     |  30 ++++++
+|  submission/main_report.md                         | 103 +++++++++++++++++++
+|  submission/usability_report.md                    |  97 ++++++++++++++++++
+|  submission/user_testing_raw_notes.md              | 104 ++++++++++++++++++++
+|  12 files changed, 650 insertions(+)
+| 
+* commit d30af0e1a4a06d5d5fde0a48b9d383b1701bbcc3
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Tue Jul 28 14:57:14 2026 +0700
+| 
+|     feat: add EMS AI Audit skill and entry script in Vietnamese
+| 
+|  submission/skills/ems-ai-audit/SKILL.md           |  99 +++++++
+|  submission/skills/ems-ai-audit/agents/openai.yaml |   4 +
+|  .../ems-ai-audit/scripts/add_ai_audit_entry.py    | 278 ++++++++++++++++++++
+|  3 files changed, 381 insertions(+)
+| 
+* commit e61948070b8db7bbc9a73f087f7fb7ace34d75cd
+| Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| Date:   Mon Jul 27 15:38:58 2026 +0700
+| 
+|     feat: delete unnecessary file
+| 
+|  .agents/skills/ai-audit-entry/SKILL.md            |  91 ----
+|  .agents/skills/ai-audit-entry/agents/openai.yaml  |   4 -
+|  .../scripts/append_ai_audit_entry.py              | 459 -----------------
+|  .../scripts/test_append_ai_audit_entry.py         | 534 --------------------
+|  submission/ai-audit/ai_audit_report.md            | 160 ------
+|  5 files changed, 1248 deletions(-)
+|   
+*   commit 5fdc93d8f041d9c43f7002d58a3bc6c95074990b
+|\  Merge: c1189ed 93c1e3c
+| | Author: Hacdess <88873029+Hacdess@users.noreply.github.com>
+| | Date:   Mon Jul 27 15:32:51 2026 +0700
+| | 
+| |     Merge pull request #2 from HCMUS-software-testing/kien
+| |     
+| |     fixed: gui usability checklist
+| | 
+| * commit 93c1e3cef2746817d25a8440b3265f5a0e9546e2
+| | Author: TKin <letrungkienthd@gmail.com>
+| | Date:   Mon Jul 27 15:30:27 2026 +0700
+| | 
+| |     fixed: gui usability checklist
+| | 
+| |  submission/group/gui_usability_checklist.md      | 67 ++++++++++++++
+| |  .../gui_usability_checklist_final.md}            | 14 +--
+| |  .../group/gui_usability_checklist_processing.md  | 91 ++++++++++++++++++++
+| |  3 files changed, 167 insertions(+), 5 deletions(-)
+| | 
+* | commit c1189ed648777c125ab99d475cbf712b0b4b3521
+| | Author: LE MAI HOAI BAO <152853155+HB4305@users.noreply.github.com>
+| | Date:   Sun Jul 26 19:35:08 2026 +0700
+| | 
+| |     docs: update Scenario A task details and test checklist in README.md
+| | 
+| |  README.md                                        |   4 +-
+| |  ...E2E-Test-Flow-Luo\314\202\314\200ng-Admin.md" | 227 -------------------
+| |  ...2E-Test-Flow-Luo\314\202\314\200ng-Admin.pdf" | Bin 73893 -> 0 bytes
+| |  3 files changed, 2 insertions(+), 229 deletions(-)
+| | 
+* | commit 59da4dd5da3f07d424f06c89a649e733afc1f6e0
+|\| Merge: af1c50a 607265f
+| | Author: Hacdess <88873029+Hacdess@users.noreply.github.com>
+| | Date:   Sun Jul 26 15:38:59 2026 +0700
+| | 
+| |     Merge pull request #1 from HCMUS-software-testing/kien
+| |     
+| |     Kien
+| |   
+| *   commit 607265ff41d741201138e029ee4b48ab13d8d20a
+| |\  Merge: d5bfe7d af1c50a
+| |/  Author: TKin <letrungkienthd@gmail.com>
+|/|   Date:   Sun Jul 26 15:38:09 2026 +0700
+| |   
+| |       Merge branch 'main' of https://github.com/HCMUS-software-testing/HW03 into kien
+| | 
+* | commit af1c50a4ea373f0946ced1fc22691eae0550bed4
+| | Author: Melyenn <thiduyen310@gmail.com>
+| | Date:   Sun Jul 26 15:13:01 2026 +0700
+| | 
+| |     chores: change template for README.md
+| | 
+| |  README.md | 114 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+| |  1 file changed, 113 insertions(+), 1 deletion(-)
+| | 
+| * commit d5bfe7dd99e25715b241af3d1fd98e861b65a612
+|/  Author: TKin <letrungkienthd@gmail.com>
+|   Date:   Sun Jul 26 15:37:35 2026 +0700
+|   
+|       added gui usability checklist and fixed ai-audit-entry skill
+|   
+|    .agents/skills/ai-audit-entry/SKILL.md           |  12 +-
+|    .../scripts/append_ai_audit_entry.py             |  80 +++++++++---
+|    submission/ai-audit/ai_audit_report.md           | 124 +++++++++++++++++--
+|    submission/task1a_gui_usability_checklist.md     |  61 +++++++++
+|    4 files changed, 246 insertions(+), 31 deletions(-)
+| 
+* commit 69f74fc81d788052a49cbb04db60215c6edbd383
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Sun Jul 26 14:46:31 2026 +0700
+| 
+|     added ai audit skill
+| 
+|  .agents/skills/ai-audit-entry/SKILL.md            |  89 ++++
+|  .agents/skills/ai-audit-entry/agents/openai.yaml  |   4 +
+|  .../scripts/append_ai_audit_entry.py              | 411 +++++++++++++++
+|  .../scripts/test_append_ai_audit_entry.py         | 534 ++++++++++++++++++++
+|  .gitignore                                        |   6 +-
+|  5 files changed, 1043 insertions(+), 1 deletion(-)
+| 
+* commit a43f874e8a4577602bc3e27ed6fc651cd4a07a8c
+| Author: TKin <letrungkienthd@gmail.com>
+| Date:   Sun Jul 26 10:25:34 2026 +0700
+| 
+|     init project
+| 
+|  .gitignore                                        |    2 +
+|  docs/2026.HW03.GUI Usability EMS_En.md            |  275 +++
+|  docs/2026.HW03.GUI Usability EMS_En.pdf           |  Bin 0 -> 181499 bytes
+|  docs/HW03_EMS_Intro_EN.md                         |  159 ++
+|  docs/HW03_EMS_Intro_EN.pdf                        |  Bin 0 -> 374372 bytes
+|  docs/ISTQB_CT-AI_Syllabus_v1.0.md                 | 1750 +++++++++++++++++++
+|  docs/ISTQB_CT-AI_Syllabus_v1.0.pdf                |  Bin 0 -> 1712829 bytes
+|  ...-E2E-Test-Flow-Luo\314\202\314\200ng-Admin.md" |  227 +++
+|  ...E2E-Test-Flow-Luo\314\202\314\200ng-Admin.pdf" |  Bin 0 -> 73893 bytes
+|  submission/HW03_step_by_step_guide.md             |  492 ++++++
+|  submission/ai-audit/ai_audit_report.md            |   56 +
+|  11 files changed, 2961 insertions(+)
+| 
+* commit 36550e43c8243103ef610aa1954f39eec014b6ae
+  Author: TKin <letrungkienthd@gmail.com>
+  Date:   Sat Jul 25 21:03:38 2026 +0700
+  
+      first commit
+  
+   README.md | 1 +
+   1 file changed, 1 insertion(+)
